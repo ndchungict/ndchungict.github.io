@@ -9,6 +9,10 @@
 #   url: "/getting-started/"
 #   side: left
 
+- title: Projects
+  url: "/projects"
+  side: left
+
 - title: "Games"
   url: "/games/"
   side: left
