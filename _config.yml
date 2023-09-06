@@ -8,7 +8,7 @@
 #                                                 /____/
 #
 # Title of your website
-title: 'Nguyen Chung'
+title: "Chungnd's Portifolio"
 
 # The slogan describes your website and is used on homepage in <title> and other important places
 slogan: 'Wellcome To My Website'
@@ -71,7 +71,7 @@ include            : ['.htaccess']
 # Exclude these files from your production _site
 exclude:
     - .sass-cache
-    - Gemfile
+    - Gemfileß
     - Gemfile.lock
     - LICENSE
     - README.md
