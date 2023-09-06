@@ -17,16 +17,24 @@
     }
   }
 
-.about-me ul{
-    // float:left;
-    padding:0px;
-    margin: 0px;
+.about-me ul.list-social{
+    margin-top: 0;
+    margin-bottom: 0px;
+    text-align: center;
 }
 
+.about-me ul.list-social li{
+    display:inline;
+}
+
+.about-me ul.list-social li a{
+    display:inline-block;
+}
 
 ul.social-buttons {
     margin-bottom: 0;
     li {
+        margin-right:30px;
         a {
             font-size: 20px;
             line-height: 50px;
@@ -43,7 +51,9 @@ ul.social-buttons {
             &:active,
             &:focus,
             &:hover {
-            background-color: #212529;
+            // background-color: #0e28be;
+            background: $subfooter-bg;
+            color: rgb(158, 242, 176);
             }
       }
     }

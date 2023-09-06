@@ -9,12 +9,14 @@ format: frontpage
     </div><!-- /.row -->
 </div><!-- /#header-home -->
 
+{% include me.html %}
 
 {% comment %}
 *
 * First check, if widget is empty or not by checking if there is a title
 *
 {% endcomment %}
+<h2 class="section-heading text-uppercase">Skill</h2>
 <div class="row t60">
 	{% if page.widget1.image or page.widget1.video or page.widget1.title %}
 		{% include _frontpage-widget.html widget=page.widget1 %}
@@ -33,7 +35,5 @@ format: frontpage
     {{ content }}
 </div>
 <!-- /.row -->
-
-{% include me.html %}
 
 {% include timeline.html %}
