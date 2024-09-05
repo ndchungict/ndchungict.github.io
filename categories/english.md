@@ -1,7 +1,7 @@
 ---
 layout: page
 title: English
-permalink: /blog/categories/automation/
+permalink: /blog/categories/english/
 ---
 
 <h5> Posts by Category : {{ page.title }} </h5>

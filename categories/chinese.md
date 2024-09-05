@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Chinese
-permalink: /blog/categories/automation/
+permalink: /blog/categories/chinese/
 ---
 
 <h5> Posts by Category : {{ page.title }} </h5>
