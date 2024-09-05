@@ -5,8 +5,8 @@
     <description>Welcome to my site.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 05 Sep 2024 00:17:05 -0700</pubDate>
-    <lastBuildDate>Thu, 05 Sep 2024 00:17:05 -0700</lastBuildDate>
+    <pubDate>Thu, 05 Sep 2024 00:32:38 -0700</pubDate>
+    <lastBuildDate>Thu, 05 Sep 2024 00:32:38 -0700</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
 
     
@@ -629,9 +629,9 @@ Fixtures: Để sử dụng dữ liệu giả lập trong các bài kiểm tra.&
 
   &lt;div class=&quot;category-box&quot;&gt;
     
-    &lt;div id=&quot;#automation test&quot;&gt;&lt;/div&gt;
-    &lt;h4 class=&quot;category-head&quot;&gt;&lt;a href=&quot;/blog/categories/automation test&quot;&gt;automation test&lt;/a&gt;&lt;/h4&gt;
-    &lt;a name=&quot;automation test&quot;&gt;&lt;/a&gt;
+    &lt;div id=&quot;#automation&quot;&gt;&lt;/div&gt;
+    &lt;h4 class=&quot;category-head&quot;&gt;&lt;a href=&quot;/blog/categories/automation&quot;&gt;automation&lt;/a&gt;&lt;/h4&gt;
+    &lt;a name=&quot;automation&quot;&gt;&lt;/a&gt;
      
     &lt;article class=&quot;center&quot;&gt;
       &lt;h6&gt;&lt;a href=&quot;/blog/huong-dan-cypress-can-ban/&quot;&gt;Hướng dẫn cypress căn bản&lt;/a&gt;&lt;/h6&gt;
@@ -650,6 +650,53 @@ Fixtures: Để sử dụng dữ liệu giả lập trong các bài kiểm tra.&
         
       
     
+      
+        
+          <item>
+            <title>Automation</title>
+            <description>&lt;h5&gt; Posts by Category : Automation &lt;/h5&gt;
+
+&lt;div class=&quot;card&quot;&gt;
+
+ &lt;li class=&quot;category-posts&quot;&gt;&lt;span&gt;01 Sep 2024&lt;/span&gt; &amp;nbsp; &lt;a href=&quot;/blog/huong-dan-cypress-can-ban/&quot;&gt;Hướng dẫn cypress căn bản&lt;/a&gt;&lt;/li&gt;
+
+&lt;/div&gt;
+</description>
+            <link>http://localhost:4000/blog/categories/automation/</link>
+          </item>
+        
+      
+    
+      
+        
+          <item>
+            <title>Chinese</title>
+            <description>&lt;h5&gt; Posts by Category : Chinese &lt;/h5&gt;
+
+&lt;div class=&quot;card&quot;&gt;
+
+&lt;/div&gt;
+</description>
+            <link>http://localhost:4000/blog/categories/automation/</link>
+          </item>
+        
+      
+    
+      
+    
+      
+        
+          <item>
+            <title>English</title>
+            <description>&lt;h5&gt; Posts by Category : English &lt;/h5&gt;
+
+&lt;div class=&quot;card&quot;&gt;
+
+&lt;/div&gt;
+</description>
+            <link>http://localhost:4000/blog/categories/automation/</link>
+          </item>
+        
       
     
       
