@@ -1,7 +1,7 @@
 ---
 name: Nguyen Chung
 username: chungnd
-bio: "Hi I am Chung, a Web Developer and Designer."
+bio: "Hi I am Nguyen Chung, an Automation Tester."
 site: https://chungnd.id.vn
 avatar: johndoe.png
 email: ndchungict@gmail.com
