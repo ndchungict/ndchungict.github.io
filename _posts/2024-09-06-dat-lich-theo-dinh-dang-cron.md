@@ -3,8 +3,8 @@ layout: post
 title:  "Đặt lịch theo định dạng cron"
 summary: "Định dạng cron được sử dụng để thiết lập lịch build tự động trong Jenkins và nhiều hệ thống khác."
 author: chungnd
-date: '2024-09-06 143:35:23 +0700'
-category: ['automation']
+date: '2024-09-06 13:35:23 +0700'
+category: ['automation','guides']
 tags: jenkins,cron
 thumbnail: /assets/img/posts/cron-calendar.png
 keywords: cron,schedule

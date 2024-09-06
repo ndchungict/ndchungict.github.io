@@ -18,8 +18,8 @@ urls:
       url: /gallery
 #    - text: Shop
 #      url : /shop
-    - text : Chinese
-      url: /blog/categories/chinese
+    - text : Guides
+      url: /blog/categories/guides
     - text: Contact
       url : /contact
 
