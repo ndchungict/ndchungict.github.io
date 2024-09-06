@@ -5,7 +5,7 @@ summary: "Cypress là một công cụ kiểm thử end-to-end mạnh mẽ giúp
 author: chungnd
 date: '2024-09-01 14:35:23 +0700'
 category: ['cypress','automation']
-thumbnail: /assets/img/posts/code.jpg
+thumbnail: /assets/img/posts/cypress-ui-specs.
 keywords: cypress,tutorial,automation,test,javascript
 permalink: /blog/huong-dan-cypress-can-ban/
 usemathjax: true
