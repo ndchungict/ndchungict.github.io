@@ -113,10 +113,22 @@ show_author_work_experiences: true
 show_author_education_details: true
 show_author_project_details: true
 
-# pagination of posts
-paginate: 4
-per_page: 4
-paginate_path: "/blog/page/:num/"
+## pagination of posts
+#paginate: 4
+#per_page: 4
+#paginate_path: "/blog/page/:num/"
+
+## pagination of posts v2
+pagination:
+  enabled: true
+  per_page: 4             # Số bài viết trên mỗi trang
+  permalink: '/page/:num/'  # Đường dẫn cho các trang
+  title: ':title - page :num'  # Tiêu đề của trang phân trang
+  sort_field: 'date'       # Trường để sắp xếp (ví dụ: ngày)
+  sort_reverse: true       # Sắp xếp giảm dần
+  trail:
+    before: 2              # Số trang hiển thị trước trang hiện tại
+    after: 2               # Số trang hiển thị sau trang hiện tại
 
 # minify
 # compress_html:
@@ -166,6 +178,8 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-paginate-v2
+
 
   # jekyll admin is causing issues with github pages, so it's disabled by default
   # - jekyll-admin 

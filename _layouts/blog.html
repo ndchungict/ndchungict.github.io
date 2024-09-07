@@ -43,11 +43,12 @@ layout: default
                 {% elsif page == 1 %}
                   <li class="pagination-link"><a href="/blog">{{ page }}</a></li>
                 {% else %}
-                  <li class="pagination-link"><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+<!--                  <li class="pagination-link"><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>-->
+                  <li class="pagination-link"><a href="/blog/page/{{page}}">{{ page }}</a></li>
                 {% endif %}
               {% endfor %}
 
-              <li class="pagination-link"><a href="/blog/page/{{ paginator.total_pages }}/#/">Last</a></li>
+              <li class="pagination-link"><a href="/blog/page/{{ paginator.total_pages }}/">Last</a></li>
 
               {% if paginator.next_page %}
                 <li class="pagination-link"><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a></li>
