@@ -20,6 +20,8 @@ urls:
 #      url : /shop
     - text : Guides
       url: /blog/categories/guides
+    - text : Languages
+      url: /languages
     - text: Contact
       url : /contact
 
@@ -121,7 +123,7 @@ show_author_project_details: true
 ## pagination of posts v2
 pagination:
   enabled: true
-  per_page: 4             # Số bài viết trên mỗi trang
+  per_page: 2             # Số bài viết trên mỗi trang
   permalink: '/page/:num/'  # Đường dẫn cho các trang
   title: ':title - page :num'  # Tiêu đề của trang phân trang
   sort_field: 'date'       # Trường để sắp xếp (ví dụ: ngày)
