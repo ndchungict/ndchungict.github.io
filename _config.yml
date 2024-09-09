@@ -10,12 +10,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 urls:
     - text: Home
       url: /
-    - text: About
-      url: /about
-    - text: Blog
-      url: /blog
-    - text: Gallery
-      url: /gallery
+
 #    - text: Shop
 #      url : /shop
     - text : Develop
@@ -24,7 +19,7 @@ urls:
         - text: Automation Test
           url: /autotest
         - text: CI/CD
-          url: /cicd
+          url: /ci-cd
     - text : Languages
       url: /languages
       submenu:
@@ -32,8 +27,10 @@ urls:
           url: /english
         - text: Chinese
           url: /chinese
-    - text: Contact
-      url : /contact
+    - text: Blog
+      url: /blog
+    - text: Gallery
+      url: /gallery
 
 
 # Edit Author details (For multi authors check _data/authors.yml)
