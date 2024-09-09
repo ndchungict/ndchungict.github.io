@@ -19,9 +19,9 @@ urls:
         - text: Automation
           url: /automation
         - text: CI/CD
-          url: /ci-cd
-    - text : Languages
-      url: /languages
+          url: /cicd
+    - text : Language
+      url: /language
       submenu:
         - text: English
           url: /english

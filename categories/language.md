@@ -1,7 +1,7 @@
 ---
 layout: category/languages
-title: Languages
-permalink: /languages/
+title: Language
+permalink: /language/
 pagination:
   enabled: true
   category: language

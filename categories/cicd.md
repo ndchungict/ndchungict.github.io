@@ -1,7 +1,7 @@
 ---
 layout: category/cicd
 title: CI/CD
-permalink: /ci-cd/
+permalink: /cicd/
 pagination:
   enabled: true
   category: cicd
