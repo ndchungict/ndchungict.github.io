@@ -22,6 +22,11 @@ urls:
       url: /blog/categories/guides
     - text : Languages
       url: /languages
+      submenu:
+        - text: English
+          url: /english
+        - text: Chinese
+          url: /chinese
     - text: Contact
       url : /contact
 

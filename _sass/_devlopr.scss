@@ -790,7 +790,33 @@ footer {
     color: var(--main-text-color);
 }
 
+//dropdown menu
+ul.nav1 li.item1{
+  display: inline-block;
+  position: relative;
+}
+ul.nav1 li.item1 ul.nav2{
+  display: block;
+  position: absolute;
+  padding: 0;
+}
 
+ul.nav1 li.item1 ul.nav2{
+  //display: none;
+}
+
+ul.nav1 li.item1:hover ul.nav2{
+  display: block;
+}
+
+li.item2{
+  min-width: 160px;
+  background: blue;
+}
+
+li.item2:hover{
+  background: red;
+}
 
 
 /* Responsive Media Queries */
