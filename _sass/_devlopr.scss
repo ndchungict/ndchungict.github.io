@@ -802,7 +802,7 @@ ul.nav1 li.item1 ul.nav2{
 }
 
 ul.nav1 li.item1 ul.nav2{
-  //display: none;
+  display: none;
 }
 
 ul.nav1 li.item1:hover ul.nav2{
@@ -811,11 +811,11 @@ ul.nav1 li.item1:hover ul.nav2{
 
 li.item2{
   min-width: 160px;
-  background: blue;
+  background: #333333FF;
 }
 
 li.item2:hover{
-  background: red;
+  background: #262222FF;
 }
 
 
