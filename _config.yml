@@ -18,8 +18,13 @@ urls:
       url: /gallery
 #    - text: Shop
 #      url : /shop
-    - text : Guides
-      url: /blog/categories/guides
+    - text : Develop
+      url: /develop
+      submenu:
+        - text: Automation Test
+          url: /autotest
+        - text: CI/CD
+          url: /cicd
     - text : Languages
       url: /languages
       submenu:
