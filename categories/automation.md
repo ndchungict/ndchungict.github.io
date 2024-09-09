@@ -1,13 +1,13 @@
 ---
-layout: page
+layout: category/automation
 title: Automation
-permalink: /blog/categories/automation/
+permalink: /automation/
+pagination:
+  enabled: true
+  category: automation
+  combine: and
+  permalink: /:num/  
+  per_page: 4
+  sort_field: 'title'
+  sort_reverse: false
 ---
-
-<h5> Posts by Category : {{ page.title }} </h5>
-
-<div class="card">
-{% for post in site.categories.automation %}
- <li class="category-posts"><span>{{ post.date | date_to_string }}</span> &nbsp; <a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
-</div>

@@ -4,7 +4,7 @@ title:  "Hướng dẫn cypress căn bản"
 summary: "Cypress là một công cụ kiểm thử end-to-end mạnh mẽ giúp bạn viết và thực thi các bài kiểm thử cho ứng dụng web của mình. Trong hướng dẫn này, bạn sẽ học cách cài đặt và sử dụng Cypress."
 author: chungnd
 date: '2024-09-01 14:35:23 +0700'
-category: ['cypress','automation','guides']
+category: ['develop','automation','cypress','guides']
 thumbnail: /assets/img/posts/cypress-ui-specs.png
 keywords: cypress,tutorial,automation,test,javascript
 permalink: /blog/huong-dan-cypress-can-ban/

@@ -16,8 +16,8 @@ urls:
     - text : Develop
       url: /develop
       submenu:
-        - text: Automation Test
-          url: /autotest
+        - text: Automation
+          url: /automation
         - text: CI/CD
           url: /ci-cd
     - text : Languages
