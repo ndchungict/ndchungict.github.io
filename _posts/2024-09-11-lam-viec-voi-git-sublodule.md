@@ -5,7 +5,7 @@ summary: "Git Submodule là một tính năng trong Git cho phép bạn nhúng m
 author: chungnd
 date: '2024-09-11 13:35:23 +0700'
 category: ['develop','cicd','git']
-thumbnail: /assets/img/posts/cypress-ui-specs.png
+thumbnail: /assets/img/posts/git-submodule.png
 keywords: git,tutorial,develop,submodule
 permalink: /lam-viec-voi-git-submodule/
 usemathjax: true
