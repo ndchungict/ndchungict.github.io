@@ -120,10 +120,10 @@ show_author_work_experiences: true
 show_author_education_details: true
 show_author_project_details: true
 
-## pagination of posts
-#paginate: 4
-#per_page: 4
-#paginate_path: "/blog/page/:num/"
+# pagination of posts
+paginate: 4
+per_page: 4
+paginate_path: "/blog/page/:num/"
 
 ## pagination of posts v2
 pagination:
