@@ -100,12 +100,13 @@ layout: default
     </div>
 
     {% if site.wakatime_username %}
-    <div class="card">
-      <h1>Coding Activity</h1>
-
-      {%- include coding_activity.html -%}
-    </div>
     {% endif %}
+
+    <div class="card">
+      <h1>Calendar</h1>
+
+          {%- include luna_calendar.html -%}
+    </div>
   </div>
   <div class="col-lg-8">
     {% if site.author_bio %}

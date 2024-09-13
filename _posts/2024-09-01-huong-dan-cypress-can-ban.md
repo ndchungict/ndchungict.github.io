@@ -7,7 +7,7 @@ date: '2024-09-01 13:35:23 +0700'
 category: ['develop','automation','cypress','guides']
 thumbnail: /assets/img/posts/cypress-ui-specs.png
 keywords: cypress,tutorial,automation,test,javascript
-permalink: /blog/huong-dan-cypress-can-ban/
+permalink: /huong-dan-cypress-can-ban/
 usemathjax: true
 ---
 

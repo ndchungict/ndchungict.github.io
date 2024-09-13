@@ -8,7 +8,7 @@ category: ['develop','cicd','guides']
 tags: jenkins,cron
 thumbnail: /assets/img/posts/cron-calendar.png
 keywords: cron,schedule
-permalink: /blog/dat-lich-theo-dinh-dang-cron/
+permalink: /dat-lich-theo-dinh-dang-cron/
 usemathjax: true
 ---
 
