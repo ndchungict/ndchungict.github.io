@@ -10,7 +10,6 @@ keywords: hanyu
 permalink: /tong-hop-luong-tu-trong-tieng-trung-p1/
 usemathjax: true
 ---
-# TỔNG HỢP NGỮ PHÁP HSK 4
 
 1. 把 (bǎ) - **Bả** (cầm, nắm, giữ)
     * Dùng cho những vật có cán: cái, chiếc
