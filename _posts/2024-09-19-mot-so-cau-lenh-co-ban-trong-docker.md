@@ -5,6 +5,7 @@ summary: "Docker cung cấp nhiều câu lệnh khác nhau để quản lý và 
 author: chungnd
 date: '2024-09-20 10:10:23 +0700'
 category: ['develop','devops','docker']
+series: "docker"
 thumbnail: /assets/img/posts/cau-lenh-docker.webp
 keywords: develop,devops,cmd
 permalink: /mot-so-cau-lenh-co-ban-trong-docker/
