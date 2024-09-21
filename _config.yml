@@ -18,15 +18,13 @@ urls:
       url: /devops
     - text : Language
       url: /language
-    - text: English
-      url: /english
 #      submenu:
 #        - text: English
 #          url: /english
 #    - text: Blog
 #      url: /blog
-    - text: Gallery
-      url: /gallery
+#    - text: Gallery
+#      url: /gallery
 #    - text: Shop
 #      url : /shop
 
