@@ -6,7 +6,7 @@ author: chungnd
 date: '2024-09-18 10:10:23 +0700'
 category: ['language','chinese']
 series: "tong-hop-ngu-phap-hsk4"
-thumbnail: /assets/img/posts/ngu-phap-hsk4.webp
+thumbnail: /assets/img/posts/ngu-phap-hsk4-1.webp
 keywords: hanyu,hsk4,yufa
 permalink: /tong-hop-ngu-phap-hsk4-p1/
 usemathjax: true
