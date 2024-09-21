@@ -5,6 +5,7 @@ summary: " Lượng từ trong tiếng Trung thường được sử dụng đ�
 author: chungnd
 date: '2024-09-18 14:10:23 +0700'
 category: ['language','chinese']
+series: "tong-hop-luong-tu-trong-tieng-trung"
 thumbnail: /assets/img/posts/luong-tu-tieng-trung.webp
 keywords: hanyu
 permalink: /tong-hop-luong-tu-trong-tieng-trung-p2/

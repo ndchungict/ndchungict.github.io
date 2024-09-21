@@ -5,6 +5,7 @@ summary: "Các điểm ngữ pháp chính mà người học cần nắm vững 
 author: chungnd
 date: '2024-09-18 10:30:23 +0700'
 category: ['language','chinese']
+series: "tong-hop-ngu-phap-hsk4"
 thumbnail: /assets/img/posts/ngu-phap-hsk4.webp
 keywords: hanyu,hsk4,yufa
 permalink: /tong-hop-ngu-phap-hsk4-p3/
