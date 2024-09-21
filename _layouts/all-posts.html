@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<div class="col-lg-12">
+ <div class="row justify-content-center">
+     <div class="col-lg-8">
+         <div class="card">
+             {% for post in site.posts%}
+                <li class="category-posts"><span>{{ post.date | date_to_string }}</span> &nbsp; <a href="{{ post.url }}">{{ post.title }}</a></li>
+             {% endfor %}
+         </div>
+     </div>
+    {%- include all_posts_sidebar.html -%}
+
+ </div>
+</div>
