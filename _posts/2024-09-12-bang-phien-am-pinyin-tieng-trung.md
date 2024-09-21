@@ -5,7 +5,7 @@ summary: "Hệ thống phiên âm Pinyin, là hệ thống chữ Latinh để bi
 author: chungnd
 date: '2024-09-12 08:35:23 +0700'
 category: ['language','chinese']
-thumbnail: /assets/img/posts/bang-phien-am-pinyin-tieng-trung.png
+thumbnail: /assets/img/posts/bang-phien-am-pinyin-tieng-trung.webp
 keywords: pinyin,hanyu
 permalink: /bang-phien-am-pinyin-tieng-trung/
 usemathjax: true
