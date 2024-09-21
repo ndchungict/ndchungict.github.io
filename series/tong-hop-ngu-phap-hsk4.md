@@ -4,7 +4,7 @@ title: "Tổng hợp ngữ pháp HSK4"
 permalink: /series/tong-hop-ngu-phap-hsk4/
 ---
 
-<h5> Posts by Category : {{ page.title }} </h5>
+<h5> Posts by Series : {{ page.title }} </h5>
 
 <div class="card">
 {% for post in site.posts%}

@@ -4,7 +4,7 @@ title: "Tổng hợp lượng từ trong tiếng Trung"
 permalink: /series/tong-hop-luong-tu-trong-tieng-trung/
 ---
 
-<h5> Posts by Category : {{ page.title }} </h5>
+<h5> Posts by Series : {{ page.title }} </h5>
 
 <div class="card">
 {% for post in site.posts%}
