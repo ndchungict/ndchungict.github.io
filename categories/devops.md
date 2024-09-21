@@ -1,14 +1,14 @@
 ---
 layout: category
-title: guides
-permalink: /guides/
-page_path: "/guides"
+title: Devops
+permalink: /devops/
+page_path: "/devops"
 pagination:
   enabled: true
-  category: guides
+  category: cicd
   combine: and
   permalink: /:num/
-  per_page: 1
+  per_page: 4
   sort_field: 'title'
   sort_reverse: false
 ---

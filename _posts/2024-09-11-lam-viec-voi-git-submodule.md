@@ -4,7 +4,8 @@ title:  "Làm việc với Git Submodule"
 summary: "Git Submodule là một tính năng trong Git cho phép bạn nhúng một repository Git khác vào trong một repository chính như một thư mục con."
 author: chungnd
 date: '2024-09-11 13:35:23 +0700'
-category: ['develop','cicd','git']
+category: ['develop','devops']
+tag: [git]
 thumbnail: /assets/img/posts/git-submodule.png
 keywords: git,tutorial,develop,submodule
 permalink: /lam-viec-voi-git-submodule/

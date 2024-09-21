@@ -4,7 +4,7 @@ title:  "Kiểm tra port đang được sử dụng"
 summary: "Một số thao tác cơ bản để kiểm tra xem cổng (port) nào đang được sử dụng, các kết nối đang được thực hiện"
 author: chungnd
 date: '2024-09-13 09:35:23 +0700'
-category: ['develop']
+category: ['develop','devops']
 thumbnail: /assets/img/posts/check-port.png
 keywords: develop,port,task
 permalink: /kiem-tra-port-dang-duoc-su-dung/

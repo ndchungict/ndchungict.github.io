@@ -4,7 +4,8 @@ title:  "Một số câu lệnh cơ bản trong Docker"
 summary: "Docker cung cấp nhiều câu lệnh khác nhau để quản lý và vận hành container, image, network, và volume"
 author: chungnd
 date: '2024-09-20 10:10:23 +0700'
-category: ['develop','devops','docker']
+category: ['develop','devops']
+tag: [docker]
 series: "docker"
 thumbnail: /assets/img/posts/cau-lenh-docker.webp
 keywords: develop,devops,cmd

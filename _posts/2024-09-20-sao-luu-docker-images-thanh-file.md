@@ -4,7 +4,8 @@ title:  "Sao lưu docker images thành file"
 summary: "Docker có thể export hoặc import một hoặc nhiều images ra file tar"
 author: chungnd
 date: '2024-09-20 11:10:23 +0700'
-category: ['develop','devops','docker']
+category: ['develop','devops']
+tag: [docker]
 series: "docker"
 thumbnail: /assets/img/posts/docker-images-to-file.webp
 keywords: develop,devops
