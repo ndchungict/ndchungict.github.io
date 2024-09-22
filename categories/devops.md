@@ -5,7 +5,7 @@ permalink: /devops/
 page_path: "/devops"
 pagination:
   enabled: true
-  category: cicd
+  category: devops
   combine: and
   permalink: /:num/
   per_page: 4
