@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "Bind Mount trong Docker"
+title:  "Sử dụng Docker bind mount"
 summary: "Trong Docker, Bind Mount là một cơ chế để chia sẻ thư mục giữa host và container"
 author: chungnd
 date: '2024-09-23 11:10:23 +0700'
 category: ['develop','devops']
 tag: [docker]
 series: "docker"
-thumbnail: /assets/img/posts/bind-mount-trong-docker.webp
+thumbnail: /assets/img/posts/su-dung-docker-bind-mount.webp
 keywords: bind,mount
-permalink: /bind-mount-trong-docker/
+permalink: /su-dung-docker-bind-mount/
 usemathjax: true
 ---
 

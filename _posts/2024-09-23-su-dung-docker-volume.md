@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Docker Volumes là một công cụ mạnh mẽ để quản lý dữ liệu giữa các container."
-summary: ""
+title:  "Sử dụng Docker Volume"
+summary: "Docker Volumes là một công cụ mạnh mẽ để quản lý dữ liệu giữa các container."
 author: chungnd
 date: '2024-09-23 10:10:23 +0700'
 category: ['develop','devops']
