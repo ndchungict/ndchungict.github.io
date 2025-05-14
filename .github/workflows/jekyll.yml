@@ -56,7 +56,7 @@ jobs:
 
   # Deployment job
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04-x64
     needs: build
     permissions:
       contents: read
