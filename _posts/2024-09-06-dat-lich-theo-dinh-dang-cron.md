@@ -6,7 +6,7 @@ author: chungnd
 date: '2024-09-06 13:35:23 +0700'
 category: ['develop','devops']
 tags: [jenkins,cicd,cron,guides]
-thumbnail: /assets/img/post_images/it/dat-lich-theo-dinh-dang-cron.png
+thumbnail: /assets/post_images/it/dat-lich-theo-dinh-dang-cron.png
 keywords: cron,schedule
 permalink: /dat-lich-theo-dinh-dang-cron/
 usemathjax: true

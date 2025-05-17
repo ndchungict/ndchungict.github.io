@@ -7,7 +7,7 @@ date: '2024-09-20 11:10:23 +0700'
 category: ['develop','devops']
 tag: [docker]
 series: "docker"
-thumbnail: /assets/img/post_images/it/sao-luu-docker-images-thanh-file.webp
+thumbnail: /assets/post_images/it/sao-luu-docker-images-thanh-file.webp
 keywords: develop,devops
 permalink: /sao-luu-docker-images-thanh-file/
 usemathjax: true

@@ -5,7 +5,7 @@ summary: "Cấu trúc câu trong tiếng Anh có nhiều dạng từ đơn giả
 author: chungnd
 date: '2024-09-13 13:35:23 +0700'
 category: ['language','english']
-thumbnail: /assets/img/post_images/english/english3.webp
+thumbnail: /assets/post_images/english/english3.webp
 keywords: language,cautruc,english
 permalink: /cau-truc-cua-mot-cau-trong-tieng-anh/
 usemathjax: true

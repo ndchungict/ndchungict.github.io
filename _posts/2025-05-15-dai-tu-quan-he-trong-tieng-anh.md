@@ -5,8 +5,8 @@ summary: "Các đại từ quan hệ trong tiếng Anh thường được dùng 
 author: chungnd
 date: '2025-05-15 08:55:23 +0700'
 category: ['language','english']
-#thumbnail: /assets/img/post_images/english/tong-hop-lien-tu-trong-tieng-anh.png
-thumbnail: /assets/img/post_images/english/english2.webp
+#thumbnail: /assets/post_images/english/tong-hop-lien-tu-trong-tieng-anh.png
+thumbnail: /assets/post_images/english/english2.webp
 keywords: language,english
 permalink: /dai-tu-quan-he-trong-tieng-anh/
 usemathjax: true
