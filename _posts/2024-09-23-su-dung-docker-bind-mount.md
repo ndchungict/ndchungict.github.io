@@ -7,7 +7,7 @@ date: '2024-09-23 11:10:23 +0700'
 category: ['develop','devops']
 tag: [docker]
 series: "docker"
-thumbnail: /assets/img/posts/su-dung-docker-bind-mount.webp
+thumbnail: /assets/img/post_images/it/su-dung-docker-bind-mount.webp
 keywords: bind,mount
 permalink: /su-dung-docker-bind-mount/
 usemathjax: true

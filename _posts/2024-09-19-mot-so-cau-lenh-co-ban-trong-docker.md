@@ -7,7 +7,7 @@ date: '2024-09-20 10:10:23 +0700'
 category: ['develop','devops']
 tag: [docker]
 series: "docker"
-thumbnail: /assets/img/posts/cau-lenh-docker.webp
+thumbnail: /assets/img/post_images/it/mot-so-cau-lenh-co-ban-trong-docker.webp
 keywords: develop,devops,cmd
 permalink: /mot-so-cau-lenh-co-ban-trong-docker/
 usemathjax: true

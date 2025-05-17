@@ -6,7 +6,7 @@ author: chungnd
 date: '2024-09-18 16:20:23 +0700'
 category: ['language','chinese']
 series: "tong-hop-luong-tu-trong-tieng-trung"
-thumbnail: /assets/img/posts/tong-hop-luong-tu-tieng-trung-2.webp
+thumbnail: /assets/img/post_images/chinese/tong-hop-luong-tu-tieng-trung-2.webp
 keywords: hanyu
 permalink: /tong-hop-luong-tu-trong-tieng-trung-p5/
 usemathjax: true

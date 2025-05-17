@@ -5,8 +5,8 @@ summary: "Bảng một số động từ bất quy tắc"
 author: chungnd
 date: '2025-05-17 09:34:23 +0700'
 category: ['language','english']
-#thumbnail: /assets/img/posts/english/bang-mot-so-dong-tu-bat-quy-tac.png
-thumbnail: /assets/img/posts/default/english1.webp
+#thumbnail: /assets/img/post_images/english/bang-mot-so-dong-tu-bat-quy-tac.png
+thumbnail: /assets/img/post_images/english/english1.webp
 keywords: language,english
 permalink: /bang-mot-so-dong-tu-bat-quy-tac/
 usemathjax: true
