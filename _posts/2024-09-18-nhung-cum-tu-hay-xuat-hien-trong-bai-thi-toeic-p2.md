@@ -6,7 +6,7 @@ author: chungnd
 date: '2024-09-18 09:35:23 +0700'
 category: ['language','english']
 series: "toeic"
-thumbnail: /assets/img/posts/toeic.webp
+thumbnail: /assets/img/post_images/english/nhung-cum-tu-hay-xuat-hien-trong-bai-thi-toeic.webp
 keywords: language,cautruc,english
 permalink: /nhung-cum-tu-hay-xuat-hien-trong-bai-thi-toeic-p2/
 usemathjax: true
