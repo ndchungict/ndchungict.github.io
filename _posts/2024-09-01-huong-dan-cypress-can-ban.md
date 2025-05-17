@@ -6,7 +6,7 @@ author: chungnd
 date: '2024-09-01 13:35:23 +0700'
 category: ['develop','automation']
 tag: [cypress,guides]
-thumbnail: /assets/img/post_images/it/huong-dan-cypress-can-ban.png
+thumbnail: /assets/post_images/it/huong-dan-cypress-can-ban.png
 keywords: cypress,tutorial,automation,test,javascript
 permalink: /huong-dan-cypress-can-ban/
 usemathjax: true

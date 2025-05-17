@@ -5,7 +5,7 @@ summary: "Liên từ trong tiếng Anh (conjunctions) là từ dùng để nối
 author: chungnd
 date: '2025-05-13 23:03:23 +0700'
 category: ['language','english']
-thumbnail: /assets/img/post_images/english/tong-hop-lien-tu-trong-tieng-anh.png
+thumbnail: /assets/post_images/english/tong-hop-lien-tu-trong-tieng-anh.png
 keywords: language,cautruc,english
 permalink: /tong-hop-lien-tu-trong-tieng-anh/
 usemathjax: true

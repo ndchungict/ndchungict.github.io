@@ -7,7 +7,7 @@ date: '2024-09-23 10:10:23 +0700'
 category: ['develop','devops']
 tag: [docker]
 series: "docker"
-thumbnail: /assets/img/post_images/it/su-dung-docker-volume.webp
+thumbnail: /assets/post_images/it/su-dung-docker-volume.webp
 keywords: volume
 permalink: /su-dung-docker-volume/
 usemathjax: true
