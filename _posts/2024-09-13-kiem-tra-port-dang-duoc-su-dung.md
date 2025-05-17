@@ -5,7 +5,7 @@ summary: "Một số thao tác cơ bản để kiểm tra xem cổng (port) nào
 author: chungnd
 date: '2024-09-13 09:35:23 +0700'
 category: ['develop','devops']
-thumbnail: /assets/post_images/kiem-tra-port-dang-duoc-su-dung.png
+thumbnail: /assets/post_images/it/kiem-tra-port-dang-duoc-su-dung.png
 keywords: develop,port,task
 permalink: /kiem-tra-port-dang-duoc-su-dung/
 usemathjax: true

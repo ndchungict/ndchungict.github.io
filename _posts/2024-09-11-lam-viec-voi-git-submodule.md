@@ -6,7 +6,7 @@ author: chungnd
 date: '2024-09-11 13:35:23 +0700'
 category: ['develop','devops']
 tag: [git]
-thumbnail: /assets/post_images/lam-viec-voi-git-submodule.png
+thumbnail: /assets/post_images/it/lam-viec-voi-git-submodule.png
 keywords: git,tutorial,develop,submodule
 permalink: /lam-viec-voi-git-submodule/
 usemathjax: true
