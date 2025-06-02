@@ -30,7 +30,7 @@ urls:
 
 # Edit Author details (For multi authors check _data/authors.yml)
 
-author_logo: profile.png
+author_logo: chungnd.png
 author: Nguyen Chung
 author_bio: Hi, my name is Nguyen Duc Chung. Nice to see you!
 author_email: "ndchungict@gmail.com"
