@@ -3,7 +3,7 @@ layout: post
 title:  "Giới từ tong tiếng Anh"
 summary: "Giới từ là từ dùng để liên kết danh từ, đại từ hoặc cụm danh từ với phần còn lại của câu, thường chỉ thời gian, vị trí, phương hướng, nguyên nhân, cách thức, mục đích..."
 author: chungnd
-date: '2025-06-102 10:30:23 +0700'
+date: '2025-06-02 10:30:23 +0700'
 category: ['language','english']
 thumbnail: /assets/post_images/english/gioi-tu-trong-tieng-anh.png
 keywords: language,english
