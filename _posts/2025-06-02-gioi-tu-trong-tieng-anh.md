@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Giới từ tong tiếng Anh"
+title:  "Giới từ trong tiếng Anh"
 summary: "Giới từ là từ dùng để liên kết danh từ, đại từ hoặc cụm danh từ với phần còn lại của câu, thường chỉ thời gian, vị trí, phương hướng, nguyên nhân, cách thức, mục đích..."
 author: chungnd
 date: '2025-06-02 10:30:23 +0700'
