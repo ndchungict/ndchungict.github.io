@@ -5,7 +5,7 @@ summary: "Một số từ vựng thường gặp trong bài thi toeic"
 author: chungnd
 date: '2025-07-11 10:50:00 +0700'
 category: ['language','english']
-thumbnail: /assets/img/posts/english/toeic-vocabulary.png
+thumbnail: /assets/post_images/english/toeic-vocabulary.png
 keywords: language,english,vocabulary,toeic
 permalink: /toeic-vocabulary-bai-dien-thuyet-va-phat-bieu-tai-su-kien-xa-hoi/
 usemathjax: true
