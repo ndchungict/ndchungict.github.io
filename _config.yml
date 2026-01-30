@@ -177,44 +177,42 @@ defaults:
 
 # Build settings
 plugins:
-  # - jekyll-paginate
   - jekyll-gist
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-paginate-v2
 
-
-  # jekyll admin is causing issues with github pages, so it's disabled by default
-  # - jekyll-admin 
-
-# Jekyll Admin Config
-# jekyll_admin:
-  # hidden_links:
-  #   - posts
-  #   - pages
-  #   - staticfiles
-  #   - datafiles
-  #   - configuration
-  # homepage: "posts"
-
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-
-### Switching Deployment Strategy (in DEPLOY_STRATEGY) file change the key accordingly:
-# none - For no default
-# gh-pages - For Github Pages
-# firebase - For Firebase Hosting
-
+# SASS/SCSS configuration for Jekyll 4.x
 sass:
   sass_dir: _sass
   style: compressed
+  sourcemap: never
+
+# Jekyll 4.x optimizations
+incremental: true
+strict_front_matter: true
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - test/
+  - README.md
+  - LICENSE
+  - SECURITY.md
+  - CODE_OF_CONDUCT.md
+  - assets/bower_components/*/README.md
+  - assets/bower_components/*/LICENSE*
+  - assets/bower_components/*/CHANGELOG*
 
 exclude:
   - .sass-cache/

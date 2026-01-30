@@ -1,17 +1,25 @@
 source "https://rubygems.org"
 
-# gem 'jekyll', '~> 4.3.3'
+# Core Jekyll and dependencies
+gem 'jekyll', '~> 4.4.0'
 gem 'bundler', '~> 2.5.15'
-gem 'faraday-retry'
-gem 'backports', '~> 3.25.0'
-gem 'kramdown'
-gem 'puma'
+gem 'webrick', '>= 1.8.2'
+
+# Ruby 3.4+ compatibility gems
 gem 'csv'
 gem 'base64'
 
-# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
-# uncomment the line below. To upgrade, run `bundle update github-pages`.
-gem "github-pages", group: :jekyll_plugins
+# Additional dependencies
+gem 'faraday-retry'
+gem 'backports', '~> 3.25.0'
+gem 'kramdown'
+gem 'kramdown-parser-gfm'
+gem 'rouge'
+gem 'puma', '>= 6.4.3'
+gem 'minitest'
+gem 'nokogiri'
+
+# Removed github-pages gem to allow latest Jekyll version
 # you can read more about it here 
 # https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll
 # https://pages.github.com/versions/
@@ -40,5 +48,4 @@ end
 
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
-gem "webrick", "~> 1.7"
 gem "ffi", "~> 1.16.3"

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Luyện thi TOEIC"
-permalink: /series/docker/
+permalink: /series/toeic/
 ---
 
 <h5> Posts by Series : {{ page.title }} </h5>
