@@ -196,6 +196,7 @@ strict_front_matter: true
 # GitHub Pages compatibility - use _site for production, ./build for local development
 # The destination will be overridden by GitHub Actions with --destination _site
 # This allows dual environment support: local dev uses ./build, GitHub Pages uses _site
+# Note: Local development uses Ruby 3.3.5, GitHub Actions uses Ruby 3.2.x (latest available on ubuntu-22.04)
 destination: ./build
 
 # Exclude from processing
