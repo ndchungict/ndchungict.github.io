@@ -193,6 +193,11 @@ sass:
 incremental: true
 strict_front_matter: true
 
+# GitHub Pages compatibility - use _site for production, ./build for local development
+# The destination will be overridden by GitHub Actions with --destination _site
+# This allows dual environment support: local dev uses ./build, GitHub Pages uses _site
+destination: ./build
+
 # Exclude from processing
 exclude:
   - .sass-cache/

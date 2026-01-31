@@ -24,16 +24,15 @@ gem 'nokogiri'
 # https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll
 # https://pages.github.com/versions/
 
-# Plugins
+# Plugins - All compatible with GitHub Pages via GitHub Actions custom build
 group :jekyll_plugins do
     # gem 'devlopr', '~> 0.4.5'
-    gem 'jgd', '~> 1.14.0'
-    gem 'jekyll-feed', '~> 0.17.0'
-#     gem 'jekyll-paginate', '~> 1.1.0'
-    gem 'jekyll-paginate-v2', '~> 3.0'
-    gem 'jekyll-gist', '~> 1.5.0'
-    gem 'jekyll-seo-tag', '~> 2.8.0'
-    gem 'jekyll-sitemap', '~> 1.4.0'
+    gem 'jgd', '~> 1.14.0'                    # GitHub Pages deployment tool
+    gem 'jekyll-feed', '~> 0.17.0'            # RSS/Atom feed generation - GitHub Pages compatible
+    gem 'jekyll-paginate-v2', '~> 3.0'        # Enhanced pagination - requires GitHub Actions build
+    gem 'jekyll-gist', '~> 1.5.0'             # GitHub Gist embedding - GitHub Pages compatible
+    gem 'jekyll-seo-tag', '~> 2.8.0'          # SEO metadata - GitHub Pages compatible
+    gem 'jekyll-sitemap', '~> 1.4.0'          # XML sitemap generation - GitHub Pages compatible
 
     # gem 'jekyll-admin', '~> 0.11.1'
 end
