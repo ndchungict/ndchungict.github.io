@@ -3,7 +3,7 @@ layout: post
 title: "[AI] Troubleshooting và FAQ - GitHub Copilot"
 summary: "Giải đáp các câu hỏi thường gặp và hướng dẫn xử lý sự cố khi sử dụng GitHub Copilot - từ cài đặt, performance đến bảo mật"
 author: chungnd
-date: '2025-01-30 13:30:00 +0700'
+date: '2026-01-30 13:30:00 +0700'
 category: ['ai','github-copilot']
 series: "tong-quan-github-copilot"
 thumbnail: /assets/post_images/it/post-img-laptop-code.png

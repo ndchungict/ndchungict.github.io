@@ -3,7 +3,7 @@ layout: post
 title: "[AI] Tính Năng Nâng Cao của GitHub Copilot"
 summary: "Khám phá các tính năng nâng cao của GitHub Copilot: Copilot Chat, Agent Mode, Copilot Edits, Code Review, và các công cụ mạnh mẽ khác"
 author: chungnd
-date: '2025-01-30 11:30:00 +0700'
+date: '2026-01-30 11:30:00 +0700'
 category: ['ai','github-copilot']
 series: "tong-quan-github-copilot"
 thumbnail: /assets/post_images/it/post-img-laptop-code.png

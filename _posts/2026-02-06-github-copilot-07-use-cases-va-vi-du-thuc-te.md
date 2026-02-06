@@ -3,7 +3,7 @@ layout: post
 title: "[AI] Use Cases và Ví Dụ Thực Tế với GitHub Copilot"
 summary: "Khám phá các use cases thực tế và ví dụ code hoàn chỉnh: Web Development, API, Testing, DevOps, Database, Security và nhiều hơn nữa"
 author: chungnd
-date: '2025-01-30 13:00:00 +0700'
+date: '2026-01-30 13:00:00 +0700'
 category: ['ai','github-copilot']
 series: "tong-quan-github-copilot"
 thumbnail: /assets/post_images/it/post-img-laptop-code.png

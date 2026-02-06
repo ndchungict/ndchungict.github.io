@@ -3,7 +3,7 @@ layout: post
 title: "[AI] Giới Thiệu GitHub Copilot"
 summary: "Tìm hiểu GitHub Copilot - trợ lý lập trình AI mạnh mẽ giúp bạn viết code nhanh hơn và hiệu quả hơn với các tính năng code completion, chat, và agent mode"
 author: chungnd
-date: '2025-01-30 10:00:00 +0700'
+date: '2026-01-30 10:00:00 +0700'
 category: ['ai','github-copilot']
 series: "tong-quan-github-copilot"
 thumbnail: /assets/post_images/it/post-img-laptop-code.png

@@ -3,7 +3,7 @@ layout: post
 title: "[AI] Cách Viết Prompts Hiệu Quả cho GitHub Copilot"
 summary: "Học cách viết prompts chất lượng cao để tận dụng tối đa GitHub Copilot với 3 nguyên tắc vàng, kỹ thuật nâng cao và ví dụ thực tế"
 author: chungnd
-date: '2025-01-30 11:00:00 +0700'
+date: '2026-01-30 11:00:00 +0700'
 category: ['ai','github-copilot']
 series: "tong-quan-github-copilot"
 thumbnail: /assets/post_images/it/post-img-laptop-code.png

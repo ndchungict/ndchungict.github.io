@@ -3,7 +3,7 @@ layout: post
 title: "[AI] GitHub Copilot cho Automation Tester"
 summary: "Hướng dẫn toàn diện cách sử dụng GitHub Copilot cho automation testing với Selenium, Playwright, Cypress - viết test nhanh hơn, hiệu quả hơn"
 author: chungnd
-date: '2025-01-30 12:00:00 +0700'
+date: '2026-01-30 12:00:00 +0700'
 category: ['ai','github-copilot','testing']
 series: "tong-quan-github-copilot"
 thumbnail: /assets/post_images/it/post-img-laptop-code.png
