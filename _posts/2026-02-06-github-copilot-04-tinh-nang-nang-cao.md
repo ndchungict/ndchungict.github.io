@@ -522,4 +522,4 @@ Các tính năng nâng cao của GitHub Copilot giúp bạn:
 - Maintain code quality với Code Review
 - Tận dụng context của toàn bộ workspace
 
-Hãy thử nghiệm từng tính năng để tìm ra workflow phù hợp nhất với bạn! 🚀
+Bài viết được viết bằng AI 🚀

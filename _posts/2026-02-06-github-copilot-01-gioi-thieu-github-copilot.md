@@ -6,7 +6,7 @@ author: chungnd
 date: '2025-01-30 10:00:00 +0700'
 category: ['ai','github-copilot']
 series: "tong-quan-github-copilot"
-thumbnail: /assets/post_images/github-copilot/gioi-thieu-github-copilot.webp
+thumbnail: /assets/post_images/it/post-img-laptop-code.png
 keywords: github copilot, ai coding assistant, code completion, copilot chat
 permalink: /gioi-thieu-github-copilot/
 usemathjax: false
@@ -164,4 +164,4 @@ GitHub Copilot là công cụ mạnh mẽ giúp tăng tốc quá trình phát tr
 - Biết khi nào nên tin tưởng và khi nào cần review kỹ
 - Kết hợp kiến thức lập trình của bạn với sức mạnh của AI
 
-Trong các phần tiếp theo, chúng ta sẽ tìm hiểu chi tiết cách cài đặt, sử dụng và tối ưu hoá GitHub Copilot cho công việc của bạn.
+Bài viết được viết bằng AI 🚀
