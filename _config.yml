@@ -16,6 +16,8 @@ urls:
       url: /automation
     - text: Devops
       url: /devops
+    - text: AI
+      url: /ai
     - text : Language
       url: /language
 #      submenu:
