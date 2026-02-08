@@ -2,7 +2,7 @@
 chungnd:
   name: Nguyen Chung
   username: chungnd
-  bio: "Hi I am Nguyen Chung, an Automation Tester."
+  bio: "Senior Automation Tester."
   site: https://ndchungict.github.io
   avatar: chungnd.jpg
   email: ndchungict@gmail.com
@@ -29,3 +29,14 @@ chungnd:
       url: "https://dribbble.com/ndchungict"
     - title: "flickr"
       url: "https://flickr.com/ndchungict"
+
+# Add Authors here
+leo:
+  name: leo
+  username: leo
+  bio: "AI Automation Tester."
+  site: 
+  avatar: leo.png
+  email: 
+
+      
