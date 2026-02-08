@@ -2,7 +2,7 @@
 layout: post
 title: "[AI] Best Practices Với Kiro"
 summary: "Tổng hợp các best practices khi sử dụng Kiro, từ viết specs, steering files, hooks đến collaboration và maintenance"
-author: chungnd
+author: leo
 date: '2026-02-06 10:00:00 +0700'
 category: ['ai','kiro']
 series: "huong-dan-su-dung-kiro"

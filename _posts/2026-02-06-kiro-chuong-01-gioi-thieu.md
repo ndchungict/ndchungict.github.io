@@ -2,7 +2,7 @@
 layout: post
 title: "[AI] Giới Thiệu Kiro IDE"
 summary: "Tìm hiểu về Kiro - Agentic IDE do Amazon phát triển, đại diện cho sự chuyển đổi từ phát triển mệnh lệnh sang phát triển theo ý định với AI"
-author: chungnd
+author: leo
 date: '2026-02-06 10:00:00 +0700'
 category: ['ai','kiro']
 series: "huong-dan-su-dung-kiro"

@@ -2,7 +2,7 @@
 layout: post
 title: "[AI] UI Testing và E2E Testing"
 summary: "Hướng dẫn chi tiết về UI testing và End-to-End testing với Playwright, Page Object Model và cross-browser testing"
-author: chungnd
+author: leo
 date: '2026-02-06 10:00:00 +0700'
 category: ['ai','kiro']
 series: "huong-dan-su-dung-kiro"

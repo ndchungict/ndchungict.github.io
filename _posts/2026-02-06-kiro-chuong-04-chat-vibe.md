@@ -2,7 +2,7 @@
 layout: post
 title: "[AI] Chat và Vibe Coding với Kiro"
 summary: "Hướng dẫn sử dụng Vibe mode - cách làm việc linh hoạt và nhanh chóng với Kiro thông qua chat interface"
-author: chungnd
+author: leo
 date: '2026-02-06 10:00:00 +0700'
 category: ['ai','kiro']
 series: "huong-dan-su-dung-kiro"

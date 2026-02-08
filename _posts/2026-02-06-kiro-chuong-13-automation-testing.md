@@ -2,7 +2,7 @@
 layout: post
 title: "[AI] Kiro Cho Automation Testing"
 summary: "Hướng dẫn automation tester sử dụng Kiro để tạo, quản lý và duy trì test automation suite hiệu quả"
-author: chungnd
+author: leo
 date: '2026-02-06 10:00:00 +0700'
 category: ['ai','kiro']
 series: "huong-dan-su-dung-kiro"

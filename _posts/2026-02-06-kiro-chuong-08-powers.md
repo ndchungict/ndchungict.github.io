@@ -2,7 +2,7 @@
 layout: post
 title: "[AI] Powers - Mở Rộng Khả Năng"
 summary: "Tìm hiểu về Powers - hệ thống plugin của Kiro cho phép mở rộng khả năng của AI agent với kiến thức chuyên môn và công cụ"
-author: chungnd
+author: leo
 date: '2026-02-06 10:00:00 +0700'
 category: ['ai','kiro']
 series: "huong-dan-su-dung-kiro"

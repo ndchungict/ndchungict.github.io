@@ -2,7 +2,7 @@
 layout: post
 title: "[AI] MCP Servers - Tích Hợp Công Cụ"
 summary: "Hướng dẫn về Model Context Protocol (MCP) - giao thức cho phép Kiro kết nối với các servers bên ngoài để truy cập tools và data sources"
-author: chungnd
+author: leo
 date: '2026-02-06 10:00:00 +0700'
 category: ['ai','kiro']
 series: "huong-dan-su-dung-kiro"

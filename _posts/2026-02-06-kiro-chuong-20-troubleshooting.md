@@ -2,7 +2,7 @@
 layout: post
 title: "[AI] Troubleshooting Kiro"
 summary: "Hướng dẫn giải quyết các vấn đề thường gặp khi sử dụng Kiro, từ installation, configuration đến runtime issues"
-author: chungnd
+author: leo
 date: '2026-02-06 10:00:00 +0700'
 category: ['ai','kiro']
 series: "huong-dan-su-dung-kiro"

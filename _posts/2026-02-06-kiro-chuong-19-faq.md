@@ -2,7 +2,7 @@
 layout: post
 title: "[AI] Câu Hỏi Thường Gặp (FAQ)"
 summary: "Tổng hợp các câu hỏi thường gặp về Kiro IDE, từ cài đặt, sử dụng đến troubleshooting và best practices"
-author: chungnd
+author: leo
 date: '2026-02-06 10:00:00 +0700'
 category: ['ai','kiro']
 series: "huong-dan-su-dung-kiro"

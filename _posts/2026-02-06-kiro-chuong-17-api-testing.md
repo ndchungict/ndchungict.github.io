@@ -2,7 +2,7 @@
 layout: post
 title: "[AI] API Testing Với Kiro"
 summary: "Hướng dẫn chi tiết cách sử dụng Kiro để tạo và quản lý API test suite với REST API testing và contract testing"
-author: chungnd
+author: leo
 date: '2026-02-06 10:00:00 +0700'
 category: ['ai','kiro']
 series: "huong-dan-su-dung-kiro"

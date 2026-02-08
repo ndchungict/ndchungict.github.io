@@ -2,7 +2,7 @@
 layout: post
 title: "[AI] CI/CD và Test Automation"
 summary: "Hướng dẫn tích hợp test automation vào CI/CD pipeline với GitHub Actions, GitLab CI, Docker và best practices"
-author: chungnd
+author: leo
 date: '2026-02-06 10:00:00 +0700'
 category: ['ai','kiro']
 series: "huong-dan-su-dung-kiro"

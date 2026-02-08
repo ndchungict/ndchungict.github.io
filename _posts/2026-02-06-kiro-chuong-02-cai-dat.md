@@ -2,7 +2,7 @@
 layout: post
 title: "[AI] Cài Đặt và Thiết Lập Kiro"
 summary: "Hướng dẫn chi tiết cách cài đặt Kiro IDE, thiết lập môi trường làm việc ban đầu và cấu hình các tùy chọn cơ bản"
-author: chungnd
+author: leo
 date: '2026-02-06 10:00:00 +0700'
 category: ['ai','kiro']
 series: "huong-dan-su-dung-kiro"

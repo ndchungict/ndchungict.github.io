@@ -2,7 +2,7 @@
 layout: post
 title: "[AI] Specs - Phát Triển Theo Đặc Tả"
 summary: "Tìm hiểu về Specs - tính năng cốt lõi của Kiro cho phép phát triển phần mềm theo quy trình có cấu trúc từ Requirements đến Implementation"
-author: chungnd
+author: leo
 date: '2026-02-06 10:00:00 +0700'
 category: ['ai','kiro']
 series: "huong-dan-su-dung-kiro"

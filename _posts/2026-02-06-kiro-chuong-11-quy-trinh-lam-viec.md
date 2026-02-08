@@ -2,7 +2,7 @@
 layout: post
 title: "[AI] Quy Trình Làm Việc Hiệu Quả"
 summary: "Trình bày các quy trình làm việc hiệu quả với Kiro cho cả cá nhân và team, bao gồm development workflow và collaboration"
-author: chungnd
+author: leo
 date: '2026-02-06 10:00:00 +0700'
 category: ['ai','kiro']
 series: "huong-dan-su-dung-kiro"

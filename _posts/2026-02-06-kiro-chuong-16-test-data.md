@@ -2,7 +2,7 @@
 layout: post
 title: "[AI] Quản Lý Test Data và Fixtures"
 summary: "Hướng dẫn chi tiết về quản lý test data, tạo factories, fixtures và strategies để maintain test data hiệu quả"
-author: chungnd
+author: leo
 date: '2026-02-06 10:00:00 +0700'
 category: ['ai','kiro']
 series: "huong-dan-su-dung-kiro"

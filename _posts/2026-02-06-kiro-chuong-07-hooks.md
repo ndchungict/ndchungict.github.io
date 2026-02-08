@@ -2,7 +2,7 @@
 layout: post
 title: "[AI] Hooks - Tự Động Hóa"
 summary: "Hướng dẫn sử dụng Hooks - hệ thống tự động hóa của Kiro cho phép trigger các hành động khi có sự kiện xảy ra"
-author: chungnd
+author: leo
 date: '2026-02-06 10:00:00 +0700'
 category: ['ai','kiro']
 series: "huong-dan-su-dung-kiro"

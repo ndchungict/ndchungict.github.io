@@ -2,7 +2,7 @@
 layout: post
 title: "[AI] Tạo Test Framework Với Kiro"
 summary: "Hướng dẫn chi tiết cách sử dụng Kiro để xây dựng test framework hoàn chỉnh từ đầu với Playwright, Jest và Page Object Model"
-author: chungnd
+author: leo
 date: '2026-02-06 10:00:00 +0700'
 category: ['ai','kiro']
 series: "huong-dan-su-dung-kiro"

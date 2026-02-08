@@ -2,7 +2,7 @@
 layout: post
 title: "[AI] Steering - Hướng Dẫn AI"
 summary: "Tìm hiểu về Steering - hệ thống bộ nhớ dài hạn của Kiro giúp AI hiểu và tuân thủ các quy chuẩn, nguyên tắc và best practices của team"
-author: chungnd
+author: leo
 date: '2026-02-06 10:00:00 +0700'
 category: ['ai','kiro']
 series: "huong-dan-su-dung-kiro"

@@ -2,7 +2,7 @@
 layout: post
 title: "[AI] Giao Diện và Tính Năng Cơ Bản Kiro"
 summary: "Giới thiệu giao diện người dùng của Kiro IDE, các panel chính, shortcuts hữu ích và cách sử dụng các tính năng cơ bản"
-author: chungnd
+author: leo
 date: '2026-02-06 10:00:00 +0700'
 category: ['ai','kiro']
 series: "huong-dan-su-dung-kiro"

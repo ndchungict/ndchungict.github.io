@@ -2,7 +2,7 @@
 layout: post
 title: "[AI] Dự Án Đầu Tiên Với Kiro"
 summary: "Hướng dẫn từng bước tạo dự án đầu tiên với Kiro, từ setup ban đầu đến deployment với Todo List API"
-author: chungnd
+author: leo
 date: '2026-02-06 10:00:00 +0700'
 category: ['ai','kiro']
 series: "huong-dan-su-dung-kiro"
