@@ -2,8 +2,8 @@
 name: Nguyen Chung
 username: chungnd
 bio: "Hi I am Nguyen Chung, an Automation Tester."
-site: https://chungnd.id.vn
-avatar: chungnd.png
+site: https://ndchungict.github.io
+avatar: chungnd.jpg
 email: ndchungict@gmail.com
 social:
     - title: "github"
