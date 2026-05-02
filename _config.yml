@@ -7,6 +7,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 
 # Navigation
 urls:
+    - text: About
+      url: /about
     - text: Home
       url: /
     - text : Articles
