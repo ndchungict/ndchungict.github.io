@@ -135,6 +135,62 @@ layout: default
     color: #c8a96e !important;
   }
 
+  /* Social icons row in contact */
+  .cv-social-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255,255,255,0.07);
+    flex-wrap: wrap;
+  }
+  .cv-social-icons a {
+    color: #aaa !important;
+    font-size: 1.1rem;
+    text-decoration: none !important;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 6px;
+    transition: all 0.2s;
+  }
+  .cv-social-icons a:hover {
+    color: #c8a96e !important;
+    border-color: #c8a96e;
+  }
+
+  /* Standalone social block */
+  .cv-social-block {
+    margin-bottom: 15px;
+  }
+  .cv-social-icons-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .cv-social-icons-row a {
+    color: #aaa !important;
+    font-size: 1.2rem;
+    text-decoration: none !important;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 8px;
+    transition: all 0.2s;
+  }
+  .cv-social-icons-row a:hover {
+    color: #c8a96e !important;
+    border-color: #c8a96e;
+    background: rgba(200,169,110,0.08);
+  }
+
   /* About Me */
   .cv-about-card {
     margin-bottom: 15px;
@@ -346,45 +402,42 @@ layout: default
     <div class="cv-card">
       <div class="cv-card-title">Contact <span>Me</span></div>
       <ul class="cv-contact-list">
-        {% if site.author_website_url %}
-        <li>
-          <i class="fas fa-globe"></i>
-          <a href="{{ site.author_website_url }}">{{ site.author_website_url | remove: 'https://' }}</a>
-        </li>
-        {% endif %}
-        {% if site.author_email %}
         <li>
           <i class="fas fa-envelope"></i>
-          <a href="mailto:{{ site.author_email }}">{{ site.author_email }}</a>
+          <a href="mailto:ndchungict@gmail.com">ndchungict@gmail.com</a>
         </li>
-        {% endif %}
-        {% if site.author_location %}
+        <li>
+          <i class="fas fa-phone"></i>
+          0943.313.848
+        </li>
         <li>
           <i class="fas fa-map-marker-alt"></i>
-          {{ site.author_location }}
+          332 Linh Nam, Hanoi
         </li>
-        {% endif %}
-        {% if site.github_username %}
-        <li>
-          <i class="fab fa-github"></i>
-          <a href="https://github.com/{{ site.github_username }}">github.com/{{ site.github_username }}</a>
-        </li>
-        {% endif %}
-        {% if site.linkedin_username %}
-        <li>
-          <i class="fab fa-linkedin"></i>
-          <a href="https://linkedin.com/in/{{ site.linkedin_username }}">linkedin.com/in/{{ site.linkedin_username }}</a>
-        </li>
-        {% endif %}
-        {% if site.facebook_username %}
-        <li>
-          <i class="fab fa-facebook"></i>
-          <a href="https://facebook.com/{{ site.facebook_username }}">fb.com/{{ site.facebook_username }}</a>
-        </li>
-        {% endif %}
       </ul>
     </div>
 
+  </div>
+
+  <!-- SOCIAL LINKS -->
+  <div class="cv-card cv-social-block">
+    <div class="cv-social-icons-row">
+      {% if site.author_website_url %}
+      <a href="{{ site.author_website_url }}" title="Website" target="_blank"><i class="fas fa-globe"></i></a>
+      {% endif %}
+      {% if site.github_username %}
+      <a href="https://github.com/{{ site.github_username }}" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+      {% endif %}
+      {% if site.linkedin_username %}
+      <a href="https://linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+      {% endif %}
+      {% if site.facebook_username %}
+      <a href="https://facebook.com/{{ site.facebook_username }}" title="Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+      {% endif %}
+      {% if site.twitter_username %}
+      <a href="https://twitter.com/{{ site.twitter_username }}" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+      {% endif %}
+    </div>
   </div>
 
   <!-- PERSONAL SKILLS -->
