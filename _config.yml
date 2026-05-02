@@ -1,7 +1,6 @@
 title: NguyenChung
-subtitle: Hello! I'm Chung, an automation tester.
+subtitle: Automation Tester | DevOps | AI Tools | TOEIC | HSK
 description: >- # this means to ignore newlines until "baseurl:"
-  Welcome to my site.
 
 url: "https://ndchungict.github.io" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -33,48 +32,64 @@ urls:
 # Edit Author details (For multi authors check _data/authors.yml)
 
 author_logo: chungnd.jpg
-author: Nguyen Chung
-author_bio: Hi, my name is Nguyen Duc Chung. Nice to see you!
+author: Nguyen Duc Chung
+author_bio: >-
+  Senior Automation Test Engineer với 9 năm kinh nghiệm trong lĩnh vực kiểm thử phần mềm,
+  chuyên sâu về automation testing cho các hệ thống ngân hàng.
+  Có kinh nghiệm xây dựng framework từ đầu với Katalon, Appium, Playwright, SerenityBDD.
+  Đam mê nghiên cứu và ứng dụng AI vào quy trình kiểm thử tự động.
 author_email: "ndchungict@gmail.com"
-author_location: Vietnam
+author_location: Hanoi, Vietnam
 author_website_url: "https://ndchungict.github.io"
 typewrite-text: Hi Everyone, Welcome To My Blog !
 hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
 
 # Experiences
 author_work_experiences:
-            - company_name: TP Bank
-              company_logo: about/company.jpeg
-              company_url: #
+            - company_name: TPBank (Ngân hàng Tiên Phong)
+              company_logo: about/tpbank.png
+              company_url: https://tpb.vn
               designation: Automation Test Engineer
-              description: Worked on various bank applications
+              description: "09/2022 - Hiện tại | Thiết kế framework kiểm thử tự động cho FCC, SmartVista, SaleApp (Katalon, Appium, Playwright). Tích hợp CI với Jenkins. Nghiên cứu ứng dụng AI vào quy trình kiểm thử."
               visibility: true
-            - company_name: MB Bank
+            - company_name: MBBank (Ngân hàng Quân Đội)
+              company_logo: about/mbbank.png
+              company_url: https://mbbank.com.vn
+              designation: Automation Test Mentor
+              description: "02/2020 - 09/2022 | Xây dựng framework cho Internet Banking & Mobile Banking với SerenityBDD + Appium. Mentoring 5-7 thành viên mới."
+              visibility: true
+            - company_name: MCredit (MB Shinsei Finance)
+              company_logo: about/mcredit.png
+              company_url: https://mcredit.com.vn
+              designation: Tester (Automation & Manual)
+              description: "2018 - 2020 | Kiểm thử hệ thống quản lý khoản vay. Xây dựng automation với Selenium WebDriver + Cucumber."
+              visibility: true
+            - company_name: Công ty TNHH Thương Mại VHC
               company_logo: about/company.jpeg
-              company_url: #
-              designation: Automation Test Engineer
-              description: Worked on various bank applications
+              company_url: "#"
+              designation: Nhân viên IT
+              description: "10/2013 - 09/2018 | Hỗ trợ kỹ thuật, bảo trì hệ thống mạng và thiết bị."
               visibility: true
 
 # Education
 author_education_details:
               - college_logo: about/hust.png
-                college_name: HUST
+                college_name: Đại Học Bách Khoa Hà Nội (HUST)
                 college_url: https://hust.edu.vn/
-                college_degree: Engineer
-                description: Information Technology
+                college_degree: Cao Đẳng
+                description: "Công nghệ Thông tin | 2009 – 2012"
                 visibility: true
 
 # Projects
 author_project_details:
               - project_thumbnail: about/cypress-project.png
                 project_title: Cypress WebUI Testing
-                project_description: WebUI testing with cypress.
+                project_description: WebUI automation testing framework với Cypress cho ứng dụng book shop.
                 project_url: https://github.com/ndchungict/cypress-book-shop
                 visibility: true
               - project_thumbnail: about/katalon-project.png
-                project_title: Katalon book shop
-                project_description: A test project written by Katalon Studio
+                project_title: Katalon Book Shop
+                project_description: Automation test project sử dụng Katalon Studio cho ứng dụng book shop.
                 project_url: https://github.com/ndchungict/katalon-book-shop
                 visibility: true
 
@@ -82,8 +97,8 @@ author_project_details:
 #twitter_username: ndchungict
 github_username:  ndchungict
 #instagram_username: ndchungict
-facebook_username: ndchungict
-# linkedin_username: ndchungict
+facebook_username: nguyenchungict
+linkedin_username: nguyen-duc-chung
 # behance_username: ndchungict
 # medium_username: ndchungict
 # telegram_username: ndchungict

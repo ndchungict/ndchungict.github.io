@@ -3,7 +3,7 @@ layout: post
 title: "[AI] Cài Đặt và Bắt Đầu với GitHub Copilot"
 summary: "Hướng dẫn chi tiết cách cài đặt và thiết lập GitHub Copilot trên các IDE phổ biến như VS Code, JetBrains, Visual Studio và bắt đầu sử dụng ngay"
 author: chungnd
-date: '2026-01-30 10:30:00 +0700'
+date: '2026-02-06 10:30:00 +0700'
 category: ['ai','github-copilot']
 series: "tong-quan-github-copilot"
 thumbnail: /assets/post_images/it/post-img-laptop-code.png

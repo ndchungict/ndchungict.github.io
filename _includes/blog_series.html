@@ -1,4 +1,6 @@
-
-            <li class="tag-head">
-                <a href="{{ site.baseurl }}/series/{{ tag_name }}">Docker</a>
-            </li>
+{% assign series_list = site.posts | map: "series" | compact | uniq | sort %}
+{% for series_slug in series_list %}
+<li class="tag-head">
+    <a href="{{ site.baseurl }}/series/{{ series_slug }}">{{ series_slug | replace: "-", " " | capitalize }}</a>
+</li>
+{% endfor %}

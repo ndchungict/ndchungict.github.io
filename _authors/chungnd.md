@@ -1,7 +1,7 @@
 ---
-name: Nguyen Chung
+name: Nguyen Duc Chung
 username: chungnd
-bio: "Hi I am Nguyen Chung, an Automation Tester."
+bio: "Senior Automation Test Engineer | TPBank | Katalon · Appium · Playwright · SerenityBDD | AI-assisted Testing"
 site: https://ndchungict.github.io
 avatar: chungnd.jpg
 email: ndchungict@gmail.com
@@ -9,23 +9,7 @@ social:
     - title: "github"
       url: "https://github.com/ndchungict"
     - title: "linkedin"
-      url: "https://www.linkedin.com/in/ndchungict"
-    - title: "youtube"
-      url: "https://www.youtube.com/channel/"
+      url: "https://www.linkedin.com/in/nguyen-duc-chung"
     - title: "facebook"
-      url: "https://www.facebook.com/ndchungict"
-    - title: "twitter"
-      url: "https://www.twitter.com/ndchungict"
-    - title: "behance"
-      url: "https://behance.com/ndchungict"
-    - title: "instagram"
-      url: "https://instagram.com/ndchungict"
-    - title: "medium"
-      url: "https://medium.com/ndchungict"
-    - title: "telegram"
-      url: "https://telegram.com/ndchungict"
-    - title: "dribbble"
-      url: "https://dribbble.com/ndchungict"
-    - title: "flickr"
-      url: "https://flickr.com/ndchungict"
+      url: "https://www.facebook.com/nguyenchungict"
 ---
