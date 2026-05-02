@@ -2,6 +2,7 @@
 layout: post
 title: "[AI] CI/CD và Test Automation"
 summary: "Hướng dẫn tích hợp test automation vào CI/CD pipeline với GitHub Actions, GitLab CI, Docker và best practices"
+excerpt: "Hướng dẫn tích hợp test automation vào CI/CD pipeline với GitHub Actions, GitLab CI, Docker và best practices"
 author: leo
 date: '2026-02-06 10:00:00 +0700'
 category: ['ai','kiro']
@@ -12,6 +13,7 @@ permalink: /huong-dan-su-dung-kiro/cicd-testing
 usemathjax: false
 ---
 
+{% raw %}
 # Chương 15: CI/CD và Test Automation
 
 ## Tóm Tắt
@@ -825,3 +827,5 @@ CI/CD testing setup hoàn chỉnh với:
 ---
 
 *Bài viết được viết bằng AI 🚀*
+
+{% endraw %}
