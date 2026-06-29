@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0d1117"/>
+  <rect width="5" height="630" fill="#f05032"/>
+  <rect x="680" y="50" width="480" height="360" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <rect x="680" y="50" width="480" height="36" rx="8" fill="#21262d"/>
+  <rect x="680" y="68" width="480" height="18" fill="#21262d"/>
+  <circle cx="702" cy="68" r="6" fill="#ff5f57"/>
+  <circle cx="724" cy="68" r="6" fill="#febc2e"/>
+  <circle cx="746" cy="68" r="6" fill="#28c840"/>
+  <text x="855" y="71" font-family="monospace" font-size="12" fill="#8b949e" text-anchor="middle">bash — git advanced</text>
+  <text x="700" y="116" font-family="'Courier New', monospace" font-size="13" fill="#58a6ff">$ git stash push -m "WIP: đang làm login"</text>
+  <text x="700" y="140" font-family="'Courier New', monospace" font-size="13" fill="#8b949e">Saved working directory: WIP: đang làm login</text>
+  <text x="700" y="172" font-family="'Courier New', monospace" font-size="13" fill="#58a6ff">$ git cherry-pick a1b2c3d</text>
+  <text x="700" y="196" font-family="'Courier New', monospace" font-size="13" fill="#8b949e">[main a4b5c6d] Fix: sửa lỗi validation</text>
+  <text x="700" y="228" font-family="'Courier New', monospace" font-size="13" fill="#58a6ff">$ git reset --soft HEAD~1</text>
+  <text x="700" y="252" font-family="'Courier New', monospace" font-size="13" fill="#8b949e">Unstaged changes after reset:</text>
+  <text x="700" y="276" font-family="'Courier New', monospace" font-size="13" fill="#f0e68c">M  src/components/Login.vue</text>
+  <text x="700" y="308" font-family="'Courier New', monospace" font-size="13" fill="#58a6ff">$ git reflog</text>
+  <text x="700" y="332" font-family="'Courier New', monospace" font-size="13" fill="#f05032">a1b2c3d</text>
+  <text x="762" y="332" font-family="'Courier New', monospace" font-size="13" fill="#8b949e"> HEAD@{0}: reset: moving to HEAD~1</text>
+  <text x="700" y="380" font-family="'Courier New', monospace" font-size="16" fill="#58a6ff">█</text>
+  <rect x="60" y="56" width="210" height="34" rx="17" fill="none" stroke="#f05032" stroke-width="1.5"/>
+  <text x="165" y="78" font-family="'Courier New', monospace" font-size="13" fill="#f05032" text-anchor="middle" font-weight="bold">Series Git · Bài 07/08</text>
+  <text x="60" y="185" font-family="'Segoe UI', Arial, sans-serif" font-size="60" fill="#ffffff" font-weight="bold">Git Nâng Cao</text>
+  <text x="60" y="258" font-family="'Segoe UI', Arial, sans-serif" font-size="32" fill="#8b949e">stash · cherry-pick · reset</text>
+  <text x="60" y="302" font-family="'Segoe UI', Arial, sans-serif" font-size="32" fill="#8b949e">revert · reflog · bisect</text>
+  <rect x="60" y="430" width="72" height="30" rx="4" fill="none" stroke="#1d4ed8" stroke-width="1"/>
+  <text x="96" y="450" font-family="'Courier New', monospace" font-size="13" fill="#60a5fa" text-anchor="middle">#git</text>
+  <rect x="144" y="430" width="90" height="30" rx="4" fill="none" stroke="#1d4ed8" stroke-width="1"/>
+  <text x="189" y="450" font-family="'Courier New', monospace" font-size="13" fill="#60a5fa" text-anchor="middle">#devops</text>
+  <rect x="0" y="596" width="1200" height="34" fill="#161b22"/>
+  <text x="60" y="618" font-family="'Courier New', monospace" font-size="12" fill="#484f58">blog.chungnd.dev</text>
+  <text x="1140" y="618" font-family="'Courier New', monospace" font-size="12" fill="#f05032" text-anchor="end">07 / 08</text>
+</svg>

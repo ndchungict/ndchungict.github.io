@@ -42,10 +42,23 @@ hugo-blog-page/
 
 ## Content
 
+### Quy tắc đặt tên file
+
+Tên file bài viết theo format: `yyyyMMdd-hhmm-ten-bai-viet.md`
+
+- `yyyyMMdd` — ngày viết (ví dụ: `20260629`)
+- `hhmm` — giờ:phút (ví dụ: `0800`)
+- `ten-bai-viet` — slug kebab-case
+
+Ví dụ: `20260629-0800-git-la-gi-tai-sao-can-dung-git.md`
+
+> Lưu ý: `slug` trong front matter vẫn **không có prefix ngày giờ**, chỉ là `git-la-gi-tai-sao-can-dung-git`. Hugo dùng `slug` để tạo URL, không dùng tên file khi `slug` được khai báo.
+
 ### Tạo bài viết mới
 
 ```bash
 hugo new content posts/<ten-bai>.md
+# Rồi đổi tên file: mv <ten-bai>.md <yyyyMMdd-hhmm-ten-bai>.md
 ```
 
 Front matter mặc định (`archetypes/default.md`):
