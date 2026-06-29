@@ -1,7 +1,9 @@
 baseURL = 'https://example.org/'
-locale = 'en-us'
-title = 'My New Hugo Project'
+locale = 'vi-vn'
+title = 'Nguyen Chung Notebook'
 theme = 'hugo-blog-theme'
+
+paginate = 6
 
 [permalinks]
   posts = '/posts/:slug/'
@@ -11,3 +13,51 @@ theme = 'hugo-blog-theme'
   tag      = 'tags'
   series   = 'series'
   author   = 'authors'
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel   = 3
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[params]
+  description = 'Blog chia sẻ kiến thức IT, Automation Testing, Tiếng Anh và Tiếng Trung dành cho developer Việt Nam.'
+  author      = 'Nguyễn Chung'
+  role        = 'Senior Automation Test Engineer'
+  email       = 'nguyenchung.dev@gmail.com'
+  tagline     = 'Share • Learn • Grow'
+  # Web3Forms — dán access key lấy từ web3forms.com (cần cho trang Contact)
+  web3formsKey = ''
+
+  [params.social]
+    github   = 'https://github.com/ndchungict'
+    linkedin = 'https://linkedin.com/in/nguyenchung'
+    youtube  = 'https://youtube.com/@nguyenchung'
+
+  # Danh sách category cố định (có thứ tự) — label song ngữ + emoji + class màu.
+  # key = tên term trong taxonomy `categories`.
+  [[params.categories]]
+    key = 'it'
+    labelVI = 'IT & Lập trình'
+    labelEN = 'IT & Tech'
+    emoji = '💻'
+    color = 'is-it'
+  [[params.categories]]
+    key = 'automation'
+    labelVI = 'Automation Test'
+    labelEN = 'Automation'
+    emoji = '🤖'
+    color = 'is-auto'
+  [[params.categories]]
+    key = 'english'
+    labelVI = 'Tiếng Anh'
+    labelEN = 'English'
+    emoji = '🇬🇧'
+    color = 'is-en'
+  [[params.categories]]
+    key = 'chinese'
+    labelVI = 'Tiếng Trung'
+    labelEN = 'Chinese'
+    emoji = '🀄'
+    color = 'is-cn'

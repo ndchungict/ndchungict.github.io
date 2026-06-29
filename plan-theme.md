@@ -19,43 +19,46 @@
 
 ---
 
-## ⛳ Phase 0 — Chốt quyết định (làm trước tiên)
-- [ ] **Song ngữ**: VI-only trước (khuyến nghị) hay đa ngữ VI/EN ngay? → quyết định: ______
-- [ ] **Lượt xem / độc giả/tháng**: bỏ hẳn hay để số tĩnh trong `hugo.toml`? → ______
-- [ ] **Ảnh bìa**: giữ SVG (theo CLAUDE.md) hay chuyển PNG như `covers/`? → ______
-- [ ] **Form liên hệ**: Formspree/Web3Forms hay chỉ `mailto:`? → ______
-- [ ] **Tiến độ series (mark-as-read)**: có làm không? → ______
+## ⛳ Phase 0 — Chốt quyết định (ĐÃ CHỐT)
+- [x] **Song ngữ**: UI song ngữ VI/EN, **mặc định VI**. Nút VI/EN đổi label giao diện (nav, button, nhãn) — **nội dung bài viết giữ nguyên VI, không dịch**. ⇒ dùng từ điển UI string + JS toggle (như mockup), KHÔNG nhân đôi content, KHÔNG dùng multilingual content mode.
+- [x] **Lượt xem / độc giả/tháng**: làm CUỐI CÙNG, nghiên cứu thêm → tạm bỏ khỏi Phase 1-3 (chỗ nào cần thì ẩn).
+- [x] **Ảnh bìa**: giữ **SVG** (theo CLAUDE.md), đặt trong `static/images/`.
+- [x] **Form liên hệ**: **Web3Forms** (`action=https://api.web3forms.com/submit` + `access_key` ẩn lưu trong `hugo.toml`). ⚠️ Cần user cung cấp access key.
+- [x] **Tiến độ series (mark-as-read)**: **có** — JS + localStorage `ncn-series-*`.
 
 ---
 
 ## 🧱 Phase 1 — Nền tảng (lên hình tĩnh, VI, dark/light)
 
 ### 1.1 CSS tokens & base (`assets/css/main.css`)
-- [ ] Khai báo `:root` (dark mặc định): `--c-bg/#0D1117`, `--c-surface/#161B22`, `--c-card/#1C2128`, `--c-code/#0A0E14`, `--c-border/#30363D`, `--c-text/#E6EDF3`, `--c-text2/#8B949E`
-- [ ] Khai báo `[data-theme="light"]`: `#F6F8FA / #FFFFFF / #FFFFFF / #D0D7DE / #1F2937 / #57606A`
-- [ ] Accent + category cố định: `--c-accent/#F97316`, `--c-accent-hover/#EA6C10`, `--cat-it/-auto/-en/-cn`
-- [ ] Reset (`box-sizing`, margin/padding 0, `a` reset) + biến layout (container 1200px, padding 32px/18px)
-- [ ] Import Google Fonts: Space Grotesk + JetBrains Mono
-- [ ] `@keyframes`: `blink`, `fadeUp`, `chipFloat`, `floaty`, `checkPop` + bọc `prefers-reduced-motion`
-- [ ] Utility classes dùng lại: `.container`, `.btn`/`.btn--primary`, `.tag-pill`, `.badge`, `.section-head`
+- [x] Khai báo `:root` (dark mặc định): `--c-bg/#0D1117`, `--c-surface/#161B22`, `--c-card/#1C2128`, `--c-code/#0A0E14`, `--c-border/#30363D`, `--c-text/#E6EDF3`, `--c-text2/#8B949E`
+- [x] Khai báo `[data-theme="light"]`: `#F6F8FA / #FFFFFF / #FFFFFF / #D0D7DE / #1F2937 / #57606A`
+- [x] Accent + category cố định: `--c-accent/#F97316`, `--c-accent-hover/#EA6C10`, `--cat-it/-auto/-en/-cn`
+- [x] Reset (`box-sizing`, margin/padding 0, `a` reset) + biến layout (container 1200px, padding 32px/18px)
+- [x] Import Google Fonts: Space Grotesk + JetBrains Mono (qua `<link>` trong head.html)
+- [x] `@keyframes`: `blink`, `fadeUp`, `chipFloat`, `floaty`, `checkPop` + bọc `prefers-reduced-motion`
+- [x] Utility classes dùng lại: `.container`, `.btn`/`.btn--primary`, `.tag-pill`, `.badge`, `.section-head`
 
 ### 1.2 Head + JS nền
-- [ ] `_partials/head.html`: thêm fonts, meta description/OG/canonical, link `main.css` (fingerprint)
-- [ ] Inline script chống FOUC (set `data-theme` từ localStorage ngay đầu `<head>`)
-- [ ] `assets/js/main.js`: `initTheme()` (toggle dark/light + icon ☀/☽ + lưu localStorage)
-- [ ] `main.js`: `initMobileNav()` (mở/đóng burger menu)
+- [x] `_partials/head.html`: thêm fonts, meta description/OG/canonical, link `main.css` (fingerprint)
+- [x] Inline script chống FOUC (set `data-theme` từ localStorage ngay đầu `<head>`)
+- [x] `assets/js/main.js`: `initTheme()` (toggle dark/light + icon ☀/☽ + lưu localStorage)
+- [x] `main.js`: `initMobileNav()` (mở/đóng burger menu)
+- [x] `main.js`: `initLang()` — toggle VI/EN cho **UI string** (mặc định VI, lưu `ncn-lang`); dịch phần tử có `data-vi`/`data-en`. KHÔNG đụng `.Content` bài viết.
+- [x] Từ điển UI string VI/EN: dùng cơ chế `data-vi`/`data-en` trên template (đặt trực tiếp tại nhãn).
 
 ### 1.3 Khung chung
-- [ ] `baseof.html`: `<html data-theme lang>`, gắn navbar + mobile nav + search overlay + `{{ block "main" }}` + footer
-- [ ] `_partials/header.html`: navbar 64px sticky blur — logo "NC" + menu + nút search/lang(ẩn nếu VI-only)/theme + burger
-- [ ] `_partials/nav-mobile.html`: menu mobile xổ xuống
-- [ ] `_partials/footer.html`: footer lớn (home) + footer gọn (trang con)
+- [x] `baseof.html`: `<html data-theme lang>`, gắn navbar + mobile nav + `{{ block "main" }}` + footer _(search overlay để Phase 4)_
+- [x] `_partials/header.html`: navbar 64px sticky blur — logo "NC" + menu (category lấy từ `hugo.toml`) + nút lang(VI⇄EN)/theme + burger _(search btn để Phase 4)_
+- [x] `_partials/nav-mobile.html`: menu mobile xổ xuống
+- [x] `_partials/footer.html`: footer lớn (home) + footer gọn (trang con)
+- [x] `hugo.toml`: `[params]` + `[[params.categories]]` (it/automation/english/chinese: label VI/EN + emoji + class màu) + `paginate=6` + markup TOC/unsafe
 
 ### 1.4 Partial tái sử dụng
-- [ ] `_partials/post-card.html`: thumb 150px + bottom gradient bar theo category + tag + title + meta
-- [ ] `_partials/series-card.html`: cover + badge category + số phần·phút + desc + progress + CTA
-- [ ] `_partials/terms.html`: restyle thành tag pill `#tag` (mono)
-- [ ] Fallback ảnh: gradient + emoji category khi thiếu `thumbnail`
+- [x] `_partials/post-card.html`: thumb 150px + bottom gradient bar theo category + tag + title + meta
+- [x] `_partials/series-card.html`: cover + badge category + số phần + desc + CTA _(progress để Phase 3)_
+- [x] `_partials/terms.html`: restyle thành tag pill `#tag` (mono)
+- [x] Fallback ảnh: gradient + emoji category khi thiếu `thumbnail`
 
 ---
 
@@ -122,7 +125,8 @@
 
 ## 🔧 Phase 4 — Nâng cao (optional)
 - [ ] Search overlay + Fuse.js + JSON index (`initSearch()` lọc thật)
-- [ ] Song ngữ VI/EN bằng Hugo i18n (nếu Phase 0 chốt làm)
+- [ ] Hoàn thiện phủ UI string VI/EN cho toàn bộ trang (rà soát nhãn còn sót)
+- [ ] Lượt xem / độc giả/tháng (nghiên cứu nguồn số liệu — đã hoãn từ Phase 0)
 - [ ] Code block render hook (terminal traffic-light + tên file)
 - [ ] Callout shortcodes (Pros/Cons, TL;DR)
 - [ ] Rà responsive toàn bộ + `prefers-reduced-motion`

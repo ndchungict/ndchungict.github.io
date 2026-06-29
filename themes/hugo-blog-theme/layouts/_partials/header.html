@@ -1,2 +1,41 @@
-<h1>{{ site.Title }}</h1>
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+{{- /* Navbar — logo + menu + actions. Category lấy từ site.Params.categories.
+       Nhãn song ngữ: span[data-vi][data-en], JS đổi theo localStorage ncn-lang. */}}
+<nav class="nav">
+  <a class="nav__brand" href="{{ "/" | relURL }}">
+    <span class="nav__logo">NC</span>
+    <span>
+      <span class="nav__brand-name">Nguyen Chung</span><br>
+      <span class="nav__brand-sub">Notebook</span>
+    </span>
+  </a>
+
+  <div class="nav__links">
+    <a class="nav__link {{ if .IsHome }}active{{ end }}" href="{{ "/" | relURL }}">
+      <span data-vi="Trang chủ" data-en="Home">Trang chủ</span>
+    </a>
+    {{- range site.Params.categories }}
+      {{- $term := site.GetPage (printf "/categories/%s" .key) }}
+      {{- if $term }}
+        <a class="nav__link {{ if eq $.RelPermalink $term.RelPermalink }}active{{ end }}" href="{{ $term.RelPermalink }}">
+          <span data-vi="{{ .labelVI }}" data-en="{{ .labelEN }}">{{ .labelVI }}</span>
+        </a>
+      {{- end }}
+    {{- end }}
+    {{- with site.GetPage "/series" }}
+      <a class="nav__link {{ if hasPrefix $.RelPermalink .RelPermalink }}active{{ end }}" href="{{ .RelPermalink }}">Series</a>
+    {{- end }}
+    <a class="nav__link {{ if eq .Section "about" }}active{{ end }}" href="{{ "/about/" | relURL }}">
+      <span data-vi="Giới thiệu" data-en="About">Giới thiệu</span>
+    </a>
+  </div>
+
+  <div class="nav__actions">
+    <button class="nav__btn nav__burger" data-nav-burger aria-label="Menu">
+      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <button class="nav__btn nav__btn--lang" data-lang-toggle aria-label="Language">VI</button>
+    <button class="nav__btn" data-theme-toggle aria-label="Theme">☀</button>
+  </div>
+</nav>
+
+{{ partial "nav-mobile.html" . }}

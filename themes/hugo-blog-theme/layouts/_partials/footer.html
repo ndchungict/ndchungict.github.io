@@ -1,1 +1,70 @@
-<p>Copyright {{ now.Year }}. All rights reserved.</p>
+{{- /* Footer: bản đầy đủ ở trang chủ, bản gọn ở trang con. */}}
+{{- if .IsHome }}
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__grid">
+      <div>
+        <a class="nav__brand" href="{{ "/" | relURL }}">
+          <span class="nav__logo">NC</span>
+          <span>
+            <span class="nav__brand-name">Nguyen Chung Notebook</span><br>
+            <span class="nav__brand-sub">Knowledge Blog</span>
+          </span>
+        </a>
+        <p class="footer__desc">{{ site.Params.description }}</p>
+        <div class="footer__socials">
+          {{- with site.Params.social.github }}<a class="footer__social" href="{{ . }}" aria-label="GitHub">🐙</a>{{ end }}
+          {{- with site.Params.social.linkedin }}<a class="footer__social" href="{{ . }}" aria-label="LinkedIn">in</a>{{ end }}
+          {{- with site.Params.social.youtube }}<a class="footer__social" href="{{ . }}" aria-label="YouTube">▶️</a>{{ end }}
+        </div>
+      </div>
+
+      <div>
+        <div class="footer__col-title"><span data-vi="Chủ đề" data-en="Topics">Chủ đề</span></div>
+        <div class="footer__links">
+          {{- range site.Params.categories }}
+            {{- $term := site.GetPage (printf "/categories/%s" .key) }}
+            {{- if $term }}
+              <a href="{{ $term.RelPermalink }}"><span data-vi="{{ .labelVI }}" data-en="{{ .labelEN }}">{{ .labelVI }}</span></a>
+            {{- end }}
+          {{- end }}
+        </div>
+      </div>
+
+      <div>
+        <div class="footer__col-title"><span data-vi="Trang" data-en="Pages">Trang</span></div>
+        <div class="footer__links">
+          <a href="{{ "/" | relURL }}"><span data-vi="Trang chủ" data-en="Home">Trang chủ</span></a>
+          <a href="{{ "/about/" | relURL }}"><span data-vi="Giới thiệu" data-en="About">Giới thiệu</span></a>
+          <a href="{{ "/contact/" | relURL }}"><span data-vi="Liên hệ" data-en="Contact">Liên hệ</span></a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer__col-title"><span data-vi="Liên hệ" data-en="Contact">Liên hệ</span></div>
+        <div class="footer__links">
+          <a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a>
+          <a href="{{ "/contact/" | relURL }}"><span data-vi="Gửi tin nhắn →" data-en="Send a message →">Gửi tin nhắn →</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© {{ now.Year }} Nguyen Chung Notebook. <span data-vi="Mọi quyền được bảo lưu." data-en="All rights reserved.">Mọi quyền được bảo lưu.</span></span>
+    </div>
+  </div>
+</footer>
+{{- else }}
+<footer class="footer footer--slim">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <span class="nav__logo" style="width:30px;height:30px;font-size:11px">NC</span>
+      <span style="font-size:13px;color:var(--c-text2)">© {{ now.Year }} Nguyen Chung Notebook</span>
+    </div>
+    <div class="footer__nav">
+      <a href="{{ "/" | relURL }}"><span data-vi="Trang chủ" data-en="Home">Trang chủ</span></a>
+      <a href="{{ "/about/" | relURL }}"><span data-vi="Giới thiệu" data-en="About">Giới thiệu</span></a>
+      <a href="{{ "/contact/" | relURL }}"><span data-vi="Liên hệ" data-en="Contact">Liên hệ</span></a>
+    </div>
+  </div>
+</footer>
+{{- end }}

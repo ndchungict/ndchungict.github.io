@@ -1,0 +1,28 @@
+{{- /* Series card — context: 1 taxonomy term page của `series`.
+       Màu/emoji suy từ category của bài đầu tiên trong series. */}}
+{{- $s := . }}
+{{- $parts := len $s.Pages }}
+{{- $first := index ($s.Pages.ByWeight) 0 }}
+{{- $catKey := "" }}
+{{- with $first }}{{ $catKey = index (or .Params.categories slice) 0 }}{{ end }}
+{{- $color := "" }}{{ $emoji := "📚" }}{{ $catLabel := "" }}
+{{- range site.Params.categories }}
+  {{- if eq .key $catKey }}{{ $color = .color }}{{ $emoji = .emoji }}{{ $catLabel = .labelVI }}{{ end }}
+{{- end }}
+{{- $cover := $s.Params.cover }}
+<a class="series-card {{ $color }}" href="{{ $s.RelPermalink }}">
+  <div class="series-card__media">
+    {{- with $cover }}
+      <img src="{{ . }}" alt="{{ $s.LinkTitle }}" loading="lazy">
+    {{- else }}
+      <div class="series-card__media-fallback">{{ $emoji }}</div>
+    {{- end }}
+    {{- with $catLabel }}<span class="series-card__cat">{{ . }}</span>{{ end }}
+    <span class="series-card__count">{{ $parts }} <span data-vi="phần" data-en="parts">phần</span></span>
+  </div>
+  <div class="series-card__body">
+    <h3 class="series-card__title">{{ $s.LinkTitle }}</h3>
+    {{- with $s.Params.description }}<p class="series-card__desc">{{ . }}</p>{{ end }}
+    <span class="series-card__cta"><span data-vi="Xem series →" data-en="View series →">Xem series →</span></span>
+  </div>
+</a>

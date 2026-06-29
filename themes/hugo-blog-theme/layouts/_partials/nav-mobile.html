@@ -1,0 +1,23 @@
+{{- /* Menu mobile xổ xuống — toggle bằng .open (JS initMobileNav). */}}
+<div class="nav-mobile" data-nav-mobile>
+  <a class="nav-mobile__link {{ if .IsHome }}active{{ end }}" href="{{ "/" | relURL }}">
+    <span data-vi="Trang chủ" data-en="Home">Trang chủ</span>
+  </a>
+  {{- range site.Params.categories }}
+    {{- $term := site.GetPage (printf "/categories/%s" .key) }}
+    {{- if $term }}
+      <a class="nav-mobile__link {{ if eq $.RelPermalink $term.RelPermalink }}active{{ end }}" href="{{ $term.RelPermalink }}">
+        <span data-vi="{{ .labelVI }}" data-en="{{ .labelEN }}">{{ .labelVI }}</span>
+      </a>
+    {{- end }}
+  {{- end }}
+  {{- with site.GetPage "/series" }}
+    <a class="nav-mobile__link" href="{{ .RelPermalink }}">Series</a>
+  {{- end }}
+  <a class="nav-mobile__link {{ if eq .Section "about" }}active{{ end }}" href="{{ "/about/" | relURL }}">
+    <span data-vi="Giới thiệu" data-en="About">Giới thiệu</span>
+  </a>
+  <a class="nav-mobile__link {{ if eq .Section "contact" }}active{{ end }}" href="{{ "/contact/" | relURL }}">
+    <span data-vi="Liên hệ" data-en="Contact">Liên hệ</span>
+  </a>
+</div>

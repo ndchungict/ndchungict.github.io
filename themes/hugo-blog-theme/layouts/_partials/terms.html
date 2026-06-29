@@ -1,3 +1,4 @@
+{{- /* Danh sách term của 1 taxonomy → tag pill. */}}
 {{- $page := .page }}
 {{- $taxonomy := .taxonomy }}
 
@@ -6,9 +7,7 @@
     <span class="terms__label">{{ (index . 0).Parent.LinkTitle }}:</span>
     <ul class="terms__list">
       {{- range . }}
-        <li class="terms__item">
-          <a class="terms__link" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-        </li>
+        <li><a class="tag-pill" href="{{ .RelPermalink }}">{{ if eq $taxonomy "tags" }}#{{ end }}{{ .LinkTitle }}</a></li>
       {{- end }}
     </ul>
   </div>

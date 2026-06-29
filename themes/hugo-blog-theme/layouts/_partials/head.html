@@ -1,5 +1,33 @@
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{{- /* Chống FOUC: set data-theme từ localStorage trước khi render */}}
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem('ncn-dark');
+      document.documentElement.dataset.theme = (t === 'false') ? 'light' : 'dark';
+    } catch (e) { document.documentElement.dataset.theme = 'dark'; }
+  })();
+</script>
+
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+
+{{- $desc := or .Description .Summary site.Params.description }}
+{{- with $desc }}<meta name="description" content="{{ . | plainify | truncate 160 }}">{{ end }}
+<link rel="canonical" href="{{ .Permalink }}">
+
+{{- /* Open Graph */}}
+<meta property="og:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }}{{ end }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+{{- with $desc }}<meta property="og:description" content="{{ . | plainify | truncate 160 }}">{{ end }}
+{{- with .Params.thumbnail }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+
+{{- /* Fonts */}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
 {{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}

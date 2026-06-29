@@ -1,0 +1,30 @@
+{{- /* Post card — context: 1 page (bài viết).
+       Tự suy màu/emoji theo category đầu tiên từ site.Params.categories. */}}
+{{- $p := . }}
+{{- $catKey := index (or $p.Params.categories slice) 0 }}
+{{- $color := "" }}{{ $emoji := "📄" }}{{ $catLabel := "" }}
+{{- range site.Params.categories }}
+  {{- if eq .key $catKey }}{{ $color = .color }}{{ $emoji = .emoji }}{{ $catLabel = .labelVI }}{{ end }}
+{{- end }}
+{{- $tag := $catLabel }}
+{{- with $p.Params.tags }}{{ $tag = index . 0 }}{{ end }}
+<a class="post-card {{ $color }}" href="{{ $p.RelPermalink }}">
+  <div class="post-card__media">
+    {{- with $p.Params.thumbnail }}
+      <img src="{{ . }}" alt="{{ $p.Title }}" loading="lazy">
+    {{- else }}
+      <div class="post-card__media-fallback">{{ $emoji }}</div>
+    {{- end }}
+    <span class="post-card__bar"></span>
+  </div>
+  <div class="post-card__body">
+    <div class="post-card__meta-top">
+      <span class="badge">{{ $tag }}</span>
+      <span>· {{ $p.ReadingTime }} <span data-vi="phút đọc" data-en="min read">phút đọc</span></span>
+    </div>
+    <h3 class="post-card__title">{{ $p.Title }}</h3>
+    <div class="post-card__meta-bottom">
+      <time datetime="{{ $p.Date.Format "2006-01-02" }}">{{ $p.Date.Format "02 Jan 2006" }}</time>
+    </div>
+  </div>
+</a>
