@@ -1,30 +1,131 @@
 {{ define "main" }}
-<section class="hero">
-  <h2 class="hero__title">{{ .Title }}</h2>
-  <p class="hero__subtitle">{{ .Description }}</p>
-</section>
+{{- $posts := where site.RegularPages "Section" "posts" }}
+{{- $featured := index (where $posts "Params.featured" true) 0 }}
+{{- if not $featured }}{{ $featured = index $posts 0 }}{{ end }}
 
-<section class="posts">
-  <h2 class="posts__heading">Latest Posts</h2>
-  <div class="post-list">
-    {{ range site.RegularPages }}
-    <article class="post-card">
-      {{ with .Params.thumbnail }}
-      <a class="post-card__image-link" href="{{ $.RelPermalink }}">
-        <img class="post-card__image" src="{{ . }}" alt="{{ $.Title }}">
-      </a>
-      {{ end }}
-      <div class="post-card__body">
-        <h2 class="post-card__title">
-          <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-        </h2>
-        <p class="post-card__summary">{{ .Summary }}</p>
-        <time class="post-card__date" datetime="{{ .Date | time.Format "2006-01-02" }}">
-          {{ .Date | time.Format ":date_long" }}
-        </time>
-      </div>
-    </article>
-    {{ end }}
+<!-- ═══ HERO ═══ -->
+<section class="hero">
+  <div class="hero__grid"></div>
+  <div class="hero__glow"></div>
+  <div class="hero__inner anim-fadeUp">
+    <div class="hero__badge">
+      <span class="hero__dot"></span>
+      <span data-vi="✦ Blog chia sẻ kiến thức cho developer Việt" data-en="✦ Knowledge blog for Vietnamese developers">✦ Blog chia sẻ kiến thức cho developer Việt</span>
+    </div>
+    <h1 class="hero__title">
+      <span data-vi="Chia sẻ kiến thức —" data-en="Share Knowledge —">Chia sẻ kiến thức —</span><br>
+      <span class="hero__accent" data-vi="Nâng tầm kỹ năng" data-en="Level Up Skills">Nâng tầm kỹ năng</span>
+    </h1>
+    <p class="hero__sub" data-vi="Blog chuyên sâu về IT, Automation Testing, Tiếng Anh và Tiếng Trung — viết bởi developer, dành cho developer Việt Nam." data-en="In-depth blog on IT, Automation Testing, English and Chinese — by a developer, for Vietnamese developers.">Blog chuyên sâu về IT, Automation Testing, Tiếng Anh và Tiếng Trung — viết bởi developer, dành cho developer Việt Nam.</p>
+
+    <div class="hero__stats">
+      <div class="hero__stat"><div class="hero__stat-num">{{ len $posts }}+</div><div class="hero__stat-label" data-vi="Bài viết" data-en="Posts">Bài viết</div></div>
+      <div class="hero__stat-sep"></div>
+      <div class="hero__stat"><div class="hero__stat-num accent">{{ len site.Params.categories }}</div><div class="hero__stat-label" data-vi="Chủ đề" data-en="Topics">Chủ đề</div></div>
+      <div class="hero__stat-sep"></div>
+      <div class="hero__stat"><div class="hero__stat-num">{{ len site.Taxonomies.series }}</div><div class="hero__stat-label">Series</div></div>
+    </div>
+
+    <div class="hero__cta">
+      <a class="btn btn--primary" href="#posts"><span data-vi="Khám phá bài viết" data-en="Explore Posts">Khám phá bài viết</span> →</a>
+      <a class="btn" href="{{ "/about/" | relURL }}"><span data-vi="Về tác giả" data-en="About the Author">Về tác giả</span></a>
+    </div>
+
+    <div class="hero__chips">
+      <span class="tag-pill hero__chip">#IT</span>
+      <span class="tag-pill hero__chip">#AutomationTest</span>
+      <span class="tag-pill hero__chip">#TiếngAnh</span>
+      <span class="tag-pill hero__chip">#TiếngTrung</span>
+      <span class="tag-pill hero__chip">#Developer</span>
+    </div>
   </div>
 </section>
+
+<div class="container">
+
+  <!-- ═══ FEATURED ═══ -->
+  {{- with $featured }}
+  {{- $catKey := index (or .Params.categories slice) 0 }}
+  {{- $color := "" }}{{ $catLabel := "" }}
+  {{- range site.Params.categories }}{{ if eq .key $catKey }}{{ $color = .color }}{{ $catLabel = .labelVI }}{{ end }}{{ end }}
+  <section class="featured-wrap">
+    <div class="eyebrow"><span class="eyebrow__dot"></span><span data-vi="Bài nổi bật" data-en="Featured">Bài nổi bật</span></div>
+    <a class="featured {{ $color }}" href="{{ .RelPermalink }}">
+      <div class="featured__media">
+        {{- with .Params.thumbnail }}<img src="{{ . }}" alt="{{ $featured.Title }}" loading="lazy">{{ else }}<div class="post-card__media-fallback">📄</div>{{ end }}
+      </div>
+      <div class="featured__body">
+        <div class="featured__meta">
+          <span class="badge">{{ $catLabel }}</span>
+          <span class="featured__date">{{ .Date.Format "02 Jan 2006" }}</span>
+        </div>
+        <h2 class="featured__title">{{ .Title }}</h2>
+        <p class="featured__excerpt">{{ .Summary | truncate 180 }}</p>
+        <div class="featured__foot">
+          <span class="btn btn--primary"><span data-vi="Đọc ngay" data-en="Read now">Đọc ngay</span> →</span>
+          <span class="featured__read">⏱ {{ .ReadingTime }} <span data-vi="phút" data-en="min">phút</span></span>
+        </div>
+      </div>
+    </a>
+  </section>
+  {{- end }}
+
+  <!-- ═══ CATEGORY GRID ═══ -->
+  <section class="cat-grid-wrap">
+    <div class="cat-grid-head">
+      <h2 data-vi="Chủ đề chính" data-en="Main Topics">Chủ đề chính</h2>
+      <p data-vi="4 lĩnh vực kiến thức được cập nhật thường xuyên" data-en="4 knowledge areas updated regularly">4 lĩnh vực kiến thức được cập nhật thường xuyên</p>
+    </div>
+    <div class="cat-grid">
+      {{- range site.Params.categories }}
+      {{- $term := site.GetPage (printf "/categories/%s" .key) }}
+      {{- $count := 0 }}{{ with $term }}{{ $count = len .Pages }}{{ end }}
+      <a class="cat-card {{ .color }}" href="{{ with $term }}{{ .RelPermalink }}{{ else }}#{{ end }}">
+        <span class="cat-card__glow"></span>
+        <span class="cat-card__emoji">{{ .emoji }}</span>
+        <div class="cat-card__name"><span data-vi="{{ .labelVI }}" data-en="{{ .labelEN }}">{{ .labelVI }}</span></div>
+        <div class="cat-card__count">{{ $count }} <span data-vi="bài viết" data-en="posts">bài viết</span></div>
+      </a>
+      {{- end }}
+    </div>
+  </section>
+
+  <!-- ═══ POST SECTIONS theo category ═══ -->
+  <div id="posts">
+    {{- range site.Params.categories }}
+    {{- $meta := . }}
+    {{- $term := site.GetPage (printf "/categories/%s" .key) }}
+    {{- with $term }}
+    {{- $list := first 3 .Pages.ByDate.Reverse }}
+    <section class="cat-section {{ $meta.color }}">
+      <div class="section-head">
+        <div class="section-head__title"><span class="section-head__bar" style="background:var(--cat)"></span><span data-vi="{{ $meta.labelVI }}" data-en="{{ $meta.labelEN }}">{{ $meta.labelVI }}</span></div>
+        <a class="section-head__link" style="color:var(--cat)" href="{{ .RelPermalink }}"><span data-vi="Xem tất cả" data-en="View all">Xem tất cả</span> →</a>
+      </div>
+      <div class="card-grid">
+        {{- range $list }}{{ partial "post-card.html" . }}{{ end }}
+      </div>
+    </section>
+    {{- end }}
+    {{- end }}
+  </div>
+
+  <!-- ═══ SERIES SHOWCASE ═══ -->
+  {{- $seriesPage := site.GetPage "/series" }}
+  {{- with $seriesPage }}
+  {{- $seriesList := first 3 .Pages }}
+  {{- if $seriesList }}
+  <section class="series-wrap">
+    <div class="section-head">
+      <div class="section-head__title"><span style="font-size:30px">📚</span><span data-vi="Học theo Series" data-en="Learn by Series">Học theo Series</span></div>
+      <a class="section-head__link" href="{{ .RelPermalink }}"><span data-vi="Tất cả Series" data-en="All Series">Tất cả Series</span> →</a>
+    </div>
+    <div class="card-grid card-grid--series">
+      {{- range $seriesList }}{{ partial "series-card.html" . }}{{ end }}
+    </div>
+  </section>
+  {{- end }}
+  {{- end }}
+
+</div>
 {{ end }}

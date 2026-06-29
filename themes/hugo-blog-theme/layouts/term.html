@@ -1,17 +1,26 @@
 {{ define "main" }}
+{{- $pages := .Pages.ByDate.Reverse }}
+{{- $paginator := .Paginate $pages }}
 <section class="term">
-  <h1 class="term__title">{{ .Title }}</h1>
-  <p class="term__count">{{ len .Pages }} post{{ if gt (len .Pages) 1 }}s{{ end }}</p>
-  <ul class="term__list">
-    {{ range .Pages.ByDate.Reverse }}
-    <li class="term__item">
-      <a class="term__link" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-      <time class="term__date" datetime="{{ .Date | time.Format "2006-01-02" }}">
-        {{ .Date | time.Format ":date_long" }}
-      </time>
-      <p class="term__summary">{{ .Summary }}</p>
-    </li>
-    {{ end }}
-  </ul>
+  <div class="term__hero">
+    <div class="hero__grid"></div>
+    <div class="container term__hero-inner">
+      <nav class="breadcrumb">
+        <a href="{{ "/" | relURL }}"><span data-vi="Trang chủ" data-en="Home">Trang chủ</span></a>
+        <span>›</span>
+        <a href="{{ .Parent.RelPermalink }}">{{ .Parent.LinkTitle }}</a>
+        <span>›</span><span class="breadcrumb__current">{{ .Title }}</span>
+      </nav>
+      <h1 class="term__title">{{ if eq .Parent.Data.Singular "tag" }}#{{ end }}{{ .Title }}</h1>
+      <p class="term__count">{{ len $pages }} <span data-vi="bài viết" data-en="posts">bài viết</span></p>
+    </div>
+  </div>
+
+  <div class="container term__body">
+    <div class="card-grid">
+      {{- range $paginator.Pages }}{{ partial "post-card.html" . }}{{ end }}
+    </div>
+    {{- partial "pagination.html" $paginator }}
+  </div>
 </section>
 {{ end }}

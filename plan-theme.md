@@ -65,32 +65,33 @@
 ## 📄 Phase 2 — Các trang chính
 
 ### 2.1 Homepage (`home.html`)
-- [ ] Hero: grid dots + glow cam, badge, H1 + dòng cam (typed optional), subtitle, 2 CTA, chip tag float
-- [ ] Hero stats: số bài thật (`len .Site.RegularPages`), readers (tĩnh/bỏ), số series
-- [ ] Featured post card 2 cột (bài `featured: true` hoặc mới nhất)
-- [ ] Category grid 4 card (💻🤖🇬🇧🀄) + số bài thật từ taxonomy + glow theo màu
-- [ ] 4 section theo category (IT/Auto/EN/CN): heading vạch màu + "Xem tất cả →" + 3 post-card mới nhất
-- [ ] Series showcase: 3 series nổi bật từ taxonomy `series`
+- [x] Hero: grid dots + glow cam, badge, H1 + dòng cam, subtitle, 2 CTA, chip tag float _(typed JS để Phase 4)_
+- [x] Hero stats: số bài thật + số chủ đề + số series _(readers giả đã bỏ)_
+- [x] Featured post card 2 cột (bài `featured: true` hoặc mới nhất)
+- [x] Category grid 4 card (💻🤖🇬🇧🀄) + số bài thật từ taxonomy + glow theo màu
+- [x] 4 section theo category: heading vạch màu + "Xem tất cả →" + 3 post-card mới nhất _(chỉ hiện category có bài)_
+- [x] Series showcase: 3 series nổi bật từ taxonomy `series`
 
 ### 2.2 Post (`page.html`) + CSS nội dung
-- [ ] Progress bar fixed 3px cam (JS `initReadingProgress()`)
-- [ ] Header: breadcrumb + tag category + H1 + meta (avatar/author/date/`.ReadingTime`/tags)
-- [ ] Grid 3 cột `240px 1fr 280px`, mobile xếp dọc
-- [ ] TOC trái sticky từ `.TableOfContents` + `initTOC()` scroll-spy + nút share
-- [ ] Series banner (nếu bài thuộc series) + prev/next theo `weight`
-- [ ] Author card cuối bài
-- [ ] Sidebar phải: Related (cùng category) + Top posts + Tag cloud
-- [ ] CSS `.post__content`: h2 underline, p, `pre`/code (nền `--c-code`, mono), table, blockquote/callout
+- [x] Progress bar fixed 3px cam (JS `initReadingProgress()`)
+- [x] Header: breadcrumb + tag category + H1 + meta (avatar/author/date/`.ReadingTime`/tags)
+- [x] Grid 3 cột `240px 1fr 280px`, mobile xếp dọc
+- [x] TOC trái sticky từ `.TableOfContents` + `initTOC()` scroll-spy + nút share (+ copy link)
+- [x] Series banner (nếu bài thuộc series) + prev/next theo `weight`
+- [x] Author card cuối bài
+- [x] Sidebar phải: Related (cùng category) + Top posts + Tag cloud
+- [x] CSS `.post__content`: h2 underline, p, `pre`/code (nền `--c-code`, mono), table, blockquote/callout
 
-### 2.3 CategoryList (`term.html` cho categories)
-- [ ] Hero category: breadcrumb + icon màu + tên/mô tả + số bài + pill chuyển category
-- [ ] Toolbar: search (JS lọc DOM) + filter tag (JS) + sort Newest/Popular
-- [ ] List bài dạng hàng ngang: thumb 260×168 + tag/title/excerpt/meta + badge NEW
-- [ ] Pagination `{{ .Paginator }}` style nút tròn 38px active theo màu category
-- [ ] Sidebar: thống kê + popular tags + top posts + other categories
+### 2.3 CategoryList (`categories/term.html`)
+- [x] Hero category: breadcrumb + icon màu + tên + số bài + pill chuyển category
+- [x] Toolbar: search (JS lọc DOM) + filter tag (JS `initCatFilter`) _(sort Newest mặc định; bỏ "Popular" vì không có view count)_
+- [x] List bài dạng hàng ngang: thumb 260×168 + tag/title/excerpt/meta
+- [x] Pagination (`pagination.html`) nút tròn 38px active theo màu category + `[pagination] pagerSize=6`
+- [x] Sidebar: thống kê + top posts + other categories
 
-### 2.4 Taxonomy index (`taxonomy.html`)
-- [ ] Lưới term dạng pill/card cho `/tags/` và `/categories/`
+### 2.4 Taxonomy index (`taxonomy.html`) + generic term
+- [x] Lưới term card cho `/tags/`, `/categories/`, `/authors/`
+- [x] `term.html` generic (tags/authors) style lại: hero + grid post-card + pagination
 
 ---
 

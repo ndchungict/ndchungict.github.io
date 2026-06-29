@@ -1,24 +1,158 @@
 {{ define "main" }}
-<article class="post">
-  <header class="post__header">
-    {{ with .Params.thumbnail }}
-    <img class="post__thumbnail" src="{{ . }}" alt="{{ $.Title }}">
-    {{ end }}
-    <h1 class="post__title">{{ .Title }}</h1>
-    <time class="post__date" datetime="{{ .Date | time.Format "2006-01-02T15:04:05-07:00" }}">
-      {{ .Date | time.Format ":date_long" }}
-    </time>
-  </header>
+{{- $p := . }}
+{{- $catKey := index (or .Params.categories slice) 0 }}
+{{- $color := "" }}{{ $catLabel := "" }}{{ $catURL := "" }}
+{{- range site.Params.categories }}{{ if eq .key $catKey }}{{ $color = .color }}{{ $catLabel = .labelVI }}{{ end }}{{ end }}
+{{- with site.GetPage (printf "/categories/%s" $catKey) }}{{ $catURL = .RelPermalink }}{{ end }}
 
-  <div class="post__content">
-    {{ .Content }}
+{{- /* Series: tìm term + vị trí bài trong series */}}
+{{- $seriesTerm := "" }}{{ $seriesPages := slice }}{{ $idx := -1 }}
+{{- with index (or .Params.series slice) 0 }}
+  {{- $seriesTerm = site.GetPage (printf "/series/%s" .) }}
+  {{- with $seriesTerm }}
+    {{- $seriesPages = .Pages.ByWeight }}
+    {{- range $i, $pg := $seriesPages }}{{ if eq $pg.RelPermalink $p.RelPermalink }}{{ $idx = $i }}{{ end }}{{ end }}
+  {{- end }}
+{{- end }}
+
+<div class="reading-progress" data-reading-progress></div>
+
+<article class="post {{ $color }}">
+  <!-- Header -->
+  <div class="post__top">
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="{{ "/" | relURL }}"><span data-vi="Trang chủ" data-en="Home">Trang chủ</span></a>
+        <span>›</span>
+        {{- with $catLabel }}<a href="{{ $catURL }}">{{ . }}</a><span>›</span>{{ end }}
+        <span class="breadcrumb__current">{{ $p.Title }}</span>
+      </nav>
+      {{- with $catLabel }}<div class="post__cat"><span class="badge">{{ . }}</span></div>{{ end }}
+      <h1 class="post__title">{{ $p.Title }}</h1>
+      <div class="post__meta">
+        <div class="post__author">
+          <span class="avatar">NC</span>
+          <div>
+            <div class="post__author-name">{{ site.Params.author }}</div>
+            <div class="post__author-role">{{ site.Params.role }}</div>
+          </div>
+        </div>
+        <span class="post__meta-sep"></span>
+        <span>📅 {{ $p.Date.Format "02 Jan 2006" }}</span>
+        <span>⏱ {{ $p.ReadingTime }} <span data-vi="phút đọc" data-en="min read">phút đọc</span></span>
+        <div class="post__tags">
+          {{- range $p.GetTerms "tags" }}<span class="tag-pill">#{{ .LinkTitle }}</span>{{ end }}
+        </div>
+      </div>
+    </div>
   </div>
 
-  <footer class="post__footer">
-    {{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
-    {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
-    {{ partial "terms.html" (dict "taxonomy" "series" "page" .) }}
-    {{ partial "terms.html" (dict "taxonomy" "authors" "page" .) }}
-  </footer>
+  <!-- 3-column layout -->
+  <div class="container post-layout">
+    <!-- LEFT: TOC -->
+    <aside class="post-toc">
+      <div class="panel">
+        <div class="panel__title"><span data-vi="Mục lục" data-en="Contents">Mục lục</span></div>
+        <nav class="toc" data-toc>{{ $p.TableOfContents }}</nav>
+        <div class="panel__divider"></div>
+        <div class="panel__title"><span data-vi="Chia sẻ" data-en="Share">Chia sẻ</span></div>
+        <div class="share">
+          <button class="share__btn">𝕏</button>
+          <button class="share__btn">in</button>
+          <button class="share__btn" data-copy-link>🔗</button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- CENTER: Article -->
+    <div class="post-article">
+      {{- /* Series banner */}}
+      {{- if and $seriesTerm (ge $idx 0) }}
+      <a class="series-banner" href="{{ $seriesTerm.RelPermalink }}">
+        <span class="series-banner__icon">📚</span>
+        <div class="series-banner__info">
+          <div class="series-banner__label" data-vi="Phần {{ add $idx 1 }} trong series" data-en="Part {{ add $idx 1 }} of series">Phần {{ add $idx 1 }} trong series</div>
+          <div class="series-banner__name">{{ $seriesTerm.LinkTitle }}</div>
+        </div>
+        <div class="series-banner__count">{{ add $idx 1 }}/{{ len $seriesPages }}</div>
+      </a>
+      {{- end }}
+
+      <div class="post__content">
+        {{ $p.Content }}
+      </div>
+
+      <!-- Tags -->
+      <div class="post__footer-tags">
+        {{ partial "terms.html" (dict "taxonomy" "tags" "page" $p) }}
+      </div>
+
+      <!-- Prev / Next trong series -->
+      {{- if and $seriesTerm (ge $idx 0) }}
+      <div class="post-nav">
+        {{- if gt $idx 0 }}{{ $prev := index $seriesPages (sub $idx 1) }}
+        <a class="post-nav__item" href="{{ $prev.RelPermalink }}">
+          <span class="post-nav__dir">← <span data-vi="Phần trước" data-en="Previous">Phần trước</span></span>
+          <span class="post-nav__title">{{ $prev.Title }}</span>
+        </a>
+        {{- else }}<span></span>{{ end }}
+        {{- if lt $idx (sub (len $seriesPages) 1) }}{{ $next := index $seriesPages (add $idx 1) }}
+        <a class="post-nav__item post-nav__item--next" href="{{ $next.RelPermalink }}">
+          <span class="post-nav__dir"><span data-vi="Phần tiếp theo" data-en="Next">Phần tiếp theo</span> →</span>
+          <span class="post-nav__title">{{ $next.Title }}</span>
+        </a>
+        {{- else }}<span></span>{{ end }}
+      </div>
+      {{- end }}
+
+      <!-- Author card -->
+      <div class="author-card">
+        <span class="avatar avatar--lg">NC</span>
+        <div>
+          <div class="author-card__name">{{ site.Params.author }}</div>
+          <div class="author-card__role">{{ site.Params.role }}</div>
+          <p class="author-card__bio" data-vi="5+ năm kinh nghiệm QA & Automation. Đam mê chia sẻ kiến thức về testing, tiếng Anh và tiếng Trung cho developer Việt." data-en="5+ years in QA & Automation. Passionate about sharing testing, English and Chinese knowledge for Vietnamese developers.">5+ năm kinh nghiệm QA & Automation. Đam mê chia sẻ kiến thức về testing, tiếng Anh và tiếng Trung cho developer Việt.</p>
+          <a class="author-card__link" href="{{ "/about/" | relURL }}"><span data-vi="Xem trang tác giả" data-en="View author profile">Xem trang tác giả</span> →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Sidebar -->
+    <aside class="post-aside">
+      {{- $related := first 4 (where (where site.RegularPages "Section" "posts" ) "Params.categories" "intersect" (slice $catKey)) }}
+      <div class="panel">
+        <div class="panel__title"><span data-vi="Bài viết liên quan" data-en="Related Posts">Bài viết liên quan</span></div>
+        <div class="mini-list">
+          {{- range $related }}{{ if ne .RelPermalink $p.RelPermalink }}
+          <a class="mini-item" href="{{ .RelPermalink }}">
+            <span class="mini-item__icon">📄</span>
+            <div><div class="mini-item__title">{{ .Title }}</div><div class="mini-item__meta">{{ .ReadingTime }} <span data-vi="phút" data-en="min">phút</span></div></div>
+          </a>
+          {{- end }}{{ end }}
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel__title">🔥 <span data-vi="Top bài viết" data-en="Top Posts">Top bài viết</span></div>
+        <div class="mini-list">
+          {{- range $i, $tp := first 5 (where site.RegularPages "Section" "posts").ByDate.Reverse }}
+          <a class="mini-item" href="{{ $tp.RelPermalink }}">
+            <span class="mini-item__num">{{ printf "%02d" (add $i 1) }}</span>
+            <div class="mini-item__title">{{ $tp.Title }}</div>
+          </a>
+          {{- end }}
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel__title">Tags</div>
+        <div class="tag-cloud">
+          {{- range $name, $taxonomy := site.Taxonomies.tags }}
+          <a class="tag-pill" href="{{ (site.GetPage (printf "/tags/%s" $name)).RelPermalink }}">#{{ $name }}</a>
+          {{- end }}
+        </div>
+      </div>
+    </aside>
+  </div>
 </article>
 {{ end }}

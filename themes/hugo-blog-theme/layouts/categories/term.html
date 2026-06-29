@@ -1,0 +1,116 @@
+{{ define "main" }}
+{{- $term := . }}
+{{- $key := .Data.Term | default (path.Base .RelPermalink) }}
+{{- $meta := false }}
+{{- range site.Params.categories }}{{ if eq .key $key }}{{ $meta = . }}{{ end }}{{ end }}
+{{- $color := "" }}{{ $emoji := "📂" }}{{ $label := $term.LinkTitle }}{{ $desc := "" }}
+{{- with $meta }}{{ $color = .color }}{{ $emoji = .emoji }}{{ $label = .labelVI }}{{ end }}
+{{- $pages := $term.Pages.ByDate.Reverse }}
+{{- $paginator := .Paginate $pages }}
+
+<div class="{{ $color }}">
+  <!-- Hero -->
+  <section class="cat-hero">
+    <div class="hero__grid"></div>
+    <span class="cat-hero__glow"></span>
+    <div class="container cat-hero__inner">
+      <nav class="breadcrumb">
+        <a href="{{ "/" | relURL }}"><span data-vi="Trang chủ" data-en="Home">Trang chủ</span></a>
+        <span>›</span><span class="breadcrumb__current">{{ $label }}</span>
+      </nav>
+      <div class="cat-hero__head">
+        <span class="cat-hero__icon">{{ $emoji }}</span>
+        <div>
+          <h1 class="cat-hero__title">{{ $label }}</h1>
+          <div class="cat-hero__stat">📝 <strong>{{ len $pages }}</strong> <span data-vi="bài viết" data-en="posts">bài viết</span></div>
+        </div>
+      </div>
+      <div class="cat-pills">
+        {{- range site.Params.categories }}
+        {{- $t := site.GetPage (printf "/categories/%s" .key) }}
+        {{- if $t }}
+        <a class="cat-pill {{ .color }} {{ if eq .key $key }}active{{ end }}" href="{{ $t.RelPermalink }}">{{ .emoji }} <span data-vi="{{ .labelVI }}" data-en="{{ .labelEN }}">{{ .labelVI }}</span></a>
+        {{- end }}
+        {{- end }}
+      </div>
+    </div>
+  </section>
+
+  <!-- Toolbar -->
+  <div class="cat-toolbar">
+    <div class="container cat-toolbar__inner">
+      <div class="cat-search">
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="text" data-cat-search placeholder="Tìm trong chủ đề..." aria-label="Search">
+      </div>
+      <div class="cat-filter" data-cat-tags>
+        <span class="cat-filter__label" data-vi="Lọc tag" data-en="Filter">Lọc tag:</span>
+        {{- $tags := slice }}
+        {{- range $pages }}{{ range .GetTerms "tags" }}{{ $tags = $tags | append .LinkTitle }}{{ end }}{{ end }}
+        {{- range $tag := (uniq $tags) }}
+        <button class="cat-filter__btn" data-tag="{{ $tag }}">{{ $tag }}</button>
+        {{- end }}
+      </div>
+    </div>
+  </div>
+
+  <!-- Layout -->
+  <div class="container cat-layout">
+    <div>
+      <div class="cat-count"><span data-vi="Hiển thị" data-en="Showing">Hiển thị</span> <strong>{{ len $paginator.Pages }}</strong> / <strong>{{ len $pages }}</strong> <span data-vi="bài viết" data-en="posts">bài viết</span></div>
+
+      <div class="post-rows" data-cat-rows>
+        {{- range $paginator.Pages }}
+        {{- $tagAttr := "" }}{{ range .GetTerms "tags" }}{{ $tagAttr = printf "%s %s" $tagAttr .LinkTitle }}{{ end }}
+        <a class="post-row" href="{{ .RelPermalink }}" data-title="{{ lower .Title }}" data-tags="{{ lower $tagAttr }}">
+          <div class="post-row__thumb">
+            {{- with .Params.thumbnail }}<img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">{{ else }}<div class="post-card__media-fallback">{{ $emoji }}</div>{{ end }}
+          </div>
+          <div class="post-row__body">
+            <div>{{ with index (.GetTerms "tags") 0 }}<span class="badge">{{ .LinkTitle }}</span>{{ end }}</div>
+            <h3 class="post-row__title">{{ .Title }}</h3>
+            <p class="post-row__excerpt">{{ .Summary | truncate 160 }}</p>
+            <div class="post-row__meta">{{ .Date.Format "02 Jan 2006" }} — {{ .ReadingTime }} <span data-vi="phút" data-en="min">phút</span></div>
+          </div>
+        </a>
+        {{- end }}
+      </div>
+
+      <div class="cat-empty" data-cat-empty hidden>
+        <div style="font-size:48px">🔍</div>
+        <p data-vi="Không tìm thấy bài viết phù hợp" data-en="No posts found">Không tìm thấy bài viết phù hợp</p>
+      </div>
+
+      {{- partial "pagination.html" $paginator }}
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="post-aside">
+      <div class="panel">
+        <div class="panel__title"><span data-vi="Thống kê" data-en="Stats">Thống kê</span></div>
+        <div class="stat-row"><span data-vi="Tổng bài viết" data-en="Total posts">Tổng bài viết</span><strong style="color:var(--cat)">{{ len $pages }}</strong></div>
+        <div class="stat-row"><span data-vi="Cập nhật" data-en="Updated">Cập nhật</span><strong>{{ (index $pages 0).Date.Format "Jan 2006" }}</strong></div>
+      </div>
+      <div class="panel">
+        <div class="panel__title">🔥 <span data-vi="Top bài viết" data-en="Top Posts">Top bài viết</span></div>
+        <div class="mini-list">
+          {{- range $i, $tp := first 3 $pages }}
+          <a class="mini-item" href="{{ $tp.RelPermalink }}"><span class="mini-item__num">{{ printf "%02d" (add $i 1) }}</span><div class="mini-item__title">{{ $tp.Title }}</div></a>
+          {{- end }}
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel__title"><span data-vi="Chủ đề khác" data-en="Other Topics">Chủ đề khác</span></div>
+        <div class="mini-list">
+          {{- range site.Params.categories }}
+          {{- $t := site.GetPage (printf "/categories/%s" .key) }}
+          {{- if and $t (ne .key $key) }}
+          <a class="mini-item {{ .color }}" href="{{ $t.RelPermalink }}"><span class="mini-item__icon">{{ .emoji }}</span><div><div class="mini-item__title"><span data-vi="{{ .labelVI }}" data-en="{{ .labelEN }}">{{ .labelVI }}</span></div><div class="mini-item__meta">{{ len $t.Pages }} <span data-vi="bài" data-en="posts">bài</span></div></div></a>
+          {{- end }}
+          {{- end }}
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+{{ end }}

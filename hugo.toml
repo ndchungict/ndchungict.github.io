@@ -3,7 +3,8 @@ locale = 'vi-vn'
 title = 'Nguyen Chung Notebook'
 theme = 'hugo-blog-theme'
 
-paginate = 6
+[pagination]
+  pagerSize = 6
 
 [permalinks]
   posts = '/posts/:slug/'

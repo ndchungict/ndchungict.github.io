@@ -1,15 +1,26 @@
 {{ define "main" }}
-<section class="taxonomy">
-  <h1 class="taxonomy__title">{{ .Title }}</h1>
-  <ul class="taxonomy__list">
-    {{ range .Pages }}
-    <li class="taxonomy__item">
-      <a class="taxonomy__link" href="{{ .RelPermalink }}">
-        {{ .LinkTitle }}
-        <span class="taxonomy__count">({{ len .Pages }})</span>
+<section class="tax">
+  <div class="tax__hero">
+    <div class="hero__grid"></div>
+    <div class="container tax__hero-inner">
+      <h1 class="tax__title">{{ .Title }}</h1>
+      {{- with .Content }}<div class="tax__desc">{{ . }}</div>{{ end }}
+    </div>
+  </div>
+
+  <div class="container tax__body">
+    <div class="tax__grid">
+      {{- range .Pages }}
+      {{- $key := path.Base .RelPermalink }}
+      {{- $emoji := "🏷️" }}{{ $color := "" }}
+      {{- range site.Params.categories }}{{ if eq .key $key }}{{ $emoji = .emoji }}{{ $color = .color }}{{ end }}{{ end }}
+      <a class="tax-card {{ $color }}" href="{{ .RelPermalink }}">
+        <span class="tax-card__emoji">{{ $emoji }}</span>
+        <div class="tax-card__name">{{ .LinkTitle }}</div>
+        <div class="tax-card__count">{{ len .Pages }} <span data-vi="bài viết" data-en="posts">bài viết</span></div>
       </a>
-    </li>
-    {{ end }}
-  </ul>
+      {{- end }}
+    </div>
+  </div>
 </section>
 {{ end }}

@@ -1,0 +1,19 @@
+{{- /* Pagination — context: .Paginator. Nút tròn, active theo màu category (var --cat). */}}
+{{- $p := . }}
+{{- if gt $p.TotalPages 1 }}
+<nav class="pagination">
+  {{- if $p.HasPrev }}
+    <a class="pagination__nav" href="{{ $p.Prev.URL }}">← <span data-vi="Trước" data-en="Prev">Trước</span></a>
+  {{- else }}
+    <span class="pagination__nav is-disabled">← <span data-vi="Trước" data-en="Prev">Trước</span></span>
+  {{- end }}
+  {{- range $p.Pagers }}
+    <a class="pagination__num {{ if eq . $p }}active{{ end }}" href="{{ .URL }}">{{ .PageNumber }}</a>
+  {{- end }}
+  {{- if $p.HasNext }}
+    <a class="pagination__nav" href="{{ $p.Next.URL }}"><span data-vi="Tiếp" data-en="Next">Tiếp</span> →</a>
+  {{- else }}
+    <span class="pagination__nav is-disabled"><span data-vi="Tiếp" data-en="Next">Tiếp</span> →</span>
+  {{- end }}
+</nav>
+{{- end }}
