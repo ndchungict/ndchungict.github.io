@@ -1,10 +1,21 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
+<article class="post">
+  <header class="post__header">
+    <h1 class="post__title">{{ .Title }}</h1>
+    <time class="post__date" datetime="{{ .Date | time.Format "2006-01-02T15:04:05-07:00" }}">
+      {{ .Date | time.Format ":date_long" }}
+    </time>
+  </header>
 
-  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-  {{ $dateHuman := .Date | time.Format ":date_long" }}
-  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+  <div class="post__content">
+    {{ .Content }}
+  </div>
 
-  {{ .Content }}
-  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+  <footer class="post__footer">
+    {{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
+    {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+    {{ partial "terms.html" (dict "taxonomy" "series" "page" .) }}
+    {{ partial "terms.html" (dict "taxonomy" "authors" "page" .) }}
+  </footer>
+</article>
 {{ end }}

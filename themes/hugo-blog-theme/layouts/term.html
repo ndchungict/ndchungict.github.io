@@ -1,7 +1,17 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
-  {{ range .Pages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-  {{ end }}
+<section class="term">
+  <h1 class="term__title">{{ .Title }}</h1>
+  <p class="term__count">{{ len .Pages }} post{{ if gt (len .Pages) 1 }}s{{ end }}</p>
+  <ul class="term__list">
+    {{ range .Pages.ByDate.Reverse }}
+    <li class="term__item">
+      <a class="term__link" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+      <time class="term__date" datetime="{{ .Date | time.Format "2006-01-02" }}">
+        {{ .Date | time.Format ":date_long" }}
+      </time>
+      <p class="term__summary">{{ .Summary }}</p>
+    </li>
+    {{ end }}
+  </ul>
+</section>
 {{ end }}
