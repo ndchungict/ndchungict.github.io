@@ -1,0 +1,19 @@
+{{- /* Search index JSON — dùng cho overlay tìm kiếm. */ -}}
+{{- $list := slice -}}
+{{- range where site.RegularPages "Section" "posts" -}}
+  {{- $catKey := index (or .Params.categories slice) 0 -}}
+  {{- $catLabel := "" -}}
+  {{- range site.Params.categories }}{{ if eq .key $catKey }}{{ $catLabel = .labelVI }}{{ end }}{{ end -}}
+  {{- $tags := slice -}}
+  {{- range .GetTerms "tags" }}{{ $tags = $tags | append .LinkTitle }}{{ end -}}
+  {{- $list = $list | append (dict
+      "title" .Title
+      "url" .RelPermalink
+      "summary" (.Summary | plainify | truncate 140)
+      "category" $catLabel
+      "tags" $tags
+      "date" (.Date.Format "02 Jan 2006")
+      "read" .ReadingTime
+  ) -}}
+{{- end -}}
+{{- $list | jsonify -}}

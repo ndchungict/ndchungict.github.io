@@ -1,0 +1,18 @@
+{{- /* Callout box.
+   Dùng: {{< callout type="tip" title="TL;DR" >}} nội dung markdown {{< /callout >}}
+   type: tip|tldr (cam) · pros (xanh) · cons (đỏ) · info (xanh dương) · warning (cam) */ -}}
+{{- $type := .Get "type" | default "tip" -}}
+{{- $title := .Get "title" -}}
+{{- $map := dict
+    "tip"     (dict "c" "var(--c-accent)" "i" "💡")
+    "tldr"    (dict "c" "var(--c-accent)" "i" "💡")
+    "pros"    (dict "c" "var(--cat-auto)" "i" "✓")
+    "cons"    (dict "c" "var(--cat-cn)"   "i" "✗")
+    "info"    (dict "c" "var(--cat-en)"   "i" "ℹ")
+    "warning" (dict "c" "var(--c-accent)" "i" "⚠")
+-}}
+{{- $m := index $map $type | default (index $map "tip") -}}
+<div class="callout" style="--cc:{{ $m.c }}">
+  {{- with $title }}<div class="callout__title"><span class="callout__icon">{{ $m.i }}</span>{{ . }}</div>{{ end }}
+  <div class="callout__body">{{ .Inner | .Page.RenderString }}</div>
+</div>

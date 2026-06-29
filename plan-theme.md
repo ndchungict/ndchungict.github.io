@@ -126,22 +126,22 @@
 ---
 
 ## 🔧 Phase 4 — Nâng cao (optional)
-- [ ] Search overlay + Fuse.js + JSON index (`initSearch()` lọc thật)
-- [ ] Hoàn thiện phủ UI string VI/EN cho toàn bộ trang (rà soát nhãn còn sót)
-- [ ] Lượt xem / độc giả/tháng (nghiên cứu nguồn số liệu — đã hoãn từ Phase 0)
-- [ ] Code block render hook (terminal traffic-light + tên file)
-- [ ] Callout shortcodes (Pros/Cons, TL;DR)
-- [ ] Rà responsive toàn bộ + `prefers-reduced-motion`
+- [x] Search overlay + JSON index (`home.json`) + `initSearch()` lọc thật _(tự viết token-scoring, không cần Fuse.js — không thêm dependency)_
+- [x] Hoàn thiện phủ UI string VI/EN: text (`data-vi/en`) + placeholder (`data-vi-ph/en-ph`) cho search/category/contact
+- [ ] Lượt xem / độc giả/tháng — **hoãn**, chưa có nguồn số liệu (cần analytics/DB), để sau
+- [x] Code block render hook (`_markup/render-codeblock.html`): terminal traffic-light + tên file/ngôn ngữ + Chroma github-dark
+- [x] Callout shortcode (`_shortcodes/callout.html`): tip/tldr · pros · cons · info · warning
+- [x] Rà responsive toàn bộ + `prefers-reduced-motion` (đã có ở mọi component lớn)
 
 ---
 
 ## ⚙️ Cấu hình & content (làm song song khi cần)
-- [ ] `hugo.toml`: `title`, `baseURL`, `[params]` (author/role/email/tagline/socials/readers), `[menus]` (Home/IT/Auto/EN/CN/Series/About)
-- [ ] `[params.categoryMeta]`: map it/auto/eng/cn → màu + emoji + mô tả
-- [ ] (tuỳ chọn) `[markup.goldmark.renderer] unsafe=true`, `[markup.tableOfContents]`
-- [ ] `archetypes/default.md` & `series.md`: thêm `featured=false`, đảm bảo `summary`
-- [ ] Bổ sung `categories/tags/series(+weight)/thumbnail/summary` cho các bài hiện có
-- [ ] Đặt avatar + ảnh OG vào `static/images/`
+- [x] `hugo.toml`: `title` + `[params]` (author/role/email/tagline/socials). Menu Home/IT/Auto/EN/CN/Series build từ `[[params.categories]]` (không dùng `[menus]`). ⚠️ **`baseURL` vẫn là `example.org` — cần đổi domain thật**
+- [x] `[[params.categories]]`: it/automation/english/chinese → labelVI/EN + emoji + class màu (thay cho categoryMeta)
+- [x] `[markup]`: `goldmark unsafe=true`, `tableOfContents`, `highlight github-dark`, `[outputs] home=json`, `[pagination] pagerSize=6`
+- [x] `archetypes/default.md` & `series.md`: thêm `featured = false`
+- [x] Bài hiện có đã đủ `categories/tags/series(+weight)/thumbnail/summary` _(category `automation` chưa có bài nào → chưa hiện trên nav/home, đúng dự kiến)_
+- [ ] (tuỳ chọn) Ảnh OG mặc định + avatar ảnh: hiện avatar là chữ "NC" (CSS), OG dùng `thumbnail` từng bài — chưa có ảnh OG fallback toàn site
 
 ---
 

@@ -1,0 +1,12 @@
+{{- /* Code block render hook — khung terminal traffic-light + tên file/ngôn ngữ. */ -}}
+{{- $lang := .Type | default "text" -}}
+{{- $name := .Attributes.filename | default $lang -}}
+<div class="codeblock">
+  <div class="codeblock__bar">
+    <span class="codeblock__dot" style="background:var(--cat-cn)"></span>
+    <span class="codeblock__dot" style="background:var(--c-accent)"></span>
+    <span class="codeblock__dot" style="background:var(--cat-auto)"></span>
+    <span class="codeblock__name">{{ $name }}</span>
+  </div>
+  {{ highlight (trim .Inner "\n") $lang "" }}
+</div>

@@ -1,0 +1,22 @@
+{{- /* Search overlay — JS initSearch fetch /index.json rồi lọc. */}}
+<div class="search-overlay" data-search-overlay hidden>
+  <div class="search-box" data-search-box>
+    <div class="search-box__head">
+      <svg width="17" height="17" fill="none" stroke="var(--c-text2)" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" data-search-input placeholder="Tìm kiếm bài viết..." data-vi-ph="Tìm kiếm bài viết..." data-en-ph="Search posts..." aria-label="Search">
+      <button class="search-box__esc" data-search-close>ESC</button>
+    </div>
+    <div class="search-box__body">
+      <div class="search-box__hint" data-search-hint>
+        <div class="search-box__hint-label" data-vi="Chủ đề nổi bật" data-en="Trending">Chủ đề nổi bật</div>
+        <div class="search-box__hint-tags">
+          {{- range first 6 site.Taxonomies.tags.ByCount }}
+          <button class="tag-pill" data-search-suggest="{{ .Name }}">#{{ .Name }}</button>
+          {{- end }}
+        </div>
+      </div>
+      <div class="search-results" data-search-results></div>
+      <div class="search-empty" data-search-empty hidden><span data-vi="Không tìm thấy kết quả" data-en="No results found">Không tìm thấy kết quả</span></div>
+    </div>
+  </div>
+</div>
