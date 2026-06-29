@@ -885,6 +885,7 @@ ul { list-style: none; }
 .contact-privacy { font-size: 12px; color: var(--c-text2); text-align: center; margin-top: 14px; line-height: 1.6; }
 
 .contact-success { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 80px 40px; background: var(--c-card); border: 1px solid color-mix(in srgb, var(--cat-auto) 30%, transparent); border-radius: var(--r-xl); text-align: center; }
+.contact-success[hidden] { display: none; }
 .contact-success__check { width: 72px; height: 72px; border-radius: 50%; background: color-mix(in srgb, var(--cat-auto) 12%, transparent); display: flex; align-items: center; justify-content: center; font-size: 32px; color: var(--cat-auto); margin-bottom: 20px; animation: checkPop .4s ease both; }
 .contact-success h2 { font-size: 24px; font-weight: 700; margin-bottom: 10px; }
 .contact-success p { font-size: 15px; color: var(--c-text2); line-height: 1.7; max-width: 360px; margin-bottom: 28px; }
@@ -954,6 +955,7 @@ ul { list-style: none; }
    Search overlay
    ============================================================ */
 .search-overlay { position: fixed; inset: 0; z-index: 200; background: rgba(0,0,0,.75); display: flex; align-items: flex-start; justify-content: center; padding-top: 72px; }
+.search-overlay[hidden] { display: none; }
 .search-box { width: min(600px, 90vw); background: var(--c-surface); border: 1px solid var(--c-border); border-radius: 16px; box-shadow: 0 32px 80px rgba(0,0,0,.6); overflow: hidden; }
 .search-box__head { display: flex; align-items: center; gap: 12px; padding: 16px 20px; border-bottom: 1px solid var(--c-border); }
 .search-box__head input { flex: 1; background: transparent; border: none; outline: none; font-size: 17px; color: var(--c-text); font-family: inherit; }
