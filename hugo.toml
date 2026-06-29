@@ -32,10 +32,10 @@ theme = 'hugo-blog-theme'
     guessSyntax = true
 
 [params]
-  description = 'Blog chia sẻ kiến thức IT, Automation Testing, Tiếng Anh và Tiếng Trung dành cho developer Việt Nam.'
+  description = 'Blog ghi lại và chia sẻ những gì mình học được về IT, Automation Testing, Tiếng Anh và Tiếng Trung.'
   author      = 'Nguyễn Chung'
   role        = 'Senior Automation Test Engineer'
-  email       = 'nguyenchung.dev@gmail.com'
+  email       = 'ndchungict@gmail.com'
   tagline     = 'Share • Learn • Grow'
   # Tạm ẩn trang About: đổi thành true để hiện lại
   showAbout   = false
