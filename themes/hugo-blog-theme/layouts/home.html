@@ -1,0 +1,21 @@
+{{ define "main" }}
+<section class="hero">
+  <h2 class="hero__title">{{ .Title }}</h2>
+  <p class="hero__subtitle">{{ .Description }}</p>
+</section>
+
+<section class="posts">
+  <h2 class="posts__heading">Latest Posts</h2>
+  <ul class="posts__list">
+    {{ range site.RegularPages }}
+    <li class="posts__item">
+      <a class="posts__link" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+      <time class="posts__date" datetime="{{ .Date | time.Format "2006-01-02" }}">
+        {{ .Date | time.Format ":date_long" }}
+      </time>
+      <p class="posts__summary">{{ .Summary }}</p>
+    </li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}
