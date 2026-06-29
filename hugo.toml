@@ -42,6 +42,20 @@ theme = 'hugo-blog-theme'
   # Web3Forms — dán access key lấy từ web3forms.com (cần cho trang Contact)
   web3formsKey = ''
 
+  # Giscus — hệ thống comment dùng GitHub Discussions.
+  # Lấy giá trị repoId & categoryId tại https://giscus.app sau khi bật Discussions.
+  [params.giscus]
+    enable      = false              # đổi thành true để bật comment
+    repo        = ''                 # ví dụ: 'ndchungict/hugo-blog-page'
+    repoId      = ''                 # lấy từ giscus.app
+    category    = 'Announcements'    # tên category trong Discussions
+    categoryId  = ''                 # lấy từ giscus.app
+    mapping     = 'pathname'         # cách map bài viết với discussion
+    reactionsEnabled = '1'           # '1' = hiện reactions, '0' = ẩn
+    inputPosition    = 'bottom'      # 'top' hoặc 'bottom'
+    theme       = 'dark'             # theme giscus, khớp với data-theme của site
+    lang        = 'vi'
+
   [params.social]
     github   = 'https://github.com/ndchungict'
     linkedin = 'https://linkedin.com/in/nguyenchung'

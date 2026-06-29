@@ -115,6 +115,9 @@
           {{- if site.Params.showAbout }}<a class="author-card__link" href="{{ "/about/" | relURL }}"><span data-vi="Xem trang tác giả" data-en="View author profile">Xem trang tác giả</span> →</a>{{ end }}
         </div>
       </div>
+
+      <!-- Comments (Giscus) -->
+      {{ partial "comments.html" . }}
     </div>
 
     <!-- RIGHT: Sidebar -->

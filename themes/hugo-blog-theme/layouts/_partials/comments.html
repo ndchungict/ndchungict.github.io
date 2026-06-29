@@ -1,0 +1,26 @@
+{{- $g := site.Params.giscus }}
+{{- if and $g $g.enable $g.repo $g.repoId $g.categoryId }}
+<section class="comments" id="comments">
+  <h2 class="comments__title">
+    <span data-vi="Bình luận" data-en="Comments">Bình luận</span>
+  </h2>
+  <div class="comments__giscus">
+    <script src="https://giscus.app/client.js"
+            data-repo="{{ $g.repo }}"
+            data-repo-id="{{ $g.repoId }}"
+            data-category="{{ $g.category }}"
+            data-category-id="{{ $g.categoryId }}"
+            data-mapping="{{ default "pathname" $g.mapping }}"
+            data-strict="0"
+            data-reactions-enabled="{{ default "1" $g.reactionsEnabled }}"
+            data-emit-metadata="0"
+            data-input-position="{{ default "bottom" $g.inputPosition }}"
+            data-theme="{{ default "dark" $g.theme }}"
+            data-lang="{{ default "vi" $g.lang }}"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async>
+    </script>
+  </div>
+</section>
+{{- end }}

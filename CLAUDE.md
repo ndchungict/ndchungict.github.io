@@ -208,6 +208,44 @@ thumbnail = '/images/git-series/01-git-la-gi.svg'
 - **Stacked cards**: nhiều card màu sắc khác nhau, mỗi card = một lệnh → nâng cao
 - **Pipeline boxes**: các ô nối nhau bằng mũi tên theo chiều ngang → automation, hooks
 
+## Comments (Giscus)
+
+Comment dùng [Giscus](https://giscus.app) — lưu bình luận trong **GitHub Discussions** của repo.
+
+### Cấu trúc
+
+| File | Vai trò |
+|------|---------|
+| `hugo.toml` → `[params.giscus]` | Toàn bộ config (bật/tắt, repo, ID, theme,...) |
+| `layouts/_partials/comments.html` | Render script Giscus, chỉ hiện khi `enable = true` và đã điền đủ ID |
+| `layouts/page.html` | Nhúng `{{ partial "comments.html" . }}` ở cuối cột bài viết, sau author-card |
+| `assets/js/main.js` → `syncGiscusTheme()` / `initGiscus()` | Đồng bộ theme Giscus với light/dark của site |
+| `assets/css/main.css` → `.comments` | Style khung comment |
+
+### Config (`hugo.toml`)
+
+```toml
+[params.giscus]
+  enable      = false              # true để bật comment
+  repo        = ''                 # ví dụ: 'ndchungict/hugo-blog-page'
+  repoId      = ''                 # lấy từ giscus.app
+  category    = 'Announcements'    # tên category trong Discussions
+  categoryId  = ''                 # lấy từ giscus.app
+  mapping     = 'pathname'         # map bài viết ↔ discussion theo URL
+  reactionsEnabled = '1'
+  inputPosition    = 'bottom'
+  theme       = 'dark'             # khớp data-theme của site
+  lang        = 'vi'
+```
+
+### Bật comment (lần đầu)
+
+1. Repo GitHub → Settings → *Features* → tick **Discussions**
+2. Cài app: https://github.com/apps/giscus → Install → chọn repo
+3. Vào https://giscus.app, nhập repo → copy `repoId` + `categoryId` vào `hugo.toml`, đặt `enable = true`
+
+> `mapping = 'pathname'` map discussion theo đường dẫn URL. Vì URL dựa trên `slug` (ổn định) nên đổi tên file không làm mất comment.
+
 ## Theme Development
 
 Theme đang ở giai đoạn skeleton — layout có cấu trúc HTML + BEM class names sẵn, CSS gần như trống. Khi phát triển UI:

@@ -22,8 +22,20 @@ function initTheme() {
       root.dataset.theme = dark ? 'light' : 'dark';
       try { localStorage.setItem('ncn-dark', String(!dark)); } catch (e) {}
       icon();
+      syncGiscusTheme();
     });
   });
+}
+
+/* ── Giscus: đồng bộ theme với site ─────────────────────── */
+function syncGiscusTheme() {
+  var iframe = document.querySelector('iframe.giscus-frame');
+  if (!iframe) return;
+  var theme = document.documentElement.dataset.theme === 'light' ? 'light' : 'dark';
+  iframe.contentWindow.postMessage(
+    { giscus: { setConfig: { theme: theme } } },
+    'https://giscus.app'
+  );
 }
 
 /* ── Mobile burger nav ──────────────────────────────────── */
@@ -347,6 +359,16 @@ function initSearch() {
 }
 
 /* ── Boot ───────────────────────────────────────────────── */
+/* ── Giscus: đồng bộ theme khi iframe load xong ─────────── */
+function initGiscus() {
+  if (!document.querySelector('.comments__giscus')) return;
+  window.addEventListener('message', function (e) {
+    if (e.origin !== 'https://giscus.app') return;
+    if (!e.data || e.data.giscus === undefined) return;
+    syncGiscusTheme();
+  });
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   initTheme();
   initMobileNav();
@@ -359,4 +381,5 @@ document.addEventListener('DOMContentLoaded', function () {
   initSeriesProgress();
   initContactForm();
   initSearch();
+  initGiscus();
 });
