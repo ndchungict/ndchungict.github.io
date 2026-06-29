@@ -102,7 +102,7 @@
         <div class="section-head__title"><span class="section-head__bar" style="background:var(--cat)"></span><span data-vi="{{ $meta.labelVI }}" data-en="{{ $meta.labelEN }}">{{ $meta.labelVI }}</span></div>
         <a class="section-head__link" style="color:var(--cat)" href="{{ .RelPermalink }}"><span data-vi="Xem tất cả" data-en="View all">Xem tất cả</span> →</a>
       </div>
-      <div class="card-grid">
+      <div class="card-grid card-grid--fixed3">
         {{- range $list }}{{ partial "post-card.html" . }}{{ end }}
       </div>
     </section>
@@ -120,7 +120,7 @@
       <div class="section-head__title"><span style="font-size:30px">📚</span><span data-vi="Học theo Series" data-en="Learn by Series">Học theo Series</span></div>
       <a class="section-head__link" href="{{ .RelPermalink }}"><span data-vi="Tất cả Series" data-en="All Series">Tất cả Series</span> →</a>
     </div>
-    <div class="card-grid card-grid--series">
+    <div class="card-grid card-grid--series card-grid--fixed3">
       {{- range $seriesList }}{{ partial "series-card.html" . }}{{ end }}
     </div>
   </section>

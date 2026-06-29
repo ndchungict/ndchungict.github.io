@@ -396,6 +396,11 @@ ul { list-style: none; }
 .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
 .card-grid--series { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
 
+/* Cố định 3 cột: đủ 3 lấp kín hàng, ít hơn để trống bên phải (card không giãn). */
+.card-grid--fixed3 { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 880px) { .card-grid--fixed3 { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .card-grid--fixed3 { grid-template-columns: 1fr; } }
+
 /* ============================================================
    Homepage
    ============================================================ */
