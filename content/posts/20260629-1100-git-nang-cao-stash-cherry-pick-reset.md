@@ -1,6 +1,6 @@
 +++
 date        = '2026-06-29T11:00:00+07:00'
-draft       = true
+draft       = false
 title       = 'Git Nâng cao: Stash, Cherry-pick, Reset, Revert, Reflog'
 slug        = 'git-nang-cao-stash-cherry-pick-reset'
 summary     = 'Các lệnh Git nâng cao giúp bạn xử lý mọi tình huống phức tạp: lưu tạm công việc, chọn commit cụ thể, quay về quá khứ an toàn, và phục hồi lịch sử.'

@@ -1,10 +1,26 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
+<div class="section">
+  <h1 class="section__title">{{ .Title }}</h1>
   {{ .Content }}
-  {{ range .Pages }}
-    <section>
-      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-      {{ .Summary }}
-    </section>
-  {{ end }}
+  <div class="post-list">
+    {{ range .Pages }}
+    <article class="post-card">
+      {{ with .Params.thumbnail }}
+      <a class="post-card__image-link" href="{{ $.RelPermalink }}">
+        <img class="post-card__image" src="{{ . }}" alt="{{ $.Title }}">
+      </a>
+      {{ end }}
+      <div class="post-card__body">
+        <h2 class="post-card__title">
+          <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+        </h2>
+        <p class="post-card__summary">{{ .Summary }}</p>
+        <time class="post-card__date" datetime="{{ .Date | time.Format "2006-01-02" }}">
+          {{ .Date | time.Format ":date_long" }}
+        </time>
+      </div>
+    </article>
+    {{ end }}
+  </div>
+</div>
 {{ end }}

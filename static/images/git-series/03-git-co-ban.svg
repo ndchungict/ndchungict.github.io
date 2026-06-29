@@ -1,33 +1,79 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <rect width="1200" height="630" fill="#0d1117"/>
-  <rect width="5" height="630" fill="#f05032"/>
-  <rect x="680" y="50" width="480" height="340" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-  <rect x="680" y="50" width="480" height="36" rx="8" fill="#21262d"/>
-  <rect x="680" y="68" width="480" height="18" fill="#21262d"/>
-  <circle cx="702" cy="68" r="6" fill="#ff5f57"/>
-  <circle cx="724" cy="68" r="6" fill="#febc2e"/>
-  <circle cx="746" cy="68" r="6" fill="#28c840"/>
-  <text x="855" y="71" font-family="monospace" font-size="12" fill="#8b949e" text-anchor="middle">bash — my-project</text>
-  <text x="700" y="116" font-family="'Courier New', monospace" font-size="13" fill="#58a6ff">$ git init</text>
-  <text x="700" y="140" font-family="'Courier New', monospace" font-size="13" fill="#8b949e">Initialized empty Git repository in ./my-project</text>
-  <text x="700" y="172" font-family="'Courier New', monospace" font-size="13" fill="#58a6ff">$ git add index.html style.css</text>
-  <text x="700" y="204" font-family="'Courier New', monospace" font-size="13" fill="#58a6ff">$ git status</text>
-  <text x="700" y="228" font-family="'Courier New', monospace" font-size="13" fill="#8b949e">Changes to be committed:</text>
-  <text x="700" y="252" font-family="'Courier New', monospace" font-size="13" fill="#238636">  new file: index.html</text>
-  <text x="700" y="276" font-family="'Courier New', monospace" font-size="13" fill="#238636">  new file: style.css</text>
-  <text x="700" y="308" font-family="'Courier New', monospace" font-size="13" fill="#58a6ff">$ git commit -m "feat: khởi tạo dự án"</text>
-  <text x="700" y="332" font-family="'Courier New', monospace" font-size="13" fill="#8b949e">[main a1b2c3d] feat: khởi tạo dự án</text>
-  <text x="700" y="360" font-family="'Courier New', monospace" font-size="16" fill="#58a6ff">█</text>
-  <rect x="60" y="56" width="210" height="34" rx="17" fill="none" stroke="#f05032" stroke-width="1.5"/>
-  <text x="165" y="78" font-family="'Courier New', monospace" font-size="13" fill="#f05032" text-anchor="middle" font-weight="bold">Series Git · Bài 03/08</text>
-  <text x="60" y="185" font-family="'Segoe UI', Arial, sans-serif" font-size="60" fill="#ffffff" font-weight="bold">Git Cơ Bản</text>
-  <text x="60" y="260" font-family="'Segoe UI', Arial, sans-serif" font-size="32" fill="#8b949e">init · add · commit</text>
-  <text x="60" y="305" font-family="'Segoe UI', Arial, sans-serif" font-size="32" fill="#8b949e">status · log · diff</text>
-  <rect x="60" y="430" width="72" height="30" rx="4" fill="none" stroke="#1d4ed8" stroke-width="1"/>
-  <text x="96" y="450" font-family="'Courier New', monospace" font-size="13" fill="#60a5fa" text-anchor="middle">#git</text>
-  <rect x="144" y="430" width="90" height="30" rx="4" fill="none" stroke="#1d4ed8" stroke-width="1"/>
-  <text x="189" y="450" font-family="'Courier New', monospace" font-size="13" fill="#60a5fa" text-anchor="middle">#devops</text>
-  <rect x="0" y="596" width="1200" height="34" fill="#161b22"/>
-  <text x="60" y="618" font-family="'Courier New', monospace" font-size="12" fill="#484f58">blog.chungnd.dev</text>
-  <text x="1140" y="618" font-family="'Courier New', monospace" font-size="12" fill="#f05032" text-anchor="end">03 / 08</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#065f46"/>
+      <stop offset="100%" stop-color="#022c22"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.14)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.06)"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle pattern -->
+  <g opacity="0.04">
+    <pattern id="grid" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="60" height="60" fill="none" stroke="white" stroke-width="1"/>
+    </pattern>
+    <rect width="1200" height="630" fill="url(#grid)"/>
+  </g>
+
+  <!-- Three workflow boxes -->
+  <!-- Box 1: Working Directory -->
+  <rect x="100" y="195" width="260" height="240" rx="12" fill="url(#box1)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+  <!-- Icon: pencil/edit -->
+  <g transform="translate(180, 255)">
+    <rect x="0" y="0" width="100" height="70" rx="6" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2"/>
+    <line x1="14" y1="20" x2="86" y2="20" stroke="rgba(255,255,255,0.35)" stroke-width="2"/>
+    <line x1="14" y1="35" x2="70" y2="35" stroke="rgba(255,255,255,0.35)" stroke-width="2"/>
+    <line x1="14" y1="50" x2="56" y2="50" stroke="rgba(255,255,255,0.35)" stroke-width="2"/>
+  </g>
+  <text x="230" y="355" font-family="sans-serif" font-size="15" fill="rgba(255,255,255,0.55)" text-anchor="middle">Working</text>
+  <text x="230" y="374" font-family="sans-serif" font-size="15" fill="rgba(255,255,255,0.55)" text-anchor="middle">Directory</text>
+  <text x="230" y="408" font-family="monospace" font-size="13" fill="rgba(255,255,255,0.35)" text-anchor="middle">untracked / modified</text>
+
+  <!-- Arrow 1 -->
+  <g transform="translate(360, 315)">
+    <line x1="0" y1="0" x2="80" y2="0" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-dasharray="6,4"/>
+    <polygon points="80,0 68,-6 68,6" fill="rgba(255,255,255,0.4)"/>
+    <text x="40" y="-14" font-family="monospace" font-size="13" fill="#4ade80" text-anchor="middle">git add</text>
+  </g>
+
+  <!-- Box 2: Staging Area -->
+  <rect x="470" y="195" width="260" height="240" rx="12" fill="url(#box1)" stroke="rgba(255,255,255,0.28)" stroke-width="1.5"/>
+  <!-- Icon: checklist -->
+  <g transform="translate(550, 255)">
+    <rect x="0" y="0" width="100" height="70" rx="6" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="2"/>
+    <text x="18" y="24" font-family="monospace" font-size="14" fill="#4ade80">✓</text>
+    <line x1="36" y1="20" x2="84" y2="20" stroke="rgba(255,255,255,0.45)" stroke-width="2"/>
+    <text x="18" y="44" font-family="monospace" font-size="14" fill="#4ade80">✓</text>
+    <line x1="36" y1="40" x2="84" y2="40" stroke="rgba(255,255,255,0.45)" stroke-width="2"/>
+    <text x="18" y="64" font-family="monospace" font-size="14" fill="rgba(255,255,255,0.3)">○</text>
+    <line x1="36" y1="60" x2="78" y2="60" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+  </g>
+  <text x="600" y="355" font-family="sans-serif" font-size="15" fill="rgba(255,255,255,0.55)" text-anchor="middle">Staging</text>
+  <text x="600" y="374" font-family="sans-serif" font-size="15" fill="rgba(255,255,255,0.55)" text-anchor="middle">Area</text>
+  <text x="600" y="408" font-family="monospace" font-size="13" fill="rgba(255,255,255,0.35)" text-anchor="middle">staged</text>
+
+  <!-- Arrow 2 -->
+  <g transform="translate(730, 315)">
+    <line x1="0" y1="0" x2="80" y2="0" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-dasharray="6,4"/>
+    <polygon points="80,0 68,-6 68,6" fill="rgba(255,255,255,0.4)"/>
+    <text x="40" y="-14" font-family="monospace" font-size="13" fill="#4ade80" text-anchor="middle">git commit</text>
+  </g>
+
+  <!-- Box 3: Repository -->
+  <rect x="840" y="195" width="260" height="240" rx="12" fill="url(#box1)" stroke="rgba(255,255,255,0.38)" stroke-width="1.5"/>
+  <!-- Icon: stack of commits -->
+  <g transform="translate(900, 248)">
+    <rect x="0" y="0" width="140" height="22" rx="4" fill="rgba(255,255,255,0.55)"/>
+    <rect x="0" y="28" width="140" height="22" rx="4" fill="rgba(255,255,255,0.38)"/>
+    <rect x="0" y="56" width="140" height="22" rx="4" fill="rgba(255,255,255,0.22)"/>
+    <text x="8" y="16" font-family="monospace" font-size="11" fill="#065f46">a1b2c3d  feat: ...</text>
+    <text x="8" y="44" font-family="monospace" font-size="11" fill="rgba(0,60,30,0.7)">e4f5g6h  fix: ...</text>
+    <text x="8" y="72" font-family="monospace" font-size="11" fill="rgba(0,60,30,0.5)">i7j8k9l  init: ...</text>
+  </g>
+  <text x="970" y="355" font-family="sans-serif" font-size="15" fill="rgba(255,255,255,0.55)" text-anchor="middle">Repository</text>
+  <text x="970" y="408" font-family="monospace" font-size="13" fill="rgba(255,255,255,0.35)" text-anchor="middle">committed</text>
 </svg>

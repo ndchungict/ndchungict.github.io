@@ -6,16 +6,25 @@
 
 <section class="posts">
   <h2 class="posts__heading">Latest Posts</h2>
-  <ul class="posts__list">
+  <div class="post-list">
     {{ range site.RegularPages }}
-    <li class="posts__item">
-      <a class="posts__link" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-      <time class="posts__date" datetime="{{ .Date | time.Format "2006-01-02" }}">
-        {{ .Date | time.Format ":date_long" }}
-      </time>
-      <p class="posts__summary">{{ .Summary }}</p>
-    </li>
+    <article class="post-card">
+      {{ with .Params.thumbnail }}
+      <a class="post-card__image-link" href="{{ $.RelPermalink }}">
+        <img class="post-card__image" src="{{ . }}" alt="{{ $.Title }}">
+      </a>
+      {{ end }}
+      <div class="post-card__body">
+        <h2 class="post-card__title">
+          <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+        </h2>
+        <p class="post-card__summary">{{ .Summary }}</p>
+        <time class="post-card__date" datetime="{{ .Date | time.Format "2006-01-02" }}">
+          {{ .Date | time.Format ":date_long" }}
+        </time>
+      </div>
+    </article>
     {{ end }}
-  </ul>
+  </div>
 </section>
 {{ end }}

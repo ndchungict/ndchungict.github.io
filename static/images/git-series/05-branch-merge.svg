@@ -1,46 +1,75 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <rect width="1200" height="630" fill="#0d1117"/>
-  <rect width="5" height="630" fill="#f05032"/>
-  <!-- Branch diagram -->
-  <rect x="680" y="50" width="480" height="360" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-  <rect x="680" y="50" width="480" height="36" rx="8" fill="#21262d"/>
-  <rect x="680" y="68" width="480" height="18" fill="#21262d"/>
-  <circle cx="702" cy="68" r="6" fill="#ff5f57"/>
-  <circle cx="724" cy="68" r="6" fill="#febc2e"/>
-  <circle cx="746" cy="68" r="6" fill="#28c840"/>
-  <text x="855" y="71" font-family="monospace" font-size="12" fill="#8b949e" text-anchor="middle">bash — git branch</text>
-  <!-- Branch diagram in terminal -->
-  <text x="700" y="116" font-family="'Courier New', monospace" font-size="12" fill="#8b949e">* </text>
-  <text x="718" y="116" font-family="'Courier New', monospace" font-size="12" fill="#238636">main</text>
-  <text x="700" y="138" font-family="'Courier New', monospace" font-size="12" fill="#8b949e">  feature/login</text>
-  <text x="700" y="170" font-family="'Courier New', monospace" font-size="12" fill="#58a6ff">$ git log --oneline --graph --all</text>
-  <text x="700" y="194" font-family="'Courier New', monospace" font-size="12" fill="#238636">*</text>
-  <text x="716" y="194" font-family="'Courier New', monospace" font-size="12" fill="#f05032"> a1b2c3d</text>
-  <text x="760" y="194" font-family="'Courier New', monospace" font-size="12" fill="#8b949e"> (HEAD -&gt; main) Merge feature/login</text>
-  <text x="700" y="218" font-family="'Courier New', monospace" font-size="12" fill="#8b949e">|\ </text>
-  <text x="700" y="242" font-family="'Courier New', monospace" font-size="12" fill="#8b949e">| </text>
-  <text x="712" y="242" font-family="'Courier New', monospace" font-size="12" fill="#238636">*</text>
-  <text x="724" y="242" font-family="'Courier New', monospace" font-size="12" fill="#f05032"> e4f5g6h</text>
-  <text x="768" y="242" font-family="'Courier New', monospace" font-size="12" fill="#8b949e"> Add login form</text>
-  <text x="700" y="266" font-family="'Courier New', monospace" font-size="12" fill="#8b949e">| </text>
-  <text x="712" y="266" font-family="'Courier New', monospace" font-size="12" fill="#238636">*</text>
-  <text x="724" y="266" font-family="'Courier New', monospace" font-size="12" fill="#f05032"> i7j8k9l</text>
-  <text x="768" y="266" font-family="'Courier New', monospace" font-size="12" fill="#8b949e"> Add auth service</text>
-  <text x="700" y="290" font-family="'Courier New', monospace" font-size="12" fill="#8b949e">|/</text>
-  <text x="700" y="314" font-family="'Courier New', monospace" font-size="12" fill="#238636">*</text>
-  <text x="716" y="314" font-family="'Courier New', monospace" font-size="12" fill="#f05032"> m1n2o3p</text>
-  <text x="760" y="314" font-family="'Courier New', monospace" font-size="12" fill="#8b949e"> Initial commit</text>
-  <text x="700" y="380" font-family="'Courier New', monospace" font-size="16" fill="#58a6ff">█</text>
-  <rect x="60" y="56" width="210" height="34" rx="17" fill="none" stroke="#f05032" stroke-width="1.5"/>
-  <text x="165" y="78" font-family="'Courier New', monospace" font-size="13" fill="#f05032" text-anchor="middle" font-weight="bold">Series Git · Bài 05/08</text>
-  <text x="60" y="185" font-family="'Segoe UI', Arial, sans-serif" font-size="66" fill="#ffffff" font-weight="bold">Branch &amp;</text>
-  <text x="60" y="265" font-family="'Segoe UI', Arial, sans-serif" font-size="66" fill="#ffffff" font-weight="bold">Merge</text>
-  <text x="60" y="335" font-family="'Segoe UI', Arial, sans-serif" font-size="30" fill="#8b949e">Làm việc song song · Resolve conflict</text>
-  <rect x="60" y="430" width="72" height="30" rx="4" fill="none" stroke="#1d4ed8" stroke-width="1"/>
-  <text x="96" y="450" font-family="'Courier New', monospace" font-size="13" fill="#60a5fa" text-anchor="middle">#git</text>
-  <rect x="144" y="430" width="90" height="30" rx="4" fill="none" stroke="#1d4ed8" stroke-width="1"/>
-  <text x="189" y="450" font-family="'Courier New', monospace" font-size="13" fill="#60a5fa" text-anchor="middle">#devops</text>
-  <rect x="0" y="596" width="1200" height="34" fill="#161b22"/>
-  <text x="60" y="618" font-family="'Courier New', monospace" font-size="12" fill="#484f58">blog.chungnd.dev</text>
-  <text x="1140" y="618" font-family="'Courier New', monospace" font-size="12" fill="#f05032" text-anchor="end">05 / 08</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e7490"/>
+      <stop offset="100%" stop-color="#042f2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle horizontal bands -->
+  <rect x="0" y="0" width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.04" stroke="white" stroke-width="1">
+    <line x1="0" y1="157" x2="1200" y2="157"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="472" x2="1200" y2="472"/>
+  </g>
+
+  <!-- MAIN BRANCH line -->
+  <line x1="80" y1="385" x2="1120" y2="385" stroke="rgba(255,255,255,0.35)" stroke-width="3"/>
+
+  <!-- FEATURE BRANCH curve -->
+  <!-- Branch out from commit C, back to commit F -->
+  <path d="M 340 385 Q 380 385 420 245 L 780 245 Q 820 245 860 385"
+        fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="2.5"/>
+
+  <!-- HOTFIX branch (small one below) -->
+  <path d="M 600 385 Q 630 385 650 470 L 800 470 Q 820 470 840 385"
+        fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
+
+  <!-- Commit dots on MAIN branch -->
+  <!-- A -->
+  <circle cx="160" cy="385" r="16" fill="rgba(255,255,255,0.15)"/>
+  <circle cx="160" cy="385" r="10" fill="rgba(255,255,255,0.85)"/>
+  <!-- B -->
+  <circle cx="340" cy="385" r="16" fill="rgba(255,255,255,0.15)"/>
+  <circle cx="340" cy="385" r="10" fill="rgba(255,255,255,0.85)"/>
+  <!-- C (merge point feature) -->
+  <circle cx="860" cy="385" r="20" fill="rgba(255,255,255,0.18)"/>
+  <circle cx="860" cy="385" r="13" fill="rgba(255,255,255,0.9)"/>
+  <!-- D -->
+  <circle cx="1040" cy="385" r="16" fill="rgba(255,255,255,0.15)"/>
+  <circle cx="1040" cy="385" r="10" fill="rgba(255,255,255,0.85)"/>
+
+  <!-- Commit dots on FEATURE branch -->
+  <circle cx="480" cy="245" r="13" fill="rgba(255,255,255,0.18)"/>
+  <circle cx="480" cy="245" r="8" fill="rgba(255,255,255,0.75)"/>
+  <circle cx="600" cy="245" r="13" fill="rgba(255,255,255,0.18)"/>
+  <circle cx="600" cy="245" r="8" fill="rgba(255,255,255,0.75)"/>
+  <circle cx="720" cy="245" r="13" fill="rgba(255,255,255,0.18)"/>
+  <circle cx="720" cy="245" r="8" fill="rgba(255,255,255,0.75)"/>
+
+  <!-- Commit dots on HOTFIX -->
+  <circle cx="680" cy="470" r="10" fill="rgba(255,255,255,0.15)"/>
+  <circle cx="680" cy="470" r="6" fill="rgba(255,255,255,0.55)"/>
+  <circle cx="770" cy="470" r="10" fill="rgba(255,255,255,0.15)"/>
+  <circle cx="770" cy="470" r="6" fill="rgba(255,255,255,0.55)"/>
+
+  <!-- Branch labels -->
+  <rect x="60" y="370" width="80" height="24" rx="4" fill="rgba(255,255,255,0.12)"/>
+  <text x="100" y="387" font-family="monospace" font-size="12" fill="rgba(255,255,255,0.7)" text-anchor="middle">main</text>
+
+  <rect x="395" y="225" width="130" height="24" rx="4" fill="rgba(255,255,255,0.12)"/>
+  <text x="460" y="242" font-family="monospace" font-size="12" fill="rgba(255,255,255,0.7)" text-anchor="middle">feature/login</text>
+
+  <rect x="598" y="488" width="100" height="24" rx="4" fill="rgba(255,255,255,0.1)"/>
+  <text x="648" y="505" font-family="monospace" font-size="12" fill="rgba(255,255,255,0.5)" text-anchor="middle">hotfix</text>
+
+  <!-- Merge annotation -->
+  <text x="860" y="425" font-family="monospace" font-size="13" fill="rgba(255,255,255,0.45)" text-anchor="middle">merge</text>
+
+  <!-- HEAD indicator -->
+  <rect x="1040" y="350" width="62" height="22" rx="4" fill="rgba(255,255,255,0.15)"/>
+  <text x="1071" y="366" font-family="monospace" font-size="12" fill="#4ade80" text-anchor="middle">HEAD</text>
+  <line x1="1071" y1="372" x2="1071" y2="385" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
 </svg>

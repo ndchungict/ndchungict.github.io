@@ -1,6 +1,6 @@
 +++
 date        = '2026-06-29T09:30:00+07:00'
-draft       = true
+draft       = false
 title       = 'Làm việc với Remote Repository: clone, push, pull, fetch'
 slug        = 'lam-viec-voi-remote-repository'
 summary     = 'Hướng dẫn kết nối repo local với GitHub/GitLab, clone dự án có sẵn, push code lên remote và đồng bộ thay đổi từ đồng nghiệp về máy.'

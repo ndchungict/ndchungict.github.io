@@ -1,6 +1,6 @@
 +++
 date        = '2026-06-29T11:30:00+07:00'
-draft       = true
+draft       = false
 title       = 'Git Hooks và tự động hóa workflow: Hooks, Aliases, Husky'
 slug        = 'git-hooks-va-tu-dong-hoa'
 summary     = 'Tự động hóa Git workflow với hooks: chạy lint trước commit, test trước push, enforce commit message. Kèm Git aliases hữu ích và Husky cho dự án Node.js.'

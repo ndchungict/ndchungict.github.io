@@ -1,6 +1,6 @@
 +++
 date        = '2026-06-29T08:00:00+07:00'
-draft       = true
+draft       = false
 title       = 'Git là gì? Tại sao mọi developer cần biết Git?'
 slug        = 'git-la-gi-tai-sao-can-dung-git'
 summary     = 'Tìm hiểu Git là gì, lịch sử ra đời, tại sao nó quan trọng với mọi developer, và những khái niệm nền tảng cần nắm trước khi bắt đầu.'

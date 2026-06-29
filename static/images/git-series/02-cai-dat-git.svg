@@ -1,31 +1,82 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <rect width="1200" height="630" fill="#0d1117"/>
-  <rect width="5" height="630" fill="#f05032"/>
-  <rect x="700" y="50" width="460" height="320" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-  <rect x="700" y="50" width="460" height="36" rx="8" fill="#21262d"/>
-  <rect x="700" y="68" width="460" height="18" fill="#21262d"/>
-  <circle cx="722" cy="68" r="6" fill="#ff5f57"/>
-  <circle cx="744" cy="68" r="6" fill="#febc2e"/>
-  <circle cx="766" cy="68" r="6" fill="#28c840"/>
-  <text x="845" y="71" font-family="monospace" font-size="12" fill="#8b949e" text-anchor="middle">bash — git config</text>
-  <text x="720" y="116" font-family="'Courier New', monospace" font-size="13" fill="#58a6ff">$ git config --global user.name "Nguyen Chung"</text>
-  <text x="720" y="144" font-family="'Courier New', monospace" font-size="13" fill="#58a6ff">$ git config --global user.email "dev@gmail.com"</text>
-  <text x="720" y="172" font-family="'Courier New', monospace" font-size="13" fill="#58a6ff">$ git config --global core.editor "code --wait"</text>
-  <text x="720" y="208" font-family="'Courier New', monospace" font-size="13" fill="#58a6ff">$ git config --list</text>
-  <text x="720" y="232" font-family="'Courier New', monospace" font-size="13" fill="#8b949e">user.name=Nguyen Chung</text>
-  <text x="720" y="256" font-family="'Courier New', monospace" font-size="13" fill="#8b949e">user.email=dev@gmail.com</text>
-  <text x="720" y="280" font-family="'Courier New', monospace" font-size="13" fill="#8b949e">core.editor=code --wait</text>
-  <text x="720" y="340" font-family="'Courier New', monospace" font-size="16" fill="#58a6ff">█</text>
-  <rect x="60" y="56" width="210" height="34" rx="17" fill="none" stroke="#f05032" stroke-width="1.5"/>
-  <text x="165" y="78" font-family="'Courier New', monospace" font-size="13" fill="#f05032" text-anchor="middle" font-weight="bold">Series Git · Bài 02/08</text>
-  <text x="60" y="185" font-family="'Segoe UI', Arial, sans-serif" font-size="66" fill="#ffffff" font-weight="bold">Cài đặt &amp;</text>
-  <text x="60" y="264" font-family="'Segoe UI', Arial, sans-serif" font-size="66" fill="#ffffff" font-weight="bold">Cấu hình Git</text>
-  <text x="60" y="335" font-family="'Segoe UI', Arial, sans-serif" font-size="32" fill="#8b949e">Windows · macOS · Linux</text>
-  <rect x="60" y="430" width="72" height="30" rx="4" fill="none" stroke="#1d4ed8" stroke-width="1"/>
-  <text x="96" y="450" font-family="'Courier New', monospace" font-size="13" fill="#60a5fa" text-anchor="middle">#git</text>
-  <rect x="144" y="430" width="90" height="30" rx="4" fill="none" stroke="#1d4ed8" stroke-width="1"/>
-  <text x="189" y="450" font-family="'Courier New', monospace" font-size="13" fill="#60a5fa" text-anchor="middle">#devops</text>
-  <rect x="0" y="596" width="1200" height="34" fill="#161b22"/>
-  <text x="60" y="618" font-family="'Courier New', monospace" font-size="12" fill="#484f58">blog.chungnd.dev</text>
-  <text x="1140" y="618" font-family="'Courier New', monospace" font-size="12" fill="#f05032" text-anchor="end">02 / 08</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#0f0f2e"/>
+    </linearGradient>
+    <linearGradient id="terminal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Background grid lines -->
+  <g opacity="0.05" stroke="white" stroke-width="1">
+    <line x1="0" y1="105" x2="1200" y2="105"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+
+  <!-- Terminal window shadow -->
+  <rect x="198" y="102" width="808" height="432" rx="10" fill="rgba(0,0,0,0.4)"/>
+
+  <!-- Terminal window -->
+  <rect x="194" y="98" width="808" height="432" rx="10" fill="url(#terminal)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- Title bar -->
+  <rect x="194" y="98" width="808" height="42" rx="10" fill="#1e293b"/>
+  <rect x="194" y="118" width="808" height="22" fill="#1e293b"/>
+
+  <!-- Traffic lights -->
+  <circle cx="226" cy="119" r="7" fill="#ff5f57"/>
+  <circle cx="250" cy="119" r="7" fill="#febc2e"/>
+  <circle cx="274" cy="119" r="7" fill="#28c840"/>
+
+  <!-- Terminal title -->
+  <rect x="440" y="109" width="120" height="20" rx="3" fill="rgba(255,255,255,0.06)"/>
+
+  <!-- Code lines -->
+  <g font-family="monospace" font-size="16" fill-opacity="0.85">
+    <!-- Prompt line 1 -->
+    <text x="228" y="178" fill="#4ade80">❯</text>
+    <text x="248" y="178" fill="rgba(255,255,255,0.7)"> git config --global user.name </text>
+    <text x="570" y="178" fill="#fbbf24">"Nguyen Chung"</text>
+
+    <!-- Prompt line 2 -->
+    <text x="228" y="214" fill="#4ade80">❯</text>
+    <text x="248" y="214" fill="rgba(255,255,255,0.7)"> git config --global user.email </text>
+    <text x="579" y="214" fill="#fbbf24">"dev@email.com"</text>
+
+    <!-- blank -->
+    <!-- Prompt line 3 -->
+    <text x="228" y="260" fill="#4ade80">❯</text>
+    <text x="248" y="260" fill="rgba(255,255,255,0.7)"> git config --list</text>
+
+    <!-- Output -->
+    <text x="228" y="296" fill="rgba(255,255,255,0.45)">user.name</text>
+    <text x="338" y="296" fill="rgba(255,255,255,0.3)">=</text>
+    <text x="356" y="296" fill="#60a5fa">Nguyen Chung</text>
+    <text x="228" y="322" fill="rgba(255,255,255,0.45)">user.email</text>
+    <text x="338" y="322" fill="rgba(255,255,255,0.3)">=</text>
+    <text x="356" y="322" fill="#60a5fa">dev@email.com</text>
+    <text x="228" y="348" fill="rgba(255,255,255,0.45)">core.editor</text>
+    <text x="338" y="348" fill="rgba(255,255,255,0.3)">=</text>
+    <text x="356" y="348" fill="#60a5fa">code --wait</text>
+
+    <!-- SSH -->
+    <text x="228" y="394" fill="#4ade80">❯</text>
+    <text x="248" y="394" fill="rgba(255,255,255,0.7)"> ssh -T git@github.com</text>
+    <text x="228" y="424" fill="#4ade80">Hi chungnd1! You've successfully authenticated.</text>
+
+    <!-- Cursor -->
+    <rect x="228" y="456" width="10" height="18" fill="#60a5fa" opacity="0.8"/>
+  </g>
 </svg>

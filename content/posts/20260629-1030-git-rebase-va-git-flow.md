@@ -1,6 +1,6 @@
 +++
 date        = '2026-06-29T10:30:00+07:00'
-draft       = true
+draft       = false
 title       = 'Git Rebase và quy trình làm việc nhóm: Git Flow, GitHub Flow'
 slug        = 'git-rebase-va-git-flow'
 summary     = 'Hiểu sự khác biệt giữa merge và rebase, khi nào dùng cái nào, interactive rebase để làm sạch lịch sử, và các quy trình làm việc nhóm phổ biến.'

@@ -1,33 +1,75 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <rect width="1200" height="630" fill="#0d1117"/>
-  <rect width="5" height="630" fill="#f05032"/>
-  <rect x="680" y="50" width="480" height="340" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-  <rect x="680" y="50" width="480" height="36" rx="8" fill="#21262d"/>
-  <rect x="680" y="68" width="480" height="18" fill="#21262d"/>
-  <circle cx="702" cy="68" r="6" fill="#ff5f57"/>
-  <circle cx="724" cy="68" r="6" fill="#febc2e"/>
-  <circle cx="746" cy="68" r="6" fill="#28c840"/>
-  <text x="855" y="71" font-family="monospace" font-size="12" fill="#8b949e" text-anchor="middle">bash — git remote</text>
-  <text x="700" y="116" font-family="'Courier New', monospace" font-size="13" fill="#58a6ff">$ git clone git@github.com:user/repo.git</text>
-  <text x="700" y="140" font-family="'Courier New', monospace" font-size="13" fill="#8b949e">Cloning into 'repo'...</text>
-  <text x="700" y="172" font-family="'Courier New', monospace" font-size="13" fill="#58a6ff">$ git remote -v</text>
-  <text x="700" y="196" font-family="'Courier New', monospace" font-size="13" fill="#8b949e">origin  git@github.com:user/repo.git (fetch)</text>
-  <text x="700" y="220" font-family="'Courier New', monospace" font-size="13" fill="#8b949e">origin  git@github.com:user/repo.git (push)</text>
-  <text x="700" y="256" font-family="'Courier New', monospace" font-size="13" fill="#58a6ff">$ git push origin main</text>
-  <text x="700" y="280" font-family="'Courier New', monospace" font-size="13" fill="#8b949e">Enumerating objects: 5, done.</text>
-  <text x="700" y="304" font-family="'Courier New', monospace" font-size="13" fill="#238636">To github.com:user/repo.git</text>
-  <text x="700" y="328" font-family="'Courier New', monospace" font-size="13" fill="#238636">   a1b2c3d..e4f5g6h  main -&gt; main</text>
-  <text x="700" y="360" font-family="'Courier New', monospace" font-size="16" fill="#58a6ff">█</text>
-  <rect x="60" y="56" width="210" height="34" rx="17" fill="none" stroke="#f05032" stroke-width="1.5"/>
-  <text x="165" y="78" font-family="'Courier New', monospace" font-size="13" fill="#f05032" text-anchor="middle" font-weight="bold">Series Git · Bài 04/08</text>
-  <text x="60" y="185" font-family="'Segoe UI', Arial, sans-serif" font-size="55" fill="#ffffff" font-weight="bold">Remote Repository</text>
-  <text x="60" y="260" font-family="'Segoe UI', Arial, sans-serif" font-size="32" fill="#8b949e">clone · push · pull · fetch</text>
-  <text x="60" y="305" font-family="'Segoe UI', Arial, sans-serif" font-size="32" fill="#8b949e">GitHub · GitLab · Bitbucket</text>
-  <rect x="60" y="430" width="72" height="30" rx="4" fill="none" stroke="#1d4ed8" stroke-width="1"/>
-  <text x="96" y="450" font-family="'Courier New', monospace" font-size="13" fill="#60a5fa" text-anchor="middle">#git</text>
-  <rect x="144" y="430" width="90" height="30" rx="4" fill="none" stroke="#1d4ed8" stroke-width="1"/>
-  <text x="189" y="450" font-family="'Courier New', monospace" font-size="13" fill="#60a5fa" text-anchor="middle">#devops</text>
-  <rect x="0" y="596" width="1200" height="34" fill="#161b22"/>
-  <text x="60" y="618" font-family="'Courier New', monospace" font-size="12" fill="#484f58">blog.chungnd.dev</text>
-  <text x="1140" y="618" font-family="'Courier New', monospace" font-size="12" fill="#f05032" text-anchor="end">04 / 08</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5b21b6"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.12)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.05)"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Stars background -->
+  <g fill="white">
+    <circle cx="120" cy="80" r="1.5" opacity="0.4"/>
+    <circle cx="280" cy="140" r="1" opacity="0.3"/>
+    <circle cx="450" cy="60" r="1.5" opacity="0.5"/>
+    <circle cx="700" cy="90" r="1" opacity="0.35"/>
+    <circle cx="900" cy="50" r="2" opacity="0.4"/>
+    <circle cx="1050" cy="110" r="1.5" opacity="0.3"/>
+    <circle cx="1150" cy="70" r="1" opacity="0.45"/>
+    <circle cx="180" cy="550" r="1.5" opacity="0.3"/>
+    <circle cx="380" cy="580" r="1" opacity="0.4"/>
+    <circle cx="1000" cy="560" r="1.5" opacity="0.35"/>
+    <circle cx="80" cy="300" r="1" opacity="0.3"/>
+    <circle cx="1100" cy="280" r="1.5" opacity="0.3"/>
+  </g>
+
+  <!-- Cloud shape (Remote) at top -->
+  <g transform="translate(600, 160)">
+    <!-- Cloud body -->
+    <ellipse cx="0" cy="20" rx="130" ry="55" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
+    <ellipse cx="-75" cy="30" rx="70" ry="45" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+    <ellipse cx="75" cy="30" rx="70" ry="45" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+    <!-- Mask out bottom -->
+    <rect x="-210" y="40" width="420" height="60" fill="#5b21b6" opacity="0"/>
+    <!-- GitHub icon hint -->
+    <text x="0" y="28" font-family="monospace" font-size="22" fill="rgba(255,255,255,0.7)" text-anchor="middle">origin / remote</text>
+  </g>
+
+  <!-- Push arrow (left) -->
+  <g transform="translate(380, 330)">
+    <line x1="0" y1="60" x2="0" y2="-60" stroke="rgba(255,255,255,0.35)" stroke-width="2.5" stroke-dasharray="8,5"/>
+    <polygon points="0,-60 -7,-44 7,-44" fill="rgba(255,255,255,0.35)"/>
+    <rect x="-50" y="-12" width="100" height="24" rx="4" fill="rgba(255,255,255,0.08)"/>
+    <text x="0" y="5" font-family="monospace" font-size="14" fill="rgba(255,255,255,0.6)" text-anchor="middle">git push</text>
+  </g>
+
+  <!-- Pull arrow (right) -->
+  <g transform="translate(820, 330)">
+    <line x1="0" y1="-60" x2="0" y2="60" stroke="rgba(255,255,255,0.35)" stroke-width="2.5" stroke-dasharray="8,5"/>
+    <polygon points="0,60 -7,44 7,44" fill="rgba(255,255,255,0.35)"/>
+    <rect x="-50" y="-12" width="100" height="24" rx="4" fill="rgba(255,255,255,0.08)"/>
+    <text x="0" y="5" font-family="monospace" font-size="14" fill="rgba(255,255,255,0.6)" text-anchor="middle">git pull</text>
+  </g>
+
+  <!-- Local machine (laptop shape) at bottom -->
+  <g transform="translate(600, 460)">
+    <!-- Screen -->
+    <rect x="-160" y="-90" width="320" height="180" rx="10" fill="url(#card)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+    <!-- Screen bezel -->
+    <rect x="-145" y="-78" width="290" height="148" rx="6" fill="rgba(0,0,0,0.3)"/>
+    <!-- Code lines in screen -->
+    <line x1="-120" y1="-50" x2="20" y2="-50" stroke="rgba(255,255,255,0.3)" stroke-width="2" stroke-linecap="round"/>
+    <line x1="-120" y1="-30" x2="60" y2="-30" stroke="rgba(255,255,255,0.2)" stroke-width="2" stroke-linecap="round"/>
+    <line x1="-120" y1="-10" x2="-20" y2="-10" stroke="rgba(255,255,255,0.25)" stroke-width="2" stroke-linecap="round"/>
+    <line x1="-120" y1="10" x2="40" y2="10" stroke="rgba(255,255,255,0.2)" stroke-width="2" stroke-linecap="round"/>
+    <line x1="-120" y1="30" x2="10" y2="30" stroke="rgba(255,255,255,0.15)" stroke-width="2" stroke-linecap="round"/>
+    <!-- Status dot green -->
+    <circle cx="100" cy="-55" r="6" fill="#4ade80" opacity="0.8"/>
+    <!-- Base -->
+    <rect x="-185" y="90" width="370" height="14" rx="7" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  </g>
 </svg>

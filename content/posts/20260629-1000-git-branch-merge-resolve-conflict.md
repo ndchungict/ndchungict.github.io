@@ -1,6 +1,6 @@
 +++
 date        = '2026-06-29T10:00:00+07:00'
-draft       = true
+draft       = false
 title       = 'Git Branch và Merge: Làm việc song song, resolve conflict'
 slug        = 'git-branch-merge-resolve-conflict'
 summary     = 'Hiểu sâu về Git branch: tạo nhánh, chuyển nhánh, merge các loại (fast-forward, no-ff, squash) và xử lý conflict như một developer chuyên nghiệp.'

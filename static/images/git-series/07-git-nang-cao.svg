@@ -1,34 +1,72 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <rect width="1200" height="630" fill="#0d1117"/>
-  <rect width="5" height="630" fill="#f05032"/>
-  <rect x="680" y="50" width="480" height="360" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-  <rect x="680" y="50" width="480" height="36" rx="8" fill="#21262d"/>
-  <rect x="680" y="68" width="480" height="18" fill="#21262d"/>
-  <circle cx="702" cy="68" r="6" fill="#ff5f57"/>
-  <circle cx="724" cy="68" r="6" fill="#febc2e"/>
-  <circle cx="746" cy="68" r="6" fill="#28c840"/>
-  <text x="855" y="71" font-family="monospace" font-size="12" fill="#8b949e" text-anchor="middle">bash — git advanced</text>
-  <text x="700" y="116" font-family="'Courier New', monospace" font-size="13" fill="#58a6ff">$ git stash push -m "WIP: đang làm login"</text>
-  <text x="700" y="140" font-family="'Courier New', monospace" font-size="13" fill="#8b949e">Saved working directory: WIP: đang làm login</text>
-  <text x="700" y="172" font-family="'Courier New', monospace" font-size="13" fill="#58a6ff">$ git cherry-pick a1b2c3d</text>
-  <text x="700" y="196" font-family="'Courier New', monospace" font-size="13" fill="#8b949e">[main a4b5c6d] Fix: sửa lỗi validation</text>
-  <text x="700" y="228" font-family="'Courier New', monospace" font-size="13" fill="#58a6ff">$ git reset --soft HEAD~1</text>
-  <text x="700" y="252" font-family="'Courier New', monospace" font-size="13" fill="#8b949e">Unstaged changes after reset:</text>
-  <text x="700" y="276" font-family="'Courier New', monospace" font-size="13" fill="#f0e68c">M  src/components/Login.vue</text>
-  <text x="700" y="308" font-family="'Courier New', monospace" font-size="13" fill="#58a6ff">$ git reflog</text>
-  <text x="700" y="332" font-family="'Courier New', monospace" font-size="13" fill="#f05032">a1b2c3d</text>
-  <text x="762" y="332" font-family="'Courier New', monospace" font-size="13" fill="#8b949e"> HEAD@{0}: reset: moving to HEAD~1</text>
-  <text x="700" y="380" font-family="'Courier New', monospace" font-size="16" fill="#58a6ff">█</text>
-  <rect x="60" y="56" width="210" height="34" rx="17" fill="none" stroke="#f05032" stroke-width="1.5"/>
-  <text x="165" y="78" font-family="'Courier New', monospace" font-size="13" fill="#f05032" text-anchor="middle" font-weight="bold">Series Git · Bài 07/08</text>
-  <text x="60" y="185" font-family="'Segoe UI', Arial, sans-serif" font-size="60" fill="#ffffff" font-weight="bold">Git Nâng Cao</text>
-  <text x="60" y="258" font-family="'Segoe UI', Arial, sans-serif" font-size="32" fill="#8b949e">stash · cherry-pick · reset</text>
-  <text x="60" y="302" font-family="'Segoe UI', Arial, sans-serif" font-size="32" fill="#8b949e">revert · reflog · bisect</text>
-  <rect x="60" y="430" width="72" height="30" rx="4" fill="none" stroke="#1d4ed8" stroke-width="1"/>
-  <text x="96" y="450" font-family="'Courier New', monospace" font-size="13" fill="#60a5fa" text-anchor="middle">#git</text>
-  <rect x="144" y="430" width="90" height="30" rx="4" fill="none" stroke="#1d4ed8" stroke-width="1"/>
-  <text x="189" y="450" font-family="'Courier New', monospace" font-size="13" fill="#60a5fa" text-anchor="middle">#devops</text>
-  <rect x="0" y="596" width="1200" height="34" fill="#161b22"/>
-  <text x="60" y="618" font-family="'Courier New', monospace" font-size="12" fill="#484f58">blog.chungnd.dev</text>
-  <text x="1140" y="618" font-family="'Courier New', monospace" font-size="12" fill="#f05032" text-anchor="end">07 / 08</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#030712"/>
+    </linearGradient>
+    <linearGradient id="card1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="rgba(99,102,241,0.3)"/>
+      <stop offset="100%" stop-color="rgba(99,102,241,0.1)"/>
+    </linearGradient>
+    <linearGradient id="card2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="rgba(236,72,153,0.3)"/>
+      <stop offset="100%" stop-color="rgba(236,72,153,0.1)"/>
+    </linearGradient>
+    <linearGradient id="card3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="rgba(245,158,11,0.3)"/>
+      <stop offset="100%" stop-color="rgba(245,158,11,0.1)"/>
+    </linearGradient>
+    <linearGradient id="card4" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="rgba(16,185,129,0.3)"/>
+      <stop offset="100%" stop-color="rgba(16,185,129,0.1)"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle dot pattern -->
+  <g opacity="0.06">
+    <pattern id="dots" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="15" cy="15" r="1" fill="white"/>
+    </pattern>
+    <rect width="1200" height="630" fill="url(#dots)"/>
+  </g>
+
+  <!-- Stash card -->
+  <g transform="translate(0, -30)">
+    <rect x="200" y="130" width="800" height="68" rx="8" fill="url(#card1)" stroke="rgba(99,102,241,0.4)" stroke-width="1"/>
+    <text x="240" y="158" font-family="monospace" font-size="14" fill="rgba(99,102,241,0.9)">stash</text>
+    <text x="320" y="158" font-family="monospace" font-size="14" fill="rgba(255,255,255,0.5)">·  Lưu tạm thay đổi chưa commit</text>
+    <text x="240" y="182" font-family="monospace" font-size="13" fill="rgba(255,255,255,0.25)">git stash push -m "WIP: đang làm..."  →  git stash pop</text>
+  </g>
+
+  <!-- Cherry-pick card -->
+  <g transform="translate(0, 20)">
+    <rect x="200" y="220" width="800" height="68" rx="8" fill="url(#card2)" stroke="rgba(236,72,153,0.4)" stroke-width="1"/>
+    <text x="240" y="248" font-family="monospace" font-size="14" fill="rgba(236,72,153,0.9)">cherry-pick</text>
+    <text x="370" y="248" font-family="monospace" font-size="14" fill="rgba(255,255,255,0.5)">·  Chọn commit cụ thể</text>
+    <text x="240" y="272" font-family="monospace" font-size="13" fill="rgba(255,255,255,0.25)">git cherry-pick a1b2c3d</text>
+  </g>
+
+  <!-- Reset card -->
+  <g transform="translate(0, 70)">
+    <rect x="200" y="310" width="800" height="68" rx="8" fill="url(#card3)" stroke="rgba(245,158,11,0.4)" stroke-width="1"/>
+    <text x="240" y="338" font-family="monospace" font-size="14" fill="rgba(245,158,11,0.9)">reset</text>
+    <text x="310" y="338" font-family="monospace" font-size="14" fill="rgba(255,255,255,0.5)">·  Quay về commit cũ hơn</text>
+    <text x="240" y="362" font-family="monospace" font-size="13" fill="rgba(255,255,255,0.25)">--soft  |  --mixed  |  --hard</text>
+  </g>
+
+  <!-- Reflog card -->
+  <g transform="translate(0, 120)">
+    <rect x="200" y="400" width="800" height="68" rx="8" fill="url(#card4)" stroke="rgba(16,185,129,0.4)" stroke-width="1"/>
+    <text x="240" y="428" font-family="monospace" font-size="14" fill="rgba(16,185,129,0.9)">reflog</text>
+    <text x="318" y="428" font-family="monospace" font-size="14" fill="rgba(255,255,255,0.5)">·  Khôi phục mọi thứ</text>
+    <text x="240" y="452" font-family="monospace" font-size="13" fill="rgba(255,255,255,0.25)">git reflog  →  git checkout HEAD@{n}</text>
+  </g>
+
+  <!-- Connecting line on left -->
+  <line x1="190" y1="168" x2="190" y2="518" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+  <circle cx="190" cy="168" r="4" fill="rgba(99,102,241,0.6)"/>
+  <circle cx="190" cy="258" r="4" fill="rgba(236,72,153,0.6)"/>
+  <circle cx="190" cy="348" r="4" fill="rgba(245,158,11,0.6)"/>
+  <circle cx="190" cy="438" r="4" fill="rgba(16,185,129,0.6)"/>
 </svg>

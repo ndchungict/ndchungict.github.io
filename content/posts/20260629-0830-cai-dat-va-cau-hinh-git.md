@@ -1,6 +1,6 @@
 +++
 date        = '2026-06-29T08:30:00+07:00'
-draft       = true
+draft       = false
 title       = 'Cài đặt và cấu hình Git trên Windows, macOS, Linux'
 slug        = 'cai-dat-va-cau-hinh-git'
 summary     = 'Hướng dẫn cài đặt Git trên Windows, macOS và Linux, cấu hình user, editor, SSH key và các thiết lập cần thiết trước khi bắt đầu làm việc.'

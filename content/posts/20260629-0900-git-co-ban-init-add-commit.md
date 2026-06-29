@@ -1,6 +1,6 @@
 +++
 date        = '2026-06-29T09:00:00+07:00'
-draft       = true
+draft       = false
 title       = 'Git cơ bản: init, add, commit, status, log, diff'
 slug        = 'git-co-ban-init-add-commit'
 summary     = 'Học các lệnh Git cơ bản nhất: khởi tạo repo, theo dõi thay đổi, tạo commit, xem lịch sử và so sánh code. Kèm bài tập thực hành từ đầu.'
