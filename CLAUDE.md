@@ -220,7 +220,21 @@ Comment dùng [Giscus](https://giscus.app) — lưu bình luận trong **GitHub 
 | `layouts/_partials/comments.html` | Render script Giscus, chỉ hiện khi `enable = true` và đã điền đủ ID |
 | `layouts/page.html` | Nhúng `{{ partial "comments.html" . }}` ở cuối cột bài viết, sau author-card |
 | `assets/js/main.js` → `syncGiscusTheme()` / `initGiscus()` | Đồng bộ theme Giscus với light/dark của site |
-| `assets/css/main.css` → `.comments` | Style khung comment |
+| `assets/css/main.css` → `.comments` | Style khung bao quanh Giscus (chỉ là divider + spacing) |
+| `static/css/giscus-light.css` | Custom theme Giscus — chế độ sáng (khớp màu/font site) |
+| `static/css/giscus-dark.css` | Custom theme Giscus — chế độ tối |
+
+### Theming
+
+Giscus render trong `<iframe>` → **CSS của site không can thiệp được** nội dung bên trong.
+Giao diện đến từ custom theme CSS đặt trong `static/css/giscus-*.css`, trỏ tới qua `themeLight`/`themeDark`.
+
+- Hai file CSS này set biến Primer (`--color-*`) theo bảng màu site + bo góc card bình luận.
+- `data-theme` trỏ tới **URL tuyệt đối** của file CSS (Hugo tự `absURL` khi giá trị bắt đầu bằng `/`).
+- JS đổi theme light↔dark khi user bấm nút chuyển chế độ (gửi `postMessage` tới iframe Giscus).
+- Tiêu đề "Bình luận" + reactions là do **Giscus tự render** (dịch nhờ `lang = 'vi'`) — partial **không** tự thêm `<h2>` để tránh trùng.
+
+> ⚠️ Custom theme CSS phải truy cập được qua **HTTPS công khai**. Trên `hugo server` (localhost) giscus.app không fetch được file → tạm fallback theme mặc định. Chỉ hiển thị đúng sau khi **deploy** với `baseURL` thật trong `hugo.toml`.
 
 ### Config (`hugo.toml`)
 
@@ -234,8 +248,9 @@ Comment dùng [Giscus](https://giscus.app) — lưu bình luận trong **GitHub 
   mapping     = 'pathname'         # map bài viết ↔ discussion theo URL
   reactionsEnabled = '1'
   inputPosition    = 'bottom'
-  theme       = 'dark'             # khớp data-theme của site
   lang        = 'vi'
+  themeLight  = '/css/giscus-light.css'   # tên builtin HOẶC path file CSS custom
+  themeDark   = '/css/giscus-dark.css'
 ```
 
 ### Bật comment (lần đầu)

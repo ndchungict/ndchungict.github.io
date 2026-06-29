@@ -1,11 +1,14 @@
 {{- $g := site.Params.giscus }}
 {{- if and $g $g.enable $g.repo $g.repoId $g.categoryId }}
+{{- /* Theme có thể là tên builtin hoặc đường dẫn CSS custom → đổi sang URL tuyệt đối */}}
+{{- $themeLight := default "light" $g.themeLight }}
+{{- if hasPrefix $themeLight "/" }}{{ $themeLight = $themeLight | absURL }}{{ end }}
+{{- $themeDark := default "dark" $g.themeDark }}
+{{- if hasPrefix $themeDark "/" }}{{ $themeDark = $themeDark | absURL }}{{ end }}
 <section class="comments" id="comments">
-  <h2 class="comments__title">
-    <span data-vi="Bình luận" data-en="Comments">Bình luận</span>
-  </h2>
   <div class="comments__giscus">
     <script src="https://giscus.app/client.js"
+            id="giscus-script"
             data-repo="{{ $g.repo }}"
             data-repo-id="{{ $g.repoId }}"
             data-category="{{ $g.category }}"
@@ -15,7 +18,9 @@
             data-reactions-enabled="{{ default "1" $g.reactionsEnabled }}"
             data-emit-metadata="0"
             data-input-position="{{ default "bottom" $g.inputPosition }}"
-            data-theme="{{ default "dark" $g.theme }}"
+            data-theme="{{ $themeDark }}"
+            data-theme-light="{{ $themeLight }}"
+            data-theme-dark="{{ $themeDark }}"
             data-lang="{{ default "vi" $g.lang }}"
             data-loading="lazy"
             crossorigin="anonymous"

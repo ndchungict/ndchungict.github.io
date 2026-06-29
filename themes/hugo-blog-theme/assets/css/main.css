@@ -579,9 +579,9 @@ ul { list-style: none; }
 .author-card__link:hover { text-decoration: underline; }
 
 /* Comments (Giscus) */
-.comments { margin-top: 32px; padding: 24px; background: var(--c-card); border: 1px solid var(--c-border); border-radius: var(--r-xl); }
-.comments__title { font-size: 18px; font-weight: 700; margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid var(--c-border); }
+.comments { margin-top: 32px; padding-top: 28px; border-top: 1px solid var(--c-border); }
 .comments__giscus { min-height: 150px; }
+.comments .giscus, .comments .giscus-frame { width: 100%; }
 
 /* Sidebar mini lists */
 .mini-list { display: flex; flex-direction: column; gap: 4px; }

@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://ndchungict.github.io/'
 locale = 'vi-vn'
 title = 'Nguyen Chung Notebook'
 theme = 'hugo-blog-theme'
@@ -53,8 +53,12 @@ theme = 'hugo-blog-theme'
     mapping     = 'pathname'         # cách map bài viết với discussion
     reactionsEnabled = '1'           # '1' = hiện reactions, '0' = ẩn
     inputPosition    = 'bottom'      # 'top' hoặc 'bottom'
-    theme       = 'dark'             # theme giscus, khớp với data-theme của site
     lang        = 'vi'
+    # Theme: tên builtin ('light','dark','transparent_dark',...) HOẶC đường dẫn
+    # tới file CSS custom (bắt đầu bằng '/', sẽ tự đổi thành URL tuyệt đối).
+    # Tự đổi theo chế độ sáng/tối của site.
+    themeLight  = '/css/giscus-light.css'
+    themeDark   = '/css/giscus-dark.css'
 
   [params.social]
     github   = 'https://github.com/ndchungict'

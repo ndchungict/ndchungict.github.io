@@ -29,9 +29,13 @@ function initTheme() {
 
 /* ── Giscus: đồng bộ theme với site ─────────────────────── */
 function syncGiscusTheme() {
+  var s = document.getElementById('giscus-script');
   var iframe = document.querySelector('iframe.giscus-frame');
-  if (!iframe) return;
-  var theme = document.documentElement.dataset.theme === 'light' ? 'light' : 'dark';
+  if (!s || !iframe) return;
+  var isLight = document.documentElement.dataset.theme === 'light';
+  var theme = isLight
+    ? (s.dataset.themeLight || 'light')
+    : (s.dataset.themeDark || 'dark');
   iframe.contentWindow.postMessage(
     { giscus: { setConfig: { theme: theme } } },
     'https://giscus.app'
