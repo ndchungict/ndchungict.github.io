@@ -149,6 +149,142 @@ function initCatFilter() {
   });
 }
 
+/* ── Series list filter tabs ────────────────────────────── */
+function initSeriesTabs() {
+  var tabsWrap = document.querySelector('[data-series-tabs]');
+  var grid = document.querySelector('[data-series-grid]');
+  if (!tabsWrap || !grid) return;
+  var tabs = tabsWrap.querySelectorAll('.sl-tab');
+  var cards = Array.prototype.slice.call(grid.querySelectorAll('.series-card'));
+  tabs.forEach(function (t) {
+    t.addEventListener('click', function () {
+      tabs.forEach(function (x) { x.classList.remove('active'); });
+      t.classList.add('active');
+      var cat = t.dataset.cat;
+      cards.forEach(function (c) { c.style.display = (cat === 'all' || c.dataset.cat === cat) ? '' : 'none'; });
+    });
+  });
+}
+
+/* ── Series progress (localStorage ncn-series-<id>) ─────── */
+function seriesRead(id, n) {
+  try {
+    var raw = localStorage.getItem('ncn-series-' + id);
+    var arr = raw ? JSON.parse(raw) : [];
+    if (!Array.isArray(arr) || arr.length !== n) arr = new Array(n).fill(false);
+    return arr;
+  } catch (e) { return new Array(n).fill(false); }
+}
+function seriesWrite(id, arr) {
+  try { localStorage.setItem('ncn-series-' + id, JSON.stringify(arr)); } catch (e) {}
+}
+
+function initSeriesProgress() {
+  // Cards trên SeriesList (chỉ hiển thị)
+  document.querySelectorAll('[data-series-id][data-series-parts]:not([data-series-detail])').forEach(function (card) {
+    var id = card.dataset.seriesId, n = parseInt(card.dataset.seriesParts, 10) || 0;
+    var arr = seriesRead(id, n);
+    var done = arr.filter(Boolean).length;
+    var pct = n ? Math.round((done / n) * 100) : 0;
+    var fill = card.querySelector('[data-series-fill]');
+    var label = card.querySelector('[data-series-label]');
+    var cta = card.querySelector('[data-series-cta] span[data-vi]');
+    if (fill) fill.style.width = pct + '%';
+    if (label) label.firstChild && (label.firstChild.textContent = done + '/' + n + ' ');
+    if (cta) {
+      if (done >= n && n > 0) { cta.setAttribute('data-vi', 'Đã hoàn thành ✓'); cta.setAttribute('data-en', 'Completed ✓'); }
+      else if (done > 0) { cta.setAttribute('data-vi', 'Tiếp tục (' + done + '/' + n + ')'); cta.setAttribute('data-en', 'Continue (' + done + '/' + n + ')'); }
+      cta.textContent = (localStorage.getItem('ncn-lang') === 'EN') ? cta.getAttribute('data-en') : cta.getAttribute('data-vi');
+    }
+  });
+
+  // Trang SeriesDetail (tương tác)
+  var detail = document.querySelector('[data-series-detail]');
+  if (!detail) return;
+  var id = detail.dataset.seriesId, n = parseInt(detail.dataset.seriesParts, 10) || 0;
+  var arr = seriesRead(id, n);
+  var items = Array.prototype.slice.call(detail.querySelectorAll('.sd-item'));
+  var links = items.map(function (it) { var a = it.querySelector('[data-part-link]'); return a ? a.getAttribute('href') : '#'; });
+
+  function render() {
+    var done = arr.filter(Boolean).length;
+    var pct = n ? Math.round((done / n) * 100) : 0;
+    items.forEach(function (it, i) {
+      it.classList.toggle('is-done', !!arr[i]);
+      var btn = it.querySelector('[data-part-toggle]');
+      if (btn) btn.textContent = arr[i]
+        ? (localStorage.getItem('ncn-lang') === 'EN' ? '✓ Read' : '✓ Đã đọc')
+        : (localStorage.getItem('ncn-lang') === 'EN' ? 'Mark as read' : 'Đánh dấu đã đọc');
+    });
+    detail.querySelectorAll('[data-series-fill]').forEach(function (f) { f.style.width = pct + '%'; });
+    detail.querySelectorAll('[data-series-fill-top]').forEach(function (f) { f.style.width = pct + '%'; });
+    detail.querySelectorAll('[data-series-done]').forEach(function (d) { d.textContent = done; });
+    detail.querySelectorAll('[data-series-pct]').forEach(function (p) { p.textContent = pct + '%'; });
+    detail.querySelectorAll('[data-series-label]').forEach(function (l) {
+      l.textContent = done + '/' + n + (l.closest('.sd-strip') ? (' phần · ' + pct + '%') : ' phần');
+    });
+    var circ = 163.4;
+    detail.querySelectorAll('[data-series-circle]').forEach(function (c) { c.setAttribute('stroke-dashoffset', circ - circ * pct / 100); });
+    // continue → bài chưa đọc đầu tiên
+    var nextIdx = arr.indexOf(false);
+    detail.querySelectorAll('[data-series-continue]').forEach(function (b) {
+      b.setAttribute('href', nextIdx >= 0 ? links[nextIdx] : links[0]);
+    });
+  }
+
+  items.forEach(function (it, i) {
+    var btn = it.querySelector('[data-part-toggle]');
+    if (btn) btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      arr[i] = !arr[i]; seriesWrite(id, arr); render();
+    });
+  });
+  var reset = detail.querySelector('[data-series-reset]');
+  if (reset) reset.addEventListener('click', function () { arr = new Array(n).fill(false); seriesWrite(id, arr); render(); });
+  render();
+}
+
+/* ── Contact form (Web3Forms + success state) ───────────── */
+function initContactForm() {
+  var form = document.querySelector('[data-contact-form]');
+  if (!form) return;
+  var wrap = document.querySelector('[data-contact-form-wrap]');
+  var success = document.querySelector('[data-contact-success]');
+  var msg = form.querySelector('[data-msg]');
+  var counter = form.querySelector('[data-counter]');
+  var pills = form.querySelectorAll('[data-topic-pills] [data-topic]');
+  var topicInput = form.querySelector('[data-topic-value]');
+  var resetBtn = document.querySelector('[data-contact-reset]');
+
+  if (msg && counter) msg.addEventListener('input', function () { counter.textContent = msg.value.length; });
+  pills.forEach(function (p) {
+    p.addEventListener('click', function () {
+      pills.forEach(function (x) { x.classList.remove('active'); });
+      p.classList.add('active');
+      if (topicInput) topicInput.value = p.dataset.topic;
+    });
+  });
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var data = new FormData(form);
+    fetch(form.action, { method: 'POST', body: data, headers: { Accept: 'application/json' } })
+      .then(function (r) { return r.json(); })
+      .then(function (res) {
+        if (res.success) { if (wrap) wrap.hidden = true; if (success) success.hidden = false; }
+        else { alert((res && res.message) || 'Gửi thất bại, vui lòng thử lại.'); }
+      })
+      .catch(function () { alert('Lỗi mạng, vui lòng thử lại.'); });
+  });
+
+  if (resetBtn) resetBtn.addEventListener('click', function () {
+    form.reset();
+    if (counter) counter.textContent = '0';
+    if (success) success.hidden = true;
+    if (wrap) wrap.hidden = false;
+  });
+}
+
 /* ── Boot ───────────────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', function () {
   initTheme();
@@ -158,4 +294,7 @@ document.addEventListener('DOMContentLoaded', function () {
   initTOC();
   initCopyLink();
   initCatFilter();
+  initSeriesTabs();
+  initSeriesProgress();
+  initContactForm();
 });

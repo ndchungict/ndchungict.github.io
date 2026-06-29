@@ -9,6 +9,7 @@
 {{- range site.Params.categories }}
   {{- if eq .key $catKey }}{{ $color = .color }}{{ $emoji = .emoji }}{{ $catLabel = .labelVI }}{{ end }}
 {{- end }}
+{{- with $s.Params.icon }}{{ $emoji = . }}{{ end }}
 {{- $cover := $s.Params.cover }}
 <a class="series-card {{ $color }}" href="{{ $s.RelPermalink }}">
   <div class="series-card__media">

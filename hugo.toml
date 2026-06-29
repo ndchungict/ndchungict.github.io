@@ -28,6 +28,8 @@ theme = 'hugo-blog-theme'
   role        = 'Senior Automation Test Engineer'
   email       = 'nguyenchung.dev@gmail.com'
   tagline     = 'Share • Learn • Grow'
+  # Tạm ẩn trang About: đổi thành true để hiện lại
+  showAbout   = false
   # Web3Forms — dán access key lấy từ web3forms.com (cần cho trang Contact)
   web3formsKey = ''
 

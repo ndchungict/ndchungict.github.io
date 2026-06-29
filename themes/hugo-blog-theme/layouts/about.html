@@ -1,8 +1,111 @@
 {{ define "main" }}
-<article class="about">
-  <h1 class="about__title">{{ .Title }}</h1>
-  <div class="about__content">
-    {{ .Content }}
+{{- $posts := len (where site.RegularPages "Section" "posts") }}
+<div class="about">
+  <!-- Hero -->
+  <section class="about-hero">
+    <div class="hero__grid"></div>
+    <div class="hero__glow" style="right:10%;left:auto;top:-60px;transform:none"></div>
+    <div class="container about-hero__inner">
+      <div class="about-hero__avatar-col">
+        <div class="about-avatar">NC</div>
+        <div class="about-status"><span class="about-status__dot"></span><span data-vi="Sẵn sàng hợp tác" data-en="Open to collaborate">Sẵn sàng hợp tác</span></div>
+      </div>
+      <div class="about-hero__info">
+        <div class="about-hello" data-vi="👋 Xin chào! Tôi là" data-en="👋 Hello! I am">👋 Xin chào! Tôi là</div>
+        <h1 class="about-name">{{ site.Params.author }}</h1>
+        <div class="about-role">{{ site.Params.role }} &amp; Tech Blogger</div>
+        <p class="about-bio" data-vi="5+ năm kinh nghiệm làm Automation Test Engineer tại các công ty công nghệ Việt Nam. Đam mê chia sẻ kiến thức thực chiến về testing, lập trình, tiếng Anh và tiếng Trung cho cộng đồng developer Việt." data-en="5+ years as an Automation Test Engineer at Vietnamese tech companies. Passionate about sharing hands-on knowledge on testing, programming, English and Chinese for the Vietnamese developer community.">5+ năm kinh nghiệm làm Automation Test Engineer tại các công ty công nghệ Việt Nam. Đam mê chia sẻ kiến thức thực chiến về testing, lập trình, tiếng Anh và tiếng Trung cho cộng đồng developer Việt.</p>
+        <div class="about-cta">
+          <a class="btn btn--primary" href="{{ "/contact/" | relURL }}"><span data-vi="Liên hệ với tôi" data-en="Contact Me">Liên hệ với tôi</span></a>
+          <a class="btn" href="{{ "/" | relURL }}"><span data-vi="Đọc blog" data-en="Read Blog">Đọc blog</span></a>
+        </div>
+      </div>
+      <div class="about-stats">
+        <div class="about-stat"><div class="about-stat__num" style="color:var(--c-accent)">5+</div><div class="about-stat__label" data-vi="Năm kinh nghiệm" data-en="Years experience">Năm kinh nghiệm</div></div>
+        <div class="about-stat"><div class="about-stat__num" style="color:var(--cat-auto)">{{ $posts }}</div><div class="about-stat__label" data-vi="Bài viết" data-en="Posts">Bài viết</div></div>
+        <div class="about-stat"><div class="about-stat__num" style="color:var(--cat-en)">{{ len site.Taxonomies.series }}</div><div class="about-stat__label">Series</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <!-- Skills -->
+    <section class="about-sec">
+      <div class="section-head__title"><span class="section-head__bar"></span><span data-vi="Kỹ năng & Chuyên môn" data-en="Skills & Expertise">Kỹ năng & Chuyên môn</span></div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-card__head">🤖 Automation Testing</div>
+          {{- range slice (dict "n" "Selenium WebDriver" "l" 95) (dict "n" "Playwright" "l" 90) (dict "n" "Cypress" "l" 80) (dict "n" "Postman / RestAssured" "l" 88) (dict "n" "TestNG / JUnit" "l" 92) }}
+          <div class="skill"><div class="skill__head"><span>{{ .n }}</span><span>{{ .l }}%</span></div><div class="progress"><div class="progress__fill" style="width:{{ .l }}%;background:var(--cat-auto)"></div></div></div>
+          {{- end }}
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__head">💻 Development &amp; DevOps</div>
+          {{- range slice (dict "n" "Java" "l" 88) (dict "n" "JavaScript / TypeScript" "l" 82) (dict "n" "Git / GitHub Actions" "l" 90) (dict "n" "Docker" "l" 75) (dict "n" "Jenkins / CI/CD" "l" 85) }}
+          <div class="skill"><div class="skill__head"><span>{{ .n }}</span><span>{{ .l }}%</span></div><div class="progress"><div class="progress__fill" style="width:{{ .l }}%;background:var(--c-accent)"></div></div></div>
+          {{- end }}
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__head">🇬🇧 <span data-vi="Tiếng Anh" data-en="English">Tiếng Anh</span></div>
+          <div class="chips-row">
+            <span class="lang-chip is-en">IELTS 7.0</span><span class="lang-chip is-en">B2 Upper-Intermediate</span><span class="lang-chip is-en">Technical English</span>
+          </div>
+          <p class="skill-note" data-vi="Đọc & viết tài liệu kỹ thuật tiếng Anh thành thạo. Đang luyện Speaking để đạt IELTS 7.5+." data-en="Fluent in reading & writing technical English. Practising Speaking toward IELTS 7.5+.">Đọc & viết tài liệu kỹ thuật tiếng Anh thành thạo. Đang luyện Speaking để đạt IELTS 7.5+.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__head">🀄 <span data-vi="Tiếng Trung" data-en="Chinese">Tiếng Trung</span></div>
+          <div class="chips-row">
+            <span class="lang-chip is-cn">HSK 4</span><span class="lang-chip is-cn">1,200+ <span data-vi="từ vựng" data-en="words">từ vựng</span></span><span class="lang-chip is-cn">300+ <span data-vi="Hán tự" data-en="Hanzi">Hán tự</span></span>
+          </div>
+          <p class="skill-note" data-vi="Học tiếng Trung từ 2021. Đọc hiểu tài liệu kỹ thuật và giao tiếp cơ bản." data-en="Learning Chinese since 2021. Can read technical docs and hold basic conversations.">Học tiếng Trung từ 2021. Đọc hiểu tài liệu kỹ thuật và giao tiếp cơ bản.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech stack -->
+    <section class="about-sec">
+      <div class="section-head__title"><span class="section-head__bar" style="background:var(--cat-auto)"></span>Tech Stack</div>
+      <div class="chips-row">
+        {{- range slice "Selenium" "Playwright" "Cypress" "Java" "JavaScript" "TypeScript" "Python" "Postman" "Docker" "Jenkins" "GitHub Actions" "MySQL" "TestNG" "Maven / Gradle" "REST / SOAP" "BDD / Cucumber" }}
+        <span class="tech-chip">{{ . }}</span>
+        {{- end }}
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="about-sec">
+      <div class="section-head__title"><span class="section-head__bar" style="background:var(--cat-en)"></span><span data-vi="Hành trình của tôi" data-en="My Journey">Hành trình của tôi</span></div>
+      <div class="about-timeline">
+        <div class="about-timeline__line"></div>
+        {{- range slice
+          (dict "y" "2019" "c" "var(--c-accent)" "tvi" "Bắt đầu sự nghiệp IT" "ten" "Started in IT" "dvi" "Tốt nghiệp CNTT, bắt đầu làm Manual Tester tại startup công nghệ đầu tiên." "den" "Graduated in CS and began as a Manual Tester at my first tech startup.")
+          (dict "y" "2020" "c" "var(--cat-auto)" "tvi" "Chuyển sang Automation Testing" "ten" "Moved to Automation Testing" "dvi" "Tự học Selenium + Java, xây framework automation đầu tiên, giảm 70% thời gian regression." "den" "Self-taught Selenium + Java, built the first automation framework, cut regression time 70%.")
+          (dict "y" "2021" "c" "var(--cat-en)" "tvi" "Mở rộng kỹ năng & học tiếng Trung" "ten" "Expanded Skills & Started Chinese" "dvi" "Học thêm API Testing với Postman, RestAssured và bắt đầu học tiếng Trung." "den" "Added API Testing with Postman, RestAssured and started learning Chinese.")
+          (dict "y" "2022" "c" "#8B5CF6" "tvi" "Senior ATE & ra mắt Blog" "ten" "Senior ATE & Launched Blog" "dvi" "Thăng chức Senior ATE, ra mắt Nguyen Chung Notebook với bài viết đầu tiên." "den" "Promoted to Senior ATE, launched Nguyen Chung Notebook with the first post.")
+          (dict "y" "2025" "c" "var(--c-accent)" "tvi" "Phát triển cộng đồng" "ten" "Growing the Community" "dvi" "Tiếp tục chia sẻ kiến thức IT, Automation, Tiếng Anh và Tiếng Trung cho developer Việt." "den" "Continuing to share IT, Automation, English and Chinese knowledge for VN developers.")
+        }}
+        <div class="about-tl-item">
+          <span class="about-tl-dot" style="background:{{ .c }};box-shadow:0 0 0 3px var(--c-bg),0 0 0 5px {{ .c }}"></span>
+          <div class="about-tl-card" style="--tlc:{{ .c }}">
+            <div class="about-tl-head"><span class="about-tl-year" style="color:{{ .c }}">{{ .y }}</span><span class="about-tl-title" data-vi="{{ .tvi }}" data-en="{{ .ten }}">{{ .tvi }}</span></div>
+            <p class="about-tl-desc" data-vi="{{ .dvi }}" data-en="{{ .den }}">{{ .dvi }}</p>
+          </div>
+        </div>
+        {{- end }}
+      </div>
+    </section>
   </div>
-</article>
+
+  <!-- CTA -->
+  <section class="about-cta-banner">
+    <div class="container">
+      <h2 data-vi="Muốn hợp tác hoặc trao đổi kiến thức?" data-en="Want to collaborate or exchange knowledge?">Muốn hợp tác hoặc trao đổi kiến thức?</h2>
+      <p data-vi="Tôi luôn sẵn sàng kết nối với developer, tester và người đam mê học hỏi." data-en="I'm always open to connecting with developers, testers, and passionate learners.">Tôi luôn sẵn sàng kết nối với developer, tester và người đam mê học hỏi.</p>
+      <div class="about-cta">
+        <a class="btn btn--primary" href="{{ "/contact/" | relURL }}"><span data-vi="Liên hệ với tôi" data-en="Contact Me">Liên hệ với tôi</span></a>
+        <a class="btn" href="{{ "/" | relURL }}"><span data-vi="Đọc blog" data-en="Read Blog">Đọc blog</span></a>
+      </div>
+    </div>
+  </section>
+</div>
 {{ end }}

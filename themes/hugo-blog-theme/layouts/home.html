@@ -28,7 +28,7 @@
 
     <div class="hero__cta">
       <a class="btn btn--primary" href="#posts"><span data-vi="Khám phá bài viết" data-en="Explore Posts">Khám phá bài viết</span> →</a>
-      <a class="btn" href="{{ "/about/" | relURL }}"><span data-vi="Về tác giả" data-en="About the Author">Về tác giả</span></a>
+      {{- if site.Params.showAbout }}<a class="btn" href="{{ "/about/" | relURL }}"><span data-vi="Về tác giả" data-en="About the Author">Về tác giả</span></a>{{ end }}
     </div>
 
     <div class="hero__chips">

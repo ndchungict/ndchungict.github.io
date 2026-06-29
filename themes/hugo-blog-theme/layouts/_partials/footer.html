@@ -35,7 +35,7 @@
         <div class="footer__col-title"><span data-vi="Trang" data-en="Pages">Trang</span></div>
         <div class="footer__links">
           <a href="{{ "/" | relURL }}"><span data-vi="Trang chủ" data-en="Home">Trang chủ</span></a>
-          <a href="{{ "/about/" | relURL }}"><span data-vi="Giới thiệu" data-en="About">Giới thiệu</span></a>
+          {{- if site.Params.showAbout }}<a href="{{ "/about/" | relURL }}"><span data-vi="Giới thiệu" data-en="About">Giới thiệu</span></a>{{ end }}
           <a href="{{ "/contact/" | relURL }}"><span data-vi="Liên hệ" data-en="Contact">Liên hệ</span></a>
         </div>
       </div>
@@ -62,7 +62,7 @@
     </div>
     <div class="footer__nav">
       <a href="{{ "/" | relURL }}"><span data-vi="Trang chủ" data-en="Home">Trang chủ</span></a>
-      <a href="{{ "/about/" | relURL }}"><span data-vi="Giới thiệu" data-en="About">Giới thiệu</span></a>
+      {{- if site.Params.showAbout }}<a href="{{ "/about/" | relURL }}"><span data-vi="Giới thiệu" data-en="About">Giới thiệu</span></a>{{ end }}
       <a href="{{ "/contact/" | relURL }}"><span data-vi="Liên hệ" data-en="Contact">Liên hệ</span></a>
     </div>
   </div>

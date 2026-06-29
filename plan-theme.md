@@ -98,29 +98,30 @@
 ## 📚 Phase 3 — Series & trang phụ
 
 ### 3.1 Series
-- [ ] Series list (taxonomy `series`): hero + 3 stat + filter tab category (JS) + grid series card
-- [ ] Series detail (`series/term.html`): hero gradient + icon mờ + breadcrumb + author box
-- [ ] Series detail: strip tiến độ + nút Tiếp tục/Reset + timeline `.Pages.ByWeight` (dot/số/tag/duration)
-- [ ] Series detail sidebar: vòng tròn % SVG + info (phần/giờ/level/tag) + other series
-- [ ] `main.js`: `initSeriesProgress()` (localStorage `ncn-series-*`) — nếu Phase 0 chốt làm
+- [x] Series list (`series/taxonomy.html`): hero + 3 stat + filter tab category (JS `initSeriesTabs`) + grid series card
+- [x] Series detail (`series/term.html`): hero gradient + icon mờ + breadcrumb + author box
+- [x] Series detail: strip tiến độ + nút Tiếp tục/Reset + timeline `.Pages.ByWeight` (dot/số/tag/duration)
+- [x] Series detail sidebar: vòng tròn % SVG + info (phần/giờ/level) + other series
+- [x] `main.js`: `initSeriesProgress()` (localStorage `ncn-series-*`)
+- [x] `content/series/<slug>/_index.md` cho 2 series (title/description/icon/level)
 
 ### 3.2 About (`about.html`)
-- [ ] Hero: avatar gradient "NC" + badge + tên/chức danh/bio + 2 CTA + 3 stat card
-- [ ] Skills: 2 card progress-bar + 2 card chip (EN/CN)
-- [ ] Tech stack chips (mono, hover đổi màu)
-- [ ] Timeline hành trình (2019→2025) + CTA banner
-- [ ] Đưa dữ liệu vào `content/about/index.md` hoặc hard-code layout
+- [x] Hero: avatar gradient "NC" + badge + tên/chức danh/bio + 2 CTA + 3 stat card
+- [x] Skills: 2 card progress-bar + 2 card chip (EN/CN)
+- [x] Tech stack chips (mono, hover đổi màu)
+- [x] Timeline hành trình (2019→2025) + CTA banner
+- [x] Hard-code dữ liệu trong layout (song ngữ data-vi/en); stat dùng số bài/series thật
 
 ### 3.3 Contact (`contact.html`)
-- [ ] Hero ✉ + title + sub
-- [ ] Form: name/email + topic pills + subject + message + counter 500 + submit
-- [ ] Panel phải: direct contact (email/LinkedIn/GitHub/YouTube) + response time + topics
-- [ ] Gắn service form (Formspree/Web3Forms) hoặc `mailto:` + trạng thái success (JS)
+- [x] Hero ✉ + title + sub
+- [x] Form: name/email + topic pills + subject + message + counter 500 + submit
+- [x] Panel phải: direct contact (email/LinkedIn/GitHub/YouTube) + response time + topics
+- [x] Web3Forms (`access_key` từ `hugo.toml`) + trạng thái success (JS `initContactForm`, fetch). ⚠️ chờ access key thật
 
 ### 3.4 404 (`404.html`)
-- [ ] Nền grid + glow + "404" số 0 cam float
-- [ ] Terminal card (`$ cd ... → Error 404 → cd ~/home`)
-- [ ] Title + desc + 2 CTA + 4 quick-link card
+- [x] Nền grid + glow + "404" số 0 cam float
+- [x] Terminal card (`$ cd ... → Error 404 → cd ~/home`)
+- [x] Title + desc + 2 CTA + quick-link card (theo category thật)
 
 ---
 

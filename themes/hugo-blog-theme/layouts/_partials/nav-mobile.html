@@ -14,9 +14,11 @@
   {{- with site.GetPage "/series" }}
     <a class="nav-mobile__link" href="{{ .RelPermalink }}">Series</a>
   {{- end }}
+  {{- if site.Params.showAbout }}
   <a class="nav-mobile__link {{ if eq .Section "about" }}active{{ end }}" href="{{ "/about/" | relURL }}">
     <span data-vi="Giới thiệu" data-en="About">Giới thiệu</span>
   </a>
+  {{- end }}
   <a class="nav-mobile__link {{ if eq .Section "contact" }}active{{ end }}" href="{{ "/contact/" | relURL }}">
     <span data-vi="Liên hệ" data-en="Contact">Liên hệ</span>
   </a>

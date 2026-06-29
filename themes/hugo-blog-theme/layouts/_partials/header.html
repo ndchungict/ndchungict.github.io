@@ -24,9 +24,11 @@
     {{- with site.GetPage "/series" }}
       <a class="nav__link {{ if hasPrefix $.RelPermalink .RelPermalink }}active{{ end }}" href="{{ .RelPermalink }}">Series</a>
     {{- end }}
+    {{- if site.Params.showAbout }}
     <a class="nav__link {{ if eq .Section "about" }}active{{ end }}" href="{{ "/about/" | relURL }}">
       <span data-vi="Giới thiệu" data-en="About">Giới thiệu</span>
     </a>
+    {{- end }}
   </div>
 
   <div class="nav__actions">

@@ -1,23 +1,101 @@
 {{ define "main" }}
-<article class="contact">
-  <h1 class="contact__title">{{ .Title }}</h1>
-  <div class="contact__content">
-    {{ .Content }}
-  </div>
-  <form class="contact__form" action="#" method="POST">
-    <div class="contact__field">
-      <label class="contact__label" for="name">Name</label>
-      <input class="contact__input" type="text" id="name" name="name" required>
+<div class="contact">
+  <!-- Hero -->
+  <section class="contact-hero">
+    <div class="hero__grid"></div>
+    <div class="container contact-hero__inner">
+      <div class="contact-hero__icon">✉</div>
+      <h1 class="contact-hero__title" data-vi="Liên hệ với tôi" data-en="Get In Touch">Liên hệ với tôi</h1>
+      <p class="contact-hero__sub" data-vi="Có câu hỏi, góp ý hay muốn hợp tác? Tôi luôn sẵn sàng lắng nghe và phản hồi trong vòng 24h." data-en="Have a question, suggestion, or want to collaborate? I respond within 24 hours.">Có câu hỏi, góp ý hay muốn hợp tác? Tôi luôn sẵn sàng lắng nghe và phản hồi trong vòng 24h.</p>
     </div>
-    <div class="contact__field">
-      <label class="contact__label" for="email">Email</label>
-      <input class="contact__input" type="email" id="email" name="email" required>
+  </section>
+
+  <main class="container contact-grid">
+    <!-- Form -->
+    <div>
+      <div class="contact-card" data-contact-form-wrap>
+        <h2 class="contact-card__title" data-vi="Gửi tin nhắn" data-en="Send a Message">Gửi tin nhắn</h2>
+        <p class="contact-card__sub" data-vi="Điền đầy đủ thông tin, tôi sẽ phản hồi sớm nhất có thể." data-en="Fill in the details and I'll get back to you soon.">Điền đầy đủ thông tin, tôi sẽ phản hồi sớm nhất có thể.</p>
+
+        <form data-contact-form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="{{ site.Params.web3formsKey }}">
+          <input type="hidden" name="subject" value="[Notebook] Liên hệ mới từ website">
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="topic" data-topic-value value="it">
+
+          <div class="form-row">
+            <div class="form-field">
+              <label data-vi="Họ và tên" data-en="Full Name">Họ và tên</label> <span class="req">*</span>
+              <input type="text" name="name" required placeholder="Nguyễn Văn A">
+            </div>
+            <div class="form-field">
+              <label>Email</label> <span class="req">*</span>
+              <input type="email" name="email" required placeholder="example@email.com">
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label data-vi="Chủ đề" data-en="Topic">Chủ đề</label>
+            <div class="topic-pills" data-topic-pills>
+              <button type="button" class="topic-pill is-it active" data-topic="it">💻 IT &amp; Tech</button>
+              <button type="button" class="topic-pill is-auto" data-topic="automation">🤖 Automation</button>
+              <button type="button" class="topic-pill is-en" data-topic="english">🇬🇧 <span data-vi="Tiếng Anh" data-en="English">Tiếng Anh</span></button>
+              <button type="button" class="topic-pill is-cn" data-topic="chinese">🀄 <span data-vi="Tiếng Trung" data-en="Chinese">Tiếng Trung</span></button>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label data-vi="Tiêu đề" data-en="Subject">Tiêu đề</label> <span class="req">*</span>
+            <input type="text" name="user_subject" required placeholder="Tôi muốn hỏi về...">
+          </div>
+
+          <div class="form-field">
+            <label data-vi="Nội dung" data-en="Message">Nội dung</label> <span class="req">*</span>
+            <textarea name="message" rows="5" required maxlength="500" placeholder="Nội dung tin nhắn của bạn..." data-msg></textarea>
+            <div class="form-counter"><span data-counter>0</span> / 500</div>
+          </div>
+
+          <button type="submit" class="btn btn--primary contact-submit"><span data-vi="Gửi tin nhắn" data-en="Send Message">Gửi tin nhắn</span> →</button>
+          <p class="contact-privacy" data-vi="🔒 Thông tin của bạn được bảo mật và không chia sẻ cho bên thứ ba." data-en="🔒 Your information is secure and never shared with third parties.">🔒 Thông tin của bạn được bảo mật và không chia sẻ cho bên thứ ba.</p>
+        </form>
+      </div>
+
+      <div class="contact-success" data-contact-success hidden>
+        <div class="contact-success__check">✓</div>
+        <h2 data-vi="Tin nhắn đã được gửi!" data-en="Message Sent!">Tin nhắn đã được gửi!</h2>
+        <p data-vi="Cảm ơn bạn đã liên hệ. Tôi sẽ phản hồi trong vòng 24 giờ qua email của bạn." data-en="Thanks for reaching out! I'll reply within 24 hours.">Cảm ơn bạn đã liên hệ. Tôi sẽ phản hồi trong vòng 24 giờ qua email của bạn.</p>
+        <button class="btn btn--primary" data-contact-reset><span data-vi="Gửi thêm tin nhắn" data-en="Send Another">Gửi thêm tin nhắn</span></button>
+      </div>
     </div>
-    <div class="contact__field">
-      <label class="contact__label" for="message">Message</label>
-      <textarea class="contact__textarea" id="message" name="message" rows="6" required></textarea>
+
+    <!-- Right panel -->
+    <div class="contact-side">
+      <div class="panel">
+        <div class="panel__title" data-vi="Liên hệ trực tiếp" data-en="Direct Contact">Liên hệ trực tiếp</div>
+        <div class="contact-info">
+          <a class="contact-info__item" href="mailto:{{ site.Params.email }}"><span class="contact-info__icon">✉</span><div><div class="contact-info__label">Email</div><div class="contact-info__val">{{ site.Params.email }}</div></div></a>
+          {{- with site.Params.social.linkedin }}<a class="contact-info__item" href="{{ . }}"><span class="contact-info__icon" style="background:color-mix(in srgb,var(--cat-en) 12%,transparent)">in</span><div><div class="contact-info__label">LinkedIn</div><div class="contact-info__val">{{ . | replaceRE "https?://" "" }}</div></div></a>{{ end }}
+          {{- with site.Params.social.github }}<a class="contact-info__item" href="{{ . }}"><span class="contact-info__icon">🐙</span><div><div class="contact-info__label">GitHub</div><div class="contact-info__val">{{ . | replaceRE "https?://" "" }}</div></div></a>{{ end }}
+          {{- with site.Params.social.youtube }}<a class="contact-info__item" href="{{ . }}"><span class="contact-info__icon" style="background:color-mix(in srgb,var(--cat-cn) 12%,transparent)">▶</span><div><div class="contact-info__label">YouTube</div><div class="contact-info__val">{{ . | replaceRE "https?://" "" }}</div></div></a>{{ end }}
+        </div>
+      </div>
+
+      <div class="panel contact-response">
+        <div style="font-size:22px;margin-bottom:10px">⚡</div>
+        <div class="contact-response__title" data-vi="Thời gian phản hồi" data-en="Response Time">Thời gian phản hồi</div>
+        <p data-vi="Tôi thường phản hồi trong vòng 24 giờ vào ngày làm việc. Với hợp tác, nhắn qua LinkedIn để nhanh hơn." data-en="I usually reply within 24 hours on weekdays. For collaborations, LinkedIn is faster.">Tôi thường phản hồi trong vòng 24 giờ vào ngày làm việc. Với hợp tác, nhắn qua LinkedIn để nhanh hơn.</p>
+      </div>
+
+      <div class="panel">
+        <div class="contact-topics__title" data-vi="Tôi sẵn sàng trao đổi về:" data-en="Happy to discuss:">Tôi sẵn sàng trao đổi về:</div>
+        <ul class="contact-topics">
+          <li><span class="dot is-it"></span><span data-vi="Automation Testing, SDET, QA" data-en="Automation Testing, SDET, QA">Automation Testing, SDET, QA</span></li>
+          <li><span class="dot is-auto"></span><span data-vi="DevOps, CI/CD, Docker, Kubernetes" data-en="DevOps, CI/CD, Docker, Kubernetes">DevOps, CI/CD, Docker, Kubernetes</span></li>
+          <li><span class="dot is-en"></span><span data-vi="Tiếng Anh kỹ thuật, IELTS cho IT" data-en="Technical English, IELTS for IT">Tiếng Anh kỹ thuật, IELTS cho IT</span></li>
+          <li><span class="dot is-cn"></span><span data-vi="Học tiếng Trung, HSK, tiếng Trung IT" data-en="Chinese learning, HSK, Chinese for tech">Học tiếng Trung, HSK, tiếng Trung IT</span></li>
+        </ul>
+      </div>
     </div>
-    <button class="contact__submit" type="submit">Send</button>
-  </form>
-</article>
+  </main>
+</div>
 {{ end }}

@@ -1,0 +1,125 @@
+{{ define "main" }}
+{{- $term := . }}
+{{- $slug := path.Base .RelPermalink }}
+{{- $parts := .Pages.ByWeight }}
+{{- $count := len $parts }}
+{{- $first := index $parts 0 }}
+{{- $catKey := "" }}{{ with $first }}{{ $catKey = index (or .Params.categories slice) 0 }}{{ end }}
+{{- $color := "" }}{{ $emoji := "📚" }}{{ $catLabel := "" }}
+{{- range site.Params.categories }}{{ if eq .key $catKey }}{{ $color = .color }}{{ $emoji = .emoji }}{{ $catLabel = .labelVI }}{{ end }}{{ end }}
+{{- with .Params.icon }}{{ $emoji = . }}{{ end }}
+{{- $totalMin := 0 }}{{ range $parts }}{{ $totalMin = add $totalMin .ReadingTime }}{{ end }}
+
+<div class="sd {{ $color }}" data-series-detail data-series-id="{{ $slug }}" data-series-parts="{{ $count }}">
+  <!-- Hero -->
+  <section class="sd-hero">
+    <div class="sd-hero__bigicon">{{ $emoji }}</div>
+    <div class="container sd-hero__inner">
+      <nav class="breadcrumb">
+        <a href="{{ .Parent.RelPermalink }}">Series</a><span>›</span>
+        <span class="breadcrumb__current">{{ .LinkTitle }}</span>
+      </nav>
+      <div class="sd-hero__row">
+        <div>
+          <div class="sd-hero__badges">
+            {{- with $catLabel }}<span class="badge sd-hero__cat">{{ . }}</span>{{ end }}
+            <span class="sd-hero__meta">{{ $count }} <span data-vi="phần" data-en="parts">phần</span> · {{ $totalMin }} min{{ with .Params.level }} · {{ . }}{{ end }}</span>
+          </div>
+          <h1 class="sd-hero__title">{{ .LinkTitle }}</h1>
+          {{- with .Params.description }}<p class="sd-hero__desc">{{ . }}</p>{{ end }}
+        </div>
+        <div class="sd-hero__author">
+          <span class="avatar">NC</span>
+          <div><div class="sd-hero__author-name">{{ site.Params.author }}</div><div class="sd-hero__author-role">{{ site.Params.role }}</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Progress strip -->
+  <div class="sd-strip">
+    <div class="container sd-strip__inner">
+      <div class="sd-strip__bar">
+        <div class="sd-strip__head"><span data-vi="Tiến độ" data-en="Progress">Tiến độ</span><span data-series-label>0/{{ $count }} <span data-vi="phần" data-en="parts">phần</span> · 0%</span></div>
+        <div class="progress"><div class="progress__fill" data-series-fill style="width:0%"></div></div>
+      </div>
+      <a class="btn btn--primary" data-series-continue href="{{ $first.RelPermalink }}"><span data-vi="Bắt đầu học" data-en="Start Learning">Bắt đầu học</span> →</a>
+      <button class="btn sd-reset" data-series-reset><span data-vi="Đặt lại" data-en="Reset">Đặt lại</span></button>
+    </div>
+  </div>
+
+  <!-- Layout -->
+  <div class="container sd-layout">
+    <!-- Timeline -->
+    <div>
+      <h2 class="sd-section-title"><span class="sd-section-icon">📋</span><span data-vi="Nội dung series" data-en="Series Contents">Nội dung series</span></h2>
+      <div class="sd-timeline">
+        <div class="sd-timeline__line"></div>
+        {{- range $i, $pg := $parts }}
+        {{- $tag := "" }}{{ with index ($pg.GetTerms "tags") 0 }}{{ $tag = .LinkTitle }}{{ end }}
+        <div class="sd-item" data-part="{{ $i }}">
+          <span class="sd-item__dot" data-part-dot></span>
+          <div class="sd-item__card">
+            <div class="sd-item__num">{{ printf "%02d" (add $i 1) }}</div>
+            <div class="sd-item__content">
+              <div class="sd-item__meta">
+                {{- with $tag }}<span class="badge">{{ . }}</span>{{ end }}
+                <span class="sd-item__dur">{{ $pg.ReadingTime }} min</span>
+              </div>
+              <h3 class="sd-item__title">{{ $pg.Title }}</h3>
+            </div>
+            <div class="sd-item__actions">
+              <a class="sd-item__read" href="{{ $pg.RelPermalink }}" data-part-link><span data-vi="Đọc bài" data-en="Read">Đọc bài</span></a>
+              <button class="sd-item__mark" data-part-toggle><span data-vi="Đánh dấu đã đọc" data-en="Mark as read">Đánh dấu đã đọc</span></button>
+            </div>
+          </div>
+        </div>
+        {{- end }}
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="post-aside">
+      <div class="panel sd-progress-card">
+        <div class="sd-progress-card__top" data-series-fill-top></div>
+        <div class="panel__pad">
+          <div class="panel__title"><span data-vi="Tiến độ của bạn" data-en="Your Progress">Tiến độ của bạn</span></div>
+          <div class="sd-circle-row">
+            <div class="sd-circle">
+              <svg width="64" height="64" viewBox="0 0 64 64">
+                <circle cx="32" cy="32" r="26" stroke="var(--c-border)" stroke-width="6" fill="none"/>
+                <circle cx="32" cy="32" r="26" stroke="var(--cat)" stroke-width="6" fill="none" stroke-linecap="round" stroke-dasharray="163.4" stroke-dashoffset="163.4" transform="rotate(-90 32 32)" data-series-circle/>
+              </svg>
+              <span class="sd-circle__pct" data-series-pct>0%</span>
+            </div>
+            <div>
+              <div class="sd-circle__count"><span data-series-done>0</span><span class="sd-circle__total">/{{ $count }}</span></div>
+              <div class="sd-circle__label" data-vi="phần đã đọc" data-en="parts read">phần đã đọc</div>
+            </div>
+          </div>
+          <a class="btn btn--primary sd-progress-card__btn" data-series-continue href="{{ $first.RelPermalink }}"><span data-vi="Bắt đầu học" data-en="Start Learning">Bắt đầu học</span> →</a>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel__title"><span data-vi="Thông tin series" data-en="Series Info">Thông tin series</span></div>
+        <div class="stat-row"><span data-vi="Số phần" data-en="Total Parts">Số phần</span><strong>{{ $count }}</strong></div>
+        <div class="stat-row"><span data-vi="Tổng thời gian" data-en="Total Time">Tổng thời gian</span><strong>{{ $totalMin }} min</strong></div>
+        {{- with .Params.level }}<div class="stat-row"><span data-vi="Cấp độ" data-en="Level">Cấp độ</span><strong style="color:var(--cat)">{{ . }}</strong></div>{{ end }}
+      </div>
+
+      {{- $allSeries := .Parent.Pages }}
+      <div class="panel">
+        <div class="panel__title"><span data-vi="Series khác" data-en="Other Series">Series khác</span></div>
+        <div class="mini-list">
+          {{- range $allSeries }}{{ if ne .RelPermalink $term.RelPermalink }}
+          {{- $oicon := "📚" }}{{ with .Params.icon }}{{ $oicon = . }}{{ end }}
+          <a class="mini-item" href="{{ .RelPermalink }}"><span class="mini-item__icon">{{ $oicon }}</span><div><div class="mini-item__title">{{ .LinkTitle }}</div><div class="mini-item__meta">{{ len .Pages }} <span data-vi="phần" data-en="parts">phần</span></div></div></a>
+          {{- end }}{{ end }}
+          <a class="mini-item sd-all-link" href="{{ .Parent.RelPermalink }}"><span data-vi="Xem tất cả Series →" data-en="View All Series →">Xem tất cả Series →</span></a>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+{{ end }}

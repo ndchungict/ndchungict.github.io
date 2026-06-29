@@ -112,7 +112,7 @@
           <div class="author-card__name">{{ site.Params.author }}</div>
           <div class="author-card__role">{{ site.Params.role }}</div>
           <p class="author-card__bio" data-vi="5+ năm kinh nghiệm QA & Automation. Đam mê chia sẻ kiến thức về testing, tiếng Anh và tiếng Trung cho developer Việt." data-en="5+ years in QA & Automation. Passionate about sharing testing, English and Chinese knowledge for Vietnamese developers.">5+ năm kinh nghiệm QA & Automation. Đam mê chia sẻ kiến thức về testing, tiếng Anh và tiếng Trung cho developer Việt.</p>
-          <a class="author-card__link" href="{{ "/about/" | relURL }}"><span data-vi="Xem trang tác giả" data-en="View author profile">Xem trang tác giả</span> →</a>
+          {{- if site.Params.showAbout }}<a class="author-card__link" href="{{ "/about/" | relURL }}"><span data-vi="Xem trang tác giả" data-en="View author profile">Xem trang tác giả</span> →</a>{{ end }}
         </div>
       </div>
     </div>

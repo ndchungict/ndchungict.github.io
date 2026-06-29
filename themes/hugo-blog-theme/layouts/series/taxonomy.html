@@ -1,0 +1,73 @@
+{{ define "main" }}
+{{- $series := .Pages }}
+{{- $totalParts := 0 }}{{ $totalMin := 0 }}
+{{- range $series }}{{ $totalParts = add $totalParts (len .Pages) }}{{ range .Pages }}{{ $totalMin = add $totalMin .ReadingTime }}{{ end }}{{ end }}
+{{- $cats := slice }}
+{{- range $series }}{{ with index ((.Pages.ByWeight)) 0 }}{{ $cats = $cats | append (index (or .Params.categories slice) 0) }}{{ end }}{{ end }}
+
+<section class="sl">
+  <!-- Hero -->
+  <div class="sl-hero">
+    <div class="hero__grid"></div>
+    <span class="cat-hero__glow" style="--cat:var(--c-accent)"></span>
+    <div class="container sl-hero__inner">
+      <div class="sl-hero__left">
+        <div class="sl-hero__eyebrow">📚 <span data-vi="Chuỗi bài học" data-en="Learning Series">Chuỗi bài học</span></div>
+        <h1 class="sl-hero__title" data-vi="Học theo lộ trình — hiệu quả hơn" data-en="Learn by Roadmap — More Effectively">Học theo lộ trình — hiệu quả hơn</h1>
+        <p class="sl-hero__sub" data-vi="Các series được sắp xếp theo trình tự học, giúp bạn tiến bộ từng bước có hệ thống." data-en="Series organized in learning order, helping you progress step by step.">Các series được sắp xếp theo trình tự học, giúp bạn tiến bộ từng bước có hệ thống.</p>
+      </div>
+      <div class="sl-hero__stats">
+        <div class="sl-stat"><div class="sl-stat__num" style="color:var(--c-accent)">{{ len $series }}</div><div class="sl-stat__label">Series</div></div>
+        <div class="sl-stat"><div class="sl-stat__num" style="color:var(--cat-auto)">{{ $totalParts }}</div><div class="sl-stat__label" data-vi="bài viết" data-en="posts">bài viết</div></div>
+        <div class="sl-stat"><div class="sl-stat__num" style="color:var(--cat-en)">{{ math.Round (div $totalMin 60.0) }}h</div><div class="sl-stat__label" data-vi="nội dung" data-en="content">nội dung</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Filter tabs -->
+  <div class="sl-tabs">
+    <div class="container sl-tabs__inner" data-series-tabs>
+      <button class="sl-tab active" data-cat="all">📚 <span data-vi="Tất cả" data-en="All">Tất cả</span> <span class="sl-tab__count">{{ len $series }}</span></button>
+      {{- range site.Params.categories }}
+      {{- $key := .key }}{{ $c := 0 }}{{ range $cats }}{{ if eq . $key }}{{ $c = add $c 1 }}{{ end }}{{ end }}
+      {{- if gt $c 0 }}
+      <button class="sl-tab {{ .color }}" data-cat="{{ .key }}">{{ .emoji }} <span data-vi="{{ .labelVI }}" data-en="{{ .labelEN }}">{{ .labelVI }}</span> <span class="sl-tab__count">{{ $c }}</span></button>
+      {{- end }}
+      {{- end }}
+    </div>
+  </div>
+
+  <!-- Grid -->
+  <main class="container sl-grid-wrap">
+    <div class="card-grid card-grid--series" data-series-grid>
+      {{- range $series }}
+      {{- $s := . }}
+      {{- $slug := path.Base .RelPermalink }}
+      {{- $parts := len .Pages }}
+      {{- $first := index (.Pages.ByWeight) 0 }}
+      {{- $catKey := "" }}{{ with $first }}{{ $catKey = index (or .Params.categories slice) 0 }}{{ end }}
+      {{- $color := "" }}{{ $emoji := "📚" }}{{ $catLabel := "" }}
+      {{- range site.Params.categories }}{{ if eq .key $catKey }}{{ $color = .color }}{{ $emoji = .emoji }}{{ $catLabel = .labelVI }}{{ end }}{{ end }}
+      {{- with .Params.icon }}{{ $emoji = . }}{{ end }}
+      {{- $min := 0 }}{{ range .Pages }}{{ $min = add $min .ReadingTime }}{{ end }}
+      <div class="series-card {{ $color }}" data-cat="{{ $catKey }}" data-series-id="{{ $slug }}" data-series-parts="{{ $parts }}">
+        <a class="series-card__media" href="{{ .RelPermalink }}">
+          <div class="series-card__media-fallback">{{ $emoji }}</div>
+          {{- with $catLabel }}<span class="series-card__cat">{{ . }}</span>{{ end }}
+          <span class="series-card__count">{{ $parts }} <span data-vi="phần" data-en="parts">phần</span> · {{ $min }} min</span>
+        </a>
+        <div class="series-card__body">
+          <h3 class="series-card__title"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
+          {{- with .Params.description }}<p class="series-card__desc">{{ . }}</p>{{ end }}
+          <div class="series-progress">
+            <div class="series-progress__head"><span data-vi="Tiến độ" data-en="Progress">Tiến độ</span><span data-series-label>0/{{ $parts }} <span data-vi="phần" data-en="parts">phần</span></span></div>
+            <div class="progress"><div class="progress__fill" data-series-fill style="width:0%"></div></div>
+          </div>
+          <a class="series-card__cta-btn" href="{{ .RelPermalink }}" data-series-cta><span data-vi="Bắt đầu học" data-en="Start Learning">Bắt đầu học</span> →</a>
+        </div>
+      </div>
+      {{- end }}
+    </div>
+  </main>
+</section>
+{{ end }}

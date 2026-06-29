@@ -1,7 +1,40 @@
 {{ define "main" }}
-<section class="not-found">
-  <h1 class="not-found__code">404</h1>
-  <p class="not-found__message">Page not found</p>
-  <a class="not-found__link" href="{{ site.BaseURL }}">Back to Home</a>
-</section>
+<main class="nf">
+  <div class="hero__grid"></div>
+  <div class="nf__glow"></div>
+  <div class="nf__inner">
+    <div class="nf__404">4<span class="nf__zero">0</span>4</div>
+
+    <div class="nf__terminal">
+      <div class="nf__terminal-bar">
+        <span class="nf__dot" style="background:var(--cat-cn)"></span>
+        <span class="nf__dot" style="background:var(--c-accent)"></span>
+        <span class="nf__dot" style="background:var(--cat-auto)"></span>
+        <span class="nf__terminal-path">~/nguyen-chung-notebook</span>
+      </div>
+      <div class="nf__terminal-body">
+        <div><span style="color:var(--cat-auto)">$</span> cd <span style="color:var(--c-accent)">/unknown-page</span></div>
+        <div style="color:var(--cat-cn)" data-vi="Error 404: Không tìm thấy trang bạn yêu cầu." data-en="Error 404: The page you requested was not found.">Error 404: Không tìm thấy trang bạn yêu cầu.</div>
+        <div><span style="color:var(--cat-auto)">$</span> cd ~/home<span class="nf__cursor"></span></div>
+      </div>
+    </div>
+
+    <h1 class="nf__title" data-vi="Lạc đường rồi!" data-en="Page not found!">Lạc đường rồi!</h1>
+    <p class="nf__desc" data-vi="Trang bạn tìm có thể đã bị xoá, đổi tên hoặc chưa từng tồn tại. Quay về trang chủ hoặc khám phá bài viết bên dưới." data-en="The page may have been removed, renamed, or never existed. Head home or explore the posts below.">Trang bạn tìm có thể đã bị xoá, đổi tên hoặc chưa từng tồn tại. Quay về trang chủ hoặc khám phá bài viết bên dưới.</p>
+
+    <div class="nf__cta">
+      <a class="btn btn--primary" href="{{ "/" | relURL }}">← <span data-vi="Về trang chủ" data-en="Back to Home">Về trang chủ</span></a>
+      <a class="btn" href="{{ "/categories/" | relURL }}"><span data-vi="Xem bài viết" data-en="Browse Posts">Xem bài viết</span></a>
+    </div>
+
+    <div class="nf__links">
+      {{- range site.Params.categories }}
+      {{- $t := site.GetPage (printf "/categories/%s" .key) }}
+      {{- if $t }}
+      <a class="nf__link {{ .color }}" href="{{ $t.RelPermalink }}"><span class="nf__link-emoji">{{ .emoji }}</span><div><div class="nf__link-name"><span data-vi="{{ .labelVI }}" data-en="{{ .labelEN }}">{{ .labelVI }}</span></div><div class="nf__link-meta">{{ len $t.Pages }} <span data-vi="bài viết" data-en="posts">bài viết</span></div></div></a>
+      {{- end }}
+      {{- end }}
+    </div>
+  </div>
+</main>
 {{ end }}
