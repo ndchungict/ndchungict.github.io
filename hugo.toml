@@ -3,6 +3,9 @@ locale = 'en-us'
 title = 'My New Hugo Project'
 theme = 'hugo-blog-theme'
 
+[permalinks]
+  posts = '/posts/:slug/'
+
 [taxonomies]
   category = 'categories'
   tag      = 'tags'
