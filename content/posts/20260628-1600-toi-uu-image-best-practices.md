@@ -1,5 +1,5 @@
 +++
-date        = '2026-06-29T16:00:00+07:00'
+date        = '2026-06-28T16:00:00+07:00'
 draft       = false
 title       = 'Tối ưu Docker image & best practices'
 slug        = 'toi-uu-image-best-practices'

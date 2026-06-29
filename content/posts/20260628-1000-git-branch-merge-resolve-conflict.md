@@ -1,5 +1,5 @@
 +++
-date        = '2026-06-29T10:00:00+07:00'
+date        = '2026-06-28T10:00:00+07:00'
 draft       = false
 title       = 'Git Branch và Merge: Làm việc song song, resolve conflict'
 slug        = 'git-branch-merge-resolve-conflict'

@@ -1,5 +1,5 @@
 +++
-date        = '2026-06-29T19:30:00+07:00'
+date        = '2026-06-28T19:30:00+07:00'
 draft       = false
 title       = 'Tổng hợp ngữ pháp tiếng Trung HSK6'
 slug        = 'ngu-phap-tieng-trung-hsk6'

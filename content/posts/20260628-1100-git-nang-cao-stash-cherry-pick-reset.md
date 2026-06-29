@@ -1,5 +1,5 @@
 +++
-date        = '2026-06-29T11:00:00+07:00'
+date        = '2026-06-28T11:00:00+07:00'
 draft       = false
 title       = 'Git Nâng cao: Stash, Cherry-pick, Reset, Revert, Reflog'
 slug        = 'git-nang-cao-stash-cherry-pick-reset'

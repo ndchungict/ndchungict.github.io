@@ -1,5 +1,5 @@
 +++
-date        = '2026-06-29T09:00:00+07:00'
+date        = '2026-06-28T09:00:00+07:00'
 draft       = false
 title       = 'Git cơ bản: init, add, commit, status, log, diff'
 slug        = 'git-co-ban-init-add-commit'

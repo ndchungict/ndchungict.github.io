@@ -1,5 +1,5 @@
 +++
-date        = '2026-06-29T13:00:00+07:00'
+date        = '2026-06-28T13:00:00+07:00'
 draft       = false
 title       = 'Docker là gì? Tại sao mọi developer cần biết Docker?'
 slug        = 'docker-la-gi-tai-sao-can-dung-docker'

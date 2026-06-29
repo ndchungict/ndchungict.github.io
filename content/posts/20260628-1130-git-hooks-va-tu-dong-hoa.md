@@ -1,5 +1,5 @@
 +++
-date        = '2026-06-29T11:30:00+07:00'
+date        = '2026-06-28T11:30:00+07:00'
 draft       = false
 title       = 'Git Hooks và tự động hóa workflow: Hooks, Aliases, Husky'
 slug        = 'git-hooks-va-tu-dong-hoa'

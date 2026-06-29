@@ -1,5 +1,5 @@
 +++
-date        = '2026-06-29T14:30:00+07:00'
+date        = '2026-06-28T14:30:00+07:00'
 draft       = false
 title       = 'Dockerfile: tự đóng gói ứng dụng thành image'
 slug        = 'dockerfile-dong-goi-ung-dung'

@@ -1,5 +1,5 @@
 +++
-date        = '2026-06-29T20:00:00+07:00'
+date        = '2026-06-28T20:00:00+07:00'
 draft       = false
 title       = 'Bảng tổng hợp một số động từ bất quy tắc trong tiếng Anh'
 slug        = 'bang-tong-hop-dong-tu-bat-quy-tac-tieng-anh'

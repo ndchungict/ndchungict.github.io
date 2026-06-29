@@ -1,5 +1,5 @@
 +++
-date        = '2026-06-29T15:30:00+07:00'
+date        = '2026-06-28T15:30:00+07:00'
 draft       = false
 title       = 'Docker Compose: quản lý ứng dụng multi-container'
 slug        = 'docker-compose-multi-container'

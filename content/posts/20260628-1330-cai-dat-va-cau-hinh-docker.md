@@ -1,5 +1,5 @@
 +++
-date        = '2026-06-29T13:30:00+07:00'
+date        = '2026-06-28T13:30:00+07:00'
 draft       = false
 title       = 'Cài đặt Docker trên Windows, macOS, Linux'
 slug        = 'cai-dat-va-cau-hinh-docker'

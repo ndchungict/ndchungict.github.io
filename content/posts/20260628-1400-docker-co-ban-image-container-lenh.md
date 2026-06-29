@@ -1,5 +1,5 @@
 +++
-date        = '2026-06-29T14:00:00+07:00'
+date        = '2026-06-28T14:00:00+07:00'
 draft       = false
 title       = 'Docker cơ bản: image, container và các lệnh thiết yếu'
 slug        = 'docker-co-ban-image-container-lenh'

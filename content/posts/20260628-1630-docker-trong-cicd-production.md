@@ -1,5 +1,5 @@
 +++
-date        = '2026-06-29T16:30:00+07:00'
+date        = '2026-06-28T16:30:00+07:00'
 draft       = false
 title       = 'Docker trong CI/CD và production'
 slug        = 'docker-trong-cicd-production'
