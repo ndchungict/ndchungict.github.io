@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#78350f"/>
+      <stop offset="100%" stop-color="#1c0a00"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.10)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <g opacity="0.06">
+    <pattern id="grid8" x="0" y="0" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="white" stroke-width="1"/>
+    </pattern>
+    <rect width="1200" height="630" fill="url(#grid8)"/>
+  </g>
+
+  <!-- pipeline boxes -->
+  <g>
+    <rect x="120" y="270" width="170" height="100" rx="14" fill="rgba(255,255,255,0.88)"/>
+    <rect x="150" y="300" width="110" height="12" rx="6" fill="rgba(120,53,15,0.5)"/>
+    <rect x="150" y="326" width="80" height="12" rx="6" fill="rgba(120,53,15,0.3)"/>
+  </g>
+  <g>
+    <rect x="370" y="270" width="170" height="100" rx="14" fill="rgba(255,255,255,0.80)"/>
+    <rect x="400" y="300" width="110" height="12" rx="6" fill="rgba(120,53,15,0.5)"/>
+    <rect x="400" y="326" width="80" height="12" rx="6" fill="rgba(120,53,15,0.3)"/>
+  </g>
+  <g>
+    <rect x="620" y="270" width="170" height="100" rx="14" fill="rgba(255,255,255,0.80)"/>
+    <rect x="650" y="300" width="110" height="12" rx="6" fill="rgba(120,53,15,0.5)"/>
+    <rect x="650" y="326" width="80" height="12" rx="6" fill="rgba(120,53,15,0.3)"/>
+  </g>
+  <g>
+    <rect x="870" y="270" width="170" height="100" rx="14" fill="rgba(255,255,255,0.92)"/>
+    <circle cx="905" cy="306" r="7" fill="#22c55e"/>
+    <rect x="925" y="300" width="90" height="12" rx="6" fill="rgba(120,53,15,0.5)"/>
+    <rect x="900" y="326" width="100" height="12" rx="6" fill="rgba(120,53,15,0.3)"/>
+  </g>
+
+  <!-- arrows between -->
+  <g stroke="rgba(255,255,255,0.5)" stroke-width="4">
+    <line x1="290" y1="320" x2="360" y2="320"/>
+    <line x1="540" y1="320" x2="610" y2="320"/>
+    <line x1="790" y1="320" x2="860" y2="320"/>
+  </g>
+  <g fill="rgba(255,255,255,0.8)">
+    <polygon points="360,310 384,320 360,330"/>
+    <polygon points="610,310 634,320 610,330"/>
+    <polygon points="860,310 884,320 860,330"/>
+  </g>
+
+  <!-- small container icons riding the pipeline -->
+  <g fill="rgba(255,255,255,0.25)">
+    <rect x="180" y="200" width="50" height="36" rx="5"/>
+    <rect x="430" y="200" width="50" height="36" rx="5"/>
+    <rect x="680" y="200" width="50" height="36" rx="5"/>
+    <rect x="930" y="200" width="50" height="36" rx="5"/>
+  </g>
+  <g stroke="rgba(255,255,255,0.25)" stroke-width="2" stroke-dasharray="5 6">
+    <line x1="205" y1="236" x2="205" y2="268"/>
+    <line x1="455" y1="236" x2="455" y2="268"/>
+    <line x1="705" y1="236" x2="705" y2="268"/>
+    <line x1="955" y1="236" x2="955" y2="268"/>
+  </g>
+</svg>

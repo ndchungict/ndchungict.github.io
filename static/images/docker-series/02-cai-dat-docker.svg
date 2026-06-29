@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#0f0f2e"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.10)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <g opacity="0.06">
+    <pattern id="grid" x="0" y="0" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="white" stroke-width="1"/>
+    </pattern>
+    <rect width="1200" height="630" fill="url(#grid)"/>
+  </g>
+
+  <!-- Terminal window -->
+  <rect x="270" y="150" width="660" height="330" rx="16" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.18)" stroke-width="2"/>
+  <rect x="270" y="150" width="660" height="48" rx="16" fill="rgba(255,255,255,0.10)"/>
+  <rect x="270" y="180" width="660" height="18" fill="rgba(255,255,255,0.10)"/>
+  <!-- traffic lights -->
+  <circle cx="300" cy="174" r="8" fill="#ef4444"/>
+  <circle cx="326" cy="174" r="8" fill="#f59e0b"/>
+  <circle cx="352" cy="174" r="8" fill="#22c55e"/>
+
+  <!-- code lines -->
+  <g font-family="monospace" font-size="22" fill="rgba(255,255,255,0.85)">
+    <text x="305" y="248">$ docker --version</text>
+  </g>
+  <g fill="rgba(255,255,255,0.55)">
+    <rect x="305" y="270" width="320" height="14" rx="7"/>
+    <rect x="305" y="300" width="180" height="14" rx="7" fill="rgba(255,255,255,0.35)"/>
+  </g>
+  <g font-family="monospace" font-size="22" fill="rgba(255,255,255,0.85)">
+    <text x="305" y="356">$ docker run hello-world</text>
+  </g>
+  <g fill="rgba(255,255,255,0.45)">
+    <rect x="305" y="378" width="420" height="14" rx="7"/>
+    <rect x="305" y="408" width="260" height="14" rx="7" fill="rgba(255,255,255,0.30)"/>
+  </g>
+  <!-- blinking cursor -->
+  <rect x="305" y="438" width="16" height="22" fill="rgba(56,189,248,0.9)"/>
+</svg>
