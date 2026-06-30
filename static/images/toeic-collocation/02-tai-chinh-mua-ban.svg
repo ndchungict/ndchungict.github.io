@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#047857"/>
+      <stop offset="100%" stop-color="#022c22"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.05" fill="white">
+    <circle cx="150" cy="120" r="3"/><circle cx="450" cy="120" r="3"/><circle cx="750" cy="120" r="3"/><circle cx="1050" cy="120" r="3"/>
+    <circle cx="150" cy="510" r="3"/><circle cx="450" cy="510" r="3"/><circle cx="750" cy="510" r="3"/><circle cx="1050" cy="510" r="3"/>
+  </g>
+
+  <!-- bar chart growth -->
+  <g transform="translate(180,200)">
+    <line x1="0" y1="230" x2="380" y2="230" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+    <line x1="0" y1="0" x2="0" y2="230" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+    <rect x="40" y="160" width="50" height="70" fill="rgba(255,255,255,0.3)"/>
+    <rect x="120" y="120" width="50" height="110" fill="rgba(255,255,255,0.4)"/>
+    <rect x="200" y="70" width="50" height="160" fill="rgba(255,255,255,0.5)"/>
+    <rect x="280" y="30" width="50" height="200" fill="#34d399"/>
+    <path d="M 65 150 L 145 110 L 225 60 L 305 20" fill="none" stroke="#a7f3d0" stroke-width="3"/>
+    <polygon points="305,20 292,26 300,36" fill="#a7f3d0"/>
+  </g>
+
+  <!-- price tag + coin -->
+  <g transform="translate(680,230)">
+    <path d="M 0 40 L 130 40 L 200 110 L 130 180 L 0 180 Z" fill="rgba(255,255,255,0.16)" stroke="rgba(255,255,255,0.5)" stroke-width="2.5"/>
+    <circle cx="150" cy="110" r="14" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="3"/>
+    <text x="60" y="125" font-family="monospace" font-size="46" fill="rgba(255,255,255,0.85)">$</text>
+  </g>
+  <g transform="translate(900,360)">
+    <circle cx="0" cy="0" r="50" fill="#fbbf24" opacity="0.85"/>
+    <circle cx="0" cy="0" r="38" fill="none" stroke="rgba(0,0,0,0.2)" stroke-width="2"/>
+    <text x="0" y="14" font-family="monospace" font-size="36" fill="#78350f" text-anchor="middle">$</text>
+  </g>
+</svg>
