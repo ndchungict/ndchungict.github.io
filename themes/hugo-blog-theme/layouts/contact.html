@@ -74,9 +74,10 @@
         <div class="panel__title" data-vi="Liên hệ trực tiếp" data-en="Direct Contact">Liên hệ trực tiếp</div>
         <div class="contact-info">
           <a class="contact-info__item" href="mailto:{{ site.Params.email }}"><span class="contact-info__icon">✉</span><div><div class="contact-info__label">Email</div><div class="contact-info__val">{{ site.Params.email }}</div></div></a>
+          {{- with site.Params.phone }}<a class="contact-info__item" href="tel:{{ . | replaceRE "[^0-9+]" "" }}"><span class="contact-info__icon">📞</span><div><div class="contact-info__label" data-vi="Điện thoại" data-en="Phone">Điện thoại</div><div class="contact-info__val">{{ . }}</div></div></a>{{ end }}
           {{- with site.Params.social.linkedin }}<a class="contact-info__item" href="{{ . }}"><span class="contact-info__icon" style="background:color-mix(in srgb,var(--cat-en) 12%,transparent)">in</span><div><div class="contact-info__label">LinkedIn</div><div class="contact-info__val">{{ . | replaceRE "https?://" "" }}</div></div></a>{{ end }}
           {{- with site.Params.social.github }}<a class="contact-info__item" href="{{ . }}"><span class="contact-info__icon">🐙</span><div><div class="contact-info__label">GitHub</div><div class="contact-info__val">{{ . | replaceRE "https?://" "" }}</div></div></a>{{ end }}
-          {{- with site.Params.social.youtube }}<a class="contact-info__item" href="{{ . }}"><span class="contact-info__icon" style="background:color-mix(in srgb,var(--cat-cn) 12%,transparent)">▶</span><div><div class="contact-info__label">YouTube</div><div class="contact-info__val">{{ . | replaceRE "https?://" "" }}</div></div></a>{{ end }}
+          {{- with site.Params.social.website }}<a class="contact-info__item" href="{{ . }}"><span class="contact-info__icon" style="background:color-mix(in srgb,var(--cat-cn) 12%,transparent)">🌐</span><div><div class="contact-info__label">Website</div><div class="contact-info__val">{{ . | replaceRE "https?://" "" }}</div></div></a>{{ end }}
         </div>
       </div>
 
@@ -90,9 +91,9 @@
         <div class="contact-topics__title" data-vi="Tôi sẵn sàng trao đổi về:" data-en="Happy to discuss:">Tôi sẵn sàng trao đổi về:</div>
         <ul class="contact-topics">
           <li><span class="dot is-it"></span><span data-vi="Automation Testing, SDET, QA" data-en="Automation Testing, SDET, QA">Automation Testing, SDET, QA</span></li>
-          <li><span class="dot is-auto"></span><span data-vi="DevOps, CI/CD, Docker, Kubernetes" data-en="DevOps, CI/CD, Docker, Kubernetes">DevOps, CI/CD, Docker, Kubernetes</span></li>
-          <li><span class="dot is-en"></span><span data-vi="Tiếng Anh kỹ thuật, IELTS cho IT" data-en="Technical English, IELTS for IT">Tiếng Anh kỹ thuật, IELTS cho IT</span></li>
-          <li><span class="dot is-cn"></span><span data-vi="Học tiếng Trung, HSK, tiếng Trung IT" data-en="Chinese learning, HSK, Chinese for tech">Học tiếng Trung, HSK, tiếng Trung IT</span></li>
+          <li><span class="dot is-auto"></span><span data-vi="CI/CD, Jenkins, Docker" data-en="CI/CD, Jenkins, Docker">CI/CD, Jenkins, Docker</span></li>
+          <li><span class="dot is-en"></span><span data-vi="Tiếng Anh — cùng học & chia sẻ" data-en="English — learning & sharing">Tiếng Anh — cùng học & chia sẻ</span></li>
+          <li><span class="dot is-cn"></span><span data-vi="Học tiếng Trung, HSK" data-en="Chinese learning, HSK">Học tiếng Trung, HSK</span></li>
         </ul>
       </div>
     </div>

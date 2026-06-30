@@ -32,13 +32,14 @@ theme = 'hugo-blog-theme'
     guessSyntax = true
 
 [params]
-  description = 'Blog ghi lại và chia sẻ những gì mình học được về IT, Automation Testing, Tiếng Anh và Tiếng Trung.'
+  description = 'Blog ghi lại và chia sẻ những gì tôi học được về IT, Automation Testing, Tiếng Anh và Tiếng Trung.'
   author      = 'Nguyễn Chung'
   role        = 'Senior Automation Test Engineer'
   email       = 'ndchungict@gmail.com'
+  phone       = '0943.313.848'
   tagline     = 'Share • Learn • Grow'
   # Tạm ẩn trang About: đổi thành true để hiện lại
-  showAbout   = false
+  showAbout   = true
   # Web3Forms — dán access key lấy từ web3forms.com (cần cho trang Contact)
   web3formsKey = ''
 
@@ -62,8 +63,8 @@ theme = 'hugo-blog-theme'
 
   [params.social]
     github   = 'https://github.com/ndchungict'
-    linkedin = 'https://linkedin.com/in/nguyenchung'
-    youtube  = 'https://youtube.com/@nguyenchung'
+    linkedin = 'https://linkedin.com/in/nguyen-duc-chung'
+    website  = 'https://ndchungict.github.io'
 
   # Danh sách category cố định (có thứ tự) — label song ngữ + emoji + class màu.
   # key = tên term trong taxonomy `categories`.
