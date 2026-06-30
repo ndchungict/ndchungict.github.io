@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#030712"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.05" stroke="white" stroke-width="1">
+    <line x1="200" y1="0" x2="200" y2="630"/><line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/><line x1="800" y1="0" x2="800" y2="630"/><line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+
+  <!-- Layered architecture -->
+  <g font-family="monospace" text-anchor="middle">
+    <!-- test layer -->
+    <rect x="300" y="120" width="600" height="90" rx="12" fill="rgba(96,165,250,0.16)" stroke="#60a5fa" stroke-width="2"/>
+    <text x="600" y="160" font-size="22" fill="#bfdbfe">Test specs</text>
+    <text x="600" y="190" font-size="15" fill="rgba(255,255,255,0.5)">kịch bản nghiệp vụ — đọc như tiếng người</text>
+
+    <!-- page object layer -->
+    <rect x="220" y="260" width="220" height="90" rx="12" fill="rgba(167,139,250,0.16)" stroke="#a78bfa" stroke-width="2"/>
+    <text x="330" y="300" font-size="18" fill="#ddd6fe">LoginPage</text>
+    <text x="330" y="326" font-size="13" fill="rgba(255,255,255,0.45)">.login()</text>
+
+    <rect x="490" y="260" width="220" height="90" rx="12" fill="rgba(167,139,250,0.16)" stroke="#a78bfa" stroke-width="2"/>
+    <text x="600" y="300" font-size="18" fill="#ddd6fe">CartPage</text>
+    <text x="600" y="326" font-size="13" fill="rgba(255,255,255,0.45)">.addItem()</text>
+
+    <rect x="760" y="260" width="220" height="90" rx="12" fill="rgba(167,139,250,0.16)" stroke="#a78bfa" stroke-width="2"/>
+    <text x="870" y="300" font-size="18" fill="#ddd6fe">CheckoutPage</text>
+    <text x="870" y="326" font-size="13" fill="rgba(255,255,255,0.45)">.pay()</text>
+
+    <!-- locators layer -->
+    <rect x="300" y="400" width="600" height="80" rx="12" fill="rgba(74,222,128,0.14)" stroke="#4ade80" stroke-width="2"/>
+    <text x="600" y="436" font-size="18" fill="#bbf7d0">Locators + Playwright API</text>
+    <text x="600" y="462" font-size="14" fill="rgba(255,255,255,0.45)">getByRole, click, fill, expect</text>
+  </g>
+
+  <!-- arrows down -->
+  <g stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="none">
+    <path d="M 600 210 L 600 255"/>
+    <path d="M 330 350 L 470 395"/>
+    <path d="M 600 350 L 600 395"/>
+    <path d="M 870 350 L 730 395"/>
+  </g>
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#065f46"/>
+      <stop offset="100%" stop-color="#022c22"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.05" stroke="white" stroke-width="1">
+    <line x1="600" y1="0" x2="600" y2="630"/>
+  </g>
+
+  <!-- baseline -->
+  <g transform="translate(150,170)" font-family="monospace" text-anchor="middle">
+    <rect x="0" y="0" width="280" height="290" rx="12" fill="rgba(255,255,255,0.09)" stroke="rgba(255,255,255,0.35)" stroke-width="2"/>
+    <text x="140" y="-15" font-size="18" fill="rgba(255,255,255,0.6)">baseline</text>
+    <rect x="30" y="30" width="160" height="22" rx="5" fill="rgba(255,255,255,0.35)"/>
+    <rect x="30" y="72" width="220" height="12" rx="6" fill="rgba(255,255,255,0.2)"/>
+    <rect x="30" y="94" width="220" height="12" rx="6" fill="rgba(255,255,255,0.2)"/>
+    <rect x="30" y="140" width="120" height="50" rx="8" fill="rgba(74,222,128,0.4)"/>
+    <rect x="30" y="220" width="220" height="12" rx="6" fill="rgba(255,255,255,0.2)"/>
+  </g>
+
+  <!-- current with diff -->
+  <g transform="translate(770,170)" font-family="monospace" text-anchor="middle">
+    <rect x="0" y="0" width="280" height="290" rx="12" fill="rgba(255,255,255,0.09)" stroke="rgba(255,255,255,0.35)" stroke-width="2"/>
+    <text x="140" y="-15" font-size="18" fill="rgba(255,255,255,0.6)">current</text>
+    <rect x="30" y="30" width="160" height="22" rx="5" fill="rgba(255,255,255,0.35)"/>
+    <rect x="30" y="72" width="220" height="12" rx="6" fill="rgba(255,255,255,0.2)"/>
+    <rect x="30" y="94" width="220" height="12" rx="6" fill="rgba(255,255,255,0.2)"/>
+    <!-- changed button highlighted as diff -->
+    <rect x="30" y="140" width="170" height="50" rx="8" fill="rgba(248,113,113,0.45)" stroke="#f87171" stroke-width="2.5"/>
+    <rect x="30" y="220" width="220" height="12" rx="6" fill="rgba(255,255,255,0.2)"/>
+  </g>
+
+  <!-- diff connector -->
+  <g stroke="rgba(255,255,255,0.4)" stroke-width="2.5" fill="none">
+    <path d="M 430 315 L 770 315" stroke-dasharray="6 6"/>
+  </g>
+  <g transform="translate(600,315)">
+    <circle cx="0" cy="0" r="42" fill="rgba(248,113,113,0.25)" stroke="#f87171" stroke-width="2.5"/>
+    <text x="0" y="-2" font-family="monospace" font-size="14" fill="#fecaca" text-anchor="middle">diff</text>
+    <text x="0" y="18" font-family="monospace" font-size="12" fill="#fecaca" text-anchor="middle">pixel</text>
+  </g>
+</svg>

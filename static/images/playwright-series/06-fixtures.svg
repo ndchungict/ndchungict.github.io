@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e3a5f"/>
+      <stop offset="100%" stop-color="#0f0a2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.05" stroke="white" stroke-width="1">
+    <line x1="0" y1="157" x2="1200" y2="157"/><line x1="0" y1="315" x2="1200" y2="315"/><line x1="0" y1="472" x2="1200" y2="472"/>
+  </g>
+
+  <!-- fixture blocks feeding into a test -->
+  <g font-family="monospace" font-size="18" text-anchor="middle">
+    <rect x="120" y="150" width="190" height="70" rx="10" fill="rgba(96,165,250,0.18)" stroke="#60a5fa" stroke-width="2"/>
+    <text x="215" y="193" fill="#bfdbfe">page</text>
+
+    <rect x="120" y="260" width="190" height="70" rx="10" fill="rgba(96,165,250,0.18)" stroke="#60a5fa" stroke-width="2"/>
+    <text x="215" y="303" fill="#bfdbfe">authUser</text>
+
+    <rect x="120" y="370" width="190" height="70" rx="10" fill="rgba(96,165,250,0.18)" stroke="#60a5fa" stroke-width="2"/>
+    <text x="215" y="413" fill="#bfdbfe">testData</text>
+
+    <!-- test box -->
+    <rect x="640" y="240" width="300" height="120" rx="14" fill="rgba(74,222,128,0.16)" stroke="#4ade80" stroke-width="2.5"/>
+    <text x="790" y="290" font-size="22" fill="#bbf7d0">test(...)</text>
+    <text x="790" y="325" font-size="15" fill="rgba(255,255,255,0.55)">tự nhận đúng thứ cần</text>
+  </g>
+
+  <!-- arrows injecting -->
+  <g stroke="rgba(255,255,255,0.4)" stroke-width="2.5" fill="none">
+    <path d="M 310 185 Q 480 200 635 270"/>
+    <path d="M 310 295 L 635 300"/>
+    <path d="M 310 405 Q 480 400 635 330"/>
+  </g>
+  <g fill="rgba(255,255,255,0.4)">
+    <polygon points="635,270 623,267 626,280"/>
+    <polygon points="635,300 623,294 623,306"/>
+    <polygon points="635,330 626,320 623,333"/>
+  </g>
+
+  <!-- setup/teardown hint -->
+  <text x="790" y="430" font-family="monospace" font-size="16" fill="rgba(255,255,255,0.45)" text-anchor="middle">setup → use(value) → teardown</text>
+</svg>
