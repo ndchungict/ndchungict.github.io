@@ -70,7 +70,7 @@ draft       = true
 title       = '...'
 slug        = ''          # để trống = dùng tên file làm URL
 summary     = ''          # để trống = Hugo tự lấy ~70 từ đầu
-thumbnail   = ''          # đường dẫn ảnh, đặt trong static/images/
+thumbnail   = ''          # ảnh mặc định theo category (xem mục Thumbnail)
 categories  = []
 tags        = []
 series      = []
@@ -160,53 +160,30 @@ Hugo tự sinh 2 loại trang cho mỗi taxonomy:
 
 ## Thumbnail (ảnh đại diện bài viết)
 
-Thumbnail là file SVG đặt trong `static/images/<chu-de>/`, tham chiếu qua front matter:
+Thumbnail là file `.webp` (1200×630, chuẩn OG image), tham chiếu qua front matter:
 
 ```toml
-thumbnail = '/images/git-series/01-git-la-gi.svg'
+thumbnail = '/images/default-thumb/default-thumb-it-lap-trinh.webp'
 ```
 
-### Quy tắc thiết kế SVG thumbnail
+Thumbnail dùng cho ảnh card trong danh sách (`section.html`, `home.html`).
 
-- **Kích thước**: `1200×630` (tỉ lệ 16:9, chuẩn OG image)
-- **Dùng cho hai nơi**: ảnh header trong bài viết (`page.html`) và ảnh card trong danh sách (`section.html`, `home.html`)
-- **Minh họa**: thuần visual, gắn với nội dung bài — không đưa tag, weight, series, số thứ tự vào ảnh
-- **Không có metadata** trong ảnh: không tag, không số bài, không tên series
+### Quy tắc tạo thumbnail cho bài mới
 
-### Cấu trúc SVG
+> **KHÔNG tạo file ảnh SVG mới nữa.** Khi tạo bài viết mới, dùng ảnh mặc định
+> theo `category` của bài, lấy từ `static/images/default-thumb/`.
 
-```xml
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
-  <!-- 1. Gradient background (linearGradient hoặc radialGradient) -->
-  <!-- 2. Texture nhẹ (dot grid, line grid, ...) opacity thấp ~0.04–0.08 -->
-  <!-- 3. Minh họa chính liên quan đến nội dung bài -->
-  <!-- 4. KHÔNG có text metadata (tag / series / weight) -->
-</svg>
-```
+Map `category` → ảnh mặc định:
 
-### Bảng màu theo chủ đề
+| Category (`key`) | Thumbnail mặc định |
+|------------------|--------------------|
+| `it`             | `/images/default-thumb/default-thumb-it-lap-trinh.webp` |
+| `automation`     | `/images/default-thumb/default-thumb-it-lap-trinh.webp` |
+| `english`        | `/images/default-thumb/default-thumb-tieng-anh.webp` |
+| `chinese`        | `/images/default-thumb/default-thumb-tieng-trung.webp` |
 
-| Chủ đề | Gradient | Dùng cho |
-|--------|----------|----------|
-| Cam-đỏ | `#ea580c` → `#991b1b` | Khái niệm, giới thiệu |
-| Xanh navy | `#1e3a8a` → `#0f0f2e` | Cài đặt, cấu hình |
-| Xanh lá | `#065f46` → `#022c22` | Cơ bản, workflow |
-| Tím | `#5b21b6` → `#1e1b4b` | Remote, kết nối |
-| Teal | `#0e7490` → `#042f2e` | Branch, parallel |
-| Xanh đậm | `#1e3a5f` → `#0f0a2e` | Rebase, advanced flow |
-| Đen | `#111827` → `#030712` | Nâng cao, tools |
-| Hổ phách | `#78350f` → `#1c0a00` | Automation, hooks |
-
-### Các loại minh họa đã dùng
-
-- **Network nodes**: vòng tròn nối nhau bằng đường thẳng → chủ đề phân tán, kết nối
-- **Terminal window**: khung terminal với traffic lights và code lines → cài đặt, lệnh
-- **Workflow boxes**: các ô chữ nhật nối nhau bằng mũi tên → quy trình nhiều bước
-- **Cloud + laptop**: shape cloud và shape laptop nối nhau → remote/local
-- **Git graph**: đường ngang (main) + đường cong (branch) + chấm tròn (commit) → branch/merge
-- **Before/after split**: chia đôi canvas, hiện trạng thái trước và sau → rebase, transform
-- **Stacked cards**: nhiều card màu sắc khác nhau, mỗi card = một lệnh → nâng cao
-- **Pipeline boxes**: các ô nối nhau bằng mũi tên theo chiều ngang → automation, hooks
+- Lấy category đầu tiên trong front matter `categories` để chọn ảnh.
+- Nếu bài đã có ảnh `.webp` riêng (đặt trong `static/images/<chu-de>/`) thì dùng ảnh đó thay cho ảnh mặc định.
 
 ## Comments (Giscus)
 
