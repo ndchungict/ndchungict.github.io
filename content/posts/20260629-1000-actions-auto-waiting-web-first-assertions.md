@@ -7,8 +7,8 @@ summary     = 'Cách Playwright thực hiện hành động (click, fill, select
 thumbnail   = '/images/playwright-series/playwright-bai-05-actions-auto-waiting-web-first-assertions.webp'
 featured    = false
 weight      = 5
-categories  = ['it']
-tags        = ['playwright', 'automation', 'test', 'e2e', 'framework']
+categories  = ['automation']
+tags        = ['playwright', 'test', 'e2e', 'testing', 'framework']
 series      = ['tu-hoc-playwright']
 authors     = ['Nguyen Chung']
 +++

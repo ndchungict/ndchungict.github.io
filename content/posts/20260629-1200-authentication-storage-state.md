@@ -7,8 +7,8 @@ summary     = 'Đăng nhập một lần, tái sử dụng cho mọi test bằng
 thumbnail   = '/images/playwright-series/playwright-bai-09-authentication-storage-state.webp'
 featured    = false
 weight      = 9
-categories  = ['it']
-tags        = ['playwright', 'automation', 'test', 'e2e', 'framework']
+categories  = ['automation']
+tags        = ['playwright', 'test', 'e2e', 'testing', 'framework']
 series      = ['tu-hoc-playwright']
 authors     = ['Nguyen Chung']
 +++

@@ -7,8 +7,8 @@ summary     = 'Chặn và can thiệp request mạng với page.route: mock resp
 thumbnail   = '/images/playwright-series/playwright-bai-08-network-intercept-mock.webp'
 featured    = false
 weight      = 8
-categories  = ['it']
-tags        = ['playwright', 'automation', 'test', 'e2e', 'framework']
+categories  = ['automation']
+tags        = ['playwright', 'test', 'e2e', 'testing', 'framework']
 series      = ['tu-hoc-playwright']
 authors     = ['Nguyen Chung']
 +++

@@ -7,8 +7,8 @@ summary     = 'Bài tổng kết series: nguyên tắc viết test ổn định 
 thumbnail   = '/images/playwright-series/playwright-bai-16-best-practices-chien-luoc.webp'
 featured    = false
 weight      = 16
-categories  = ['it']
-tags        = ['playwright', 'automation', 'test', 'e2e', 'framework']
+categories  = ['automation']
+tags        = ['playwright', 'test', 'e2e', 'testing', 'framework']
 series      = ['tu-hoc-playwright']
 authors     = ['Nguyen Chung']
 +++

@@ -7,8 +7,8 @@ summary     = 'Locator là khái niệm trung tâm của Playwright. Học cách
 thumbnail   = '/images/playwright-series/playwright-bai-04-locators.webp'
 featured    = false
 weight      = 4
-categories  = ['it']
-tags        = ['playwright', 'automation', 'test', 'e2e', 'framework']
+categories  = ['automation']
+tags        = ['playwright', 'test', 'e2e', 'testing', 'framework']
 series      = ['tu-hoc-playwright']
 authors     = ['Nguyen Chung']
 +++

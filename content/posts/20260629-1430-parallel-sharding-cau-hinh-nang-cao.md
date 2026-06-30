@@ -7,8 +7,8 @@ summary     = 'Tăng tốc test suite lớn: cơ chế worker và fullyParallel,
 thumbnail   = '/images/playwright-series/playwright-bai-14-parallel-sharding.webp'
 featured    = false
 weight      = 14
-categories  = ['it']
-tags        = ['playwright', 'automation', 'test', 'e2e', 'framework']
+categories  = ['automation']
+tags        = ['playwright', 'test', 'e2e', 'testing', 'framework']
 series      = ['tu-hoc-playwright']
 authors     = ['Nguyen Chung']
 +++

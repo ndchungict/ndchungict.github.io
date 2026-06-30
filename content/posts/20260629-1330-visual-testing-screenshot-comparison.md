@@ -7,8 +7,8 @@ summary     = 'Phát hiện thay đổi giao diện ngoài ý muốn bằng toHa
 thumbnail   = '/images/playwright-series/playwright-bai-12-visual-testing.webp'
 featured    = false
 weight      = 12
-categories  = ['it']
-tags        = ['playwright', 'automation', 'test', 'e2e', 'framework']
+categories  = ['automation']
+tags        = ['playwright', 'test', 'e2e', 'testing', 'framework']
 series      = ['tu-hoc-playwright']
 authors     = ['Nguyen Chung']
 +++

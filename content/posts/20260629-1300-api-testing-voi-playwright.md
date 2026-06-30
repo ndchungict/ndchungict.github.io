@@ -7,8 +7,8 @@ summary     = 'Playwright không chỉ test UI. Dùng APIRequestContext để te
 thumbnail   = '/images/playwright-series/playwright-bai-11-api-testing-request-fixture-ui-api.webp'
 featured    = false
 weight      = 11
-categories  = ['it']
-tags        = ['playwright', 'automation', 'test', 'e2e', 'framework']
+categories  = ['automation']
+tags        = ['playwright', 'test', 'e2e', 'testing', 'framework']
 series      = ['tu-hoc-playwright']
 authors     = ['Nguyen Chung']
 +++
