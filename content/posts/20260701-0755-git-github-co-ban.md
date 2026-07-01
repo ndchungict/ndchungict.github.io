@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-01T07:55:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 3 — Git & GitHub cơ bản: commit, push, pull request và .gitignore'
 slug        = 'git-github-co-ban'
 summary     = 'Thiết lập Git, nắm vòng đời thay đổi (working directory → staging → commit), đẩy code lên GitHub, dùng .gitignore và pull request. Nền tảng quản lý phiên bản bắt buộc trước khi làm CI/CD.'

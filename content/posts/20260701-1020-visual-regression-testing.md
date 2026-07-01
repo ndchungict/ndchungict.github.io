@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-01T10:20:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 31 — Giới thiệu Visual Regression Testing'
 slug        = 'visual-regression-testing'
 summary     = 'Phát hiện thay đổi giao diện ngoài ý muốn bằng so sánh ảnh chụp: toHaveScreenshot, baseline và diff, xử lý phần động, và khi nào visual testing thực sự đáng dùng.'
@@ -13,7 +13,7 @@ series      = ['hoc-automation-test-tu-so-0']
 authors     = ['Nguyen Chung']
 +++
 
-Các assertion đã học kiểm tra *chức năng*: text đúng không, nút bấm được không. Nhưng chúng không bắt được lỗi **giao diện**: một nút lệch, màu sai, layout vỡ. **Visual regression testing** lấp khoảng trống này bằng cách so sánh ảnh chụp giao diện qua thời gian. Bài này khép Giai đoạn 5 với một kỹ thuật bổ sung mạnh mẽ.
+Sau khi [Bài 30](../ci-cd-github-actions/) cho test tự chạy trên CI mỗi lần push, ta bổ sung thêm một lớp kiểm tra nữa. Các assertion đã học kiểm tra *chức năng*: text đúng không, nút bấm được không. Nhưng chúng không bắt được lỗi **giao diện**: một nút lệch, màu sai, layout vỡ. **Visual regression testing** lấp khoảng trống này bằng cách so sánh ảnh chụp giao diện qua thời gian. Bài này khép Giai đoạn 5 với một kỹ thuật bổ sung mạnh mẽ.
 
 ## Vấn đề: assertion chức năng không thấy lỗi hiển thị
 

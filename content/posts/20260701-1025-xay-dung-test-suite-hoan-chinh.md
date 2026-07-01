@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-01T10:25:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 32 — Project thực chiến: xây dựng test suite hoàn chỉnh cho website thương mại điện tử'
 slug        = 'xay-dung-test-suite-hoan-chinh'
 summary     = 'Áp dụng toàn bộ series vào một project thật: chọn website demo, thiết kế cấu trúc dự án và POM, viết test cho các luồng cốt lõi (tìm kiếm, giỏ hàng, thanh toán) theo chuẩn chuyên nghiệp.'

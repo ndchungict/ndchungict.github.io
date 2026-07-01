@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-01T04:38:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 0 — Automation Test là gì? Vì sao chọn Playwright và lộ trình của series'
 slug        = 'automation-test-la-gi-vi-sao-chon-playwright'
 summary     = 'Bài mở đầu: hiểu automation test là gì bằng ngôn ngữ đời thường, vì sao mình chọn Playwright cho người mới, và toàn cảnh 35 bài bạn sẽ đi qua để từ số 0 thành người làm được việc.'
@@ -54,7 +54,7 @@ Câu hỏi rất hay, và là câu mình hay hỏi ngược lại ứng viên. T
 
 > Một câu mình hay nói với lính mới: **automation không thay thế tester, nó giải phóng tester** khỏi việc nhàm chán để tập trung vào việc cần cái đầu — nghĩ ra kịch bản kiểm thử hóc búa mà máy không tự nghĩ ra.
 
-Và đây là điều thực tế ít ai nói thẳng: **không phải thứ gì cũng nên tự động hóa.** Một màn hình mới toanh, còn thay đổi xoành xoạch mỗi tuần thì viết automation cho nó chỉ tổ phí công sửa tới sửa lui. Biết *khi nào nên* và *khi nào không nên* tự động hóa là dấu hiệu của người làm nghề thật, chứ không phải người mới. Cái này mình sẽ nói kỹ ở **Bài 12** và **Bài 14**.
+Và đây là điều thực tế ít ai nói thẳng: **không phải thứ gì cũng nên tự động hóa.** Một màn hình mới toanh, còn thay đổi xoành xoạch mỗi tuần thì viết automation cho nó chỉ tổ phí công sửa tới sửa lui. Biết *khi nào nên* và *khi nào không nên* tự động hóa là dấu hiệu của người làm nghề thật, chứ không phải người mới. Cái này mình sẽ nói kỹ ở **Bài 13** và **Bài 14**.
 
 ## Vì sao series này chọn Playwright?
 

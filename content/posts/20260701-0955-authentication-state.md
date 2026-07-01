@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-01T09:55:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 26 — Lưu trạng thái đăng nhập (authentication state)'
 slug        = 'authentication-state'
 summary     = 'Đăng nhập một lần rồi tái sử dụng cho mọi test bằng storageState và setup project. Tăng tốc bộ test đáng kể và giữ các test vẫn độc lập.'

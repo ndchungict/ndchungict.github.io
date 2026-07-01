@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-01T08:25:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 9 — Làm việc với Object trong JavaScript'
 slug        = 'object-trong-javascript'
 summary     = 'Biểu diễn dữ liệu có cấu trúc bằng object: truy cập, thêm/sửa thuộc tính, object lồng nhau, mảng object và destructuring cơ bản. Nền tảng để hiểu config và dữ liệu test.'

@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-01T09:05:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 16 — Cấu trúc project Playwright: file config, thư mục tests và HTML report'
 slug        = 'cau-truc-project-playwright'
 summary     = 'Hiểu playwright.config.js (baseURL, projects/trình duyệt, retries, timeout, reporter), tổ chức thư mục tests, và cách đọc HTML report. Nắm môi trường trước khi viết nhiều test.'

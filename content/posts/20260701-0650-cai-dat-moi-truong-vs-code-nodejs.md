@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-01T06:50:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 2 — Cài đặt môi trường: VS Code, Node.js và chạy file JavaScript đầu tiên'
 slug        = 'cai-dat-moi-truong-vs-code-nodejs'
 summary     = 'Cài đặt Node.js và VS Code, nắm các thao tác terminal cơ bản, và chạy file JavaScript đầu tiên bằng Node. Kèm cách xác minh cài đặt và xử lý các lỗi thường gặp.'

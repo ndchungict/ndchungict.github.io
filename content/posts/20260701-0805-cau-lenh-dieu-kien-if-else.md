@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-01T08:05:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 5 — Câu lệnh điều kiện if/else và toán tử so sánh'
 slug        = 'cau-lenh-dieu-kien-if-else'
 summary     = 'Cho chương trình ra quyết định với if/else/else if, nắm các toán tử so sánh và logic, và hiểu vì sao luôn dùng === thay vì ==. Nền tảng logic cho mọi assertion sau này.'

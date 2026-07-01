@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-01T09:35:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 22 — Page Object Model: tổ chức test dễ bảo trì'
 slug        = 'page-object-model'
 summary     = 'Page Object Model (POM) tách locator và thao tác của mỗi trang vào một class riêng, giúp test sạch, dễ đọc, dễ bảo trì. Cách xây dựng POM và các nguyên tắc thiết kế đúng.'

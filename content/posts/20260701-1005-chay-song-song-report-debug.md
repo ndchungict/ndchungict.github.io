@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-01T10:05:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 28 — Chạy test song song, đọc report và debug với Trace Viewer'
 slug        = 'chay-song-song-report-debug'
 summary     = 'Tăng tốc bằng chạy song song và sharding, cấu hình retries, đọc HTML report, và điều tra test fail bằng Trace Viewer, screenshot, video — bộ công cụ debug mạnh nhất của Playwright.'

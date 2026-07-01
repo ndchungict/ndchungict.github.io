@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-01T09:30:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 21 — Codegen: sinh code test nhanh và giới hạn của công cụ'
 slug        = 'codegen-playwright'
 summary     = 'Dùng Codegen để tự sinh code test bằng cách thao tác trên trình duyệt: cách chạy, đọc code sinh ra, và quan trọng nhất — vì sao không nên phụ thuộc hoàn toàn vào nó.'

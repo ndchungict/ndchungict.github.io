@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-01T08:30:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 10 — Bất đồng bộ trong JavaScript: Promise và async/await'
 slug        = 'bat-dong-bo-promise-async-await'
 summary     = 'Bài quan trọng nhất của giai đoạn JavaScript: hiểu bất đồng bộ (asynchronous), Promise, và cú pháp async/await cùng await. Đây là nền tảng để hiểu vì sao mọi lệnh Playwright đều có await.'

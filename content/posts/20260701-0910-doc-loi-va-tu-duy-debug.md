@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-01T09:10:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 17 — Đọc lỗi và tư duy debug cho người mới'
 slug        = 'doc-loi-va-tu-duy-debug'
 summary     = 'Cách đọc thông báo lỗi Playwright không hoảng, phân loại các lỗi thường gặp, và quy trình debug có hệ thống. Đặt sớm để bạn không nản khi gặp màn hình đỏ.'

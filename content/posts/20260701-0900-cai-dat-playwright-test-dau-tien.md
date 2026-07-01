@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-01T09:00:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 15 — Cài đặt Playwright và viết test đầu tiên'
 slug        = 'cai-dat-playwright-test-dau-tien'
 summary     = 'Khởi tạo Playwright bằng npm init playwright, hiểu các file được sinh ra, viết và chạy test tự động đầu tiên, rồi xem báo cáo HTML. Bước đầu tiên vào automation thực sự.'

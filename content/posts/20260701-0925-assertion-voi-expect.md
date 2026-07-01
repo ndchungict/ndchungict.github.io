@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-01T09:25:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 20 — Assertion với expect: kiểm tra nội dung và trạng thái phần tử'
 slug        = 'assertion-voi-expect'
 summary     = 'Viết assertion bằng expect: web-first assertions tự chờ, kiểm tra hiển thị/text/giá trị/trạng thái, phủ định với not, và vì sao web-first assertion loại bỏ test chập chờn.'

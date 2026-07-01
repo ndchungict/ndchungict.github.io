@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-01T10:30:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 33 — Hoàn thiện CI pipeline và đưa project lên GitHub làm portfolio'
 slug        = 'hoan-thien-ci-pipeline-portfolio'
 summary     = 'Hoàn thiện project: cấu hình CI chạy tự động, viết README chuyên nghiệp, công bố HTML report, và trình bày repo sao cho nhà tuyển dụng thấy được năng lực automation của bạn.'

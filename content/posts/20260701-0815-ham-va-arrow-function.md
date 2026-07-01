@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-01T08:15:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 7 — Hàm (function) và arrow function'
 slug        = 'ham-va-arrow-function'
 summary     = 'Đóng gói code thành hàm tái sử dụng: khai báo, tham số, giá trị trả về, và cú pháp arrow function. Hiểu vì sao hàm là đơn vị tổ chức nền tảng của mọi test.'

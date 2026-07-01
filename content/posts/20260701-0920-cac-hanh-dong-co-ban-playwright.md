@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-01T09:20:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 19 — Các hành động cơ bản trong Playwright: click, fill, check, select, upload'
 slug        = 'cac-hanh-dong-co-ban-playwright'
 summary     = 'Thực hiện thao tác trên phần tử: click, điền text (fill), tick checkbox, chọn dropdown, upload file, nhấn phím. Hiểu cơ chế auto-wait giúp thao tác ổn định.'

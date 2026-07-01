@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-01T08:35:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 11 — HTML và CSS selector cơ bản cho automation test'
 slug        = 'html-va-css-selector-co-ban'
 summary     = 'Đọc hiểu cấu trúc HTML (thẻ, thuộc tính, id, class) và viết CSS selector để định vị phần tử. Kiến thức nền để hiểu locator của Playwright ở Bài 18.'

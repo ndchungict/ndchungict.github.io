@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-01T10:35:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 34 — Tổng kết lộ trình và hướng đi tiếp theo'
 slug        = 'tong-ket-lo-trinh'
 summary     = 'Nhìn lại toàn bộ hành trình từ số 0 tới bộ test hoàn chỉnh, hệ thống hóa kiến thức đã học, và vạch các hướng phát triển nghề tiếp theo: chuyên sâu testing, performance, hoặc SDET.'

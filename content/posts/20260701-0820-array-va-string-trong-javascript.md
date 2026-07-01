@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-01T08:20:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 8 — Làm việc với Array và String trong JavaScript'
 slug        = 'array-va-string-trong-javascript'
 summary     = 'Array và các phương thức hay dùng trong automation test (map, filter, find, includes), cùng các thao tác chuỗi thiết yếu (includes, trim, split, template literal) để xử lý và assert text.'

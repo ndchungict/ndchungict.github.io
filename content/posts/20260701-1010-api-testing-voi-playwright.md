@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-01T10:10:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 29 — API Testing với Playwright'
 slug        = 'api-testing-voi-playwright'
 summary     = 'Test API trực tiếp bằng request fixture của Playwright: gửi GET/POST, kiểm tra status và response body, và kết hợp API với UI test để setup dữ liệu nhanh.'

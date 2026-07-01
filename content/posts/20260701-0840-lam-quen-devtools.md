@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-01T08:40:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 12 — Làm quen DevTools: inspect phần tử và đọc cấu trúc trang'
 slug        = 'lam-quen-devtools'
 summary     = 'Dùng Chrome DevTools để inspect phần tử, đọc HTML/DOM trực tiếp trên trang, thử CSS selector trong Console, và quan sát network request. Công cụ điều tra không thể thiếu của tester.'

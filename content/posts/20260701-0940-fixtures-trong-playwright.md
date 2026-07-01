@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-01T09:40:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 23 — Fixtures trong Playwright: tái sử dụng setup giữa các test'
 slug        = 'fixtures-trong-playwright'
 summary     = 'Fixtures cung cấp môi trường cô lập và tái sử dụng setup/teardown giữa các test. Hiểu fixtures built-in (page, context), beforeEach/afterEach vs beforeAll/afterAll, và cách viết custom fixture.'

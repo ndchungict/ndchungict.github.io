@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-01T09:50:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 25 — Xử lý multiple tabs, popup, iframe và dialog'
 slug        = 'xu-ly-tabs-popup-iframe'
 summary     = 'Thao tác với các tình huống giao diện phức tạp: tab/popup mới mở, iframe lồng trong trang, và hộp thoại dialog (alert/confirm). Các kỹ thuật cần khi test ứng dụng thực tế.'

@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-01T10:15:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 30 — Tích hợp CI/CD cơ bản với GitHub Actions'
 slug        = 'ci-cd-github-actions'
 summary     = 'Chạy Playwright test tự động trên GitHub Actions mỗi khi push hoặc mở pull request: hiểu CI/CD, viết workflow YAML, và lưu HTML report làm artifact để xem kết quả.'

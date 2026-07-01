@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-01T05:45:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 1 — Lập trình là gì? Tư duy giải quyết vấn đề bằng code'
 slug        = 'lap-trinh-la-gi-tu-duy-giai-quyet-van-de'
 summary     = 'Dành cho người chưa từng viết một dòng code: hiểu lập trình thực ra là gì bằng ví dụ đời thường, và làm quen với "tư duy lập trình" — cách chẻ nhỏ vấn đề thành các bước máy hiểu được.'

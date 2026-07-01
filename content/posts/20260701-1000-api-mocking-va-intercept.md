@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-01T10:00:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 27 — API mocking và intercept network request trong Playwright'
 slug        = 'api-mocking-va-intercept'
 summary     = 'Chặn và can thiệp network request với page.route: mock response API để kiểm soát dữ liệu, giả lập lỗi/trạng thái rỗng, và làm test nhanh, ổn định, độc lập với backend.'

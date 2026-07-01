@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-01T09:45:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 24 — Quản lý test data và biến môi trường với .env'
 slug        = 'test-data-va-bien-moi-truong'
 summary     = 'Tách dữ liệu test khỏi code, dùng biến môi trường với file .env cho thông tin nhạy cảm và cấu hình theo môi trường, và kỹ thuật data-driven test chạy cùng logic với nhiều bộ dữ liệu.'

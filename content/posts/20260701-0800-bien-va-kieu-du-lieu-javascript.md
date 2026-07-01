@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-01T08:00:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 4 — Biến và kiểu dữ liệu trong JavaScript'
 slug        = 'bien-va-kieu-du-lieu-javascript'
 summary     = 'Khai báo biến với let và const, phân biệt các kiểu dữ liệu cơ bản (string, number, boolean, null, undefined) và cách kiểm tra kiểu bằng typeof. Nền tảng cho mọi dòng code phía sau.'

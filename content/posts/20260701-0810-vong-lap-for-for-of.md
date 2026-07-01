@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-01T08:10:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 6 — Vòng lặp: for, for...of và khi nào dùng loại nào'
 slug        = 'vong-lap-for-for-of'
 summary     = 'Lặp lại một khối lệnh nhiều lần với vòng lặp for cổ điển và for...of. Phân biệt khi nào dùng loại nào, kèm break/continue và liên hệ với thao tác lặp trong automation test.'

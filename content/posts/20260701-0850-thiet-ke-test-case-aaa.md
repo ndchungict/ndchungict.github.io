@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-01T08:50:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 14 — Thiết kế test case tốt: pattern AAA và nguyên tắc test độc lập'
 slug        = 'thiet-ke-test-case-aaa'
 summary     = 'Cách viết test case chất lượng: cấu trúc Arrange–Act–Assert, đặt tên test rõ ràng, giữ test độc lập, và xác định test cái gì / không test cái gì. Phần phân biệt biết gõ Playwright với biết làm automation.'
@@ -13,7 +13,7 @@ series      = ['hoc-automation-test-tu-so-0']
 authors     = ['Nguyen Chung']
 +++
 
-Biết cú pháp Playwright chỉ là một nửa công việc. Nửa còn lại — thường bị bỏ qua — là **thiết kế test case tốt**: viết test sao cho rõ ràng, đáng tin, dễ bảo trì. Đây là phần phân biệt người "gõ được test" với người "làm automation" thật sự. Bài này khép lại Giai đoạn 2 bằng các nguyên tắc thiết kế mà mọi test bạn viết về sau nên tuân theo.
+[Bài 13](../testing-la-gi/) đã trả lời *khi nào* nên tự động hóa. Bài này trả lời câu tiếp theo: tự động hóa *thế nào cho tốt*. Biết cú pháp Playwright chỉ là một nửa công việc. Nửa còn lại — thường bị bỏ qua — là **thiết kế test case tốt**: viết test sao cho rõ ràng, đáng tin, dễ bảo trì. Đây là phần phân biệt người "gõ được test" với người "làm automation" thật sự. Bài này khép lại Giai đoạn 2 bằng các nguyên tắc thiết kế mà mọi test bạn viết về sau nên tuân theo.
 
 ## Cấu trúc AAA: Arrange – Act – Assert
 

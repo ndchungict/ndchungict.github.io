@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-01T09:15:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 18 — Locator trong Playwright: getByRole, getByText, getByLabel'
 slug        = 'locator-trong-playwright'
 summary     = 'Locator là cách Playwright định vị phần tử. Vì sao ưu tiên các locator theo vai trò/ngữ nghĩa (getByRole, getByText, getByLabel) hơn CSS selector, và cách xử lý khi trúng nhiều phần tử.'
