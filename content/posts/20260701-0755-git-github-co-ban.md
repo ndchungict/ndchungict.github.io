@@ -1,5 +1,5 @@
 +++
-date        = '2026-06-30T16:55:00+07:00'
+date        = '2026-07-01T07:55:00+07:00'
 draft       = true
 title       = 'Bài 3 — Git & GitHub cơ bản: commit, push, pull request và .gitignore'
 slug        = 'git-github-co-ban'

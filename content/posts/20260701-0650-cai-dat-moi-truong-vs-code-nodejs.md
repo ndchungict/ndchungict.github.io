@@ -1,5 +1,5 @@
 +++
-date        = '2026-06-30T16:50:00+07:00'
+date        = '2026-07-01T06:50:00+07:00'
 draft       = true
 title       = 'Bài 2 — Cài đặt môi trường: VS Code, Node.js và chạy file JavaScript đầu tiên'
 slug        = 'cai-dat-moi-truong-vs-code-nodejs'

@@ -1,5 +1,5 @@
 +++
-date        = '2026-06-30T16:45:00+07:00'
+date        = '2026-07-01T05:45:00+07:00'
 draft       = true
 title       = 'Bài 1 — Lập trình là gì? Tư duy giải quyết vấn đề bằng code'
 slug        = 'lap-trinh-la-gi-tu-duy-giai-quyet-van-de'

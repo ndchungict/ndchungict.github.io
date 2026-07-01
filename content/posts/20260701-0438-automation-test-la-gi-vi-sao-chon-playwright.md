@@ -1,5 +1,5 @@
 +++
-date        = '2026-06-30T16:38:00+07:00'
+date        = '2026-07-01T04:38:00+07:00'
 draft       = true
 title       = 'Bài 0 — Automation Test là gì? Vì sao chọn Playwright và lộ trình của series'
 slug        = 'automation-test-la-gi-vi-sao-chon-playwright'
