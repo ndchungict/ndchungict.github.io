@@ -4,7 +4,7 @@ draft       = false
 title       = 'Bài 5 — Câu lệnh điều kiện if/else và toán tử so sánh'
 slug        = 'cau-lenh-dieu-kien-if-else'
 summary     = 'Cho chương trình ra quyết định với if/else/else if, nắm các toán tử so sánh và logic, và hiểu vì sao luôn dùng === thay vì ==. Nền tảng logic cho mọi assertion sau này.'
-thumbnail   = '/images/default-thumb/default-thumb-it-lap-trinh.webp'
+thumbnail   = '/images/series-hoc-automation-test-tu-so-0/bai-5-cau-lenh-dieu-kien-if-else-toan-tu-so-sanh.webp'
 featured    = false
 weight      = 6
 categories  = ['automation']
