@@ -3,7 +3,7 @@ date        = '2026-07-02T11:00:00+07:00'
 draft       = true
 title       = 'Bài 7 — Code node chuyên sâu: JavaScript/Python, \$input/\$json, sandbox'
 slug        = 'code-node-chuyen-sau-n8n'
-summary     = 'Viết JavaScript/Python trong Code node: mô hình items, các biến \$input, \$json, \$node, giới hạn sandbox, và khi nào nên dùng Code node thay cho node có sẵn.'
+summary     = 'Viết JavaScript/Python trong Code node: mô hình items, các biến \$input, \$json, cách tham chiếu node khác, task runners, giới hạn sandbox, và khi nào nên dùng Code node thay cho node có sẵn.'
 thumbnail   = '/images/default-thumb/default-thumb-it-lap-trinh.webp'
 featured    = false
 weight      = 7
@@ -41,6 +41,7 @@ const last  = $input.last();       // item cuối
 // Truy cập node khác
 const fromNode = $('Ten Node').all();       // items của node khác
 const cur      = $('Ten Node').item.json;   // item liên kết (xem Bài 3)
+// (Cách cũ `$node['Ten Node'].json` vẫn chạy nhưng nay ưu tiên `$('Ten Node')`.)
 
 // Tiện ích n8n
 $now;        // DateTime hiện tại (Luxon)
@@ -81,6 +82,10 @@ Code node **không phải Node.js đầy đủ**. Nó chạy trong sandbox, và 
 - **Python** (chế độ "Python (Beta)") chạy qua Pyodide — chậm hơn, thư viện hạn chế. Với developer đã biết JS, tôi khuyên **mặc định dùng JavaScript**; chỉ chọn Python khi có lý do cụ thể (thư viện chỉ có ở Python).
 
 > Ghi nhớ: `NODE_FUNCTION_ALLOW_EXTERNAL` là tính năng của bản **self-hosted**. Việc mở cho phép module ngoài cũng là một quyết định bảo mật — bạn đang cho code trong workflow nạp thư viện; cân nhắc kỹ trên instance nhiều người dùng ([Bài 10](../credentials-va-bao-mat-n8n/)).
+
+### Task runners: nơi Code node thực sự chạy
+
+Ở bản mới, khi bật `N8N_RUNNERS_ENABLED=true` ([Bài 2](../cai-dat-n8n-docker-compose/)), Code node **không** chạy trong main process nữa mà trong một **task runner** — tiến trình tách biệt, được sandbox chặt hơn. Lợi ích: một Code node lỗi/nặng không kéo sập tiến trình chính, và giới hạn tài nguyên/timeout áp riêng cho từng lần chạy code. Đây là hướng n8n khuyến nghị và dần thành mặc định; nếu chưa bật, n8n thường in cảnh báo deprecation. Cơ chế cho phép module (`NODE_FUNCTION_ALLOW_EXTERNAL`/`ALLOW_BUILTIN`) vẫn giữ nguyên vai trò — chỉ là code được thực thi ở tiến trình runner.
 
 ## Khi nào dùng Code node — và khi nào tránh
 

@@ -141,6 +141,14 @@ Nói gọn: **n8n tuyệt để "gắn AI vào quy trình", không phải để 
 
 Thay `url`, `model`, và credential theo nhà cung cấp bạn dùng (đường dẫn field trong response cũng chỉnh theo API cụ thể). Khi làm thật với **AI Agent + Vector Store node** cho RAG, canvas sẽ có Chat Model và Vector Store cắm vào Agent qua các cổng ai_*; do các node đó phụ thuộc phiên bản mạnh, tôi khuyên dựng trực tiếp trong editor bằng cách kéo node và để n8n tự nối cổng, thay vì chép JSON. Về chọn model: **dùng model mới và phù hợp của nhà cung cấp tại thời điểm bạn triển khai** — đừng ghim cứng một tên model cũ trong tài liệu vì nó lỗi thời nhanh.
 
+> ⚠️ Ví dụ trên dùng **định dạng OpenAI-compatible** (`/v1/chat/completions`, mảng `messages` có role `system`, đọc kết quả ở `choices[0].message.content`) — chạy được với OpenAI và các endpoint tương thích. **API native của Anthropic (Claude) khác:**
+> - Endpoint `POST https://api.anthropic.com/v1/messages`
+> - Header `x-api-key: <key>` **và** `anthropic-version: 2023-06-01` (không phải `Authorization: Bearer`)
+> - `system` là **tham số top-level riêng**, không nằm trong `messages`; `max_tokens` **bắt buộc**
+> - Kết quả đọc ở `content[0].text` (không phải `choices[0].message.content`)
+>
+> Nếu dùng Claude, chọn model dòng Opus mới nhất tại thời điểm triển khai (vd `claude-opus-4-8`). Với n8n, thường gọn nhất là dùng node **Anthropic Chat Model** chuyên biệt (cắm vào AI Agent) để khỏi tự dựng request thô.
+
 ## Lỗi thường gặp và cách xử lý
 
 1. **Nối node AI bằng cổng `main`.** Triệu chứng: Agent không nhận model/vector store. Fix: cắm Chat Model/Vector Store vào cổng ai_* của Agent, không nối tuần tự.

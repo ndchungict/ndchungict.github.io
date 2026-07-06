@@ -73,8 +73,13 @@ n8n cấu hình gần như toàn bộ qua env var. Đây là những biến bạ
 | `N8N_PROTOCOL` | `http` hoặc `https` | Dùng `https` khi có reverse proxy TLS |
 | `N8N_PORT` | Cổng n8n lắng nghe | Mặc định `5678` |
 | `WEBHOOK_URL` | URL gốc để sinh webhook | **Bắt buộc đúng** khi đứng sau reverse proxy, nếu không webhook trả URL sai |
-| `GENERIC_TIMEZONE` | Timezone cho Schedule/cron | vd `Asia/Ho_Chi_Minh` |
+| `GENERIC_TIMEZONE` | Timezone cho Schedule/cron *bên trong* n8n | vd `Asia/Ho_Chi_Minh` |
+| `TZ` | Timezone của **hệ điều hành** trong container | Đặt **cùng giá trị** với `GENERIC_TIMEZONE`; nếu thiếu, log và một số node xử lý ngày/giờ sẽ lệch về UTC |
 | `N8N_SECURE_COOKIE` | Cookie chỉ gửi qua HTTPS | Đặt `false` khi chạy local HTTP, `true` khi có HTTPS |
+
+> **Vì sao cần cả `TZ` lẫn `GENERIC_TIMEZONE`?** `GENERIC_TIMEZONE` chỉ chỉnh timezone mà Schedule Trigger/cron dùng để tính lịch. Nhưng đồng hồ *hệ thống* của container mặc định là UTC — nên timestamp trong log, và các hàm ngày/giờ chạm tới giờ hệ thống, sẽ lệch nếu bạn không set `TZ`. Quy tắc an toàn: **luôn set cả hai, cùng một giá trị.**
+
+n8n phiên bản gần đây khuyến nghị chạy **Code node** qua *task runners* (tiến trình tách biệt, an toàn và ổn định hơn), và sẽ in cảnh báo deprecation nếu chưa bật. Cách bật đơn giản nhất là đặt `N8N_RUNNERS_ENABLED=true`. Việc này phụ thuộc phiên bản (đối chiếu docs với tag bạn ghim); ta sẽ đào sâu Code node và runner ở [Bài 7](../code-node-chuyen-sau-n8n/).
 
 Về `N8N_ENCRYPTION_KEY`: nếu không đặt, n8n tự sinh một key và lưu trong file `config` ở thư mục dữ liệu. Vấn đề là khi bạn tái tạo container hoặc chuyển máy mà **không mang theo key đó**, toàn bộ credentials đã lưu sẽ không giải mã được — workflow chạy sẽ fail hàng loạt. Vì vậy: **luôn đặt `N8N_ENCRYPTION_KEY` tường minh** và cất nó vào secret manager. Cơ chế mã hóa credentials sẽ được mổ xẻ ở [Bài 10](../credentials-va-bao-mat-n8n/).
 
@@ -106,7 +111,10 @@ N8N_PROTOCOL=http
 N8N_PORT=5678
 WEBHOOK_URL=http://localhost:5678/
 GENERIC_TIMEZONE=Asia/Ho_Chi_Minh
+TZ=Asia/Ho_Chi_Minh
 ```
+
+> Mẹo Git: commit một file **`.env.example`** có đúng các khóa trên nhưng để trống/giá trị giả (vd `N8N_ENCRYPTION_KEY=`), và cho `.env` thật vào `.gitignore`. Người mới clone repo chỉ việc copy `.env.example` → `.env` rồi điền — không ai vô tình commit secret.
 
 File `docker-compose.yml`:
 
@@ -148,6 +156,9 @@ services:
       N8N_PORT: ${N8N_PORT}
       WEBHOOK_URL: ${WEBHOOK_URL}
       GENERIC_TIMEZONE: ${GENERIC_TIMEZONE}
+      TZ: ${TZ}                       # timezone hệ thống container — khớp GENERIC_TIMEZONE
+      # Chạy Code node qua task runner (khuyến nghị ở bản mới; xem Bài 7)
+      N8N_RUNNERS_ENABLED: 'true'
       # Local HTTP nên tắt secure cookie; bật lại khi có HTTPS
       N8N_SECURE_COOKIE: 'false'
     volumes:

@@ -104,13 +104,14 @@ Dưới đây là **workflow (2) xử lý đơn** ở dạng rút gọn nhưng c
       "parameters": {
         "operation": "executeQuery",
         "query": "INSERT INTO processed_events (event_id, order_id) VALUES ($1, $2) ON CONFLICT (event_id) DO NOTHING RETURNING event_id;",
-        "options": { "queryReplacement": "={{ $json.event_id }},={{ $json.orderId }}" }
+        "options": { "queryReplacement": "={{ [$json.event_id, $json.orderId] }}" }
       },
       "id": "c0000000-0000-4000-9000-000000000003",
       "name": "Idempotency check",
       "type": "n8n-nodes-base.postgres",
       "typeVersion": 2.5,
       "position": [440, 0],
+      "alwaysOutputData": true,
       "credentials": { "postgres": { "id": "REPLACE_WITH_CREDENTIAL_ID", "name": "ShopViet DB - prod" } }
     },
     {
@@ -208,7 +209,7 @@ Dưới đây là **workflow (2) xử lý đơn** ở dạng rút gọn nhưng c
 }
 ```
 
-Workflow này gói gọn nhiều bài: idempotency ([Bài 11](../webhook-nang-cao-hmac-idempotency/)/[Bài 12](../tich-hop-database-n8n/)), item linking `$('Node').item` ([Bài 3](../khai-niem-cot-loi-n8n-workflow-node-item/)), chuẩn hóa Set + phân loại bằng expression ([Bài 6](../xu-ly-du-lieu-expression-n8n/)), định tuyến Switch ([Bài 8](../dieu-khien-luong-if-switch-loop-subworkflow/)). Trong bản production đầy đủ, bạn nối thêm: node lưu `orders`, gọi LLM thay cho regex phân loại, các nhánh alert/dead-letter, và trỏ *Settings → Error Workflow* tới Error Workflow chung. Nhớ tạo bảng `processed_events` ([Bài 12](../tich-hop-database-n8n/)) trước khi chạy.
+Workflow này gói gọn nhiều bài: idempotency ([Bài 11](../webhook-nang-cao-hmac-idempotency/)/[Bài 12](../tich-hop-database-n8n/)), item linking `$('Node').item` ([Bài 3](../khai-niem-cot-loi-n8n-workflow-node-item/)), chuẩn hóa Set + phân loại bằng expression ([Bài 6](../xu-ly-du-lieu-expression-n8n/)), định tuyến Switch ([Bài 8](../dieu-khien-luong-if-switch-loop-subworkflow/)). Trong bản production đầy đủ, bạn nối thêm: node lưu `orders`, gọi LLM thay cho regex phân loại, các nhánh alert/dead-letter, và trỏ *Settings → Error Workflow* tới Error Workflow chung. Nhớ tạo bảng `processed_events` ([Bài 12](../tich-hop-database-n8n/)) trước khi chạy. Hai chi tiết giữ cho luồng idempotency chạy đúng (đã bàn kỹ ở [Bài 12](../tich-hop-database-n8n/)): query parameter truyền dạng **mảng** `={{ [$json.event_id, $json.orderId] }}`, và node Postgres bật **Always Output Data** để ca trùng (0 row) vẫn chảy vào nhánh "Bỏ qua trùng".
 
 ## Lỗi thường gặp và cách xử lý
 

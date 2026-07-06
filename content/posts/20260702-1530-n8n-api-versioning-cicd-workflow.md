@@ -99,28 +99,35 @@ jobs:
           set -euo pipefail
           for f in workflows/*.json; do
             echo "Deploying $f"
-            # Lay workflowId tu field trong file (neu ban luu kem)
+            # workflowId de biet target (doc tu file, KHONG gui trong body)
             WF_ID=$(jq -r '.id // empty' "$f")
+            # NORMALIZE: chi giu field Public API chap nhan.
+            # Bo id/active/tags/createdAt/updatedAt... de tranh loi 400 va diff sach.
+            BODY=$(jq '{name, nodes, connections, settings}' "$f")
             if [ -n "$WF_ID" ]; then
               # Cap nhat workflow da ton tai
               curl -sf -X PUT \
                 -H "X-N8N-API-KEY: $N8N_API_KEY" \
                 -H 'Content-Type: application/json' \
-                --data @"$f" \
+                --data "$BODY" \
                 "$N8N_URL/api/v1/workflows/$WF_ID" > /dev/null
+              # PUT khong tu bat workflow -> kich hoat qua endpoint rieng
+              curl -sf -X POST \
+                -H "X-N8N-API-KEY: $N8N_API_KEY" \
+                "$N8N_URL/api/v1/workflows/$WF_ID/activate" > /dev/null
             else
               # Tao moi
               curl -sf -X POST \
                 -H "X-N8N-API-KEY: $N8N_API_KEY" \
                 -H 'Content-Type: application/json' \
-                --data @"$f" \
+                --data "$BODY" \
                 "$N8N_URL/api/v1/workflows" > /dev/null
             fi
           done
           echo "Done."
 ```
 
-Pipeline này minh họa nguyên tắc, chưa phải bản production-hardened: bạn nên thêm bước **normalize JSON**, **deploy staging trước rồi mới prod** (thêm job/environment), và có thể **smoke test** (gọi thử một webhook) sau deploy. Payload chính xác mà API `POST/PUT /workflows` chấp nhận **khác nhau giữa các phiên bản** n8n (một số bản không nhận `id`/`active` trong body) — kiểm tra tài liệu API bản bạn dùng và điều chỉnh script cho khớp.
+Script đã kèm bước **normalize** (`jq '{name, nodes, connections, settings}'`) — vừa tránh lỗi 400 do gửi field read-only, vừa làm diff Git sạch. Để production-hardened hơn, thêm: **deploy staging trước rồi mới prod** (thêm job/environment), và **smoke test** (gọi thử một webhook) sau deploy. Payload chính xác mà API `POST/PUT /workflows` chấp nhận **khác nhau giữa các phiên bản** n8n (một số bản còn không nhận cả `settings`, hoặc yêu cầu field khác) — kiểm tra tài liệu API bản bạn dùng và điều chỉnh danh sách field trong `jq` cho khớp.
 
 ## Lỗi thường gặp và cách xử lý
 

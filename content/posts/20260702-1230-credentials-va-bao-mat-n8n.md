@@ -44,7 +44,7 @@ Tạo qua *Settings → Credentials → Add credential*, chọn loại (vd *Head
 Có mấy cách đưa bí mật vào n8n:
 
 1. **Credential trong UI** (mã hóa trong DB) — mặc định, đủ cho hầu hết trường hợp.
-2. **Biến môi trường** — với self-host, bạn có thể tham chiếu env trong một số ngữ cảnh; hữu ích cho cấu hình khác nhau theo môi trường. Lưu ý phạm vi cho phép truy cập env trong expression bị giới hạn vì lý do bảo mật.
+2. **Biến môi trường** — với self-host, bạn tham chiếu env trong expression qua `{{ $env.TEN_BIEN }}`; hữu ích cho cấu hình khác nhau theo môi trường. Mặc định `$env` **có sẵn** trên self-host, nhưng nên tắt bằng `N8N_BLOCK_ENV_ACCESS_IN_NODE=true` trên instance nhiều người dùng để code/expression không đọc lén biến môi trường nhạy cảm. Dù sao env **không** phải nơi cất secret có mã hóa — token/mật khẩu vẫn nên nằm trong credential.
 3. **External Secrets** (Vault, AWS/GCP Secrets Manager) — n8n tích hợp secret manager ngoài. **Đây là tính năng Enterprise**; bản Community self-hosted miễn phí không có. Nếu bạn cần nguồn secret tập trung, hãy biết trước ranh giới này để không thiết kế phụ thuộc vào nó rồi mới phát hiện phải trả tiền.
 
 Với ShopViet trên Community Edition, tôi dùng credential UI (mã hóa) + `N8N_ENCRYPTION_KEY` được cấp qua secret manager của hạ tầng (Docker secret / biến CI). Đó là mức an toàn hợp lý mà không cần Enterprise.
@@ -66,13 +66,13 @@ Vì workflow là JSON và thường được commit vào Git ([Bài 16](../n8n-a
 - **Đừng commit `.env`** chứa `N8N_ENCRYPTION_KEY` hay mật khẩu DB — dùng `.env.example` ([Bài 2](../cai-dat-n8n-docker-compose/)).
 - Khi chia sẻ workflow cho người khác import, họ phải **tự tạo lại credential** cùng tên/ID mapping — bí mật của bạn không đi theo.
 
-## Ví dụ thực hành: refactor alert Slack sang credential
+## Ví dụ thực hành: gọi API nội bộ bằng credential
 
-Ta sửa lỗi hard-code ở [Bài 9](../error-handling-production-n8n/): tạo credential *Header Auth* cho Slack (hoặc dùng node Slack chuyên biệt), và node HTTP Request tham chiếu credential thay vì nhúng URL bí mật. Workflow export ra sẽ không còn chứa secret:
+Áp dụng nguyên tắc "không nhét secret vào node" (thay cho kiểu hard-code ở [Bài 9](../error-handling-production-n8n/)): node HTTP Request gọi API nội bộ ShopViet và xác thực bằng credential *Header Auth* (`Authorization: Bearer ...`) — token nằm trong credential, không nằm trong workflow. Khi export, JSON chỉ còn tham chiếu credential:
 
 ```json
 {
-  "name": "ShopViet - Alert dung credential",
+  "name": "ShopViet - Goi API noi bo dung credential",
   "nodes": [
     {
       "parameters": {},
@@ -85,30 +85,30 @@ Ta sửa lỗi hard-code ở [Bài 9](../error-handling-production-n8n/): tạo 
     {
       "parameters": {
         "method": "POST",
-        "url": "={{ $env.SLACK_WEBHOOK_PATH ? 'https://hooks.slack.com/services' + $env.SLACK_WEBHOOK_PATH : 'https://hooks.slack.com/services/PLACEHOLDER' }}",
+        "url": "https://api.shopviet.vn/internal/orders",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={{ { \"text\": \"ShopViet: test alert dung credential\" } }}",
+        "jsonBody": "={{ { \"orderId\": \"SV-9001\", \"total\": 450000 } }}",
         "options": {}
       },
       "id": "ba000000-0000-4000-9000-000000000002",
-      "name": "Gui Slack (co credential)",
+      "name": "Goi API noi bo (co credential)",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [240, 0],
       "credentials": {
         "httpHeaderAuth": {
           "id": "REPLACE_WITH_CREDENTIAL_ID",
-          "name": "Slack alert - ops"
+          "name": "ShopViet API - prod"
         }
       }
     }
   ],
   "connections": {
     "When clicking Test workflow": {
-      "main": [[{ "node": "Gui Slack (co credential)", "type": "main", "index": 0 }]]
+      "main": [[{ "node": "Goi API noi bo (co credential)", "type": "main", "index": 0 }]]
     }
   },
   "settings": {},
@@ -116,7 +116,9 @@ Ta sửa lỗi hard-code ở [Bài 9](../error-handling-production-n8n/): tạo 
 }
 ```
 
-Chú ý khối `credentials` chỉ chứa **ID + tên**, không có giá trị bí mật — đó chính là điều làm JSON này an toàn để commit. Khi import, bạn tạo credential *Header Auth* tên `Slack alert - ops` rồi gán lại vào node. (Thực tế, dùng **node Slack** chuyên biệt với credential OAuth/token sẽ sạch hơn là HTTP Request thô; ví dụ trên minh họa cơ chế tham chiếu credential.)
+Chú ý khối `credentials` chỉ chứa **ID + tên**, không có giá trị bí mật — đó chính là điều làm JSON này an toàn để commit. Khi import, bạn tạo credential *Header Auth* tên `ShopViet API - prod` (điền token thật) rồi gán lại vào node.
+
+> Riêng với alert Slack hard-code ở [Bài 9](../error-handling-production-n8n/): Slack Incoming Webhook coi **chính URL là bí mật** (không dùng header). Cách chuẩn để "khử" hard-code đó là dùng **node Slack** chuyên biệt với credential Slack (token), hoặc nếu vẫn muốn HTTP Request thì cất URL webhook trong một credential *Header Auth*/*Query Auth* thay vì viết thẳng vào node.
 
 ## Lỗi thường gặp và cách xử lý
 

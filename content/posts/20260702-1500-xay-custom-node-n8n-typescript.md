@@ -71,7 +71,11 @@ Quy tắc: **REST API thuần → declarative; logic phức tạp → programmat
 
 ```typescript
 // credentials/ShopVietApi.credentials.ts
-import { ICredentialType, INodeProperties } from 'n8n-workflow';
+import {
+  IAuthenticateGeneric,
+  ICredentialType,
+  INodeProperties,
+} from 'n8n-workflow';
 
 export class ShopVietApi implements ICredentialType {
   name = 'shopVietApi';
@@ -91,6 +95,16 @@ export class ShopVietApi implements ICredentialType {
       default: 'https://api.shopviet.vn',
     },
   ];
+
+  // Tu gan API key vao header cho MOI request cua node dung credential nay
+  authenticate: IAuthenticateGeneric = {
+    type: 'generic',
+    properties: {
+      headers: {
+        Authorization: '=Bearer {{ $credentials.apiKey }}',
+      },
+    },
+  };
 }
 ```
 
@@ -164,7 +178,7 @@ export class ShopViet implements INodeType {
 }
 ```
 
-Để gắn API key vào header tự động, credential có thể khai báo phần `authenticate` (đưa `apiKey` vào header `Authorization`), hoặc node cấu hình trong `requestDefaults`. Ưu điểm declarative thấy rõ: **không có vòng lặp items, không có `execute()`** — n8n lo phần thực thi, bạn chỉ mô tả "gọi gì, ở đâu".
+API key được gắn vào header tự động nhờ khối `authenticate` đã khai báo trong credential ở trên (`Authorization: Bearer <apiKey>`) — mọi request của node dùng credential này đều được ký, không cần lặp lại trong node. Ưu điểm declarative thấy rõ: **không có vòng lặp items, không có `execute()`** — n8n lo phần thực thi, bạn chỉ mô tả "gọi gì, ở đâu".
 
 Nếu cần logic phức tạp (gộp nhiều call, xử lý binary), chuyển sang programmatic bằng cách thêm hàm `execute()` tự duyệt `this.getInputData()` và gọi `this.helpers.httpRequestWithAuthentication(...)`.
 

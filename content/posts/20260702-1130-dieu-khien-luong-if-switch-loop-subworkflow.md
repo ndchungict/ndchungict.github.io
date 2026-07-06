@@ -29,6 +29,8 @@ Tới giờ ta đã biến đổi dữ liệu ([Bài 6](../xu-ly-du-lieu-express
 
 Quy tắc chọn: **hai hướng → IF; ba hướng trở lên → Switch.** Đừng chồng IF nhiều tầng khi Switch diễn đạt gọn hơn.
 
+> Gotcha: Switch mặc định gửi mỗi item vào **rule khớp đầu tiên** — nếu nhiều rule cùng khớp, các rule sau bị bỏ qua. Khi muốn một item đi vào *mọi* nhánh khớp, bật tùy chọn gửi tới tất cả nhánh (*Options → Send data to all matching outputs*). Xếp rule cụ thể trước, rule chung sau để tránh "nuốt" nhầm.
+
 ## Loop Over Items: xử lý theo batch
 
 Nhắc lại từ [Bài 3](../khai-niem-cot-loi-n8n-workflow-node-item/): phần lớn node đã tự xử lý cả mảng items, nên bạn **không** cần lặp thủ công cho các thao tác thường. **Loop Over Items (Split In Batches)** chỉ cần khi:

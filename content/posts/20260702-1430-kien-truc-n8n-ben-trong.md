@@ -32,15 +32,16 @@ Hệ quả thực tế:
 
 - Muốn chạy nhanh hơn/nhiều hơn → thêm **worker**, không phải thêm main.
 - Trigger và webhook do main quản; nếu tải webhook rất lớn, có thể tách **webhook processor** riêng để main không nghẽn.
-- Concurrency của mỗi worker cấu hình được (số execution song song một worker chạy). Tổng công suất ≈ số worker × concurrency mỗi worker.
+- Concurrency của mỗi worker cấu hình được qua `N8N_CONCURRENCY_PRODUCTION_LIMIT` (hoặc cờ `--concurrency` khi chạy `n8n worker`) — số execution song song một worker chạy. Tổng công suất ≈ số worker × concurrency mỗi worker.
 
 ## Execution mode và cách lưu execution data
 
 n8n lưu **execution** (input/output từng node) vào database — đây là thứ bạn xem khi debug ([Bài 4](../workflow-dau-tien-webhook-rest-api/)). Điểm cần nắm về hiệu năng:
 
 - Mỗi execution lưu **toàn bộ dữ liệu chảy qua các node**. Workflow kéo theo payload lớn qua nhiều node → execution nặng → DB phình nhanh.
-- Bạn cấu hình được **lưu gì**: chỉ lưu execution lỗi, hay cả thành công; có prune (tự xóa execution cũ) theo thời gian/số lượng. Trên hệ tải cao, **bật pruning** là bắt buộc, nếu không Postgres phình vô hạn.
-- `EXECUTIONS_MODE` (regular/queue) quyết định *ai* chạy; cấu hình lưu trữ execution (`EXECUTIONS_DATA_SAVE_*`, pruning) quyết định *lưu bao nhiêu*. Hai nhóm này độc lập — kiểm tra tên biến theo phiên bản.
+- Bạn cấu hình được **lưu gì**: `EXECUTIONS_DATA_SAVE_ON_SUCCESS=none` (bỏ execution thành công) và `EXECUTIONS_DATA_SAVE_ON_ERROR=all` (giữ execution lỗi) cho workflow tải cao ít cần audit.
+- Bật **pruning** (tự xóa execution cũ) là bắt buộc trên hệ tải cao, nếu không Postgres phình vô hạn: `EXECUTIONS_DATA_PRUNE=true`, `EXECUTIONS_DATA_MAX_AGE` (số giờ giữ lại), `EXECUTIONS_DATA_PRUNE_MAX_COUNT` (trần số bản ghi).
+- `EXECUTIONS_MODE` (regular/queue) quyết định *ai* chạy; nhóm `EXECUTIONS_DATA_*` ở trên quyết định *lưu bao nhiêu*. Hai nhóm độc lập — tên biến có thể đổi theo phiên bản, đối chiếu tài liệu bản bạn ghim.
 
 Tối ưu điển hình: chỉ lưu execution lỗi cho các workflow tải cao ít cần audit, và giữ execution thành công cho các workflow quan trọng cần truy vết.
 

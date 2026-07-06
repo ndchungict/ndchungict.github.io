@@ -98,7 +98,7 @@ Workflow: nhận một sự kiện (giả lập) → **Insert** vào `processed_
         "operation": "executeQuery",
         "query": "INSERT INTO processed_events (event_id, order_id) VALUES ($1, $2) ON CONFLICT (event_id) DO NOTHING RETURNING event_id;",
         "options": {
-          "queryReplacement": "={{ $json.event_id }},={{ $json.orderId }}"
+          "queryReplacement": "={{ [$json.event_id, $json.orderId] }}"
         }
       },
       "id": "bc000000-0000-4000-9000-000000000003",
@@ -106,6 +106,7 @@ Workflow: nhận một sự kiện (giả lập) → **Insert** vào `processed_
       "type": "n8n-nodes-base.postgres",
       "typeVersion": 2.5,
       "position": [440, 0],
+      "alwaysOutputData": true,
       "credentials": {
         "postgres": { "id": "REPLACE_WITH_CREDENTIAL_ID", "name": "ShopViet DB - prod" }
       }
@@ -172,7 +173,14 @@ Workflow: nhận một sự kiện (giả lập) → **Insert** vào `processed_
 }
 ```
 
-Cơ chế: `INSERT ... ON CONFLICT (event_id) DO NOTHING RETURNING event_id`. Lần đầu, insert thành công → có `event_id` trả về → nhánh "mới" → xử lý. Lần trùng, `ON CONFLICT DO NOTHING` không insert → không có `event_id` → nhánh "bỏ qua". Chú ý dùng **tham số `$1, $2`**, không ghép chuỗi — đúng nguyên tắc chống injection. `typeVersion`/cách khai báo query parameter của Postgres node có thể khác giữa các phiên bản; nếu import cảnh báo, mở node kiểm tra lại phần Query Parameters.
+Cơ chế: `INSERT ... ON CONFLICT (event_id) DO NOTHING RETURNING event_id`. Lần đầu, insert thành công → có `event_id` trả về → nhánh "mới" → xử lý. Lần trùng, `ON CONFLICT DO NOTHING` không insert → truy vấn trả **0 row** → node phát ra item rỗng (không có `event_id`) → nhánh "bỏ qua".
+
+Hai chi tiết khiến ví dụ chạy đúng:
+
+- **Query Parameters truyền dạng mảng**: `={{ [$json.event_id, $json.orderId] }}` — phần tử map lần lượt vào `$1, $2`. **Đừng** nối hai expression bằng dấu phẩy (`={{ a }},={{ b }}`): chỉ dấu `=` đầu field bật chế độ expression, các `=` sau là ký tự literal nên giá trị thứ hai sẽ dính `=` thừa. Dùng mảng vừa đúng vừa chống injection (cấu trúc SQL của bạn, dữ liệu qua tham số).
+- **Bật Always Output Data** trên node Postgres: khi trùng, truy vấn trả 0 row; nếu không bật, nhiều phiên bản node sẽ **không phát item nào** → node IF không có input → nhánh "bỏ qua" cũng không chạy. Bật option này để ca 0-row vẫn tạo item chảy vào IF.
+
+`typeVersion`/cách khai báo query parameter của Postgres node có thể khác giữa các phiên bản; nếu import cảnh báo, mở node kiểm tra lại phần Query Parameters.
 
 ## Lỗi thường gặp và cách xử lý
 

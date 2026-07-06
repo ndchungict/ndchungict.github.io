@@ -68,7 +68,7 @@ Mặc định, HTTP Request node coi status code 4xx/5xx là **lỗi** và làm 
 
 ## Ví dụ thực hành: đồng bộ sản phẩm ShopViet có phân trang + xử lý lỗi
 
-Workflow: Manual Trigger → HTTP Request (GET danh sách sản phẩm, có pagination, không ném lỗi) → IF theo `statusCode` → nhánh thành công log số item / nhánh lỗi báo. Đây là mẫu "kéo dữ liệu từ API bên ngoài" hay gặp. Import qua **Workflows → Import from File / Paste**:
+Workflow: Manual Trigger → HTTP Request (GET danh sách sản phẩm, có pagination, không ném lỗi) → IF theo `statusCode` → nhánh thành công ghi nhận OK / nhánh lỗi ghi lại `statusCode`. Đây là mẫu "kéo dữ liệu từ API bên ngoài" hay gặp. Import qua **Workflows → Import from File / Paste**:
 
 ```json
 {
@@ -95,7 +95,7 @@ Workflow: Manual Trigger → HTTP Request (GET danh sách sản phẩm, có pagi
         },
         "options": {
           "response": {
-            "response": { "neverError": true }
+            "response": { "neverError": true, "fullResponse": true }
           },
           "pagination": {
             "pagination": {
@@ -192,7 +192,9 @@ Workflow: Manual Trigger → HTTP Request (GET danh sách sản phẩm, có pagi
 }
 ```
 
-Ví dụ dùng `httpbin.org/get` nên phần pagination chỉ mang tính minh họa cấu hình (nó không thực sự phân trang). Khi nối vào API thật, chỉnh `completeExpression` theo cách API báo hết trang (response rỗng, hết `next_cursor`...), và tăng `maxRequests` cho phù hợp. `neverError: true` khiến node đưa cả lỗi xuống output để IF rẽ nhánh theo `statusCode`.
+Ví dụ dùng `httpbin.org/get` nên phần pagination chỉ mang tính minh họa cấu hình (nó không thực sự phân trang). Khi nối vào API thật, chỉnh `completeExpression` theo cách API báo hết trang (response rỗng, hết `next_cursor`...), và tăng `maxRequests` cho phù hợp.
+
+Hai tùy chọn response phối hợp để việc rẽ nhánh chạy đúng: `neverError: true` khiến node **không** đỏ khi gặp 4xx/5xx mà đưa response xuống output; `fullResponse: true` để output có cả `statusCode` (và `headers`) — nếu thiếu nó, node chỉ trả body và `$json.statusCode` sẽ luôn `undefined`, khiến IF không phân biệt được thành công/lỗi. **Lưu ý:** khi bật `fullResponse`, dữ liệu thật của API nằm dưới `$json.body` (không còn ở gốc `$json`), nên các node sau phải đọc `$json.body.<field>`.
 
 ## Lỗi thường gặp và cách xử lý
 

@@ -77,6 +77,7 @@ services:
   redis:
     image: redis:7
     restart: unless-stopped
+    command: redis-server --appendonly yes   # bat AOF de ben job dang cho
     volumes:
       - redis_data:/data
     healthcheck:
@@ -103,7 +104,10 @@ services:
       N8N_PROTOCOL: https
       WEBHOOK_URL: https://${N8N_HOST}/
       N8N_SECURE_COOKIE: 'true'
+      N8N_PROXY_HOPS: 1                 # tin reverse proxy -> doc dung X-Forwarded-For (IP client)
+      N8N_RUNNERS_ENABLED: 'true'       # task runner cho Code node (Bai 7)
       GENERIC_TIMEZONE: ${GENERIC_TIMEZONE}
+      TZ: ${GENERIC_TIMEZONE}
     depends_on:
       postgres: { condition: service_healthy }
       redis: { condition: service_healthy }
@@ -128,7 +132,9 @@ services:
       QUEUE_BULL_REDIS_HOST: redis
       QUEUE_BULL_REDIS_PORT: 6379
       N8N_ENCRYPTION_KEY: ${N8N_ENCRYPTION_KEY}   # PHAI trung voi main
+      N8N_RUNNERS_ENABLED: 'true'                 # task runner cho Code node (Bai 7)
       GENERIC_TIMEZONE: ${GENERIC_TIMEZONE}
+      TZ: ${GENERIC_TIMEZONE}
     depends_on:
       postgres: { condition: service_healthy }
       redis: { condition: service_healthy }
@@ -174,7 +180,7 @@ docker compose up -d --scale n8n-worker=4
 2. **Bật queue mode nhưng thiếu worker.** Triệu chứng: execution xếp hàng trong Redis mà không ai chạy. Fix: phải có ít nhất một process `n8n worker`.
 3. **`WEBHOOK_URL` sai sau proxy.** Triệu chứng: URL webhook trỏ nội bộ, nhà cung cấp không gọi được. Fix: đặt đúng domain HTTPS công khai.
 4. **WebSocket/push UI không hoạt động.** Nguyên nhân: proxy chưa cho upgrade connection. Fix: cấu hình proxy cho WebSocket.
-5. **Redis mất dữ liệu → mất job đang chờ.** Fix: bật persistence cho Redis (volume như ví dụ), và thiết kế idempotency ([Bài 11](../webhook-nang-cao-hmac-idempotency/)) để chạy lại an toàn.
+5. **Redis mất dữ liệu → mất job đang chờ.** Fix: bật **AOF persistence** (`redis-server --appendonly yes`) kèm volume như ví dụ (chỉ mount volume thì mới có RDB snapshot mặc định), và thiết kế idempotency ([Bài 11](../webhook-nang-cao-hmac-idempotency/)) để chạy lại an toàn.
 
 ## Best practices
 

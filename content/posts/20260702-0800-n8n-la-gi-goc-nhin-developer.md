@@ -1,7 +1,7 @@
 +++
 date        = '2026-07-02T08:00:00+07:00'
 draft       = true
-title       = 'Bài 1 — n8n là gì dưới góc nhìn developer: kiến trúc và khi nào nên dùng'
+title       = 'Bài 1 — Giới thiệu về n8n, kiến trúc của n8n'
 slug        = 'n8n-la-gi-goc-nhin-developer'
 summary     = 'Hiểu n8n như một workflow automation engine: kiến trúc tổng thể, mô hình node-based, so sánh thẳng với Zapier, Make, Airflow và Temporal, và tiêu chí kỹ thuật để quyết định khi nào nên — và không nên — dùng n8n.'
 thumbnail   = '/images/default-thumb/default-thumb-it-lap-trinh.webp'
@@ -13,7 +13,9 @@ series      = ['n8n-tu-co-ban-den-chuyen-sau']
 authors     = ['Nguyen Chung']
 +++
 
-Nếu bạn từng nghe "n8n là Zapier cho người không biết code" thì hãy quên câu đó đi — nó khiến developer đánh giá thấp công cụ này. Dưới góc nhìn kỹ thuật, n8n là một **workflow automation engine** self-hostable, nơi bạn nối các bước xử lý thành một đồ thị và để engine thực thi, nhưng vẫn thả được JavaScript/TypeScript vào bất kỳ đâu khi UI không đủ. Bài mở màn này không dạy bạn kéo-thả; nó giúp bạn **định vị đúng n8n**: kiến trúc bên trong ra sao, khác gì Zapier/Make/Airflow/Temporal, và quan trọng nhất — khi nào chọn nó là đúng, khi nào là sai lầm. Đây là nền để cả series (18 bài, xoay quanh hệ thống automation cho một công ty e-commerce giả định tên **ShopViet**) không bị lạc hướng.
+Nếu bạn từng nghe "n8n là Zapier cho người không biết code" thì hãy quên câu đó đi — nó khiến developer đánh giá thấp công cụ này. Dưới góc nhìn kỹ thuật, n8n là một **workflow automation engine** self-hostable, nơi bạn nối các bước xử lý thành một đồ thị và để engine thực thi, nhưng vẫn thả được JavaScript/TypeScript vào bất kỳ đâu khi UI không đủ.
+
+Bài mở màn này không dạy bạn kéo-thả; nó giúp bạn **định vị đúng n8n**: kiến trúc bên trong ra sao, khác gì Zapier/Make/Airflow/Temporal, và quan trọng nhất — khi nào chọn nó là đúng, khi nào là sai lầm. Đây là nền để cả series (18 bài, xoay quanh hệ thống automation cho một công ty e-commerce giả định tên **ShopViet**) không bị lạc hướng.
 
 ## Yêu cầu chuẩn bị
 
@@ -62,6 +64,18 @@ Diễn giải thẳng:
 - **Temporal** là **durable execution framework**: bạn viết workflow bằng chính ngôn ngữ backend, và Temporal đảm bảo nó chạy tới cùng dù process chết giữa chừng — state được persist ở mức từng bước. Đây là thứ để xây business-critical, long-running logic (ví dụ quy trình hoàn tiền kéo dài nhiều ngày). n8n *có* lưu execution nhưng không phải durable execution theo nghĩa của Temporal; đừng dùng n8n cho loại bài toán này.
 
 Một câu để nhớ: **Zapier/Make là "no-code SaaS", Airflow là "data pipeline scheduler", Temporal là "durable code workflow", còn n8n là "integration/automation engine self-host có cửa hậu code".**
+
+### Còn các engine self-host khác thì sao?
+
+Bốn cái tên trên giúp định vị theo *loại bài toán*, nhưng đối thủ **gần n8n nhất** lại là nhóm engine tự-host mã nguồn mở khác — và developer thường hỏi đúng nhóm này:
+
+- **Windmill** — lấy *script làm gốc* (Python/TypeScript/Go/Bash), UI workflow chỉ là lớp phủ. Thắng khi team code-first, muốn viết logic thuần rồi ghép lại. Nếu bạn thấy "cửa hậu code" của n8n vẫn chưa đủ code, Windmill đáng cân nhắc.
+- **Activepieces** — gần n8n nhất về mô hình node/tích hợp, tự-host được và dùng **license MIT** sạch. Đáng xem nếu bạn cần nhúng engine vào sản phẩm mà không vướng ràng buộc license (xem note dưới).
+- **Pipedream** — mô hình tương tự nhưng thiên **cloud**, mạnh ở kho tích hợp khổng lồ; self-host không phải trọng tâm.
+
+n8n thắng khi bạn muốn **cân bằng giữa UI cho non-dev và cửa hậu code cho dev**, cộng với hệ sinh thái node trưởng thành và cộng đồng lớn nhất nhóm này.
+
+> **Về license — đọc trước khi làm agency/SaaS:** n8n phát hành theo **Sustainable Use License** (mô hình *fair-code*), **không phải** OSI open-source thuần. Tự-host cho nội bộ và dùng thương mại nội bộ thì miễn phí thoải mái. Nhưng nếu bạn định **bán n8n như một phần sản phẩm/dịch vụ cho bên thứ ba** (host hộ khách hàng, nhúng vào SaaS của bạn), hãy đọc kỹ license hoặc mua giấy phép thương mại. Đây là khác biệt pháp lý cần cân nhắc từ đầu — nếu vướng, Activepieces (MIT) là lối thoát.
 
 ## Khi nào NÊN — và KHÔNG NÊN — dùng n8n
 

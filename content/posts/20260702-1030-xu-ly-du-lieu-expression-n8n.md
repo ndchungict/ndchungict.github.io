@@ -42,6 +42,19 @@ Vài hàm/biến built-in hay dùng:
 {{ $if($json.total > 1000000, 'VIP', 'thuong') }}      // điều kiện gọn
 ```
 
+Ngoài JS thuần, n8n còn gắn sẵn một bộ **data transformation function** vào chính giá trị — thường ngắn và rõ hơn cách viết JS tương đương:
+
+```javascript
+{{ $json.email.isEmpty() }}                 // true nếu rỗng/null/undefined
+{{ $json.name.toTitleCase() }}              // "tran van an" → "Tran Van An"
+{{ $json.note.extractEmail() }}             // rút email ra khỏi chuỗi
+{{ $json.totals.sum() }}                    // tổng một mảng số
+{{ $json.skus.unique() }}                   // loại trùng trong mảng
+{{ $json.total.round(0) }}                  // làm tròn số
+```
+
+Gõ `.` sau một giá trị trong ô expression, n8n gợi ý đúng nhóm hàm hợp với kiểu dữ liệu (string/number/array/object/date) — cách nhanh nhất để khám phá bộ này.
+
 > Mẹo: khi expression phức tạp tới mức khó đọc trên một dòng, đó là tín hiệu nên chuyển sang Code node ([Bài 7](../code-node-chuyen-sau-n8n/)). Đừng nhồi cả thuật toán vào một `{{ }}`.
 
 ## Các node transform cốt lõi

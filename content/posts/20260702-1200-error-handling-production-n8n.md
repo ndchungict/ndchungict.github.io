@@ -47,6 +47,8 @@ Khi chạy, Error Trigger nhận một payload mô tả lỗi:
 
 Từ đó bạn định tuyến: log vào DB, gửi alert kèm link execution để debug nhanh. **Một Error Workflow dùng chung cho cả hệ** là cách gọn nhất — thay vì mỗi workflow tự xử lý lỗi riêng, bạn có một chỗ tập trung để chuẩn hóa alert và log.
 
+> ⚠️ Gotcha khi test: Error Workflow **chỉ chạy cho production execution** — tức workflow đang **Active** và fail khi chạy qua trigger thật (webhook, schedule...). Lần chạy thử bằng nút *Test workflow* trong editor mà lỗi sẽ **không** kích hoạt Error Workflow (lỗi hiện thẳng trên UI). Nên nhiều người tưởng Error Workflow hỏng. Muốn kiểm thử: Active workflow rồi cố tình tạo lỗi thật (vd trỏ HTTP Request tới URL sai), sau đó xem execution của chính Error Workflow.
+
 ## Retry strategy: thử lại cho đúng
 
 Retry chỉ hợp lý với **lỗi tạm thời** (5xx, timeout, mất kết nối). Có hai chỗ đặt retry:
@@ -135,6 +137,8 @@ Workflow dưới đây là một **Error Workflow** hoàn chỉnh: Error Trigger
 ```
 
 Thay URL Slack bằng Incoming Webhook thật của bạn (hoặc dùng node Slack/Telegram chuyên biệt với credential — [Bài 10](../credentials-va-bao-mat-n8n/)). Alert gửi đi kèm **link execution** — bấm vào là mở đúng lần chạy lỗi để debug, không phải đi tìm.
+
+> Lưu ý: `{{ $json.execution.url }}` chỉ có giá trị khi instance biết URL công khai của mình (đặt `N8N_HOST`/`WEBHOOK_URL` đúng — [Bài 2](../cai-dat-n8n-docker-compose/)); nếu chưa cấu hình, link trong alert sẽ rỗng.
 
 ## Lỗi thường gặp và cách xử lý
 

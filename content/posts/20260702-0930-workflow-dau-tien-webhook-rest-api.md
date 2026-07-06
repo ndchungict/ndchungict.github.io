@@ -32,8 +32,8 @@ Kéo node **Webhook** làm trigger. Vài tham số cần hiểu:
 
 Điểm khiến người mới vấp: **n8n có hai URL webhook khác nhau.**
 
-- **Test URL** — chỉ sống khi bạn bấm *Listen for test event* trong editor; dùng để bắt payload mẫu lúc dựng.
-- **Production URL** — chỉ hoạt động khi workflow được **Active** (bật toggle). Trước khi Active, gọi vào production URL sẽ 404.
+- **Test URL** — chỉ sống khi bạn bấm *Listen for test event* trong editor; dùng để bắt payload mẫu lúc dựng. Path có tiền tố `webhook-test`, vd `http://localhost:5678/webhook-test/shopviet/order`.
+- **Production URL** — chỉ hoạt động khi workflow được **Active** (bật toggle); tiền tố `webhook`, vd `http://localhost:5678/webhook/shopviet/order`. Trước khi Active, gọi vào production URL sẽ 404.
 
 Payload gửi tới sẽ nằm trong item dưới các khóa như `body`, `headers`, `query`. Tức trong workflow bạn lấy dữ liệu đơn hàng bằng `{{ $json.body.orderId }}`, **không phải** `{{ $json.orderId }}` — đây là lỗi kinh điển của người mới (xem phần Lỗi thường gặp).
 
@@ -100,7 +100,7 @@ Workflow đầy đủ: Webhook → IF (validate) → [true] Set → HTTP Request
     {
       "parameters": {
         "conditions": {
-          "options": { "caseSensitive": true, "typeValidation": "strict" },
+          "options": { "caseSensitive": true, "typeValidation": "loose" },
           "combinator": "and",
           "conditions": [
             {
