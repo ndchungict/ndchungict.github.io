@@ -1,10 +1,10 @@
 +++
 date        = '2026-07-02T14:00:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 13 — Self-host production: Postgres + Redis, queue mode, worker, reverse proxy'
 slug        = 'self-host-n8n-production-queue-mode'
 summary     = 'Triển khai n8n production: Docker Compose với Postgres + Redis, queue mode và worker, scaling, reverse proxy (Nginx/Traefik) và HTTPS.'
-thumbnail   = '/images/default-thumb/default-thumb-it-lap-trinh.webp'
+thumbnail   = '/images/series-n8n/13-self-host-production.webp'
 featured    = false
 weight      = 13
 categories  = ['it']

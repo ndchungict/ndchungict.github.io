@@ -1,10 +1,10 @@
 +++
 date        = '2026-07-02T08:00:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 1 — Giới thiệu về n8n, kiến trúc của n8n'
 slug        = 'n8n-la-gi-goc-nhin-developer'
 summary     = 'Hiểu n8n như một workflow automation engine: kiến trúc tổng thể, mô hình node-based, so sánh thẳng với Zapier, Make, Airflow và Temporal, và tiêu chí kỹ thuật để quyết định khi nào nên — và không nên — dùng n8n.'
-thumbnail   = '/images/default-thumb/default-thumb-it-lap-trinh.webp'
+thumbnail   = '/images/series-n8n/01-n8n-la-gi-kien-truc-n8n.webp'
 featured    = false
 weight      = 1
 categories  = ['it']

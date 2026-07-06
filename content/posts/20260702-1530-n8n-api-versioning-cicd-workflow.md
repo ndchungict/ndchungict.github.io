@@ -1,10 +1,10 @@
 +++
 date        = '2026-07-02T15:30:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 16 — n8n API và quản lý workflow bằng code: export/import, Git, CI/CD'
 slug        = 'n8n-api-versioning-cicd-workflow'
 summary     = 'Quản lý workflow như code: n8n API, export/import workflow JSON, versioning bằng Git, CI/CD cho workflow và tách môi trường dev/staging/prod.'
-thumbnail   = '/images/default-thumb/default-thumb-it-lap-trinh.webp'
+thumbnail   = '/images/series-n8n/16-n8n-api-workflow-as-code.webp'
 featured    = false
 weight      = 16
 categories  = ['it']

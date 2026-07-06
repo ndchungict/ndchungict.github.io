@@ -1,10 +1,10 @@
 +++
 date        = '2026-07-02T16:00:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 17 — AI workflow với n8n: AI Agent, LLM, RAG với vector store'
 slug        = 'ai-workflow-n8n-llm-rag'
 summary     = 'Xây AI workflow trong n8n: AI Agent node, tích hợp LLM (OpenAI/Anthropic), RAG cơ bản với vector store và khi nào nên dùng n8n cho AI pipeline.'
-thumbnail   = '/images/default-thumb/default-thumb-it-lap-trinh.webp'
+thumbnail   = '/images/series-n8n/17-ai-workflow-voi-n8n.webp'
 featured    = false
 weight      = 17
 categories  = ['it']
@@ -172,4 +172,4 @@ Thay `url`, `model`, và credential theo nhà cung cấp bạn dùng (đường 
 - n8n tuyệt để **gắn AI vào quy trình** và prototype; sản phẩm AI lõi phức tạp nên viết bằng code/SDK.
 - Chọn model mới của nhà cung cấp tại thời điểm triển khai; kiểm soát chi phí và bảo mật key.
 
-**Bài tiếp — [Bài 18: Case study tổng hợp — hệ thống automation xử lý đơn hàng ShopViet](../case-study-automation-shopviet/)**: bài khép series — ghép mọi thứ đã học (webhook có HMAC/idempotency, database, error handling, queue mode, alert, và một bước AI phân loại) thành một hệ thống xử lý đơn hàng hoàn chỉnh cho ShopViet.
+**Bài tiếp — [Bài 18: Case study tổng hợp — hệ thống automation xử lý đơn hàng ShopViet](../case-study-automation-xu-ly-don-hang/)**: bài khép series — ghép mọi thứ đã học (webhook có HMAC/idempotency, database, error handling, queue mode, alert, và một bước AI phân loại) thành một hệ thống xử lý đơn hàng hoàn chỉnh cho ShopViet.

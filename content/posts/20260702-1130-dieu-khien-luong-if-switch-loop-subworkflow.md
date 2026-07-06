@@ -1,10 +1,10 @@
 +++
 date        = '2026-07-02T11:30:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 8 — Điều khiển luồng: IF, Switch, Loop Over Items, Wait và sub-workflow'
 slug        = 'dieu-khien-luong-if-switch-loop-subworkflow'
 summary     = 'Điều khiển luồng thực thi: IF, Switch, Loop Over Items, Wait, xử lý batch và tách logic bằng Execute Workflow (sub-workflow).'
-thumbnail   = '/images/default-thumb/default-thumb-it-lap-trinh.webp'
+thumbnail   = '/images/series-n8n/08-dieu-khien-luong-n8n.webp'
 featured    = false
 weight      = 8
 categories  = ['it']
@@ -59,7 +59,7 @@ Khi một đoạn logic lặp lại ở nhiều workflow (vd "gửi thông báo 
 - **Gọn**: workflow chính ngắn, dễ đọc.
 - **Phân tách trách nhiệm**: mỗi workflow lo một việc — giống tách hàm/microservice.
 
-Sub-workflow nhận input (items truyền vào), xử lý, trả output về workflow gọi. Với hệ ShopViet, tôi thường có các sub-workflow dùng chung: `notify-slack`, `write-audit-log`, `validate-order`. Đây cũng là nền để tổ chức dự án lớn ([Bài 18](../case-study-automation-shopviet/)).
+Sub-workflow nhận input (items truyền vào), xử lý, trả output về workflow gọi. Với hệ ShopViet, tôi thường có các sub-workflow dùng chung: `notify-slack`, `write-audit-log`, `validate-order`. Đây cũng là nền để tổ chức dự án lớn ([Bài 18](../case-study-automation-xu-ly-don-hang/)).
 
 ## Ví dụ thực hành: định tuyến đơn theo trạng thái
 

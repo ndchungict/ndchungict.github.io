@@ -1,10 +1,10 @@
 +++
 date        = '2026-07-02T10:30:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 6 — Xử lý dữ liệu: Set, Filter, Merge, Split Out, Aggregate và expression'
 slug        = 'xu-ly-du-lieu-expression-n8n'
 summary     = 'Các node biến đổi dữ liệu cốt lõi (Edit Fields, Filter, Merge, Split Out, Aggregate) và cú pháp expression {{ }} cùng các hàm built-in hay dùng.'
-thumbnail   = '/images/default-thumb/default-thumb-it-lap-trinh.webp'
+thumbnail   = '/images/series-n8n/06-xu-ly-du-lieu-n8n.webp'
 featured    = false
 weight      = 6
 categories  = ['it']

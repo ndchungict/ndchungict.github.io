@@ -1,10 +1,10 @@
 +++
 date        = '2026-07-02T13:30:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 12 — Tích hợp database: Postgres/MySQL/MongoDB, query tham số, transaction'
 slug        = 'tich-hop-database-n8n'
 summary     = 'Tích hợp database với n8n: Postgres/MySQL/MongoDB node, viết query có tham số, xử lý transaction và tránh SQL injection trong expression.'
-thumbnail   = '/images/default-thumb/default-thumb-it-lap-trinh.webp'
+thumbnail   = '/images/series-n8n/12-tich-hop-database.webp'
 featured    = false
 weight      = 12
 categories  = ['it']

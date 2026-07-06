@@ -1,10 +1,10 @@
 +++
 date        = '2026-07-02T08:30:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 2 — Cài đặt n8n: npm, Docker, Docker Compose và biến môi trường'
 slug        = 'cai-dat-n8n-docker-compose'
 summary     = 'Ba cách chạy n8n (npm, Docker, Docker Compose) cho dev và production, các biến môi trường quan trọng (N8N_ENCRYPTION_KEY, WEBHOOK_URL, DB), và cấu trúc thư mục dữ liệu cần backup.'
-thumbnail   = '/images/default-thumb/default-thumb-it-lap-trinh.webp'
+thumbnail   = '/images/series-n8n/02-cai-dat-n8n.webp'
 featured    = false
 weight      = 2
 categories  = ['it']

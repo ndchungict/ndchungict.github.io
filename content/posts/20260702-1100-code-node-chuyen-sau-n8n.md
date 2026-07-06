@@ -1,10 +1,10 @@
 +++
 date        = '2026-07-02T11:00:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 7 — Code node chuyên sâu: JavaScript/Python, \$input/\$json, sandbox'
 slug        = 'code-node-chuyen-sau-n8n'
 summary     = 'Viết JavaScript/Python trong Code node: mô hình items, các biến \$input, \$json, cách tham chiếu node khác, task runners, giới hạn sandbox, và khi nào nên dùng Code node thay cho node có sẵn.'
-thumbnail   = '/images/default-thumb/default-thumb-it-lap-trinh.webp'
+thumbnail   = '/images/series-n8n/07-code-node-chuyen-sau.webp'
 featured    = false
 weight      = 7
 categories  = ['it']

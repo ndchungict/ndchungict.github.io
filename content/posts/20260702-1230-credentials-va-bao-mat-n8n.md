@@ -1,10 +1,10 @@
 +++
 date        = '2026-07-02T12:30:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 10 — Credentials và bảo mật: mã hóa, quản lý secrets, phân quyền'
 slug        = 'credentials-va-bao-mat-n8n'
 summary     = 'Cách n8n mã hóa và lưu credentials, quản lý secrets, phân quyền, và best practice khi export/chia sẻ workflow mà không lộ bí mật.'
-thumbnail   = '/images/default-thumb/default-thumb-it-lap-trinh.webp'
+thumbnail   = '/images/series-n8n/10-credentials-bao-mat-n8n.webp'
 featured    = false
 weight      = 10
 categories  = ['it']

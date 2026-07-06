@@ -1,10 +1,10 @@
 +++
 date        = '2026-07-02T16:30:00+07:00'
-draft       = true
-title       = 'Bài 18 — Case study tổng hợp: hệ thống automation xử lý đơn hàng ShopViet'
-slug        = 'case-study-automation-shopviet'
+draft       = false
+title       = 'Bài 18 — Case study tổng hợp: hệ thống automation xử lý đơn hàng'
+slug        = 'case-study-automation-xu-ly-don-hang'
 summary     = 'Case study tổng hợp toàn series: xây hệ thống automation hoàn chỉnh xử lý đơn hàng cho ShopViet, kết hợp webhook, database, error handling, queue mode và alert.'
-thumbnail   = '/images/default-thumb/default-thumb-it-lap-trinh.webp'
+thumbnail   = '/images/series-n8n/18-case-study-tong-hop.webp'
 featured    = false
 weight      = 18
 categories  = ['it']

@@ -1,10 +1,10 @@
 +++
 date        = '2026-07-02T13:00:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 11 — Webhook nâng cao: response mode, HMAC signature, payload lớn, idempotency'
 slug        = 'webhook-nang-cao-hmac-idempotency'
 summary     = 'Webhook ở mức production: các response mode, xác thực webhook bằng HMAC signature, xử lý payload lớn và đảm bảo idempotency khi bị gọi trùng.'
-thumbnail   = '/images/default-thumb/default-thumb-it-lap-trinh.webp'
+thumbnail   = '/images/series-n8n/11-webhook-nang-cao.webp'
 featured    = false
 weight      = 11
 categories  = ['it']

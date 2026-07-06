@@ -1,10 +1,10 @@
 +++
 date        = '2026-07-02T12:00:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 9 — Error handling chuẩn production: Error Trigger, retry, dead-letter, alert'
 slug        = 'error-handling-production-n8n'
 summary     = 'Xử lý lỗi ở mức production: Error Trigger workflow, retry strategy, dead-letter pattern và gửi alert qua Slack/Telegram khi workflow fail.'
-thumbnail   = '/images/default-thumb/default-thumb-it-lap-trinh.webp'
+thumbnail   = '/images/series-n8n/09-error-handling-n8n.webp'
 featured    = false
 weight      = 9
 categories  = ['it']

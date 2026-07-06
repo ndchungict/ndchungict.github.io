@@ -1,10 +1,10 @@
 +++
 date        = '2026-07-02T09:00:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 3 — Khái niệm cốt lõi: Workflow, Node, Trigger, Execution và mô hình items'
 slug        = 'khai-niem-cot-loi-n8n-workflow-node-item'
 summary     = 'Mô hình dữ liệu của n8n: workflow, node, connection, trigger, execution, và cách các items (mảng JSON) chảy giữa các node — nền tảng để hiểu mọi thứ về sau.'
-thumbnail   = '/images/default-thumb/default-thumb-it-lap-trinh.webp'
+thumbnail   = '/images/series-n8n/03-khai-niem-cot-loi-n8n.webp'
 featured    = false
 weight      = 3
 categories  = ['it']

@@ -1,10 +1,10 @@
 +++
 date        = '2026-07-02T14:30:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 14 — Kiến trúc n8n bên trong: main vs worker, execution mode, binary data'
 slug        = 'kien-truc-n8n-ben-trong'
 summary     = 'Bên trong n8n: main process vs worker, execution mode (regular/queue), cách lưu binary data — hiểu để tối ưu hiệu năng và tài nguyên.'
-thumbnail   = '/images/default-thumb/default-thumb-it-lap-trinh.webp'
+thumbnail   = '/images/series-n8n/14-kien-truc-n8n-ben-trong.webp'
 featured    = false
 weight      = 14
 categories  = ['it']

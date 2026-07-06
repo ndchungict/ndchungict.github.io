@@ -1,10 +1,10 @@
 +++
 date        = '2026-07-02T10:00:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 5 — Làm chủ HTTP Request node: auth, pagination, retry, xử lý lỗi'
 slug        = 'http-request-node-auth-pagination-retry'
 summary     = 'HTTP Request node ở mức production: authentication (Bearer, API key, OAuth2), pagination tự động, retry/backoff và xử lý lỗi HTTP đúng cách.'
-thumbnail   = '/images/default-thumb/default-thumb-it-lap-trinh.webp'
+thumbnail   = '/images/series-n8n/05-http-request-node.webp'
 featured    = false
 weight      = 5
 categories  = ['it']

@@ -1,10 +1,10 @@
 +++
 date        = '2026-07-02T09:30:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 4 — Xây workflow đầu tiên: Webhook → xử lý → REST API → response'
 slug        = 'workflow-dau-tien-webhook-rest-api'
 summary     = 'Dựng workflow hoàn chỉnh đầu tiên: nhận request qua Webhook trigger, xử lý dữ liệu, gọi REST API bên ngoài và trả response; debug bằng execution log.'
-thumbnail   = '/images/default-thumb/default-thumb-it-lap-trinh.webp'
+thumbnail   = '/images/series-n8n/04-workflow-dau-tien.webp'
 featured    = false
 weight      = 4
 categories  = ['it']

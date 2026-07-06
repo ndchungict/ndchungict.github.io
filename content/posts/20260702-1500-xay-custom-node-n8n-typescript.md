@@ -1,10 +1,10 @@
 +++
 date        = '2026-07-02T15:00:00+07:00'
-draft       = true
+draft       = false
 title       = 'Bài 15 — Xây custom node bằng TypeScript: declarative vs programmatic, publish npm'
 slug        = 'xay-custom-node-n8n-typescript'
 summary     = 'Viết n8n community node bằng TypeScript: cấu trúc project, so sánh declarative vs programmatic style và publish node lên npm.'
-thumbnail   = '/images/default-thumb/default-thumb-it-lap-trinh.webp'
+thumbnail   = '/images/series-n8n/15-custom-node-typescript.webp'
 featured    = false
 weight      = 15
 categories  = ['it']
