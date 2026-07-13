@@ -132,6 +132,33 @@ function initCopyLink() {
   });
 }
 
+/* ── Copy code (nút Copy trên mỗi codeblock) ────────────── */
+function initCopyCode() {
+  var btns = document.querySelectorAll('[data-copy-code]');
+  if (!btns.length || !navigator.clipboard) return;
+
+  btns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var block = btn.closest('.codeblock');
+      var code = block && block.querySelector('pre');
+      if (!code) return;
+
+      navigator.clipboard.writeText(code.innerText.replace(/\n$/, '')).then(function () {
+        var label = btn.querySelector('[data-copy-label]');
+        if (!label) return;
+        var en = document.documentElement.lang === 'en';
+        var old = label.textContent;
+        label.textContent = en ? 'Copied' : 'Đã copy';
+        btn.classList.add('is-copied');
+        setTimeout(function () {
+          label.textContent = old;
+          btn.classList.remove('is-copied');
+        }, 1400);
+      });
+    });
+  });
+}
+
 /* ── Category search + tag filter (lọc rows hiển thị) ──────
    Hoạt động trên các bài của TRANG hiện tại (server-paginated). */
 function initCatFilter() {
@@ -380,6 +407,7 @@ document.addEventListener('DOMContentLoaded', function () {
   initReadingProgress();
   initTOC();
   initCopyLink();
+  initCopyCode();
   initCatFilter();
   initSeriesTabs();
   initSeriesProgress();

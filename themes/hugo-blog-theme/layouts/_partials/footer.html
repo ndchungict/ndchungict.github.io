@@ -13,9 +13,15 @@
         </a>
         <p class="footer__desc">{{ site.Params.description }}</p>
         <div class="footer__socials">
-          {{- with site.Params.social.github }}<a class="footer__social" href="{{ . }}" aria-label="GitHub">🐙</a>{{ end }}
-          {{- with site.Params.social.linkedin }}<a class="footer__social" href="{{ . }}" aria-label="LinkedIn">in</a>{{ end }}
-          {{- with site.Params.social.youtube }}<a class="footer__social" href="{{ . }}" aria-label="YouTube">▶️</a>{{ end }}
+          {{- /* Thứ tự hiển thị. Chỉ render mạng nào có URL trong [params.social] (hugo.toml). */}}
+          {{- $labels := dict "github" "GitHub" "facebook" "Facebook" "tiktok" "TikTok" "youtube" "YouTube" "linkedin" "LinkedIn" }}
+          {{- range slice "github" "facebook" "tiktok" "youtube" "linkedin" }}
+            {{- $key := . }}
+            {{- with index site.Params.social $key }}
+            <a class="footer__social" href="{{ . }}" target="_blank" rel="noopener noreferrer"
+               aria-label="{{ index $labels $key }}">{{ partial "social-icon.html" $key }}</a>
+            {{- end }}
+          {{- end }}
         </div>
       </div>
 

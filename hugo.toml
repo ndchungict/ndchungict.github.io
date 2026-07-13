@@ -25,8 +25,11 @@ theme = 'hugo-blog-theme'
   [markup.goldmark.renderer]
     unsafe = true
   [markup.highlight]
-    noClasses = true
-    style = 'github-dark'
+    # noClasses = false -> Chroma xuất class, màu do assets/css/chroma.css quyết định
+    # (github-dark cho dark, github cho light). Sinh lại bằng:
+    #   hugo gen chromastyles --style=github-dark
+    #   hugo gen chromastyles --style=github
+    noClasses = false
     tabWidth = 2
     lineNos = false
     guessSyntax = true
@@ -61,8 +64,13 @@ theme = 'hugo-blog-theme'
     themeLight  = '/css/giscus-light.css'
     themeDark   = '/css/giscus-dark.css'
 
+  # Mạng xã hội hiện ở footer. Để rỗng = ẩn icon đó.
+  # Thứ tự hiển thị khai báo trong _partials/footer.html.
   [params.social]
     github   = 'https://github.com/ndchungict'
+    facebook = ''                                         # ví dụ: 'https://facebook.com/<username>'
+    tiktok   = ''                                         # ví dụ: 'https://tiktok.com/@<username>'
+    youtube  = ''                                         # ví dụ: 'https://youtube.com/@<channel>'
     linkedin = 'https://linkedin.com/in/nguyen-duc-chung'
     website  = 'https://ndchungict.github.io'
 

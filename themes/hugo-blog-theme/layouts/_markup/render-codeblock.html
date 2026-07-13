@@ -1,12 +1,22 @@
-{{- /* Code block render hook — khung terminal traffic-light + tên file/ngôn ngữ. */ -}}
+{{- /* Code block render hook — khung terminal traffic-light + tên file/ngôn ngữ + nút Copy.
+       Nền/chữ lấy từ --cb-*; màu cú pháp do Chroma class (assets/css/chroma.css). */ -}}
 {{- $lang := .Type | default "text" -}}
 {{- $name := .Attributes.filename | default $lang -}}
 <div class="codeblock">
   <div class="codeblock__bar">
-    <span class="codeblock__dot" style="background:var(--cat-cn)"></span>
-    <span class="codeblock__dot" style="background:var(--c-accent)"></span>
-    <span class="codeblock__dot" style="background:var(--cat-auto)"></span>
+    <span class="codeblock__dots">
+      <span class="codeblock__dot" style="background:#FF5F57"></span>
+      <span class="codeblock__dot" style="background:#FEBC2E"></span>
+      <span class="codeblock__dot" style="background:#28C840"></span>
+    </span>
     <span class="codeblock__name">{{ $name }}</span>
+    <button class="codeblock__copy" type="button" data-copy-code aria-label="Copy code">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <rect x="9" y="9" width="13" height="13" rx="2"/>
+        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+      </svg>
+      <span data-copy-label data-vi="Copy" data-en="Copy">Copy</span>
+    </button>
   </div>
   {{ highlight (trim .Inner "\n") $lang "" }}
 </div>

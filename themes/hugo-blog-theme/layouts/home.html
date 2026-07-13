@@ -5,38 +5,45 @@
 
 <!-- ═══ HERO ═══ -->
 <section class="hero">
-  <div class="hero__grid"></div>
   <div class="hero__glow"></div>
   <div class="hero__inner anim-fadeUp">
-    <div class="hero__badge">
-      <span class="hero__dot"></span>
-      <span data-vi="✦ Blog chia sẻ kiến thức" data-en="✦ A knowledge-sharing blog">✦ Blog chia sẻ kiến thức</span>
-    </div>
-    <h1 class="hero__title">
-      <span data-vi="Chia sẻ kiến thức —" data-en="Share Knowledge —">Chia sẻ kiến thức —</span><br>
-      <span class="hero__accent" data-vi="Ghi lại điều tôi học" data-en="Notes as I learn">Ghi lại điều tôi học</span>
-    </h1>
-    <p class="hero__sub" data-vi="Tôi ghi lại và chia sẻ những gì học được về IT, Automation Testing, Tiếng Anh và Tiếng Trung." data-en="Notes and things I've learned about IT, Automation Testing, English and Chinese.">Tôi ghi lại và chia sẻ những gì học được về IT, Automation Testing, Tiếng Anh và Tiếng Trung.</p>
+    <div>
+      <div class="hero__badge">
+        <span class="hero__dot"></span>
+        <span data-vi="✦ Nguyen Chung Notebook" data-en="✦ Nguyen Chung Notebook">✦ Nguyen Chung Notebook</span>
+      </div>
+      <h1 class="hero__title">
+        <span data-vi="Notebook của một" data-en="A notebook by a">Notebook của một</span><br>
+        <span class="hero__accent">developer</span>
+      </h1>
+      <p class="hero__sub" data-vi="Nơi tôi ghi lại quá trình học và làm: từ automation test, workflow n8n đến ngôn ngữ. Học tới đâu, note tới đó." data-en="Where I log what I'm learning and building — automation testing, n8n workflows, and languages, as I go.">Nơi tôi ghi lại quá trình học và làm: từ automation test, workflow n8n đến ngôn ngữ. Học tới đâu, note tới đó.</p>
 
-    <div class="hero__stats">
-      <div class="hero__stat"><div class="hero__stat-num">{{ len $posts }}+</div><div class="hero__stat-label" data-vi="Bài viết" data-en="Posts">Bài viết</div></div>
-      <div class="hero__stat-sep"></div>
-      <div class="hero__stat"><div class="hero__stat-num accent">{{ len site.Params.categories }}</div><div class="hero__stat-label" data-vi="Chủ đề" data-en="Topics">Chủ đề</div></div>
-      <div class="hero__stat-sep"></div>
-      <div class="hero__stat"><div class="hero__stat-num">{{ len site.Taxonomies.series }}</div><div class="hero__stat-label">Series</div></div>
-    </div>
-
-    <div class="hero__cta">
-      <a class="btn btn--primary" href="#posts"><span data-vi="Khám phá bài viết" data-en="Explore Posts">Khám phá bài viết</span> →</a>
-      {{- if site.Params.showAbout }}<a class="btn" href="{{ "/about/" | relURL }}"><span data-vi="Về tác giả" data-en="About the Author">Về tác giả</span></a>{{ end }}
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#posts"><span data-vi="Khám phá bài viết" data-en="Explore Posts">Khám phá bài viết</span> →</a>
+        {{- if site.Params.showAbout }}<a class="btn" href="{{ "/about/" | relURL }}"><span data-vi="Về tác giả" data-en="About the Author">Về tác giả</span></a>{{ end }}
+      </div>
     </div>
 
-    <div class="hero__chips">
-      <span class="tag-pill hero__chip">#IT</span>
-      <span class="tag-pill hero__chip">#AutomationTest</span>
-      <span class="tag-pill hero__chip">#TiếngAnh</span>
-      <span class="tag-pill hero__chip">#TiếngTrung</span>
-      <span class="tag-pill hero__chip">#Developer</span>
+    <div class="term">
+      <div class="term__bar">
+        <span style="background:#FF5F57"></span>
+        <span style="background:#FEBC2E"></span>
+        <span style="background:#28C840"></span>
+        <span class="term__name">~/nguyen-chung — zsh</span>
+      </div>
+      <div class="term__body">
+        <div class="term__l"><span class="term__p">➜</span> <span class="term__c">whoami</span></div>
+        <div class="term__l term__o">{{ site.Params.author }} — {{ site.Params.role }}</div>
+        <div class="term__l"><span class="term__p">➜</span> <span class="term__c">cat</span> <span class="term__o">focus.txt</span></div>
+        <div class="term__l term__d"># <span data-vi="điều đang học &amp; viết lại" data-en="what I'm learning &amp; writing up">điều đang học &amp; viết lại</span></div>
+        <div class="term__l"><span class="term__p">➜</span> <span class="term__c">ls</span> <span class="term__o">topics/</span></div>
+        <div class="term__ls">
+          {{- range site.Params.categories }}
+          <span class="tag-pill term__tag term__tag--{{ replaceRE "^is-" "" .color }}">{{ .key }}/</span>
+          {{- end }}
+        </div>
+        <div class="term__l"><span class="term__p">➜</span> <span class="term__c">stats</span> <span class="term__d">— {{ len $posts }} <span data-vi="bài viết" data-en="posts">bài viết</span> · {{ len site.Taxonomies.series }} series<span class="term__cur"></span></span></div>
+      </div>
     </div>
   </div>
 </section>
