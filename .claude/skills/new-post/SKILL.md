@@ -21,13 +21,14 @@ Hỏi user (gộp 1 lần, ưu tiên dùng AskUserQuestion) những gì còn thi
 
 ## Bước 2 — Đặt tên file
 
-Format: `content/posts/<yyyyMMdd>-<hhmm>-<slug>.md`
+Format: `content/posts/<category-folder>/<yyyyMMdd>-<hhmm>-<slug>.md`
 
+- `<category-folder>`: `it` (bao gồm cả category `automation`), `english`, hoặc `chinese` — theo `category` đã chọn ở Bước 1. Thư mục con chỉ để tổ chức file, không ảnh hưởng URL/section.
 - `<yyyyMMdd>-<hhmm>`: ngày giờ hiện tại. Lấy bằng `date +%Y%m%d-%H%M`.
 - `<slug>`: kebab-case. Quy tắc sinh slug từ tiêu đề:
   - Bỏ dấu tiếng Việt (đ → d), chuyển thường, thay khoảng trắng & ký tự đặc biệt bằng `-`, gộp nhiều `-` liền nhau, bỏ `-` ở đầu/cuối.
   - Ví dụ: "Git là gì? Tại sao cần Git" → `git-la-gi-tai-sao-can-git`.
-- Kiểm tra trùng tên file; nếu trùng, đổi `<hhmm>` (vd +1 phút) hoặc tinh chỉnh slug.
+- Kiểm tra trùng tên file trong toàn bộ `content/posts/**` (không chỉ trong thư mục con); nếu trùng, đổi `<hhmm>` (vd +1 phút) hoặc tinh chỉnh slug.
 
 > Tên file có prefix ngày giờ, nhưng trường `slug` trong front matter KHÔNG có prefix. Hugo dùng `slug` để tạo URL `/posts/<slug>/`.
 

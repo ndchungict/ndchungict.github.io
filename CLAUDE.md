@@ -19,7 +19,10 @@ hugo-blog-page/
 │   ├── _index.md         # Homepage
 │   ├── about/index.md    # Trang About
 │   ├── contact/index.md  # Trang Contact
-│   └── posts/            # Bài viết blog
+│   └── posts/            # Bài viết blog, chia theo category (chỉ để tổ chức file — không ảnh hưởng URL/section)
+│       ├── it/           # categories = ['it'] hoặc ['automation']
+│       ├── english/      # categories = ['english']
+│       └── chinese/      # categories = ['chinese']
 ├── themes/hugo-blog-theme/
 │   ├── layouts/
 │   │   ├── baseof.html   # Layout gốc (wrapper cho tất cả trang)
@@ -44,20 +47,22 @@ hugo-blog-page/
 
 ### Quy tắc đặt tên file
 
-Tên file bài viết theo format: `yyyyMMdd-hhmm-ten-bai-viet.md`
+Bài viết nằm trong `content/posts/<category-folder>/`, `<category-folder>` là `it`, `english`, hoặc `chinese` tương ứng với `categories` trong front matter (bài `categories = ['automation']` cũng nằm trong `content/posts/it/`). Thư mục con này chỉ để tổ chức file cho gọn — **không** ảnh hưởng URL, section hay taxonomy (Hugo vẫn coi mọi file là section `posts`, URL vẫn theo `slug`).
+
+Tên file theo format: `yyyyMMdd-hhmm-ten-bai-viet.md`
 
 - `yyyyMMdd` — ngày viết (ví dụ: `20260629`)
 - `hhmm` — giờ:phút (ví dụ: `0800`)
 - `ten-bai-viet` — slug kebab-case
 
-Ví dụ: `20260629-0800-git-la-gi-tai-sao-can-dung-git.md`
+Ví dụ: `content/posts/it/20260629-0800-git-la-gi-tai-sao-can-dung-git.md`
 
 > Lưu ý: `slug` trong front matter vẫn **không có prefix ngày giờ**, chỉ là `git-la-gi-tai-sao-can-dung-git`. Hugo dùng `slug` để tạo URL, không dùng tên file khi `slug` được khai báo.
 
 ### Tạo bài viết mới
 
 ```bash
-hugo new content posts/<ten-bai>.md
+hugo new content posts/<category-folder>/<ten-bai>.md
 # Rồi đổi tên file: mv <ten-bai>.md <yyyyMMdd-hhmm-ten-bai>.md
 ```
 

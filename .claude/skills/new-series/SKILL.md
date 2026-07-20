@@ -44,7 +44,8 @@ Tham khảo file mẫu: `content/series/tu-hoc-playwright/_index.md`.
 
 Với mỗi bài thứ `i` (i = 1..N):
 
-- Tên file: `content/posts/<yyyyMMdd>-<hhmm>-<slug-bai>.md`
+- Tên file: `content/posts/<category-folder>/<yyyyMMdd>-<hhmm>-<slug-bai>.md`
+  - `<category-folder>`: `it` (bao gồm cả category `automation`), `english`, hoặc `chinese` — theo `category` chung của series. Thư mục con chỉ để tổ chức file, không ảnh hưởng URL/section.
   - Ngày giờ hiện tại làm gốc; mỗi bài cách nhau ~30 phút để giữ thứ tự thời gian (vd 0800, 0830, 0900…). Lấy mốc đầu bằng `date +%Y%m%d-%H%M`.
   - `<slug-bai>`: kebab-case từ tiêu đề bài.
 - Front matter (như `archetypes/series.md`):
@@ -80,7 +81,7 @@ Nếu user đã có ảnh `.webp` riêng cho từng bài (trong `static/images/<
 ### Quy tắc sinh slug (cho slug series và slug từng bài)
 
 - Bỏ dấu tiếng Việt (đ → d), chuyển thường, thay khoảng trắng & ký tự đặc biệt bằng `-`, gộp `-` liền nhau, bỏ `-` ở đầu/cuối.
-- Kiểm tra trùng tên file trong `content/posts/`; nếu trùng, đổi `<hhmm>` hoặc tinh chỉnh slug.
+- Kiểm tra trùng tên file trong toàn bộ `content/posts/**` (không chỉ trong thư mục con); nếu trùng, đổi `<hhmm>` hoặc tinh chỉnh slug.
 - Dùng nháy đơn `'...'` cho chuỗi TOML; `date` dạng ISO 8601 có offset `+07:00`, trùng mốc trong tên file.
 
 ## Bước 4 — Cập nhật `post-library.md`
