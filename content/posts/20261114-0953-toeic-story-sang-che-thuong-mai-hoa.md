@@ -83,40 +83,88 @@ Only one link remained: to roll out at scale and run Aria smoothly across Halsto
 Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 
 **1.** The old single-chip approach was now considered ______ and was abandoned.
-(A) scalable (B) obsolete (C) proprietary (D) pending
+
+**(A)** scalable  
+**(B)** obsolete  
+**(C)** proprietary  
+**(D)** pending
 
 **2.** To protect the new circuit, the lawyers filed a ______ on the core design.
-(A) venture (B) milestone (C) patent (D) prospect
+
+**(A)** venture  
+**(B)** milestone  
+**(C)** patent  
+**(D)** prospect
 
 **3.** Aster kept the cooling technology ______ so that no rival could copy it.
-(A) proprietary (B) obsolete (C) scalable (D) pending
+
+**(A)** proprietary  
+**(B)** obsolete  
+**(C)** scalable  
+**(D)** pending
 
 **4.** Fixing the design safely was a major ______ on the road to launch.
-(A) venture (B) patent (C) prospect (D) milestone
+
+**(A)** venture  
+**(B)** patent  
+**(C)** prospect  
+**(D)** milestone
 
 **5.** The new design had to be ______ so it could work across tens of thousands of units.
-(A) obsolete (B) scalable (C) pending (D) proprietary
+
+**(A)** obsolete  
+**(B)** scalable  
+**(C)** pending  
+**(D)** proprietary
 
 **6.** The team still hoped to ______ Aria at the Brightway event on schedule.
-(A) launch (B) anticipate (C) diversify (D) implement
+
+**(A)** launch  
+**(B)** anticipate  
+**(C)** diversify  
+**(D)** implement
 
 **7.** After the debut, Aster would ______ the product in phases, starting with Halston.
-(A) anticipate (B) diversify (C) roll out (D) implement
+
+**(A)** anticipate  
+**(B)** diversify  
+**(C)** roll out  
+**(D)** implement
 
 **8.** Marketing began to ______ strong demand once the product reached the market.
-(A) implement (B) roll out (C) diversify (D) anticipate
+
+**(A)** implement  
+**(B)** roll out  
+**(C)** diversify  
+**(D)** anticipate
 
 **9.** Diane also had her eye on ______ markets that Neura had not yet entered.
-(A) obsolete (B) emerging (C) proprietary (D) pending
+
+**(A)** obsolete  
+**(B)** emerging  
+**(C)** proprietary  
+**(D)** pending
 
 **10.** The company moved quickly to protect its ______ before any details leaked.
-(A) milestone (B) prospect (C) intellectual property (D) venture
+
+**(A)** milestone  
+**(B)** prospect  
+**(C)** intellectual property  
+**(D)** venture
 
 **11.** With the patent still ______, the details were kept strictly confidential.
-(A) pending (B) scalable (C) obsolete (D) emerging
+
+**(A)** pending  
+**(B)** scalable  
+**(C)** obsolete  
+**(D)** emerging
 
 **12.** Reviewers described the redesigned circuit as truly ______ technology.
-(A) obsolete (B) pending (C) scalable (D) cutting-edge
+
+**(A)** obsolete  
+**(B)** pending  
+**(C)** scalable  
+**(D)** cutting-edge
 
 ### Part 6 — Text Completion
 
@@ -125,20 +173,20 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > **MEMO — Aria Redesign: Next Steps**
 > The new cooling design has passed repeated testing — a key **(13)______** for the program. Because it is a **(14)______** cooling architecture unlike anything our rivals offer, we will protect it carefully. Engineering will now **(15)______** the new circuit on the production line, making sure the design is **(16)______** enough for mass production.
 
-**13.** (A) venture (B) milestone (C) prospect (D) patent
-**14.** (A) obsolete (B) pending (C) scalable (D) state-of-the-art
-**15.** (A) implement (B) anticipate (C) diversify (D) launch
-**16.** (A) obsolete (B) pending (C) scalable (D) emerging
+**13.**   **(A)** venture   **(B)** milestone   **(C)** prospect   **(D)** patent  
+**14.**   **(A)** obsolete   **(B)** pending   **(C)** scalable   **(D)** state-of-the-art  
+**15.**   **(A)** implement   **(B)** anticipate   **(C)** diversify   **(D)** launch  
+**16.**   **(A)** obsolete   **(B)** pending   **(C)** scalable   **(D)** emerging  
 
 **Questions 17–20** refer to the following report.
 
 > **Aria Program — Outlook**
 > With a working design in hand, the outlook for the whole **(17)______** has brightened. Analysts say Aster's growth **(18)______** now look far stronger than a month ago. Once Aria succeeds, the company may even **(19)______** its product line using the new patent. Management is also watching fast-growing **(20)______** markets abroad that its larger rival has not yet entered.
 
-**17.** (A) venture (B) patent (C) milestone (D) prospect
-**18.** (A) ventures (B) patents (C) prospects (D) milestones
-**19.** (A) implement (B) diversify (C) anticipate (D) launch
-**20.** (A) obsolete (B) proprietary (C) scalable (D) emerging
+**17.**   **(A)** venture   **(B)** patent   **(C)** milestone   **(D)** prospect  
+**18.**   **(A)** ventures   **(B)** patents   **(C)** prospects   **(D)** milestones  
+**19.**   **(A)** implement   **(B)** diversify   **(C)** anticipate   **(D)** launch  
+**20.**   **(A)** obsolete   **(B)** proprietary   **(C)** scalable   **(D)** emerging  
 
 ### Part 7 — Reading Comprehension
 
@@ -148,13 +196,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > After confirming the redesign, Aster moved fast to protect and commercialize it. Legal filed a patent on the new cooling circuit and is guarding the intellectual property closely, keeping the technology proprietary. Engineers are working to implement the design on the production line and to make it scalable for mass production. Management still plans to launch Aria at the Brightway event and then roll it out to other markets in phases. Executives believe the proprietary technology gives Aster a real edge over its larger rival.
 
 **21.** What did Aster do first after confirming the redesign?
-(A) Sell the design to a rival (B) Make the technology public (C) File a patent and protect the intellectual property (D) Cancel the launch
+
+**(A)** Sell the design to a rival  
+**(B)** Make the technology public  
+**(C)** File a patent and protect the intellectual property  
+**(D)** Cancel the launch
 
 **22.** What must engineers ensure for mass production?
-(A) That the design is scalable (B) That the patent is obsolete (C) That the launch is cancelled (D) That the technology is shared
+
+**(A)** That the design is scalable  
+**(B)** That the patent is obsolete  
+**(C)** That the launch is cancelled  
+**(D)** That the technology is shared
 
 **23.** How does Aster plan to bring Aria to market?
-(A) By outsourcing production (B) By keeping it in the lab (C) By selling it to Neura (D) By launching at the event, then rolling out in phases
+
+**(A)** By outsourcing production  
+**(B)** By keeping it in the lab  
+**(C)** By selling it to Neura  
+**(D)** By launching at the event, then rolling out in phases
 
 **Questions 24–26** refer to the following article.
 
@@ -162,13 +222,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > Aster Home Technologies appears to have rescued its Aria line. A last-minute redesign, now protected by a pending patent, has given the smart-home device a cooling system its makers call state-of-the-art — and, crucially, one that rivals cannot copy. Analysts say the proprietary technology strengthens Aster's hand against would-be acquirer Neura and brightens the company's growth prospects, including in emerging overseas markets. Yet hardware alone will not carry the launch: Aria still depends on software and network systems that must be built and tested before it can reach customers.
 
 **24.** What protects Aster's redesign?
-(A) A public license (B) A pending patent (C) A rival's approval (D) Nothing at all
+
+**(A)** A public license  
+**(B)** A pending patent  
+**(C)** A rival's approval  
+**(D)** Nothing at all
 
 **25.** According to analysts, how does the proprietary technology help Aster?
-(A) It lowers its stock price (B) It forces a sale to Neura (C) It strengthens Aster against Neura and brightens growth prospects (D) It makes the design obsolete
+
+**(A)** It lowers its stock price  
+**(B)** It forces a sale to Neura  
+**(C)** It strengthens Aster against Neura and brightens growth prospects  
+**(D)** It makes the design obsolete
 
 **26.** What does Aria still depend on before launch?
-(A) Software and network systems that must be built and tested (B) A new supplier of chips (C) A larger warehouse (D) A cheaper courier
+
+**(A)** Software and network systems that must be built and tested  
+**(B)** A new supplier of chips  
+**(C)** A larger warehouse  
+**(D)** A cheaper courier
 
 ---
 
@@ -199,9 +271,9 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 20. **D (emerging)** — "fast-growing emerging markets abroad" = mới nổi. *obsolete/proprietary/scalable* sai nghĩa.
 
 ### Part 7
-21. **C** — sau khi xác nhận, Aster "**filed a patent**… guarding the **intellectual property**, keeping the technology **proprietary**". (A)/(B)/(D) sai/trái.
-22. **A** — kỹ sư phải bảo đảm "make it **scalable** for mass production". (B)/(C)/(D) sai.
-23. **D** — đưa ra thị trường bằng cách "**launch** Aria at the Brightway event and then **roll it out** to other markets in phases". (A)/(B)/(C) sai.
-24. **B** — thiết kế được bảo vệ bởi "a **pending patent**". (A)/(C)/(D) sai.
-25. **C** — công nghệ độc quyền "**strengthens Aster's hand against… Neura** and **brightens… growth prospects**". (A)/(B)/(D) sai/trái.
-26. **A** — trước ra mắt Aria vẫn cần "**software and network systems that must be built and tested**" → dẫn Ch 21 (Technical Areas). (B)/(C)/(D) sai.
+21. **C** — sau khi xác nhận, Aster "**filed a patent**… guarding the **intellectual property**, keeping the technology **proprietary**". **(A)**/**(B)**/**(D)** sai/trái.
+22. **A** — kỹ sư phải bảo đảm "make it **scalable** for mass production". **(B)**/**(C)**/**(D)** sai.
+23. **D** — đưa ra thị trường bằng cách "**launch** Aria at the Brightway event and then **roll it out** to other markets in phases". **(A)**/**(B)**/**(C)** sai.
+24. **B** — thiết kế được bảo vệ bởi "a **pending patent**". **(A)**/**(C)**/**(D)** sai.
+25. **C** — công nghệ độc quyền "**strengthens Aster's hand against… Neura** and **brightens… growth prospects**". **(A)**/**(B)**/**(D)** sai/trái.
+26. **A** — trước ra mắt Aria vẫn cần "**software and network systems that must be built and tested**" → dẫn Ch 21 (Technical Areas). **(B)**/**(C)**/**(D)** sai.

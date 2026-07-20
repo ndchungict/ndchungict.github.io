@@ -95,34 +95,74 @@ What worried her most that night was John's offhand remark that afternoon. And i
 Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 
 **1.** All employees must follow the correct ______ when requesting new office equipment.
-(A) protocol (B) procedure (C) prompt (D) cubicle
+
+**(A)** protocol  
+**(B)** procedure  
+**(C)** prompt  
+**(D)** cubicle
 
 **2.** According to company ______, every visitor must sign in at the front desk before entering.
-(A) procedure (B) protocol (C) supplies (D) workstation
+
+**(A)** procedure  
+**(B)** protocol  
+**(C)** supplies  
+**(D)** workstation
 
 **3.** Ms. Nair will ______ copies of the new plan to every department head this afternoon.
-(A) duplicate (B) distribute (C) streamline (D) jam
+
+**(A)** duplicate  
+**(B)** distribute  
+**(C)** streamline  
+**(D)** jam
 
 **4.** Could you ______ this report so that each member of the team has a copy?
-(A) distribute (B) duplicate (C) prompt (D) streamline
+
+**(A)** distribute  
+**(B)** duplicate  
+**(C)** prompt  
+**(D)** streamline
 
 **5.** We greatly appreciate your ______ reply to our request for feedback.
-(A) prompt (B) vacant (C) confidential (D) unanimous
+
+**(A)** prompt  
+**(B)** vacant  
+**(C)** confidential  
+**(D)** unanimous
 
 **6.** While Ms. Whitfield was traveling, Priya signed the memo ______ her.
-(A) in charge of (B) on behalf of (C) out of order (D) in bulk
+
+**(A)** in charge of  
+**(B)** on behalf of  
+**(C)** out of order  
+**(D)** in bulk
 
 **7.** As the person ______ office administration, Priya handles every supply request personally.
-(A) on behalf of (B) in charge of (C) out of order (D) up for
+
+**(A)** on behalf of  
+**(B)** in charge of  
+**(C)** out of order  
+**(D)** up for
 
 **8.** The new digital filing system was introduced to ______ the entire paperwork process.
-(A) jam (B) duplicate (C) streamline (D) distribute
+
+**(A)** jam  
+**(B)** duplicate  
+**(C)** streamline  
+**(D)** distribute
 
 **9.** The photocopier keeps getting ______ whenever someone tries to print more than ten pages at once.
-(A) jammed (B) streamlined (C) distributed (D) duplicated
+
+**(A)** jammed  
+**(B)** streamlined  
+**(C)** distributed  
+**(D)** duplicated
 
 **10.** The vending machine on the fourth floor has been ______ for over a week now.
-(A) confidential (B) out of order (C) vacant (D) prompt
+
+**(A)** confidential  
+**(B)** out of order  
+**(C)** vacant  
+**(D)** prompt
 
 ### Part 6 — Text Completion
 
@@ -134,19 +174,19 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 >
 > The **(11)______** on the twelfth floor is currently out of order due to a paper jam. A technician will install a new **(12)______** tomorrow morning. In the meantime, please use the copier on the eleventh floor. In addition, office **(13)______** are running low this month — if you need pens, folders, or other **(14)______**, please submit a request form to my office.
 
-**11.** (A) filing cabinet (B) photocopier (C) workstation (D) cubicle
-**12.** (A) toner cartridge (B) stationery (C) supplies (D) protocol
-**13.** (A) stationery (B) supplies (C) procedure (D) protocol
-**14.** (A) supplies (B) stationery (C) duplicate (D) distribute
+**11.**   **(A)** filing cabinet   **(B)** photocopier   **(C)** workstation   **(D)** cubicle  
+**12.**   **(A)** toner cartridge   **(B)** stationery   **(C)** supplies   **(D)** protocol  
+**13.**   **(A)** stationery   **(B)** supplies   **(C)** procedure   **(D)** protocol  
+**14.**   **(A)** supplies   **(B)** stationery   **(C)** duplicate   **(D)** distribute  
 
 **Questions 15–17** refer to the following notice.
 
 > **NOTICE**
 > To prepare space for the new Project Aria committee, the twelfth floor will be reorganized this weekend. All files older than five years will be moved into a new **(15)______** near the archive room. Two additional **(16)______** will be set up along the west wall for incoming staff. Committee members who need privacy for meetings will be assigned a separate **(17)______** with partition walls.
 
-**15.** (A) filing cabinet (B) workstation (C) cubicle (D) toner cartridge
-**16.** (A) cubicles (B) workstations (C) filing cabinets (D) photocopiers
-**17.** (A) workstation (B) cubicle (C) filing cabinet (D) stationery
+**15.**   **(A)** filing cabinet   **(B)** workstation   **(C)** cubicle   **(D)** toner cartridge  
+**16.**   **(A)** cubicles   **(B)** workstations   **(C)** filing cabinets   **(D)** photocopiers  
+**17.**   **(A)** workstation   **(B)** cubicle   **(C)** filing cabinet   **(D)** stationery  
 
 ### Part 7 — Reading Comprehension
 
@@ -157,13 +197,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > — Priya Nair, Corporate Services
 
 **18.** Why was the photocopier out of order?
-(A) It ran out of stationery (B) It had a paper jam (C) It was moved to another floor (D) It was replaced with a new machine
+
+**(A)** It ran out of stationery  
+**(B)** It had a paper jam  
+**(C)** It was moved to another floor  
+**(D)** It was replaced with a new machine
 
 **19.** What should employees do if they notice a problem with the copier?
-(A) Ignore it until it is fixed (B) Report it promptly (C) Call the supplier directly (D) Replace the toner cartridge themselves
+
+**(A)** Ignore it until it is fixed  
+**(B)** Report it promptly  
+**(C)** Call the supplier directly  
+**(D)** Replace the toner cartridge themselves
 
 **20.** The word "procedure" in the notice is closest in meaning to
-(A) protocol (B) process (C) supplies (D) cubicle
+
+**(A)** protocol  
+**(B)** process  
+**(C)** supplies  
+**(D)** cubicle
 
 **Questions 21–23** refer to the following memo.
 
@@ -173,13 +225,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > The reorganization of the twelfth floor is now complete. All old files have been moved to the new filing cabinet, and two new workstations have been set up for the Project Aria team. On behalf of Ms. Whitfield, I want to thank everyone for their patience during this transition. However, with the committee growing, our current staff can no longer keep up with the workload. We will need to bring in additional help very soon.
 
 **21.** What is the main purpose of this memo?
-(A) To request new stationery (B) To report that the office reorganization is finished (C) To announce a merger (D) To schedule a board meeting
+
+**(A)** To request new stationery  
+**(B)** To report that the office reorganization is finished  
+**(C)** To announce a merger  
+**(D)** To schedule a board meeting
 
 **22.** On whose behalf did Priya send this message?
-(A) Harold Vance (B) Ms. Whitfield (C) Daniel Cho (D) Sophia Marchetti
+
+**(A)** Harold Vance  
+**(B)** Ms. Whitfield  
+**(C)** Daniel Cho  
+**(D)** Sophia Marchetti
 
 **23.** What problem does the memo mention at the end?
-(A) The photocopier is broken again (B) The company needs more staff (C) The budget has run out (D) The committee has been canceled
+
+**(A)** The photocopier is broken again  
+**(B)** The company needs more staff  
+**(C)** The budget has run out  
+**(D)** The committee has been canceled
 
 ---
 

@@ -80,34 +80,74 @@ But Halston at rush hour was a nightmare. The moment they left the parking garag
 Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 
 **1.** The company arranged comfortable ______ for the team near the Brightway office.
-(A) congestion (B) accommodation (C) fuel (D) detour
+
+**(A)** congestion  
+**(B)** accommodation  
+**(C)** fuel  
+**(D)** detour
 
 **2.** By evening the hotel was completely full and had put up a "no ______" sign.
-(A) suite (B) rate (C) amenities (D) vacancy
+
+**(A)** suite  
+**(B)** rate  
+**(C)** amenities  
+**(D)** vacancy
 
 **3.** The hotel's ______, including a gym and a pool, impressed the whole team.
-(A) amenities (B) fuel (C) detour (D) commute
+
+**(A)** amenities  
+**(B)** fuel  
+**(C)** detour  
+**(D)** commute
 
 **4.** Because she would receive guests in her room, Diane was given a spacious ______.
-(A) front desk (B) vacancy (C) suite (D) rate
+
+**(A)** front desk  
+**(B)** vacancy  
+**(C)** suite  
+**(D)** rate
 
 **5.** The nightly ______ was high, but it included breakfast and free parking.
-(A) rate (B) detour (C) fuel (D) roadwork
+
+**(A)** rate  
+**(B)** detour  
+**(C)** fuel  
+**(D)** roadwork
 
 **6.** At the airport counter, Ben picked up the ______ he had reserved online.
-(A) suite (B) concierge (C) commute (D) rental car
+
+**(A)** suite  
+**(B)** concierge  
+**(C)** commute  
+**(D)** rental car
 
 **7.** A blocked road forced the driver to take a long ______ through the side streets.
-(A) fuel (B) detour (C) vacancy (D) rate
+
+**(A)** fuel  
+**(B)** detour  
+**(C)** vacancy  
+**(D)** rate
 
 **8.** Heavy traffic ______ during rush hour made the short drive take almost an hour.
-(A) accommodation (B) suite (C) congestion (D) amenities
+
+**(A)** accommodation  
+**(B)** suite  
+**(C)** congestion  
+**(D)** amenities
 
 **9.** Despite the traffic, they reached their ______ just in time for the meeting.
-(A) vacancy (B) detour (C) rate (D) destination
+
+**(A)** vacancy  
+**(B)** detour  
+**(C)** rate  
+**(D)** destination
 
 **10.** Before returning the car, please make sure the ______ tank is completely full.
-(A) fuel (B) suite (C) commute (D) concierge
+
+**(A)** fuel  
+**(B)** suite  
+**(C)** commute  
+**(D)** concierge
 
 ### Part 6 — Text Completion
 
@@ -116,18 +156,18 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > **HOTEL BOOKING CONFIRMATION — Bayview Halston**
 > Thank you for choosing Bayview Halston. On arrival, please visit the **(11)______** to check in; a staff member will have your key ready. All of our rooms include a **(12)______** breakfast and access to the fitness center. If you need restaurant tips or a taxi, our **(13)______** will gladly assist you at any hour. Please note that **(14)______** is at 11 a.m.; late departures may incur a fee.
 
-**11.** (A) detour (B) suite (C) front desk (D) fuel
-**12.** (A) rental (B) complimentary (C) congested (D) valid
-**13.** (A) concierge (B) vacancy (C) rate (D) detour
-**14.** (A) commute (B) fuel (C) check-out (D) roadwork
+**11.**   **(A)** detour   **(B)** suite   **(C)** front desk   **(D)** fuel  
+**12.**   **(A)** rental   **(B)** complimentary   **(C)** congested   **(D)** valid  
+**13.**   **(A)** concierge   **(B)** vacancy   **(C)** rate   **(D)** detour  
+**14.**   **(A)** commute   **(B)** fuel   **(C)** check-out   **(D)** roadwork  
 
 **Questions 15–16** refer to the following notice.
 
 > **NOTICE — Halston Car Rental**
 > Please return the vehicle with a full fuel tank to avoid extra charges. Drivers should note that the daily **(15)______** into the city center is very heavy, so allow plenty of time. This week, also expect delays on Route 9 because of **(16)______**; a signed detour is in place.
 
-**15.** (A) vacancy (B) suite (C) rate (D) commute
-**16.** (A) amenities (B) roadwork (C) concierge (D) fare
+**15.**   **(A)** vacancy   **(B)** suite   **(C)** rate   **(D)** commute  
+**16.**   **(A)** amenities   **(B)** roadwork   **(C)** concierge   **(D)** fare  
 
 ### Part 7 — Reading Comprehension
 
@@ -137,13 +177,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > After the long flight, the team checked into the Bayview hotel, where Diane took a suite big enough to receive guests. Ben had booked early — a wise move, since the hotel was fully booked by nightfall. The real challenge came next: driving a rental car to the Brightway dinner. Halston's rush-hour traffic was brutal, and roadwork on the main avenue forced a long detour through crowded side streets. The team reached the restaurant with only minutes to spare.
 
 **17.** Why was booking early a wise move?
-(A) The rooms were cheaper (B) The suite was upgraded (C) The hotel was fully booked by nightfall (D) Breakfast was free
+
+**(A)** The rooms were cheaper  
+**(B)** The suite was upgraded  
+**(C)** The hotel was fully booked by nightfall  
+**(D)** Breakfast was free
 
 **18.** What forced the team to take a detour?
-(A) Roadwork on the main avenue (B) A car breakdown (C) A wrong address (D) A hotel closure
+
+**(A)** Roadwork on the main avenue  
+**(B)** A car breakdown  
+**(C)** A wrong address  
+**(D)** A hotel closure
 
 **19.** The word "brutal" in the log is closest in meaning to
-(A) pleasant (B) inexpensive (C) short (D) very harsh
+
+**(A)** pleasant  
+**(B)** inexpensive  
+**(C)** short  
+**(D)** very harsh
 
 **Questions 20–22** refer to the following visitor guide.
 
@@ -151,13 +203,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > Halston is famous for its energy — and its traffic. Locals face one of the longest daily commutes in the region, and congestion downtown can be severe from 8 to 10 a.m. and again in the early evening. Visitors are advised to use the city's fast train and ferry network rather than rent a car for short trips. If you must drive, check for roadwork before you set out, and always keep an eye on your fuel, as stations are scarce in the center.
 
 **20.** What does the guide advise visitors to do?
-(A) Rent a car for every trip (B) Use the train and ferry for short trips (C) Avoid the city entirely (D) Travel only at 9 a.m.
+
+**(A)** Rent a car for every trip  
+**(B)** Use the train and ferry for short trips  
+**(C)** Avoid the city entirely  
+**(D)** Travel only at 9 a.m.
 
 **21.** According to the guide, when is downtown congestion severe?
-(A) Only late at night (B) All day long (C) In the morning and early evening (D) On weekends only
+
+**(A)** Only late at night  
+**(B)** All day long  
+**(C)** In the morning and early evening  
+**(D)** On weekends only
 
 **22.** The word "scarce" in the guide is closest in meaning to
-(A) very cheap (B) easy to find (C) brand new (D) hard to find
+
+**(A)** very cheap  
+**(B)** easy to find  
+**(C)** brand new  
+**(D)** hard to find
 
 ---
 
@@ -184,9 +248,9 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 16. **B (roadwork)** — "delays on Route 9 because of roadwork" = công trình sửa đường. *amenities/concierge/fare* sai nghĩa.
 
 ### Part 7
-17. **C** — đặt phòng sớm là khôn ngoan vì **khách sạn kín phòng lúc chập tối** ("the hotel was fully booked by nightfall"). (A)/(B)/(D) không được nêu là lý do.
-18. **A** — **công trình sửa đường trên đại lộ chính** buộc phải đi vòng ("roadwork on the main avenue forced a long detour"). (B)/(C)/(D) không đúng.
+17. **C** — đặt phòng sớm là khôn ngoan vì **khách sạn kín phòng lúc chập tối** ("the hotel was fully booked by nightfall"). **(A)**/**(B)**/**(D)** không được nêu là lý do.
+18. **A** — **công trình sửa đường trên đại lộ chính** buộc phải đi vòng ("roadwork on the main avenue forced a long detour"). **(B)**/**(C)**/**(D)** không đúng.
 19. **D (very harsh)** — "brutal" (traffic) = rất khắc nghiệt/dữ dội. *pleasant/inexpensive/short* trái nghĩa.
-20. **B** — hướng dẫn khuyên **dùng tàu & phà cho chặng ngắn** thay vì thuê xe ("use the city's fast train and ferry network rather than rent a car for short trips"). (A) trái ý; (C)/(D) không nêu.
-21. **C** — tắc nghẽn nặng **buổi sáng (8–10h) và đầu buổi tối** ("from 8 to 10 a.m. and again in the early evening"). (A)/(B)/(D) sai.
+20. **B** — hướng dẫn khuyên **dùng tàu & phà cho chặng ngắn** thay vì thuê xe ("use the city's fast train and ferry network rather than rent a car for short trips"). **(A)** trái ý; **(C)**/**(D)** không nêu.
+21. **C** — tắc nghẽn nặng **buổi sáng (8–10h) và đầu buổi tối** ("from 8 to 10 a.m. and again in the early evening"). **(A)**/**(B)**/**(D)** sai.
 22. **D (hard to find)** — "scarce" = khan hiếm, khó tìm (trạm xăng ở trung tâm). *cheap/easy to find/brand new* sai nghĩa.

@@ -96,40 +96,88 @@ As the train shot into the heart of the city, all three looked out the window. H
 Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 
 **1.** Ben spent the whole night preparing a detailed ______ for the three-day trip.
-(A) fare (B) itinerary (C) gate (D) shuttle
+
+**(A)** fare  
+**(B)** itinerary  
+**(C)** gate  
+**(D)** shuttle
 
 **2.** You should confirm your flight ______ at least a week before you travel.
-(A) terminal (B) aisle (C) delay (D) reservation
+
+**(A)** terminal  
+**(B)** aisle  
+**(C)** delay  
+**(D)** reservation
 
 **3.** The airline raised the ______ for economy seats during the busy holiday season.
-(A) fare (B) schedule (C) gate (D) customs
+
+**(A)** fare  
+**(B)** schedule  
+**(C)** gate  
+**(D)** customs
 
 **4.** The express train runs exactly on ______, arriving at the same minute every day.
-(A) fare (B) delay (C) schedule (D) aisle
+
+**(A)** fare  
+**(B)** delay  
+**(C)** schedule  
+**(D)** aisle
 
 **5.** A three-hour ______ at the first airport nearly caused them to miss their connection.
-(A) reservation (B) terminal (C) itinerary (D) delay
+
+**(A)** reservation  
+**(B)** terminal  
+**(C)** itinerary  
+**(D)** delay
 
 **6.** Because of the storm, the airline announced the ______ of several evening flights.
-(A) departure (B) cancellation (C) shuttle (D) fare
+
+**(A)** departure  
+**(B)** cancellation  
+**(C)** shuttle  
+**(D)** fare
 
 **7.** Passengers were asked to ______ the plane thirty minutes before takeoff.
-(A) expire (B) delay (C) board (D) confirm
+
+**(A)** expire  
+**(B)** delay  
+**(C)** board  
+**(D)** confirm
 
 **8.** After clearing security, they hurried to ______ 12 to wait for their flight.
-(A) gate (B) platform (C) aisle (D) fare
+
+**(A)** gate  
+**(B)** platform  
+**(C)** aisle  
+**(D)** fare
 
 **9.** She prefers an ______ seat so that she can stand up and stretch during long flights.
-(A) overhead (B) carry-on (C) departure (D) aisle
+
+**(A)** overhead  
+**(B)** carry-on  
+**(C)** departure  
+**(D)** aisle
 
 **10.** On arrival in Halston, all passengers had to pass through ______ before collecting their bags.
-(A) terminal (B) customs (C) platform (D) fare
+
+**(A)** terminal  
+**(B)** customs  
+**(C)** platform  
+**(D)** fare
 
 **11.** Make sure your passport is still ______ for at least six months before you travel.
-(A) valid (B) expired (C) feasible (D) durable
+
+**(A)** valid  
+**(B)** expired  
+**(C)** feasible  
+**(D)** durable
 
 **12.** A free airport ______ takes hotel guests from the terminal to the lobby every twenty minutes.
-(A) ferry (B) platform (C) shuttle (D) gate
+
+**(A)** ferry  
+**(B)** platform  
+**(C)** shuttle  
+**(D)** gate
 
 ### Part 6 — Text Completion
 
@@ -140,19 +188,19 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 >
 > Here are the travel details. I've booked us **(13)______** tickets, so we're covered for the return as well. Please arrive at the airport two hours before **(14)______**, as the terminal gets crowded. Note that this is not a direct flight — we have a **(15)______** through Central City, so keep your boarding passes handy. Each of us is allowed one **(16)______** bag plus a small personal item.
 
-**13.** (A) one-way (B) valid (C) delayed (D) round-trip
-**14.** (A) departure (B) baggage claim (C) customs (D) cancellation
-**15.** (A) reservation (B) shuttle (C) connecting flight (D) itinerary
-**16.** (A) aisle (B) carry-on (C) gate (D) fare
+**13.**   **(A)** one-way   **(B)** valid   **(C)** delayed   **(D)** round-trip  
+**14.**   **(A)** departure   **(B)** baggage claim   **(C)** customs   **(D)** cancellation  
+**15.**   **(A)** reservation   **(B)** shuttle   **(C)** connecting flight   **(D)** itinerary  
+**16.**   **(A)** aisle   **(B)** carry-on   **(C)** gate   **(D)** fare  
 
 **Questions 17–19** refer to the following announcement.
 
 > **AIRPORT ANNOUNCEMENT**
 > Attention passengers on Flight AH204 to Halston. Because of weather at your first stop, there will be a longer **(17)______** than scheduled; your connection time has been extended to three hours. Travelers whose passports **(18)______** within three months should visit the service desk. Upon arrival, please proceed directly to **(19)______** to collect your checked luggage.
 
-**17.** (A) fare (B) gate (C) reservation (D) layover
-**18.** (A) board (B) confirm (C) expire (D) depart
-**19.** (A) baggage claim (B) customs (C) terminal (D) platform
+**17.**   **(A)** fare   **(B)** gate   **(C)** reservation   **(D)** layover  
+**18.**   **(A)** board   **(B)** confirm   **(C)** expire   **(D)** depart  
+**19.**   **(A)** baggage claim   **(B)** customs   **(C)** terminal   **(D)** platform  
 
 ### Part 7 — Reading Comprehension
 
@@ -162,13 +210,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > The team's first trip to Halston did not begin smoothly. A ninety-minute delay at Marlowe airport put their connecting flight at risk, and Ben spent the layover on the phone rebooking their seats. There was even a tense moment at check-in, when a staff member noticed that Ben's passport would expire in just four months — though it was still valid for entry to Halston. In the end, the group made their connection with minutes to spare and landed in Halston late that night, tired but relieved.
 
 **20.** What nearly caused the team to miss their connecting flight?
-(A) A lost passport (B) A ninety-minute delay (C) A cancelled hotel reservation (D) A missing boarding pass
+
+**(A)** A lost passport  
+**(B)** A ninety-minute delay  
+**(C)** A cancelled hotel reservation  
+**(D)** A missing boarding pass
 
 **21.** What was the problem with Ben's passport?
-(A) It had already expired (B) It was the wrong type (C) It would expire in four months (D) It had been lost
+
+**(A)** It had already expired  
+**(B)** It was the wrong type  
+**(C)** It would expire in four months  
+**(D)** It had been lost
 
 **22.** The word "relieved" in the log is closest in meaning to
-(A) glad the trouble was over (B) extremely angry (C) still very worried (D) completely exhausted
+
+**(A)** glad the trouble was over  
+**(B)** extremely angry  
+**(C)** still very worried  
+**(D)** completely exhausted
 
 **Questions 23–25** refer to the following notebook entry.
 
@@ -176,13 +236,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > Halston hits you the moment you arrive. From the airport we took the express train into the center — a smooth ride from a spotless platform — while Ben eyed the ferries crossing the bay and wondered aloud whether we should have taken one. The city is enormous: glass towers, endless traffic, and a level of wealth that makes our target market obvious. But it is also unfamiliar and demanding. This is both our biggest opportunity and our hardest test. If Aria can win here, it can win anywhere.
 
 **23.** How did the team travel from the airport into the city center?
-(A) By ferry (B) By airport shuttle (C) By rental car (D) By express train
+
+**(A)** By ferry  
+**(B)** By airport shuttle  
+**(C)** By rental car  
+**(D)** By express train
 
 **24.** How does Daniel describe Halston?
-(A) Small and quiet (B) Both a big opportunity and a hard test (C) Cheap and easy to enter (D) A disappointing market
+
+**(A)** Small and quiet  
+**(B)** Both a big opportunity and a hard test  
+**(C)** Cheap and easy to enter  
+**(D)** A disappointing market
 
 **25.** The word "demanding" in the notebook is closest in meaning to
-(A) very cheap (B) easy to please (C) requiring a lot of effort (D) far away
+
+**(A)** very cheap  
+**(B)** easy to please  
+**(C)** requiring a lot of effort  
+**(D)** far away
 
 ---
 
@@ -212,9 +284,9 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 19. **A (baggage claim)** — "proceed to baggage claim to collect luggage" = khu nhận hành lý. *customs* (hải quan) là bẫy; *terminal/platform* sai nghĩa.
 
 ### Part 7
-20. **B** — chính **sự trì hoãn 90 phút** khiến suýt lỡ chuyến nối ("a ninety-minute delay… put their connecting flight at risk"). (A)/(C)/(D) không đúng.
-21. **C** — hộ chiếu Ben **sẽ hết hạn sau bốn tháng** ("would expire in just four months") — chưa hết hạn hẳn. (A) sai (chưa expired); (B)/(D) không nêu.
+20. **B** — chính **sự trì hoãn 90 phút** khiến suýt lỡ chuyến nối ("a ninety-minute delay… put their connecting flight at risk"). **(A)**/**(C)**/**(D)** không đúng.
+21. **C** — hộ chiếu Ben **sẽ hết hạn sau bốn tháng** ("would expire in just four months") — chưa hết hạn hẳn. **(A)** sai (chưa expired); **(B)**/**(D)** không nêu.
 22. **A (glad the trouble was over)** — "relieved" = nhẹ nhõm vì rắc rối đã qua. *angry/worried/exhausted* sai nghĩa (dù họ cũng "tired", nhưng relieved ≠ exhausted).
-23. **D (By express train)** — "we took the express train into the center". (A) ferry chỉ được Ben ngó thấy; (B)/(C) không được dùng.
-24. **B** — Daniel mô tả Halston vừa là **cơ hội lớn nhất vừa là thử thách khó nhất** ("both our biggest opportunity and our hardest test"). (A)/(C)/(D) trái bài.
+23. **D (By express train)** — "we took the express train into the center". **(A)** ferry chỉ được Ben ngó thấy; **(B)**/**(C)** không được dùng.
+24. **B** — Daniel mô tả Halston vừa là **cơ hội lớn nhất vừa là thử thách khó nhất** ("both our biggest opportunity and our hardest test"). **(A)**/**(C)**/**(D)** trái bài.
 25. **C (requiring a lot of effort)** — "demanding" = đòi hỏi nhiều nỗ lực, khắc nghiệt. *cheap/easy to please/far away* sai nghĩa.

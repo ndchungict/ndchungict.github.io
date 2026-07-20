@@ -115,40 +115,88 @@ As the meeting broke up, a veteran engineer lingered to shake Diane's hand — h
 Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 
 **1.** After two years without any pay increase, several engineers decided to ask for a ______.
-(A) morale (B) raise (C) turnover (D) allowance
+
+**(A)** morale  
+**(B)** raise  
+**(C)** turnover  
+**(D)** allowance
 
 **2.** Employees who have been on the payroll for at least one year are ______ for the annual retention bonus.
-(A) entitled (B) competent (C) eligible (D) proficient
+
+**(A)** entitled  
+**(B)** competent  
+**(C)** eligible  
+**(D)** proficient
 
 **3.** Under the new policy, every full-time worker is ______ to fifteen days of paid leave each year.
-(A) eligible (B) entitled (C) liable (D) available
+
+**(A)** eligible  
+**(B)** entitled  
+**(C)** liable  
+**(D)** available
 
 **4.** Because of the tight deadline, many staff had to work ______ throughout the month.
-(A) payroll (B) turnover (C) severance (D) overtime
+
+**(A)** payroll  
+**(B)** turnover  
+**(C)** severance  
+**(D)** overtime
 
 **5.** The ______ package Aster offered included a competitive salary, full benefits, and a year-end bonus.
-(A) recognition (B) probation (C) reference (D) compensation
+
+**(A)** recognition  
+**(B)** probation  
+**(C)** reference  
+**(D)** compensation
 
 **6.** Frustrated by the slow pace of promotion, the senior developer threatened to ______.
-(A) resign (B) recruit (C) retire (D) relocate
+
+**(A)** resign  
+**(B)** recruit  
+**(C)** retire  
+**(D)** relocate
 
 **7.** In recognition of her strong results, Ms. Marchetti was put up for a ______ to department head.
-(A) pension (B) promotion (C) dismissal (D) vacancy
+
+**(A)** pension  
+**(B)** promotion  
+**(C)** dismissal  
+**(D)** vacancy
 
 **8.** High employee ______ is costly, because replacing and training new staff takes both time and money.
-(A) turnover (B) overtime (C) workforce (D) morale
+
+**(A)** turnover  
+**(B)** overtime  
+**(C)** workforce  
+**(D)** morale
 
 **9.** Unlike the salaried managers, the assembly-line staff are paid an hourly ______.
-(A) salary (B) bonus (C) allowance (D) wage
+
+**(A)** salary  
+**(B)** bonus  
+**(C)** allowance  
+**(D)** wage
 
 **10.** To cut costs, the rival firm was forced to ______ nearly a hundred workers last quarter.
-(A) recruit (B) lay off (C) promote (D) reimburse
+
+**(A)** recruit  
+**(B)** lay off  
+**(C)** promote  
+**(D)** reimburse
 
 **11.** Staff members who travel to the Halston office each month receive a generous travel ______.
-(A) award (B) invoice (C) allowance (D) receipt
+
+**(A)** award  
+**(B)** invoice  
+**(C)** allowance  
+**(D)** receipt
 
 **12.** A comprehensive ______ package — including health insurance and paid leave — helps the company attract talent.
-(A) benefits (B) minutes (C) premises (D) findings
+
+**(A)** benefits  
+**(B)** minutes  
+**(C)** premises  
+**(D)** findings
 
 ### Part 6 — Text Completion
 
@@ -160,19 +208,19 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 >
 > As our **(13)______** grows to support Project Aria, the leadership team wants to make sure our best people stay and feel valued. Effective next month, every employee who has completed one year on the payroll will be **(14)______** for a special retention bonus. We are also launching a quarterly **(15)______** program, the "Aria Star" award, to celebrate outstanding work. We are confident these steps will lift **(16)______** across the company and keep our turnover low.
 
-**13.** (A) overtime (B) premises (C) workforce (D) invoice
-**14.** (A) eligible (B) liable (C) entitled (D) proficient
-**15.** (A) probation (B) reservation (C) orientation (D) recognition
-**16.** (A) turnover (B) morale (C) payroll (D) leave
+**13.**   **(A)** overtime   **(B)** premises   **(C)** workforce   **(D)** invoice  
+**14.**   **(A)** eligible   **(B)** liable   **(C)** entitled   **(D)** proficient  
+**15.**   **(A)** probation   **(B)** reservation   **(C)** orientation   **(D)** recognition  
+**16.**   **(A)** turnover   **(B)** morale   **(C)** payroll   **(D)** leave  
 
 **Questions 17–19** refer to the following announcement.
 
 > **ANNOUNCEMENT — Aster Home Technologies**
 > After twenty-five years of dedicated service, our chief systems engineer, Mr. Alan Reyes, will **(17)______** at the end of December. Thanks to the company's guaranteed **(18)______** plan, his retirement is fully secured. At next month's staff dinner, Mr. Reyes will receive a special **(19)______** in recognition of his many accomplishments. Please join us in thanking him.
 
-**17.** (A) resign (B) dismiss (C) retire (D) transfer
-**18.** (A) pension (B) payroll (C) severance (D) allowance
-**19.** (A) grievance (B) award (C) probation (D) vacancy
+**17.**   **(A)** resign   **(B)** dismiss   **(C)** retire   **(D)** transfer  
+**18.**   **(A)** pension   **(B)** payroll   **(C)** severance   **(D)** allowance  
+**19.**   **(A)** grievance   **(B)** award   **(C)** probation   **(D)** vacancy  
 
 ### Part 7 — Reading Comprehension
 
@@ -182,13 +230,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > This month, the Corporate Services team rolled out a company-wide plan to retain key talent. "Recruiting is only half the job; keeping our people is the harder half," said Priya Nair. The plan raised salaries for critical roles, introduced a quarterly recognition award, and confirmed that no member of staff would be laid off simply to reduce costs. Early signs are encouraging: staff morale has risen, and at least one engineer who had been weighing an offer from a rival has chosen to stay — for now.
 
 **20.** What is the main purpose of the article?
-(A) To announce layoffs at Aster (B) To describe a plan for keeping employees (C) To advertise a job opening (D) To report the company's annual profit
+
+**(A)** To announce layoffs at Aster  
+**(B)** To describe a plan for keeping employees  
+**(C)** To advertise a job opening  
+**(D)** To report the company's annual profit
 
 **21.** According to the article, what is one part of the retention plan?
-(A) Longer working hours (B) A quarterly recognition award (C) Reduced salaries (D) Mandatory transfers
+
+**(A)** Longer working hours  
+**(B)** A quarterly recognition award  
+**(C)** Reduced salaries  
+**(D)** Mandatory transfers
 
 **22.** The word "retain" in the article is closest in meaning to
-(A) keep (B) dismiss (C) hire (D) train
+
+**(A)** keep  
+**(B)** dismiss  
+**(C)** hire  
+**(D)** train
 
 **Questions 23–25** refer to the following industry report.
 
@@ -196,13 +256,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > Analysts point to a sharp contrast between two rivals in the smart-home sector. Neura Corporation, following a recent acquisition, announced that it would restructure and reduce its personnel, offering severance pay to hundreds of departing staff. Aster Home Technologies has taken the opposite approach, expanding its workforce for the upcoming Aria launch and keeping employee turnover unusually low. "Our people are our greatest asset," a company spokesperson said. "Every accomplishment on Project Aria belongs to the whole team."
 
 **23.** How does Neura's approach differ from Aster's?
-(A) Neura is expanding while Aster is shrinking (B) Neura is cutting staff while Aster is adding staff (C) Both are laying off workers (D) Both have frozen all hiring
+
+**(A)** Neura is expanding while Aster is shrinking  
+**(B)** Neura is cutting staff while Aster is adding staff  
+**(C)** Both are laying off workers  
+**(D)** Both have frozen all hiring
 
 **24.** What does the report say about Aster's employee turnover?
-(A) It is unusually high (B) It is unusually low (C) It is rising quickly (D) It is not mentioned
+
+**(A)** It is unusually high  
+**(B)** It is unusually low  
+**(C)** It is rising quickly  
+**(D)** It is not mentioned
 
 **25.** The word "personnel" in the report is closest in meaning to
-(A) equipment (B) staff (C) products (D) budget
+
+**(A)** equipment  
+**(B)** staff  
+**(C)** products  
+**(D)** budget
 
 ---
 
@@ -232,9 +304,9 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 19. **B (award)** — "receive a special award **in recognition of** his accomplishments" = được trao giải thưởng. *grievance/probation/vacancy* sai nghĩa.
 
 ### Part 7
-20. **B** — bài viết mô tả **kế hoạch giữ chân nhân viên** (raise salaries, recognition award, không sa thải). (A) trái nội dung; (C)/(D) không phải trọng tâm.
+20. **B** — bài viết mô tả **kế hoạch giữ chân nhân viên** (raise salaries, recognition award, không sa thải). **(A)** trái nội dung; **(C)**/**(D)** không phải trọng tâm.
 21. **B** — một phần của kế hoạch là **giải thưởng ghi nhận hằng quý** ("a quarterly recognition award"). Các phương án còn lại không được nêu là biện pháp giữ người.
 22. **A (keep)** — "retain talent" ≈ **keep** (giữ người); chính câu mở đầu đã diễn giải "keeping our people". *dismiss/hire/train* không đồng nghĩa.
-23. **B** — Neura **cắt giảm nhân sự** còn Aster **mở rộng đội ngũ** ("reduce its personnel" vs "expanding its workforce"). (A) đảo ngược; (C)/(D) trái với bài.
+23. **B** — Neura **cắt giảm nhân sự** còn Aster **mở rộng đội ngũ** ("reduce its personnel" vs "expanding its workforce"). **(A)** đảo ngược; **(C)**/**(D)** trái với bài.
 24. **B** — Aster giữ **employee turnover unusually low** (tỷ lệ nghỉ việc thấp bất thường).
 25. **B (staff)** — "personnel" ≈ **staff** (nhân sự, tập thể người lao động). *equipment/products/budget* không phải người. ⚠️ personnel ≠ personal.

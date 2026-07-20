@@ -81,40 +81,88 @@ Waiting in the corridor for Ben, Priya looked around the clinic and felt a chill
 Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 
 **1.** Priya rushed Ben to a nearby ______ after he collapsed.
-(A) ward (B) pharmacy (C) clinic (D) referral
+
+**(A)** ward  
+**(B)** pharmacy  
+**(C)** clinic  
+**(D)** referral
 
 **2.** The doctor asked Ben to describe his ______, such as dizziness and a racing heart.
-(A) symptoms (B) dosages (C) referrals (D) surgeries
+
+**(A)** symptoms  
+**(B)** dosages  
+**(C)** referrals  
+**(D)** surgeries
 
 **3.** After some tests, the doctor ______ exhaustion and dehydration.
-(A) prescribed (B) relieved (C) recovered (D) diagnosed
+
+**(A)** prescribed  
+**(B)** relieved  
+**(C)** recovered  
+**(D)** diagnosed
 
 **4.** The sprain was minor and not serious enough to require ______.
-(A) a referral (B) surgery (C) a symptom (D) a dosage
+
+**(A)** a referral  
+**(B)** surgery  
+**(C)** a symptom  
+**(D)** a dosage
 
 **5.** The physician ______ medication for the pain and told him to rest.
-(A) diagnosed (B) recovered (C) prescribed (D) relieved
+
+**(A)** diagnosed  
+**(B)** recovered  
+**(C)** prescribed  
+**(D)** relieved
 
 **6.** Ben took the prescription to the ______ to pick up his medicine.
-(A) pharmacy (B) ward (C) clinic (D) referral
+
+**(A)** pharmacy  
+**(B)** ward  
+**(C)** clinic  
+**(D)** referral
 
 **7.** The pharmacist explained the ______: one tablet twice a day, after meals.
-(A) symptom (B) injury (C) surgery (D) dosage
+
+**(A)** symptom  
+**(B)** injury  
+**(C)** surgery  
+**(D)** dosage
 
 **8.** Drowsiness is a common ______ of the medication, so he should not drive.
-(A) treatment (B) side effect (C) referral (D) dosage
+
+**(A)** treatment  
+**(B)** side effect  
+**(C)** referral  
+**(D)** dosage
 
 **9.** To be safe, the doctor wrote a ______ so Ben could see a heart specialist.
-(A) pharmacy (B) dosage (C) referral (D) ward
+
+**(A)** pharmacy  
+**(B)** dosage  
+**(C)** referral  
+**(D)** ward
 
 **10.** With a few days' rest, Ben would fully ______ at home.
-(A) recover (B) prescribe (C) diagnose (D) relieve
+
+**(A)** recover  
+**(B)** prescribe  
+**(C)** diagnose  
+**(D)** relieve
 
 **11.** Priya called to make an urgent ______ as soon as Ben fainted.
-(A) injury (B) symptom (C) ward (D) appointment
+
+**(A)** injury  
+**(B)** symptom  
+**(C)** ward  
+**(D)** appointment
 
 **12.** At the clinic, the exhausted trainee was now simply another ______.
-(A) physician (B) patient (C) specialist (D) practitioner
+
+**(A)** physician  
+**(B)** patient  
+**(C)** specialist  
+**(D)** practitioner
 
 ### Part 6 — Text Completion
 
@@ -123,20 +171,20 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > **CLINIC NOTE — Patient: B. Tran**
 > The patient was first seen by a general **(13)______**, who examined him and ordered blood tests. He was **(14)______** with exhaustion and mild dehydration, along with a minor wrist **(15)______** from a fall. The recommended **(16)______** is rest, fluids, and light medication; no hospital stay is required.
 
-**13.** (A) pharmacy (B) practitioner (C) referral (D) dosage
-**14.** (A) prescribed (B) relieved (C) referred (D) diagnosed
-**15.** (A) injury (B) dosage (C) referral (D) ward
-**16.** (A) symptom (B) pharmacy (C) treatment (D) surgery
+**13.**   **(A)** pharmacy   **(B)** practitioner   **(C)** referral   **(D)** dosage  
+**14.**   **(A)** prescribed   **(B)** relieved   **(C)** referred   **(D)** diagnosed  
+**15.**   **(A)** injury   **(B)** dosage   **(C)** referral   **(D)** ward  
+**16.**   **(A)** symptom   **(B)** pharmacy   **(C)** treatment   **(D)** surgery  
 
 **Questions 17–20** refer to the following memo.
 
 > **MEMO — Staff Health Note**
 > One of our trainees was taken to a clinic this week. A **(17)______** examined him and, as a precaution, referred him to a heart **(18)______**. He was kept for a few hours in a small **(19)______** for observation and fluids, which helped **(20)______** his fatigue, before being sent home to rest.
 
-**17.** (A) physician (B) pharmacy (C) dosage (D) referral
-**18.** (A) patient (B) symptom (C) specialist (D) ward
-**19.** (A) clinic (B) pharmacy (C) appointment (D) ward
-**20.** (A) prescribe (B) relieve (C) diagnose (D) recover
+**17.**   **(A)** physician   **(B)** pharmacy   **(C)** dosage   **(D)** referral  
+**18.**   **(A)** patient   **(B)** symptom   **(C)** specialist   **(D)** ward  
+**19.**   **(A)** clinic   **(B)** pharmacy   **(C)** appointment   **(D)** ward  
+**20.**   **(A)** prescribe   **(B)** relieve   **(C)** diagnose   **(D)** recover  
 
 ### Part 7 — Reading Comprehension
 
@@ -146,13 +194,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > A management trainee collapsed at the Halston site this week from exhaustion after weeks of overtime. Priya took him straight to a walk-in clinic, where a general practitioner examined him. He was diagnosed with exhaustion and mild dehydration, plus a minor wrist injury from the fall — nothing serious enough for surgery. The doctor prescribed rest and fluids, wrote a referral to a specialist as a precaution, and sent him home to recover. HR notes that he is far from the only staff member showing the strain.
 
 **21.** Why did the trainee collapse?
-(A) A car accident (B) A contagious illness (C) Exhaustion after weeks of overtime (D) A severe allergy
+
+**(A)** A car accident  
+**(B)** A contagious illness  
+**(C)** Exhaustion after weeks of overtime  
+**(D)** A severe allergy
 
 **22.** What did the doctor do?
-(A) Diagnosed him, prescribed rest, and wrote a referral (B) Performed surgery (C) Admitted him for a week (D) Sent him back to work
+
+**(A)** Diagnosed him, prescribed rest, and wrote a referral  
+**(B)** Performed surgery  
+**(C)** Admitted him for a week  
+**(D)** Sent him back to work
 
 **23.** What does HR note at the end?
-(A) The site is unsafe (B) The launch is cancelled (C) He must be dismissed (D) He is not the only one showing the strain
+
+**(A)** The site is unsafe  
+**(B)** The launch is cancelled  
+**(C)** He must be dismissed  
+**(D)** He is not the only one showing the strain
 
 **Questions 24–26** refer to the following article.
 
@@ -160,13 +220,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > Aster Home Technologies has its product, its technology, and its Halston venue ready for launch. But the sprint has taken a toll that does not show up on a balance sheet. This week a young trainee collapsed from exhaustion and was treated at a clinic; colleagues describe a workforce worn thin after months of crisis. Insiders say management is now moving to protect the team's health before the launch — reviewing medical coverage and preparing a company wellness program — in the belief that a burned-out team could undo everything it has built.
 
 **24.** What happened to a trainee this week?
-(A) He resigned (B) He collapsed from exhaustion and was treated at a clinic (C) He was promoted (D) He moved to Neura
+
+**(A)** He resigned  
+**(B)** He collapsed from exhaustion and was treated at a clinic  
+**(C)** He was promoted  
+**(D)** He moved to Neura
 
 **25.** What toll does the article describe?
-(A) A workforce worn thin after months of crisis (B) A large financial loss (C) A product recall (D) A lawsuit
+
+**(A)** A workforce worn thin after months of crisis  
+**(B)** A large financial loss  
+**(C)** A product recall  
+**(D)** A lawsuit
 
 **26.** What is management now moving to do?
-(A) Cancel the launch (B) Sell the company (C) Review medical coverage and prepare a wellness program (D) Hire a new CEO
+
+**(A)** Cancel the launch  
+**(B)** Sell the company  
+**(C)** Review medical coverage and prepare a wellness program  
+**(D)** Hire a new CEO
 
 ---
 
@@ -197,9 +269,9 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 20. **B (relieve)** — "fluids… helped relieve his fatigue" = làm giảm. *prescribe/diagnose/recover* sai nghĩa.
 
 ### Part 7
-21. **C** — kiệt sức vì "**exhaustion after weeks of overtime**". (A)/(B)/(D) sai (không có tai nạn/bệnh lây/dị ứng).
-22. **A** — bác sĩ "**diagnosed** him, **prescribed** rest… wrote a **referral**". (B)/(C)/(D) sai/trái.
-23. **D** — HR ghi chú cậu "is **far from the only staff member showing the strain**". (A)/(B)/(C) sai.
-24. **B** — tuần này một trainee "**collapsed from exhaustion and was treated at a clinic**". (A)/(C)/(D) sai.
-25. **A** — cái giá: "a **workforce worn thin** after months of crisis" (không hiện trên bảng cân đối). (B)/(C)/(D) sai.
-26. **C** — ban lãnh đạo đang "**reviewing medical coverage and preparing a company wellness program**" → dẫn Ch 26. (A)/(B)/(D) sai.
+21. **C** — kiệt sức vì "**exhaustion after weeks of overtime**". **(A)**/**(B)**/**(D)** sai (không có tai nạn/bệnh lây/dị ứng).
+22. **A** — bác sĩ "**diagnosed** him, **prescribed** rest… wrote a **referral**". **(B)**/**(C)**/**(D)** sai/trái.
+23. **D** — HR ghi chú cậu "is **far from the only staff member showing the strain**". **(A)**/**(B)**/**(C)** sai.
+24. **B** — tuần này một trainee "**collapsed from exhaustion and was treated at a clinic**". **(A)**/**(C)**/**(D)** sai.
+25. **A** — cái giá: "a **workforce worn thin** after months of crisis" (không hiện trên bảng cân đối). **(B)**/**(C)**/**(D)** sai.
+26. **C** — ban lãnh đạo đang "**reviewing medical coverage and preparing a company wellness program**" → dẫn Ch 26. **(A)**/**(B)**/**(D)** sai.

@@ -78,34 +78,74 @@ Daniel, as the **host**, discreetly signaled the **server** for **the bill**. He
 Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 
 **1.** Our ______ was attentive, refilling the water glasses and clearing plates without being asked.
-(A) ingredient (B) appetizer (C) server (D) gratuity
+
+**(A)** ingredient  
+**(B)** appetizer  
+**(C)** server  
+**(D)** gratuity
 
 **2.** The group shared a seafood ______ before their main courses arrived.
-(A) appetizer (B) gratuity (C) server (D) reservation
+
+**(A)** appetizer  
+**(B)** gratuity  
+**(C)** server  
+**(D)** reservation
 
 **3.** For her main course, Karen chose the grilled halibut ______.
-(A) appetizer (B) side dish (C) dessert (D) entrée
+
+**(A)** appetizer  
+**(B)** side dish  
+**(C)** dessert  
+**(D)** entrée
 
 **4.** They finished the meal with a rich chocolate ______.
-(A) appetizer (B) dessert (C) ingredient (D) server
+
+**(A)** appetizer  
+**(B)** dessert  
+**(C)** ingredient  
+**(D)** server
 
 **5.** Grilled seafood is the ______ of this harbourside restaurant, and regulars order it every time.
-(A) specialty (B) gratuity (C) reservation (D) takeout
+
+**(A)** specialty  
+**(B)** gratuity  
+**(C)** reservation  
+**(D)** takeout
 
 **6.** Because two of the guests do not eat meat, the host asked about ______ options on the menu.
-(A) seasonal (B) complimentary (C) vegetarian (D) takeout
+
+**(A)** seasonal  
+**(B)** complimentary  
+**(C)** vegetarian  
+**(D)** takeout
 
 **7.** For parties of six or more, a 15% ______ is automatically added to the bill.
-(A) gratuity (B) appetizer (C) ingredient (D) reservation
+
+**(A)** gratuity  
+**(B)** appetizer  
+**(C)** ingredient  
+**(D)** reservation
 
 **8.** Rather than waste the leftovers, Ben asked the server to pack them ______.
-(A) beforehand (B) for here (C) on hand (D) to go
+
+**(A)** beforehand  
+**(B)** for here  
+**(C)** on hand  
+**(D)** to go
 
 **9.** The restaurant updates its menu four times a year to highlight ______ produce.
-(A) complimentary (B) seasonal (C) dietary (D) takeout
+
+**(A)** complimentary  
+**(B)** seasonal  
+**(C)** dietary  
+**(D)** takeout
 
 **10.** The chef insists on fresh, locally sourced ______ for every dish on the menu.
-(A) appetizers (B) gratuities (C) ingredients (D) servers
+
+**(A)** appetizers  
+**(B)** gratuities  
+**(C)** ingredients  
+**(D)** servers
 
 ### Part 6 — Text Completion
 
@@ -114,19 +154,19 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > **THE HARBOURLINE — Dinner Notes for Your Party**
 > Each main course comes with your choice of one **(11)______**, such as seasonal vegetables or harbour rice. If anyone in your group has **(12)______**, please inform your server, and our kitchen will gladly adapt any dish. Guests marking a special occasion will receive a **(13)______** dessert, courtesy of the chef. Tonight we especially recommend the house **(14)______**: the grilled catch of the day.
 
-**11.** (A) reservation (B) gratuity (C) side dish (D) venue
-**12.** (A) seating (B) dietary restrictions (C) refreshments (D) beverage
-**13.** (A) reserved (B) booked (C) hosted (D) complimentary
-**14.** (A) specialty (B) party (C) caterer (D) server
+**11.**   **(A)** reservation   **(B)** gratuity   **(C)** side dish   **(D)** venue  
+**12.**   **(A)** seating   **(B)** dietary restrictions   **(C)** refreshments   **(D)** beverage  
+**13.**   **(A)** reserved   **(B)** booked   **(C)** hosted   **(D)** complimentary  
+**14.**   **(A)** specialty   **(B)** party   **(C)** caterer   **(D)** server  
 
 **Questions 15–17** refer to the following note.
 
 > **NOTE — After the Dinner**
 > After coffee, Daniel signaled the server and asked for **(15)______**. Because the service had been excellent, he added a generous **(16)______** on top of the total. As the group left, Karen reminded them to **(17)______** to the Brightway banquet invitation before the end of the month.
 
-**15.** (A) an appetizer (B) the bill (C) a buffet (D) a reservation
-**16.** (A) ingredient (B) specialty (C) tip (D) seating
-**17.** (A) accommodate (B) host (C) cater (D) RSVP
+**15.**   **(A)** an appetizer   **(B)** the bill   **(C)** a buffet   **(D)** a reservation  
+**16.**   **(A)** ingredient   **(B)** specialty   **(C)** tip   **(D)** seating  
+**17.**   **(A)** accommodate   **(B)** host   **(C)** cater   **(D)** RSVP  
 
 ### Part 7 — Reading Comprehension
 
@@ -136,13 +176,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > The mood warmed as the food arrived. The server brought a shared appetizer, then grilled seafood entrées — the restaurant's specialty — each with a seasonal side dish. When Karen mentioned that one of her colleagues was strictly vegetarian, the kitchen quietly prepared a separate plate and even sent over a complimentary dessert. Over coffee, Diane and Karen reached a verbal agreement: Aria would debut at Brightway's partner banquet. Daniel settled the bill, leaving a generous tip, while Ben boxed up the leftovers to go. Only one worry lingered: pulling off a Halston launch on Brightway's timeline would cost far more than Aster had budgeted.
 
 **18.** What did Diane and Karen agree on?
-(A) That Aster would buy Brightway (B) That Aria would debut at Brightway's partner banquet (C) That the launch would be delayed a year (D) That Brightway would design a new product
+
+**(A)** That Aster would buy Brightway  
+**(B)** That Aria would debut at Brightway's partner banquet  
+**(C)** That the launch would be delayed a year  
+**(D)** That Brightway would design a new product
 
 **19.** What did the kitchen do when it learned a guest was vegetarian?
-(A) It prepared a separate plate (B) It cancelled the order (C) It charged extra for dessert (D) It closed early
+
+**(A)** It prepared a separate plate  
+**(B)** It cancelled the order  
+**(C)** It charged extra for dessert  
+**(D)** It closed early
 
 **20.** The word "lingered" in the log is closest in meaning to
-(A) disappeared (B) increased (C) remained (D) began
+
+**(A)** disappeared  
+**(B)** increased  
+**(C)** remained  
+**(D)** began
 
 **Questions 21–23** refer to the following invitation.
 
@@ -150,13 +202,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > Brightway Retail warmly invites your team to its annual Partner Appreciation Banquet at the Grand Harbour Hotel on 15 November. The evening will feature a buffet of local specialties, live music, and the unveiling of an exciting new smart-home product. A selection of vegetarian and other dishes will be available; please note any dietary restrictions when you reply. Kindly RSVP by 31 October, as seating is limited.
 
 **21.** What will be unveiled at the banquet?
-(A) A new restaurant (B) A new smart-home product (C) A music album (D) A hotel
+
+**(A)** A new restaurant  
+**(B)** A new smart-home product  
+**(C)** A music album  
+**(D)** A hotel
 
 **22.** By when should guests reply?
-(A) 15 November (B) 1 October (C) 31 October (D) 30 November
+
+**(A)** 15 November  
+**(B)** 1 October  
+**(C)** 31 October  
+**(D)** 30 November
 
 **23.** What are guests asked to mention when they reply?
-(A) Their seat number (B) Their travel plans (C) Their budget (D) Any dietary restrictions
+
+**(A)** Their seat number  
+**(B)** Their travel plans  
+**(C)** Their budget  
+**(D)** Any dietary restrictions
 
 ---
 
@@ -184,9 +248,9 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 17. **D (RSVP)** — "RSVP to the invitation before the end of the month" = xác nhận tham dự. *accommodate/host/cater* sai nghĩa.
 
 ### Part 7
-18. **B** — hai bên đạt thỏa thuận miệng: "**Aria would debut at Brightway's partner banquet**". (A)/(C)/(D) không đúng/không nêu.
-19. **A** — khi biết có khách ăn chay, bếp "**prepared a separate plate**" (và tặng thêm complimentary dessert). (B)/(C)/(D) sai.
+18. **B** — hai bên đạt thỏa thuận miệng: "**Aria would debut at Brightway's partner banquet**". **(A)**/**(C)**/**(D)** không đúng/không nêu.
+19. **A** — khi biết có khách ăn chay, bếp "**prepared a separate plate**" (và tặng thêm complimentary dessert). **(B)**/**(C)**/**(D)** sai.
 20. **C (remained)** — "lingered" (worry) = còn nấn ná/vẫn còn đó. *disappeared/increased/began* sai nghĩa.
-21. **B** — "the unveiling of an exciting new **smart-home product**" (chính là Aria). (A)/(C)/(D) không nêu.
-22. **C** — thư mời ghi "**RSVP by 31 October**". (A) là ngày tiệc, không phải hạn phản hồi; (B)/(D) sai.
-23. **D** — "please note any **dietary restrictions** when you reply". (A)/(B)/(C) không được nêu.
+21. **B** — "the unveiling of an exciting new **smart-home product**" (chính là Aria). **(A)**/**(C)**/**(D)** không nêu.
+22. **C** — thư mời ghi "**RSVP by 31 October**". **(A)** là ngày tiệc, không phải hạn phản hồi; **(B)**/**(D)** sai.
+23. **D** — "please note any **dietary restrictions** when you reply". **(A)**/**(B)**/**(C)** không được nêu.

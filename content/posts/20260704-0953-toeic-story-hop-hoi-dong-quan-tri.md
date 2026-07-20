@@ -119,40 +119,88 @@ Priya exhaled. The decision was made — but she knew the question of whether to
 Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 
 **1.** The board of directors will ______ next Tuesday to vote on the expansion plan.
-(A) enclose (B) convene (C) remind (D) postpone
+
+**(A)** enclose  
+**(B)** convene  
+**(C)** remind  
+**(D)** postpone
 
 **2.** Because two members were absent, the committee did not have a ______ and the vote was delayed.
-(A) proxy (B) quorum (C) consensus (D) minutes
+
+**(A)** proxy  
+**(B)** quorum  
+**(C)** consensus  
+**(D)** minutes
 
 **3.** Please ______ all staff of the change in the meeting schedule.
-(A) chair (B) enclose (C) notify (D) adjourn
+
+**(A)** chair  
+**(B)** enclose  
+**(C)** notify  
+**(D)** adjourn
 
 **4.** The decision was ______; every board member voted in favor.
-(A) confidential (B) prospective (C) unanimous (D) overdue
+
+**(A)** confidential  
+**(B)** prospective  
+**(C)** unanimous  
+**(D)** overdue
 
 **5.** Ms. Nair was asked to take the ______ during the board meeting.
-(A) agenda (B) attachment (C) minutes (D) extension
+
+**(A)** agenda  
+**(B)** attachment  
+**(C)** minutes  
+**(D)** extension
 
 **6.** Since she was traveling, she voted by ______.
-(A) proxy (B) recipient (C) quorum (D) voicemail
+
+**(A)** proxy  
+**(B)** recipient  
+**(C)** quorum  
+**(D)** voicemail
 
 **7.** Could you ______ this email to the marketing department, please?
-(A) convene (B) forward (C) remind (D) adjourn
+
+**(A)** convene  
+**(B)** forward  
+**(C)** remind  
+**(D)** adjourn
 
 **8.** The report is strictly ______ and must not be shared outside the company.
-(A) unanimous (B) prompt (C) spacious (D) confidential
+
+**(A)** unanimous  
+**(B)** prompt  
+**(C)** spacious  
+**(D)** confidential
 
 **9.** After three hours of discussion, the team finally reached a ______.
-(A) consensus (B) quorum (C) proxy (D) recipient
+
+**(A)** consensus  
+**(B)** quorum  
+**(C)** proxy  
+**(D)** recipient
 
 **10.** The chairman decided to ______ the meeting until the following week.
-(A) postpone (B) enclose (C) notify (D) forward
+
+**(A)** postpone  
+**(B)** enclose  
+**(C)** notify  
+**(D)** forward
 
 **11.** You can reach the IT department by dialing ______ 402.
-(A) attachment (B) correspondence (C) extension (D) inquiry
+
+**(A)** attachment  
+**(B)** correspondence  
+**(C)** extension  
+**(D)** inquiry
 
 **12.** I have ______ a copy of the signed contract for your records.
-(A) enclosed (B) reminded (C) convened (D) rescheduled
+
+**(A)** enclosed  
+**(B)** reminded  
+**(C)** convened  
+**(D)** rescheduled
 
 ### Part 6 — Text Completion
 
@@ -164,10 +212,10 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 >
 > Following this morning's board meeting, I am writing to **(13)______** you of an important decision. The board has approved moving forward with Project Aria. A dedicated steering **(14)______** will be formed to oversee the project. Please review the plan; the full timeline is included as an **(15)______** to this memo. If you have questions, do not hesitate to make an **(16)______** with my office.
 
-**13.** (A) notify (B) enclose (C) adjourn (D) chair
-**14.** (A) quorum (B) committee (C) proxy (D) recipient
-**15.** (A) agenda (B) attachment (C) extension (D) inquiry
-**16.** (A) inquiry (B) minutes (C) consensus (D) voicemail
+**13.**   **(A)** notify   **(B)** enclose   **(C)** adjourn   **(D)** chair  
+**14.**   **(A)** quorum   **(B)** committee   **(C)** proxy   **(D)** recipient  
+**15.**   **(A)** agenda   **(B)** attachment   **(C)** extension   **(D)** inquiry  
+**16.**   **(A)** inquiry   **(B)** minutes   **(C)** consensus   **(D)** voicemail  
 
 **Questions 17–20** refer to the following email.
 
@@ -177,10 +225,10 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > Dear Mr. Cho,
 > A reporter called this morning asking about the rumored merger. As instructed, I did not comment and instead **(17)______** the call to your office. When you were unavailable, the caller left a **(18)______**. I have **(19)______** the message below for your reference. Please **(20)______** me to follow up with him before Friday.
 
-**17.** (A) transferred (B) reminded (C) convened (D) postponed
-**18.** (A) quorum (B) voicemail (C) proxy (D) consensus
-**19.** (A) enclosed (B) adjourned (C) chaired (D) notified
-**20.** (A) remind (B) enclose (C) forward (D) reschedule
+**17.**   **(A)** transferred   **(B)** reminded   **(C)** convened   **(D)** postponed  
+**18.**   **(A)** quorum   **(B)** voicemail   **(C)** proxy   **(D)** consensus  
+**19.**   **(A)** enclosed   **(B)** adjourned   **(C)** chaired   **(D)** notified  
+**20.**   **(A)** remind   **(B)** enclose   **(C)** forward   **(D)** reschedule  
 
 ### Part 7 — Reading Comprehension
 
@@ -191,13 +239,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > — Priya Nair, Corporate Services
 
 **21.** Why was the notice sent?
-(A) To announce a new product (B) To inform members of a schedule change (C) To request a payment (D) To advertise a job opening
+
+**(A)** To announce a new product  
+**(B)** To inform members of a schedule change  
+**(C)** To request a payment  
+**(D)** To advertise a job opening
 
 **22.** What are members asked to do?
-(A) Confirm their attendance (B) Submit a résumé (C) Pay a fee (D) Forward the memo to clients
+
+**(A)** Confirm their attendance  
+**(B)** Submit a résumé  
+**(C)** Pay a fee  
+**(D)** Forward the memo to clients
 
 **23.** The word "circulated" is closest in meaning to
-(A) canceled (B) distributed (C) postponed (D) enclosed
+
+**(A)** canceled  
+**(B)** distributed  
+**(C)** postponed  
+**(D)** enclosed
 
 **Questions 24–26** refer to the following email.
 
@@ -208,13 +268,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > — Harold
 
 **24.** What did Harold send to Diane?
-(A) A résumé (B) A proposal from Neura (C) An invoice (D) A voicemail
+
+**(A)** A résumé  
+**(B)** A proposal from Neura  
+**(C)** An invoice  
+**(D)** A voicemail
 
 **25.** What does Harold remind Diane about?
-(A) A payment deadline (B) A deadline for a board recommendation (C) A travel itinerary (D) A maintenance schedule
+
+**(A)** A payment deadline  
+**(B)** A deadline for a board recommendation  
+**(C)** A travel itinerary  
+**(D)** A maintenance schedule
 
 **26.** What does Harold ask regarding the email?
-(A) That it be forwarded to all staff (B) That it remain confidential (C) That it be posted publicly (D) That it be translated
+
+**(A)** That it be forwarded to all staff  
+**(B)** That it remain confidential  
+**(C)** That it be posted publicly  
+**(D)** That it be translated
 
 ---
 

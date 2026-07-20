@@ -82,40 +82,88 @@ In the emergency meeting late that night, the whole faulty batch lay on the tabl
 Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 
 **1.** After Ben's warning, the QC team stopped the line to ______ every unit in the batch.
-(A) outsource (B) inspect (C) assemble (D) streamline
+
+**(A)** outsource  
+**(B)** inspect  
+**(C)** assemble  
+**(D)** streamline
 
 **2.** What looked at first like a minor ______ turned out to be a systematic problem.
-(A) flaw (B) shift (C) capacity (D) warehouse
+
+**(A)** flaw  
+**(B)** shift  
+**(C)** capacity  
+**(D)** warehouse
 
 **3.** The replacement chips were not ______ enough and overheated under heavy use.
-(A) fragile (B) durable (C) defective (D) hazardous
+
+**(A)** fragile  
+**(B)** durable  
+**(C)** defective  
+**(D)** hazardous
 
 **4.** Under stress testing, many units began to ______, freezing or short-circuiting.
-(A) inspect (B) malfunction (C) assemble (D) recall
+
+**(A)** inspect  
+**(B)** malfunction  
+**(C)** assemble  
+**(D)** recall
 
 **5.** Because none of the units met the safety ______, Ray refused to ship them.
-(A) standard (B) precision (C) warehouse (D) batch
+
+**(A)** standard  
+**(B)** precision  
+**(C)** warehouse  
+**(D)** batch
 
 **6.** Overheating components inside a home device pose a serious fire ______.
-(A) defect (B) hazard (C) shift (D) breakdown
+
+**(A)** defect  
+**(B)** hazard  
+**(C)** shift  
+**(D)** breakdown
 
 **7.** Rather than risk faulty products, Ray decided to ______ production immediately.
-(A) halt (B) automate (C) streamline (D) inspect
+
+**(A)** halt  
+**(B)** automate  
+**(C)** streamline  
+**(D)** inspect
 
 **8.** If defective units reached customers, the company would have to issue a ______.
-(A) refund (B) recall (C) surcharge (D) warehouse
+
+**(A)** refund  
+**(B)** recall  
+**(C)** surcharge  
+**(D)** warehouse
 
 **9.** The suspect ______ was sealed off and moved to a corner of the warehouse.
-(A) shift (B) batch (C) standard (D) precision
+
+**(A)** shift  
+**(B)** batch  
+**(C)** standard  
+**(D)** precision
 
 **10.** Workers dismantling the hot units were told to wear ______.
-(A) protective gear (B) raw materials (C) a conveyor belt (D) a purchase order
+
+**(A)** protective gear  
+**(B)** raw materials  
+**(C)** a conveyor belt  
+**(D)** a purchase order
 
 **11.** Sophia examined each board with the ______ of a perfectionist engineer.
-(A) capacity (B) precision (C) recall (D) hazard
+
+**(A)** capacity  
+**(B)** precision  
+**(C)** recall  
+**(D)** hazard
 
 **12.** Management chose not to ______ the repair, since the root cause lay in the design.
-(A) inspect (B) outsource (C) assemble (D) halt
+
+**(A)** inspect  
+**(B)** outsource  
+**(C)** assemble  
+**(D)** halt
 
 ### Part 6 — Text Completion
 
@@ -124,20 +172,20 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > **MEMO — Production Hold, Aria Line**
 > Effective immediately, we are placing a hold on the Aria line. During routine **(13)______**, inspectors found that a recent batch does not meet our safety **(14)______**. Until the cause is fixed, all affected units must be sealed and stored in the **(15)______**, away from finished goods. Do not ship any unit from this batch. Handling teams must wear **(16)______** when moving the affected stock, as some units may overheat.
 
-**13.** (A) quality control (B) shipping and handling (C) word of mouth (D) collective bargaining
-**14.** (A) precision (B) standards (C) warehouses (D) batches
-**15.** (A) warehouse (B) foreman (C) shift (D) invoice
-**16.** (A) protective gear (B) raw materials (C) an itinerary (D) a catalog
+**13.**   **(A)** quality control   **(B)** shipping and handling   **(C)** word of mouth   **(D)** collective bargaining  
+**14.**   **(A)** precision   **(B)** standards   **(C)** warehouses   **(D)** batches  
+**15.**   **(A)** warehouse   **(B)** foreman   **(C)** shift   **(D)** invoice  
+**16.**   **(A)** protective gear   **(B)** raw materials   **(C)** an itinerary   **(D)** a catalog  
 
 **Questions 17–20** refer to the following report.
 
 > **Eastport QC — Preliminary Findings**
 > Our analysis points to a single root cause. The replacement chips are not **(17)______**; under sustained load they overheat, and several test units suffered a complete **(18)______**. This is not an assembly error but a genuine **(19)______** in the components themselves. Fixing it by hand is not an option, and we do not recommend that the company **(20)______** the redesign to an outside firm, since the problem lies in Aria's core design.
 
-**17.** (A) durable (B) vacant (C) frugal (D) overdue
-**18.** (A) surcharge (B) breakdown (C) discount (D) shift
-**19.** (A) recall (B) defect (C) hazard (D) standard
-**20.** (A) outsource (B) inspect (C) assemble (D) halt
+**17.**   **(A)** durable   **(B)** vacant   **(C)** frugal   **(D)** overdue  
+**18.**   **(A)** surcharge   **(B)** breakdown   **(C)** discount   **(D)** shift  
+**19.**   **(A)** recall   **(B)** defect   **(C)** hazard   **(D)** standard  
+**20.**   **(A)** outsource   **(B)** inspect   **(C)** assemble   **(D)** halt  
 
 ### Part 7 — Reading Comprehension
 
@@ -147,13 +195,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > During final testing, quality control discovered that a batch of Aria units built with the rushed replacement chips failed to meet safety standards. Under sustained load, the chips overheated; several units malfunctioned and one suffered a complete breakdown. Because overheating poses a fire hazard, management halted production at once and sealed the affected batch in the warehouse. Engineers concluded that the fault is a genuine defect in the components, not an assembly mistake, so the fix cannot be outsourced or patched by hand.
 
 **21.** What did quality control discover?
-(A) The batch met every standard (B) A batch failed to meet safety standards (C) The line was simply too slow (D) The warehouse was empty
+
+**(A)** The batch met every standard  
+**(B)** A batch failed to meet safety standards  
+**(C)** The line was simply too slow  
+**(D)** The warehouse was empty
 
 **22.** Why was production halted?
-(A) The workers went on strike (B) Overheating units posed a fire hazard (C) The budget ran out (D) The chips were too cheap
+
+**(A)** The workers went on strike  
+**(B)** Overheating units posed a fire hazard  
+**(C)** The budget ran out  
+**(D)** The chips were too cheap
 
 **23.** Why can the problem NOT be outsourced or patched by hand?
-(A) It is a genuine defect in the components (B) It is only a labeling error (C) The supplier refused to help (D) The units are already sold
+
+**(A)** It is a genuine defect in the components  
+**(B)** It is only a labeling error  
+**(C)** The supplier refused to help  
+**(D)** The units are already sold
 
 **Questions 24–26** refer to the following article.
 
@@ -161,13 +221,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > Aster Home Technologies has stopped production of its flagship Aria line just weeks before its Halston launch. Sources say quality inspectors found a serious defect traced to replacement chips the company rushed in after an earlier supply failure. With a fixed launch date and no room to recall products later, Aster faces its hardest test yet. Rather than seek an outside fix, the company is turning to its own research team to redesign the affected part at speed. Whether Aster can solve the problem in time may decide not only the launch, but the company's independence.
 
 **24.** What has Aster done to its Aria line?
-(A) Doubled its output (B) Stopped production weeks before launch (C) Sold it to Neura (D) Moved it to Halston
+
+**(A)** Doubled its output  
+**(B)** Stopped production weeks before launch  
+**(C)** Sold it to Neura  
+**(D)** Moved it to Halston
 
 **25.** What is the source of the defect?
-(A) A marketing error (B) Replacement chips rushed in after a supply failure (C) A damaged warehouse (D) A labor strike
+
+**(A)** A marketing error  
+**(B)** Replacement chips rushed in after a supply failure  
+**(C)** A damaged warehouse  
+**(D)** A labor strike
 
 **26.** How does Aster plan to fix the problem?
-(A) By outsourcing it to a rival (B) By cancelling the launch (C) By having its own research team redesign the part (D) By ignoring it
+
+**(A)** By outsourcing it to a rival  
+**(B)** By cancelling the launch  
+**(C)** By having its own research team redesign the part  
+**(D)** By ignoring it
 
 ---
 
@@ -198,9 +270,9 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 20. **A (outsource)** — "do not… the redesign to an outside firm" = thuê ngoài. *inspect/assemble/halt* sai nghĩa.
 
 ### Part 7
-21. **B** — QC phát hiện "a batch… **failed to meet safety standards**". (A) trái; (C)/(D) không nêu.
-22. **B** — dừng sản xuất vì "overheating poses a **fire hazard**". (A)/(C)/(D) sai/không nêu.
-23. **A** — không thuê ngoài/vá tay được vì "the fault is a genuine **defect in the components**, not an assembly mistake". (B)/(C)/(D) sai.
-24. **B** — Aster "**stopped production** of its Aria line just weeks before launch". (A)/(C)/(D) sai/trái.
-25. **B** — nguồn lỗi: "**replacement chips** the company rushed in after an earlier **supply failure**". (A)/(C)/(D) sai.
-26. **C** — hướng khắc phục: "turning to its **own research team to redesign** the affected part" → chuyền bóng sang R&D (Ch 19). (A)/(B)/(D) sai.
+21. **B** — QC phát hiện "a batch… **failed to meet safety standards**". **(A)** trái; **(C)**/**(D)** không nêu.
+22. **B** — dừng sản xuất vì "overheating poses a **fire hazard**". **(A)**/**(C)**/**(D)** sai/không nêu.
+23. **A** — không thuê ngoài/vá tay được vì "the fault is a genuine **defect in the components**, not an assembly mistake". **(B)**/**(C)**/**(D)** sai.
+24. **B** — Aster "**stopped production** of its Aria line just weeks before launch". **(A)**/**(C)**/**(D)** sai/trái.
+25. **B** — nguồn lỗi: "**replacement chips** the company rushed in after an earlier **supply failure**". **(A)**/**(C)**/**(D)** sai.
+26. **C** — hướng khắc phục: "turning to its **own research team to redesign** the affected part" → chuyền bóng sang R&D (Ch 19). **(A)**/**(B)**/**(D)** sai.

@@ -99,40 +99,88 @@ At the end, Daniel did something that made the whole room hold its breath: he co
 Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 
 **1.** To introduce Aria to Halston, Daniel launched the biggest marketing ______ in the company's history.
-(A) questionnaire (B) forecast (C) campaign (D) outlet
+
+**(A)** questionnaire  
+**(B)** forecast  
+**(C)** campaign  
+**(D)** outlet
 
 **2.** The team used social media and television ads to ______ the new smart-home system.
-(A) survey (B) decline (C) forecast (D) promote
+
+**(A)** survey  
+**(B)** decline  
+**(C)** forecast  
+**(D)** promote
 
 **3.** Market research showed that Aria's ______ was young, tech-savvy city dwellers.
-(A) loyalty program (B) target market (C) questionnaire (D) testimonial
+
+**(A)** loyalty program  
+**(B)** target market  
+**(C)** questionnaire  
+**(D)** testimonial
 
 **4.** Understanding ______ behavior helps a company design advertisements that actually work.
-(A) consumer (B) competitor (C) voucher (D) quota
+
+**(A)** consumer  
+**(B)** competitor  
+**(C)** voucher  
+**(D)** quota
 
 **5.** Before designing the campaign, the marketing team conducted a ______ of two thousand shoppers.
-(A) brand (B) demand (C) survey (D) outlet
+
+**(A)** brand  
+**(B)** demand  
+**(C)** survey  
+**(D)** outlet
 
 **6.** The company reads customer ______ carefully so that it can keep improving its products.
-(A) advertisement (B) quota (C) competitor (D) feedback
+
+**(A)** advertisement  
+**(B)** quota  
+**(C)** competitor  
+**(D)** feedback
 
 **7.** The firm paid a famous athlete to ______ its new line of kitchen appliances.
-(A) decline (B) forecast (C) endorse (D) survey
+
+**(A)** decline  
+**(B)** forecast  
+**(C)** endorse  
+**(D)** survey
 
 **8.** With so many rivals in the market, Aster had to keep its prices ______.
-(A) exclusive (B) reluctant (C) obsolete (D) competitive
+
+**(A)** exclusive  
+**(B)** reluctant  
+**(C)** obsolete  
+**(D)** competitive
 
 **9.** Brightway was granted an ______ right to sell Aria in Halston for the first year.
-(A) exclusive (B) competitive (C) available (D) eligible
+
+**(A)** exclusive  
+**(B)** competitive  
+**(C)** available  
+**(D)** eligible
 
 **10.** The company offered free delivery to ______ sales during the launch week.
-(A) decline (B) endorse (C) boost (D) survey
+
+**(A)** decline  
+**(B)** endorse  
+**(C)** boost  
+**(D)** survey
 
 **11.** Analysts study past data to make a reliable sales ______ for the coming year.
-(A) quota (B) forecast (C) voucher (D) brand
+
+**(A)** quota  
+**(B)** forecast  
+**(C)** voucher  
+**(D)** brand
 
 **12.** Many small businesses grow mainly through ______, as happy customers tell their friends.
-(A) questionnaire (B) arbitration (C) turnover (D) word of mouth
+
+**(A)** questionnaire  
+**(B)** arbitration  
+**(C)** turnover  
+**(D)** word of mouth
 
 ### Part 6 — Text Completion
 
@@ -144,19 +192,19 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 >
 > Our goal is simple: make the Aria **(13)______** the most talked-about name in Halston. A series of print and online **(14)______** will begin next month. Because our main **(15)______**, Neura, has a larger budget, we cannot outspend them — we must be smarter. To keep early sales strong and prevent any **(16)______**, every sales representative will be given a clear monthly target.
 
-**13.** (A) voucher (B) quota (C) brand (D) survey
-**14.** (A) advertisements (B) outlets (C) testimonials (D) competitors
-**15.** (A) consumer (B) forecast (C) outlet (D) competitor
-**16.** (A) demand (B) feedback (C) decline (D) brand
+**13.**   **(A)** voucher   **(B)** quota   **(C)** brand   **(D)** survey  
+**14.**   **(A)** advertisements   **(B)** outlets   **(C)** testimonials   **(D)** competitors  
+**15.**   **(A)** consumer   **(B)** forecast   **(C)** outlet   **(D)** competitor  
+**16.**   **(A)** demand   **(B)** feedback   **(C)** decline   **(D)** brand  
 
 **Questions 17–19** refer to the following announcement.
 
 > **ANNOUNCEMENT — Coming Soon to Halston**
 > The wait is almost over. Starting next month, the Aria smart-home system will be available **(17)______** at Brightway stores across Halston. To thank our earliest customers, everyone who buys during launch week will receive a **(18)______** worth 20% off their next purchase. Join our **(19)______** today and start earning points on everything you buy.
 
-**17.** (A) reluctantly (B) exclusively (C) barely (D) frequently
-**18.** (A) questionnaire (B) testimonial (C) forecast (D) voucher
-**19.** (A) loyalty program (B) target market (C) arbitration (D) survey
+**17.**   **(A)** reluctantly   **(B)** exclusively   **(C)** barely   **(D)** frequently  
+**18.**   **(A)** questionnaire   **(B)** testimonial   **(C)** forecast   **(D)** voucher  
+**19.**   **(A)** loyalty program   **(B)** target market   **(C)** arbitration   **(D)** survey  
 
 ### Part 7 — Reading Comprehension
 
@@ -166,13 +214,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > Aster Home Technologies is preparing an aggressive push into the Halston market with its new Aria system. In an interview, marketing director Daniel Cho said the campaign would rely heavily on positive word of mouth and glowing customer testimonials rather than simply outspending rivals. "Our biggest competitor has deeper pockets," he admitted, "but we have a better story." Early surveys suggest strong consumer interest, and Cho has forecast record demand in the launch quarter — a bold promise that some analysts say stakes his reputation on the product's success.
 
 **20.** What is Daniel Cho's main marketing strategy?
-(A) Spending more than his competitors (B) Relying on word of mouth and testimonials (C) Lowering the product's quality (D) Delaying the launch
+
+**(A)** Spending more than his competitors  
+**(B)** Relying on word of mouth and testimonials  
+**(C)** Lowering the product's quality  
+**(D)** Delaying the launch
 
 **21.** What does the article suggest about Cho's sales forecast?
-(A) It is very cautious (B) It is a bold promise that risks his reputation (C) It has already been proven wrong (D) It was actually made by Neura
+
+**(A)** It is very cautious  
+**(B)** It is a bold promise that risks his reputation  
+**(C)** It has already been proven wrong  
+**(D)** It was actually made by Neura
 
 **22.** The word "demand" in the article is closest in meaning to
-(A) a formal complaint (B) desire to buy (C) a firm refusal (D) a long delay
+
+**(A)** a formal complaint  
+**(B)** desire to buy  
+**(C)** a firm refusal  
+**(D)** a long delay
 
 **Questions 23–25** refer to the following internal bulletin.
 
@@ -180,13 +240,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > Get ready: the Aria launch is coming, and Brightway will be its exclusive seller in Halston. All forty of our retail outlets will feature a dedicated Aria display near the entrance. Staff should note that each store has been given a sales quota for the launch month, and stores that exceed their target will be recognized at the regional meeting. Remember, we are the only chain permitted to carry Aria this year — let's make the most of it.
 
 **23.** According to the bulletin, where will Aria be sold in Halston?
-(A) Online only (B) At Brightway's retail outlets (C) At Neura stores (D) Everywhere except Brightway
+
+**(A)** Online only  
+**(B)** At Brightway's retail outlets  
+**(C)** At Neura stores  
+**(D)** Everywhere except Brightway
 
 **24.** What has each Brightway store been given for the launch month?
-(A) A sales quota (B) A free voucher (C) A questionnaire (D) A new manager
+
+**(A)** A sales quota  
+**(B)** A free voucher  
+**(C)** A questionnaire  
+**(D)** A new manager
 
 **25.** The word "exclusive" in the bulletin is closest in meaning to
-(A) sole / only (B) expensive (C) temporary (D) optional
+
+**(A)** sole / only  
+**(B)** expensive  
+**(C)** temporary  
+**(D)** optional
 
 ---
 
@@ -216,9 +288,9 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 19. **A (loyalty program)** — "join our loyalty program… earn points" = chương trình khách hàng thân thiết. *target market/arbitration/survey* sai nghĩa.
 
 ### Part 7
-20. **B** — Daniel dựa vào **truyền miệng & lời chứng thực** thay vì chi nhiều hơn đối thủ ("rely heavily on positive word of mouth and… testimonials rather than simply outspending rivals"). (A) trái bài; (C)/(D) không nêu.
-21. **B** — dự báo của Cho là **lời hứa táo bạo đặt cược uy tín** ("a bold promise that… stakes his reputation"). (A) trái nghĩa; (C)/(D) không đúng.
-22. **B (desire to buy)** — "demand" ở đây = **nhu cầu mua** ("record demand in the launch quarter"). (A) complaint, (C) refusal, (D) delay đều sai nghĩa.
-23. **B** — Aria bán tại **các cửa hàng bán lẻ của Brightway** ("All forty of our retail outlets"). (A)/(C)/(D) trái bài.
-24. **A (a sales quota)** — mỗi cửa hàng được giao **chỉ tiêu doanh số** cho tháng ra mắt ("each store has been given a sales quota"). (B)/(C)/(D) không nêu.
-25. **A (sole / only)** — "exclusive" ≈ **duy nhất/độc quyền**; bài đã diễn giải "we are the only chain permitted to carry Aria". (B) expensive, (C) temporary, (D) optional sai nghĩa.
+20. **B** — Daniel dựa vào **truyền miệng & lời chứng thực** thay vì chi nhiều hơn đối thủ ("rely heavily on positive word of mouth and… testimonials rather than simply outspending rivals"). **(A)** trái bài; **(C)**/**(D)** không nêu.
+21. **B** — dự báo của Cho là **lời hứa táo bạo đặt cược uy tín** ("a bold promise that… stakes his reputation"). **(A)** trái nghĩa; **(C)**/**(D)** không đúng.
+22. **B (desire to buy)** — "demand" ở đây = **nhu cầu mua** ("record demand in the launch quarter"). **(A)** complaint, **(C)** refusal, **(D)** delay đều sai nghĩa.
+23. **B** — Aria bán tại **các cửa hàng bán lẻ của Brightway** ("All forty of our retail outlets"). **(A)**/**(C)**/**(D)** trái bài.
+24. **A (a sales quota)** — mỗi cửa hàng được giao **chỉ tiêu doanh số** cho tháng ra mắt ("each store has been given a sales quota"). **(B)**/**(C)**/**(D)** không nêu.
+25. **A (sole / only)** — "exclusive" ≈ **duy nhất/độc quyền**; bài đã diễn giải "we are the only chain permitted to carry Aria". **(B)** expensive, **(C)** temporary, **(D)** optional sai nghĩa.

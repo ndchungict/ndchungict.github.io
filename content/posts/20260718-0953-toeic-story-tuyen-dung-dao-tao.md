@@ -104,34 +104,74 @@ Priya made a note in Ben's file: there would be a **performance review** right a
 Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 
 **1.** To keep up with the growing workload on Project Aria, Ms. Nair decided to ______ additional staff as quickly as possible.
-(A) recruit (B) reschedule (C) resign (D) relocate
+
+**(A)** recruit  
+**(B)** reschedule  
+**(C)** resign  
+**(D)** relocate
 
 **2.** After reviewing every résumé, Priya shortlisted only the five strongest ______ for an interview.
-(A) references (B) candidates (C) supervisors (D) mentors
+
+**(A)** references  
+**(B)** candidates  
+**(C)** supervisors  
+**(D)** mentors
 
 **3.** Each application must include a ______ and a cover letter describing the person's work experience.
-(A) probation (B) résumé (C) vacancy (D) quorum
+
+**(A)** probation  
+**(B)** résumé  
+**(C)** vacancy  
+**(D)** quorum
 
 **4.** Applicants who do not meet the minimum ______ will not be invited to the interview.
-(A) qualifications (B) appraisals (C) orientations (D) subordinates
+
+**(A)** qualifications  
+**(B)** appraisals  
+**(C)** orientations  
+**(D)** subordinates
 
 **5.** Before making an offer, the HR team carefully verified each finalist's ______, including diplomas and certificates.
-(A) credentials (B) minutes (C) supplies (D) vacancies
+
+**(A)** credentials  
+**(B)** minutes  
+**(C)** supplies  
+**(D)** vacancies
 
 **6.** Ben listed two of his former managers as ______ who could speak to his character.
-(A) applicants (B) references (C) subordinates (D) candidates
+
+**(A)** applicants  
+**(B)** references  
+**(C)** subordinates  
+**(D)** candidates
 
 **7.** Ben was extremely nervous during his job ______, but his honest answers impressed the panel.
-(A) orientation (B) probation (C) interview (D) appraisal
+
+**(A)** orientation  
+**(B)** probation  
+**(C)** interview  
+**(D)** appraisal
 
 **8.** Impressed by his eagerness to learn, Priya decided to ______ Ben as a management trainee.
-(A) interview (B) hire (C) mentor (D) supervise
+
+**(A)** interview  
+**(B)** hire  
+**(C)** mentor  
+**(D)** supervise
 
 **9.** A ______ employee like Ben may lack experience, but he shows real potential to grow with the company.
-(A) prospective (B) competent (C) confidential (D) vacant
+
+**(A)** prospective  
+**(B)** competent  
+**(C)** confidential  
+**(D)** vacant
 
 **10.** After just a few weeks, Ben became remarkably ______ with the spreadsheet software.
-(A) proficient (B) prospective (C) eligible (D) prompt
+
+**(A)** proficient  
+**(B)** prospective  
+**(C)** eligible  
+**(D)** prompt
 
 ### Part 6 — Text Completion
 
@@ -140,10 +180,10 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > **JOB POSTING — Aster Home Technologies, Marlowe City**
 > Aster is pleased to announce a new **(11)______** for the position of Management Trainee on the Project Aria team. Because interest is high, we expect a large **(12)______** this year and encourage early submissions. Interested **(13)______** should send a résumé and a **(14)______** by June 30. Two professional references will also be required.
 
-**11.** (A) vacancy (B) orientation (C) subordinate (D) appraisal
-**12.** (A) cover letter (B) applicant pool (C) probation (D) job opening
-**13.** (A) supervisors (B) mentors (C) applicants (D) appraisals
-**14.** (A) cover letter (B) reference (C) vacancy (D) credential
+**11.**   **(A)** vacancy   **(B)** orientation   **(C)** subordinate   **(D)** appraisal  
+**12.**   **(A)** cover letter   **(B)** applicant pool   **(C)** probation   **(D)** job opening  
+**13.**   **(A)** supervisors   **(B)** mentors   **(C)** applicants   **(D)** appraisals  
+**14.**   **(A)** cover letter   **(B)** reference   **(C)** vacancy   **(D)** credential  
 
 **Questions 15–17** refer to the following memo.
 
@@ -153,9 +193,9 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 >
 > Please welcome Ben Tran, who joins us this Monday. He will attend a half-day **(15)______** session to learn about our company and Project Aria. During his three-month **(16)______** period, I will personally act as his **(17)______**, while he reports to a direct supervisor for his daily tasks.
 
-**15.** (A) orientation (B) appraisal (C) vacancy (D) reference
-**16.** (A) probation (B) interview (C) credential (D) applicant
-**17.** (A) subordinate (B) candidate (C) mentor (D) recruit
+**15.**   **(A)** orientation   **(B)** appraisal   **(C)** vacancy   **(D)** reference  
+**16.**   **(A)** probation   **(B)** interview   **(C)** credential   **(D)** applicant  
+**17.**   **(A)** subordinate   **(B)** candidate   **(C)** mentor   **(D)** recruit  
 
 ### Part 7 — Reading Comprehension
 
@@ -168,13 +208,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > — Priya
 
 **18.** What is the main purpose of the email?
-(A) To offer Ben a promotion (B) To praise Ben's progress and outline upcoming evaluations (C) To warn Ben about poor performance (D) To announce a new job opening
+
+**(A)** To offer Ben a promotion  
+**(B)** To praise Ben's progress and outline upcoming evaluations  
+**(C)** To warn Ben about poor performance  
+**(D)** To announce a new job opening
 
 **19.** According to the email, what has Ben become skilled at?
-(A) Interviewing candidates (B) Using spreadsheet tools (C) Managing the payroll (D) Repairing the photocopier
+
+**(A)** Interviewing candidates  
+**(B)** Using spreadsheet tools  
+**(C)** Managing the payroll  
+**(D)** Repairing the photocopier
 
 **20.** The word "competent" in the email is closest in meaning to
-(A) capable (B) nervous (C) prospective (D) senior
+
+**(A)** capable  
+**(B)** nervous  
+**(C)** prospective  
+**(D)** senior
 
 **Questions 21–23** refer to the following newsletter article.
 
@@ -182,13 +234,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > After posting a single job opening for Project Aria, the Corporate Services team was surprised by the size of the applicant pool: more than two hundred résumés arrived within a week. "We checked every finalist's references personally," said Priya Nair. The chosen candidate, management trainee Ben Tran, will rotate through several departments over the coming months. Although he is currently the most junior subordinate on the team, his supervisors already praise his eagerness to learn.
 
 **21.** How many job openings did the team post?
-(A) One (B) Two (C) Two hundred (D) Several
+
+**(A)** One  
+**(B)** Two  
+**(C)** Two hundred  
+**(D)** Several
 
 **22.** What surprised the Corporate Services team?
-(A) The high salary (B) The large number of applicants (C) The lack of references (D) The short interview
+
+**(A)** The high salary  
+**(B)** The large number of applicants  
+**(C)** The lack of references  
+**(D)** The short interview
 
 **23.** What will Ben Tran do in the coming months?
-(A) Leave the company (B) Rotate through several departments (C) Become a supervisor immediately (D) Conduct performance reviews
+
+**(A)** Leave the company  
+**(B)** Rotate through several departments  
+**(C)** Become a supervisor immediately  
+**(D)** Conduct performance reviews
 
 ---
 

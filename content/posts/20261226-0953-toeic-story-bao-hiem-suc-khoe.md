@@ -84,40 +84,88 @@ A few days later, the mood was different: fewer dark circles, laughter back in t
 Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 
 **1.** Priya's first step was to review the company's health ______.
-(A) hygiene (B) cavity (C) insurance (D) allergy
+
+**(A)** hygiene  
+**(B)** cavity  
+**(C)** insurance  
+**(D)** allergy
 
 **2.** She read the current ______ to see exactly what it covered.
-(A) policy (B) premium (C) checkup (D) dentist
+
+**(A)** policy  
+**(B)** premium  
+**(C)** checkup  
+**(D)** dentist
 
 **3.** The old plan offered only narrow ______, leaving many costs to staff.
-(A) hygiene (B) allergy (C) cavity (D) coverage
+
+**(A)** hygiene  
+**(B)** allergy  
+**(C)** cavity  
+**(D)** coverage
 
 **4.** Under the new plan, the company paid most of the monthly ______.
-(A) deductible (B) premium (C) claim (D) checkup
+
+**(A)** deductible  
+**(B)** premium  
+**(C)** claim  
+**(D)** checkup
 
 **5.** The high ______ had made employees reluctant to see a doctor.
-(A) premium (B) policy (C) deductible (D) wellness
+
+**(A)** premium  
+**(B)** policy  
+**(C)** deductible  
+**(D)** wellness
 
 **6.** Now every employee, even a trainee, was ______ for full benefits.
-(A) eligible (B) contagious (C) ergonomic (D) allergic
+
+**(A)** eligible  
+**(B)** contagious  
+**(C)** ergonomic  
+**(D)** allergic
 
 **7.** She showed the staff how to file a ______ quickly when they needed care.
-(A) checkup (B) premium (C) cavity (D) claim
+
+**(A)** checkup  
+**(B)** premium  
+**(C)** cavity  
+**(D)** claim
 
 **8.** Priya then launched a company ______ program to keep the team healthy.
-(A) deductible (B) wellness (C) coverage (D) cavity
+
+**(A)** deductible  
+**(B)** wellness  
+**(C)** coverage  
+**(D)** cavity
 
 **9.** Employees were encouraged to have an annual ______ to catch problems early.
-(A) premium (B) claim (C) checkup (D) policy
+
+**(A)** premium  
+**(B)** claim  
+**(C)** checkup  
+**(D)** policy
 
 **10.** Flu shots were offered so that a ______ illness would not spread through the tired team.
-(A) contagious (B) eligible (C) ergonomic (D) deductible
+
+**(A)** contagious  
+**(B)** eligible  
+**(C)** ergonomic  
+**(D)** deductible
 
 **11.** The old chairs were replaced with ______ ones to ease back pain.
-(A) contagious (B) eligible (C) allergic (D) ergonomic
+
+**(A)** contagious  
+**(B)** eligible  
+**(C)** allergic  
+**(D)** ergonomic
 
 **12.** Staff were told to take ______ and rest instead of coming in ill.
-(A) a premium (B) sick leave (C) a claim (D) a cavity
+
+**(A)** a premium  
+**(B)** sick leave  
+**(C)** a claim  
+**(D)** a cavity
 
 ### Part 6 — Text Completion
 
@@ -126,20 +174,20 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > **NOTICE — Staff Wellness Week**
 > As part of our new wellness program, an on-site **(13)______** will be offered so you can have a full health check without leaving the office. Flu **(14)______** will also be available; please get one, as a contagious bug spreads quickly in a busy office. If you often sneeze in spring, ask the nurse whether it is a cold or just an **(15)______**. A **(16)______** will also visit on Thursday to check everyone's teeth.
 
-**13.** (A) claim (B) physical (C) premium (D) policy
-**14.** (A) claims (B) premiums (C) cavities (D) immunizations
-**15.** (A) allergy (B) deductible (C) coverage (D) premium
-**16.** (A) premium (B) claim (C) dentist (D) policy
+**13.**   **(A)** claim   **(B)** physical   **(C)** premium   **(D)** policy  
+**14.**   **(A)** claims   **(B)** premiums   **(C)** cavities   **(D)** immunizations  
+**15.**   **(A)** allergy   **(B)** deductible   **(C)** coverage   **(D)** premium  
+**16.**   **(A)** premium   **(B)** claim   **(C)** dentist   **(D)** policy  
 
 **Questions 17–20** refer to the following memo.
 
 > **MEMO — Dental Check Results**
 > Thank you for attending Thursday's dental check. The dentist found that several staff had neglected basic **(17)______** during the busy period, and two people had an untreated **(18)______** that needed filling. Remember that regular care now avoids painful treatment later — and that all of this is included in your upgraded medical **(19)______**, so there is no reason to put it off. If you need follow-up treatment, you are **(20)______** for it under the new plan.
 
-**17.** (A) hygiene (B) premium (C) claim (D) policy
-**18.** (A) allergy (B) premium (C) cavity (D) deductible
-**19.** (A) cavity (B) hygiene (C) allergy (D) coverage
-**20.** (A) contagious (B) eligible (C) ergonomic (D) allergic
+**17.**   **(A)** hygiene   **(B)** premium   **(C)** claim   **(D)** policy  
+**18.**   **(A)** allergy   **(B)** premium   **(C)** cavity   **(D)** deductible  
+**19.**   **(A)** cavity   **(B)** hygiene   **(C)** allergy   **(D)** coverage  
+**20.**   **(A)** contagious   **(B)** eligible   **(C)** ergonomic   **(D)** allergic  
 
 ### Part 7 — Reading Comprehension
 
@@ -149,13 +197,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > After a trainee collapsed from exhaustion, Priya moved quickly to protect the team. She renegotiated the company's health insurance, lowering the deductible and having Aster cover more of the premium, and made every employee eligible for full benefits. Alongside the insurance changes, she launched a wellness program: on-site physicals, flu immunizations, a visit from a dentist, ergonomic chairs, and a clear message that staff should take sick leave rather than work while ill. Within days, colleagues said the mood had lifted and the exhausted team was recovering.
 
 **21.** Why did Priya act?
-(A) The insurer demanded it (B) A new law required it (C) After a trainee collapsed from exhaustion (D) To cut costs
+
+**(A)** The insurer demanded it  
+**(B)** A new law required it  
+**(C)** After a trainee collapsed from exhaustion  
+**(D)** To cut costs
 
 **22.** What did she change about the insurance?
-(A) Lowered the deductible and made everyone eligible (B) Cancelled it (C) Raised the premium for staff (D) Removed all coverage
+
+**(A)** Lowered the deductible and made everyone eligible  
+**(B)** Cancelled it  
+**(C)** Raised the premium for staff  
+**(D)** Removed all coverage
 
 **23.** What was part of the wellness program?
-(A) Longer working hours (B) A pay cut (C) Fewer breaks (D) On-site physicals, immunizations, and ergonomic chairs
+
+**(A)** Longer working hours  
+**(B)** A pay cut  
+**(C)** Fewer breaks  
+**(D)** On-site physicals, immunizations, and ergonomic chairs
 
 **Questions 24–26** refer to the following article.
 
@@ -163,13 +223,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > With days to go before the Aria launch, Aster Home Technologies has turned its attention to the one asset a balance sheet ignores: its people. A revamped health plan and a new wellness program have helped a burned-out workforce recover just in time. Insiders say morale has rebounded sharply. Everything the company has built over the past year — a proven product, protected technology, a Halston venue, and now a recovered team — now rests on a single evening: the Aria launch, where partners, the press, and even would-be acquirer Neura are all expected to attend.
 
 **24.** What did Aster focus on in the final days?
-(A) Building a new factory (B) Its people, through a health plan and wellness program (C) Selling to Neura (D) Cancelling the launch
+
+**(A)** Building a new factory  
+**(B)** Its people, through a health plan and wellness program  
+**(C)** Selling to Neura  
+**(D)** Cancelling the launch
 
 **25.** What effect did the changes have?
-(A) A burned-out workforce recovered and morale rebounded (B) Costs doubled (C) Staff quit in large numbers (D) The product failed
+
+**(A)** A burned-out workforce recovered and morale rebounded  
+**(B)** Costs doubled  
+**(C)** Staff quit in large numbers  
+**(D)** The product failed
 
 **26.** What does everything now rest on?
-(A) A new patent (B) Another supplier (C) A single evening — the Aria launch (D) A court case
+
+**(A)** A new patent  
+**(B)** Another supplier  
+**(C)** A single evening — the Aria launch  
+**(D)** A court case
 
 ---
 
@@ -200,9 +272,9 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 20. **B (eligible)** — "you are eligible for it under the new plan" = đủ điều kiện. ⚠️ *eligible for*. *contagious/ergonomic/allergic* sai.
 
 ### Part 7
-21. **C** — Priya hành động "**after a trainee collapsed from exhaustion**". (A)/(B)/(D) sai.
-22. **A** — về bảo hiểm: "**lowering the deductible**… made every employee **eligible**" (và công ty gánh thêm premium). (B)/(C)/(D) sai/trái.
-23. **D** — chương trình wellness gồm "**on-site physicals, flu immunizations**, a dentist, **ergonomic chairs**". (A)/(B)/(C) trái.
-24. **B** — những ngày cuối Aster tập trung vào "**its people** — a health plan and a wellness program". (A)/(C)/(D) sai.
-25. **A** — hiệu quả: "a **burned-out workforce recover**… **morale has rebounded**". (B)/(C)/(D) sai.
-26. **C** — mọi thứ giờ đặt vào "a **single evening: the Aria launch**" → dẫn Ch 27 (đêm ra mắt). (A)/(B)/(D) sai.
+21. **C** — Priya hành động "**after a trainee collapsed from exhaustion**". **(A)**/**(B)**/**(D)** sai.
+22. **A** — về bảo hiểm: "**lowering the deductible**… made every employee **eligible**" (và công ty gánh thêm premium). **(B)**/**(C)**/**(D)** sai/trái.
+23. **D** — chương trình wellness gồm "**on-site physicals, flu immunizations**, a dentist, **ergonomic chairs**". **(A)**/**(B)**/**(C)** trái.
+24. **B** — những ngày cuối Aster tập trung vào "**its people** — a health plan and a wellness program". **(A)**/**(C)**/**(D)** sai.
+25. **A** — hiệu quả: "a **burned-out workforce recover**… **morale has rebounded**". **(B)**/**(C)**/**(D)** sai.
+26. **C** — mọi thứ giờ đặt vào "a **single evening: the Aria launch**" → dẫn Ch 27 (đêm ra mắt). **(A)**/**(B)**/**(D)** sai.

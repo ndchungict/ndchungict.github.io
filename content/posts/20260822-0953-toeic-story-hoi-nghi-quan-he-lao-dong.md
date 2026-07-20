@@ -86,40 +86,88 @@ The meeting ended with a temporary deal: fewer overtime hours, plus higher pay f
 Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 
 **1.** Aster sent a small team to the annual industry ______ held in Northbridge.
-(A) venue (B) booth (C) conference (D) handout
+
+**(A)** venue  
+**(B)** booth  
+**(C)** conference  
+**(D)** handout
 
 **2.** The organizers had to find a larger ______ because so many people had registered.
-(A) session (B) venue (C) panel (D) union
+
+**(A)** session  
+**(B)** venue  
+**(C)** panel  
+**(D)** union
 
 **3.** Please pick up your name badge at the ______ desk when you arrive.
-(A) booth (B) grievance (C) workshop (D) registration
+
+**(A)** booth  
+**(B)** grievance  
+**(C)** workshop  
+**(D)** registration
 
 **4.** Every ______ received a printed program and a free tote bag.
-(A) attendee (B) venue (C) dispute (D) panel
+
+**(A)** attendee  
+**(B)** venue  
+**(C)** dispute  
+**(D)** panel
 
 **5.** After the opening speech, the conference split into several smaller ______ on different topics.
-(A) booths (B) sessions (C) handouts (D) strikes
+
+**(A)** booths  
+**(B)** sessions  
+**(C)** handouts  
+**(D)** strikes
 
 **6.** Ben signed up for a hands-on ______ where participants built a simple app.
-(A) grievance (B) venue (C) workshop (D) walkout
+
+**(A)** grievance  
+**(B)** venue  
+**(C)** workshop  
+**(D)** walkout
 
 **7.** Daniel joined a ______ of experts to discuss the future of smart homes.
-(A) panel (B) booth (C) union (D) handout
+
+**(A)** panel  
+**(B)** booth  
+**(C)** union  
+**(D)** handout
 
 **8.** Visitors crowded around the Aster ______ to watch a live demo of Aria.
-(A) session (B) registration (C) dispute (D) booth
+
+**(A)** session  
+**(B)** registration  
+**(C)** dispute  
+**(D)** booth
 
 **9.** The factory workers are represented by a labor ______ in talks with management.
-(A) panel (B) attendee (C) union (D) venue
+
+**(A)** panel  
+**(B)** attendee  
+**(C)** union  
+**(D)** venue
 
 **10.** Unhappy about the extra hours, the staff filed a formal ______ with the company.
-(A) booth (B) session (C) keynote (D) grievance
+
+**(A)** booth  
+**(B)** session  
+**(C)** keynote  
+**(D)** grievance
 
 **11.** If the two sides cannot reach a deal, the workers have threatened to go on ______.
-(A) strike (B) venue (C) handout (D) panel
+
+**(A)** strike  
+**(B)** venue  
+**(C)** handout  
+**(D)** panel
 
 **12.** A neutral manager was brought in to ______ between the workers and the company.
-(A) register (B) mediate (C) attend (D) exhibit
+
+**(A)** register  
+**(B)** mediate  
+**(C)** attend  
+**(D)** exhibit
 
 ### Part 6 — Text Completion
 
@@ -130,10 +178,10 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 >
 > Thank you all for a great show. The **(13)______** who opened the event set the perfect tone, and our booth was busy all day. The **(14)______** breaks were especially valuable — I made several useful contacts among the press. For those who missed it, I've attached the **(15)______** we gave to visitors. Let's review what we learned at our team **(16)______** on Monday.
 
-**13.** (A) attendee (B) grievance (C) walkout (D) keynote speaker
-**14.** (A) networking (B) registration (C) union (D) booth
-**15.** (A) venue (B) panel (C) handout (D) strike
-**16.** (A) booth (B) session (C) dispute (D) attendee
+**13.**   **(A)** attendee   **(B)** grievance   **(C)** walkout   **(D)** keynote speaker  
+**14.**   **(A)** networking   **(B)** registration   **(C)** union   **(D)** booth  
+**15.**   **(A)** venue   **(B)** panel   **(C)** handout   **(D)** strike  
+**16.**   **(A)** booth   **(B)** session   **(C)** dispute   **(D)** attendee  
 
 **Questions 17–19** refer to the following memo.
 
@@ -142,9 +190,9 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 >
 > The recent **(17)______** over mandatory overtime has been settled for now. After a round of **(18)______** with the workers' representatives, we agreed to reduce extra hours and raise the overtime rate. This should prevent any **(19)______** during the busy weeks ahead. However, we must keep listening — the goodwill will not last if we push too hard again.
 
-**17.** (A) booth (B) session (C) handout (D) dispute
-**18.** (A) collective bargaining (B) registration (C) networking (D) venue
-**19.** (A) panel (B) attendee (C) walkout (D) keynote
+**17.**   **(A)** booth   **(B)** session   **(C)** handout   **(D)** dispute  
+**18.**   **(A)** collective bargaining   **(B)** registration   **(C)** networking   **(D)** venue  
+**19.**   **(A)** panel   **(B)** attendee   **(C)** walkout   **(D)** keynote  
 
 ### Part 7 — Reading Comprehension
 
@@ -154,13 +202,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > The Northbridge Tech Expo drew record crowds this year, and one of the busiest booths belonged to Aster Home Technologies. The company used the conference to show its upcoming Aria system to the public for the first time. Marketing director Daniel Cho spent much of the event networking with journalists and industry figures — including, reporters noted, representatives of rival Neura. Analysts say the strong turnout at Aster's booth suggests real public interest ahead of the product's launch.
 
 **20.** What did Aster use the conference for?
-(A) To hire new engineers (B) To show the Aria system to the public for the first time (C) To sign a contract with Neura (D) To hold its annual shareholders' meeting
+
+**(A)** To hire new engineers  
+**(B)** To show the Aria system to the public for the first time  
+**(C)** To sign a contract with Neura  
+**(D)** To hold its annual shareholders' meeting
 
 **21.** According to the article, what did Daniel Cho do at the event?
-(A) He gave the keynote speech (B) He filed a grievance (C) He networked with journalists and industry figures (D) He led a workers' strike
+
+**(A)** He gave the keynote speech  
+**(B)** He filed a grievance  
+**(C)** He networked with journalists and industry figures  
+**(D)** He led a workers' strike
 
 **22.** The word "turnout" in the article is closest in meaning to
-(A) the number of people who attended (B) the amount of money earned (C) the quality of the products (D) the length of the event
+
+**(A)** the number of people who attended  
+**(B)** the amount of money earned  
+**(C)** the quality of the products  
+**(D)** the length of the event
 
 **Questions 23–25** refer to the following note.
 
@@ -168,13 +228,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > Tensions at the Eastport plant eased this week after management and the workers' union reached a temporary agreement. The union had filed a grievance over long mandatory overtime, and some workers had even discussed a walkout. Plant foreman Joe Delgado welcomed the deal but warned that it was only a short-term fix. "The team came back to work, and the dispute is settled for now," he said. "But if we push them this hard again closer to launch, I can't promise they'll stay calm."
 
 **23.** Why had the union filed a grievance?
-(A) Because of low pay only (B) Because the factory was closing (C) Because of unsafe machinery (D) Because of long mandatory overtime
+
+**(A)** Because of low pay only  
+**(B)** Because the factory was closing  
+**(C)** Because of unsafe machinery  
+**(D)** Because of long mandatory overtime
 
 **24.** What is Joe Delgado's warning about the agreement?
-(A) The plant will close soon (B) It is only a short-term fix (C) The workers have already quit (D) The union has been dissolved
+
+**(A)** The plant will close soon  
+**(B)** It is only a short-term fix  
+**(C)** The workers have already quit  
+**(D)** The union has been dissolved
 
 **25.** The word "eased" in the note is closest in meaning to
-(A) increased sharply (B) became less tense (C) disappeared completely (D) were ignored
+
+**(A)** increased sharply  
+**(B)** became less tense  
+**(C)** disappeared completely  
+**(D)** were ignored
 
 ---
 
@@ -204,9 +276,9 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 19. **C (walkout)** — "prevent any walkout during the busy weeks" = ngăn cuộc bỏ việc phản đối. *panel/attendee/keynote* sai nghĩa.
 
 ### Part 7
-20. **B** — Aster dùng hội nghị để **lần đầu giới thiệu Aria ra công chúng** ("used the conference to show its upcoming Aria system to the public for the first time"). (A)/(C)/(D) không được nêu.
-21. **C** — Daniel **kết nối với báo giới & người trong ngành** ("networking with journalists and industry figures"). (A) không phải anh; (B)/(D) không đúng.
+20. **B** — Aster dùng hội nghị để **lần đầu giới thiệu Aria ra công chúng** ("used the conference to show its upcoming Aria system to the public for the first time"). **(A)**/**(C)**/**(D)** không được nêu.
+21. **C** — Daniel **kết nối với báo giới & người trong ngành** ("networking with journalists and industry figures"). **(A)** không phải anh; **(B)**/**(D)** không đúng.
 22. **A (the number of people who attended)** — "turnout" = lượng người đến dự. Các phương án về tiền/chất lượng/độ dài đều sai.
-23. **D** — công đoàn nộp đơn vì **tăng ca bắt buộc kéo dài** ("a grievance over long mandatory overtime"). (A) "low pay only" hẹp/sai; (B)/(C) không nêu.
-24. **B** — Joe cảnh báo thỏa thuận **chỉ là giải pháp ngắn hạn** ("only a short-term fix"). (A)/(C)/(D) trái với bài.
+23. **D** — công đoàn nộp đơn vì **tăng ca bắt buộc kéo dài** ("a grievance over long mandatory overtime"). **(A)** "low pay only" hẹp/sai; **(B)**/**(C)** không nêu.
+24. **B** — Joe cảnh báo thỏa thuận **chỉ là giải pháp ngắn hạn** ("only a short-term fix"). **(A)**/**(C)**/**(D)** trái với bài.
 25. **B (became less tense)** — "tensions eased" = căng thẳng dịu bớt. *increased sharply* trái nghĩa; *disappeared completely* quá mạnh; *were ignored* sai nghĩa.

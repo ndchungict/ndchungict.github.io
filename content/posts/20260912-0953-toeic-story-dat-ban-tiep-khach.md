@@ -82,34 +82,74 @@ But as the first appetizers arrived, Karen set down her glass and got to busines
 Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 
 **1.** Ben called *The Harbourline* to make a ______ for a party of four at seven o'clock.
-(A) caterer (B) reservation (C) buffet (D) seating
+
+**(A)** caterer  
+**(B)** reservation  
+**(C)** buffet  
+**(D)** seating
 
 **2.** The banquet hall is spacious enough to ______ up to three hundred guests.
-(A) cuisine (B) reception (C) beforehand (D) accommodate
+
+**(A)** cuisine  
+**(B)** reception  
+**(C)** beforehand  
+**(D)** accommodate
 
 **3.** A ______ of four had reserved the quiet table beside the window.
-(A) seating (B) caterer (C) party (D) reception
+
+**(A)** seating  
+**(B)** caterer  
+**(C)** party  
+**(D)** reception
 
 **4.** As a gesture of goodwill, Aster offered to ______ the dinner for its new partner.
-(A) host (B) accommodate (C) book (D) seat
+
+**(A)** host  
+**(B)** accommodate  
+**(C)** book  
+**(D)** seat
 
 **5.** If your group is large, it is wise to call ______ to reserve a table.
-(A) reception (B) catering (C) venue (D) beforehand
+
+**(A)** reception  
+**(B)** catering  
+**(C)** venue  
+**(D)** beforehand
 
 **6.** The bayside restaurant is famous throughout Halston for its fresh seafood ______.
-(A) party (B) cuisine (C) seating (D) reservation
+
+**(A)** party  
+**(B)** cuisine  
+**(C)** seating  
+**(D)** reservation
 
 **7.** The five-star hotel is the city's most popular ______ for corporate banquets.
-(A) beverage (B) buffet (C) venue (D) caterer
+
+**(A)** beverage  
+**(B)** buffet  
+**(C)** venue  
+**(D)** caterer
 
 **8.** Rather than a set menu, dinner was served as a ______ so guests could choose freely.
-(A) buffet (B) reservation (C) party (D) host
+
+**(A)** buffet  
+**(B)** reservation  
+**(C)** party  
+**(D)** host
 
 **9.** Brightway hired a well-known ______ to prepare the food for the reception.
-(A) cuisine (B) seating (C) venue (D) caterer
+
+**(A)** cuisine  
+**(B)** seating  
+**(C)** venue  
+**(D)** caterer
 
 **10.** Light ______ will be served during the mid-morning networking break.
-(A) reservation (B) refreshments (C) party (D) beforehand
+
+**(A)** reservation  
+**(B)** refreshments  
+**(C)** party  
+**(D)** beforehand
 
 ### Part 6 — Text Completion
 
@@ -118,19 +158,19 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > **RESERVATION CONFIRMATION — The Harbourline**
 > Dear Mr. Tran, thank you for choosing The Harbourline. We are pleased to confirm the table you **(11)______** for a party of four at 7:00 this evening. As you asked, we have reserved quiet **(12)______** beside the window. A welcome **(13)______** — sparkling water or fresh juice — will be waiting at your table. We are confident your guests will enjoy our award-winning seafood **(14)______**.
 
-**11.** (A) booked (B) hosted (C) accommodated (D) catered
-**12.** (A) reservation (B) banquet (C) seating (D) caterer
-**13.** (A) venue (B) party (C) reception (D) beverage
-**14.** (A) seating (B) cuisine (C) beforehand (D) buffet
+**11.**   **(A)** booked   **(B)** hosted   **(C)** accommodated   **(D)** catered  
+**12.**   **(A)** reservation   **(B)** banquet   **(C)** seating   **(D)** caterer  
+**13.**   **(A)** venue   **(B)** party   **(C)** reception   **(D)** beverage  
+**14.**   **(A)** seating   **(B)** cuisine   **(C)** beforehand   **(D)** buffet  
 
 **Questions 15–17** refer to the following memo.
 
 > **MEMO — Brightway Partner Appreciation Event**
 > To all approved vendors: This year's annual partner **(15)______** will take place at the Grand Harbour Hotel on 15 November. After a short awards ceremony, a lavish welcome **(16)______** will open the evening, followed by a full buffet dinner. All **(17)______** will be handled by an award-winning company, so guests need only relax and network.
 
-**15.** (A) seating (B) reservation (C) banquet (D) beforehand
-**16.** (A) reception (B) party (C) caterer (D) venue
-**17.** (A) seating (B) reservation (C) party (D) catering
+**15.**   **(A)** seating   **(B)** reservation   **(C)** banquet   **(D)** beforehand  
+**16.**   **(A)** reception   **(B)** party   **(C)** caterer   **(D)** venue  
+**17.**   **(A)** seating   **(B)** reservation   **(C)** party   **(D)** catering  
 
 ### Part 7 — Reading Comprehension
 
@@ -140,13 +180,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > On their first night in Halston, the Aster team dined with Karen Ito of Brightway at a harbourside restaurant. Ben had booked the table days beforehand, choosing a spot recommended by a colleague back home for its outstanding seafood cuisine. Daniel hosted the dinner on Aster's behalf. Over the appetizers, Karen made an unexpected proposal: she wanted Aria to be unveiled at Brightway's annual partner banquet, a glittering reception attended by every major retailer in the city. The opportunity was dazzling — but it came with a tight schedule, and Karen hinted that Aster was not the only company she was considering.
 
 **18.** Who arranged the restaurant table?
-(A) Karen Ito (B) Daniel (C) Ben (D) Diane
+
+**(A)** Karen Ito  
+**(B)** Daniel  
+**(C)** Ben  
+**(D)** Diane
 
 **19.** What did Karen propose?
-(A) That Aster lower its prices (B) That Aria be unveiled at Brightway's partner banquet (C) That Brightway buy Aster outright (D) That the dinner be postponed
+
+**(A)** That Aster lower its prices  
+**(B)** That Aria be unveiled at Brightway's partner banquet  
+**(C)** That Brightway buy Aster outright  
+**(D)** That the dinner be postponed
 
 **20.** The word "dazzling" in the log is closest in meaning to
-(A) disappointing (B) confusing (C) inexpensive (D) very impressive
+
+**(A)** disappointing  
+**(B)** confusing  
+**(C)** inexpensive  
+**(D)** very impressive
 
 **Questions 21–23** refer to the following advertisement.
 
@@ -154,13 +206,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > The Grand Harbour is Halston's premier venue for corporate events. Our elegant banquet hall can accommodate up to 400 guests, with flexible seating for dinners, receptions, and product launches. Our in-house catering team prepares everything from a casual buffet to a formal multi-course banquet, and a wide selection of beverages and light refreshments is always on hand. To secure a date, we recommend booking well beforehand, as weekends fill quickly.
 
 **21.** According to the advertisement, what can the banquet hall do?
-(A) Hold up to 400 guests (B) Serve only breakfast (C) Seat exactly 100 people (D) Host outdoor events only
+
+**(A)** Hold up to 400 guests  
+**(B)** Serve only breakfast  
+**(C)** Seat exactly 100 people  
+**(D)** Host outdoor events only
 
 **22.** What does the hotel recommend?
-(A) Paying in cash (B) Bringing your own food (C) Booking well in advance (D) Arriving after midnight
+
+**(A)** Paying in cash  
+**(B)** Bringing your own food  
+**(C)** Booking well in advance  
+**(D)** Arriving after midnight
 
 **23.** The word "premier" in the advertisement is closest in meaning to
-(A) cheapest (B) leading (C) newest (D) smallest
+
+**(A)** cheapest  
+**(B)** leading  
+**(C)** newest  
+**(D)** smallest
 
 ---
 
@@ -188,9 +252,9 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 17. **D (catering)** — "all catering will be handled by…" = toàn bộ dịch vụ tiệc. *seating/reservation/party* sai nghĩa.
 
 ### Part 7
-18. **C (Ben)** — log ghi rõ "**Ben** had booked the table days beforehand". (A)/(B)/(D) đều có mặt nhưng không phải người đặt bàn.
-19. **B** — Karen muốn "**Aria be unveiled at Brightway's annual partner banquet**". (A)/(C)/(D) không được nêu.
+18. **C (Ben)** — log ghi rõ "**Ben** had booked the table days beforehand". **(A)**/**(B)**/**(D)** đều có mặt nhưng không phải người đặt bàn.
+19. **B** — Karen muốn "**Aria be unveiled at Brightway's annual partner banquet**". **(A)**/**(C)**/**(D)** không được nêu.
 20. **D (very impressive)** — "dazzling" (opportunity) = rực rỡ, choáng ngợp/rất ấn tượng. *disappointing/confusing/inexpensive* trái nghĩa/sai.
-21. **A** — quảng cáo nói sảnh tiệc "can **accommodate up to 400 guests**". (B)/(C)/(D) sai/không nêu.
+21. **A** — quảng cáo nói sảnh tiệc "can **accommodate up to 400 guests**". **(B)**/**(C)**/**(D)** sai/không nêu.
 22. **C** — khách sạn khuyên "**booking well beforehand**" = đặt sớm. *paying in cash / bringing your own food / arriving after midnight* không được nêu.
 23. **B (leading)** — "premier venue" = địa điểm hàng đầu. *cheapest/newest/smallest* sai nghĩa.

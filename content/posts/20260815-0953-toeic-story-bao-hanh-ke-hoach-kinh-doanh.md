@@ -91,40 +91,88 @@ And because she had learned her lesson from Neura's raid on their staff, Diane a
 Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 
 **1.** The refrigerator is still under ______, so Aster will fix it at no cost.
-(A) coverage (B) warranty (C) deadline (D) benchmark
+
+**(A)** coverage  
+**(B)** warranty  
+**(C)** deadline  
+**(D)** benchmark
 
 **2.** The product comes with a 30-day money-back ______ if customers are not satisfied.
-(A) priority (B) projection (C) guarantee (D) strategy
+
+**(A)** priority  
+**(B)** projection  
+**(C)** guarantee  
+**(D)** strategy
 
 **3.** The technician quickly identified the ______ component and swapped it for a new one.
-(A) faulty (B) feasible (C) strategic (D) prompt
+
+**(A)** faulty  
+**(B)** feasible  
+**(C)** strategic  
+**(D)** prompt
 
 **4.** Under the two-year warranty, all ______ are carried out free of charge.
-(A) objectives (B) deadlines (C) projections (D) repairs
+
+**(A)** objectives  
+**(B)** deadlines  
+**(C)** projections  
+**(D)** repairs
 
 **5.** If the device cannot be fixed, the company will ______ it with a brand-new unit.
-(A) assess (B) replace (C) expire (D) implement
+
+**(A)** assess  
+**(B)** replace  
+**(C)** expire  
+**(D)** implement
 
 **6.** Customers should register their product before the warranty ______ at the end of the second year.
-(A) implements (B) assesses (C) expires (D) replaces
+
+**(A)** implements  
+**(B)** assesses  
+**(C)** expires  
+**(D)** replaces
 
 **7.** Before spending a single dollar, the team agreed on a clear marketing ______.
-(A) strategy (B) warranty (C) defect (D) coverage
+
+**(A)** strategy  
+**(B)** warranty  
+**(C)** defect  
+**(D)** coverage
 
 **8.** Each department was given one measurable ______ to achieve by the end of the quarter.
-(A) warranty (B) guarantee (C) repair (D) objective
+
+**(A)** warranty  
+**(B)** guarantee  
+**(C)** repair  
+**(D)** objective
 
 **9.** The engineers studied the timeline and confirmed that the plan was ______.
-(A) faulty (B) contingent (C) feasible (D) overdue
+
+**(A)** faulty  
+**(B)** contingent  
+**(C)** feasible  
+**(D)** overdue
 
 **10.** Because the ______ was so tight, the staff had to work late every evening.
-(A) coverage (B) deadline (C) benchmark (D) warranty
+
+**(A)** coverage  
+**(B)** deadline  
+**(C)** benchmark  
+**(D)** warranty
 
 **11.** Ensuring that the product is safe to use is the company's top ______.
-(A) priority (B) initiative (C) projection (D) defect
+
+**(A)** priority  
+**(B)** initiative  
+**(C)** projection  
+**(D)** defect
 
 **12.** A committee was formed to ______ the risks before the plan was approved.
-(A) expire (B) replace (C) implement (D) assess
+
+**(A)** expire  
+**(B)** replace  
+**(C)** implement  
+**(D)** assess
 
 ### Part 6 — Text Completion
 
@@ -136,19 +184,19 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 >
 > Attached is the master plan for the road to launch. Each department will lead its own **(13)______** and report progress every month. The finance team has prepared revenue **(14)______** for the next four quarters, measured against an industry **(15)______** so that we can judge our performance fairly. Remember, a good plan means nothing unless we can **(16)______** it on time — so please review your deadlines carefully.
 
-**13.** (A) initiative (B) defect (C) warranty (D) repair
-**14.** (A) benchmark (B) coverage (C) projections (D) guarantees
-**15.** (A) objective (B) benchmark (C) deadline (D) priority
-**16.** (A) expire (B) replace (C) assess (D) implement
+**13.**   **(A)** initiative   **(B)** defect   **(C)** warranty   **(D)** repair  
+**14.**   **(A)** benchmark   **(B)** coverage   **(C)** projections   **(D)** guarantees  
+**15.**   **(A)** objective   **(B)** benchmark   **(C)** deadline   **(D)** priority  
+**16.**   **(A)** expire   **(B)** replace   **(C)** assess   **(D)** implement  
 
 **Questions 17–19** refer to the following announcement.
 
 > **ANNOUNCEMENT — Aria Warranty & Support**
 > Every Aria system comes with a two-year warranty. If your unit develops a **(17)______** caused by manufacturing, we will repair or replace it at no cost to you. Full **(18)______** includes both parts and labor. And should any large-scale problem ever arise, our support team already has a **(19)______** ready to help every affected customer quickly.
 
-**17.** (A) defect (B) benchmark (C) priority (D) strategy
-**18.** (A) deadline (B) objective (C) coverage (D) projection
-**19.** (A) benchmark (B) contingency plan (C) guarantee (D) initiative
+**17.**   **(A)** defect   **(B)** benchmark   **(C)** priority   **(D)** strategy  
+**18.**   **(A)** deadline   **(B)** objective   **(C)** coverage   **(D)** projection  
+**19.**   **(A)** benchmark   **(B)** contingency plan   **(C)** guarantee   **(D)** initiative  
 
 ### Part 7 — Reading Comprehension
 
@@ -158,13 +206,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > Aster Home Technologies is betting that a strong warranty will win over cautious buyers. The company has announced that every Aria unit will carry a two-year warranty, with free repair or replacement for any manufacturing defect. Analysts say the generous coverage is a smart move in a market where consumers worry about the reliability of smart devices. However, one expert cautioned that such promises are only sustainable if the product is genuinely durable. "A warranty is a bet on your own quality," she noted. "If too many units fail, the cost of honoring it could be severe."
 
 **20.** What is the main point of the article?
-(A) Aria will be sold without any warranty (B) The warranty covers only labor, not parts (C) Aster is cutting its warranty to save money (D) Aster is using a strong warranty to attract cautious buyers
+
+**(A)** Aria will be sold without any warranty  
+**(B)** The warranty covers only labor, not parts  
+**(C)** Aster is cutting its warranty to save money  
+**(D)** Aster is using a strong warranty to attract cautious buyers
 
 **21.** What warning does the expert give?
-(A) The warranty period is far too short (B) Consumers do not care about warranties (C) A generous warranty is risky if the product is not durable (D) The product has already failed on the market
+
+**(A)** The warranty period is far too short  
+**(B)** Consumers do not care about warranties  
+**(C)** A generous warranty is risky if the product is not durable  
+**(D)** The product has already failed on the market
 
 **22.** The word "durable" in the article is closest in meaning to
-(A) long-lasting (B) expensive (C) attractive (D) lightweight
+
+**(A)** long-lasting  
+**(B)** expensive  
+**(C)** attractive  
+**(D)** lightweight
 
 **Questions 23–25** refer to the following email.
 
@@ -175,13 +235,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > Team, our master plan sets a clear objective for each quarter, and every task now has a firm deadline. Please treat product safety and quality as our top priority — everything else comes second. I have also asked each of you to prepare a short contingency plan in case a supplier fails or a deadline slips. We assessed the biggest risks last week; now we must put those plans into action. Let's make this feasible, not just hopeful.
 
 **23.** According to the email, what should the leads treat as the top priority?
-(A) Marketing costs (B) Product safety and quality (C) Hiring new staff (D) Ordering office supplies
+
+**(A)** Marketing costs  
+**(B)** Product safety and quality  
+**(C)** Hiring new staff  
+**(D)** Ordering office supplies
 
 **24.** What has Priya asked each lead to prepare?
-(A) A sales forecast (B) A new advertisement (C) A résumé (D) A contingency plan
+
+**(A)** A sales forecast  
+**(B)** A new advertisement  
+**(C)** A résumé  
+**(D)** A contingency plan
 
 **25.** The word "assessed" in the email is closest in meaning to
-(A) ignored (B) increased (C) evaluated (D) postponed
+
+**(A)** ignored  
+**(B)** increased  
+**(C)** evaluated  
+**(D)** postponed
 
 ---
 
@@ -211,9 +283,9 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 19. **B (contingency plan)** — "a contingency plan ready to help… if a large-scale problem arises" = kế hoạch dự phòng. *benchmark/guarantee/initiative* sai nghĩa.
 
 ### Part 7
-20. **D** — bài nói Aster **dùng chế độ bảo hành mạnh để thu hút khách còn e ngại** ("betting that a strong warranty will win over cautious buyers"). (A)/(B)/(C) đều trái nội dung.
-21. **C** — chuyên gia cảnh báo **bảo hành hào phóng sẽ rủi ro nếu sản phẩm không bền** ("only sustainable if the product is genuinely durable… if too many units fail, the cost… could be severe"). (A)/(B)/(D) không đúng.
+20. **D** — bài nói Aster **dùng chế độ bảo hành mạnh để thu hút khách còn e ngại** ("betting that a strong warranty will win over cautious buyers"). **(A)**/**(B)**/**(C)** đều trái nội dung.
+21. **C** — chuyên gia cảnh báo **bảo hành hào phóng sẽ rủi ro nếu sản phẩm không bền** ("only sustainable if the product is genuinely durable… if too many units fail, the cost… could be severe"). **(A)**/**(B)**/**(D)** không đúng.
 22. **A (long-lasting)** — "durable" = bền, **lâu hỏng**. *expensive/attractive/lightweight* sai nghĩa.
-23. **B** — email yêu cầu coi **an toàn & chất lượng sản phẩm** là ưu tiên số một ("treat product safety and quality as our top priority"). (A)/(C)/(D) không phải trọng tâm.
-24. **D (a contingency plan)** — Priya yêu cầu mỗi lead chuẩn bị **kế hoạch dự phòng** ("prepare a short contingency plan"). (A)/(B)/(C) không được nêu.
+23. **B** — email yêu cầu coi **an toàn & chất lượng sản phẩm** là ưu tiên số một ("treat product safety and quality as our top priority"). **(A)**/**(C)**/**(D)** không phải trọng tâm.
+24. **D (a contingency plan)** — Priya yêu cầu mỗi lead chuẩn bị **kế hoạch dự phòng** ("prepare a short contingency plan"). **(A)**/**(B)**/**(C)** không được nêu.
 25. **C (evaluated)** — "assessed the risks" ≈ **evaluated** (đã đánh giá). *ignored/increased/postponed* sai nghĩa.

@@ -95,40 +95,88 @@ Then Auri tapped her pen on a line: "This is wrong." She had found a **discrepan
 Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 
 **1.** At the counter, the ______ printed out a copy of the company's account statement for the two managers.
-(A) auditor (B) teller (C) accountant (D) contractor
+
+**(A)** auditor  
+**(B)** teller  
+**(C)** accountant  
+**(D)** contractor
 
 **2.** Before approving anything, Priya checked the current account ______ to see how much cash was available.
-(A) receipt (B) invoice (C) balance (D) mortgage
+
+**(A)** receipt  
+**(B)** invoice  
+**(C)** balance  
+**(D)** mortgage
 
 **3.** The monthly bank ______ listed every deposit and withdrawal made during the period.
-(A) statement (B) collateral (C) teller (D) audit
+
+**(A)** statement  
+**(B)** collateral  
+**(C)** teller  
+**(D)** audit
 
 **4.** To finance the Halston expansion, the company applied for a large ______ from its bank.
-(A) receipt (B) discrepancy (C) balance (D) loan
+
+**(A)** receipt  
+**(B)** discrepancy  
+**(C)** balance  
+**(D)** loan
 
 **5.** The bank offered better terms if Aster secured the debt with a ______ on its headquarters building.
-(A) teller (B) mortgage (C) transaction (D) invoice
+
+**(A)** teller  
+**(B)** mortgage  
+**(C)** transaction  
+**(D)** invoice
 
 **6.** Lenders usually require ______, such as property or equipment, before granting a large loan.
-(A) billing (B) receipt (C) collateral (D) balance
+
+**(A)** billing  
+**(B)** receipt  
+**(C)** collateral  
+**(D)** balance
 
 **7.** Because the ______ on the loan was fairly high, the monthly payments would be a real burden.
-(A) interest rate (B) receipt (C) discrepancy (D) audit
+
+**(A)** interest rate  
+**(B)** receipt  
+**(C)** discrepancy  
+**(D)** audit
 
 **8.** The loan does not have to be repaid all at once; it can be paid off in monthly ______.
-(A) statements (B) tellers (C) mortgages (D) installments
+
+**(A)** statements  
+**(B)** tellers  
+**(C)** mortgages  
+**(D)** installments
 
 **9.** Before signing for the loan, Priya ordered an internal ______ of the company's books.
-(A) invoice (B) audit (C) overdraft (D) receipt
+
+**(A)** invoice  
+**(B)** audit  
+**(C)** overdraft  
+**(D)** receipt
 
 **10.** The company agreed to ______ the whole team for all travel costs from the Halston trip.
-(A) accrue (B) withdraw (C) reimburse (D) deposit
+
+**(A)** accrue  
+**(B)** withdraw  
+**(C)** reimburse  
+**(D)** deposit
 
 **11.** The accountant found a ______ between the company's records and the bank statement.
-(A) discrepancy (B) receipt (C) collateral (D) teller
+
+**(A)** discrepancy  
+**(B)** receipt  
+**(C)** collateral  
+**(D)** teller
 
 **12.** Penalty interest had quietly begun to ______ on the overdue invoice over several months.
-(A) reimburse (B) deposit (C) withdraw (D) accrue
+
+**(A)** reimburse  
+**(B)** deposit  
+**(C)** withdraw  
+**(D)** accrue
 
 ### Part 6 — Text Completion
 
@@ -137,19 +185,19 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > **MARLOWE COMMERCIAL BANK — Account Notice**
 > Dear Valued Customer, this is a summary of recent activity on your business account. We confirm the **(13)______** of $50,000 received on 3 October. Please review each **(14)______** listed on the enclosed statement carefully. We also note that your account briefly exceeded its **(15)______** limit last month, which incurred a fee. Kindly ensure sufficient funds are available before you **(16)______** large amounts in the future.
 
-**13.** (A) receipt (B) deposit (C) mortgage (D) audit
-**14.** (A) collateral (B) teller (C) transaction (D) invoice
-**15.** (A) balance (B) statement (C) receipt (D) overdraft
-**16.** (A) withdraw (B) reimburse (C) accrue (D) audit
+**13.**   **(A)** receipt   **(B)** deposit   **(C)** mortgage   **(D)** audit  
+**14.**   **(A)** collateral   **(B)** teller   **(C)** transaction   **(D)** invoice  
+**15.**   **(A)** balance   **(B)** statement   **(C)** receipt   **(D)** overdraft  
+**16.**   **(A)** withdraw   **(B)** reimburse   **(C)** accrue   **(D)** audit  
 
 **Questions 17–19** refer to the following memo.
 
 > **MEMO — Accounts Payable**
 > Team, before the audit begins, please clean up our records. Several supplier **(17)______** have not yet been paid, and two of them are now seriously **(18)______**. Late fees are accruing daily. Contact each supplier, confirm the **(19)______** balance owed, and schedule payment this week so that nothing is left unpaid before the loan review.
 
-**17.** (A) receipts (B) tellers (C) invoices (D) balances
-**18.** (A) negotiable (B) overdue (C) complimentary (D) binding
-**19.** (A) exempt (B) frugal (C) valid (D) outstanding
+**17.**   **(A)** receipts   **(B)** tellers   **(C)** invoices   **(D)** balances  
+**18.**   **(A)** negotiable   **(B)** overdue   **(C)** complimentary   **(D)** binding  
+**19.**   **(A)** exempt   **(B)** frugal   **(C)** valid   **(D)** outstanding  
 
 ### Part 7 — Reading Comprehension
 
@@ -159,13 +207,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > Ahead of the bank's loan review, senior accountant Aurelia Cortez led an internal audit of the company's bookkeeping. Most records were in order: travel expenses from the Halston trip were properly documented, with a receipt attached to every claim, and staff had been correctly reimbursed. However, the audit uncovered one discrepancy: total expenditure on the expansion did not match the figure on the bank statement. On closer inspection, an overdue supplier invoice had been entered twice, and penalty interest had been quietly accruing on it. Cortez recommended correcting the entry before the loan is finalized.
 
 **20.** Who led the internal audit?
-(A) A bank teller (B) The CEO (C) A senior accountant (D) A supplier
+
+**(A)** A bank teller  
+**(B)** The CEO  
+**(C)** A senior accountant  
+**(D)** A supplier
 
 **21.** What problem did the audit uncover?
-(A) Staff had not been reimbursed (B) The company's figures did not match the bank statement (C) All the receipts were missing (D) The audit could not be completed
+
+**(A)** Staff had not been reimbursed  
+**(B)** The company's figures did not match the bank statement  
+**(C)** All the receipts were missing  
+**(D)** The audit could not be completed
 
 **22.** The word "accruing" in the report is closest in meaning to
-(A) building up (B) disappearing (C) being refunded (D) being cancelled
+
+**(A)** building up  
+**(B)** disappearing  
+**(C)** being refunded  
+**(D)** being cancelled
 
 **Questions 23–25** refer to the following article.
 
@@ -173,13 +233,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > To fund its move into Halston, Aster Home Technologies is negotiating a major bank loan. According to sources, the bank has asked the company to put up its headquarters as security, in the form of a mortgage. The loan would carry a relatively high interest rate and be repaid in fixed monthly installments over five years. Analysts note that the loan alone will not cover the full cost of the expansion. Founder Diane Whitfield is reportedly preparing to seek outside investors as well — a sign of just how expensive the Halston gamble has become.
 
 **23.** What has the bank asked Aster to provide as security?
-(A) A cash deposit (B) Its Halston store (C) Its product designs (D) Its headquarters building
+
+**(A)** A cash deposit  
+**(B)** Its Halston store  
+**(C)** Its product designs  
+**(D)** Its headquarters building
 
 **24.** How will the loan be repaid?
-(A) In a single payment (B) In fixed monthly installments (C) Only after the launch (D) Through arbitration
+
+**(A)** In a single payment  
+**(B)** In fixed monthly installments  
+**(C)** Only after the launch  
+**(D)** Through arbitration
 
 **25.** What does the article suggest Aster will do next?
-(A) Seek outside investors (B) Sell its headquarters (C) Cancel the Halston plan (D) Merge with the bank
+
+**(A)** Seek outside investors  
+**(B)** Sell its headquarters  
+**(C)** Cancel the Halston plan  
+**(D)** Merge with the bank
 
 ---
 
@@ -209,9 +281,9 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 19. **D (outstanding)** — "confirm the outstanding balance owed" = số dư chưa thanh toán. *exempt/frugal/valid* sai nghĩa. ⚠️ outstanding cũng = xuất sắc.
 
 ### Part 7
-20. **C** — "senior **accountant** Aurelia Cortez led an internal audit". (A) teller / (B) CEO / (D) supplier đều sai.
-21. **B** — audit phát hiện "total expenditure… did **not match** the figure on the bank statement" = số liệu không khớp. (A)/(C)/(D) trái với bài.
+20. **C** — "senior **accountant** Aurelia Cortez led an internal audit". **(A)** teller / **(B)** CEO / **(D)** supplier đều sai.
+21. **B** — audit phát hiện "total expenditure… did **not match** the figure on the bank statement" = số liệu không khớp. **(A)**/**(C)**/**(D)** trái với bài.
 22. **A (building up)** — "accruing" (interest) = cộng dồn/tích lũy dần. *disappearing/being refunded/being cancelled* trái nghĩa.
-23. **D** — ngân hàng đòi "put up its **headquarters** as security, in the form of a mortgage" = thế chấp trụ sở. (A)/(B)/(C) không đúng.
-24. **B** — "repaid in fixed **monthly installments** over five years". (A)/(C)/(D) sai.
-25. **A** — Diane "preparing to **seek outside investors**". (B)/(C)/(D) không được nêu.
+23. **D** — ngân hàng đòi "put up its **headquarters** as security, in the form of a mortgage" = thế chấp trụ sở. **(A)**/**(B)**/**(C)** không đúng.
+24. **B** — "repaid in fixed **monthly installments** over five years". **(A)**/**(C)**/**(D)** sai.
+25. **A** — Diane "preparing to **seek outside investors**". **(B)**/**(C)**/**(D)** không được nêu.

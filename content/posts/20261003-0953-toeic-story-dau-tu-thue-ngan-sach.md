@@ -93,40 +93,88 @@ Then came the **budget** itself. Priya had to **allocate** **funds** to every de
 Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 
 **1.** The board debated whether the Aria project was a sound ______ or too great a risk.
-(A) taxation (B) investment (C) receipt (D) deficit
+
+**(A)** taxation  
+**(B)** investment  
+**(C)** receipt  
+**(D)** deficit
 
 **2.** At the annual meeting, every ______ has the right to vote on major company decisions.
-(A) auditor (B) teller (C) shareholder (D) supplier
+
+**(A)** auditor  
+**(B)** teller  
+**(C)** shareholder  
+**(D)** supplier
 
 **3.** The investor studied the company carefully before adding its shares to her ______.
-(A) portfolio (B) budget (C) receipt (D) liability
+
+**(A)** portfolio  
+**(B)** budget  
+**(C)** receipt  
+**(D)** liability
 
 **4.** When profits are strong, the company pays its shareholders a ______ on each share.
-(A) deficit (B) mortgage (C) collateral (D) dividend
+
+**(A)** deficit  
+**(B)** mortgage  
+**(C)** collateral  
+**(D)** dividend
 
 **5.** Aria's patents and brand are treated as a valuable ______ on the company's books.
-(A) liability (B) asset (C) deduction (D) deficit
+
+**(A)** liability  
+**(B)** asset  
+**(C)** deduction  
+**(D)** deficit
 
 **6.** A bank loan appears on the balance sheet not as an asset but as a ______.
-(A) revenue (B) surplus (C) liability (D) dividend
+
+**(A)** revenue  
+**(B)** surplus  
+**(C)** liability  
+**(D)** dividend
 
 **7.** Investors were attracted by the high ______ the project promised compared with a savings account.
-(A) yield (B) budget (C) receipt (D) audit
+
+**(A)** yield  
+**(B)** budget  
+**(C)** receipt  
+**(D)** audit
 
 **8.** Technology stocks can be extremely ______, rising and falling sharply within a single day.
-(A) exempt (B) frugal (C) projected (D) volatile
+
+**(A)** exempt  
+**(B)** frugal  
+**(C)** projected  
+**(D)** volatile
 
 **9.** The finance team met to decide how to ______ limited funds across the departments.
-(A) deduct (B) allocate (C) reimburse (D) fluctuate
+
+**(A)** deduct  
+**(B)** allocate  
+**(C)** reimburse  
+**(D)** fluctuate
 
 **10.** After heavy spending on the expansion, the company was running a budget ______.
-(A) surplus (B) revenue (C) deficit (D) dividend
+
+**(A)** surplus  
+**(B)** revenue  
+**(C)** deficit  
+**(D)** dividend
 
 **11.** Most of the company's ______ comes from sales of its smart-home appliances.
-(A) revenue (B) liability (C) collateral (D) deduction
+
+**(A)** revenue  
+**(B)** liability  
+**(C)** collateral  
+**(D)** deduction
 
 **12.** To survive the tight year, managers were told to take a ______ approach to every expense.
-(A) volatile (B) projected (C) exempt (D) frugal
+
+**(A)** volatile  
+**(B)** projected  
+**(C)** exempt  
+**(D)** frugal
 
 ### Part 6 — Text Completion
 
@@ -135,19 +183,19 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > **INVESTOR UPDATE — Aster Home Technologies**
 > Thank you for your interest in Aster. To finance our Halston expansion, we plan to issue new **(13)______** to raise additional capital. While the technology sector can **(14)______** sharply in the short term, we believe the long-term **(15)______** on this investment will be strong. The **(16)______** we raise will go directly toward manufacturing and the Aria launch, not toward paying off old debt.
 
-**13.** (A) receipts (B) stock (C) collateral (D) invoices
-**14.** (A) reimburse (B) allocate (C) fluctuate (D) deduct
-**15.** (A) return (B) liability (C) deduction (D) teller
-**16.** (A) assets (B) tellers (C) receipts (D) funds
+**13.**   **(A)** receipts   **(B)** stock   **(C)** collateral   **(D)** invoices  
+**14.**   **(A)** reimburse   **(B)** allocate   **(C)** fluctuate   **(D)** deduct  
+**15.**   **(A)** return   **(B)** liability   **(C)** deduction   **(D)** teller  
+**16.**   **(A)** assets   **(B)** tellers   **(C)** receipts   **(D)** funds  
 
 **Questions 17–19** refer to the following memo.
 
 > **MEMO — Year-End Finance**
 > As the fiscal year closes, please submit all figures for review. Each department must stay within its approved **(17)______** for the next quarter. When we file our tax return, remember that certain research costs qualify for a **(18)______**, and a few R&D activities may even be fully **(19)______** from tax. Accurate records will help us claim everything we are owed.
 
-**17.** (A) surplus (B) budget (C) dividend (D) portfolio
-**18.** (A) liability (B) revenue (C) deduction (D) collateral
-**19.** (A) volatile (B) frugal (C) overdue (D) exempt
+**17.**   **(A)** surplus   **(B)** budget   **(C)** dividend   **(D)** portfolio  
+**18.**   **(A)** liability   **(B)** revenue   **(C)** deduction   **(D)** collateral  
+**19.**   **(A)** volatile   **(B)** frugal   **(C)** overdue   **(D)** exempt  
 
 ### Part 7 — Reading Comprehension
 
@@ -157,13 +205,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > At a tense shareholders' meeting this week, Aster Home Technologies asked investors to back its Halston expansion. Founder Diane Whitfield argued that Aria represents a rare investment opportunity, promising a strong return once the product launches. Not everyone was convinced: some shareholders worried that issuing new stock would reduce their dividends, and one noted that the smart-home market remains highly volatile. Chairman Harold Vance repeated his view that selling to Neura would be the safer financial choice. Whitfield disagreed, insisting the company can fund its own future.
 
 **20.** Why did Aster hold the meeting?
-(A) To announce a merger (B) To ask investors to fund the Halston expansion (C) To pay a special dividend (D) To sell the company to Neura
+
+**(A)** To announce a merger  
+**(B)** To ask investors to fund the Halston expansion  
+**(C)** To pay a special dividend  
+**(D)** To sell the company to Neura
 
 **21.** Why were some shareholders worried?
-(A) The product had failed (B) Taxes would rise (C) Their dividends might be reduced (D) The factory would close
+
+**(A)** The product had failed  
+**(B)** Taxes would rise  
+**(C)** Their dividends might be reduced  
+**(D)** The factory would close
 
 **22.** The word "volatile" in the article is closest in meaning to
-(A) unstable and changeable (B) completely safe (C) very profitable (D) slow to change
+
+**(A)** unstable and changeable  
+**(B)** completely safe  
+**(C)** very profitable  
+**(D)** slow to change
 
 **Questions 23–25** refer to the following report.
 
@@ -171,13 +231,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > As the fiscal year draws to a close, the finance department has released a sobering summary. Heavy spending on the Halston expansion has pushed the company into a deficit, with no surplus expected until the Aria line begins to sell. Projected revenue for next year is promising, but profit will depend entirely on a successful launch. To control costs, management has decided to cut back on all non-essential spending and adopt a frugal approach across every department. "Every dollar we save now," Priya Nair told staff, "is a dollar we can put into making Aria a success."
 
 **23.** What is the company's current financial position?
-(A) A large surplus (B) A deficit (C) Debt-free (D) Record profits
+
+**(A)** A large surplus  
+**(B)** A deficit  
+**(C)** Debt-free  
+**(D)** Record profits
 
 **24.** What has management decided to do?
-(A) Increase every department's budget (B) Pay a large dividend (C) Hire more staff (D) Cut back on non-essential spending
+
+**(A)** Increase every department's budget  
+**(B)** Pay a large dividend  
+**(C)** Hire more staff  
+**(D)** Cut back on non-essential spending
 
 **25.** The word "frugal" in the report is closest in meaning to
-(A) wasteful (B) generous (C) thrifty (D) wealthy
+
+**(A)** wasteful  
+**(B)** generous  
+**(C)** thrifty  
+**(D)** wealthy
 
 ---
 
@@ -207,9 +279,9 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 19. **D (exempt)** — "fully exempt from tax" = được miễn thuế. *volatile/frugal/overdue* sai nghĩa. ⚠️ exempt **from**.
 
 ### Part 7
-20. **B** — Aster họp để "**ask investors to back its Halston expansion**" = gọi vốn cho mở rộng. (A)/(C)/(D) sai/không nêu.
-21. **C** — cổ đông lo "issuing new stock would **reduce their dividends**". (A)/(B)/(D) không đúng.
+20. **B** — Aster họp để "**ask investors to back its Halston expansion**" = gọi vốn cho mở rộng. **(A)**/**(C)**/**(D)** sai/không nêu.
+21. **C** — cổ đông lo "issuing new stock would **reduce their dividends**". **(A)**/**(B)**/**(D)** không đúng.
 22. **A (unstable and changeable)** — "volatile" (market) = biến động, thất thường. *completely safe/very profitable/slow to change* trái nghĩa/sai.
-23. **B** — "pushed the company into a **deficit**, with no surplus expected" = đang thâm hụt. (A)/(C)/(D) trái với bài.
-24. **D** — quản lý quyết "**cut back on** all non-essential spending" = cắt giảm. (A)/(B)/(C) trái/không nêu.
+23. **B** — "pushed the company into a **deficit**, with no surplus expected" = đang thâm hụt. **(A)**/**(C)**/**(D)** trái với bài.
+24. **D** — quản lý quyết "**cut back on** all non-essential spending" = cắt giảm. **(A)**/**(B)**/**(C)** trái/không nêu.
 25. **C (thrifty)** — "frugal" = dè sẻn, tiết kiệm. *wasteful/generous/wealthy* trái nghĩa/sai.

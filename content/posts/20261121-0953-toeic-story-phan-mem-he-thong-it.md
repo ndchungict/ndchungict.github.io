@@ -84,40 +84,88 @@ The team also planned for after launch: they set up a **help desk** and a proces
 Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 
 **1.** Aria is a smart-home ______ that depends heavily on its software.
-(A) glitch (B) device (C) server (D) interface
+
+**(A)** glitch  
+**(B)** device  
+**(C)** server  
+**(D)** interface
 
 **2.** The team had to ______ the operating system on every prototype unit.
-(A) restore (B) upgrade (C) troubleshoot (D) install
+
+**(A)** restore  
+**(B)** upgrade  
+**(C)** troubleshoot  
+**(D)** install
 
 **3.** Engineers had to ______ the settings to match Halston's network.
-(A) configure (B) crash (C) back up (D) install
+
+**(A)** configure  
+**(B)** crash  
+**(C)** back up  
+**(D)** install
 
 **4.** They also had to ______ the firmware to the latest version.
-(A) restore (B) troubleshoot (C) upgrade (D) configure
+
+**(A)** restore  
+**(B)** troubleshoot  
+**(C)** upgrade  
+**(D)** configure
 
 **5.** When the ______ went down, none of the devices could connect.
-(A) interface (B) server (C) glitch (D) manual
+
+**(A)** interface  
+**(B)** server  
+**(C)** glitch  
+**(D)** manual
 
 **6.** John told Ben to always ______ the data before making any change.
-(A) crash (B) configure (C) install (D) back up
+
+**(A)** crash  
+**(B)** configure  
+**(C)** install  
+**(D)** back up
 
 **7.** If an update failed, they could ______ the data from the last backup.
-(A) restore (B) upgrade (C) troubleshoot (D) install
+
+**(A)** restore  
+**(B)** upgrade  
+**(C)** troubleshoot  
+**(D)** install
 
 **8.** The early build was buggy, so the team spent days trying to ______ it.
-(A) configure (B) install (C) troubleshoot (D) back up
+
+**(A)** configure  
+**(B)** install  
+**(C)** troubleshoot  
+**(D)** back up
 
 **9.** A minor ______ caused the status light to blink at the wrong time.
-(A) server (B) glitch (C) network (D) interface
+
+**(A)** server  
+**(B)** glitch  
+**(C)** network  
+**(D)** interface
 
 **10.** For no clear reason, the control app would occasionally ______.
-(A) install (B) configure (C) upgrade (D) crash
+
+**(A)** install  
+**(B)** configure  
+**(C)** upgrade  
+**(D)** crash
 
 **11.** The software was not ______ with some routers common in Halston.
-(A) compatible (B) portable (C) durable (D) obsolete
+
+**(A)** compatible  
+**(B)** portable  
+**(C)** durable  
+**(D)** obsolete
 
 **12.** He redesigned the ______ to make the app easier to use.
-(A) database (B) server (C) interface (D) glitch
+
+**(A)** database  
+**(B)** server  
+**(C)** interface  
+**(D)** glitch
 
 ### Part 6 — Text Completion
 
@@ -126,20 +174,20 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > **MEMO — Halston Systems Setup**
 > Before launch, the IT team must finish the operational systems. Set up the customer **(13)______** and connect every store to the company **(14)______**. Test the app's core **(15)______** on real devices, and always **(16)______** the data before applying any change.
 
-**13.** (A) interface (B) glitch (C) database (D) manual
-**14.** (A) network (B) technician (C) server (D) glitch
-**15.** (A) hardware (B) voltage (C) interface (D) functionality
-**16.** (A) crash (B) back up (C) install (D) upgrade
+**13.**   **(A)** interface   **(B)** glitch   **(C)** database   **(D)** manual  
+**14.**   **(A)** network   **(B)** technician   **(C)** server   **(D)** glitch  
+**15.**   **(A)** hardware   **(B)** voltage   **(C)** interface   **(D)** functionality  
+**16.**   **(A)** crash   **(B)** back up   **(C)** install   **(D)** upgrade  
 
 **Questions 17–20** refer to the following notice.
 
 > **NOTICE — Aria Support**
 > If your Aria stops responding, first make sure the app **(17)______** is up to date. Aria is **(18)______** with most home routers, but a few older models are not supported. If problems continue, contact our **(19)______**, where a trained **(20)______** can walk you through the fix.
 
-**17.** (A) voltage (B) software (C) network (D) glitch
-**18.** (A) portable (B) obsolete (C) durable (D) compatible
-**19.** (A) help desk (B) database (C) server (D) interface
-**20.** (A) glitch (B) database (C) technician (D) network
+**17.**   **(A)** voltage   **(B)** software   **(C)** network   **(D)** glitch  
+**18.**   **(A)** portable   **(B)** obsolete   **(C)** durable   **(D)** compatible  
+**19.**   **(A)** help desk   **(B)** database   **(C)** server   **(D)** interface  
+**20.**   **(A)** glitch   **(B)** database   **(C)** technician   **(D)** network  
 
 ### Part 7 — Reading Comprehension
 
@@ -149,13 +197,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > With the hardware fixed, the IT team turned to software. They installed and configured Aria's control app on every unit, upgraded the firmware, and built the database, server, and network systems needed to run Aria in Halston. Early builds were unstable: engineers had to troubleshoot a series of glitches, and the control app occasionally crashed. They also found the software was not compatible with a few common routers. A help desk was set up so that a technician could support customers after launch.
 
 **21.** What did the IT team do after the hardware was fixed?
-(A) Redesigned the hardware again (B) Cancelled the software (C) Installed and configured Aria's software and built its systems (D) Outsourced everything
+
+**(A)** Redesigned the hardware again  
+**(B)** Cancelled the software  
+**(C)** Installed and configured Aria's software and built its systems  
+**(D)** Outsourced everything
 
 **22.** What problem did engineers find with the software?
-(A) It was not compatible with some routers (B) It had no interface (C) It was too cheap (D) The server was sold
+
+**(A)** It was not compatible with some routers  
+**(B)** It had no interface  
+**(C)** It was too cheap  
+**(D)** The server was sold
 
 **23.** Why was a help desk set up?
-(A) To design the hardware (B) To replace the network (C) To file a patent (D) So a technician could support customers
+
+**(A)** To design the hardware  
+**(B)** To replace the network  
+**(C)** To file a patent  
+**(D)** So a technician could support customers
 
 **Questions 24–26** refer to the following article.
 
@@ -163,13 +223,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > Aster Home Technologies has all but finished the software behind its Aria smart-home line ahead of the Halston launch. Engineers have built the servers, network, and database that will run the service, and set up a help desk for customers. Most early bugs have been fixed. One problem, however, has proved stubborn: the system still crashes briefly and at random, with no error log to explain why. Engineers say a rare, hard-to-reproduce glitch like this is the most worrying kind, and they plan to take the system back to the lab for closer testing.
 
 **24.** What has Aster nearly finished?
-(A) A new factory (B) The software behind Aria (C) A marketing campaign (D) A new patent
+
+**(A)** A new factory  
+**(B)** The software behind Aria  
+**(C)** A marketing campaign  
+**(D)** A new patent
 
 **25.** Which problem has proved stubborn?
-(A) The system crashes briefly and at random, with no clear cause (B) The servers were sold (C) The help desk closed (D) The hardware overheats again
+
+**(A)** The system crashes briefly and at random, with no clear cause  
+**(B)** The servers were sold  
+**(C)** The help desk closed  
+**(D)** The hardware overheats again
 
 **26.** What do engineers plan to do next?
-(A) Cancel the launch (B) Ignore the glitch (C) Take the system back to the lab for closer testing (D) Fire the technician
+
+**(A)** Cancel the launch  
+**(B)** Ignore the glitch  
+**(C)** Take the system back to the lab for closer testing  
+**(D)** Fire the technician
 
 ---
 
@@ -200,9 +272,9 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 20. **C (technician)** — "a trained technician can walk you through the fix" = kỹ thuật viên. *glitch/database/network* sai nghĩa.
 
 ### Part 7
-21. **C** — sau khi xong phần cứng, đội IT "**installed and configured** Aria's software… built the **database, server, and network**". (A)/(B)/(D) sai/trái.
-22. **A** — phát hiện phần mềm "was not **compatible** with a few common routers". (B)/(C)/(D) sai.
-23. **D** — lập help desk "so that a **technician** could **support customers** after launch". (A)/(B)/(C) sai.
-24. **B** — Aster gần xong "the **software** behind its Aria line". (A)/(C)/(D) sai.
-25. **A** — vấn đề dai dẳng: "the system still **crashes briefly and at random**, with no error log". (B)/(C)/(D) sai.
-26. **C** — kế tiếp: "take the system **back to the lab for closer testing**" → dẫn Ch 22. (A)/(B)/(D) sai.
+21. **C** — sau khi xong phần cứng, đội IT "**installed and configured** Aria's software… built the **database, server, and network**". **(A)**/**(B)**/**(D)** sai/trái.
+22. **A** — phát hiện phần mềm "was not **compatible** with a few common routers". **(B)**/**(C)**/**(D)** sai.
+23. **D** — lập help desk "so that a **technician** could **support customers** after launch". **(A)**/**(B)**/**(C)** sai.
+24. **B** — Aster gần xong "the **software** behind its Aria line". **(A)**/**(C)**/**(D)** sai.
+25. **A** — vấn đề dai dẳng: "the system still **crashes briefly and at random**, with no error log". **(B)**/**(C)**/**(D)** sai.
+26. **C** — kế tiếp: "take the system **back to the lab for closer testing**" → dẫn Ch 22. **(A)**/**(B)**/**(D)** sai.

@@ -83,40 +83,88 @@ The whole hall went silent. Ben took a breath and spoke his command to Aria…
 Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 
 **1.** Aria's ______ was held at the Grand Harbour Hotel in Halston.
-(A) rehearsal (B) box office (C) premiere (D) intermission
+
+**(A)** rehearsal  
+**(B)** box office  
+**(C)** premiere  
+**(D)** intermission
 
 **2.** With her eye for design, Rosie acted as the ______ of the display.
-(A) curator (B) volunteer (C) sponsor (D) audience
+
+**(A)** curator  
+**(B)** volunteer  
+**(C)** sponsor  
+**(D)** audience
 
 **3.** The main hall was arranged like an art ______, not a product demo.
-(A) admission (B) rehearsal (C) lineup (D) exhibition
+
+**(A)** admission  
+**(B)** rehearsal  
+**(C)** lineup  
+**(D)** exhibition
 
 **4.** Each unit sat on its own stand, turning the room into a ______.
-(A) box office (B) gallery (C) performance (D) sponsor
+
+**(A)** box office  
+**(B)** gallery  
+**(C)** performance  
+**(D)** sponsor
 
 **5.** The Aria units were ______ under soft lighting for guests to admire.
-(A) sold out (B) rehearsed (C) on display (D) sponsored
+
+**(A)** sold out  
+**(B)** rehearsed  
+**(C)** on display  
+**(D)** sponsored
 
 **6.** A wall of live screens was set up to ______ the product's features.
-(A) showcase (B) admit (C) rehearse (D) volunteer
+
+**(A)** showcase  
+**(B)** admit  
+**(C)** rehearse  
+**(D)** volunteer
 
 **7.** That afternoon, the team held a final ______ of the stage demo.
-(A) sponsor (B) gallery (C) exhibit (D) rehearsal
+
+**(A)** sponsor  
+**(B)** gallery  
+**(C)** exhibit  
+**(D)** rehearsal
 
 **8.** Tickets had gone fast, and the event was completely ______ days in advance.
-(A) on display (B) sold out (C) renowned (D) showcased
+
+**(A)** on display  
+**(B)** sold out  
+**(C)** renowned  
+**(D)** showcased
 
 **9.** Guests collected their tickets from a pop-up ______ at the entrance.
-(A) gallery (B) lineup (C) box office (D) rehearsal
+
+**(A)** gallery  
+**(B)** lineup  
+**(C)** box office  
+**(D)** rehearsal
 
 **10.** The ______ that evening included Brightway, the press, and even Neura.
-(A) audience (B) curator (C) sponsor (D) box office
+
+**(A)** audience  
+**(B)** curator  
+**(C)** sponsor  
+**(D)** box office
 
 **11.** Logos of every ______ lined the backdrop behind the stage.
-(A) volunteer (B) audience (C) curator (D) sponsor
+
+**(A)** volunteer  
+**(B)** audience  
+**(C)** curator  
+**(D)** sponsor
 
 **12.** Daniel timed every beat of the stage ______ — a live demo of Aria.
-(A) admission (B) performance (C) box office (D) gallery
+
+**(A)** admission  
+**(B)** performance  
+**(C)** box office  
+**(D)** gallery
 
 ### Part 6 — Text Completion
 
@@ -125,20 +173,20 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > **PROGRAM — Aria Launch Night**
 > Welcome to the premiere of Aria. Please note that **(13)______** is by ticket only; if you have not collected yours, visit the desk in the lobby. Each Aria unit is presented as an **(14)______** on its own stand, so feel free to walk the floor. Tonight's **(15)______** of live demos begins at 8 p.m., with a short **(16)______** halfway through so you can try the devices yourself.
 
-**13.** (A) rehearsal (B) sponsor (C) admission (D) gallery
-**14.** (A) exhibit (B) audience (C) box office (D) premiere
-**15.** (A) curator (B) rehearsal (C) sponsor (D) lineup
-**16.** (A) box office (B) intermission (C) gallery (D) admission
+**13.**   **(A)** rehearsal   **(B)** sponsor   **(C)** admission   **(D)** gallery  
+**14.**   **(A)** exhibit   **(B)** audience   **(C)** box office   **(D)** premiere  
+**15.**   **(A)** curator   **(B)** rehearsal   **(C)** sponsor   **(D)** lineup  
+**16.**   **(A)** box office   **(B)** intermission   **(C)** gallery   **(D)** admission  
 
 **Questions 17–20** refer to the following memo.
 
 > **MEMO — Launch Night Staffing**
 > Thank you to everyone helping on Friday. Staff **(17)______** will greet guests at the door and guide them around the display. The show has **(18)______** completely, so please expect a full house. Remember that our **(19)______** — the companies funding the event — must be thanked from the stage. Do a final walk-through with the team right after the last **(20)______**.
 
-**17.** (A) volunteers (B) critics (C) curators (D) sponsors
-**18.** (A) rehearsed (B) showcased (C) sold out (D) premiered
-**19.** (A) audiences (B) exhibits (C) galleries (D) sponsors
-**20.** (A) admission (B) rehearsal (C) box office (D) intermission
+**17.**   **(A)** volunteers   **(B)** critics   **(C)** curators   **(D)** sponsors  
+**18.**   **(A)** rehearsed   **(B)** showcased   **(C)** sold out   **(D)** premiered  
+**19.**   **(A)** audiences   **(B)** exhibits   **(C)** galleries   **(D)** sponsors  
+**20.**   **(A)** admission   **(B)** rehearsal   **(C)** box office   **(D)** intermission  
 
 ### Part 7 — Reading Comprehension
 
@@ -148,13 +196,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > Aria's premiere was staged at the Grand Harbour Hotel in Halston. Rather than a standard product demo, the team, led by Rosie Park as curator, turned the hall into an art-style exhibition: each Aria unit sat on its own stand, on display under soft light, while a wall of screens showcased its features. The evening had sold out days in advance. The audience included Brightway, the press, and representatives from Neura. After a keynote and a lineup of live demos — with a short intermission — the biggest demo was left for last, and Daniel chose Ben, the recovered trainee, to run it.
 
 **21.** How was the hall arranged?
-(A) As a normal product demo (B) As an art-style exhibition with units on display (C) As a movie theater (D) As a warehouse
+
+**(A)** As a normal product demo  
+**(B)** As an art-style exhibition with units on display  
+**(C)** As a movie theater  
+**(D)** As a warehouse
 
 **22.** What was true of the tickets?
-(A) They were free (B) Very few were sold (C) They were all refunded (D) The event had sold out days in advance
+
+**(A)** They were free  
+**(B)** Very few were sold  
+**(C)** They were all refunded  
+**(D)** The event had sold out days in advance
 
 **23.** Who was chosen to run the biggest demo?
-(A) Ben, the recovered trainee (B) A Neura executive (C) Rosie Park (D) A journalist
+
+**(A)** Ben, the recovered trainee  
+**(B)** A Neura executive  
+**(C)** Rosie Park  
+**(D)** A journalist
 
 **Questions 24–26** refer to the following article.
 
@@ -162,13 +222,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > Tonight in Halston, Aster Home Technologies unveils its Aria smart-home line at a sold-out premiere. The launch is the culmination of a brutal year — a supply crisis, a product defect, an all-out redesign — and it may decide whether the company stays independent or is absorbed by its larger rival, Neura, whose executives are in the audience. In an unusual choice, the pivotal live demonstration will reportedly be run not by a senior figure but by a junior trainee. Everything Aster has built now hangs on the next few minutes.
 
 **24.** What is happening in Halston tonight?
-(A) Aster is closing down (B) Neura is launching a product (C) Aster unveils Aria at a sold-out premiere (D) A court hearing
+
+**(A)** Aster is closing down  
+**(B)** Neura is launching a product  
+**(C)** Aster unveils Aria at a sold-out premiere  
+**(D)** A court hearing
 
 **25.** What may the launch decide?
-(A) Whether Aster stays independent or is absorbed by Neura (B) The price of Aria (C) Who the CEO is (D) The venue for next year
+
+**(A)** Whether Aster stays independent or is absorbed by Neura  
+**(B)** The price of Aria  
+**(C)** Who the CEO is  
+**(D)** The venue for next year
 
 **26.** What is unusual about the demonstration?
-(A) It is pre-recorded (B) It will be run by a junior trainee (C) There is no demo at all (D) Neura will run it
+
+**(A)** It is pre-recorded  
+**(B)** It will be run by a junior trainee  
+**(C)** There is no demo at all  
+**(D)** Neura will run it
 
 ---
 
@@ -199,9 +271,9 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 20. **B (rehearsal)** — "a final walk-through… after the last rehearsal" = tập dượt. *admission/box office/intermission* sai nghĩa.
 
 ### Part 7
-21. **B** — sảnh dàn dựng "as an **art-style exhibition**… units **on display**". (A)/(C)/(D) sai.
-22. **D** — vé "had **sold out days in advance**". (A)/(B)/(C) sai.
-23. **A** — Daniel chọn "**Ben, the recovered trainee**, to run it". (B)/(C)/(D) sai.
-24. **C** — tối nay Aster "unveils its Aria… at a **sold-out premiere**". (A)/(B)/(D) sai.
-25. **A** — có thể định đoạt "whether the company **stays independent or is absorbed by… Neura**". (B)/(C)/(D) sai.
-26. **B** — điều bất thường: màn demo then chốt "will be run… by a **junior trainee**". (A)/(C)/(D) sai.
+21. **B** — sảnh dàn dựng "as an **art-style exhibition**… units **on display**". **(A)**/**(C)**/**(D)** sai.
+22. **D** — vé "had **sold out days in advance**". **(A)**/**(B)**/**(C)** sai.
+23. **A** — Daniel chọn "**Ben, the recovered trainee**, to run it". **(B)**/**(C)**/**(D)** sai.
+24. **C** — tối nay Aster "unveils its Aria… at a **sold-out premiere**". **(A)**/**(B)**/**(D)** sai.
+25. **A** — có thể định đoạt "whether the company **stays independent or is absorbed by… Neura**". **(B)**/**(C)**/**(D)** sai.
+26. **B** — điều bất thường: màn demo then chốt "will be run… by a **junior trainee**". **(A)**/**(C)**/**(D)** sai.

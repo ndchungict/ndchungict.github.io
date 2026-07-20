@@ -84,40 +84,88 @@ On the ninth round, near three in the morning, the temperature line on the scree
 Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 
 **1.** After the recall scare, the whole burden of saving Aria shifted to the ______ and development team.
-(A) warehouse (B) recall (C) research (D) shipment
+
+**(A)** warehouse  
+**(B)** recall  
+**(C)** research  
+**(D)** shipment
 
 **2.** Instead of patching the old chip, Sophia pushed for real ______ in the power circuit.
-(A) innovation (B) inventory (C) surcharge (D) breakdown
+
+**(A)** innovation  
+**(B)** inventory  
+**(C)** surcharge  
+**(D)** breakdown
 
 **3.** The team took an ______ approach so that no single chip could overheat the whole device.
-(A) obsolete (B) overdue (C) durable (D) innovative
+
+**(A)** obsolete  
+**(B)** overdue  
+**(C)** durable  
+**(D)** innovative
 
 **4.** From a rough ______ on the whiteboard, they built a working model in two days.
-(A) warehouse (B) concept (C) refund (D) shift
+
+**(A)** warehouse  
+**(B)** concept  
+**(C)** refund  
+**(D)** shift
 
 **5.** Engineers built a new ______ to test the redesigned circuit.
-(A) prototype (B) invoice (C) surcharge (D) foreman
+
+**(A)** prototype  
+**(B)** invoice  
+**(C)** surcharge  
+**(D)** foreman
 
 **6.** A quick ______ confirmed that the redesign was possible within the remaining time and budget.
-(A) purchase order (B) clearance sale (C) feasibility study (D) night shift
+
+**(A)** purchase order  
+**(B)** clearance sale  
+**(C)** feasibility study  
+**(D)** night shift
 
 **7.** The real question was whether the fix would be ______ before the fixed launch date.
-(A) fragile (B) viable (C) defective (D) vacant
+
+**(A)** fragile  
+**(B)** viable  
+**(C)** defective  
+**(D)** vacant
 
 **8.** Before mass testing, the team ran a small ______ on just a few units.
-(A) recall (B) surcharge (C) batch (D) pilot
+
+**(A)** recall  
+**(B)** surcharge  
+**(C)** batch  
+**(D)** pilot
 
 **9.** Testing was carried out in several ______, from small samples to full heat trials.
-(A) shifts (B) invoices (C) phases (D) hazards
+
+**(A)** shifts  
+**(B)** invoices  
+**(C)** phases  
+**(D)** hazards
 
 **10.** Each night the engineers reviewed the ______ from the temperature sensors.
-(A) findings (B) surcharges (C) carriers (D) standards
+
+**(A)** findings  
+**(B)** surcharges  
+**(C)** carriers  
+**(D)** standards
 
 **11.** After each round, they ______ the circuit layout to improve cooling.
-(A) dispatched (B) outsourced (C) halted (D) refined
+
+**(A)** dispatched  
+**(B)** outsourced  
+**(C)** halted  
+**(D)** refined
 
 **12.** Sophia asked the hardware and software groups to ______ closely on the fix.
-(A) inspect (B) collaborate (C) expedite (D) recall
+
+**(A)** inspect  
+**(B)** collaborate  
+**(C)** expedite  
+**(D)** recall
 
 ### Part 6 — Text Completion
 
@@ -126,20 +174,20 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > **MEMO — Aria Redesign, R&D**
 > Team, the product **(13)______** effort is now our top priority. We will not simply patch the old part; we will redesign it to **(14)______** its cooling and stability. Please draw on the **(15)______** of our most senior engineers and work closely across hardware and software. Each change to the prototype must be tested, and we will **(16)______** the design after every round until it is stable.
 
-**13.** (A) warehouse (B) development (C) recall (D) surcharge
-**14.** (A) outsource (B) halt (C) dispatch (D) enhance
-**15.** (A) expertise (B) inventory (C) shipment (D) surplus
-**16.** (A) inspect (B) recall (C) modify (D) expedite
+**13.**   **(A)** warehouse   **(B)** development   **(C)** recall   **(D)** surcharge  
+**14.**   **(A)** outsource   **(B)** halt   **(C)** dispatch   **(D)** enhance  
+**15.**   **(A)** expertise   **(B)** inventory   **(C)** shipment   **(D)** surplus  
+**16.**   **(A)** inspect   **(B)** recall   **(C)** modify   **(D)** expedite  
 
 **Questions 17–20** refer to the following report.
 
 > **Aria Fix — Testing Update**
 > The redesigned power circuit has entered the testing **(17)______**. After a small **(18)______** on a handful of units, the team moved to full heat **(19)______**, pushing the devices harder than in real use. Early results are promising: for the first time, the units stayed cool under load, which the team is cautiously calling a **(20)______**.
 
-**17.** (A) invoice (B) phase (C) recall (D) hazard
-**18.** (A) refund (B) foreman (C) surcharge (D) pilot
-**19.** (A) shifts (B) invoices (C) trials (D) standards
-**20.** (A) breakthrough (B) breakdown (C) surcharge (D) warehouse
+**17.**   **(A)** invoice   **(B)** phase   **(C)** recall   **(D)** hazard  
+**18.**   **(A)** refund   **(B)** foreman   **(C)** surcharge   **(D)** pilot  
+**19.**   **(A)** shifts   **(B)** invoices   **(C)** trials   **(D)** standards  
+**20.**   **(A)** breakthrough   **(B)** breakdown   **(C)** surcharge   **(D)** warehouse  
 
 ### Part 7 — Reading Comprehension
 
@@ -149,13 +197,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > After production was halted, the research and development team took over the rescue effort. Rather than patch the faulty chip, the engineers chose an innovative redesign of the power circuit and built a new prototype within days. A feasibility study confirmed the approach was viable within the remaining schedule. Testing then proceeded in phases, from a small pilot to demanding heat trials, with the team refining the design after each round. Late in the effort, the units held stable under load for the first time — a result the team hopes is a genuine breakthrough.
 
 **21.** What did the R&D team decide to do?
-(A) Patch the faulty chip quickly (B) Outsource the whole product (C) Redesign the power circuit (D) Cancel the Aria line
+
+**(A)** Patch the faulty chip quickly  
+**(B)** Outsource the whole product  
+**(C)** Redesign the power circuit  
+**(D)** Cancel the Aria line
 
 **22.** What did the feasibility study confirm?
-(A) The approach was viable within the schedule (B) The budget was unlimited (C) The old chip was fine (D) The launch would be delayed
+
+**(A)** The approach was viable within the schedule  
+**(B)** The budget was unlimited  
+**(C)** The old chip was fine  
+**(D)** The launch would be delayed
 
 **23.** How was the testing carried out?
-(A) In a single step (B) In phases, from a pilot to heat trials (C) Only on paper (D) By an outside firm
+
+**(A)** In a single step  
+**(B)** In phases, from a pilot to heat trials  
+**(C)** Only on paper  
+**(D)** By an outside firm
 
 **Questions 24–26** refer to the following article.
 
@@ -163,13 +223,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > With its Aria launch in jeopardy, Aster Home Technologies has chosen to fix the problem in-house rather than seek help from outside. Its research team has reworked the product's core and, sources say, may have found a breakthrough that keeps the device cool and stable. If the new design holds up, Aster will still need to protect the technology and prepare it for mass production before the Halston launch. Analysts note that a proprietary fix could even give Aster an edge over its larger rival, Neura — if it reaches the market in time.
 
 **24.** How has Aster chosen to solve the problem?
-(A) By outsourcing to a rival (B) By delaying the launch a year (C) By selling Aria to Neura (D) By fixing it in-house with its own research team
+
+**(A)** By outsourcing to a rival  
+**(B)** By delaying the launch a year  
+**(C)** By selling Aria to Neura  
+**(D)** By fixing it in-house with its own research team
 
 **25.** According to the article, what may the research team have found?
-(A) A breakthrough that keeps the device cool and stable (B) A new supplier (C) A cheaper warehouse (D) A tax exemption
+
+**(A)** A breakthrough that keeps the device cool and stable  
+**(B)** A new supplier  
+**(C)** A cheaper warehouse  
+**(D)** A tax exemption
 
 **26.** What must Aster still do if the new design holds up?
-(A) Cancel the Halston launch (B) Lay off its engineers (C) Protect the technology and prepare it for mass production (D) Return to the old chip
+
+**(A)** Cancel the Halston launch  
+**(B)** Lay off its engineers  
+**(C)** Protect the technology and prepare it for mass production  
+**(D)** Return to the old chip
 
 ---
 
@@ -200,9 +272,9 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 20. **A (breakthrough)** — "stayed cool… cautiously calling a breakthrough" = bước đột phá. ⚠️ *breakdown* (hỏng hóc) sai nghĩa; *surcharge/warehouse* sai.
 
 ### Part 7
-21. **C** — R&D chọn "an **innovative redesign** of the power circuit" thay vì vá. (A)/(B)/(D) sai/trái.
-22. **A** — feasibility study xác nhận "the approach was **viable within the remaining schedule**". (B)/(C)/(D) sai.
-23. **B** — thử nghiệm "proceeded **in phases, from a small pilot to demanding heat trials**". (A)/(C)/(D) sai.
-24. **D** — Aster "fix the problem **in-house** rather than seek help from outside" (đội R&D của mình). (A)/(B)/(C) sai/trái.
-25. **A** — có thể đã tìm ra "a **breakthrough that keeps the device cool and stable**". (B)/(C)/(D) sai.
-26. **C** — nếu thiết kế trụ được, vẫn phải "**protect the technology and prepare it for mass production**" → dẫn Ch 20 (patent, độc quyền, triển khai). (A)/(B)/(D) sai.
+21. **C** — R&D chọn "an **innovative redesign** of the power circuit" thay vì vá. **(A)**/**(B)**/**(D)** sai/trái.
+22. **A** — feasibility study xác nhận "the approach was **viable within the remaining schedule**". **(B)**/**(C)**/**(D)** sai.
+23. **B** — thử nghiệm "proceeded **in phases, from a small pilot to demanding heat trials**". **(A)**/**(C)**/**(D)** sai.
+24. **D** — Aster "fix the problem **in-house** rather than seek help from outside" (đội R&D của mình). **(A)**/**(B)**/**(C)** sai/trái.
+25. **A** — có thể đã tìm ra "a **breakthrough that keeps the device cool and stable**". **(B)**/**(C)**/**(D)** sai.
+26. **C** — nếu thiết kế trụ được, vẫn phải "**protect the technology and prepare it for mass production**" → dẫn Ch 20 (patent, độc quyền, triển khai). **(A)**/**(B)**/**(D)** sai.

@@ -101,40 +101,88 @@ She signed nothing with Neura. "Give me more time," she answered — a calculate
 Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 
 **1.** After weeks of talks, the two firms finally ______ a distribution agreement that satisfied both sides.
-(A) negotiated (B) retired (C) expanded (D) dismissed
+
+**(A)** negotiated  
+**(B)** retired  
+**(C)** expanded  
+**(D)** dismissed
 
 **2.** The contract contains a confidentiality ______ that prevents either party from sharing technical data.
-(A) clause (B) stakeholder (C) turnover (D) headquarters
+
+**(A)** clause  
+**(B)** stakeholder  
+**(C)** turnover  
+**(D)** headquarters
 
 **3.** Once both directors have signed it, the agreement becomes legally ______ on both companies.
-(A) negotiable (B) binding (C) void (D) liable
+
+**(A)** negotiable  
+**(B)** binding  
+**(C)** void  
+**(D)** liable
 
 **4.** If the product is not launched by the agreed date, the entire contract will become null and ______.
-(A) void (B) binding (C) valid (D) pending
+
+**(A)** void  
+**(B)** binding  
+**(C)** valid  
+**(D)** pending
 
 **5.** Neither side wanted to give ground, but in the end each made a small ______ to close the deal.
-(A) obligation (B) concession (C) breach (D) provision
+
+**(A)** obligation  
+**(B)** concession  
+**(C)** breach  
+**(D)** provision
 
 **6.** All appliances sold in Halston must comply ______ the country's strict safety regulations.
-(A) with (B) to (C) by (D) for
+
+**(A)** with  
+**(B)** to  
+**(C)** by  
+**(D)** for
 
 **7.** By signing here, both parties agree to ______ the terms set out in this document.
-(A) abide by (B) comply (C) breach (D) amend
+
+**(A)** abide by  
+**(B)** comply  
+**(C)** breach  
+**(D)** amend
 
 **8.** Failing to deliver the goods on time would be considered a ______ of contract.
-(A) clause (B) breach (C) provision (D) concession
+
+**(A)** clause  
+**(B)** breach  
+**(C)** provision  
+**(D)** concession
 
 **9.** Under the agreement, the supplier is ______ for any damage caused by faulty parts.
-(A) eligible (B) liable (C) reliable (D) negotiable
+
+**(A)** eligible  
+**(B)** liable  
+**(C)** reliable  
+**(D)** negotiable
 
 **10.** Neura's proposed ______ would give it full ownership of Aster and its technology.
-(A) acquisition (B) arbitration (C) obligation (D) reservation
+
+**(A)** acquisition  
+**(B)** arbitration  
+**(C)** obligation  
+**(D)** reservation
 
 **11.** After the takeover, the smaller firm would operate as a wholly-owned ______ of the larger group.
-(A) stakeholder (B) subsidiary (C) headquarters (D) breach
+
+**(A)** stakeholder  
+**(B)** subsidiary  
+**(C)** headquarters  
+**(D)** breach
 
 **12.** Rather than sell the company, the CEO chose to ______ into new overseas markets independently.
-(A) expand (B) restructure (C) amend (D) comply
+
+**(A)** expand  
+**(B)** restructure  
+**(C)** amend  
+**(D)** comply
 
 ### Part 6 — Text Completion
 
@@ -146,10 +194,10 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 >
 > I'm pleased to report that we have reached a distribution **(13)______** with Brightway Retail. Our lawyers have reviewed every **(14)______** carefully, and both sides have accepted the final terms. Please note one critical point: the contract contains a **(15)______** stating that it becomes void if Aria does not launch on schedule. Should any disagreement arise later, it will be resolved through **(16)______** rather than in court. Thank you all for making this possible.
 
-**13.** (A) agreement (B) obligation (C) turnover (D) pension
-**14.** (A) headquarters (B) provision (C) stakeholder (D) allowance
-**15.** (A) clause (B) merger (C) benefit (D) wage
-**16.** (A) recognition (B) arbitration (C) probation (D) inventory
+**13.**   **(A)** agreement   **(B)** obligation   **(C)** turnover   **(D)** pension  
+**14.**   **(A)** headquarters   **(B)** provision   **(C)** stakeholder   **(D)** allowance  
+**15.**   **(A)** clause   **(B)** merger   **(C)** benefit   **(D)** wage  
+**16.**   **(A)** recognition   **(B)** arbitration   **(C)** probation   **(D)** inventory  
 
 **Questions 17–19** refer to the following memo.
 
@@ -159,9 +207,9 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 >
 > You may have seen reports that Neura Corporation has made an **(17)______** offer for our company. We want to be clear: no deal has been signed. Neura's proposal would turn Aster into a **(18)______** under its control and would **(19)______** several departments. The board is weighing the interests of every stakeholder before making any decision. For now, it is business as usual as we focus on the Aria launch.
 
-**17.** (A) acquisition (B) arbitration (C) inspection (D) orientation
-**18.** (A) headquarters (B) subsidiary (C) vacancy (D) premises
-**19.** (A) restructure (B) negotiate (C) reimburse (D) expand
+**17.**   **(A)** acquisition   **(B)** arbitration   **(C)** inspection   **(D)** orientation  
+**18.**   **(A)** headquarters   **(B)** subsidiary   **(C)** vacancy   **(D)** premises  
+**19.**   **(A)** restructure   **(B)** negotiate   **(C)** reimburse   **(D)** expand  
 
 ### Part 7 — Reading Comprehension
 
@@ -171,13 +219,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > Aster Home Technologies has signed a distribution agreement with Brightway Retail, one of Halston's largest retail chains. Under the terms and conditions of the deal, Brightway will have exclusive rights to sell Aster's new Aria line in Halston for its first year on the market. In exchange, Aster is obligated to meet strict delivery deadlines. Industry watchers point to one unusual provision: the entire contract becomes void if the Aria line is not launched on time. "It's a bold move," said one analyst. "Aster has tied its biggest distribution deal directly to a launch date it cannot afford to miss."
 
 **20.** What is the main topic of the article?
-(A) A merger between two retail chains (B) A distribution deal between Aster and Brightway (C) Neura's acquisition of Aster (D) The layoff of Aster staff
+
+**(A)** A merger between two retail chains  
+**(B)** A distribution deal between Aster and Brightway  
+**(C)** Neura's acquisition of Aster  
+**(D)** The layoff of Aster staff
 
 **21.** According to the article, what will happen if Aria is not launched on time?
-(A) Brightway will pay a penalty (B) The contract will become void (C) Aster will be acquired by Neura (D) The deadline will be extended automatically
+
+**(A)** Brightway will pay a penalty  
+**(B)** The contract will become void  
+**(C)** Aster will be acquired by Neura  
+**(D)** The deadline will be extended automatically
 
 **22.** The phrase "is obligated to" is closest in meaning to
-(A) is required to (B) is allowed to (C) refuses to (D) is eligible to
+
+**(A)** is required to  
+**(B)** is allowed to  
+**(C)** refuses to  
+**(D)** is eligible to
 
 **Questions 23–25** refer to the following report.
 
@@ -185,13 +245,25 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 > The smart-home sector is watching a quiet standoff. Neura Corporation has offered to acquire Aster Home Technologies, a proposed deal that would make the independent firm a subsidiary of the larger group. Sources say Neura would keep Aster's headquarters in Marlowe City but restructure its operations. Aster's founder, Diane Whitfield, has so far declined to sign, arguing that the company can expand into new markets on its own. "Our stakeholders deserve a company that controls its own future," she told reporters. Analysts believe her decision now rests on a single event: the upcoming launch of the Aria line.
 
 **23.** What does the article say Neura would do with Aster's headquarters?
-(A) Move it to Halston (B) Keep it in Marlowe City (C) Close it entirely (D) Sell it to an affiliate
+
+**(A)** Move it to Halston  
+**(B)** Keep it in Marlowe City  
+**(C)** Close it entirely  
+**(D)** Sell it to an affiliate
 
 **24.** Why has Diane Whitfield declined to sign the deal?
-(A) She believes Aster can expand on its own (B) She wants a higher price (C) The board has already rejected it (D) Neura withdrew the offer
+
+**(A)** She believes Aster can expand on its own  
+**(B)** She wants a higher price  
+**(C)** The board has already rejected it  
+**(D)** Neura withdrew the offer
 
 **25.** The word "acquire" in the report is closest in meaning to
-(A) buy / take over (B) merge with as an equal (C) borrow from (D) compete with
+
+**(A)** buy / take over  
+**(B)** merge with as an equal  
+**(C)** borrow from  
+**(D)** compete with
 
 ---
 
@@ -221,9 +293,9 @@ Chọn phương án đúng (A/B/C/D) điền vào chỗ trống.
 19. **A (restructure)** — "restructure several departments" = tái cơ cấu các phòng ban; hợp với "cut staff". *negotiate/reimburse* sai nghĩa; *expand* (mở rộng) trái với ý cắt giảm.
 
 ### Part 7
-20. **B** — bài báo nói về **thỏa thuận phân phối giữa Aster và Brightway**. (A) merger giữa hai chuỗi bán lẻ — sai; (C) thương vụ Neura chỉ là bối cảnh nền; (D) không nhắc layoff.
-21. **B** — nêu rõ "the entire contract becomes void if the Aria line is not launched on time" → hợp đồng **vô hiệu**. (A)/(C)/(D) không được nêu.
+20. **B** — bài báo nói về **thỏa thuận phân phối giữa Aster và Brightway**. **(A)** merger giữa hai chuỗi bán lẻ — sai; **(C)** thương vụ Neura chỉ là bối cảnh nền; **(D)** không nhắc layoff.
+21. **B** — nêu rõ "the entire contract becomes void if the Aria line is not launched on time" → hợp đồng **vô hiệu**. **(A)**/**(C)**/**(D)** không được nêu.
 22. **A (is required to)** — "be obligated to do sth" ≈ **be required to** (có nghĩa vụ phải). *is allowed to* (được phép) và *refuses to* trái nghĩa; *is eligible to* sai nghĩa.
-23. **B** — "Neura would keep Aster's headquarters in Marlowe City" → **giữ trụ sở ở Marlowe**. (A)/(C)/(D) trái với bài.
-24. **A** — Diane từ chối ký vì tin Aster có thể "**expand into new markets on its own**" (tự mở rộng). (B)/(C)/(D) không được nêu trong bài.
-25. **A (buy / take over)** — "acquire" ≈ **mua lại / thâu tóm**. (B) là *merger* (sáp nhập ngang hàng) — cố ý gài để phân biệt acquisition với merger; (C)/(D) sai nghĩa.
+23. **B** — "Neura would keep Aster's headquarters in Marlowe City" → **giữ trụ sở ở Marlowe**. **(A)**/**(C)**/**(D)** trái với bài.
+24. **A** — Diane từ chối ký vì tin Aster có thể "**expand into new markets on its own**" (tự mở rộng). **(B)**/**(C)**/**(D)** không được nêu trong bài.
+25. **A (buy / take over)** — "acquire" ≈ **mua lại / thâu tóm**. **(B)** là *merger* (sáp nhập ngang hàng) — cố ý gài để phân biệt acquisition với merger; **(C)**/**(D)** sai nghĩa.
