@@ -1,0 +1,29 @@
+{{- /* Table render hook — bọc bảng trong container cuộn ngang để bảng rộng
+       (nhiều cột) không bị cắt mất nội dung trên màn hình nhỏ. Mỗi <td> có
+       thêm data-label lấy từ header tương ứng, dùng cho layout dạng card
+       trên mobile (xem main.css, @media max-width: 640px). */ -}}
+{{- $headRow := index .THead 0 -}}
+<div class="table-scroll">
+  <table>
+    {{ with .THead }}
+      <thead>
+        {{ range . }}
+          <tr>
+            {{ range . }}
+              <th{{ with .Alignment }}{{ if ne . "none" }} style="text-align:{{ . }}"{{ end }}{{ end }}>{{ .Text }}</th>
+            {{ end }}
+          </tr>
+        {{ end }}
+      </thead>
+    {{ end }}
+    <tbody>
+      {{ range .TBody }}
+        <tr>
+          {{ range $i, $cell := . }}
+            <td{{ with $cell.Alignment }}{{ if ne . "none" }} style="text-align:{{ . }}"{{ end }}{{ end }}{{ with index $headRow $i }} data-label="{{ .Text | plainify }}"{{ end }}>{{ $cell.Text }}</td>
+          {{ end }}
+        </tr>
+      {{ end }}
+    </tbody>
+  </table>
+</div>

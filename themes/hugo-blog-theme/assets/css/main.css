@@ -678,10 +678,48 @@ ul { list-style: none; }
   font-family: var(--f-mono); font-size: 13.5px; line-height: 1.7;
 }
 .post__content pre code { background: none; padding: 0; font-size: inherit; color: #E8EDF5; }
-.post__content table { width: 100%; border-collapse: collapse; font-size: 14px; border: 1px solid var(--c-border); border-radius: var(--r-md); overflow: hidden; }
+.post__content .table-scroll { overflow-x: auto; border: 1px solid var(--c-border); border-radius: var(--r-md); }
+.post__content table { width: 100%; border-collapse: collapse; font-size: 14px; }
 .post__content th, .post__content td { padding: 13px 16px; text-align: left; border-bottom: 1px solid var(--c-border); }
 .post__content th { background: var(--c-card); font-size: 12px; text-transform: uppercase; letter-spacing: .5px; color: var(--c-text2); }
 .post__content tr:hover td { background: var(--c-card); }
+
+/* Cột đầu tiên (từ vựng) ghim lại khi cuộn ngang, giữ ngữ cảnh cho người đọc */
+.post__content .table-scroll th:first-child,
+.post__content .table-scroll td:first-child {
+  position: sticky; left: 0; z-index: 1;
+  background: var(--c-bg);
+  box-shadow: 1px 0 0 var(--c-border);
+}
+.post__content .table-scroll th:first-child { background: var(--c-card); z-index: 2; }
+.post__content .table-scroll tr:hover td:first-child { background: var(--c-card); }
+
+/* Dưới 640px: bảng chuyển thành danh sách card, mỗi ô hiện "nhãn + giá trị" */
+@media (max-width: 640px) {
+  .post__content .table-scroll { overflow: visible; border: none; }
+  .post__content .table-scroll table,
+  .post__content .table-scroll tbody,
+  .post__content .table-scroll tr,
+  .post__content .table-scroll td {
+    display: block; width: 100%;
+  }
+  .post__content .table-scroll thead { display: none; }
+  .post__content .table-scroll tr {
+    margin-bottom: 14px; border: 1px solid var(--c-border);
+    border-radius: var(--r-md); overflow: hidden;
+  }
+  .post__content .table-scroll tr:last-child { margin-bottom: 0; }
+  .post__content .table-scroll td {
+    position: static; box-shadow: none; padding: 10px 16px;
+  }
+  .post__content .table-scroll td:last-child { border-bottom: none; }
+  .post__content .table-scroll td::before {
+    content: attr(data-label);
+    display: block; font-size: 11px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: .5px;
+    color: var(--c-text2); margin-bottom: 4px;
+  }
+}
 
 @media (max-width: 980px) {
   .post-layout { grid-template-columns: 1fr; }
