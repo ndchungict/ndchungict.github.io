@@ -7,6 +7,7 @@ summary     = 'Hiểu sâu về Git branch: tạo nhánh, chuyển nhánh, merge
 thumbnail   = '/images/git-series/05-branch-merge.webp'
 weight      = 5
 categories  = ['it']
+subcategories = ['database-version-control']
 tags        = ['git', 'devops']
 series      = ['huong-dan-git-tu-co-ban-den-nang-cao']
 authors     = ['Nguyen Chung']

@@ -8,6 +8,7 @@ thumbnail   = '/images/series-n8n/08-dieu-khien-luong-n8n.webp'
 featured    = false
 weight      = 8
 categories  = ['it']
+subcategories = ['workflow', 'automation', 'ai']
 tags        = ['n8n', 'flow-control', 'sub-workflow']
 series      = ['n8n-tu-co-ban-den-chuyen-sau']
 authors     = ['Nguyen Chung']

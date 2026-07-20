@@ -8,6 +8,7 @@ thumbnail   = '/images/series-n8n/06-xu-ly-du-lieu-n8n.webp'
 featured    = false
 weight      = 6
 categories  = ['it']
+subcategories = ['workflow', 'automation', 'ai']
 tags        = ['n8n', 'data-transformation', 'expression']
 series      = ['n8n-tu-co-ban-den-chuyen-sau']
 authors     = ['Nguyen Chung']

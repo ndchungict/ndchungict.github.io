@@ -8,6 +8,7 @@ thumbnail   = '/images/series-n8n/03-khai-niem-cot-loi-n8n.webp'
 featured    = false
 weight      = 3
 categories  = ['it']
+subcategories = ['workflow', 'automation', 'ai']
 tags        = ['n8n', 'core-concept', 'data-flow']
 series      = ['n8n-tu-co-ban-den-chuyen-sau']
 authors     = ['Nguyen Chung']

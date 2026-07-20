@@ -7,6 +7,7 @@ summary     = 'Học cách viết Dockerfile để đóng gói chính ứng dụ
 thumbnail   = '/images/docker-series/04-dockerfile.webp'
 weight      = 4
 categories  = ['it']
+subcategories = ['devops']
 tags        = ['docker', 'devops']
 series      = ['huong-dan-docker-tu-a-den-z']
 authors     = ['Nguyen Chung']

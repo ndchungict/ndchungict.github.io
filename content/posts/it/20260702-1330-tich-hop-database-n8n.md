@@ -8,6 +8,7 @@ thumbnail   = '/images/series-n8n/12-tich-hop-database.webp'
 featured    = false
 weight      = 12
 categories  = ['it']
+subcategories = ['workflow', 'automation', 'ai']
 tags        = ['n8n', 'database', 'postgres']
 series      = ['n8n-tu-co-ban-den-chuyen-sau']
 authors     = ['Nguyen Chung']

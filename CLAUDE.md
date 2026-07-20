@@ -20,7 +20,7 @@ hugo-blog-page/
 │   ├── about/index.md    # Trang About
 │   ├── contact/index.md  # Trang Contact
 │   └── posts/            # Bài viết blog, chia theo category (chỉ để tổ chức file — không ảnh hưởng URL/section)
-│       ├── it/           # categories = ['it'] hoặc ['automation']
+│       ├── it/           # categories = ['it'] (phân nhóm thêm bằng subcategories)
 │       ├── english/      # categories = ['english']
 │       └── chinese/      # categories = ['chinese']
 ├── themes/hugo-blog-theme/
@@ -47,7 +47,7 @@ hugo-blog-page/
 
 ### Quy tắc đặt tên file
 
-Bài viết nằm trong `content/posts/<category-folder>/`, `<category-folder>` là `it`, `english`, hoặc `chinese` tương ứng với `categories` trong front matter (bài `categories = ['automation']` cũng nằm trong `content/posts/it/`). Thư mục con này chỉ để tổ chức file cho gọn — **không** ảnh hưởng URL, section hay taxonomy (Hugo vẫn coi mọi file là section `posts`, URL vẫn theo `slug`).
+Bài viết nằm trong `content/posts/<category-folder>/`, `<category-folder>` là `it`, `english`, hoặc `chinese` tương ứng với `categories` trong front matter. Thư mục con này chỉ để tổ chức file cho gọn — **không** ảnh hưởng URL, section hay taxonomy (Hugo vẫn coi mọi file là section `posts`, URL vẫn theo `slug`).
 
 Tên file theo format: `yyyyMMdd-hhmm-ten-bai-viet.md`
 
@@ -82,6 +82,29 @@ series      = []
 authors     = ['Nguyen Chung']
 +++
 ```
+
+### Subcategory (chỉ áp dụng cho `categories = ['it']`)
+
+Bài thuộc category `it` bắt buộc có thêm trường `subcategories` (taxonomy riêng, xem `[taxonomies]` trong `hugo.toml`), đặt ngay sau dòng `categories`. Có thể khai báo **nhiều key** nếu bài phù hợp nhiều nhóm (vd bài n8n vừa là `workflow` vừa là `automation` vừa là `ai`):
+
+```toml
+categories    = ['it']
+subcategories = ['<key1>', '<key2>', ...]
+```
+
+`<key>` là 1 hoặc nhiều trong:
+
+| key | Nội dung |
+|---|---|
+| `automation` | Automation test (Playwright, QA, ISTQB,...) và automation nói chung (bao gồm cả bài `workflow`) |
+| `workflow` | Automation dạng workflow/no-code (n8n,...) — luôn đi kèm `automation` |
+| `develop` | Phát triển phần mềm nói chung |
+| `devops` | DevOps (Docker,...) |
+| `ai` | AI (kèm thêm cho bài automation/workflow có liên quan AI, vd n8n AI Agent, Playwright MCP) |
+| `database-version-control` | Git, database |
+| `tips-tricks` | Công cụ/thủ thuật khác (Homebrew, mise,...) |
+
+> `subcategories` chỉ sinh trang danh sách riêng tại `/subcategories/<key>/` (dùng layout generic `term.html`) — **không** tự hiện trên trang bài viết (`page.html` chỉ render `categories`/`tags`/`series`), trừ khi có yêu cầu chỉnh layout thêm.
 
 ### Tạo bài trong series
 
@@ -183,7 +206,6 @@ Map `category` → ảnh mặc định:
 | Category (`key`) | Thumbnail mặc định |
 |------------------|--------------------|
 | `it`             | `/images/default-thumb/default-thumb-it-lap-trinh.webp` |
-| `automation`     | `/images/default-thumb/default-thumb-it-lap-trinh.webp` |
 | `english`        | `/images/default-thumb/default-thumb-tieng-anh.webp` |
 | `chinese`        | `/images/default-thumb/default-thumb-tieng-trung.webp` |
 

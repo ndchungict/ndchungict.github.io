@@ -7,6 +7,7 @@ summary     = 'Hướng dẫn kết nối repo local với GitHub/GitLab, clone 
 thumbnail   = '/images/git-series/04-remote-repo.webp'
 weight      = 4
 categories  = ['it']
+subcategories = ['database-version-control']
 tags        = ['git', 'devops']
 series      = ['huong-dan-git-tu-co-ban-den-nang-cao']
 authors     = ['Nguyen Chung']

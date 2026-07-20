@@ -7,6 +7,7 @@ summary     = 'Tìm hiểu Docker là gì, vấn đề mà nó giải quyết, s
 thumbnail   = '/images/docker-series/01-docker-la-gi.webp'
 weight      = 1
 categories  = ['it']
+subcategories = ['devops']
 tags        = ['docker', 'devops']
 series      = ['huong-dan-docker-tu-a-den-z']
 authors     = ['Nguyen Chung']

@@ -8,6 +8,7 @@ thumbnail   = '/images/series-n8n/18-case-study-tong-hop.webp'
 featured    = false
 weight      = 18
 categories  = ['it']
+subcategories = ['workflow', 'automation', 'ai']
 tags        = ['n8n', 'case-study', 'automation']
 series      = ['n8n-tu-co-ban-den-chuyen-sau']
 authors     = ['Nguyen Chung']

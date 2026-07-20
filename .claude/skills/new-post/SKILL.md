@@ -12,7 +12,8 @@ Tạo một bài post mới trong `content/posts/` theo đúng quy ước repo, 
 Hỏi user (gộp 1 lần, ưu tiên dùng AskUserQuestion) những gì còn thiếu. Đừng hỏi lại thứ user đã cung cấp.
 
 - **Tiêu đề** bài viết (bắt buộc).
-- **Category** — chỉ chọn 1, là `key` hợp lệ: `it`, `automation`, `english`, `chinese`.
+- **Category** — chỉ chọn 1, là `key` hợp lệ: `it`, `english`, `chinese`.
+- **Nếu category = `it`**: hỏi thêm **subcategory** — có thể chọn nhiều `key` hợp lệ: `automation` (automation test/Playwright/QA/ISTQB), `workflow` (automation dạng workflow/no-code như n8n — luôn đi kèm `automation`), `develop` (phát triển phần mềm), `devops` (Docker,...), `ai` (bài liên quan AI, kể cả bài automation/workflow có nhắc AI), `database-version-control` (Git, database), `tips-tricks` (Homebrew, mise,...).
 - **Tags** (danh sách; có thể rỗng).
 - **Slug** (kebab-case, không dấu, không prefix ngày giờ). Nếu user không cho → tự sinh từ tiêu đề (xem Bước 2).
 - **Summary** (tùy chọn; để trống = Hugo tự lấy ~70 từ đầu).
@@ -23,7 +24,7 @@ Hỏi user (gộp 1 lần, ưu tiên dùng AskUserQuestion) những gì còn thi
 
 Format: `content/posts/<category-folder>/<yyyyMMdd>-<hhmm>-<slug>.md`
 
-- `<category-folder>`: `it` (bao gồm cả category `automation`), `english`, hoặc `chinese` — theo `category` đã chọn ở Bước 1. Thư mục con chỉ để tổ chức file, không ảnh hưởng URL/section.
+- `<category-folder>`: `it`, `english`, hoặc `chinese` — theo `category` đã chọn ở Bước 1. Thư mục con chỉ để tổ chức file, không ảnh hưởng URL/section.
 - `<yyyyMMdd>-<hhmm>`: ngày giờ hiện tại. Lấy bằng `date +%Y%m%d-%H%M`.
 - `<slug>`: kebab-case. Quy tắc sinh slug từ tiêu đề:
   - Bỏ dấu tiếng Việt (đ → d), chuyển thường, thay khoảng trắng & ký tự đặc biệt bằng `-`, gộp nhiều `-` liền nhau, bỏ `-` ở đầu/cuối.
@@ -39,7 +40,6 @@ Map `category` (phần tử đầu của `categories`) → ảnh mặc định t
 | Category     | Thumbnail |
 |--------------|-----------|
 | `it`         | `/images/default-thumb/default-thumb-it-lap-trinh.webp` |
-| `automation` | `/images/default-thumb/default-thumb-it-lap-trinh.webp` |
 | `english`    | `/images/default-thumb/default-thumb-tieng-anh.webp` |
 | `chinese`    | `/images/default-thumb/default-thumb-tieng-trung.webp` |
 
@@ -59,6 +59,7 @@ summary     = '<summary hoặc để trống>'
 thumbnail   = '<đường dẫn thumbnail ở Bước 3>'
 featured    = false
 categories  = ['<category>']
+subcategories = ['<subcategory1>', '<subcategory2>', ...]  # chỉ thêm dòng này nếu category = 'it'; có thể nhiều key
 tags        = [<'tag1', 'tag2', ...>]
 series      = []
 authors     = ['Nguyen Chung']

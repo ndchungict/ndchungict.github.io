@@ -7,6 +7,7 @@ summary     = 'Hướng dẫn cài đặt Docker trên Windows, macOS và Linux,
 thumbnail   = '/images/docker-series/02-cai-dat-docker.webp'
 weight      = 2
 categories  = ['it']
+subcategories = ['devops']
 tags        = ['docker', 'devops']
 series      = ['huong-dan-docker-tu-a-den-z']
 authors     = ['Nguyen Chung']

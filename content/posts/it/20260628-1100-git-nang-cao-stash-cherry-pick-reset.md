@@ -7,6 +7,7 @@ summary     = 'Các lệnh Git nâng cao giúp bạn xử lý mọi tình huốn
 thumbnail   = '/images/git-series/07-git-nang-cao.webp'
 weight      = 7
 categories  = ['it']
+subcategories = ['database-version-control']
 tags        = ['git', 'devops']
 series      = ['huong-dan-git-tu-co-ban-den-nang-cao']
 authors     = ['Nguyen Chung']

@@ -7,6 +7,7 @@ summary     = 'Đưa Docker vào pipeline CI/CD: build và push image lên regis
 thumbnail   = '/images/docker-series/08-docker-cicd.webp'
 weight      = 8
 categories  = ['it']
+subcategories = ['devops']
 tags        = ['docker', 'devops']
 series      = ['huong-dan-docker-tu-a-den-z']
 authors     = ['Nguyen Chung']

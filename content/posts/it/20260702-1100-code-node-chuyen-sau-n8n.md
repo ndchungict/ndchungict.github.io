@@ -8,6 +8,7 @@ thumbnail   = '/images/series-n8n/07-code-node-chuyen-sau.webp'
 featured    = false
 weight      = 7
 categories  = ['it']
+subcategories = ['workflow', 'automation', 'ai']
 tags        = ['n8n', 'code-node', 'javascript']
 series      = ['n8n-tu-co-ban-den-chuyen-sau']
 authors     = ['Nguyen Chung']

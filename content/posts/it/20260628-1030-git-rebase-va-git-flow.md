@@ -7,6 +7,7 @@ summary     = 'Hiểu sự khác biệt giữa merge và rebase, khi nào dùng 
 thumbnail   = '/images/git-series/06-rebase-git-flow.webp'
 weight      = 6
 categories  = ['it']
+subcategories = ['database-version-control']
 tags        = ['git', 'devops']
 series      = ['huong-dan-git-tu-co-ban-den-nang-cao']
 authors     = ['Nguyen Chung']

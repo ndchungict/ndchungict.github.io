@@ -8,6 +8,7 @@ thumbnail   = '/images/series-n8n/13-self-host-production.webp'
 featured    = false
 weight      = 13
 categories  = ['it']
+subcategories = ['workflow', 'automation', 'ai']
 tags        = ['n8n', 'self-host', 'queue-mode']
 series      = ['n8n-tu-co-ban-den-chuyen-sau']
 authors     = ['Nguyen Chung']

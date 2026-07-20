@@ -8,6 +8,7 @@ thumbnail   = '/images/series-n8n/10-credentials-bao-mat-n8n.webp'
 featured    = false
 weight      = 10
 categories  = ['it']
+subcategories = ['workflow', 'automation', 'ai']
 tags        = ['n8n', 'security', 'credentials']
 series      = ['n8n-tu-co-ban-den-chuyen-sau']
 authors     = ['Nguyen Chung']

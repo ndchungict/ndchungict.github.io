@@ -8,6 +8,7 @@ thumbnail   = '/images/series-n8n/16-n8n-api-workflow-as-code.webp'
 featured    = false
 weight      = 16
 categories  = ['it']
+subcategories = ['workflow', 'automation', 'ai']
 tags        = ['n8n', 'ci-cd', 'versioning']
 series      = ['n8n-tu-co-ban-den-chuyen-sau']
 authors     = ['Nguyen Chung']

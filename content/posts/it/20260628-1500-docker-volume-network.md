@@ -7,6 +7,7 @@ summary     = 'Hiểu cách lưu trữ dữ liệu bền vững với volume, ph
 thumbnail   = '/images/docker-series/05-volume-network.webp'
 weight      = 5
 categories  = ['it']
+subcategories = ['devops']
 tags        = ['docker', 'devops']
 series      = ['huong-dan-docker-tu-a-den-z']
 authors     = ['Nguyen Chung']

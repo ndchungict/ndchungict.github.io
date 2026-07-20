@@ -8,6 +8,7 @@ thumbnail   = '/images/series-n8n/01-n8n-la-gi-kien-truc-n8n.webp'
 featured    = false
 weight      = 1
 categories  = ['it']
+subcategories = ['workflow', 'automation', 'ai']
 tags        = ['n8n', 'automation', 'kien-truc']
 series      = ['n8n-tu-co-ban-den-chuyen-sau']
 authors     = ['Nguyen Chung']

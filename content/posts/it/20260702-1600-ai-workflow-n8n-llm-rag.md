@@ -8,6 +8,7 @@ thumbnail   = '/images/series-n8n/17-ai-workflow-voi-n8n.webp'
 featured    = false
 weight      = 17
 categories  = ['it']
+subcategories = ['workflow', 'automation', 'ai']
 tags        = ['n8n', 'ai-agent', 'rag']
 series      = ['n8n-tu-co-ban-den-chuyen-sau']
 authors     = ['Nguyen Chung']

@@ -13,10 +13,11 @@ theme = 'hugo-blog-theme'
   posts = '/posts/:slug/'
 
 [taxonomies]
-  category = 'categories'
-  tag      = 'tags'
-  series   = 'series'
-  author   = 'authors'
+  category    = 'categories'
+  tag         = 'tags'
+  series      = 'series'
+  author      = 'authors'
+  subcategory = 'subcategories'
 
 [markup]
   [markup.tableOfContents]
@@ -78,16 +79,10 @@ theme = 'hugo-blog-theme'
   # key = tên term trong taxonomy `categories`.
   [[params.categories]]
     key = 'it'
-    labelVI = 'IT & Lập trình'
-    labelEN = 'IT & Tech'
+    labelVI = 'Công nghệ & Lập trình'
+    labelEN = 'Tech & Programming'
     emoji = '💻'
     color = 'is-it'
-  [[params.categories]]
-    key = 'automation'
-    labelVI = 'Automation Test'
-    labelEN = 'Automation'
-    emoji = '🤖'
-    color = 'is-auto'
   [[params.categories]]
     key = 'english'
     labelVI = 'Tiếng Anh'

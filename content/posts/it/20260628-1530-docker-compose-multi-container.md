@@ -7,6 +7,7 @@ summary     = 'Dùng Docker Compose để định nghĩa và chạy ứng dụng
 thumbnail   = '/images/docker-series/06-docker-compose.webp'
 weight      = 6
 categories  = ['it']
+subcategories = ['devops']
 tags        = ['docker', 'devops']
 series      = ['huong-dan-docker-tu-a-den-z']
 authors     = ['Nguyen Chung']

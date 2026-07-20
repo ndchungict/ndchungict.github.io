@@ -8,6 +8,7 @@ thumbnail   = '/images/series-n8n/04-workflow-dau-tien.webp'
 featured    = false
 weight      = 4
 categories  = ['it']
+subcategories = ['workflow', 'automation', 'ai']
 tags        = ['n8n', 'webhook', 'rest-api']
 series      = ['n8n-tu-co-ban-den-chuyen-sau']
 authors     = ['Nguyen Chung']

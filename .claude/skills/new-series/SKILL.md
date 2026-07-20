@@ -21,7 +21,8 @@ Hỏi user (gộp 1 lần) những gì còn thiếu:
 - **Mô tả** series (1–2 câu).
 - **Icon** emoji (tùy chọn; bỏ trống = tự lấy emoji theo category).
 - **Level** (tùy chọn, vd "Cơ bản → Nâng cao").
-- **Category** chung cho cả series — 1 key hợp lệ: `it`, `automation`, `english`, `chinese`.
+- **Category** chung cho cả series — 1 key hợp lệ: `it`, `english`, `chinese`.
+- **Nếu category = `it`**: hỏi thêm **subcategory** chung cho cả series — có thể nhiều `key` hợp lệ: `automation` (automation test/Playwright/QA/ISTQB), `workflow` (automation dạng workflow/no-code như n8n — luôn đi kèm `automation`), `develop` (phát triển phần mềm), `devops` (Docker,...), `ai` (bài liên quan AI, kể cả bài automation/workflow có nhắc AI), `database-version-control` (Git, database), `tips-tricks` (Homebrew, mise,...).
 - **Tags** chung.
 - **Danh sách bài**: số lượng + tiêu đề từng bài (theo thứ tự). Nếu user chỉ cho số lượng, hỏi tiêu đề hoặc tạo placeholder.
 
@@ -45,7 +46,7 @@ Tham khảo file mẫu: `content/series/tu-hoc-playwright/_index.md`.
 Với mỗi bài thứ `i` (i = 1..N):
 
 - Tên file: `content/posts/<category-folder>/<yyyyMMdd>-<hhmm>-<slug-bai>.md`
-  - `<category-folder>`: `it` (bao gồm cả category `automation`), `english`, hoặc `chinese` — theo `category` chung của series. Thư mục con chỉ để tổ chức file, không ảnh hưởng URL/section.
+  - `<category-folder>`: `it`, `english`, hoặc `chinese` — theo `category` chung của series. Thư mục con chỉ để tổ chức file, không ảnh hưởng URL/section.
   - Ngày giờ hiện tại làm gốc; mỗi bài cách nhau ~30 phút để giữ thứ tự thời gian (vd 0800, 0830, 0900…). Lấy mốc đầu bằng `date +%Y%m%d-%H%M`.
   - `<slug-bai>`: kebab-case từ tiêu đề bài.
 - Front matter (như `archetypes/series.md`):
@@ -61,6 +62,7 @@ thumbnail   = '<thumbnail theo category — xem bảng dưới>'
 featured    = false
 weight      = <i>
 categories  = ['<category>']
+subcategories = ['<subcategory1>', '<subcategory2>', ...]  # chỉ thêm dòng này nếu category = 'it'; có thể nhiều key
 tags        = [<tags>]
 series      = ['<series-slug>']
 authors     = ['Nguyen Chung']
@@ -72,7 +74,6 @@ authors     = ['Nguyen Chung']
 | Category     | Thumbnail |
 |--------------|-----------|
 | `it`         | `/images/default-thumb/default-thumb-it-lap-trinh.webp` |
-| `automation` | `/images/default-thumb/default-thumb-it-lap-trinh.webp` |
 | `english`    | `/images/default-thumb/default-thumb-tieng-anh.webp` |
 | `chinese`    | `/images/default-thumb/default-thumb-tieng-trung.webp` |
 

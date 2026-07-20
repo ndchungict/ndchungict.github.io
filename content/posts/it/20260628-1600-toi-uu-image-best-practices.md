@@ -7,6 +7,7 @@ summary     = 'Giảm kích thước image với multi-stage build và image alp
 thumbnail   = '/images/docker-series/07-toi-uu-image.webp'
 weight      = 7
 categories  = ['it']
+subcategories = ['devops']
 tags        = ['docker', 'devops']
 series      = ['huong-dan-docker-tu-a-den-z']
 authors     = ['Nguyen Chung']

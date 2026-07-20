@@ -7,6 +7,7 @@ summary     = 'Hiểu rõ mối quan hệ giữa image và container, vòng đ�
 thumbnail   = '/images/docker-series/03-docker-co-ban.webp'
 weight      = 3
 categories  = ['it']
+subcategories = ['devops']
 tags        = ['docker', 'devops']
 series      = ['huong-dan-docker-tu-a-den-z']
 authors     = ['Nguyen Chung']

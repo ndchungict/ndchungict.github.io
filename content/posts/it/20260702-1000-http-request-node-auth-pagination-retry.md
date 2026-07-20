@@ -8,6 +8,7 @@ thumbnail   = '/images/series-n8n/05-http-request-node.webp'
 featured    = false
 weight      = 5
 categories  = ['it']
+subcategories = ['workflow', 'automation', 'ai']
 tags        = ['n8n', 'http-request', 'api-integration']
 series      = ['n8n-tu-co-ban-den-chuyen-sau']
 authors     = ['Nguyen Chung']

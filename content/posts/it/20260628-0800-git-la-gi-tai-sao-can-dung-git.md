@@ -7,6 +7,7 @@ summary     = 'Tìm hiểu Git là gì, lịch sử ra đời, tại sao nó qua
 thumbnail   = '/images/git-series/01-git-la-gi.webp'
 weight      = 1
 categories  = ['it']
+subcategories = ['database-version-control']
 tags        = ['git', 'devops']
 series      = ['huong-dan-git-tu-co-ban-den-nang-cao']
 authors     = ['Nguyen Chung']

@@ -8,6 +8,7 @@ thumbnail   = '/images/series-n8n/09-error-handling-n8n.webp'
 featured    = false
 weight      = 9
 categories  = ['it']
+subcategories = ['workflow', 'automation', 'ai']
 tags        = ['n8n', 'error-handling', 'production']
 series      = ['n8n-tu-co-ban-den-chuyen-sau']
 authors     = ['Nguyen Chung']

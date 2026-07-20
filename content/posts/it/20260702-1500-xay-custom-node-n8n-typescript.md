@@ -8,6 +8,7 @@ thumbnail   = '/images/series-n8n/15-custom-node-typescript.webp'
 featured    = false
 weight      = 15
 categories  = ['it']
+subcategories = ['workflow', 'automation', 'ai']
 tags        = ['n8n', 'custom-node', 'typescript']
 series      = ['n8n-tu-co-ban-den-chuyen-sau']
 authors     = ['Nguyen Chung']

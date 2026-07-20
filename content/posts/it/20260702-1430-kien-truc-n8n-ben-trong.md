@@ -8,6 +8,7 @@ thumbnail   = '/images/series-n8n/14-kien-truc-n8n-ben-trong.webp'
 featured    = false
 weight      = 14
 categories  = ['it']
+subcategories = ['workflow', 'automation', 'ai']
 tags        = ['n8n', 'architecture', 'performance']
 series      = ['n8n-tu-co-ban-den-chuyen-sau']
 authors     = ['Nguyen Chung']
