@@ -1,7 +1,7 @@
 +++
 date        = '2024-07-01T10:10:00+07:00'
 draft       = false
-title       = 'Bài 29 — API Testing với Playwright'
+title       = 'Bài 29 — Xử lý API Testing'
 slug        = 'api-testing-voi-playwright'
 summary     = 'Test API trực tiếp bằng request fixture của Playwright: gửi GET/POST, kiểm tra status và response body, và kết hợp API với UI test để setup dữ liệu nhanh.'
 thumbnail   = '/images/series-hoc-automation-test-tu-so-0/bai-29-api-test-voi-playwright.webp'

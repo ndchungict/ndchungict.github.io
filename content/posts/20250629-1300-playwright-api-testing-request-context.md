@@ -2,7 +2,7 @@
 date        = '2025-06-29T13:00:00+07:00'
 draft       = false
 title       = 'API Testing với Playwright'
-slug        = 'api-testing-voi-playwright'
+slug        = 'playwright-api-testing-request-context'
 summary     = 'Playwright không chỉ test UI. Dùng APIRequestContext để test REST API thuần, kết hợp UI + API trong một test, seed/cleanup dữ liệu qua API, và chia sẻ trạng thái đăng nhập giữa hai tầng.'
 thumbnail   = '/images/playwright-series/playwright-bai-11-api-testing-request-fixture-ui-api.webp'
 featured    = false
