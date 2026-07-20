@@ -43,7 +43,7 @@ theme = 'hugo-blog-theme'
   phone       = '0943.313.848'
   tagline     = 'Share • Learn • Grow'
   # Tạm ẩn trang About: đổi thành true để hiện lại
-  showAbout   = true
+  showAbout   = false
   # Web3Forms — dán access key lấy từ web3forms.com (cần cho trang Contact)
   web3formsKey = ''
 
