@@ -159,30 +159,95 @@ function initCopyCode() {
   });
 }
 
-/* ── Category search + tag filter (lọc rows hiển thị) ──────
-   Hoạt động trên các bài của TRANG hiện tại (server-paginated). */
+/* ── Category search + tag filter (lọc + phân trang bằng JS) ──
+   Toàn bộ bài của category/subcategory được render sẵn trong DOM
+   (ẩn bằng display:none); lọc và phân trang chạy trên TOÀN BỘ
+   tập đó, không chỉ 1 trang server-side như trước. */
 function initCatFilter() {
   var rows = document.querySelector('[data-cat-rows]');
   if (!rows) return;
   var search = document.querySelector('[data-cat-search]');
   var tagBtns = document.querySelectorAll('[data-cat-tags] [data-tag]');
   var empty = document.querySelector('[data-cat-empty]');
+  var pagerNav = document.querySelector('[data-cat-pagination]');
+  var shownEl = document.querySelector('[data-cat-shown]');
   var items = Array.prototype.slice.call(rows.querySelectorAll('.post-row'));
   var activeTag = '';
+  var page = 1;
+  var pageSize = 6;
+  var numBtns = [];
+  var prevBtn, nextBtn;
+
+  if (pagerNav) {
+    prevBtn = document.createElement('a');
+    prevBtn.href = '#';
+    prevBtn.className = 'pagination__nav';
+    prevBtn.innerHTML = '← <span data-vi="Trước" data-en="Prev">Trước</span>';
+    prevBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      if (page > 1) { page--; apply(); }
+    });
+
+    nextBtn = document.createElement('a');
+    nextBtn.href = '#';
+    nextBtn.className = 'pagination__nav';
+    nextBtn.innerHTML = '<span data-vi="Tiếp" data-en="Next">Tiếp</span> →';
+    nextBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      page++;
+      apply();
+    });
+
+    pagerNav.appendChild(prevBtn);
+    pagerNav.appendChild(nextBtn);
+  }
+
+  function matches(it) {
+    var q = (search && search.value || '').toLowerCase().trim();
+    var okQ = !q || (it.dataset.title || '').indexOf(q) !== -1;
+    var okT = !activeTag || (' ' + (it.dataset.tags || '') + ' ').indexOf(' ' + activeTag + ' ') !== -1;
+    return okQ && okT;
+  }
+
+  function renderPager(totalPages) {
+    if (!pagerNav) return;
+    numBtns.forEach(function (b) { b.remove(); });
+    numBtns = [];
+    pagerNav.hidden = totalPages <= 1;
+    if (totalPages <= 1) return;
+
+    prevBtn.classList.toggle('is-disabled', page <= 1);
+    nextBtn.classList.toggle('is-disabled', page >= totalPages);
+
+    for (var i = 1; i <= totalPages; i++) {
+      var num = document.createElement('a');
+      num.href = '#';
+      num.className = 'pagination__num' + (i === page ? ' active' : '');
+      num.textContent = i;
+      (function (n) {
+        num.addEventListener('click', function (e) { e.preventDefault(); page = n; apply(); });
+      })(i);
+      pagerNav.insertBefore(num, nextBtn);
+      numBtns.push(num);
+    }
+  }
 
   function apply() {
-    var q = (search && search.value || '').toLowerCase().trim();
-    var shown = 0;
-    items.forEach(function (it) {
-      var okQ = !q || (it.dataset.title || '').indexOf(q) !== -1;
-      var okT = !activeTag || (' ' + (it.dataset.tags || '') + ' ').indexOf(' ' + activeTag + ' ') !== -1;
-      var ok = okQ && okT;
-      it.style.display = ok ? '' : 'none';
-      if (ok) shown++;
-    });
-    if (empty) empty.hidden = shown !== 0;
+    var matched = items.filter(matches);
+    var totalPages = Math.max(1, Math.ceil(matched.length / pageSize));
+    if (page > totalPages) page = totalPages;
+    var start = (page - 1) * pageSize;
+
+    items.forEach(function (it) { it.style.display = 'none'; });
+    matched.slice(start, start + pageSize).forEach(function (it) { it.style.display = ''; });
+
+    if (empty) empty.hidden = matched.length !== 0;
+    if (shownEl) shownEl.textContent = Math.max(0, Math.min(pageSize, matched.length - start));
+
+    renderPager(totalPages);
   }
-  if (search) search.addEventListener('input', apply);
+
+  if (search) search.addEventListener('input', function () { page = 1; apply(); });
   tagBtns.forEach(function (b) {
     b.addEventListener('click', function () {
       var t = (b.dataset.tag || '').toLowerCase();
@@ -192,9 +257,12 @@ function initCatFilter() {
         tagBtns.forEach(function (x) { x.classList.remove('active'); });
         b.classList.add('active');
       }
+      page = 1;
       apply();
     });
   });
+
+  apply();
 }
 
 /* ── Series list filter tabs ────────────────────────────── */
@@ -403,12 +471,12 @@ function initGiscus() {
 document.addEventListener('DOMContentLoaded', function () {
   initTheme();
   initMobileNav();
+  initCatFilter();
   initLang();
   initReadingProgress();
   initTOC();
   initCopyLink();
   initCopyCode();
-  initCatFilter();
   initSeriesTabs();
   initSeriesProgress();
   initContactForm();

@@ -796,6 +796,7 @@ ul { list-style: none; }
 
 /* Pagination */
 .pagination { display: flex; align-items: center; justify-content: center; gap: 6px; }
+.pagination[hidden] { display: none; }
 .pagination__nav { padding: 9px 16px; border: 1px solid var(--c-border); border-radius: 8px; background: var(--c-card); font-size: 13px; font-weight: 600; color: var(--c-text); transition: all .15s; }
 .pagination__nav:hover { border-color: var(--c-accent); color: var(--c-accent); }
 .pagination__nav.is-disabled { color: var(--c-border); pointer-events: none; }

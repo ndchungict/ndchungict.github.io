@@ -2,9 +2,9 @@
 {{- $term := . }}
 {{- $key := .Data.Term | default (path.Base .RelPermalink) }}
 {{- $meta := false }}
-{{- range site.Params.categories }}{{ if eq .key $key }}{{ $meta = . }}{{ end }}{{ end }}
-{{- $color := "" }}{{ $emoji := "📂" }}{{ $label := $term.LinkTitle }}{{ $desc := "" }}
-{{- with $meta }}{{ $color = .color }}{{ $emoji = .emoji }}{{ $label = .labelVI }}{{ end }}
+{{- range site.Params.itSubcategories }}{{ if eq .key $key }}{{ $meta = . }}{{ end }}{{ end }}
+{{- $color := "is-it" }}{{ $emoji := "📂" }}{{ $label := $term.LinkTitle }}
+{{- with $meta }}{{ $emoji = .emoji }}{{ $label = .labelVI }}{{ end }}
 {{- $pages := $term.Pages.ByDate.Reverse }}
 
 <div class="{{ $color }}">
@@ -25,10 +25,10 @@
         </div>
       </div>
       <div class="cat-pills">
-        {{- range site.Params.categories }}
-        {{- $t := site.GetPage (printf "/categories/%s" .key) }}
+        {{- range site.Params.itSubcategories }}
+        {{- $t := site.GetPage (printf "/subcategories/%s" .key) }}
         {{- if $t }}
-        <a class="cat-pill {{ .color }} {{ if eq .key $key }}active{{ end }}" href="{{ $t.RelPermalink }}">{{ .emoji }} <span data-vi="{{ .labelVI }}" data-en="{{ .labelEN }}">{{ .labelVI }}</span></a>
+        <a class="cat-pill {{ if eq .key $key }}active{{ end }}" href="{{ $t.RelPermalink }}">{{ .emoji }} <span data-vi="{{ .labelVI }}" data-en="{{ .labelEN }}">{{ .labelVI }}</span></a>
         {{- end }}
         {{- end }}
       </div>
@@ -101,10 +101,10 @@
       <div class="panel">
         <div class="panel__title"><span data-vi="Chủ đề khác" data-en="Other Topics">Chủ đề khác</span></div>
         <div class="mini-list">
-          {{- range site.Params.categories }}
-          {{- $t := site.GetPage (printf "/categories/%s" .key) }}
+          {{- range site.Params.itSubcategories }}
+          {{- $t := site.GetPage (printf "/subcategories/%s" .key) }}
           {{- if and $t (ne .key $key) }}
-          <a class="mini-item {{ .color }}" href="{{ $t.RelPermalink }}"><span class="mini-item__icon">{{ .emoji }}</span><div><div class="mini-item__title"><span data-vi="{{ .labelVI }}" data-en="{{ .labelEN }}">{{ .labelVI }}</span></div><div class="mini-item__meta">{{ len $t.Pages }} <span data-vi="bài" data-en="posts">bài</span></div></div></a>
+          <a class="mini-item" href="{{ $t.RelPermalink }}"><span class="mini-item__icon">{{ .emoji }}</span><div><div class="mini-item__title"><span data-vi="{{ .labelVI }}" data-en="{{ .labelEN }}">{{ .labelVI }}</span></div><div class="mini-item__meta">{{ len $t.Pages }} <span data-vi="bài" data-en="posts">bài</span></div></div></a>
           {{- end }}
           {{- end }}
         </div>
