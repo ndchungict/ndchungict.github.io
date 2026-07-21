@@ -76,12 +76,23 @@ title       = '...'
 slug        = ''          # để trống = dùng tên file làm URL
 summary     = ''          # để trống = Hugo tự lấy ~70 từ đầu
 thumbnail   = ''          # ảnh mặc định theo category (xem mục Thumbnail)
+featured    = false
+columns     = 3            # 3 (mặc định) hoặc 2 — xem mục "Layout bài viết: 2 cột / 3 cột"
 categories  = []
 tags        = []
 series      = []
 authors     = ['Nguyen Chung']
 +++
 ```
+
+### Layout bài viết: 2 cột / 3 cột
+
+Trường `columns` trong front matter (mọi post, kể cả bài series) chọn số cột hiển thị cho trang bài viết đó:
+
+- `columns = 3` (mặc định, kể cả khi để trống/không khai báo) — layout hiện tại: TOC bên trái, nội dung ở giữa, sidebar (Bài viết liên quan / Top bài viết / Tags) bên phải.
+- `columns = 2` — gộp sidebar phải vào cột trái cùng TOC, chỉ còn 2 cột (TOC + sidebar gộp, nội dung).
+
+Layout được xử lý trong `layouts/page.html` (biến `$is2col`), CSS tương ứng ở `assets/css/main.css` (`.post-layout--2col`). Phần "Bài viết liên quan / Top bài viết / Tags" dùng chung 1 partial `layouts/_partials/post-sidebar-extra.html` cho cả 2 layout để tránh lặp code.
 
 ### Subcategory (chỉ áp dụng cho `categories = ['it']`)
 
@@ -126,6 +137,8 @@ title       = '...'
 slug        = ''
 summary     = ''
 thumbnail   = ''
+featured    = false
+columns     = 3            # 3 (mặc định) hoặc 2 — xem mục "Layout bài viết: 2 cột / 3 cột"
 weight      = 1           # thứ tự bài trong series (1, 2, 3,...)
 categories  = []
 tags        = []

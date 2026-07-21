@@ -15,6 +15,9 @@
   {{- end }}
 {{- end }}
 
+{{- /* columns = 2 → layout 2 cột (TOC gộp sidebar phải, không có post-aside riêng); mặc định (trống/3) giữ layout 3 cột */}}
+{{- $is2col := eq $p.Params.columns 2 }}
+
 <div class="reading-progress" data-reading-progress></div>
 
 <article class="post {{ $color }}">
@@ -47,9 +50,9 @@
     </div>
   </div>
 
-  <!-- 3-column layout -->
-  <div class="container post-layout">
-    <!-- LEFT: TOC -->
+  <!-- Post layout: 3 cột (mặc định) hoặc 2 cột (columns = 2 trong front matter) -->
+  <div class="container post-layout{{ if $is2col }} post-layout--2col{{ end }}">
+    <!-- LEFT: TOC (+ sidebar phải gộp vào khi ở chế độ 2 cột) -->
     <aside class="post-toc">
       <div class="panel">
         <div class="panel__title"><span data-vi="Mục lục" data-en="Contents">Mục lục</span></div>
@@ -62,6 +65,9 @@
           <button class="share__btn" data-copy-link>🔗</button>
         </div>
       </div>
+      {{- if $is2col }}
+      {{ partial "post-sidebar-extra.html" (dict "page" $p "catKey" $catKey) }}
+      {{- end }}
     </aside>
 
     <!-- CENTER: Article -->
@@ -120,42 +126,12 @@
       {{ partial "comments.html" . }}
     </div>
 
-    <!-- RIGHT: Sidebar -->
+    <!-- RIGHT: Sidebar (chỉ render ở layout 3 cột) -->
+    {{- if not $is2col }}
     <aside class="post-aside">
-      {{- $related := first 4 (where (where site.RegularPages "Section" "posts" ) "Params.categories" "intersect" (slice $catKey)) }}
-      <div class="panel">
-        <div class="panel__title"><span data-vi="Bài viết liên quan" data-en="Related Posts">Bài viết liên quan</span></div>
-        <div class="mini-list">
-          {{- range $related }}{{ if ne .RelPermalink $p.RelPermalink }}
-          <a class="mini-item" href="{{ .RelPermalink }}">
-            <span class="mini-item__icon">📄</span>
-            <div><div class="mini-item__title">{{ .Title }}</div><div class="mini-item__meta">{{ .ReadingTime }} <span data-vi="phút" data-en="min">phút</span></div></div>
-          </a>
-          {{- end }}{{ end }}
-        </div>
-      </div>
-
-      <div class="panel">
-        <div class="panel__title">🔥 <span data-vi="Top bài viết" data-en="Top Posts">Top bài viết</span></div>
-        <div class="mini-list">
-          {{- range $i, $tp := first 5 (where site.RegularPages "Section" "posts").ByDate.Reverse }}
-          <a class="mini-item" href="{{ $tp.RelPermalink }}">
-            <span class="mini-item__num">{{ printf "%02d" (add $i 1) }}</span>
-            <div class="mini-item__title">{{ $tp.Title }}</div>
-          </a>
-          {{- end }}
-        </div>
-      </div>
-
-      <div class="panel">
-        <div class="panel__title">Tags</div>
-        <div class="tag-cloud">
-          {{- range $name, $taxonomy := site.Taxonomies.tags }}
-          <a class="tag-pill" href="{{ (site.GetPage (printf "/tags/%s" $name)).RelPermalink }}">#{{ $name }}</a>
-          {{- end }}
-        </div>
-      </div>
+      {{ partial "post-sidebar-extra.html" (dict "page" $p "catKey" $catKey) }}
     </aside>
+    {{- end }}
   </div>
 </article>
 {{ end }}

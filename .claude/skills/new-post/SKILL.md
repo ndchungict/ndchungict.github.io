@@ -58,6 +58,7 @@ slug        = '<slug>'
 summary     = '<summary hoặc để trống>'
 thumbnail   = '<đường dẫn thumbnail ở Bước 3>'
 featured    = false
+columns     = 3  # 2 nếu user muốn post này hiển thị dạng 2 cột (gộp sidebar phải vào TOC); mặc định 3 cột
 categories  = ['<category>']
 subcategories = ['<subcategory1>', '<subcategory2>', ...]  # chỉ thêm dòng này nếu category = 'it'; có thể nhiều key
 tags        = [<'tag1', 'tag2', ...>]
@@ -68,10 +69,11 @@ authors     = ['Nguyen Chung']
 <body — heading mở đầu hoặc nội dung user yêu cầu>
 ```
 
-Bài thuộc series — thêm `weight` ngay dưới `featured` và điền `series` (như `archetypes/series.md`):
+Bài thuộc series — thêm `weight` ngay dưới `columns` và điền `series` (như `archetypes/series.md`):
 
 ```toml
 featured    = false
+columns     = 3
 weight      = <thứ tự>
 ...
 series      = ['<series-slug>']

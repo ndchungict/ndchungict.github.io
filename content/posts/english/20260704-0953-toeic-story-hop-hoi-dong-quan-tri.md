@@ -7,6 +7,7 @@ summary     = 'Chương 1 của truyện dài "Project Aria": học 27 từ vự
 thumbnail   = '/images/toeic-story/offices.webp'
 featured    = false
 weight      = 1
+columns     = 2 
 categories  = ['english']
 tags        = ['toeic', 'vocabulary', 'office', 'meeting']
 series      = ['hoc-tu-vung-toeic-qua-story']

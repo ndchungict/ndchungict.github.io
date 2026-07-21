@@ -7,6 +7,7 @@ summary     = 'Chương 2 của truyện dài "Project Aria": học 17 từ vự
 thumbnail   = '/images/toeic-story/offices.webp'
 featured    = false
 weight      = 2
+columns     = 2 
 categories  = ['english']
 tags        = ['toeic', 'vocabulary', 'office', 'equipment']
 series      = ['hoc-tu-vung-toeic-qua-story']

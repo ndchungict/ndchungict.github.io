@@ -6,6 +6,7 @@ slug        = ''
 summary     = ''
 thumbnail   = ''
 featured    = false
+columns     = 3
 categories  = []
 tags        = []
 series      = []

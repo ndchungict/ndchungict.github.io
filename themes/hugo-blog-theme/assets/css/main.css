@@ -602,11 +602,15 @@ ul { list-style: none; }
   display: grid; grid-template-columns: 240px 1fr 280px; gap: 40px;
   align-items: start; padding-top: 40px; padding-bottom: 80px;
 }
+/* columns = 2 trong front matter: gộp sidebar phải vào post-toc, bỏ post-aside */
+.post-layout--2col { grid-template-columns: 1fr 280px; }
+.post-layout--2col .post-article { order: 1; }
+.post-layout--2col .post-toc { order: 2; }
 /* Grid item mặc định min-width:auto → <pre> dòng dài (white-space:pre) đẩy
    track 1fr rộng ra và làm tràn ngang cả trang. min-width:0 cho phép co lại
    để .codeblock tự cuộn ngang bên trong. */
 .post-layout > *, .cat-layout > *, .sd-layout > * { min-width: 0; }
-.post-toc { position: sticky; top: 80px; }
+.post-toc { position: sticky; top: 80px; display: flex; flex-direction: column; gap: 24px; }
 .post-aside { position: sticky; top: 80px; display: flex; flex-direction: column; gap: 24px; }
 
 .panel { background: var(--c-card); border: 1px solid var(--c-border); border-radius: var(--r-lg); padding: 20px; }
