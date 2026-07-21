@@ -308,7 +308,7 @@ brew bundle cleanup   # gỡ những gói KHÔNG có trong Brewfile (cẩn thậ
 
 ### Brewfile mẫu — tải về và dùng ngay
 
-Để dễ hình dung, đây là Brewfile thật mình đang dùng hằng ngày — gồm các công cụ dev cơ bản (Git, mise, VS Code, Docker Desktop, Postman...), vài extension VS Code cài kèm, và cả Calibre để quản lý sách điện tử:
+Để dễ hình dung, đây là Brewfile thật mình đang dùng hằng ngày — gồm các công cụ dev cơ bản (Git, mise, VS Code, Docker Desktop, Postman...), vài extension VS Code cài kèm, Android Studio, và cả Calibre để quản lý sách điện tử:
 
 [⬇ Tải Brewfile mẫu](/files/homebrew/Brewfile)
 
@@ -324,6 +324,8 @@ brew bundle check --file=./Brewfile
 # 3. Cài toàn bộ
 brew bundle install --file=./Brewfile
 ```
+
+> Brewfile này chỉ cài **Android Studio** (IDE) — đừng để nó tự tải riêng một bản SDK khi mở lần đầu. Hãy để [mise quản lý Android SDK](/posts/mise-la-gi-cai-dat-va-su-dung/) (đã khai báo sẵn trong `config.toml` mẫu), sau đó trỏ Android Studio vào đúng thư mục mise vừa cài (`Settings → Languages & Frameworks → Android SDK → Android SDK Location`, lấy path bằng `mise where android-sdk`). Nhờ vậy `adb`/`sdkmanager`/`emulator` có sẵn trong `PATH` mà không cần tự sửa `.zshrc`, còn Android Studio vẫn dùng SDK Manager quen thuộc để tải đầy đủ platform, build-tools, system image — chỉ một bản SDK duy nhất, dùng chung cho cả CLI lẫn IDE. Xem chi tiết ở mục "Dùng chung Android SDK giữa mise và Android Studio" trong bài hướng dẫn mise.
 
 > File mẫu này có cả dòng `vscode "..."` để cài extension VS Code qua Homebrew — cần bật CLI `code` trước (mở VS Code → Command Palette → "Shell Command: Install 'code' command in PATH") thì `brew bundle` mới cài được các dòng này. Dòng nào không cần, cứ xoá hoặc thêm `#` để comment lại trước khi cài.
 

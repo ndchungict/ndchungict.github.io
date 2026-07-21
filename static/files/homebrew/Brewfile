@@ -121,5 +121,4 @@ cask "calibre"
 cask "android-file-transfer"
 
 # Android Studio - IDE, Device Manager và Android Emulator.
-# Bỏ dấu # khi cần cài.
-# cask "android-studio"
+cask "android-studio"

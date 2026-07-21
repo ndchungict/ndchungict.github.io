@@ -355,6 +355,23 @@ mise install
 
 > File mẫu này cài khá nhiều tool (Java, Flutter, Android SDK...) nên lần `mise install` đầu tiên có thể mất vài phút. Muốn dùng làm điểm khởi đầu rồi tinh chỉnh, mở file vừa tải, xoá bớt dòng nào không cần trước khi chạy `mise install`.
 
+### Dùng chung Android SDK giữa mise và Android Studio
+
+`android-sdk` trong file cấu hình mẫu ở trên là một tool hơi đặc biệt: nếu để **Android Studio tự tải SDK riêng** (qua wizard lúc mở lần đầu), các lệnh dòng lệnh như `adb`, `sdkmanager`, `emulator` sẽ **không** tự có trong `PATH` — phải tự thêm `ANDROID_HOME` và vài dòng `export PATH=...` vào `.zshrc` bằng tay.
+
+Để mise lo luôn phần đó, dùng chung một bản SDK cho cả Terminal lẫn Android Studio:
+
+```bash
+mise use -g android-sdk@latest   # cài (nếu chưa có) — PATH/ANDROID_HOME tự động có sẵn
+mise where android-sdk            # in ra đường dẫn SDK mise vừa cài
+```
+
+Copy đường dẫn đó, mở Android Studio → **Settings → Languages & Frameworks → Android SDK → Android SDK Location**, dán vào. Từ giờ:
+
+- `adb`, `sdkmanager`, `emulator`... dùng được ngay trong Terminal nhờ mise activate, không cần tự sửa `PATH`.
+- Vẫn mở **SDK Manager** trong Android Studio như bình thường để tick tải platform, build-tools, system image, NDK — tải "đầy đủ" qua giao diện quen thuộc, vào đúng thư mục mise quản lý.
+- Chỉ có **một bản SDK duy nhất** dùng chung cho cả IDE lẫn CLI (Appium, Gradle, CI...), không lo lệch version giữa hai nơi.
+
 ## Kết
 
 mise gộp việc quản lý version ngôn ngữ (thay `nvm`/`pyenv`/`rbenv`/`asdf`), biến môi trường (thay `direnv`) và chạy task (thay `Makefile`) vào **một công cụ, một file cấu hình duy nhất** — lại còn nhanh hơn hẳn nhờ viết bằng Rust và tương thích ngược với toàn bộ hệ sinh thái plugin của asdf.
