@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-21T09:22:00+07:00'
-draft       = true
+draft       = false
 title       = 'Homebrew là gì? Hướng dẫn cài đặt và sử dụng cho người mới bắt đầu'
 slug        = 'homebrew-la-gi-cai-dat-va-su-dung'
 summary     = 'Homebrew là trình quản lý gói giúp cài đặt, cập nhật và gỡ phần mềm trên macOS/Linux chỉ bằng một dòng lệnh, thay vì tải file cài đặt thủ công. Bài viết hướng dẫn từ cài đặt, các lệnh cốt lõi (install, update, upgrade, search...), cài ứng dụng GUI bằng Cask, đến các tip nâng cao như Brewfile và tap — dành cho người mới bắt đầu.'

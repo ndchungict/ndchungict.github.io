@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-21T09:40:00+07:00'
-draft       = true
+draft       = false
 title       = 'Mise là gì? Hướng dẫn cài đặt và sử dụng cho người mới bắt đầu'
 slug        = 'mise-la-gi-cai-dat-va-su-dung'
 summary     = 'Mise (mise-en-place, trước đây là rtx) là công cụ quản lý phiên bản ngôn ngữ lập trình và công cụ dòng lệnh, thay thế asdf/nvm/pyenv/rbenv bằng một file cấu hình duy nhất. Bài viết hướng dẫn cài đặt, các lệnh cốt lõi, quản lý version/env theo project, chạy task kiểu Makefile, cài plugin cho tool lạ, đến cách migrate từ asdf và dùng trong CI/CD.'
