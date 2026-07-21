@@ -7,6 +7,7 @@ summary     = 'Nhóm cụm từ TOEIC về hợp đồng, điều khoản, quy �
 thumbnail   = '/images/toeic-collocation/03-hop-dong-quy-dinh-tuan-thu.webp'
 featured    = false
 weight      = 3
+columns     = 2
 categories  = ['english']
 tags        = ['toeic']
 series      = ['cum-tu-hay-gap-trong-bai-thi-toeic']

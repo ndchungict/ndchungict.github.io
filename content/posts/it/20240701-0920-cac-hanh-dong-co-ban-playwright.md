@@ -7,6 +7,7 @@ summary     = 'Thực hiện thao tác trên phần tử: click, điền text (f
 thumbnail   = '/images/series-hoc-automation-test-tu-so-0/bai-19-cac-hanh-dong-co-ban-playwright.webp'
 featured    = false
 weight      = 20
+columns     = 2
 categories  = ['it']
 subcategories = ['qa-testing']
 tags        = ['automation-test', 'playwright', 'actions']

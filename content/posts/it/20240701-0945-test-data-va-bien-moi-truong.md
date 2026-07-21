@@ -7,6 +7,7 @@ summary     = 'Tách dữ liệu test khỏi code, dùng biến môi trường v
 thumbnail   = '/images/series-hoc-automation-test-tu-so-0/bai-24-test-data-va-env.webp'
 featured    = false
 weight      = 25
+columns     = 2
 categories  = ['it']
 subcategories = ['qa-testing']
 tags        = ['automation-test', 'playwright', 'test-data', 'env']

@@ -7,6 +7,7 @@ summary     = 'Array và các phương thức hay dùng trong automation test (m
 thumbnail   = '/images/series-hoc-automation-test-tu-so-0/bai-8-array-va-string-trong-automation-test.webp'
 featured    = false
 weight      = 9
+columns     = 2
 categories  = ['it']
 subcategories = ['qa-testing']
 tags        = ['automation-test', 'javascript']

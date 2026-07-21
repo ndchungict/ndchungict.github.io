@@ -6,6 +6,7 @@ slug        = 'homebrew-la-gi-cai-dat-va-su-dung'
 summary     = 'Homebrew là trình quản lý gói giúp cài đặt, cập nhật và gỡ phần mềm trên macOS/Linux chỉ bằng một dòng lệnh, thay vì tải file cài đặt thủ công. Bài viết hướng dẫn từ cài đặt, các lệnh cốt lõi (install, update, upgrade, search...), cài ứng dụng GUI bằng Cask, đến các tip nâng cao như Brewfile và tap — dành cho người mới bắt đầu.'
 thumbnail   = '/images/default-thumb/default-thumb-it-lap-trinh.webp'
 featured    = false
+columns     = 2
 categories  = ['it']
 subcategories = ['tips-tricks']
 tags        = ['homebrew', 'macos', 'terminal', 'cli', 'package-manager']

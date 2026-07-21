@@ -7,6 +7,7 @@ summary     = 'Áp dụng toàn bộ series vào một project thật: chọn we
 thumbnail   = '/images/series-hoc-automation-test-tu-so-0/bai-32-project-thuc-chien-test-suite-ecommerce.webp'
 featured    = false
 weight      = 33
+columns     = 2
 categories  = ['it']
 subcategories = ['qa-testing']
 tags        = ['automation-test', 'playwright', 'project']

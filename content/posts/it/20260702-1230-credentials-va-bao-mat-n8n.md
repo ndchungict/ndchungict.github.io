@@ -7,6 +7,7 @@ summary     = 'Cách n8n mã hóa và lưu credentials, quản lý secrets, phâ
 thumbnail   = '/images/series-n8n/10-credentials-bao-mat-n8n.webp'
 featured    = false
 weight      = 10
+columns     = 2
 categories  = ['it']
 subcategories = ['workflow', 'automation', 'ai']
 tags        = ['n8n', 'security', 'credentials']

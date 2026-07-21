@@ -6,6 +6,7 @@ slug        = 'dockerfile-dong-goi-ung-dung'
 summary     = 'Học cách viết Dockerfile để đóng gói chính ứng dụng của bạn thành image: các chỉ thị quan trọng, cơ chế layer, .dockerignore và build image đầu tiên.'
 thumbnail   = '/images/docker-series/04-dockerfile.webp'
 weight      = 4
+columns     = 2
 categories  = ['it']
 subcategories = ['devops']
 tags        = ['docker', 'devops']

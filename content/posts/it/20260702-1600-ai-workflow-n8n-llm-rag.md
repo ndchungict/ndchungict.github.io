@@ -7,6 +7,7 @@ summary     = 'Xây AI workflow trong n8n: AI Agent node, tích hợp LLM (OpenA
 thumbnail   = '/images/series-n8n/17-ai-workflow-voi-n8n.webp'
 featured    = false
 weight      = 17
+columns     = 2
 categories  = ['it']
 subcategories = ['workflow', 'automation', 'ai']
 tags        = ['n8n', 'ai-agent', 'rag']

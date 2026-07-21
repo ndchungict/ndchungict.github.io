@@ -7,6 +7,7 @@ summary     = 'Tổng quan về Playwright: kiến trúc dựa trên CDP/WebSock
 thumbnail   = '/images/playwright-series/playwright-bai-01-playwright-la-gi-kien-truc-so-sanh.webp'
 featured    = false
 weight      = 1
+columns     = 2
 categories  = ['it']
 subcategories = ['automation']
 tags        = ['playwright', 'test', 'e2e', 'testing', 'framework']

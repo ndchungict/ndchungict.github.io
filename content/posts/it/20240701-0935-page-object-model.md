@@ -7,6 +7,7 @@ summary     = 'Page Object Model (POM) tách locator và thao tác của mỗi t
 thumbnail   = '/images/series-hoc-automation-test-tu-so-0/bai-22-page-object-model.webp'
 featured    = false
 weight      = 23
+columns     = 2
 categories  = ['it']
 subcategories = ['qa-testing']
 tags        = ['automation-test', 'playwright', 'page-object-model']

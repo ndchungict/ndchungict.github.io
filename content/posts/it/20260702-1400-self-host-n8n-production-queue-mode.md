@@ -7,6 +7,7 @@ summary     = 'Triển khai n8n production: Docker Compose với Postgres + Redi
 thumbnail   = '/images/series-n8n/13-self-host-production.webp'
 featured    = false
 weight      = 13
+columns     = 2
 categories  = ['it']
 subcategories = ['workflow', 'automation', 'ai']
 tags        = ['n8n', 'self-host', 'queue-mode']

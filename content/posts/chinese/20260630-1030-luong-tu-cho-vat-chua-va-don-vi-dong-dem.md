@@ -7,6 +7,7 @@ summary     = 'Phần 6 series lượng từ tiếng Trung: lượng từ mượ
 thumbnail   = '/images/series-luong-tu-tieng-trung/06-luong-tu-cho-vat-chua-va-don-vi-dong-dem.webp'
 featured    = false
 weight      = 6
+columns     = 2
 categories  = ['chinese']
 tags        = ['luong-tu', 'liangci', 'ngu-phap', 'hanyu']
 series      = ['tong-hop-luong-tu-tieng-trung']

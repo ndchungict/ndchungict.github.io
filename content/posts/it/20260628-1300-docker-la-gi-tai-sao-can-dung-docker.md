@@ -6,6 +6,7 @@ slug        = 'docker-la-gi-tai-sao-can-dung-docker'
 summary     = 'Tìm hiểu Docker là gì, vấn đề mà nó giải quyết, sự khác nhau giữa container và máy ảo, cùng những khái niệm nền tảng cần nắm trước khi bắt đầu.'
 thumbnail   = '/images/docker-series/01-docker-la-gi.webp'
 weight      = 1
+columns     = 2
 categories  = ['it']
 subcategories = ['devops']
 tags        = ['docker', 'devops']

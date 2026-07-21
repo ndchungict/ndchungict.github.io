@@ -5,6 +5,7 @@ title       = 'Tổng hợp ngữ pháp tiếng Trung HSK3'
 slug        = 'ngu-phap-tieng-trung-hsk3'
 summary     = 'Toàn bộ ngữ pháp HSK3 trong một bài: câu chữ 把, câu bị động 被, bốn loại bổ ngữ (kết quả, xu hướng, trình độ, khả năng), cấu trúc 越来越 và 越…越, 一…就, các cặp liên từ điều kiện, trợ từ 着, điệp từ và cấu trúc 是…的.'
 thumbnail   = '/images/hsk3/tong-hop-ngu-phap-hsk-3.webp'
+columns     = 2
 categories  = ['chinese']
 tags        = ['hsk', 'hsk3', 'yufa', 'hanyu']
 authors     = ['Nguyen Chung']

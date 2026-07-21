@@ -7,6 +7,7 @@ summary     = 'Bài mở đầu series lượng từ tiếng Trung: lượng t�
 thumbnail   = '/images/series-luong-tu-tieng-trung/01-luong-tu-tieng-trung-la-gi.webp'
 featured    = false
 weight      = 1
+columns     = 2
 categories  = ['chinese']
 tags        = ['luong-tu', 'liangci', 'ngu-phap', 'hanyu']
 series      = ['tong-hop-luong-tu-tieng-trung']

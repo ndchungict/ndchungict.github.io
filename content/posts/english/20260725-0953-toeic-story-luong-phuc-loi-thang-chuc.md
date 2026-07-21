@@ -7,6 +7,7 @@ summary     = 'Chương 4 của truyện dài "Project Aria": học 27 từ vự
 thumbnail   = '/images/toeic-story/personnel.webp'
 featured    = false
 weight      = 4
+columns     = 2
 categories  = ['english']
 tags        = ['toeic', 'vocabulary', 'personnel', 'salary']
 series      = ['hoc-tu-vung-toeic-qua-story']

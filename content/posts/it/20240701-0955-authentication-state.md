@@ -7,6 +7,7 @@ summary     = 'Đăng nhập một lần rồi tái sử dụng cho mọi test b
 thumbnail   = '/images/series-hoc-automation-test-tu-so-0/bai-26-authentication-state.webp'
 featured    = false
 weight      = 27
+columns     = 2
 categories  = ['it']
 subcategories = ['qa-testing']
 tags        = ['automation-test', 'playwright', 'authentication']

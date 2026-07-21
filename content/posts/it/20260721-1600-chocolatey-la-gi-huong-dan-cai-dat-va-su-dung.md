@@ -6,6 +6,7 @@ slug        = 'chocolatey-la-gi-huong-dan-cai-dat-va-su-dung'
 summary     = 'Chocolatey là trình quản lý gói giúp cài đặt, cập nhật và gỡ phần mềm trên Windows chỉ bằng một dòng lệnh PowerShell, thay vì tải file .exe rồi bấm Next liên tục. Bài viết hướng dẫn từ cài đặt, các lệnh cốt lõi (install, upgrade, uninstall, search...), ví dụ cài git/VS Code/Chrome/7-Zip, đến cách viết script tự động hoá setup máy mới và so sánh với winget, Scoop.'
 thumbnail   = '/images/default-thumb/default-thumb-it-lap-trinh.webp'
 featured    = false
+columns     = 2
 categories  = ['it']
 subcategories = ['devops', 'tips-tricks']
 tags        = ['chocolatey', 'windows', 'powershell', 'package-manager', 'automation']

@@ -7,6 +7,7 @@ summary     = 'Thao tác với các tình huống giao diện phức tạp: tab/
 thumbnail   = '/images/series-hoc-automation-test-tu-so-0/bai-25-multiple-tabs-popup-iframe.webp'
 featured    = false
 weight      = 26
+columns     = 2
 categories  = ['it']
 subcategories = ['qa-testing']
 tags        = ['automation-test', 'playwright', 'iframe', 'popup']

@@ -7,6 +7,7 @@ summary     = 'Cài đặt Node.js và VS Code, nắm các thao tác terminal c�
 thumbnail   = '/images/series-hoc-automation-test-tu-so-0/bai-2-cai-dat-moi-truong-javascript.webp'
 featured    = false
 weight      = 3
+columns     = 2
 categories  = ['it']
 subcategories = ['qa-testing']
 tags        = ['automation-test', 'nodejs', 'vs-code', 'terminal']

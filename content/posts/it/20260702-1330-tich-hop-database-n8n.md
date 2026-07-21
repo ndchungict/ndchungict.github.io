@@ -7,6 +7,7 @@ summary     = 'Tích hợp database với n8n: Postgres/MySQL/MongoDB node, vi�
 thumbnail   = '/images/series-n8n/12-tich-hop-database.webp'
 featured    = false
 weight      = 12
+columns     = 2
 categories  = ['it']
 subcategories = ['workflow', 'automation', 'ai']
 tags        = ['n8n', 'database', 'postgres']

@@ -7,6 +7,7 @@ summary     = 'Hoàn thiện project: cấu hình CI chạy tự động, viết
 thumbnail   = '/images/series-hoc-automation-test-tu-so-0/bai-33-hoan-thien-ci-pipeline-portfolio.webp'
 featured    = false
 weight      = 34
+columns     = 2
 categories  = ['it']
 subcategories = ['qa-testing']
 tags        = ['automation-test', 'playwright', 'portfolio', 'ci-cd']

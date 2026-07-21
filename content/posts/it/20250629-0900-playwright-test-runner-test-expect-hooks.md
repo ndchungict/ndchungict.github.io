@@ -7,6 +7,7 @@ summary     = 'Nắm chắc test runner của Playwright: cấu trúc test/descr
 thumbnail   = '/images/playwright-series/playwright-bai-03-test-runner-test-expect-hooks.webp'
 featured    = false
 weight      = 3
+columns     = 2
 categories  = ['it']
 subcategories = ['automation']
 tags        = ['playwright', 'test', 'e2e', 'testing', 'framework']

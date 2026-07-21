@@ -7,6 +7,7 @@ summary     = 'Viết assertion bằng expect: web-first assertions tự chờ, 
 thumbnail   = '/images/series-hoc-automation-test-tu-so-0/bai-20-assertion-voi-expect.webp'
 featured    = false
 weight      = 21
+columns     = 2
 categories  = ['it']
 subcategories = ['qa-testing']
 tags        = ['automation-test', 'playwright', 'assertion']

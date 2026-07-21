@@ -6,6 +6,7 @@ slug        = 'docker-compose-multi-container'
 summary     = 'Dùng Docker Compose để định nghĩa và chạy ứng dụng nhiều container bằng một file YAML duy nhất: cú pháp, services, volumes, networks và các lệnh thường dùng.'
 thumbnail   = '/images/docker-series/06-docker-compose.webp'
 weight      = 6
+columns     = 2
 categories  = ['it']
 subcategories = ['devops']
 tags        = ['docker', 'devops']

@@ -5,6 +5,7 @@ title       = 'Bảng tổng hợp một số động từ bất quy tắc trong
 slug        = 'bang-tong-hop-dong-tu-bat-quy-tac-tieng-anh'
 summary     = 'Tổng hợp những động từ bất quy tắc thông dụng nhất trong tiếng Anh theo bảng V1 – V2 – V3, nhóm theo quy luật biến đổi để dễ nhớ, kèm phiên âm, nghĩa và mẹo học.'
 thumbnail   = '/images/english/bang-tong-hop-dong-tu-bat-quy-tac.webp'
+columns     = 2
 categories  = ['english']
 tags        = ['english', 'grammar', 'irregular-verbs', 'tieng-anh']
 authors     = ['Nguyen Chung']

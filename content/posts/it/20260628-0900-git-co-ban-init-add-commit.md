@@ -6,6 +6,7 @@ slug        = 'git-co-ban-init-add-commit'
 summary     = 'Học các lệnh Git cơ bản nhất: khởi tạo repo, theo dõi thay đổi, tạo commit, xem lịch sử và so sánh code. Kèm bài tập thực hành từ đầu.'
 thumbnail   = '/images/git-series/03-git-co-ban.webp'
 weight      = 3
+columns     = 2
 categories  = ['it']
 subcategories = ['version-control']
 tags        = ['git', 'devops']

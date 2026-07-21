@@ -7,6 +7,7 @@ summary     = 'Hiểu playwright.config.js (baseURL, projects/trình duyệt, re
 thumbnail   = '/images/series-hoc-automation-test-tu-so-0/bai-16-cau-truc-project-playwright.webp'
 featured    = false
 weight      = 17
+columns     = 2
 categories  = ['it']
 subcategories = ['qa-testing']
 tags        = ['automation-test', 'playwright', 'config']

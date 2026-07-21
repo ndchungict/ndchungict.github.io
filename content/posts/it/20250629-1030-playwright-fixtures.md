@@ -7,6 +7,7 @@ summary     = 'Fixtures là hệ thống dependency injection của Playwright. 
 thumbnail   = '/images/playwright-series/playwright-bai-06-fixtures.webp'
 featured    = false
 weight      = 6
+columns     = 2
 categories  = ['it']
 subcategories = ['automation']
 tags        = ['playwright', 'test', 'e2e', 'testing', 'framework']

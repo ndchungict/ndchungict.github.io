@@ -7,6 +7,7 @@ summary     = 'Các node biến đổi dữ liệu cốt lõi (Edit Fields, Filt
 thumbnail   = '/images/series-n8n/06-xu-ly-du-lieu-n8n.webp'
 featured    = false
 weight      = 6
+columns     = 2
 categories  = ['it']
 subcategories = ['workflow', 'automation', 'ai']
 tags        = ['n8n', 'data-transformation', 'expression']

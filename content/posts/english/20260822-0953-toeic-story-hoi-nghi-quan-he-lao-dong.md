@@ -7,6 +7,7 @@ summary     = 'Chương 8 của truyện dài "Project Aria": học 18 từ vự
 thumbnail   = '/images/toeic-story/general-business.webp'
 featured    = false
 weight      = 8
+columns     = 2
 categories  = ['english']
 tags        = ['toeic', 'vocabulary', 'business', 'conference']
 series      = ['hoc-tu-vung-toeic-qua-story']

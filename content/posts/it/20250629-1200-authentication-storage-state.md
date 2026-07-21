@@ -7,6 +7,7 @@ summary     = 'Đăng nhập một lần, tái sử dụng cho mọi test bằng
 thumbnail   = '/images/playwright-series/playwright-bai-09-authentication-storage-state.webp'
 featured    = false
 weight      = 9
+columns     = 2
 categories  = ['it']
 subcategories = ['automation']
 tags        = ['playwright', 'test', 'e2e', 'testing', 'framework']

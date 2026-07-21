@@ -7,6 +7,7 @@ summary     = 'Lặp lại một khối lệnh nhiều lần với vòng lặp f
 thumbnail   = '/images/series-hoc-automation-test-tu-so-0/bai-6-vong-lap-for-va-for-of.webp'
 featured    = false
 weight      = 7
+columns     = 2
 categories  = ['it']
 subcategories = ['qa-testing']
 tags        = ['automation-test', 'javascript']

@@ -6,6 +6,7 @@ slug        = 'git-la-gi-tai-sao-can-dung-git'
 summary     = 'Tìm hiểu Git là gì, lịch sử ra đời, tại sao nó quan trọng với mọi developer, và những khái niệm nền tảng cần nắm trước khi bắt đầu.'
 thumbnail   = '/images/git-series/01-git-la-gi.webp'
 weight      = 1
+columns     = 2
 categories  = ['it']
 subcategories = ['version-control']
 tags        = ['git', 'devops']

@@ -6,6 +6,7 @@ slug        = 'git-nang-cao-stash-cherry-pick-reset'
 summary     = 'Các lệnh Git nâng cao giúp bạn xử lý mọi tình huống phức tạp: lưu tạm công việc, chọn commit cụ thể, quay về quá khứ an toàn, và phục hồi lịch sử.'
 thumbnail   = '/images/git-series/07-git-nang-cao.webp'
 weight      = 7
+columns     = 2
 categories  = ['it']
 subcategories = ['version-control']
 tags        = ['git', 'devops']

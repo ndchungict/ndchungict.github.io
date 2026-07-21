@@ -7,6 +7,7 @@ summary     = 'Khởi tạo dự án Playwright với TypeScript, hiểu từng 
 thumbnail   = '/images/playwright-series/playwright-bai-02-cai-dat-cau-hinh-cau-truc-du-an.webp'
 featured    = false
 weight      = 2
+columns     = 2
 categories  = ['it']
 subcategories = ['automation']
 tags        = ['playwright', 'test', 'e2e', 'testing', 'framework']

@@ -7,6 +7,7 @@ summary     = 'Khởi tạo Playwright bằng npm init playwright, hiểu các f
 thumbnail   = '/images/series-hoc-automation-test-tu-so-0/bai-15-cai-dat-playwright-viet-va-chay-test-dau-tien.webp'
 featured    = false
 weight      = 16
+columns     = 2
 categories  = ['it']
 subcategories = ['qa-testing']
 tags        = ['automation-test', 'playwright']

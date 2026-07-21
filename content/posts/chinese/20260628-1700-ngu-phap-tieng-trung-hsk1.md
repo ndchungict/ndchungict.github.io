@@ -5,6 +5,7 @@ title       = 'Tổng hợp ngữ pháp tiếng Trung HSK1'
 slug        = 'ngu-phap-tieng-trung-hsk1'
 summary     = 'Toàn bộ ngữ pháp HSK1 trong một bài: câu với 是, cách đặt câu hỏi, đại từ và 的, số đếm và lượng từ, động từ 有, phủ định 不/没, trợ từ 了, thời gian và trật tự từ.'
 thumbnail   = '/images/hsk1/tong-hop-ngu-phap-hsk-1.webp'
+columns     = 2
 categories  = ['chinese']
 tags        = ['hsk', 'hsk1', 'yufa', 'hanyu']
 authors     = ['Nguyen Chung']

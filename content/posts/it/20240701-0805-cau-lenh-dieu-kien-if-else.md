@@ -7,6 +7,7 @@ summary     = 'Cho chương trình ra quyết định với if/else/else if, n�
 thumbnail   = '/images/series-hoc-automation-test-tu-so-0/bai-5-cau-lenh-dieu-kien-if-else-toan-tu-so-sanh.webp'
 featured    = false
 weight      = 6
+columns     = 2
 categories  = ['it']
 subcategories = ['qa-testing']
 tags        = ['automation-test', 'javascript']

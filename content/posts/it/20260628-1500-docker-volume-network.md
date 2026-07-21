@@ -6,6 +6,7 @@ slug        = 'docker-volume-network'
 summary     = 'Hiểu cách lưu trữ dữ liệu bền vững với volume, phân biệt volume và bind mount, cùng cách các container giao tiếp với nhau qua Docker network.'
 thumbnail   = '/images/docker-series/05-volume-network.webp'
 weight      = 5
+columns     = 2
 categories  = ['it']
 subcategories = ['devops']
 tags        = ['docker', 'devops']

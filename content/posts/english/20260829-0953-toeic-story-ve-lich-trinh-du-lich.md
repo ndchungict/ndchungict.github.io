@@ -7,6 +7,7 @@ summary     = 'Chương 9 của truyện dài "Project Aria": học 24 từ vự
 thumbnail   = '/images/toeic-story/travel.webp'
 featured    = false
 weight      = 9
+columns     = 2
 categories  = ['english']
 tags        = ['toeic', 'vocabulary', 'travel', 'ticket']
 series      = ['hoc-tu-vung-toeic-qua-story']

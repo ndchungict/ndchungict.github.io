@@ -6,6 +6,7 @@ slug        = 'docker-trong-cicd-production'
 summary     = 'Đưa Docker vào pipeline CI/CD: build và push image lên registry, tự động hóa với GitHub Actions, deploy lên server, cùng các lưu ý vận hành production.'
 thumbnail   = '/images/docker-series/08-docker-cicd.webp'
 weight      = 8
+columns     = 2
 categories  = ['it']
 subcategories = ['devops']
 tags        = ['docker', 'devops']

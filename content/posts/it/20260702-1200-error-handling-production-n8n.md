@@ -7,6 +7,7 @@ summary     = 'Xử lý lỗi ở mức production: Error Trigger workflow, retr
 thumbnail   = '/images/series-n8n/09-error-handling-n8n.webp'
 featured    = false
 weight      = 9
+columns     = 2
 categories  = ['it']
 subcategories = ['workflow', 'automation', 'ai']
 tags        = ['n8n', 'error-handling', 'production']

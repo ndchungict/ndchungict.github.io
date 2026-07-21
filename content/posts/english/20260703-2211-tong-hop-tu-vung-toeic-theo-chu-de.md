@@ -6,6 +6,7 @@ slug        = 'tong-hop-tu-vung-toeic-theo-chu-de'
 summary     = 'Trọn bộ từ vựng TOEIC gom theo các chủ đề thường gặp, kèm phiên âm IPA, từ loại, nghĩa trong ngữ cảnh TOEIC và collocation đi kèm. Có thêm bảng họ từ, cặp từ dễ nhầm, danh từ không đếm được và gợi ý lộ trình học 10 tuần.'
 thumbnail   = '/images/default-thumb/default-thumb-tieng-anh.webp'
 featured    = false
+columns     = 2
 categories  = ['english']
 tags        = ['toeic', 'vocabulary','words']
 series      = []

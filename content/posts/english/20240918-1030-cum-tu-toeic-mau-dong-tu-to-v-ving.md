@@ -7,6 +7,7 @@ summary     = 'Nhóm mẫu động từ TOEIC quan trọng: động từ theo sa
 thumbnail   = '/images/toeic-collocation/06-mau-dong-tu-to-v-v-ing.webp'
 featured    = false
 weight      = 6
+columns     = 2
 categories  = ['english']
 tags        = ['toeic']
 series      = ['cum-tu-hay-gap-trong-bai-thi-toeic']

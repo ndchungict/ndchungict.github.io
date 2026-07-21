@@ -7,6 +7,7 @@ summary     = 'Nhìn lại toàn bộ hành trình từ số 0 tới bộ test h
 thumbnail   = '/images/series-hoc-automation-test-tu-so-0/bai-34-tong-ket-lo-trinh-qa-automation.webp'
 featured    = false
 weight      = 35
+columns     = 2
 categories  = ['it']
 subcategories = ['qa-testing']
 tags        = ['automation-test', 'career', 'sdet']

@@ -6,6 +6,7 @@ slug        = 'toi-uu-image-best-practices'
 summary     = 'Giảm kích thước image với multi-stage build và image alpine, tận dụng layer cache, bảo mật image và những thực hành tốt giúp image gọn, nhanh, an toàn.'
 thumbnail   = '/images/docker-series/07-toi-uu-image.webp'
 weight      = 7
+columns     = 2
 categories  = ['it']
 subcategories = ['devops']
 tags        = ['docker', 'devops']

@@ -6,6 +6,7 @@ slug        = 'cai-dat-va-cau-hinh-git'
 summary     = 'Hướng dẫn cài đặt Git trên Windows, macOS và Linux, cấu hình user, editor, SSH key và các thiết lập cần thiết trước khi bắt đầu làm việc.'
 thumbnail   = '/images/git-series/02-cai-dat-git.webp'
 weight      = 2
+columns     = 2
 categories  = ['it']
 subcategories = ['version-control']
 tags        = ['git', 'devops']

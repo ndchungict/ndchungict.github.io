@@ -7,6 +7,7 @@ summary     = 'Test API trực tiếp bằng request fixture của Playwright: g
 thumbnail   = '/images/series-hoc-automation-test-tu-so-0/bai-29-api-test-voi-playwright.webp'
 featured    = false
 weight      = 30
+columns     = 2
 categories  = ['it']
 subcategories = ['qa-testing']
 tags        = ['automation-test', 'playwright', 'api-testing']

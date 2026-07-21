@@ -7,6 +7,7 @@ summary     = 'Tăng tốc test suite lớn: cơ chế worker và fullyParallel,
 thumbnail   = '/images/playwright-series/playwright-bai-14-parallel-sharding.webp'
 featured    = false
 weight      = 14
+columns     = 2
 categories  = ['it']
 subcategories = ['automation']
 tags        = ['playwright', 'test', 'e2e', 'testing', 'framework']

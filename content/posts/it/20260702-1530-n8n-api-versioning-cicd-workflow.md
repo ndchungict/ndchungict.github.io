@@ -7,6 +7,7 @@ summary     = 'Quản lý workflow như code: n8n API, export/import workflow JS
 thumbnail   = '/images/series-n8n/16-n8n-api-workflow-as-code.webp'
 featured    = false
 weight      = 16
+columns     = 2
 categories  = ['it']
 subcategories = ['workflow', 'automation', 'ai']
 tags        = ['n8n', 'ci-cd', 'versioning']

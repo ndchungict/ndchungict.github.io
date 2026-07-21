@@ -7,6 +7,7 @@ summary     = 'Playwright không chỉ test UI. Dùng APIRequestContext để te
 thumbnail   = '/images/playwright-series/playwright-bai-11-api-testing-request-fixture-ui-api.webp'
 featured    = false
 weight      = 11
+columns     = 2
 categories  = ['it']
 subcategories = ['automation']
 tags        = ['playwright', 'test', 'e2e', 'testing', 'framework']

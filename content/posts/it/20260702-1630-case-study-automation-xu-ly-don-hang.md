@@ -7,6 +7,7 @@ summary     = 'Case study tổng hợp toàn series: xây hệ thống automatio
 thumbnail   = '/images/series-n8n/18-case-study-tong-hop.webp'
 featured    = false
 weight      = 18
+columns     = 2
 categories  = ['it']
 subcategories = ['workflow', 'automation', 'ai']
 tags        = ['n8n', 'case-study', 'automation']

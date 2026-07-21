@@ -7,6 +7,7 @@ summary     = 'Nhóm cụm từ TOEIC về email, thư tín, thông báo, yêu c
 thumbnail   = '/images/toeic-collocation/05-giao-tiep-thu-tu-thong-bao.webp'
 featured    = false
 weight      = 5
+columns     = 2
 categories  = ['english']
 tags        = ['toeic']
 series      = ['cum-tu-hay-gap-trong-bai-thi-toeic']

@@ -7,6 +7,7 @@ summary     = 'Bài quan trọng nhất của giai đoạn JavaScript: hiểu b�
 thumbnail   = '/images/series-hoc-automation-test-tu-so-0/bai-10-bat-dong-bo-promise-async-await.webp'
 featured    = false
 weight      = 11
+columns     = 2
 categories  = ['it']
 subcategories = ['qa-testing']
 tags        = ['automation-test', 'javascript', 'async-await']

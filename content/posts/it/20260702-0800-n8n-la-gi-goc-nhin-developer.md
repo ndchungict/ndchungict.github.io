@@ -7,6 +7,7 @@ summary     = 'Hiểu n8n như một workflow automation engine: kiến trúc t�
 thumbnail   = '/images/series-n8n/01-n8n-la-gi-kien-truc-n8n.webp'
 featured    = false
 weight      = 1
+columns     = 2
 categories  = ['it']
 subcategories = ['workflow', 'automation', 'ai']
 tags        = ['n8n', 'automation', 'kien-truc']

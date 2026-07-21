@@ -7,6 +7,7 @@ summary     = 'Áp dụng Page Object Model đúng cách trong Playwright: tách
 thumbnail   = '/images/playwright-series/playwright-bai-07-page-object-model.webp'
 featured    = false
 weight      = 7
+columns     = 2
 categories  = ['it']
 subcategories = ['automation']
 tags        = ['playwright', 'test', 'e2e', 'testing', 'framework']

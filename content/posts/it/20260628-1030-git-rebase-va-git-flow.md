@@ -6,6 +6,7 @@ slug        = 'git-rebase-va-git-flow'
 summary     = 'Hiểu sự khác biệt giữa merge và rebase, khi nào dùng cái nào, interactive rebase để làm sạch lịch sử, và các quy trình làm việc nhóm phổ biến.'
 thumbnail   = '/images/git-series/06-rebase-git-flow.webp'
 weight      = 6
+columns     = 2
 categories  = ['it']
 subcategories = ['version-control']
 tags        = ['git', 'devops']

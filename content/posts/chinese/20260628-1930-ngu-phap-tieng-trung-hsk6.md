@@ -5,6 +5,7 @@ title       = 'Tổng hợp ngữ pháp tiếng Trung HSK6'
 slug        = 'ngu-phap-tieng-trung-hsk6'
 summary     = 'Toàn bộ ngữ pháp HSK6 trong một bài: hư từ văn ngôn (之, 其, 所, 以, 而), cấu trúc 无不/莫不, 不无/未必, 之所以nâng cao, 鉴于/就…而言, động từ ly hợp, câu kiêm ngữ – liên động, đảo trang và thành ngữ bốn chữ.'
 thumbnail   = '/images/hsk6/tong-hop-ngu-phap-hsk-6.webp'
+columns     = 2
 categories  = ['chinese']
 tags        = ['hsk', 'hsk6', 'yufa', 'hanyu']
 authors     = ['Nguyen Chung']

@@ -7,6 +7,7 @@ summary     = 'Tăng tốc bằng chạy song song và sharding, cấu hình ret
 thumbnail   = '/images/series-hoc-automation-test-tu-so-0/bai-28-chay-test-song-song.webp'
 featured    = false
 weight      = 29
+columns     = 2
 categories  = ['it']
 subcategories = ['qa-testing']
 tags        = ['automation-test', 'playwright', 'trace-viewer', 'parallel']

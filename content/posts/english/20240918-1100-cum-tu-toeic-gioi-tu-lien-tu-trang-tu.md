@@ -7,6 +7,7 @@ summary     = 'Nhóm giới từ, liên từ, trạng từ chỉ mức độ và
 thumbnail   = '/images/toeic-collocation/07-gioi-tu-lien-tu-trang-tu.webp'
 featured    = false
 weight      = 7
+columns     = 2
 categories  = ['english']
 tags        = ['toeic']
 series      = ['cum-tu-hay-gap-trong-bai-thi-toeic']

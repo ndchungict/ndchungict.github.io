@@ -7,6 +7,7 @@ summary     = 'Chặn và can thiệp network request với page.route: mock res
 thumbnail   = '/images/series-hoc-automation-test-tu-so-0/bai-27-api-mocking-va-intercept.webp'
 featured    = false
 weight      = 28
+columns     = 2
 categories  = ['it']
 subcategories = ['qa-testing']
 tags        = ['automation-test', 'playwright', 'api-mocking', 'network']

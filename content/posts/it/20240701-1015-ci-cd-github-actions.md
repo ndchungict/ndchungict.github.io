@@ -7,6 +7,7 @@ summary     = 'Chạy Playwright test tự động trên GitHub Actions mỗi kh
 thumbnail   = '/images/series-hoc-automation-test-tu-so-0/bai-30-ci-cd-voi-github-actions.webp'
 featured    = false
 weight      = 31
+columns     = 2
 categories  = ['it']
 subcategories = ['qa-testing']
 tags        = ['automation-test', 'playwright', 'ci-cd', 'github-actions']

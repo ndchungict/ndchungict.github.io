@@ -7,6 +7,7 @@ summary     = 'HTTP Request node ở mức production: authentication (Bearer, A
 thumbnail   = '/images/series-n8n/05-http-request-node.webp'
 featured    = false
 weight      = 5
+columns     = 2
 categories  = ['it']
 subcategories = ['workflow', 'automation', 'ai']
 tags        = ['n8n', 'http-request', 'api-integration']

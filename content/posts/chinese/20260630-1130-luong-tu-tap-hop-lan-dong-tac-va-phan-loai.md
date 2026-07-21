@@ -7,6 +7,7 @@ summary     = 'Phần cuối series lượng từ tiếng Trung: lượng từ c
 thumbnail   = '/images/series-luong-tu-tieng-trung/08-luong-tu-chi-tap-hop-lan-dong-tac-va-phan-loai.webp'
 featured    = false
 weight      = 8
+columns     = 2
 categories  = ['chinese']
 tags        = ['luong-tu', 'liangci', 'ngu-phap', 'hanyu']
 series      = ['tong-hop-luong-tu-tieng-trung']

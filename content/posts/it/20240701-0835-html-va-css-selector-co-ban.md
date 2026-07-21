@@ -7,6 +7,7 @@ summary     = 'Đọc hiểu cấu trúc HTML (thẻ, thuộc tính, id, class) 
 thumbnail   = '/images/series-hoc-automation-test-tu-so-0/bai-11-html-va-css-selector-co-ban.webp'
 featured    = false
 weight      = 12
+columns     = 2
 categories  = ['it']
 subcategories = ['qa-testing']
 tags        = ['automation-test', 'html', 'css-selector']

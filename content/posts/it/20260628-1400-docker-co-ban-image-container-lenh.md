@@ -6,6 +6,7 @@ slug        = 'docker-co-ban-image-container-lenh'
 summary     = 'Hiểu rõ mối quan hệ giữa image và container, vòng đời của container, cùng bộ lệnh thiết yếu bạn sẽ dùng hằng ngày khi làm việc với Docker.'
 thumbnail   = '/images/docker-series/03-docker-co-ban.webp'
 weight      = 3
+columns     = 2
 categories  = ['it']
 subcategories = ['devops']
 tags        = ['docker', 'devops']

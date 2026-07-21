@@ -6,6 +6,7 @@ slug        = 'git-branch-merge-resolve-conflict'
 summary     = 'Hiểu sâu về Git branch: tạo nhánh, chuyển nhánh, merge các loại (fast-forward, no-ff, squash) và xử lý conflict như một developer chuyên nghiệp.'
 thumbnail   = '/images/git-series/05-branch-merge.webp'
 weight      = 5
+columns     = 2
 categories  = ['it']
 subcategories = ['version-control']
 tags        = ['git', 'devops']

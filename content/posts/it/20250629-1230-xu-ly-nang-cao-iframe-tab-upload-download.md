@@ -7,6 +7,7 @@ summary     = 'Những tình huống thực tế hay gặp: thao tác trong ifra
 thumbnail   = '/images/playwright-series/playwright-bai-10-xu-ly-nang-cao-iframe-tab-upload-download-dialog.webp'
 featured    = false
 weight      = 10
+columns     = 2
 categories  = ['it']
 subcategories = ['automation']
 tags        = ['playwright', 'test', 'e2e', 'testing', 'framework']

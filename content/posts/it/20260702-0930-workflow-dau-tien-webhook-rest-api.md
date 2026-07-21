@@ -7,6 +7,7 @@ summary     = 'Dựng workflow hoàn chỉnh đầu tiên: nhận request qua We
 thumbnail   = '/images/series-n8n/04-workflow-dau-tien.webp'
 featured    = false
 weight      = 4
+columns     = 2
 categories  = ['it']
 subcategories = ['workflow', 'automation', 'ai']
 tags        = ['n8n', 'webhook', 'rest-api']

@@ -7,6 +7,7 @@ summary     = 'Thiết lập Git, nắm vòng đời thay đổi (working direct
 thumbnail   = '/images/series-hoc-automation-test-tu-so-0/bai-3-git-github-co-ban.webp'
 featured    = false
 weight      = 4
+columns     = 2
 categories  = ['it']
 subcategories = ['qa-testing']
 tags        = ['automation-test', 'git', 'github']

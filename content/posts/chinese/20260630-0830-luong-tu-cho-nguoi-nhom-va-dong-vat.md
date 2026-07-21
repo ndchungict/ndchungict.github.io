@@ -7,6 +7,7 @@ summary     = 'Phần 2 series lượng từ tiếng Trung: lượng từ đếm
 thumbnail   = '/images/series-luong-tu-tieng-trung/02-luong-tu-cho-nguoi-nhom-va-dong-vat.webp'
 featured    = false
 weight      = 2
+columns     = 2
 categories  = ['chinese']
 tags        = ['luong-tu', 'liangci', 'ngu-phap', 'hanyu']
 series      = ['tong-hop-luong-tu-tieng-trung']

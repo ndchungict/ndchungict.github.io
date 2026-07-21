@@ -58,7 +58,7 @@ slug        = '<slug>'
 summary     = '<summary hoặc để trống>'
 thumbnail   = '<đường dẫn thumbnail ở Bước 3>'
 featured    = false
-columns     = 3  # 2 nếu user muốn post này hiển thị dạng 2 cột (gộp sidebar phải vào TOC); mặc định 3 cột
+columns     = 2  # mặc định cho bài mới (layout 2 cột); đổi thành 3 nếu user muốn layout 3 cột kiểu cũ
 categories  = ['<category>']
 subcategories = ['<subcategory1>', '<subcategory2>', ...]  # chỉ thêm dòng này nếu category = 'it'; có thể nhiều key
 tags        = [<'tag1', 'tag2', ...>]
@@ -73,7 +73,7 @@ Bài thuộc series — thêm `weight` ngay dưới `columns` và điền `serie
 
 ```toml
 featured    = false
-columns     = 3
+columns     = 2
 weight      = <thứ tự>
 ...
 series      = ['<series-slug>']

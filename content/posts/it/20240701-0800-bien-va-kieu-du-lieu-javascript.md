@@ -7,6 +7,7 @@ summary     = 'Khai báo biến với let và const, phân biệt các kiểu d�
 thumbnail   = '/images/series-hoc-automation-test-tu-so-0/bai-4-bien-va-kieu-du-lieu-trong-javascript.webp'
 featured    = false
 weight      = 5
+columns     = 2
 categories  = ['it']
 subcategories = ['qa-testing']
 tags        = ['automation-test', 'javascript']

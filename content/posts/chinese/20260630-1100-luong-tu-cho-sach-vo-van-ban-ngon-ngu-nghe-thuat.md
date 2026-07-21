@@ -7,6 +7,7 @@ summary     = 'Phần 7 series lượng từ tiếng Trung: lượng từ cho s�
 thumbnail   = '/images/series-luong-tu-tieng-trung/07-luong-tu-cho-sach-vo-van-ban-ngon-ngu-va-nghe-thuat.webp'
 featured    = false
 weight      = 7
+columns     = 2
 categories  = ['chinese']
 tags        = ['luong-tu', 'liangci', 'ngu-phap', 'hanyu']
 series      = ['tong-hop-luong-tu-tieng-trung']

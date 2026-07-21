@@ -6,6 +6,7 @@ slug        = 'mise-la-gi-cai-dat-va-su-dung'
 summary     = 'Mise (mise-en-place, trước đây là rtx) là công cụ quản lý phiên bản ngôn ngữ lập trình và công cụ dòng lệnh, thay thế asdf/nvm/pyenv/rbenv bằng một file cấu hình duy nhất. Bài viết hướng dẫn cài đặt, các lệnh cốt lõi, quản lý version/env theo project, chạy task kiểu Makefile, cài plugin cho tool lạ, đến cách migrate từ asdf và dùng trong CI/CD.'
 thumbnail   = '/images/default-thumb/default-thumb-it-lap-trinh.webp'
 featured    = false
+columns     = 2
 categories  = ['it']
 subcategories = ['tips-tricks']
 tags        = ['mise', 'asdf', 'nodejs', 'python', 'version-manager']

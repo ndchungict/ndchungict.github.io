@@ -7,6 +7,7 @@ summary     = 'Viết JavaScript/Python trong Code node: mô hình items, các b
 thumbnail   = '/images/series-n8n/07-code-node-chuyen-sau.webp'
 featured    = false
 weight      = 7
+columns     = 2
 categories  = ['it']
 subcategories = ['workflow', 'automation', 'ai']
 tags        = ['n8n', 'code-node', 'javascript']

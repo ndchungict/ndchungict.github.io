@@ -7,6 +7,7 @@ summary     = 'Phần 4 series lượng từ tiếng Trung: lượng từ cho v�
 thumbnail   = '/images/series-luong-tu-tieng-trung/04-luong-tu-cho-vat-det-tron-khoi-va-hat.webp'
 featured    = false
 weight      = 4
+columns     = 2
 categories  = ['chinese']
 tags        = ['luong-tu', 'liangci', 'ngu-phap', 'hanyu']
 series      = ['tong-hop-luong-tu-tieng-trung']

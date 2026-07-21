@@ -15,6 +15,7 @@ Repo này được mình dọn sẵn để **bất kỳ ai cũng có thể fork 
 - 🌗 Chuyển giao diện sáng/tối (light/dark)
 - 🗂️ Phân loại bài viết theo category + subcategory (menu con tự ẩn mục chưa có bài)
 - 📚 Hỗ trợ viết theo **series** (đánh thứ tự bằng `weight`)
+- 📐 Layout trang bài viết chọn được **2 cột hoặc 3 cột** theo từng bài (`columns` trong front matter, mặc định 2 cột cho bài mới)
 - 💬 Bình luận qua [Giscus](https://giscus.app) (lưu trong GitHub Discussions), tự đổi theme sáng/tối theo site
 - 📨 Form liên hệ qua [Web3Forms](https://web3forms.com/) — không cần backend riêng
 - 📡 Tự sinh RSS + JSON feed
@@ -124,6 +125,8 @@ mv ten-bai.md 20260629-0800-git-la-gi.md
 ```
 
 Điền front matter (`title`, `categories`, `tags`,...), đặt `draft = false` khi muốn publish. Toàn bộ quy ước đặt tên file, chọn category/subcategory, thumbnail, series... được ghi chi tiết trong [CLAUDE.md](CLAUDE.md) — nên đọc qua trước khi viết bài đầu tiên.
+
+Front matter có trường `columns` để chọn layout trang bài viết: `2` (mặc định — nội dung bên trái, TOC + sidebar gộp bên phải) hoặc `3` (kiểu cũ — TOC trái, nội dung giữa, sidebar phải riêng). Chi tiết ở [CLAUDE.md](CLAUDE.md#layout-bài-viết-2-cột-hoặc-3-cột).
 
 > 💡 Nếu bạn dùng [Claude Code](https://claude.com/claude-code), repo có sẵn skill tại `.claude/skills/new-post/` tự động hoá toàn bộ bước trên (đặt tên file, front matter, thumbnail, cập nhật `post-library.md`) — chỉ cần mô tả bài viết bạn muốn tạo.
 

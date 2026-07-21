@@ -7,6 +7,7 @@ summary     = 'Viết n8n community node bằng TypeScript: cấu trúc project,
 thumbnail   = '/images/series-n8n/15-custom-node-typescript.webp'
 featured    = false
 weight      = 15
+columns     = 2
 categories  = ['it']
 subcategories = ['workflow', 'automation', 'ai']
 tags        = ['n8n', 'custom-node', 'typescript']

@@ -6,6 +6,7 @@ slug        = 'git-hooks-va-tu-dong-hoa'
 summary     = 'Tự động hóa Git workflow với hooks: chạy lint trước commit, test trước push, enforce commit message. Kèm Git aliases hữu ích và Husky cho dự án Node.js.'
 thumbnail   = '/images/git-series/08-git-hooks.webp'
 weight      = 8
+columns     = 2
 categories  = ['it']
 subcategories = ['version-control']
 tags        = ['git', 'devops']

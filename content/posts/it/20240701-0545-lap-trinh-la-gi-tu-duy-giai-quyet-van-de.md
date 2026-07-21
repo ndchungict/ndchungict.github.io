@@ -7,6 +7,7 @@ summary     = 'Dành cho người chưa từng viết một dòng code: hiểu l
 thumbnail   = '/images/series-hoc-automation-test-tu-so-0/bai-1-lap-trinh-la-gi.webp'
 featured    = false
 weight      = 2
+columns     = 2
 categories  = ['it']
 subcategories = ['qa-testing']
 tags        = ['automation-test', 'lap-trinh', 'tu-duy']

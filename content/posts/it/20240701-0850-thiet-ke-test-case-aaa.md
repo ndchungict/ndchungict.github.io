@@ -7,6 +7,7 @@ summary     = 'Cách viết test case chất lượng: cấu trúc Arrange–Act
 thumbnail   = '/images/series-hoc-automation-test-tu-so-0/bai-14-thiet-ke-test-case-tot.webp'
 featured    = false
 weight      = 15
+columns     = 2
 categories  = ['it']
 subcategories = ['qa-testing']
 tags        = ['automation-test', 'test-design', 'best-practices']

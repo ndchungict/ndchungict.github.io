@@ -7,6 +7,7 @@ summary     = 'Phần 3 series lượng từ tiếng Trung: lượng từ cho v�
 thumbnail   = '/images/series-luong-tu-tieng-trung/03-luong-tu-cho-vat-dai-hinh-que-va-soi.webp'
 featured    = false
 weight      = 3
+columns     = 2
 categories  = ['chinese']
 tags        = ['luong-tu', 'liangci', 'ngu-phap', 'hanyu']
 series      = ['tong-hop-luong-tu-tieng-trung']

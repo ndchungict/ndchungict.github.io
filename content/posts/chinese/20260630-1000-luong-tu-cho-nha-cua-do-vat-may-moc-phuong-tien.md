@@ -7,6 +7,7 @@ summary     = 'Phần 5 series lượng từ tiếng Trung: lượng từ cho c�
 thumbnail   = '/images/series-luong-tu-tieng-trung/05-luong-tu-cho-nha-cua-do-vat-may-moc-va-phuong-tien.webp'
 featured    = false
 weight      = 5
+columns     = 2
 categories  = ['chinese']
 tags        = ['luong-tu', 'liangci', 'ngu-phap', 'hanyu']
 series      = ['tong-hop-luong-tu-tieng-trung']

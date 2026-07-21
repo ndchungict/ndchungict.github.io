@@ -7,6 +7,7 @@ summary     = 'Fixtures cung cấp môi trường cô lập và tái sử dụng
 thumbnail   = '/images/series-hoc-automation-test-tu-so-0/bai-23-fixtures-trong-playwright.webp'
 featured    = false
 weight      = 24
+columns     = 2
 categories  = ['it']
 subcategories = ['qa-testing']
 tags        = ['automation-test', 'playwright', 'fixtures']

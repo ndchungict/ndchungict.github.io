@@ -7,6 +7,7 @@ summary     = 'Ba cách chạy n8n (npm, Docker, Docker Compose) cho dev và pro
 thumbnail   = '/images/series-n8n/02-cai-dat-n8n.webp'
 featured    = false
 weight      = 2
+columns     = 2
 categories  = ['it']
 subcategories = ['workflow', 'automation', 'ai']
 tags        = ['n8n', 'docker', 'devops']

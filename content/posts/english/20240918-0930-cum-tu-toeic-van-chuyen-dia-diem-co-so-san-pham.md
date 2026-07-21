@@ -7,6 +7,7 @@ summary     = 'Nhóm cụm từ TOEIC về vận chuyển, vị trí, hàng tồ
 thumbnail   = '/images/toeic-collocation/04-van-chuyen-dia-diem-co-so-san-pham.webp'
 featured    = false
 weight      = 4
+columns     = 2
 categories  = ['english']
 tags        = ['toeic']
 series      = ['cum-tu-hay-gap-trong-bai-thi-toeic']

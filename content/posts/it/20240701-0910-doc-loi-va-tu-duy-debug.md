@@ -7,6 +7,7 @@ summary     = 'Cách đọc thông báo lỗi Playwright không hoảng, phân l
 thumbnail   = '/images/series-hoc-automation-test-tu-so-0/bai-17-doc-loi-va-tu-duy-debug.webp'
 featured    = false
 weight      = 18
+columns     = 2
 categories  = ['it']
 subcategories = ['qa-testing']
 tags        = ['automation-test', 'playwright', 'debug']

@@ -7,6 +7,7 @@ summary     = 'Chương 3 của truyện dài "Project Aria": học 22 từ vự
 thumbnail   = '/images/toeic-story/personnel.webp'
 featured    = false
 weight      = 3
+columns     = 2
 categories  = ['english']
 tags        = ['toeic', 'vocabulary', 'personnel', 'recruitment']
 series      = ['hoc-tu-vung-toeic-qua-story']

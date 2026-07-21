@@ -7,6 +7,7 @@ summary     = 'Dùng Chrome DevTools để inspect phần tử, đọc HTML/DOM 
 thumbnail   = '/images/series-hoc-automation-test-tu-so-0/bai-12-lam-quen-devtools.webp'
 featured    = false
 weight      = 13
+columns     = 2
 categories  = ['it']
 subcategories = ['qa-testing']
 tags        = ['automation-test', 'devtools', 'chrome']

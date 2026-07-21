@@ -7,6 +7,7 @@ summary     = 'Bộ công cụ debug mạnh nhất của Playwright: Trace Viewe
 thumbnail   = '/images/playwright-series/playwright-bai-13-debugging-trace-viewer-ui-mode-codegen-flaky.webp'
 featured    = false
 weight      = 13
+columns     = 2
 categories  = ['it']
 subcategories = ['automation']
 tags        = ['playwright', 'test', 'e2e', 'testing', 'framework']

@@ -7,6 +7,7 @@ summary     = 'Đưa Playwright lên CI: workflow GitHub Actions hoàn chỉnh, 
 thumbnail   = '/images/playwright-series/playwright-bai-15-ci-cd-github-actions-docker.webp'
 featured    = false
 weight      = 15
+columns     = 2
 categories  = ['it']
 subcategories = ['automation']
 tags        = ['playwright', 'test', 'e2e', 'testing', 'framework']

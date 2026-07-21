@@ -60,7 +60,7 @@ slug        = '<slug-bai>'
 summary     = ''
 thumbnail   = '<thumbnail theo category — xem bảng dưới>'
 featured    = false
-columns     = 3  # 2 nếu user muốn post này hiển thị dạng 2 cột (gộp sidebar phải vào TOC); mặc định 3 cột
+columns     = 2  # mặc định cho bài mới (layout 2 cột); đổi thành 3 nếu user muốn layout 3 cột kiểu cũ
 weight      = <i>
 categories  = ['<category>']
 subcategories = ['<subcategory1>', '<subcategory2>', ...]  # chỉ thêm dòng này nếu category = 'it'; có thể nhiều key

@@ -7,6 +7,7 @@ summary     = 'Phát hiện thay đổi giao diện ngoài ý muốn bằng so s
 thumbnail   = '/images/series-hoc-automation-test-tu-so-0/bai-31-visual-regression-testing.webp'
 featured    = false
 weight      = 32
+columns     = 2
 categories  = ['it']
 subcategories = ['qa-testing']
 tags        = ['automation-test', 'playwright', 'visual-testing']

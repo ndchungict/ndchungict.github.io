@@ -7,6 +7,7 @@ summary     = 'Điều khiển luồng thực thi: IF, Switch, Loop Over Items, 
 thumbnail   = '/images/series-n8n/08-dieu-khien-luong-n8n.webp'
 featured    = false
 weight      = 8
+columns     = 2
 categories  = ['it']
 subcategories = ['workflow', 'automation', 'ai']
 tags        = ['n8n', 'flow-control', 'sub-workflow']

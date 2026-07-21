@@ -6,6 +6,7 @@ slug        = 'lam-viec-voi-remote-repository'
 summary     = 'Hướng dẫn kết nối repo local với GitHub/GitLab, clone dự án có sẵn, push code lên remote và đồng bộ thay đổi từ đồng nghiệp về máy.'
 thumbnail   = '/images/git-series/04-remote-repo.webp'
 weight      = 4
+columns     = 2
 categories  = ['it']
 subcategories = ['version-control']
 tags        = ['git', 'devops']

@@ -7,6 +7,7 @@ summary     = 'Dùng Codegen để tự sinh code test bằng cách thao tác tr
 thumbnail   = '/images/series-hoc-automation-test-tu-so-0/bai-21-codegen-trong-playwright.webp'
 featured    = false
 weight      = 22
+columns     = 2
 categories  = ['it']
 subcategories = ['qa-testing']
 tags        = ['automation-test', 'playwright', 'codegen']

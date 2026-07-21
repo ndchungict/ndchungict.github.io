@@ -7,6 +7,7 @@ summary     = 'Webhook ở mức production: các response mode, xác thực web
 thumbnail   = '/images/series-n8n/11-webhook-nang-cao.webp'
 featured    = false
 weight      = 11
+columns     = 2
 categories  = ['it']
 subcategories = ['workflow', 'automation', 'ai']
 tags        = ['n8n', 'webhook', 'idempotency']

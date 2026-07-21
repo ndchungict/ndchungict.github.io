@@ -7,6 +7,7 @@ summary     = 'Chương 6 của truyện dài "Project Aria": học 23 từ vự
 thumbnail   = '/images/toeic-story/general-business.webp'
 featured    = false
 weight      = 6
+columns     = 2
 categories  = ['english']
 tags        = ['toeic', 'vocabulary', 'business', 'marketing']
 series      = ['hoc-tu-vung-toeic-qua-story']
