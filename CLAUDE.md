@@ -96,13 +96,17 @@ subcategories = ['<key1>', '<key2>', ...]
 
 | key | Nội dung |
 |---|---|
-| `automation` | Automation test (Playwright, QA, ISTQB,...) và automation nói chung (bao gồm cả bài `workflow`) |
+| `qa-testing` | QA, ISTQB, tư duy/kiến thức testing nói chung (vd lộ trình "Học Automation Test từ số 0") |
+| `automation` | Automation test bằng công cụ (Playwright,...) — luôn đi kèm `automation` cho bài `workflow` |
 | `workflow` | Automation dạng workflow/no-code (n8n,...) — luôn đi kèm `automation` |
 | `develop` | Phát triển phần mềm nói chung |
 | `devops` | DevOps (Docker,...) |
+| `database` | Cơ sở dữ liệu |
+| `version-control` | Git và các hệ quản lý phiên bản khác |
 | `ai` | AI (kèm thêm cho bài automation/workflow có liên quan AI, vd n8n AI Agent, Playwright MCP) |
-| `database-version-control` | Git, database |
 | `tips-tricks` | Công cụ/thủ thuật khác (Homebrew, mise,...) |
+
+> Submenu (dropdown) của category `it` trên nav lấy từ `[[params.itSubcategories]]` trong `hugo.toml` — chỉ hiện mục nào có ít nhất 1 bài (`site.GetPage "/subcategories/<key>"` khác nil).
 
 > `subcategories` chỉ sinh trang danh sách riêng tại `/subcategories/<key>/` (dùng layout generic `term.html`) — **không** tự hiện trên trang bài viết (`page.html` chỉ render `categories`/`tags`/`series`), trừ khi có yêu cầu chỉnh layout thêm.
 

@@ -13,7 +13,7 @@ Hỏi user (gộp 1 lần, ưu tiên dùng AskUserQuestion) những gì còn thi
 
 - **Tiêu đề** bài viết (bắt buộc).
 - **Category** — chỉ chọn 1, là `key` hợp lệ: `it`, `english`, `chinese`.
-- **Nếu category = `it`**: hỏi thêm **subcategory** — có thể chọn nhiều `key` hợp lệ: `automation` (automation test/Playwright/QA/ISTQB), `workflow` (automation dạng workflow/no-code như n8n — luôn đi kèm `automation`), `develop` (phát triển phần mềm), `devops` (Docker,...), `ai` (bài liên quan AI, kể cả bài automation/workflow có nhắc AI), `database-version-control` (Git, database), `tips-tricks` (Homebrew, mise,...).
+- **Nếu category = `it`**: hỏi thêm **subcategory** — có thể chọn nhiều `key` hợp lệ: `qa-testing` (QA/ISTQB/kiến thức testing nói chung), `automation` (automation test bằng công cụ như Playwright — luôn đi kèm cho bài `workflow`), `workflow` (automation dạng workflow/no-code như n8n — luôn đi kèm `automation`), `develop` (phát triển phần mềm), `devops` (Docker,...), `database` (cơ sở dữ liệu), `version-control` (Git,...), `ai` (bài liên quan AI, kể cả bài automation/workflow có nhắc AI), `tips-tricks` (Homebrew, mise,...).
 - **Tags** (danh sách; có thể rỗng).
 - **Slug** (kebab-case, không dấu, không prefix ngày giờ). Nếu user không cho → tự sinh từ tiêu đề (xem Bước 2).
 - **Summary** (tùy chọn; để trống = Hugo tự lấy ~70 từ đầu).

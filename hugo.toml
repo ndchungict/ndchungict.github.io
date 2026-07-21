@@ -95,3 +95,42 @@ theme = 'hugo-blog-theme'
     labelEN = 'Chinese'
     emoji = '🀄'
     color = 'is-cn'
+
+  # Submenu (dropdown) cho category 'it' — label song ngữ, theo thứ tự hiển thị.
+  # key = tên term trong taxonomy `subcategories`. Mục không có bài nào sẽ tự ẩn khỏi menu.
+  [[params.itSubcategories]]
+    key = 'ai'
+    labelVI = 'Trí tuệ nhân tạo (AI)'
+    labelEN = 'Artificial Intelligence (AI)'
+  [[params.itSubcategories]]
+    key = 'qa-testing'
+    labelVI = 'QA & Testing'
+    labelEN = 'QA & Testing'
+  [[params.itSubcategories]]
+    key = 'automation'
+    labelVI = 'Automation'
+    labelEN = 'Automation'
+  [[params.itSubcategories]]
+    key = 'workflow'
+    labelVI = 'Workflow'
+    labelEN = 'Workflow'
+  [[params.itSubcategories]]
+    key = 'develop'
+    labelVI = 'Develop'
+    labelEN = 'Develop'
+  [[params.itSubcategories]]
+    key = 'devops'
+    labelVI = 'DevOps'
+    labelEN = 'DevOps'
+  [[params.itSubcategories]]
+    key = 'database'
+    labelVI = 'Database'
+    labelEN = 'Database'
+  [[params.itSubcategories]]
+    key = 'version-control'
+    labelVI = 'Version Control'
+    labelEN = 'Version Control'
+  [[params.itSubcategories]]
+    key = 'tips-tricks'
+    labelVI = 'Tips & Trick'
+    labelEN = 'Tips & Trick'

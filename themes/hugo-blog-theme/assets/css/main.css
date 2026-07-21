@@ -229,6 +229,26 @@ ul { list-style: none; }
 .nav__link:hover { color: var(--c-text); background: var(--c-card); }
 .nav__link.active { color: var(--c-accent); background: color-mix(in srgb, var(--c-accent) 8%, transparent); font-weight: 600; }
 
+/* Dropdown menu (vd IT & Lập trình > subcategories) */
+.nav__item { position: relative; display: flex; align-items: center; }
+.nav__link--dd { display: inline-flex; align-items: center; gap: 5px; cursor: pointer; }
+.nav__caret { width: 11px; height: 11px; transition: transform .2s; opacity: .75; }
+.nav__item:hover .nav__caret { transform: rotate(180deg); }
+.nav__dd {
+  position: absolute; top: 100%; left: 0; min-width: 236px; padding: 7px;
+  background: var(--c-card); border: 1px solid var(--c-border); border-radius: var(--r-lg);
+  box-shadow: var(--shadow-md); display: flex; flex-direction: column; gap: 2px;
+  opacity: 0; visibility: hidden; transform: translateY(6px);
+  transition: opacity .16s, transform .16s, visibility .16s; z-index: 60;
+}
+.nav__item:hover .nav__dd { opacity: 1; visibility: visible; transform: translateY(0); }
+.nav__dd::before { content: ""; position: absolute; bottom: 100%; left: 0; right: 0; height: 10px; }
+.nav__sub {
+  display: flex; align-items: center; padding: 9px 12px; border-radius: var(--r-sm);
+  font-size: 13px; font-weight: 600; color: var(--c-text); transition: background .14s;
+}
+.nav__sub:hover { background: color-mix(in srgb, var(--cat-it) 10%, transparent); color: var(--cat-it); }
+
 .nav__actions { display: flex; align-items: center; gap: 8px; flex-shrink: 0; margin-left: auto; }
 .nav__btn {
   width: 36px; height: 36px;
@@ -266,6 +286,7 @@ ul { list-style: none; }
   color: var(--c-text);
 }
 .nav-mobile__link.active { color: var(--c-accent); background: color-mix(in srgb, var(--c-accent) 8%, transparent); font-weight: 600; }
+.nav-mobile__sublink { padding-left: 28px; font-size: 13.5px; color: var(--c-text2); }
 
 @media (max-width: 900px) {
   .nav { padding: 0 16px; }

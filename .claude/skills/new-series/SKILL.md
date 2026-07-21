@@ -22,7 +22,7 @@ Hỏi user (gộp 1 lần) những gì còn thiếu:
 - **Icon** emoji (tùy chọn; bỏ trống = tự lấy emoji theo category).
 - **Level** (tùy chọn, vd "Cơ bản → Nâng cao").
 - **Category** chung cho cả series — 1 key hợp lệ: `it`, `english`, `chinese`.
-- **Nếu category = `it`**: hỏi thêm **subcategory** chung cho cả series — có thể nhiều `key` hợp lệ: `automation` (automation test/Playwright/QA/ISTQB), `workflow` (automation dạng workflow/no-code như n8n — luôn đi kèm `automation`), `develop` (phát triển phần mềm), `devops` (Docker,...), `ai` (bài liên quan AI, kể cả bài automation/workflow có nhắc AI), `database-version-control` (Git, database), `tips-tricks` (Homebrew, mise,...).
+- **Nếu category = `it`**: hỏi thêm **subcategory** chung cho cả series — có thể nhiều `key` hợp lệ: `qa-testing` (QA/ISTQB/kiến thức testing nói chung), `automation` (automation test bằng công cụ như Playwright — luôn đi kèm cho bài `workflow`), `workflow` (automation dạng workflow/no-code như n8n — luôn đi kèm `automation`), `develop` (phát triển phần mềm), `devops` (Docker,...), `database` (cơ sở dữ liệu), `version-control` (Git,...), `ai` (bài liên quan AI, kể cả bài automation/workflow có nhắc AI), `tips-tricks` (Homebrew, mise,...).
 - **Tags** chung.
 - **Danh sách bài**: số lượng + tiêu đề từng bài (theo thứ tự). Nếu user chỉ cho số lượng, hỏi tiêu đề hoặc tạo placeholder.
 

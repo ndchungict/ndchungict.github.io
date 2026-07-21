@@ -4,11 +4,23 @@
     <span data-vi="Trang chủ" data-en="Home">Trang chủ</span>
   </a>
   {{- range site.Params.categories }}
+    {{- $cat := . }}
     {{- $term := site.GetPage (printf "/categories/%s" .key) }}
     {{- if $term }}
       <a class="nav-mobile__link {{ if eq $.RelPermalink $term.RelPermalink }}active{{ end }}" href="{{ $term.RelPermalink }}">
         <span data-vi="{{ .labelVI }}" data-en="{{ .labelEN }}">{{ .labelVI }}</span>
       </a>
+      {{- if eq $cat.key "it" }}
+        {{- range site.Params.itSubcategories }}
+          {{- $sub := . }}
+          {{- $subTerm := site.GetPage (printf "/subcategories/%s" .key) }}
+          {{- if $subTerm }}
+            <a class="nav-mobile__link nav-mobile__sublink {{ if eq $.RelPermalink $subTerm.RelPermalink }}active{{ end }}" href="{{ $subTerm.RelPermalink }}">
+              <span data-vi="{{ $sub.labelVI }}" data-en="{{ $sub.labelEN }}">{{ $sub.labelVI }}</span>
+            </a>
+          {{- end }}
+        {{- end }}
+      {{- end }}
     {{- end }}
   {{- end }}
   {{- with site.GetPage "/series" }}
