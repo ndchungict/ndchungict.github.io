@@ -1,5 +1,6 @@
 {{- $p := .page }}
 {{- $catKey := .catKey }}
+{{- $subKeys := $p.Params.subcategories }}
 {{- $related := first 4 (where (where site.RegularPages "Section" "posts" ) "Params.categories" "intersect" (slice $catKey)) }}
 <div class="panel">
   <div class="panel__title"><span data-vi="Bài viết liên quan" data-en="Related Posts">Bài viết liên quan</span></div>
@@ -25,11 +26,22 @@
   </div>
 </div>
 
+{{- /* Tags: chỉ lấy tag của các bài cùng subcategory (nếu bài hiện tại có subcategory),
+       nếu không thì cùng category — thay vì toàn bộ tag của site. */}}
+{{- $tagScope := "" }}
+{{- if $subKeys }}
+  {{- $tagScope = where site.RegularPages "Params.subcategories" "intersect" $subKeys }}
+{{- else }}
+  {{- $tagScope = where (where site.RegularPages "Section" "posts") "Params.categories" "intersect" (slice $catKey) }}
+{{- end }}
+{{- $scopedTags := slice }}
+{{- range $tagScope }}{{ range .Params.tags }}{{ $scopedTags = $scopedTags | append . }}{{ end }}{{ end }}
+{{- $scopedTags = $scopedTags | uniq | sort }}
 <div class="panel">
   <div class="panel__title">Tags</div>
   <div class="tag-cloud">
-    {{- range $name, $taxonomy := site.Taxonomies.tags }}
-    <a class="tag-pill" href="{{ (site.GetPage (printf "/tags/%s" $name)).RelPermalink }}">#{{ $name }}</a>
+    {{- range $scopedTags }}
+    <a class="tag-pill" href="{{ (site.GetPage (printf "/tags/%s" .)).RelPermalink }}">#{{ . }}</a>
     {{- end }}
   </div>
 </div>
