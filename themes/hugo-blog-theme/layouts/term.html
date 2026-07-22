@@ -17,7 +17,7 @@
   </div>
 
   <div class="container term__body">
-    <div class="card-grid">
+    <div class="card-grid card-grid--fixed3">
       {{- range $paginator.Pages }}{{ partial "post-card.html" . }}{{ end }}
     </div>
     {{- partial "pagination.html" $paginator }}
