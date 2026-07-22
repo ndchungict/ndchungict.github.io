@@ -1,6 +1,6 @@
 +++
 date        = '2026-07-22T09:02:00+07:00'
-draft       = true
+draft       = false
 title       = 'Cron là gì? Hướng dẫn viết Cron Expression cho người mới bắt đầu'
 slug        = 'cron-la-gi-huong-dan-viet-cron-expression-cho-nguoi-moi-bat-dau'
 summary     = 'Cron là công cụ lập lịch chạy tác vụ tự động có sẵn trên Linux/macOS. Bài viết giải thích cấu trúc 5 trường của cron expression, các ký tự đặc biệt *, ,  -  /, kèm 8 ví dụ thực tế, lưu ý về múi giờ UTC vs giờ Việt Nam, lỗi thường gặp và công cụ crontab.guru để kiểm tra biểu thức.'
