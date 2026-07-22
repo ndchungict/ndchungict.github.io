@@ -26,7 +26,8 @@
   --cat-cn:   #F87171;
 
   /* fonts */
-  --f-sans: "Space Grotesk", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  --f-sans: "Be Vietnam Pro", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  --f-heading: "Space Grotesk", var(--f-sans);
   --f-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 
   /* layout */
@@ -97,6 +98,7 @@ a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; }
 button { font-family: inherit; cursor: pointer; }
 ul { list-style: none; }
+h1, h2, h3, h4, h5, h6 { font-family: var(--f-heading); }
 
 /* ── Layout helpers ─────────────────────────────────────── */
 .container {
