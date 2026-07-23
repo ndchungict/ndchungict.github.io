@@ -578,6 +578,20 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--f-heading); }
    ============================================================ */
 .reading-progress { position: fixed; top: 0; left: 0; z-index: 300; height: 3px; width: 0; background: var(--c-accent); transition: width .1s linear; }
 
+.back-to-top {
+  position: fixed; right: 24px; bottom: 24px; z-index: 250;
+  width: 44px; height: 44px;
+  display: flex; align-items: center; justify-content: center;
+  border: 1px solid var(--c-border); border-radius: 50%;
+  background: var(--c-card); color: var(--c-text2);
+  font-size: 18px; box-shadow: var(--shadow-md);
+  opacity: 0; visibility: hidden; transform: translateY(10px);
+  transition: opacity .2s, transform .2s, visibility .2s, border-color .15s, color .15s;
+}
+.back-to-top.is-visible { opacity: 1; visibility: visible; transform: translateY(0); }
+.back-to-top:hover { border-color: var(--c-accent); color: var(--c-accent); }
+@media (max-width: 640px) { .back-to-top { right: 16px; bottom: 16px; width: 40px; height: 40px; } }
+
 .post__top { background: var(--c-bg); border-bottom: 1px solid var(--c-border); padding: 40px 0 0; }
 .breadcrumb { display: flex; align-items: center; gap: 6px; margin-bottom: 20px; font-size: 13px; color: var(--c-text2); flex-wrap: wrap; }
 .breadcrumb a:hover { color: var(--c-accent); }

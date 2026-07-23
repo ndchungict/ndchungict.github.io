@@ -98,6 +98,21 @@ function initReadingProgress() {
   update();
 }
 
+/* ── Back to top (post) ─────────────────────────────────── */
+function initBackToTop() {
+  var btn = document.querySelector('[data-back-to-top]');
+  if (!btn) return;
+  function update() {
+    var st = document.documentElement.scrollTop || document.body.scrollTop;
+    btn.classList.toggle('is-visible', st > window.innerHeight);
+  }
+  window.addEventListener('scroll', update, { passive: true });
+  update();
+  btn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
 /* ── TOC scroll-spy ─────────────────────────────────────── */
 function initTOC() {
   var toc = document.querySelector('[data-toc]');
@@ -474,6 +489,7 @@ document.addEventListener('DOMContentLoaded', function () {
   initCatFilter();
   initLang();
   initReadingProgress();
+  initBackToTop();
   initTOC();
   initCopyLink();
   initCopyCode();
