@@ -69,10 +69,11 @@ theme = 'hugo-blog-theme'
   # Thứ tự hiển thị khai báo trong _partials/footer.html.
   [params.social]
     github   = 'https://github.com/ndchungict'
-    facebook = ''                                         # ví dụ: 'https://facebook.com/<username>'
+    facebook = 'https://facebook.com/ndchungict'                                         # ví dụ: 'https://facebook.com/<username>'
     tiktok   = ''                                         # ví dụ: 'https://tiktok.com/@<username>'
     youtube  = ''                                         # ví dụ: 'https://youtube.com/@<channel>'
     linkedin = 'https://linkedin.com/in/nguyen-duc-chung'
+    email    = 'ndchungict@gmail.com'
     website  = 'https://ndchungict.github.io'
 
   # Danh sách category cố định (có thứ tự) — label song ngữ + emoji + class màu.
