@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>toeic-story.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> or <div class="page"></div> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="project-aria--truyện-toeic-trọn-bộ-phần-1-truyện-chêm">Project Aria — Truyện TOEIC trọn bộ (Phần 1: Truyện chêm)</h1>
+<blockquote>
+<p><strong>Project Aria</strong> — truyện dài 28 chương xoay quanh hành trình Aster Home Technologies phát triển và ra mắt sản phẩm Aria tại thị trường Halston, xuyên suốt series <em>&quot;Học từ vựng TOEIC qua Story&quot;</em>.</p>
+<p>Bản gộp này chỉ chứa phần <strong>truyện chêm</strong> (tiếng Việt xen từ vựng TOEIC) của cả 28 chương, ghép liền mạch để đọc như một cuốn tiểu thuyết — dùng làm bản thảo xuất ebook. Từ vựng, bài tập và đáp án đầy đủ vẫn nằm trong từng bài viết gốc thuộc series <a href="/series/hoc-tu-vung-toeic-qua-story/">hoc-tu-vung-toeic-qua-story</a>.</p>
+<p>Tác giả: Nguyen Chung</p>
+</blockquote>
+<hr>
+<h2 id="mục-lục">Mục lục</h2>
+<ol>
+<li><a href="#chuong-1">Chương 1 — Họp &amp; Ủy ban · Thư từ &amp; Liên lạc <em>(OFFICES)</em></a></li>
+<li><a href="#chuong-2">Chương 2 — Thiết bị &amp; Nội thất · Quy trình làm việc <em>(OFFICES)</em></a></li>
+<li><a href="#chuong-3">Chương 3 — Tuyển dụng &amp; Ứng tuyển · Đào tạo &amp; Đánh giá <em>(PERSONNEL)</em></a></li>
+<li><a href="#chuong-4">Chương 4 — Lương &amp; Phúc lợi · Thăng chức, Khen thưởng &amp; Nghỉ việc <em>(PERSONNEL)</em></a></li>
+<li><a href="#chuong-5">Chương 5 — Hợp đồng &amp; Đàm phán · Sáp nhập &amp; Cơ cấu công ty <em>(GENERAL BUSINESS)</em></a></li>
+<li><a href="#chuong-6">Chương 6 — Marketing &amp; Bán hàng <em>(GENERAL BUSINESS)</em></a></li>
+<li><a href="#chuong-7">Chương 7 — Bảo hành · Lập kế hoạch kinh doanh <em>(GENERAL BUSINESS)</em></a></li>
+<li><a href="#chuong-8">Chương 8 — Hội nghị · Quan hệ lao động <em>(GENERAL BUSINESS)</em></a></li>
+<li><a href="#chuong-9">Chương 9 — Vé &amp; Lịch trình <em>(TRAVEL)</em></a></li>
+<li><a href="#chuong-10">Chương 10 — Khách sạn · Thuê xe &amp; Đi lại <em>(TRAVEL)</em></a></li>
+<li><a href="#chuong-11">Chương 11 — Đặt bàn · Tiếp khách &amp; Tiệc chiêu đãi <em>(DINING OUT)</em></a></li>
+<li><a href="#chuong-12">Chương 12 — Món ăn · Kiêng khem &amp; Thanh toán <em>(DINING OUT)</em></a></li>
+<li><a href="#chuong-13">Chương 13 — Ngân hàng · Kế toán &amp; Hóa đơn <em>(FINANCE)</em></a></li>
+<li><a href="#chuong-14">Chương 14 — Đầu tư · Thuế &amp; Ngân sách <em>(FINANCE)</em></a></li>
+<li><a href="#chuong-15">Chương 15 — Mua sắm · Đặt hàng · Kho &amp; Vật tư <em>(PURCHASING)</em></a></li>
+<li><a href="#chuong-16">Chương 16 — Vận chuyển · Hóa đơn &amp; Thanh toán <em>(PURCHASING)</em></a></li>
+<li><a href="#chuong-17">Chương 17 — Dây chuyền &amp; Năng suất <em>(MANUFACTURING)</em></a></li>
+<li><a href="#chuong-18">Chương 18 — Kiểm soát chất lượng &amp; Sự cố <em>(MANUFACTURING)</em></a></li>
+<li><a href="#chuong-19">Chương 19 — R&amp;D &amp; Đổi mới <em>(CORPORATE DEVELOPMENT)</em></a></li>
+<li><a href="#chuong-20">Chương 20 — Sáng chế &amp; Thương mại hóa <em>(CORPORATE DEVELOPMENT)</em></a></li>
+<li><a href="#chuong-21">Chương 21 — Phần mềm · Hệ thống · IT <em>(TECHNICAL AREAS)</em></a></li>
+<li><a href="#chuong-22">Chương 22 — Lab · Thiết bị · Thông số <em>(TECHNICAL AREAS)</em></a></li>
+<li><a href="#chuong-23">Chương 23 — Thuê &amp; Mua mặt bằng <em>(HOUSING)</em></a></li>
+<li><a href="#chuong-24">Chương 24 — Xây dựng · Điện – Gas – Bảo trì <em>(HOUSING)</em></a></li>
+<li><a href="#chuong-25">Chương 25 — Khám &amp; Điều trị <em>(HEALTH)</em></a></li>
+<li><a href="#chuong-26">Chương 26 — Bảo hiểm &amp; Wellness <em>(HEALTH)</em></a></li>
+<li><a href="#chuong-27">Chương 27 — Sự kiện &amp; Ra mắt <em>(ENTERTAINMENT)</em></a></li>
+<li><a href="#chuong-28">Chương 28 — Truyền thông &amp; Đánh giá (Hồi kết) <em>(ENTERTAINMENT)</em></a></li>
+</ol>
+<hr>
+<p><a id="chuong-1"></a></p>
+<h2 id="chương-1--họp--ủy-ban--thư-từ--liên-lạc">Chương 1 — Họp &amp; Ủy ban · Thư từ &amp; Liên lạc</h2>
+<p><em>Chủ đề TOEIC: OFFICES</em></p>
+<p>Bảy giờ sáng thứ Hai, tầng 12 trụ sở Aster Home Technologies ở Marlowe City. Priya Nair đến sớm nhất. Từ tuần trước, cô đã gửi một <strong>memo</strong> (thông báo nội bộ) tới toàn bộ <strong>board of directors</strong> (hội đồng quản trị), kèm một <strong>attachment</strong> (tệp đính kèm) là bản kế hoạch mật. Trong email, cô còn <strong>enclose</strong> (gửi kèm) cả <strong>agenda</strong> (chương trình họp) của buổi sáng nay, và cẩn thận đánh dấu mọi tài liệu là <strong>confidential</strong> (bảo mật).</p>
+<p>&quot;Đã <strong>notify</strong> (thông báo) hết mọi người chưa?&quot; Diane Whitfield hỏi khi bước vào.</p>
+<p>&quot;Rồi ạ,&quot; Priya đáp. &quot;Em cũng đã <strong>remind</strong> (nhắc nhở) từng thành viên tối qua. Chỉ có ông Harold gọi lại — sáng nay em nghe <strong>voicemail</strong> (hộp thư thoại) của ông ấy, ông sẽ tới muộn mười phút.&quot;</p>
+<p>Đúng 7 giờ 30, Diane <strong>convene</strong> (triệu tập) cuộc họp. Hôm nay cô là người <strong>chair</strong> (chủ trì). Priya ngồi cạnh, chuẩn bị ghi <strong>minutes</strong> (biên bản cuộc họp). Một thành viên đi công tác xa không dự được nên đã ủy quyền bỏ phiếu qua <strong>proxy</strong> (phiếu ủy quyền); nhờ vậy phòng họp vẫn đủ <strong>quorum</strong> (số đại biểu tối thiểu) để ra quyết định.</p>
+<p>Diane không vòng vo. &quot;Thưa hội đồng, hôm nay chỉ có một mục trong <strong>agenda</strong>: chúng ta có nên tung dòng Aria và tiến vào thị trường Halston hay không.&quot;</p>
+<p>Cả phòng lặng đi. Harold Vance, chủ tịch, vừa tới, tay ôm một tập <strong>correspondence</strong> (thư từ trao đổi) dày cộp. Ông đặt xuống bàn một lá thư. &quot;Trước khi các vị quyết, tôi phải chia sẻ một <strong>inquiry</strong> (thư hỏi) mà tôi nhận được. Neura Corporation muốn mua lại Aster. Tôi là <strong>recipient</strong> (người nhận) chính thức của đề nghị này.&quot; Ông <strong>forward</strong> (chuyển tiếp) bản sao cho Diane.</p>
+<p>Diane liếc qua, nét mặt không đổi. &quot;Cảm ơn ông Harold. Nhưng tôi đề nghị ta chưa bàn chuyện bán mình vội.&quot;</p>
+<p>Cuộc tranh luận kéo dài. Có lúc căng đến mức Harold đề nghị <strong>postpone</strong> (hoãn lại) quyết định, thậm chí <strong>reschedule</strong> (dời lịch) sang tháng sau. Diane lắc đầu: &quot;Nếu cứ trì hoãn, ta sẽ lỡ mất mùa ra mắt.&quot;</p>
+<p>Cuối cùng, Diane đưa vấn đề ra biểu quyết. Không phải một quyết định <strong>unanimous</strong> (nhất trí hoàn toàn) — Harold và một người nữa bỏ phiếu trắng — nhưng đủ để đạt <strong>consensus</strong> (sự đồng thuận): Aster sẽ xúc tiến Project Aria, còn lời đề nghị của Neura được gác lại, chờ kết quả ra mắt. Diane cũng đề nghị hội đồng lập ngay một <strong>committee</strong> (ủy ban) chuyên trách để giám sát dự án.</p>
+<p>&quot;Vậy chốt,&quot; Diane nói. &quot;Priya, nhờ em soạn <strong>memo</strong> gửi các trưởng phòng ngay chiều nay.&quot;</p>
+<p>Cuộc họp <strong>adjourn</strong> (kết thúc) lúc 9 giờ. Vừa ra khỏi phòng, điện thoại Priya reo — một phóng viên hỏi về tin đồn sáp nhập. Cô bình tĩnh <strong>put</strong> người đó <strong>on hold</strong> (cho giữ máy) vài giây, rồi <strong>transfer the call</strong> (chuyển cuộc gọi) sang phòng Truyền thông của Daniel: &quot;Anh bấm máy lẻ — <strong>extension</strong> (số máy lẻ) 305 nhé.&quot;</p>
+<p>Priya thở ra. Quyết định đã xong, nhưng cô biết: câu hỏi &quot;tự lớn hay bán mình&quot; chỉ mới được hoãn lại, chứ chưa hề khép lại.</p>
+<p><em>Hết Chương 1. Chương sau: hậu trường vận hành văn phòng khi bộ máy tăng tốc — thiết bị &amp; quy trình.</em></p>
+<hr>
+<p><a id="chuong-2"></a></p>
+<h2 id="chương-2--thiết-bị--nội-thất--quy-trình-làm-việc">Chương 2 — Thiết bị &amp; Nội thất · Quy trình làm việc</h2>
+<p><em>Chủ đề TOEIC: OFFICES</em></p>
+<p>Chiều thứ Hai, chỉ vài tiếng sau khi cuộc họp HĐQT lịch sử khép lại, tầng 12 trụ sở Aster đã biến thành một mê cung giấy tờ. Diane giao Priya soạn memo gửi các trưởng phòng &quot;ngay chiều nay&quot;. Là người <strong>in charge of</strong> (phụ trách) toàn bộ khối hành chính, Priya hiểu &quot;chiều nay&quot; nghĩa là phải thật <strong>prompt</strong> (nhanh chóng) — không còn chỗ cho trì hoãn.</p>
+<p>Kế hoạch nghe qua thì đơn giản: <strong>duplicate</strong> (sao chép) bốn mươi bản kế hoạch, rồi <strong>distribute</strong> (phân phát) tới từng phòng ban trước giờ tan làm. Priya ôm xấp giấy tới chiếc <strong>photocopier</strong> (máy photocopy) đầu hành lang, nhấn nút — và màn hình chớp đỏ hai chữ quen thuộc: <strong>out of order</strong> (hỏng, không dùng được).</p>
+<p>Cô mở nắp máy ra. Đúng như linh cảm, một tờ giấy <strong>jam</strong> (kẹt) nghẹn ở khay giữa. Gỡ xong, máy chạy thêm được vài bản thì đèn báo mực bật sáng: <strong>toner cartridge</strong> (hộp mực in) đã cạn kiệt.</p>
+<p>Priya gọi xuống phòng IT. Người bước ra khỏi thang máy là <strong>John SB</strong>, kỹ sư IT, một tay cầm điện thoại vẫn mở sẵn một trang tin tuyển dụng. &quot;Chị Priya, cái máy này em xem qua rồi — nó 'sắp nghỉ' tới nơi, y hệt em thôi,&quot; anh nói nửa đùa nửa thật, rồi thay giúp cô chiếc <strong>toner cartridge</strong> mới. Trong lúc John loay hoay, Priya tranh thủ mở tủ kiểm kê và giật mình: <strong>stationery</strong> (văn phòng phẩm) — bút, kẹp, giấy note — gần hết, mà <strong>supplies</strong> (vật tư) in ấn cũng chỉ còn đủ dùng vài ngày.</p>
+<p>Khi bản in cuối cùng rơi xuống khay, Priya lập tức gửi email <strong>on behalf of</strong> (thay mặt cho) Diane tới toàn thể trưởng phòng, đính kèm bản kế hoạch Project Aria.</p>
+<p>Chưa kịp thở, cô chuyển sang dọn chỗ cho ủy ban Project Aria vừa thành lập. Đống hồ sơ cũ hơn năm năm được xếp gọn vào một <strong>filing cabinet</strong> (tủ đựng hồ sơ) kê sát phòng lưu trữ, nhường chỗ cho hai <strong>workstation</strong> (chỗ ngồi làm việc) mới. Ở góc tường phía tây, đội bảo trì dựng thêm một <strong>cubicle</strong> (ô làm việc có vách ngăn) để ủy ban có một góc họp kín đáo.</p>
+<p>Tối muộn, ngồi giữa văn phòng ngổn ngang, Priya nhận ra gốc rễ vấn đề không nằm ở cái máy photocopy. Aster lớn quá nhanh mà vẫn thiếu một <strong>procedure</strong> (quy trình) rõ ràng cho việc đặt vật tư, lẫn một <strong>protocol</strong> (quy tắc, nghi thức) chuẩn để xử lý khi thiết bị hỏng. Cô ghi vào sổ: phải soạn một hệ thống mới để <strong>streamline</strong> (tinh gọn) tất cả — nhưng đó là việc để dành cho lúc bớt loạn.</p>
+<p>Điều khiến cô lo hơn cả tối nay lại là câu nói bâng quơ của John lúc chiều. Không chỉ riêng anh: guồng máy Aria đang rú ga, còn đội ngũ thì mỏng đến mức chỉ một người nghỉ là cả dây chuyền giấy tờ đứng khựng.</p>
+<p><em>Hết Chương 2. Chương sau: Priya gõ dòng cuối trong email gửi Diane — &quot;mình phải tuyển người, càng sớm càng tốt&quot; — và đợt tuyển dụng gấp rút sắp đưa một gương mặt trainee mới bước qua cánh cửa tầng 12.</em></p>
+<hr>
+<p><a id="chuong-3"></a></p>
+<h2 id="chương-3--tuyển-dụng--ứng-tuyển--đào-tạo--đánh-giá">Chương 3 — Tuyển dụng &amp; Ứng tuyển · Đào tạo &amp; Đánh giá</h2>
+<p><em>Chủ đề TOEIC: PERSONNEL</em></p>
+<p>Sáng thứ Ba, Priya tới văn phòng sớm hơn thường lệ. Câu nói bâng quơ của John SB tối hôm trước — &quot;sắp nghỉ tới nơi&quot; — vẫn văng vẳng, và cô đã quyết: phải <strong>recruit</strong> (tuyển dụng) người mới cho Project Aria trước khi guồng máy giấy tờ vỡ trận.</p>
+<p>Việc đầu tiên là đăng một <strong>job opening</strong> (vị trí tuyển dụng) cho suất &quot;management trainee&quot; — trợ lý điều hành học việc. Trên cổng tuyển dụng, cô gõ dòng tiêu đề: &quot;<strong>Vacancy</strong> (vị trí còn trống): Management Trainee — Project Aria.&quot; Vừa nhấn &quot;đăng&quot;, John SB đi ngang, liếc màn hình rồi buông một câu quen thuộc: &quot;Ồ, cuối cùng cũng có một <strong>vacancy</strong>. Hay là em nộp đơn… để được chuyển đi chỗ khác nhỉ?&quot; Priya chỉ cười — trò dọa nghỉ của John giờ đã thành đặc sản của tầng 12.</p>
+<p>Chỉ sau hai ngày, hòm thư ngập đơn. <strong>Applicant</strong> (người nộp đơn) từ khắp nơi đổ về, tạo thành một <strong>applicant pool</strong> (nguồn ứng viên) đông chưa từng thấy. Priya bắt đầu sàng lọc: mỗi bộ hồ sơ gồm một <strong>résumé</strong> (sơ yếu lý lịch) và một <strong>cover letter</strong> (thư xin việc). Cô gạt sang bên những ai không đạt <strong>qualification</strong> (trình độ, bằng cấp) tối thiểu, rồi soi kỹ <strong>credentials</strong> (chứng chỉ, năng lực) của số còn lại — bằng cấp, khóa học, kinh nghiệm thực tế.</p>
+<p>Từ hàng trăm bộ hồ sơ, cô lập một danh sách rút gọn những <strong>candidate</strong> (ứng viên) sáng giá nhất để mời <strong>interview</strong> (phỏng vấn).</p>
+<p>Người cuối cùng bước vào phòng phỏng vấn chiều hôm ấy là một chàng trai tên <strong>Ben Tran</strong>. Cậu hơi lúng túng, suýt làm đổ ly nước khi vừa ngồi xuống, nhưng đôi mắt sáng và những câu trả lời thật thà khiến Priya chú ý. <strong>Résumé</strong> của Ben chưa dày kinh nghiệm, thế nhưng khi cô gọi cho những người trong danh sách <strong>reference</strong> (người giới thiệu) mà cậu cung cấp, ai cũng khen cậu ham học và đáng tin. Priya nhận ra: đây là một <strong>prospective</strong> (tiềm năng) trainee đúng nghĩa — thứ Aster cần lúc này không phải là người đã hoàn hảo, mà là người sẽ lớn lên cùng công ty.</p>
+<p>Cuối tuần, cô quyết định <strong>hire</strong> (tuyển) Ben.</p>
+<p>Sáng thứ Hai kế tiếp, Ben có mặt dự buổi <strong>orientation</strong> (định hướng nhân viên mới): nhận thẻ ra vào, nghe giới thiệu về Project Aria, ký hợp đồng ghi rõ <strong>probation</strong> (thời gian thử việc) ba tháng. Priya trực tiếp nhận làm <strong>mentor</strong> (người hướng dẫn) cho cậu, đồng thời phân một <strong>supervisor</strong> (quản lý trực tiếp) để cậu báo cáo công việc hằng ngày.</p>
+<p>Là một <strong>subordinate</strong> (cấp dưới) mới toanh, Ben lăng xăng học mọi thứ — đôi khi gửi nhầm email, in nhầm bản, nhưng chưa bao giờ mắc cùng một lỗi tới hai lần. Chỉ sau vài tuần, cậu đã tỏ ra <strong>competent</strong> (có năng lực) trong việc soạn biên bản họp, và bất ngờ <strong>proficient</strong> (thành thạo) với phần mềm bảng tính mà nhiều người kỳ cựu còn ngại đụng vào.</p>
+<p>Priya ghi chú vào hồ sơ của Ben: sẽ có một <strong>performance review</strong> (đánh giá hiệu suất) ngay sau tháng thử việc đầu tiên, và một <strong>appraisal</strong> (kỳ đánh giá nhân viên) chính thức vào cuối năm — nếu đạt, cậu sẽ được nhận vào biên chế.</p>
+<p><em>Hết Chương 3. Chương sau: Priya vạch lịch cho Ben luân chuyển qua từng phòng ban — đôi mắt mới của Project Aria đi khắp công ty. Nhưng vừa mừng vì kéo được người mới vào, cô đã nghe phong thanh rằng có kẻ đang ngấm ngầm chèo kéo một kỹ sư chủ chốt rời đi — và cuộc chiến <strong>giữ</strong> người sắp tới còn cam go hơn cuộc chiến tuyển người.</em></p>
+<hr>
+<p><a id="chuong-4"></a></p>
+<h2 id="chương-4--lương--phúc-lợi--thăng-chức-khen-thưởng--nghỉ-việc">Chương 4 — Lương &amp; Phúc lợi · Thăng chức, Khen thưởng &amp; Nghỉ việc</h2>
+<p><em>Chủ đề TOEIC: PERSONNEL</em></p>
+<p>Ben Tran bắt đầu vòng luân chuyển đầu tiên ngay tại phòng của người đã tuyển mình — Corporate Services của Priya. Sáng thứ Hai đầu tuần, cậu được giao &quot;bài học vỡ lòng&quot;: ngồi cạnh Priya xem cô rà lại toàn bộ <strong>payroll</strong> (bảng lương) của Project Aria. Con số làm cậu giật mình — từ ngày mở đợt tuyển, bảng lương đã phình lên trông thấy.</p>
+<p>&quot;Tuyển được người mới chỉ là một nửa,&quot; Priya nói, tay lướt qua từng dòng. &quot;Nửa còn lại, khó hơn nhiều, là <strong>giữ</strong> họ.&quot;</p>
+<p>Cô chỉ cho Ben thấy một khoản <strong>compensation</strong> (thù lao, đãi ngộ) được ghép lại từ nhiều mảnh: <strong>salary</strong> (lương tháng) cố định của khối văn phòng, <strong>wage</strong> (lương theo giờ) của nhân viên hỗ trợ và công nhân, cộng thêm cả một gói <strong>benefits</strong> (phúc lợi) — bảo hiểm, ngày nghỉ, hỗ trợ đi lại. Mấy tuần chạy nước rút cho Aria khiến chi phí <strong>overtime</strong> (giờ làm thêm) dâng cao: ai cũng ở lại muộn, mà giờ làm thêm thì phải trả đủ.</p>
+<p>Đang dở câu chuyện thì điện thoại của Priya réo. Là Diane. &quot;Priya, xuống phòng chị một lát. Có chuyện về <strong>personnel</strong> (nhân sự).&quot;</p>
+<p>Hóa ra tin phong thanh hôm trước đã thành sự thật: <strong>John SB</strong> — kỹ sư IT vẫn ngày ngày &quot;dọa nghỉ&quot; — lần này nộp đơn thật. Trong tay anh là một lời mời từ <strong>Neura</strong>, kèm mức lương cao hơn hẳn. &quot;Lần này em <strong>resign</strong> (xin nghỉ) thật đấy,&quot; John nói, nhưng ánh mắt vẫn còn ngập ngừng.</p>
+<p>Diane không để mất một người giỏi vào tay đối thủ dễ như vậy. Bà cùng Priya dựng nhanh một lời đề nghị giữ chân: một khoản <strong>raise</strong> (tăng lương) đáng kể, một <strong>bonus</strong> (tiền thưởng) giữ người trả ngay, và — điều John không ngờ — một cơ hội <strong>transfer</strong> (điều chuyển) sang chính nhóm lõi của Aria, nơi mở ra con đường <strong>promotion</strong> (thăng chức) rõ ràng trong năm tới. Priya cũng xác nhận anh vẫn <strong>eligible</strong> (đủ điều kiện) cho gói thưởng cuối năm và <strong>entitled</strong> (có quyền được hưởng) đủ ngày <strong>leave</strong> (nghỉ phép) như cũ, chưa kể một khoản <strong>allowance</strong> (phụ cấp) đi lại nếu phải sang Halston.</p>
+<p>John cầm tờ đề nghị, im lặng hồi lâu. &quot;Để em… nghĩ thêm,&quot; anh nói, rồi tắt trình duyệt vốn luôn mở sẵn trang tuyển dụng — ít nhất là trong hôm nay.</p>
+<p>Nhưng Diane hiểu vấn đề lớn hơn một con người. Nếu Neura chèo kéo được John, họ sẽ chèo kéo cả <strong>workforce</strong> (lực lượng lao động). Bà quyết định đánh phủ đầu vào tinh thần chung. Cùng Priya, bà công bố một chương trình <strong>recognition</strong> (ghi nhận): giải <strong>award</strong> (giải thưởng) &quot;Aria Star&quot; hằng quý, trao <em>in recognition of</em> những <strong>accomplishment</strong> (thành tích) nổi bật, nhằm vực dậy <strong>morale</strong> (tinh thần làm việc) và ghìm bớt <strong>turnover</strong> (tỷ lệ nghỉ việc) đang có dấu hiệu nhích lên.</p>
+<p>Có người hỏi thẳng trong buổi họp: mở rộng kiểu này rồi có ngày Aster phải <strong>lay off</strong> (cho thôi việc) bớt người như tin đồn về Neura không? Diane trả lời dứt khoát: chừng nào bà còn ngồi ghế này, Aster sẽ không <strong>dismiss</strong> (sa thải) ai chỉ để làm đẹp sổ sách. &quot;Bên kia thâu tóm công ty là để cắt giảm — họ tính sẵn <strong>severance pay</strong> (trợ cấp thôi việc) cho phân nửa các bạn rồi. Còn chúng ta thì làm điều ngược lại: giữ người, và lớn lên.&quot;</p>
+<p>Cuối buổi, một kỹ sư kỳ cựu nán lại bắt tay Diane — ông sắp <strong>retire</strong> (nghỉ hưu) vào cuối năm và yên tâm vì gói <strong>pension</strong> (lương hưu) vẫn được giữ nguyên vẹn qua giai đoạn sóng gió. Với ông, đó là câu trả lời rõ nhất cho câu hỏi &quot;độc lập hay bán mình&quot;.</p>
+<p><em>Hết Chương 4. Priya khép sổ <strong>payroll</strong> với một tiếng thở dài: giữ được người, nhưng chi phí đội lên từng ngày, mà ngân khố mở rộng thì có hạn. Diane thì nhìn xa hơn — nếu Neura đã ra tay giành người, nước cờ kế tiếp của họ chắc chắn là bàn đàm phán. Đã đến lúc bà phải trực tiếp bước vào cuộc: siết chặt hợp đồng với Brightway và nhìn thẳng vào lời đề nghị thâu tóm. Chương sau: những bản hợp đồng, những điều khoản, và ván bài M&amp;A chính thức bắt đầu.</em></p>
+<hr>
+<p><a id="chuong-5"></a></p>
+<h2 id="chương-5--hợp-đồng--đàm-phán--sáp-nhập--cơ-cấu-công-ty">Chương 5 — Hợp đồng &amp; Đàm phán · Sáp nhập &amp; Cơ cấu công ty</h2>
+<p><em>Chủ đề TOEIC: GENERAL BUSINESS</em></p>
+<p>Đúng như Diane đã đoán, chỉ một tuần sau khi giữ được John, bà thấy mình ngồi giữa hai bộ hồ sơ đặt cạnh nhau trên bàn — hai con đường cho tương lai Aster. Bên trái là bản <strong>contract</strong> (hợp đồng) phân phối với <strong>Brightway Retail</strong>; bên phải là đề nghị <strong>acquisition</strong> (sự mua lại, thâu tóm) chính thức mà <strong>Neura</strong> vừa gửi tới. Bà biết rốt cuộc mình chỉ được chọn một.</p>
+<p>Karen Ito từ Brightway bay sang Marlowe để chốt bản <strong>agreement</strong> (thỏa thuận). Suốt buổi sáng, hai bên <strong>negotiate</strong> (đàm phán) từng dòng. Karen đọc kỹ từng <strong>clause</strong> (điều khoản), soi từng <strong>provision</strong> (điều khoản quy định) về giá, sản lượng và độc quyền khu vực. &quot;Chúng tôi đồng ý phần lớn <strong>terms and conditions</strong> (các điều khoản &amp; điều kiện),&quot; Karen nói, &quot;nhưng mức chiết khấu thì phải bàn lại.&quot;</p>
+<p>Diane mỉm cười: &quot;Giá thì <strong>negotiable</strong> (có thể thương lượng), nhưng thời điểm giao hàng thì không.&quot; Để phá thế bí, bà đưa ra một <strong>concession</strong> (sự nhượng bộ): Brightway được độc quyền phân phối tại Halston trong năm đầu; đổi lại, Karen bỏ yêu cầu giảm giá sâu. Một nhượng bộ đổi một nhượng bộ.</p>
+<p>Ben Tran — đang ở chặng luân chuyển kế tiếp, lần này ngồi ghi chép cho Diane — lặng lẽ quan sát. Cậu học được rằng một hợp đồng tốt không chỉ là những lời hứa. Bản này sẽ có tính <strong>binding</strong> (ràng buộc về pháp lý): nếu một bên <strong>breach</strong> (vi phạm) cam kết thì sẽ có chế tài. Cả hai phải <strong>abide by</strong> (tuân thủ) các điều khoản đã ký và <strong>comply with</strong> (tuân thủ) quy định nhập khẩu của Halston. Mỗi bên gánh những <strong>obligation</strong> (nghĩa vụ) riêng; nếu giao hàng lỗi, bên sản xuất sẽ là bên <strong>liable</strong> (chịu trách nhiệm pháp lý) cho các thiệt hại. Thay vì lôi nhau ra tòa, họ thống nhất mọi tranh chấp sẽ đưa ra <strong>arbitration</strong> (phân xử qua trọng tài).</p>
+<p>Đến chiều, luật sư hai bên <strong>amend</strong> (sửa đổi) điều khoản quan trọng nhất. Diane yêu cầu ghi thật rõ: nếu Aria không ra mắt đúng hẹn, toàn bộ hợp đồng sẽ trở nên <strong>void</strong> (vô hiệu). Karen do dự, rồi gật đầu — chính điều khoản đó cũng bảo vệ cho Brightway.</p>
+<p>Trong khi bản Brightway dần thành hình, bộ hồ sơ bên phải vẫn nằm đó, im lìm mà nặng trịch. Neura không đề nghị một <strong>merger</strong> (sự sáp nhập) ngang hàng; họ muốn biến Aster thành một <strong>subsidiary</strong> (công ty con) — nói giảm đi là một <strong>affiliate</strong> (công ty liên kết) — vẫn giữ <strong>headquarters</strong> (trụ sở chính) ở Marlowe, nhưng sẽ <strong>restructure</strong> (tái cơ cấu) toàn bộ và cắt bớt người. Harold Vance nhắc Diane rằng bà có nghĩa vụ với mọi <strong>stakeholder</strong> (bên liên quan): cổ đông, nhân viên, đối tác. &quot;Bán cho Neura là chắc ăn,&quot; ông nói. Nhưng Diane muốn Aster tự <strong>expand</strong> (mở rộng) sang Halston bằng chính đôi chân mình.</p>
+<p>Bà chưa ký gì với Neura. &quot;Cho tôi thêm thời gian,&quot; bà đáp — một cách câu giờ có tính toán.</p>
+<p><em>Hết Chương 5. Diane đặt bút ký nháp vào bản Brightway, nhưng điều khoản <strong>void</strong> kia cứ treo lơ lửng như một lời thách: hợp đồng chỉ &quot;sống&quot; nếu Aria ra mắt đúng hẹn và bán được hàng. Mà muốn bán được hàng ở một thị trường xa lạ như Halston, Aster cần nhiều hơn một sản phẩm tốt — cần cả một chiến dịch khiến người ta khao khát nó. Diane quay sang Daniel Cho: &quot;Đến lượt cậu. Làm cho cả Halston muốn có Aria.&quot; Chương sau: thương hiệu, thị trường mục tiêu và canh bạc marketing của Daniel.</em></p>
+<hr>
+<p><a id="chuong-6"></a></p>
+<h2 id="chương-6--marketing--bán-hàng">Chương 6 — Marketing &amp; Bán hàng</h2>
+<p><em>Chủ đề TOEIC: GENERAL BUSINESS</em></p>
+<p>Diane trao lại &quot;quả bóng&quot; cho Daniel Cho ngay sáng hôm sau. Điều khoản <strong>void</strong> trong hợp đồng Brightway đã nói rõ: nếu Aria không bán được hàng, mọi thứ tan thành mây khói. &quot;Nhiệm vụ của cậu,&quot; bà nói, &quot;là biến một sản phẩm tốt thành một sản phẩm mà cả Halston phải khao khát.&quot;</p>
+<p>Daniel không đợi phải nhắc lần hai. Anh triệu tập cả phòng và trải lên bàn kế hoạch cho một <strong>campaign</strong> (chiến dịch) marketing quy mô nhất lịch sử Aster. Trọng tâm là dựng <strong>brand</strong> (thương hiệu) Aria thành cái tên gắn với &quot;ngôi nhà biết nghĩ&quot;; từ đó tung một loạt <strong>advertisement</strong> (quảng cáo) trên mọi mặt trận để <strong>promote</strong> (quảng bá) sản phẩm.</p>
+<p>&quot;Nhưng quảng bá cho ai mới được?&quot; — Rosie Park, cô trợ lý lúc nào cũng thủ sẵn hộp phấn má hồng, buột miệng hỏi. Câu hỏi tưởng ngây ngô hóa ra trúng đích. Daniel chỉ lên màn hình: <strong>target market</strong> (thị trường mục tiêu) là tầng lớp trung lưu thành thị ở Halston — nhóm <strong>consumer</strong> (người tiêu dùng) trẻ, mê công nghệ, sẵn sàng chi cho tiện nghi. Để hiểu họ, đội đã chạy một cuộc <strong>survey</strong> (khảo sát) với một bảng <strong>questionnaire</strong> (bảng câu hỏi) chi tiết; <strong>feedback</strong> (phản hồi) thu về rất tích cực, kèm vài <strong>testimonial</strong> (lời chứng thực của khách hàng) từ nhóm dùng thử. Daniel còn mời được một gương mặt công nghệ có tiếng ở Halston đứng ra <strong>endorse</strong> (chứng thực, ủng hộ) thương hiệu.</p>
+<p>Rosie — với con mắt thẩm mỹ sắc bén giấu sau thỏi má hồng — lại là người soi ra bộ nhận diện cũ trông &quot;nhạt và rẻ tiền&quot;. Cô đề xuất tông màu, phông chữ và cách bài trí khiến Aria &quot;trông đắt hơn giá của nó&quot;. Daniel gật gù: hình ảnh cũng là một phần của thương hiệu.</p>
+<p>Rồi anh chuyển sang phần gai góc nhất: đối thủ. <strong>Neura</strong> là <strong>competitor</strong> (đối thủ cạnh tranh) lớn nhất, túi tiền sâu hơn hẳn. Muốn thắng, Aria phải thật <strong>competitive</strong> (cạnh tranh) về cả giá lẫn tính năng. Daniel chốt một nước cờ: tận dụng thỏa thuận với Brightway để tung một ưu đãi ra mắt <strong>exclusive</strong> (độc quyền) — chỉ Halston mới có, ít nhất trong năm đầu.</p>
+<p>Về khâu bán hàng, Daniel bày ra cả một cỗ máy. Để <strong>boost</strong> (thúc đẩy) doanh số và né vết xe <strong>decline</strong> (sụt giảm) mà nhiều sản phẩm mới vấp phải, anh đưa ra một <strong>forecast</strong> (dự báo) doanh số đầy tham vọng, giao <strong>quota</strong> (chỉ tiêu) cụ thể cho đội sales, phân phối qua hệ thống <strong>outlet</strong> (cửa hàng, kênh phân phối) của Brightway, phát <strong>voucher</strong> (phiếu giảm giá) cho khách mua sớm, dựng một <strong>loyalty program</strong> (chương trình khách hàng thân thiết) để giữ chân người mua, và trên hết, đặt cược vào sức lan tỏa <strong>word of mouth</strong> (truyền miệng). Anh tin rằng nếu sản phẩm đủ tốt, chính khách hàng sẽ tạo ra <strong>demand</strong> (nhu cầu) cho nhau.</p>
+<p>Cuối buổi, Daniel làm điều khiến cả phòng nín thở: anh cam kết một con số doanh số cho quý ra mắt — cao đến mức Diane phải nhướng mày. &quot;Tôi lấy uy tín của mình ra bảo đảm,&quot; anh nói.</p>
+<p><em>Hết Chương 6. Con số Daniel vừa hứa lấp lánh trên màn hình như một lời thề — mà cũng như một sợi dây thòng lọng. Bởi muốn khách hàng &quot;truyền miệng&quot; điều tốt đẹp, Aria phải thật sự tốt và bền, và Aster phải dám đứng sau nó bằng một chính sách bảo hành đủ mạnh. Diane khẽ quay sang Sophia: &quot;Chúng ta có dám bảo hành dài cho Aria không?&quot; Gương mặt Sophia thoáng một nét lấn cấn về độ bền của mấy linh kiện thay thế. Chương sau: chính sách bảo hành, kế hoạch tổng và những kịch bản dự phòng.</em></p>
+<hr>
+<p><a id="chuong-7"></a></p>
+<h2 id="chương-7--bảo-hành--lập-kế-hoạch-kinh-doanh">Chương 7 — Bảo hành · Lập kế hoạch kinh doanh</h2>
+<p><em>Chủ đề TOEIC: GENERAL BUSINESS</em></p>
+<p>Lời hứa doanh số của Daniel vẫn còn lấp lánh trên màn hình khi Diane quay sang Sophia và Priya với một câu hỏi khó: nếu muốn khách tin, Aster phải dám đứng sau Aria đến mức nào?</p>
+<p>Với một món đồ gia dụng thông minh, chính sách <strong>warranty</strong> (chế độ bảo hành) là điểm sống còn. Sophia và Priya ngồi lại cả buổi chiều để soạn. Họ chốt một <strong>guarantee</strong> (sự bảo đảm) hoàn tiền trong 30 ngày đầu, kèm gói <strong>warranty</strong> kéo dài hai năm. Nếu sản phẩm dính <strong>defect</strong> (lỗi sản phẩm) từ nhà máy, hoặc có một linh kiện <strong>faulty</strong> (bị lỗi), khách sẽ được <strong>repair</strong> (sửa chữa) miễn phí, hoặc được <strong>replace</strong> (thay thế) nguyên máy nếu không sửa được. Priya nhấn mạnh phải ghi rõ ngày bảo hành <strong>expire</strong> (hết hạn) và phạm vi <strong>coverage</strong> (phạm vi bảo hành) — cái gì được bảo, cái gì không — để tránh tranh cãi về sau.</p>
+<p>Nhưng Sophia hiểu rằng một lời bảo hành hào phóng chỉ an toàn nếu sản phẩm thật sự bền. Cô cau mày khi nghĩ tới mấy lô linh kiện thay thế mua vội — độ bền của chúng vẫn là một dấu hỏi. Cô không nói ra, chỉ ghi vào sổ: &quot;kiểm lại độ bền linh kiện trước khi cam kết coverage rộng.&quot;</p>
+<p>Xong phần bảo hành, Priya kéo cả nhóm sang việc lớn hơn: một bản kế hoạch tổng cho cả chặng đường tới ngày ra mắt. Cô trải ra <strong>strategy</strong> (chiến lược) chung, rồi bẻ nhỏ thành từng <strong>objective</strong> (mục tiêu) cụ thể theo quý. Mỗi phòng ban được giao một <strong>initiative</strong> (sáng kiến, kế hoạch mới) riêng. Với mỗi đầu việc, họ cân xem nó có thật sự <strong>feasible</strong> (khả thi) trong quỹ thời gian còn lại không, gắn cho nó một <strong>deadline</strong> (hạn chót) rõ ràng, rồi xếp thứ tự <strong>priority</strong> (ưu tiên) — việc nào phải xong trước.</p>
+<p>Priya đưa ra những con số <strong>projection</strong> (dự báo số liệu) về chi phí và doanh thu, đặt cạnh một <strong>benchmark</strong> (chuẩn so sánh) lấy từ các đợt ra mắt tương tự trong ngành, để cả nhóm biết mình đang đứng ở đâu. Họ cùng nhau <strong>assess</strong> (đánh giá) từng rủi ro lớn nhỏ. &quot;Kế hoạch đẹp trên giấy là một chuyện,&quot; Priya nói, &quot;<strong>implement</strong> (triển khai) được nó lại là chuyện khác.&quot;</p>
+<p>Và vì đã thấm bài học từ vụ Neura giành người, Diane đòi thêm một thứ: một <strong>contingency plan</strong> (kế hoạch dự phòng) cho những tình huống xấu nhất — nếu linh kiện trục trặc, nếu tiến độ chậm, nếu Neura ra tay. &quot;Luôn chừa một đường lui,&quot; bà nói.</p>
+<p><em>Hết Chương 7. Kế hoạch đã có, mốc thời gian đã vạch. Cột mốc lớn đầu tiên hiện ngay trên lịch: một hội nghị – triển lãm ngành sắp diễn ra, nơi Aster sẽ lần đầu để Aria xuất hiện trước giới báo chí và cả đối thủ. Nhưng để kịp mang một nguyên mẫu chỉn chu tới đó, nhà máy Eastport sẽ phải tăng ca hết công suất — và Ray thừa biết, ép quá thì công nhân sẽ chẳng ngồi yên. Chương sau: hội nghị, kết nối, và những rạn nứt đầu tiên nơi xưởng sản xuất.</em></p>
+<hr>
+<p><a id="chuong-8"></a></p>
+<h2 id="chương-8--hội-nghị--quan-hệ-lao-động">Chương 8 — Hội nghị · Quan hệ lao động</h2>
+<p><em>Chủ đề TOEIC: GENERAL BUSINESS</em></p>
+<p>Đúng như kế hoạch đã vạch, cột mốc lớn đầu tiên tới rất nhanh: <strong>Northbridge Tech Expo</strong>, hội nghị – triển lãm ngành thường niên. Nhưng trong khi Daniel tỏa sáng dưới ánh đèn hội nghị, thì cách đó một giờ xe, Ray lại đang phải dập một đám cháy âm ỉ nơi nhà máy.</p>
+<p>Ở trung tâm Northbridge, Daniel dẫn một nhóm nhỏ đi dự <strong>conference</strong> (hội nghị). <strong>Venue</strong> (địa điểm tổ chức) là một trung tâm hội nghị khổng lồ, kín người. Vừa qua bàn <strong>registration</strong> (đăng ký), Ben — được cho đi theo học việc — đã hoa mắt trước dòng <strong>attendee</strong> (người tham dự) đông nghịt. Buổi sáng mở màn bằng một <strong>keynote speaker</strong> (diễn giả chính) nói về tương lai nhà thông minh; sau đó chương trình tách thành nhiều <strong>session</strong> (phiên họp) nhỏ, kèm một <strong>workshop</strong> (hội thảo thực hành) về AI mà Ben hào hứng ghi danh. Daniel phát <strong>handout</strong> (tài liệu phát tay) giới thiệu Aria cho khách ghé <strong>booth</strong> (gian trưng bày) của Aster, rồi ngồi vào một <strong>panel</strong> (nhóm diễn giả tọa đàm) bàn về xu hướng ngành. Nhưng thứ anh coi trọng nhất lại là những khoảng <strong>networking</strong> (kết nối quan hệ) giữa giờ giải lao — nơi anh bắt tay báo giới và... chạm mặt cả người của Neura. Chính tại một góc như thế, <strong>Karen Ito</strong> của Brightway — cũng bay sang dự — kéo Daniel lại: Halston sắp có một trade show lớn, và bà muốn Aria xuất hiện ở đó, ngay giữa thị trường mục tiêu.</p>
+<p>Cùng lúc ấy, không khí ở nhà máy Eastport ngột ngạt hơn nhiều. Để kịp có nguyên mẫu Aria mang tới expo, công nhân đã tăng ca liên miên suốt mấy tuần, và mệt mỏi đã hóa thành bất mãn. <strong>Joe Delgado</strong>, quản đốc, gõ cửa phòng Ray với vẻ mặt nặng trịch: <strong>union</strong> (công đoàn) vừa chính thức nộp một <strong>grievance</strong> (đơn khiếu nại) về việc tăng ca quá sức mà chế độ chưa tương xứng.</p>
+<p>Ray hiểu đây không phải chuyện nhỏ. Nếu để <strong>dispute</strong> (tranh chấp) này kéo dài, đã có người bóng gió về một <strong>strike</strong> (đình công), thậm chí một <strong>walkout</strong> (bỏ việc phản đối) ngay giữa giai đoạn nước rút — điều có thể bóp chết cả tiến độ. Thay vì phủ đầu, Ray chọn ngồi xuống. Anh mời đại diện <strong>union</strong> vào bàn <strong>collective bargaining</strong> (thương lượng tập thể), lắng nghe, và cố <strong>mediate</strong> (hòa giải) giữa sức ép tiến độ của công ty và giới hạn chịu đựng của người làm.</p>
+<p>Cuộc họp khép lại bằng một thỏa thuận tạm: giảm giờ tăng ca, cộng thêm phụ cấp. Nhưng khi tiễn Ray ra cửa, Joe hạ giọng: &quot;Lần này thì ổn. Nhưng càng gần ngày ra mắt mà càng ép, tôi không giữ nổi anh em đâu.&quot;</p>
+<p><em>Hết Chương 8. Buổi expo khép lại với một xấp danh thiếp dày cộp và một lời mời khó chối từ: mang Aria sang Halston. Diane quyết rất nhanh — đã đến lúc tận mắt nhìn cái thị trường mà cả canh bạc này nhắm tới. Một chuyến bay sang Halston được đặt gấp cho Diane, Daniel và Ben. Nhưng sau lưng họ, lời cảnh báo của Joe vẫn treo lơ lửng nơi xưởng máy — một ngòi nổ chưa tháo. Chương sau: vé máy bay, lịch trình, và những trục trặc đầu tiên của hành trình ra thế giới.</em></p>
+<hr>
+<p><a id="chuong-9"></a></p>
+<h2 id="chương-9--vé--lịch-trình">Chương 9 — Vé &amp; Lịch trình</h2>
+<p><em>Chủ đề TOEIC: TRAVEL</em></p>
+<p>Chuyến đi tới Halston được quyết trong một đêm, và người khổ nhất là Ben — cậu trainee được giao lo toàn bộ hậu cần cho chuyến công tác đầu tiên của đời mình.</p>
+<p>Ben thức tới khuya, dựng một <strong>itinerary</strong> (lịch trình chuyến đi) chi tiết đến từng giờ cho ba người: Diane, Daniel và cậu. Cậu đặt <strong>reservation</strong> (đặt chỗ) vé máy bay, cân nhắc giữa vé <strong>one-way</strong> (một chiều) và <strong>round-trip</strong> (khứ hồi) — cuối cùng chọn khứ hồi cho rẻ — rồi méo mặt khi thấy <strong>fare</strong> (tiền vé) hạng phổ thông sang Halston vẫn ngốn kha khá ngân sách. Không có chuyến bay thẳng: cả đoàn phải đi một <strong>connecting flight</strong> (chuyến bay nối), với một <strong>layover</strong> (điểm dừng nối chuyến) hai tiếng ở giữa. Ben in ra <strong>schedule</strong> (lịch trình) và lẩm nhẩm như đọc kinh: phải đúng giờ.</p>
+<p>Sáng <strong>departure</strong> (khởi hành), cả nhóm có mặt ở <strong>terminal</strong> (nhà ga sân bay) từ sớm. Ngay quầy làm thủ tục, tim Ben suýt rớt ra ngoài: hộ chiếu của chính cậu sắp <strong>expire</strong> (hết hạn) — chỉ còn <strong>valid</strong> (còn hiệu lực) đúng bốn tháng. Nhân viên chau mày, gọi điện xác minh, rồi cuối cùng cho qua vì Halston chỉ đòi hộ chiếu còn hạn ba tháng. Daniel vỗ vai cậu, cười: &quot;Bài học đầu tiên của dân đi công tác đấy.&quot;</p>
+<p>Qua cửa an ninh, ba người ra <strong>gate</strong> (cửa ra máy bay) số 12 chờ <strong>board</strong> (lên máy bay). Nhưng bảng điện tử bất ngờ nhấp nháy: <strong>delay</strong> (trì hoãn) 90 phút. Ben tái mặt — hoãn đồng nghĩa họ có thể lỡ <strong>connecting flight</strong>, hoặc tệ hơn là dính một <strong>cancellation</strong> (hủy chuyến). Diane vẫn bình tĩnh, bảo Ben gọi hãng dời giờ nối chuyến. Cuối cùng máy bay cũng cho <strong>passenger</strong> (hành khách) lên. Ben được xếp ghế cạnh <strong>aisle</strong> (lối đi giữa hàng ghế), nhét chiếc <strong>carry-on</strong> (hành lý xách tay) vào <strong>overhead compartment</strong> (ngăn hành lý phía trên), rồi thở phào.</p>
+<p>Nhờ phi công bay bù giờ, đoàn kịp chuyến nối trong gang tấc. Khi <strong>arrival</strong> (đến nơi) ở Halston sau nhiều giờ, họ nối đuôi qua <strong>customs</strong> (hải quan), rồi tới <strong>baggage claim</strong> (khu nhận hành lý) chờ vali. Ben, vẫn bám sát <strong>itinerary</strong>, kéo cả nhóm ra bến <strong>shuttle</strong> (xe đưa đón) miễn phí của sân bay. Nhưng Daniel — đã tới Halston vài lần — lắc đầu, chỉ tay về một <strong>platform</strong> (sân ga) gần đó: &quot;Vào trung tâm thì đi tàu tốc hành nhanh hơn; còn muốn ngắm cảnh thì có cả <strong>ferry</strong> (phà) chạy dọc vịnh.&quot;</p>
+<p>Khi con tàu lao vào lòng thành phố, cả ba cùng nhìn ra cửa sổ. Halston hiện ra — dày đặc, chói lóa, hối hả đến choáng ngợp.</p>
+<p><em>Hết Chương 9. Halston trải trước mắt ba người vừa như một cơ hội vàng, vừa như một thử thách khổng lồ: những tòa tháp kính chọc trời, dòng xe cộ bất tận, một thị trường giàu có nhưng xa lạ và khắc nghiệt. Diane khẽ nói, mắt không rời khung cửa: &quot;Đây rồi — nơi định đoạt tất cả.&quot; Nhưng trước khi nghĩ tới chuyện lớn, cả đoàn cần một chỗ ngả lưng và một chiếc xe để xoay xở — mà giờ hẹn với Brightway thì đã cận kề. Chương sau: nhận phòng khách sạn, thuê xe, và cơn kẹt xe đầu tiên giữa lòng Halston.</em></p>
+<hr>
+<p><a id="chuong-10"></a></p>
+<h2 id="chương-10--khách-sạn--thuê-xe--đi-lại">Chương 10 — Khách sạn · Thuê xe &amp; Đi lại</h2>
+<p><em>Chủ đề TOEIC: TRAVEL</em></p>
+<p>Việc đầu tiên khi đặt chân xuống trung tâm Halston là tìm chỗ nghỉ. Ben đã lo liệu từ trước: cậu đặt <strong>accommodation</strong> (chỗ ở) tại một khách sạn gần khu tài chính, ngay tầm đi bộ tới văn phòng Brightway.</p>
+<p>Tại <strong>front desk</strong> (quầy lễ tân), Ben làm thủ tục <strong>check in</strong> (nhận phòng) cho cả đoàn. May mà cậu đặt sớm — tối đó khách sạn đã treo biển &quot;no <strong>vacancy</strong> (phòng trống)&quot;. Nhân viên báo giá: <strong>rate</strong> (giá phòng) mỗi đêm không rẻ, nhưng đã gồm bữa sáng <strong>complimentary</strong> (miễn phí, tặng kèm) và đủ <strong>amenities</strong> (tiện nghi) — phòng gym, wifi, hồ bơi. Diane được xếp một <strong>suite</strong> (phòng suite) rộng để tiện tiếp khách; Ben và Daniel mỗi người một phòng thường. Cô lễ tân dặn giờ <strong>check out</strong> (trả phòng) là 11 giờ trưa hôm sau. Daniel còn ghé hỏi <strong>concierge</strong> (nhân viên hỗ trợ khách) vài gợi ý nhà hàng cho buổi tối.</p>
+<p>Nghỉ chưa ấm chỗ, Daniel đã giục: &quot;Chuẩn bị đi, ta phải tới chỗ Brightway.&quot; Ben ra quầy nhận một <strong>rental car</strong> (xe thuê) đã đặt trước, kiểm tra bình <strong>fuel</strong> (nhiên liệu) đầy, rồi cầm lái.</p>
+<p>Nhưng Halston giờ tan tầm là một cơn ác mộng. Vừa ra khỏi hầm để xe, cả hai đã lọt vào biển <strong>congestion</strong> (tắc nghẽn giao thông) dày đặc. Tệ hơn, một đoạn <strong>roadwork</strong> (công trình sửa đường) chắn mất tuyến chính, buộc Ben phải đi một <strong>detour</strong> (đường vòng) dài lê thê. Daniel liếc đồng hồ, sốt ruột: &quot;Đây là <strong>commute</strong> (đi lại hằng ngày) bình thường của dân Halston thật à? Khiếp.&quot; Ben bám chặt vô-lăng, mắt dán vào bản đồ, cố đưa cả hai tới <strong>destination</strong> (điểm đến) cho kịp giờ.</p>
+<p><em>Hết Chương 10. Đúng giờ hẹn trong gang tấc, chiếc xe thuê cũng trờ tới trước một nhà hàng sang trọng bên bờ vịnh — điểm đến cuối cùng của một ngày dài. Karen Ito đã đợi sẵn bên trong, nụ cười lịch thiệp mà ánh mắt thì khó đoán. Đây không chỉ là một bữa tối xã giao: đằng sau ly vang và món khai vị, Brightway sẽ đặt lên bàn những điều kiện thật. Chương sau: đặt bàn, tiếp khách, và bữa tối định hình quan hệ đối tác Halston.</em></p>
+<hr>
+<p><a id="chuong-11"></a></p>
+<h2 id="chương-11--đặt-bàn--tiếp-khách--tiệc-chiêu-đãi">Chương 11 — Đặt bàn · Tiếp khách &amp; Tiệc chiêu đãi</h2>
+<p><em>Chủ đề TOEIC: DINING OUT</em></p>
+<p>Chiếc xe thuê vừa tấp vào lề, Ben đã thở phào: kịp giờ. Nhà hàng bên vịnh — <em>The Harbourline</em> — sáng đèn vàng ấm, nhìn thẳng ra mặt nước Halston lấp lánh. Đây là <strong>venue</strong> (địa điểm tổ chức) mà Ben đã chọn kỹ, thực ra là theo lời mách của <strong>Fred Okonkwo</strong>, &quot;chuyên gia ăn uống&quot; của công ty ở Marlowe. Vừa nghe tin đoàn bay sang Halston, Fred đã nhắn cả một danh sách quán, gạch đỏ đúng chỗ này: &quot;Nhất định phải thử — <strong>cuisine</strong> (ẩm thực) hải sản ở đây là số một thành phố!&quot;</p>
+<p>Từ mấy hôm <strong>beforehand</strong> (trước đó), Ben đã gọi điện <strong>book</strong> (đặt trước) một bàn, rồi xác nhận lại <strong>reservation</strong> (việc đặt bàn) qua email. Cậu dặn kỹ: một <strong>party</strong> (nhóm khách) bốn người — Diane, Daniel, Karen và cậu — xin <strong>seating</strong> (chỗ ngồi) yên tĩnh cạnh cửa sổ để tiện nói chuyện. Quản lý nhà hàng trấn an rằng họ thừa sức <strong>accommodate</strong> (đáp ứng, xếp được) một bàn như vậy, và đã giữ sẵn chỗ đẹp nhất.</p>
+<p>Karen Ito đã đợi bên trong, đứng dậy bắt tay từng người. Daniel — đúng chất giám đốc marketing — nhanh nhẹn giành quyền <strong>host</strong> (đứng ra mời, chủ trì) bữa tối: &quot;Tối nay Aster mời, xem như lời cảm ơn Brightway đã kéo chúng tôi sang tận đây.&quot; Không khí ấm dần qua vài câu chuyện phiếm về món ăn địa phương.</p>
+<p>Nhưng khi những đĩa khai vị đầu tiên vừa dọn ra, Karen đặt ly xuống và vào việc. &quot;Tôi có một đề nghị — hơi bất ngờ một chút.&quot; Bà kể: mỗi năm Brightway tổ chức một <strong>banquet</strong> (tiệc chiêu đãi lớn) cho toàn bộ đối tác bán lẻ hàng đầu Halston — một buổi <strong>reception</strong> (tiệc chiêu đãi) hoành tráng ở một <strong>venue</strong> sang trọng bậc nhất thành phố. Năm nay tiệc theo kiểu <strong>buffet</strong> (tiệc tự chọn), giao trọn cho một <strong>caterer</strong> (bên tổ chức tiệc) danh tiếng lo tất tần tật khâu <strong>catering</strong> (dịch vụ tiệc), từ <strong>refreshments</strong> (đồ ăn nhẹ, nước giải khát) tới <strong>beverages</strong> (đồ uống) phục vụ hàng trăm khách.</p>
+<p>&quot;Điều kiện của tôi,&quot; Karen nói, ánh mắt sắc lại, &quot;là Aria phải ra mắt ngay tại buổi tiệc đó — trước mặt mọi nhà bán lẻ Halston. Nếu các vị đủ gan, Brightway sẽ dồn toàn lực. Nhưng nghĩa là các vị phải sẵn sàng theo lịch của chúng tôi… và các vị không phải cái tên duy nhất tôi đang cân nhắc.&quot;</p>
+<p><em>Hết Chương 11. Lời đề nghị được đặt xuống bàn cùng đĩa khai vị: một sân khấu vàng cho Aria, nhưng kèm một cái hẹn nghiệt ngã và một đối thủ giấu mặt. Diane và Daniel đưa mắt nhìn nhau. Chương sau: những món chính được dọn lên, chuyện món chay và khẩu vị riêng, và một thỏa thuận miệng sẽ được chốt — trước khi hóa đơn kịp tới bàn.</em></p>
+<hr>
+<p><a id="chuong-12"></a></p>
+<h2 id="chương-12--món-ăn--kiêng-khem--thanh-toán">Chương 12 — Món ăn · Kiêng khem &amp; Thanh toán</h2>
+<p><em>Chủ đề TOEIC: DINING OUT</em></p>
+<p>Karen vừa đặt điều kiện xuống bàn thì cũng là lúc <strong>server</strong> (nhân viên phục vụ) bưng đồ ăn tới, cho Diane một nhịp để suy nghĩ. Người phục vụ đặt xuống một đĩa <strong>appetizer</strong> (món khai vị) dùng chung — sò điệp nướng — rồi lần lượt các phần <strong>entrée</strong> (món chính): cá nướng, đúng <strong>specialty</strong> (món đặc sản) của nhà hàng, mỗi suất kèm một <strong>side dish</strong> (món ăn kèm) rau củ. Daniel gật gù: <strong>ingredient</strong> (nguyên liệu) tươi thế này thì khó chê.</p>
+<p>&quot;Ở đây toàn đồ <strong>seasonal</strong> (theo mùa), đánh bắt trong ngày,&quot; Karen giới thiệu, rõ là dân sành ăn. Bà hỏi thăm khẩu vị cả bàn — một đồng nghiệp của bà ăn <strong>vegetarian</strong> (chay) — và dặn <strong>server</strong> ghi chú <strong>dietary restrictions</strong> (chế độ ăn kiêng) để bếp làm riêng một phần. Nhà bếp còn nhã ý gửi ra một phần <strong>complimentary</strong> (miễn phí, nhà hàng tặng) để mở lời làm quen.</p>
+<p>Câu chuyện làm ăn chín dần cùng bữa ăn. Tới lúc món <strong>dessert</strong> (tráng miệng) được dọn ra, Diane và Karen đã đi tới một <strong>thỏa thuận miệng</strong>: Aria sẽ ra mắt tại <strong>banquet</strong> của Brightway, đổi lại Brightway dồn toàn lực phân phối. Karen nói sẽ gửi thư mời chính thức; khách phải <strong>RSVP</strong> (xác nhận tham dự) trước cuối tháng.</p>
+<p>Daniel — người đứng ra mời — kín đáo ra hiệu cho <strong>server</strong> xin <strong>the bill</strong> (hóa đơn). Anh liếc thấy nhà hàng đã tính sẵn 10% <strong>gratuity</strong> (phí phục vụ) cho bàn đông khách, nhưng vì được phục vụ quá chu đáo, anh vẫn để thêm một khoản <strong>tip</strong> (tiền boa) hậu hĩnh. Ben nhanh tay xin gói phần ăn còn dư mang <strong>to go</strong> (mang về) — bỏ thì phí.</p>
+<p><em>Hết Chương 12. Cái bắt tay bên bàn tiệc mới chỉ là một lời hứa; để biến nó thành hàng trên kệ Halston đúng hẹn, Aster sẽ phải chi một khoản khổng lồ — tiền mặt bằng, tiền sản xuất, tiền cho cả một sân khấu ra mắt. Trên chuyến bay về Marlowe, Diane đã bắt đầu nhẩm tính. Chương sau: về nước, và bài toán đầu tiên mang tên ngân hàng.</em></p>
+<hr>
+<p><a id="chuong-13"></a></p>
+<h2 id="chương-13--ngân-hàng--kế-toán--hóa-đơn">Chương 13 — Ngân hàng · Kế toán &amp; Hóa đơn</h2>
+<p><em>Chủ đề TOEIC: FINANCE</em></p>
+<p>Máy bay vừa hạ cánh xuống Marlowe, Diane đã kéo Priya vào cuộc: canh bạc Halston cần tiền, rất nhiều tiền. Sáng hôm sau, hai người có mặt ở ngân hàng.</p>
+<p>Ở quầy, một <strong>teller</strong> (giao dịch viên) in ra bản <strong>statement</strong> (bản sao kê) tài khoản công ty để hai bên cùng nhìn vào con số thật. <strong>Balance</strong> (số dư) hiện tại không tệ, nhưng từng dòng <strong>transaction</strong> (giao dịch) trong tháng cho thấy tiền đang chảy ra nhanh hơn chảy vào; tài khoản đã chạm gần hạn mức <strong>overdraft</strong> (thấu chi). Priya vừa cho <strong>deposit</strong> (gửi vào) khoản tạm ứng đầu tiên của Brightway, nhưng bà biết chừng đó chỉ như muối bỏ bể — sắp tới còn phải <strong>withdraw</strong> (rút ra) gấp nhiều lần để trả cho nhà máy và mặt bằng Halston.</p>
+<p>Chuyên viên tín dụng mời hai người vào phòng trong. Aster cần một khoản <strong>loan</strong> (khoản vay) lớn. Ngân hàng đồng ý, nhưng đòi tài sản bảo đảm: hoặc thế chấp tòa trụ sở dưới dạng một khoản <strong>mortgage</strong> (vay thế chấp bất động sản), hoặc đưa dây chuyền thiết bị ra làm <strong>collateral</strong> (tài sản thế chấp). <strong>Interest rate</strong> (lãi suất) họ chào không thấp, và khoản vay sẽ trả dần theo từng <strong>installment</strong> (kỳ trả góp) hằng tháng suốt vài năm. Diane siết chặt tập hồ sơ: vay thì được, nhưng gánh nặng lãi mỗi tháng là có thật.</p>
+<p>Về tới văn phòng, Priya lôi cả bộ sổ sách ra soát trước khi đặt bút ký vay. Người kề vai bà là <strong>accountant</strong> (kế toán viên) kỳ cựu của phòng Tài chính — <strong>Auri Cortez</strong>, một phụ nữ mê vàng đến mức &quot;cái gì không phải vàng thì đừng hòng bà tin&quot;. Auri phụ trách khâu <strong>bookkeeping</strong> (ghi sổ sách), và trước một khoản vay lớn, Priya muốn chạy hẳn một cuộc <strong>audit</strong> (kiểm toán) nội bộ.</p>
+<p>Họ lật từng chồng: các <strong>invoice</strong> (hóa đơn đề nghị thanh toán) từ nhà cung cấp, sổ của bộ phận <strong>billing</strong> (lập hóa đơn), và từng tấm <strong>receipt</strong> (biên lai) mà Auri khăng khăng phải giữ đủ. Chuyến công tác Halston cũng phải <strong>reimburse</strong> (hoàn tiền) cho cả đoàn — vé máy bay, khách sạn, bữa tối với Karen; mỗi khoản <strong>expense</strong> (chi phí) một dòng. Cộng tất cả <strong>expenditure</strong> (khoản chi tiêu) cho việc mở rộng lại, con số làm Diane tái mặt. Tệ hơn, vài hóa đơn nhà cung cấp đã <strong>overdue</strong> (quá hạn), một khoản <strong>outstanding</strong> (chưa thanh toán) vẫn treo đó.</p>
+<p>Rồi Auri gõ bút xuống một dòng: &quot;Sai rồi.&quot; Bà tìm ra một <strong>discrepancy</strong> (sự chênh lệch) giữa sổ công ty và sao kê ngân hàng — một khoản không khớp. Tệ hơn, tiền lãi phạt đã âm thầm <strong>accrue</strong> (tích lũy) trên khoản quá hạn đó suốt mấy tháng mà không ai để ý. &quot;Đấy,&quot; Auri càu nhàu, &quot;vàng thì nằm im, chẳng bao giờ tự 'chạy' đi đâu; chứ mấy con số này…&quot;</p>
+<p><em>Hết Chương 13. Khoản vay ngân hàng, dù lớn, cũng chỉ lấp được một phần cái hố mang tên Halston; mà khoản chênh lệch Auri vừa moi ra còn khoét thêm. Diane hiểu ra: chỉ đi vay thôi là không đủ — Aster sẽ phải mở cửa mời người ngoài rót vốn. Chương sau: gọi vốn từ nhà đầu tư và cổ đông, cùng bài toán ngân sách – thuế cuối năm tài chính.</em></p>
+<hr>
+<p><a id="chuong-14"></a></p>
+<h2 id="chương-14--đầu-tư--thuế--ngân-sách">Chương 14 — Đầu tư · Thuế &amp; Ngân sách</h2>
+<p><em>Chủ đề TOEIC: FINANCE</em></p>
+<p>Vay ngân hàng xong, Diane vẫn thấy hụt: khoản vay kia chỉ lấp được nửa cái hố Halston. Bà quyết mở cửa mời người ngoài rót vốn.</p>
+<p>Trong phòng họp, Diane đứng trước một nhóm <strong>shareholder</strong> (cổ đông) hiện hữu và vài nhà đầu tư tiềm năng, thuyết trình về khoản <strong>investment</strong> (sự đầu tư) vào Aria. Một nhà đầu tư kỳ cựu hỏi thẳng: Aria có xứng đưa vào <strong>portfolio</strong> (danh mục đầu tư) của ông không? Aster tính phát hành thêm <strong>stock</strong> (cổ phiếu) để huy động tiền, nhưng cổ đông cũ lo giá cổ phiếu loãng ra và <strong>dividend</strong> (cổ tức) bị cắt. Diane trấn an: bằng sáng chế và thương hiệu Aria là một <strong>asset</strong> (tài sản) thật; khoản nợ ngân hàng tuy là một <strong>liability</strong> (khoản nợ phải trả), nhưng nếu ra mắt thành công thì <strong>return</strong> (lợi nhuận thu về) trên vốn sẽ rất cao, <strong>yield</strong> (lợi suất) vượt xa gửi tiết kiệm.</p>
+<p>Nhưng có người chưa xuôi. <strong>Auri Cortez</strong> — kế toán mê vàng — càu nhàu rằng thị trường nhà thông minh quá <strong>volatile</strong> (biến động mạnh), giá cổ phiếu công nghệ <strong>fluctuate</strong> (dao động lên xuống) từng ngày; &quot;cứ vàng mà ôm cho chắc.&quot; Harold Vance thì nhắc lại nước cờ an toàn: bán cho Neura là &quot;lối thoát tài chính&quot; gọn gàng nhất, khỏi phải mạo hiểm. Diane gạt đi.</p>
+<p>Song song, Priya gồng mình với bài toán ngân sách. Sắp hết <strong>fiscal year</strong> (năm tài chính), cả núi việc thuế ập tới: lo khâu <strong>taxation</strong> (thuế, việc đóng thuế), chuẩn bị <strong>file</strong> (nộp) tờ khai, tính phần được <strong>deduct</strong> (khấu trừ) cùng các khoản <strong>deduction</strong> (khoản khấu trừ) hợp lệ — vài khoản chi cho R&amp;D thậm chí còn được <strong>exempt</strong> (miễn thuế).</p>
+<p>Rồi tới bản <strong>budget</strong> (ngân sách). Priya phải <strong>allocate</strong> (phân bổ) <strong>funds</strong> (nguồn vốn) cho từng phòng, mà miếng bánh thì bé. Sổ sách năm nay đang <strong>deficit</strong> (thâm hụt), chưa thấy <strong>surplus</strong> (thặng dư) đâu; <strong>revenue</strong> (doanh thu) còn mỏng, <strong>profit</strong> (lợi nhuận) chỉ nằm ở những con số <strong>projected</strong> (được dự báo) sau ngày ra mắt. Kết luận của Priya rất rõ: phải <strong>cut back on</strong> (cắt giảm) mọi khoản không sống còn và <strong>frugal</strong> (dè sẻn) từng đồng — đúng gu của Auri.</p>
+<p><em>Hết Chương 14. Diane huy động đủ vốn để đi tiếp, nhưng cái giá là một ngân sách bị siết đến nghẹt thở — nhất là ngân sách sản xuất. Ray Osei nhận con số từ phòng Tài chính mà chau mày: mua linh kiện cho cả một dây chuyền Aria với chừng đó tiền thì phải mặc cả tới từng xu. Chương sau: Purchasing — nhà cung cấp, báo giá, đấu thầu, và một mắt xích cung ứng bất ngờ lung lay.</em></p>
+<hr>
+<p><a id="chuong-15"></a></p>
+<h2 id="chương-15--mua-sắm--đặt-hàng--kho--vật-tư">Chương 15 — Mua sắm · Đặt hàng · Kho &amp; Vật tư</h2>
+<p><em>Chủ đề TOEIC: PURCHASING</em></p>
+<p>Con số từ phòng Tài chính chuyển sang khiến Ray Osei chau mày: ngân sách mua linh kiện cho dây chuyền Aria bị siết đến nghẹt. Ông gọi Ben — đang ở chặng luân chuyển mới tại phòng Vận hành — và <strong>Fred Okonkwo</strong>, nhân viên mua hàng kỳ cựu, vào cuộc.</p>
+<p>Việc đầu tiên là <strong>purchase</strong> (mua) linh kiện sao cho vừa rẻ vừa đủ. Fred lật cả xấp <strong>catalog</strong> (danh mục sản phẩm) của các bên bán, khoanh những mã hàng cần. Với mỗi linh kiện, Ray yêu cầu ít nhất ba <strong>supplier</strong> (nhà cung cấp) gửi <strong>quotation</strong> (báo giá) để so, rồi mời các <strong>vendor</strong> (bên bán) vào một vòng <strong>bid</strong> (chào thầu) cạnh tranh. Ai chào giá tốt nhất mà vẫn đạt chuẩn thì thắng.</p>
+<p>Fred có mẹo: mua <strong>in bulk</strong> (số lượng lớn) để ép <strong>discount</strong> (giảm giá) sâu, thay vì mua lẻ theo giá <strong>retail</strong> (bán lẻ); đặt ở mức <strong>wholesale</strong> (bán buôn) thì rẻ hơn hẳn. Cậu còn săn được một đợt <strong>clearance sale</strong> (xả hàng) và vài mã đang <strong>markdown</strong> (hạ giá) từ một nhà cung cấp muốn giải phóng kho. Chốt xong, Ben học cách <strong>place an order</strong> (đặt hàng) đúng quy trình — phát hành một <strong>purchase order</strong> (đơn đặt hàng) cho từng lô <strong>merchandise</strong> (hàng hóa), ghi rõ số lượng và ngày giao.</p>
+<p>Nhưng mua thì phải nhìn cả kho. Ben theo Fred xuống <strong>take inventory</strong> (kiểm kê <strong>inventory</strong> — hàng tồn kho): đối chiếu từng kệ, xem mã nào còn <strong>stock</strong> (hàng trong kho), mã nào sắp cạn để <strong>replenish</strong> (bổ sung) kịp. Vài linh kiện chủ lực đã hết, nhà cung cấp báo phải chờ — đang <strong>backorder</strong> (đơn hàng chờ vì tạm hết). Ngược lại, một số <strong>supplies</strong> (vật tư) phụ lại dư ra thành <strong>surplus</strong> (hàng dư thừa); Fred đề xuất đẩy bớt cho đỡ chật kho.</p>
+<p>Mọi thứ tưởng đâu vào đấy — cho tới khi Ray nhận cuộc gọi từ nhà cung cấp linh kiện quan trọng nhất, mắt xích mà cả dây chuyền Aria đang trông vào.</p>
+<p><em>Hết Chương 15. Giọng đầu dây bên kia ngập ngừng: nhà cung cấp chủ lực gặp sự cố, không thể giao đúng hẹn. Cả kế hoạch mua sắm khéo léo của Ray bỗng hụt một chân trụ. Ngân sách đã kịch trần, deadline Halston thì treo lơ lửng — Aster buộc phải tìm gấp một nguồn linh kiện thay thế, mà hàng thay vội thì chưa chắc đã lành. Chương sau: vận chuyển, phụ phí, và một lô hàng thay thế đến trong tình trạng đáng ngờ.</em></p>
+<hr>
+<p><a id="chuong-16"></a></p>
+<h2 id="chương-16--vận-chuyển--hóa-đơn--thanh-toán">Chương 16 — Vận chuyển · Hóa đơn &amp; Thanh toán</h2>
+<p><em>Chủ đề TOEIC: PURCHASING</em></p>
+<p>Cú điện thoại cuối Chương 15 đã thành sự thật: <strong>Corstone</strong> — nhà cung cấp con chip quan trọng nhất của Aria — không thể giao đúng hẹn. Ray Osei chỉ có vài ngày để tìm nguồn thay thế trước khi cả dây chuyền đứng hình. Nhờ mối quan hệ nhà cung cấp rộng, <strong>Fred Okonkwo</strong> lần ra một đầu mối: <strong>Halston Components Co.</strong> — chính bên đang <strong>clearance sale</strong> dạo trước — vẫn còn một lô chip tương thích trong kho. Rẻ, nhanh, nhưng ở tận Halston.</p>
+<p>Vấn đề bây giờ không phải <em>mua</em>, mà là <em>đưa hàng về kịp</em>. Ben theo Ray lo khâu vận chuyển. Halston Components hứa <strong>dispatch</strong> (gửi đi) lô hàng ngay trong ngày. Đi đường biển dạng <strong>freight</strong> (hàng vận chuyển; cước) thì mất ba tuần — quá muộn. Ray gọi một <strong>carrier</strong> (hãng vận chuyển) hàng không, yêu cầu <strong>expedite</strong> (đẩy nhanh) toàn bộ <strong>shipment</strong> (lô hàng); vài mẫu gấp nhất thì gửi riêng bằng <strong>courier</strong> (dịch vụ chuyển phát nhanh) để có trong 48 giờ. Ben tập cách <strong>track a shipment</strong> (theo dõi lô hàng) qua mã vận đơn, mắt dán màn hình.</p>
+<p>Tốc độ có cái giá của nó. Bảng phí hiện ra: ngoài tiền hàng còn <strong>shipping and handling</strong> (phí vận chuyển &amp; xử lý), cộng một <strong>surcharge</strong> (phụ phí) khá nặng cho dịch vụ hỏa tốc. Ray nhăn mặt — ngân sách vốn đã kịch trần — nhưng đành duyệt. Trên thùng dán chằng chịt nhãn <strong>fragile</strong> (dễ vỡ): chip là thứ mong manh, va đập nhẹ cũng hỏng.</p>
+<p>Ba ngày sau, xe tải đỗ trước kho Eastport. Vừa mở cửa thùng, mặt Ben xịu xuống: <strong>packaging</strong> (bao bì đóng gói) móp méo, một góc thùng bị đè bẹp. Bóc ra, non nửa số chip <strong>damaged</strong> (bị hư hại) do xóc trên đường; tệ hơn, vài khay ngay từ đầu đã <strong>defective</strong> (bị lỗi từ sản xuất) — chân tiếp xúc cong, rõ ràng lỗi nhà máy chứ không phải do vận chuyển.</p>
+<p>Ray gọi ngay cho Priya bên Tài chính, vì kèm lô hàng là một tờ <strong>invoice</strong> (hóa đơn) dày cộp. Hai người <strong>itemize</strong> (liệt kê chi tiết từng khoản) từng dòng: tiền chip, shipping and handling, phụ phí hỏa tốc, lại thêm một <strong>outstanding balance</strong> (số dư chưa thanh toán) từ đơn trước chưa gạch nợ. Dưới cùng ghi rõ: payment <strong>due</strong> (đến hạn) trong mười ngày. Ray không chịu trả đủ cho hàng hỏng. Ông email Halston Components đòi một <strong>refund</strong> (tiền hoàn lại) cho phần damaged/defective, hoặc <strong>exchange</strong> (đổi hàng) lấy lô mới. Qua lại một hồi, bên bán nhượng bộ: sẽ gửi lô thay thế <strong>free of charge</strong> (miễn phí) và lo luôn vận chuyển <strong>at no additional cost</strong> (không mất thêm phí).</p>
+<p>Tưởng đã gỡ được thế bí. Nhưng tối đó, khi Ben xếp lại mấy khay chip <em>còn nguyên vẹn</em>, cậu chợt khựng: mã lô in trên vỏ là mã cũ từ hai năm trước — đúng loại Halston Components đang xả để &quot;dọn kho cho mẫu mới&quot;. Cậu cầm một con chip lên soi, thấy gờ hàn hơi khác thường, rồi ngước nhìn Ray…</p>
+<p><em>Hết Chương 16. Lô linh kiện thay thế đã kịp về Eastport — đúng hẹn, đúng ngân sách sau khi đòi được hoàn tiền. Nhưng &quot;kịp&quot; và &quot;lành&quot; là hai chuyện khác nhau. Những con chip trông nguyên vẹn kia lại là hàng tồn đời cũ, mua vội trong cơn bí; chẳng ai kịp kiểm định tử tế trước khi tống lên dây chuyền. Chương sau: nhà máy Eastport vào guồng tăng ca lắp ráp Aria — năng suất, ca kíp, công suất tối đa — và một lô hàng bắt đầu có dấu hiệu bất thường.</em></p>
+<hr>
+<p><a id="chuong-17"></a></p>
+<h2 id="chương-17--dây-chuyền--năng-suất">Chương 17 — Dây chuyền &amp; Năng suất</h2>
+<p><em>Chủ đề TOEIC: MANUFACTURING</em></p>
+<p>Lô chip thay thế đã nằm trong kho Eastport. Nghi ngờ của Ben về chất lượng vẫn treo lơ lửng, nhưng deadline Halston không đợi ai: Ray Osei buộc phải cho cả <strong>plant</strong> (nhà máy) chạy hết cỡ để kịp lắp ráp Aria. Sáng đầu Hồi mới, ông xuống xưởng cùng <strong>Joe Delgado</strong> — <strong>foreman</strong> (quản đốc, đốc công) kỳ cựu của Eastport — và Ben, giờ luân chuyển sang mảng sản xuất.</p>
+<p>Cả <strong>assembly line</strong> (dây chuyền lắp ráp) sáng đèn. Trên <strong>conveyor belt</strong> (băng chuyền), khung máy Aria trôi qua từng trạm; ở mỗi trạm, công nhân <strong>assemble</strong> (lắp ráp) các <strong>component</strong> (linh kiện) — trong đó có lô chip mới — vào bo mạch. Khâu <strong>assembly</strong> (việc lắp ráp) tổng thể được bẻ nhỏ thành hàng chục bước. Đầu chuyền, <strong>raw materials</strong> (nguyên liệu thô) và linh kiện được nạp liên tục; <strong>machinery</strong> (máy móc hạng nặng) dập vỏ máy, còn các <strong>equipment</strong> (thiết bị) hàn và kiểm tra thì tinh vi hơn. Vài công đoạn lặp đi lặp lại đã được <strong>automate</strong> (tự động hóa) để đỡ sức người.</p>
+<p>Sức ép nằm ở những con số. Ray dán mắt vào bảng theo dõi <strong>output</strong> (sản lượng) hằng giờ, đối chiếu với chỉ tiêu. Để nâng <strong>productivity</strong> (năng suất) và <strong>efficiency</strong> (hiệu suất), Joe cho chạy at full <strong>capacity</strong> (hết công suất), đồng thời cùng Ben tìm cách <strong>streamline</strong> (tinh gọn) vài thao tác thừa trên chuyền. Nhân lực căng ra: nhà máy chạy thêm <strong>shift</strong> (ca làm việc) đêm, người làm ba ca nối nhau; Joe trực tiếp <strong>supervise</strong> (giám sát) từng ca, mắt không rời đồng hồ đếm sản phẩm.</p>
+<p>Guồng quay nhanh có cái giá của nó. Đây đúng là điều Joe từng cảnh báo hồi công đoàn nộp đơn ở Chương 8: càng ép tăng ca, anh em càng mệt, tay nghề càng dễ trượt. Cà phê nguội, ca đêm dài, dăm gương mặt bơ phờ — nhưng chuyền vẫn phải chạy.</p>
+<p>Rồi giữa lúc mọi thứ tưởng đã vào guồng, Ben khựng lại ở cuối chuyền. Cậu nhấc một khay sản phẩm vừa xuống dây, thấy vài chiếc… không giống những chiếc khác: đèn báo chập chờn, vỏ nóng ran bất thường. Cậu ngoắc Joe lại gần.</p>
+<p><em>Hết Chương 17. Nhà máy Eastport đã đạt sản lượng trong mơ — đúng tiến độ Halston, chạy hết công suất, ba ca nối ngày đêm. Nhưng đúng lúc đường đua tưởng đã thông, một lô (batch) sản phẩm vừa rời chuyền lại có dấu hiệu bất thường, và chính lô chip mua vội ở Chương 16 bắt đầu &quot;lên tiếng&quot;. Chương sau: kiểm soát chất lượng vào cuộc — và thứ họ phát hiện có thể buộc cả dây chuyền phải dừng lại.</em></p>
+<hr>
+<p><a id="chuong-18"></a></p>
+<h2 id="chương-18--kiểm-soát-chất-lượng--sự-cố">Chương 18 — Kiểm soát chất lượng &amp; Sự cố</h2>
+<p><em>Chủ đề TOEIC: MANUFACTURING</em></p>
+<p>Ben vẫy Joe lại, tay vẫn cầm khay sản phẩm nóng ran. Chỉ một cái liếc, Joe đủ hiểu đây không phải chuyện nhỏ. Ông bấm dừng trạm cuối và gọi ngay đội <strong>quality control</strong> (kiểm soát chất lượng — QC) xuống.</p>
+<p>Đội QC <strong>inspect</strong> (kiểm tra kỹ) từng đơn vị trong <strong>batch</strong> (lô sản xuất) khả nghi. Thoạt đầu ai cũng ngờ do ca đêm mệt mỏi lắp sai — nhưng kết quả khiến mọi người lạnh gáy: đây không phải lỗi tay nghề, cũng không phải một <strong>flaw</strong> (khuyết điểm) lẻ ở mối hàn, mà là một <strong>defect</strong> (lỗi sản phẩm) mang tính hệ thống, nằm ở chính lô chip thay thế mua vội. Mấy con chip đời cũ ấy không đủ <strong>durable</strong> (bền): chạy tải cao một lúc là quá nhiệt. Đưa lên bàn thử, nhiều đơn vị <strong>malfunction</strong> (trục trặc) — treo máy, chập mạch; một chiếc còn <strong>breakdown</strong> (hỏng hẳn) ngay giữa bài kiểm. Không đơn vị nào đạt <strong>standard</strong> (tiêu chuẩn) an toàn mà gói bảo hành 2 năm đã hứa hồi Chương 7.</p>
+<p>Tệ hơn cả hỏng hóc là nguy cơ. Một con chip quá nhiệt nằm trong thiết bị đặt giữa nhà ở có thể thành <strong>hazard</strong> (mối nguy hiểm) cháy nổ. Ray Osei nghe báo cáo, mặt đanh lại. Ông ra quyết định khó nhất từ đầu dự án: <strong>halt</strong> (dừng) toàn bộ dây chuyền. Cả lô nghi vấn bị niêm phong, chuyển vào một góc riêng trong <strong>warehouse</strong> (nhà kho) chờ xử lý; công nhân tháo dỡ được dặn mang <strong>protective gear</strong> (đồ bảo hộ) phòng khi có đơn vị phát nhiệt.</p>
+<p>Câu hỏi treo lơ lửng: nếu bất kỳ sản phẩm lỗi nào lọt ra thị trường Halston, Aster sẽ phải <strong>recall</strong> (thu hồi) hàng loạt — vừa tốn kém, vừa giết chết thương hiệu ngay trước ngày ra mắt. <strong>Sophia Marchetti</strong> bay xuống Eastport ngay trong đêm. Cô soi từng bo mạch với sự <strong>precision</strong> (độ chính xác) của một kỹ sư cầu toàn, rồi cay đắng nhận ra: đúng thứ cô từng ghi sổ cảnh báo ở Chương 7 — độ bền của linh kiện thay thế. Có người gợi ý <strong>outsource</strong> (thuê ngoài) việc sửa cho một đối tác cho nhanh, nhưng Sophia gạt đi: gốc rễ nằm ở thiết kế, vá tạm không cứu được.</p>
+<p>Trong phòng họp khẩn cuối đêm, cả lô hàng lỗi nằm trên bàn như một lời buộc tội. Deadline Halston vẫn đứng đó, không lùi một ngày. Sophia hít một hơi, ngẩng lên nhìn Ray và Diane…</p>
+<p><em>Hết Chương 18. Đây là điểm thấp nhất của &quot;Chiến dịch Aria&quot;: dây chuyền đã dừng, một lô hàng lỗi nằm chờ trong kho, ngày ra mắt thì không thể dời. Vá víu hay thuê ngoài đều không cứu được — thứ duy nhất cứu được Aria là làm lại phần lõi cho ra hồn, thật nhanh. Quả bóng chuyền sang tay Sophia và đội R&amp;D. Chương sau: phòng lab lên đèn, dựng nguyên mẫu mới, chạy đua tinh chỉnh thiết kế để kịp giờ G.</em></p>
+<hr>
+<p><a id="chuong-19"></a></p>
+<h2 id="chương-19--rd--đổi-mới">Chương 19 — R&amp;D &amp; Đổi mới</h2>
+<p><em>Chủ đề TOEIC: CORPORATE DEVELOPMENT</em></p>
+<p>Trong phòng họp khẩn cuối Chương 18, câu trả lời của Sophia gọn lỏn: &quot;Không vá được. Phải làm lại phần lõi — và tôi làm được, nếu cho tôi cả đội và vài tuần.&quot; Diane gật đầu. Thế là gánh nặng cứu Aria dồn hẳn về phòng <strong>research</strong> (nghiên cứu) &amp; <strong>development</strong> (phát triển) — bộ phận R&amp;D của Sophia.</p>
+<p>Sophia triệu tập cả đội, kéo Ben vào phụ việc trong lab. Cô không muốn chỉ sửa lỗi cũ, mà nhân dịp này thúc một bước <strong>innovation</strong> (đổi mới): thay vì bám con chip đời cũ, đội chọn một hướng <strong>innovative</strong> (mang tính đổi mới) — thiết kế lại mạch nguồn sao cho không một con chip đơn lẻ nào có thể làm cả máy quá nhiệt. Từ một <strong>concept</strong> (ý tưởng) phác trên bảng trắng, họ bắt tay dựng một <strong>prototype</strong> (nguyên mẫu) mới chỉ trong hai ngày.</p>
+<p>Nhưng ý tưởng hay chưa chắc làm được. Sophia cho chạy một <strong>feasibility study</strong> (nghiên cứu tính khả thi) chớp nhoáng: cách này có <strong>viable</strong> (khả thi) trong khung thời gian và ngân sách còn lại không? Con số nói có — vừa đủ. Đội bước vào thử nghiệm theo từng <strong>phase</strong> (giai đoạn): trước hết một <strong>pilot</strong> (thử nghiệm quy mô nhỏ) trên vài đơn vị, rồi hàng loạt <strong>trial</strong> (cuộc thử nghiệm) tải nhiệt khắc nghiệt, ép máy chạy nóng hơn cả điều kiện thật. Mỗi đêm, họ ngồi lại mổ xẻ <strong>findings</strong> (kết quả nghiên cứu) từ cảm biến.</p>
+<p>Kết quả mấy vòng đầu chưa đạt, nhưng cũng chưa vô vọng. Đội liên tục <strong>refine</strong> (tinh chỉnh) bố cục mạch, <strong>enhance</strong> (nâng cao) khả năng tản nhiệt, <strong>modify</strong> (chỉnh sửa) lại phần mềm điều nhiệt sau mỗi lượt thử. Sophia yêu cầu các nhóm <strong>collaborate</strong> (hợp tác) thật chặt: phần cứng ngồi cạnh phần mềm, huy động cả <strong>expertise</strong> (chuyên môn) của mấy kỹ sư kỳ cựu — kể cả John SB, người vẫn lẩm bẩm &quot;xong vụ này là tôi nghỉ thật&quot;, nhưng đêm nào cũng ở lại muộn nhất.</p>
+<p>Đến vòng thử thứ chín, gần 3 giờ sáng, đường nhiệt độ trên màn hình bỗng phẳng lì ở mức an toàn — lần đầu tiên. Ben dụi mắt, không dám tin. Sophia cúi sát, nín thở nhìn biểu đồ…</p>
+<p><em>Hết Chương 19. Sau bao đêm trắng, đội R&amp;D vừa chạm tới thứ trông như một <strong>breakthrough</strong> (bước đột phá): một nguyên mẫu chạy mát, ổn định, có thể cứu cả dòng Aria. Nhưng một kết quả đẹp lúc 3 giờ sáng chưa phải là chiến thắng — nó cần được kiểm chứng, rồi được bảo vệ và biến thành sản phẩm bán được. Chương sau: chốt cải tiến, nộp bằng sáng chế, giữ công nghệ độc quyền, và lên kế hoạch triển khai để kịp ngày ra mắt.</em></p>
+<hr>
+<p><a id="chuong-20"></a></p>
+<h2 id="chương-20--sáng-chế--thương-mại-hóa">Chương 20 — Sáng chế &amp; Thương mại hóa</h2>
+<p><em>Chủ đề TOEIC: CORPORATE DEVELOPMENT</em></p>
+<p>Đường biểu đồ phẳng lì lúc 3 giờ sáng không phải may mắn nhất thời. Suốt hai ngày sau, đội chạy lại hàng loạt bài thử — kết quả vẫn ổn định. Cái mà Sophia dè dặt gọi là đột phá giờ đã được xác nhận: kiến trúc tản nhiệt mới thật sự hoạt động. Cách bám vào một con chip đơn lẻ kiểu cũ, xét lại, đã thành <strong>obsolete</strong> (lỗi thời).</p>
+<p>Việc đầu tiên Diane nghĩ tới không phải ăn mừng, mà là bảo vệ. Thiết kế mạch nguồn mới là loại công nghệ <strong>cutting-edge</strong> (tiên tiến nhất) — chính xác hơn, một giải pháp <strong>state-of-the-art</strong> (hiện đại nhất) mà chưa hãng nào có. Bà lập tức cho luật sư nộp <strong>patent</strong> (bằng sáng chế) cho phần lõi cải tiến, siết chặt việc bảo vệ <strong>intellectual property</strong> (sở hữu trí tuệ) để giữ nó thành công nghệ <strong>proprietary</strong> (thuộc sở hữu độc quyền) của riêng Aster. Đơn sáng chế được đánh dấu <strong>pending</strong> (đang chờ xử lý) — nhưng riêng dòng chữ &quot;patent pending&quot; đã đủ làm đối thủ chùn tay.</p>
+<p>Với cả dự án, đây là một <strong>milestone</strong> (cột mốc) lớn: lần đầu sau khủng hoảng, Aria có một trái tim đủ an toàn để đi tiếp. Nhưng phòng lab mới chỉ là một nửa. Sophia bắt tay đưa thiết kế mới xuống nhà máy: phải <strong>implement</strong> (triển khai) nó trên dây chuyền, và quan trọng hơn, phải bảo đảm nó <strong>scalable</strong> (có thể mở rộng quy mô) — chạy tốt không chỉ trên vài chục nguyên mẫu mà trên hàng chục nghìn máy. Kế hoạch thương mại hóa được vạch lại: kịp <strong>launch</strong> (ra mắt) tại tiệc Brightway, rồi <strong>roll out</strong> (triển khai rộng rãi) theo từng đợt — Halston trước, các thị trường khác sau.</p>
+<p>Trong phòng Diane, tấm bảng chiến lược được vẽ lại. Công nghệ độc quyền này chính là quân bài lật thế cờ với Neura: giờ Aster đàm phán từ thế mạnh, không còn là con mồi. Diane <strong>anticipate</strong> (dự đoán trước) nhu cầu sẽ tăng vọt sau ra mắt, nhắm cả những thị trường <strong>emerging</strong> (mới nổi) mà Neura chưa kịp đặt chân; <strong>prospect</strong> (triển vọng) tăng trưởng của cả <strong>venture</strong> (dự án mạo hiểm) Aria bỗng sáng hẳn. Có người còn bàn xa tới chuyện <strong>diversify</strong> (đa dạng hóa) dòng sản phẩm dựa trên bằng sáng chế mới. Lần đầu sau nhiều tuần, cả đội dám nghĩ đến chiến thắng.</p>
+<p>Chỉ còn một mắt xích: muốn triển khai đại trà và cho Aria chạy trơn tru khắp Halston, phần cứng thôi chưa đủ — cần cả một hệ thống phần mềm và hạ tầng kỹ thuật đứng sau. Sophia quay sang nhìn đội IT…</p>
+<p><em>Hết Chương 20. Aria đã có một trái tim mới: an toàn, độc quyền, và — quan trọng nhất — kịp giờ. Bằng sáng chế đang chờ cấp, kế hoạch triển khai đã nằm trên bàn. Nhưng một sản phẩm nhà thông minh không sống bằng phần cứng: nó cần phần mềm, máy chủ, mạng lưới và cả tá hệ thống phải dựng cho kịp ngày ra mắt. Chương sau: đội kỹ thuật lên tuyến đầu — cài đặt, cấu hình, và một sự cố hệ thống nhỏ mà dai dẳng.</em></p>
+<hr>
+<p><a id="chuong-21"></a></p>
+<h2 id="chương-21--phần-mềm--hệ-thống--it">Chương 21 — Phần mềm · Hệ thống · IT</h2>
+<p><em>Chủ đề TOEIC: TECHNICAL AREAS</em></p>
+<p>Sophia quay sang đội IT, và lần này người bước lên không ai khác là <strong>John SB</strong> — anh chàng kỹ sư suốt ngày dọa nghỉ, rốt cuộc có việc đúng nghề. Cùng anh là một <strong>technician</strong> (kỹ thuật viên) trẻ và Ben, vẫn bám theo học.</p>
+<p>Phần cứng Aria đã ổn, nhưng một <strong>device</strong> (thiết bị) nhà thông minh thì sống bằng phần mềm. Việc của đội là dựng toàn bộ lớp <strong>software</strong> (phần mềm) điều khiển và ghép nó với <strong>hardware</strong> (phần cứng) mới. Họ <strong>install</strong> (cài đặt) hệ điều hành lên từng máy mẫu, <strong>configure</strong> (cấu hình) thông số cho khớp điện áp và mạng ở Halston, rồi <strong>upgrade</strong> (nâng cấp) firmware lên bản mới nhất.</p>
+<p>Song song, đội dựng hạ tầng vận hành cho thị trường mới: một <strong>database</strong> (cơ sở dữ liệu) khách hàng, một cụm <strong>server</strong> (máy chủ) đặt gần Halston cho nhanh, và cấu hình <strong>network</strong> (mạng) nội bộ nối nhà máy với văn phòng. John dặn Ben quy tắc số một: luôn <strong>back up</strong> (sao lưu) dữ liệu trước mỗi thay đổi, để lỡ hỏng còn <strong>restore</strong> (khôi phục) lại được.</p>
+<p>Rồi rắc rối bắt đầu. Bản dựng đầu tiên chạy chưa mượt: đội phải <strong>troubleshoot</strong> (khắc phục sự cố) liên miên. Một <strong>glitch</strong> (lỗi kỹ thuật nhỏ) làm đèn báo nhấp nháy sai giờ; tệ hơn, thỉnh thoảng cả app điều khiển <strong>crash</strong> (treo/sập) không rõ lý do. John phát hiện phần mềm chưa <strong>compatible</strong> (tương thích) với vài dòng router phổ biến ở Halston — nhà nào dùng router đó là mất kết nối. Anh trau lại <strong>interface</strong> (giao diện) cho dễ dùng, cắt bớt vài <strong>functionality</strong> (chức năng) rườm rà để hệ thống nhẹ và ổn định hơn.</p>
+<p>Đội cũng lo khâu hậu ra mắt: lập một <strong>help desk</strong> (bộ phận hỗ trợ kỹ thuật) và quy trình để technician trực xử lý khi khách gặp trục trặc. Mọi thứ dần vào nếp — cho tới khi, ngay giữa buổi chạy thử cuối, màn hình chính bỗng tối sầm một nhịp rồi tự bật lại.</p>
+<p><em>Hết Chương 21. Phần mềm Aria đã gần hoàn chỉnh, hạ tầng Halston đã dựng xong, help desk đã sẵn sàng. Nhưng cái <strong>glitch</strong> khó chịu kia vẫn chưa chịu biến mất: hệ thống thỉnh thoảng vẫn chớp tắt một nhịp, không theo quy luật nào, không bản ghi lỗi nào giải thích nổi. Một lỗi mơ hồ mà cứ tái đi tái lại là thứ đáng sợ nhất với dân kỹ thuật. Chương sau: kéo nhau vào phòng lab — hiệu chuẩn thiết bị, chạy chẩn đoán và soi từng thông số để truy cho ra con &quot;ma&quot; trong hệ thống.</em></p>
+<hr>
+<p><a id="chuong-22"></a></p>
+<h2 id="chương-22--lab--thiết-bị--thông-số">Chương 22 — Lab · Thiết bị · Thông số</h2>
+<p><em>Chủ đề TOEIC: TECHNICAL AREAS</em></p>
+<p>Con &quot;ma&quot; trong hệ thống được đưa thẳng vào <strong>laboratory</strong> (phòng thí nghiệm) của Aster. Không có bản ghi lỗi nào thì phải bắt tận tay: Sophia dựng nguyên một dàn <strong>apparatus</strong> (bộ thiết bị thí nghiệm) quanh một chiếc Aria, gắn cảm biến vào từng điểm, rồi cho chạy hết bài <strong>experiment</strong> (thí nghiệm) này tới bài khác.</p>
+<p>Bài học đầu tiên của Ben: số đo chỉ đáng tin khi máy đo đáng tin. Trước mỗi lượt, cả nhóm phải <strong>calibrate</strong> (hiệu chuẩn) lại thiết bị để bảo đảm <strong>accuracy</strong> (độ chính xác) — lệch một ly, cả buổi truy lỗi thành công cốc. Họ chạy một loạt kiểm tra <strong>diagnostic</strong> (chẩn đoán), ghi lại từng luồng <strong>data</strong> (dữ liệu) mỗi lần hệ thống chớp tắt.</p>
+<p>Dần dần bức tranh hiện ra, và thủ phạm hóa ra không nằm ở phần mềm. Mỗi lần module <strong>wireless</strong> (không dây) phát tín hiệu mạnh, nó kéo một cú sụt <strong>voltage</strong> (điện áp) chớp nhoáng trên <strong>circuit</strong> (mạch điện) nguồn; cú sụt ấy làm <strong>battery</strong> (pin) không kịp bù, thế là con chip điều khiển tự khởi động lại — đúng cái nhịp &quot;màn hình tối một giây&quot;. Một lỗi phần cứng tí hon, núp sau lớp vỏ tưởng là lỗi phần mềm.</p>
+<p>Có gốc rễ thì cách sửa rõ ràng. Đội chỉnh lại mạch nguồn cho đúng <strong>specification</strong> (thông số kỹ thuật), thêm một tụ đệm giữ điện áp ổn định; John cập nhật cả <strong>manual</strong> (sách hướng dẫn) để technician sau này biết đường tra. Chạy lại toàn bộ <strong>feature</strong> (tính năng) — điều khiển từ xa, hẹn giờ, cảm biến — lần này không còn cú chớp nào. Chiếc Aria nhỏ gọn, <strong>portable</strong> (di động) đủ để xách đi khắp nhà, cuối cùng đã chạy mượt từ đầu đến cuối buổi thử.</p>
+<p>Sophia gỡ kính bảo hộ, thở phào. Về mặt kỹ thuật, Aria — cả một <strong>appliance</strong> (thiết bị gia dụng) thông minh hoàn chỉnh — đã sẵn sàng. Nhưng cô nhìn tấm lịch trên tường và sực nhớ: một sản phẩm sẵn sàng vẫn cần một nơi để ra mắt và một cơ sở để vận hành…</p>
+<p><em>Hết Chương 22. Sau bao đêm trong lab, Aria đã đạt chuẩn: an toàn, ổn định, đúng thông số. Phần cứng xong, phần mềm xong, con &quot;ma&quot; glitch đã bị bắt. Nhưng Halston vẫn đang chờ — và tới giờ Aster vẫn chưa có một mặt bằng thật nào ở đó: chưa có trung tâm trưng bày, chưa có kho, chưa có nơi đặt máy chủ. Chương sau: sang Halston tìm thuê/mua mặt bằng, ký hợp đồng, đặt cọc — dựng chỗ đứng thật cho Aria trước giờ G.</em></p>
+<hr>
+<p><a id="chuong-23"></a></p>
+<h2 id="chương-23--thuê--mua-mặt-bằng">Chương 23 — Thuê &amp; Mua mặt bằng</h2>
+<p><em>Chủ đề TOEIC: HOUSING</em></p>
+<p>Aria đã sẵn sàng, nhưng nó chưa có nơi nào để về. Priya và Ray bay sang Halston với một danh sách gấp: tìm cho ra <strong>premises</strong> (mặt bằng) để vừa làm trung tâm trưng bày, vừa làm kho, vừa đặt cụm máy chủ — tất cả trước ngày ra mắt. Karen Ito giới thiệu một môi giới <strong>real estate</strong> (bất động sản) rành khu trung tâm Halston.</p>
+<p>Người môi giới dẫn hai người đi xem vài <strong>property</strong> (bất động sản) thương mại. Có chỗ đang <strong>vacant</strong> (còn trống), dọn vào được ngay; có chỗ đã <strong>furnished</strong> (có sẵn nội thất) nhưng hơi chật; rồi tới một mặt bằng <strong>spacious</strong> (rộng rãi) ngay gần cửa hàng Brightway — đúng thứ Ray mê. Anh nhẩm luôn <strong>occupancy</strong> (sức chứa): đủ chỗ cho showroom, kho và một phòng server.</p>
+<p>Câu hỏi lớn: thuê hay mua? Mua thì phải làm <strong>appraisal</strong> (định giá) để biết mặt bằng đáng bao nhiêu — mà định giá bất động sản khác hẳn kiểu đánh giá nhân viên Priya vẫn làm. Cân đi cân lại, với deadline sát nút, họ chọn <strong>rent</strong> (thuê): ký một bản <strong>lease</strong> (hợp đồng thuê dài hạn) ba năm với <strong>landlord</strong> (chủ nhà), chính thức thành <strong>tenant</strong> (người thuê). Hợp đồng đòi một khoản <strong>security deposit</strong> (tiền đặt cọc) khá nặng, cộng tiền thuê tháng đầu trả trước.</p>
+<p>Xong phần giấy tờ, Priya lo tiếp phần người: cô sắp <strong>relocate</strong> (điều chuyển) vài nhân sự chủ chốt từ Marlowe sang Halston vận hành cơ sở mới, và bắt đầu tính chuyện thuê thêm người bản địa. Mọi thứ tưởng đã vào quỹ đạo — cho tới khi Ray đứng giữa mặt bằng trống huơ trống hoác, đưa mắt nhìn quanh bốn bức tường trơ trọi.</p>
+<p><em>Hết Chương 23. Aster đã có một địa chỉ ở Halston: rộng, đắc địa, sát Brightway, hợp đồng thuê đã ký. Nhưng &quot;có mặt bằng&quot; và &quot;sẵn sàng ra mắt&quot; là hai chuyện khác nhau — chỗ này mới chỉ là bốn bức tường trống, chưa có quầy trưng bày, chưa có kệ kho, chưa có điện nước đấu nối cho phòng server. Đồng hồ đếm ngược tới lễ ra mắt vẫn chạy. Chương sau: gọi nhà thầu, xin giấy phép, cải tạo mặt bằng và đấu nối điện – nước – bảo trì để kịp giờ G.</em></p>
+<hr>
+<p><a id="chuong-24"></a></p>
+<h2 id="chương-24--xây-dựng--điện--gas--bảo-trì">Chương 24 — Xây dựng · Điện – Gas – Bảo trì</h2>
+<p><em>Chủ đề TOEIC: HOUSING</em></p>
+<p>Bốn bức tường trống phải thành một trung tâm trưng bày trong vài tuần. Ray gọi ngay một <strong>contractor</strong> (nhà thầu) địa phương và một <strong>architect</strong> (kiến trúc sư) để lên phương án; Joe Delgado bay sang phụ trách công trường. Họ trải <strong>blueprint</strong> (bản vẽ thiết kế) ra bàn, chia mặt bằng thành ba khu, rồi cả nơi này bước vào <strong>construction</strong> (thi công, xây dựng). Trước khi động thổ, Priya lo phần pháp lý: xin <strong>permit</strong> (giấy phép) xây dựng và soát lại <strong>zoning</strong> (quy hoạch phân khu) xem khu này có được làm showroom bán lẻ không.</p>
+<p>Vì chỉ đi thuê, đội không được đụng tới kết cấu: mọi thay đổi phải <strong>adhere to</strong> (tuân theo) bản vẽ đã duyệt, tuyệt đối không can thiệp phần <strong>structural</strong> (thuộc kết cấu) của tòa nhà. Trong giới hạn đó, họ <strong>renovate</strong> (cải tạo) toàn bộ mặt sàn và <strong>remodel</strong> (sửa sang lại) khu tiếp khách. <strong>Scaffolding</strong> (giàn giáo) dựng kín một góc; cả <strong>site</strong> (công trường) ồn ào suốt ngày. Mục tiêu của Ray: biến chỗ này thành một <strong>facility</strong> (cơ sở vật chất) hiện đại, và trên hết — phải qua được một cuộc <strong>inspection</strong> (kiểm tra) an toàn trước khi mở cửa.</p>
+<p>Phần hạ tầng mới đau đầu. Đội đấu nối <strong>utilities</strong> (điện, nước, gas): thợ đi lại toàn bộ <strong>wiring</strong> (hệ thống dây điện) cho phòng server ngốn điện, làm lại <strong>plumbing</strong> (hệ thống ống nước) cho khu vệ sinh, gắn một <strong>meter</strong> (đồng hồ đo) riêng để theo dõi mức tiêu thụ. Một tối, cả khu dính <strong>outage</strong> (mất điện) vì thợ đấu nhầm — ai nấy toát mồ hôi. Họ dặm thêm <strong>insulation</strong> (vật liệu cách nhiệt) cho phòng máy chủ khỏi nóng, vá một chỗ <strong>leak</strong> (rò rỉ) trên trần, rồi lập lịch <strong>maintenance</strong> (bảo trì) định kỳ và thuê một <strong>janitor</strong> (nhân viên tạp vụ) trực tòa nhà. Cuối cùng, xe tải chở <strong>furnishings</strong> (đồ đạc, nội thất) tới: quầy trưng bày, kệ kho, bàn ghế.</p>
+<p>Đêm trước ngày bàn giao, đèn showroom bật sáng lần đầu. Địa điểm ra mắt Aria ở Halston đã sẵn sàng — đúng hẹn, trong gang tấc. Nhưng khi Ray đưa mắt nhìn quanh đội của mình: ai cũng thâm quầng mắt, Joe ho khù khụ mấy hôm nay, mấy bạn trẻ gục ngủ ngay trên thùng hàng…</p>
+<p><em>Hết Chương 24 — khép Hồi III. Sau nhiều tháng chạy đua không nghỉ — từ khủng hoảng linh kiện, lỗi sản xuất, những đêm trắng trong lab, tới công trường Halston này — Aster đã có đủ mọi thứ để ra mắt: sản phẩm đạt chuẩn, công nghệ độc quyền, mặt bằng sẵn sàng. Chỉ có một thứ đang cạn: sức người. Cả đội đã kiệt quệ, mà đêm ra mắt chỉ còn tính bằng ngày. Chương sau: ai đó gục xuống — phòng khám, triệu chứng, chẩn đoán; và Priya nhận ra phải chăm cả đội trước giờ G.</em></p>
+<hr>
+<p><a id="chuong-25"></a></p>
+<h2 id="chương-25--khám--điều-trị">Chương 25 — Khám &amp; Điều trị</h2>
+<p><em>Chủ đề TOEIC: HEALTH</em></p>
+<p>Guồng nước rút cuối cùng cũng đòi nợ. Ngay trên công trường Halston vừa hoàn thiện, Ben bỗng xây xẩm rồi khuỵu xuống — vừa kiệt sức sau mấy tuần trắng đêm, vừa dính một <strong>injury</strong> (chấn thương) nhẹ ở cổ tay khi ngã. Priya bỏ hết mọi việc, đặt một <strong>appointment</strong> (cuộc hẹn khám) gấp và đưa cậu tới một <strong>clinic</strong> (phòng khám) gần đó.</p>
+<p>Ở phòng khám, một <strong>practitioner</strong> (bác sĩ đa khoa) tiếp Ben — giờ đã thành <strong>patient</strong> (bệnh nhân) đúng nghĩa. Bà hỏi kỹ các <strong>symptom</strong> (triệu chứng): hoa mắt, tim đập nhanh, bỏ bữa liên tục. Sau khi khám và cho làm vài xét nghiệm, bác sĩ <strong>diagnose</strong> (chẩn đoán): kiệt sức và mất nước, cổ tay chỉ bong gân — không có gì nghiêm trọng tới mức phải <strong>surgery</strong> (phẫu thuật). Để chắc chắn, bà viết một <strong>referral</strong> (giấy giới thiệu) cho Ben đi khám thêm một <strong>specialist</strong> (bác sĩ chuyên khoa) tim mạch; nếu cần, có thể hội chẩn thêm với một <strong>physician</strong> (bác sĩ) khác.</p>
+<p>Phần điều trị nhẹ nhàng. Bác sĩ <strong>prescribe</strong> (kê đơn) thuốc bù nước và giảm đau, dặn Ben ra <strong>pharmacy</strong> (hiệu thuốc) lấy thuốc, nhắc kỹ <strong>dosage</strong> (liều lượng): mỗi lần một viên, ngày hai lần, uống sau ăn. Bà cũng cảnh báo một <strong>side effect</strong> (tác dụng phụ) hay gặp là buồn ngủ, nên đừng lái xe sau khi uống. Cả <strong>treatment</strong> (phác đồ điều trị) thật ra gói gọn trong hai chữ: nghỉ ngơi. Ben được giữ lại vài giờ ở một phòng <strong>ward</strong> (khoa/phòng bệnh) nhỏ để truyền dịch, phần nào <strong>relieve</strong> (làm dịu) cơn mệt, rồi mới được cho về để <strong>recover</strong> (hồi phục) tại nhà.</p>
+<p>Ngồi ngoài hành lang chờ Ben, Priya nhìn quanh phòng khám và chợt thấy lạnh sống lưng: đâu chỉ mình Ben. Joe ho cả tuần chưa dứt, Sophia mất ngủ triền miên, nửa đội đang chạy bằng cà phê và ý chí. Cô rút sổ tay ra, bắt đầu ghi…</p>
+<p><em>Hết Chương 25 — mở Hồi IV &quot;Định đoạt&quot;. Ben chỉ bị kiệt sức, vài ngày là lại, nhưng cú ngã của cậu như một hồi chuông: cả đội Aster đang cạn kiệt đúng lúc cần sung sức nhất. Đêm ra mắt chỉ còn đếm trên đầu ngón tay, mà &quot;vốn quý nhất&quot; của công ty — con người — thì đang rệu rã. Priya quyết không để ai gục thêm. Chương sau: rà lại bảo hiểm y tế cho nhân viên và tung một chương trình chăm sóc sức khỏe (wellness) để cả đội kịp hồi sức trước giờ G.</em></p>
+<hr>
+<p><a id="chuong-26"></a></p>
+<h2 id="chương-26--bảo-hiểm--wellness">Chương 26 — Bảo hiểm &amp; Wellness</h2>
+<p><em>Chủ đề TOEIC: HEALTH</em></p>
+<p>Cuốn sổ tay Priya ghi vội ngoài hành lang phòng khám nhanh chóng thành một kế hoạch. Cô kéo Diane vào: &quot;Ta lo cho sản phẩm, cho nhà máy, cho mặt bằng — nhưng quên mất con người.&quot; Diane duyệt ngay.</p>
+<p>Việc đầu là rà lại <strong>insurance</strong> (bảo hiểm) y tế của công ty. Priya mở lại <strong>policy</strong> (hợp đồng bảo hiểm) hiện hành, soi kỹ <strong>coverage</strong> (phạm vi bảo hiểm — gặp lại từ Chương 7): gói cũ hẹp, <strong>deductible</strong> (mức khấu trừ nhân viên tự trả) lại cao, nên mỗi lần đi khám ai cũng ngại. Cô đàm phán một gói tốt hơn: công ty gánh phần lớn <strong>premium</strong> (phí bảo hiểm) hằng tháng, hạ mức tự trả, và mở rộng để mọi nhân viên — kể cả trainee như Ben — đều <strong>eligible</strong> (đủ điều kiện) hưởng quyền lợi. Cô cũng chỉ cả đội cách nộp <strong>claim</strong> (yêu cầu bồi thường) sao cho nhanh, để không ai phải ngại chuyện tiền khi ốm.</p>
+<p>Nhưng bảo hiểm chỉ chữa phần ngọn. Priya tung hẳn một chương trình <strong>wellness</strong> (chăm sóc sức khỏe tổng thể). Cô khuyến khích mọi người đi <strong>checkup</strong> (khám định kỳ) hằng năm, đặt lịch một buổi <strong>physical</strong> (khám tổng quát) tại chỗ cho cả văn phòng. Mùa này dễ ốm, cô tổ chức tiêm <strong>immunization</strong> (tiêm chủng) phòng cúm — vì một khi có người mang bệnh <strong>contagious</strong> (dễ lây), cả đội đang kiệt sức sẽ đổ như quân domino. Ai hay hắt hơi sổ mũi thì được sàng lọc xem là cảm hay chỉ <strong>allergy</strong> (dị ứng) theo mùa. Cô còn nhắc chuyện nhỏ mà hay bị bỏ quên: mời một <strong>dentist</strong> (nha sĩ) tới kiểm tra răng — mấy bạn trẻ lo deadline tới mức để một cái <strong>cavity</strong> (lỗ sâu răng) âm ỉ, quên cả <strong>hygiene</strong> (vệ sinh) răng miệng cơ bản.</p>
+<p>Phần được hưởng ứng nhất lại đến từ <strong>Fred Okonkwo</strong>: anh lôi cả câu lạc bộ cầu lông công ty ra sân trở lại, biến giờ nghỉ thành giờ vận động. Priya thay dàn ghế cũ bằng ghế <strong>ergonomic</strong> (công thái học) cho đỡ đau lưng, và ra một thông điệp xưa nay hiếm ở Aster mùa nước rút: ai ốm thì cứ nghỉ, dùng <strong>sick leave</strong> (nghỉ ốm) mà hồi sức, đừng gắng tới kiệt rồi lây cho cả đội.</p>
+<p>Vài ngày sau, không khí đội khác hẳn: mắt đỡ thâm, tiếng cười trở lại hành lang, Ben cũng đã quay lại làm việc nhẹ. Cả đội siết lại đội hình, hướng về điểm duy nhất còn lại trên lịch…</p>
+<p><em>Hết Chương 26 — khép cụm Health. Con người — vốn quý nhất của Aster — đã kịp hồi sức. Sản phẩm sẵn sàng, công nghệ độc quyền, mặt bằng dựng xong, đội ngũ lại sung sức. Mọi mũi tên giờ chụm về một đêm duy nhất: lễ ra mắt Aria tại Halston. Đó là đêm định đoạt — Aster tự đứng vững, hay buông tay cho Neura. Chương sau: đèn sân khấu bật sáng; khán giả, báo giới, nhà tài trợ — và Neura — đều có mặt. Giờ G đã điểm.</em></p>
+<hr>
+<p><a id="chuong-27"></a></p>
+<h2 id="chương-27--sự-kiện--ra-mắt">Chương 27 — Sự kiện &amp; Ra mắt</h2>
+<p><em>Chủ đề TOEIC: ENTERTAINMENT</em></p>
+<p>Grand Harbour Hotel, Halston, đêm 15/11. Cả sảnh tiệc của Brightway biến thành sân khấu cho buổi <strong>premiere</strong> (công chiếu ra mắt) của Aria. Daniel Cho tổng đạo diễn; <strong>Rosie Park</strong> — cô trợ lý có con mắt thẩm mỹ — được giao &quot;bày biện&quot; sản phẩm như một <strong>curator</strong> (người phụ trách trưng bày) thực thụ.</p>
+<p>Ý tưởng của Rosie: đừng bày Aria như hàng điện máy, mà như một cuộc <strong>exhibition</strong> (triển lãm) nghệ thuật. Sảnh chính hóa thành một <strong>gallery</strong> (phòng trưng bày): mỗi mẫu Aria thành một <strong>exhibit</strong> (vật trưng bày) đặt trên bục riêng, <strong>on display</strong> (đang được trưng bày) dưới ánh đèn dịu, để khách đi vòng ngắm như ngắm tác phẩm. Rìa sảnh là khu <strong>showcase</strong> (giới thiệu, phô diễn) tính năng, có màn hình demo trực tiếp.</p>
+<p>Chiều hôm ấy còn một buổi <strong>rehearsal</strong> (tập dượt) cuối: Daniel canh từng nhịp cho màn <strong>performance</strong> (biểu diễn) trên sân khấu — demo Aria điều khiển cả căn phòng chỉ bằng giọng nói. Tối đến, khách bắt đầu vào. Việc vào cửa (<strong>admission</strong>) chỉ qua vé, lấy ở một <strong>box office</strong> (quầy vé) dựng tạm; và tin vui: sự kiện đã <strong>sold out</strong> (kín chỗ, hết vé) từ mấy hôm trước. Một tốp <strong>volunteer</strong> (tình nguyện viên) là nhân viên Aster đứng đón, dẫn khách. Trên phông nền là logo của các <strong>sponsor</strong> (nhà tài trợ). Trong <strong>audience</strong> (khán giả) hôm nay có đủ cả: đối tác Brightway, báo giới Halston, và — ngồi lặng lẽ ở hàng ghế sau — người của <strong>Neura</strong>.</p>
+<p>Diane mở màn bằng bài phát biểu; rồi tới <strong>lineup</strong> (chuỗi tiết mục) các phần demo Daniel đã dựng, xen một quãng <strong>intermission</strong> (giải lao) để khách trực tiếp chạm tay vào Aria. Điểm nhấn cuối được giữ cho màn demo lớn nhất — và người Daniel chọn bấm nút khởi động không phải ngôi sao nào, mà là Ben, cậu trainee vừa gượng dậy sau cú kiệt sức.</p>
+<p>Cả khán phòng nín lặng. Ben hít một hơi, cất tiếng ra lệnh cho Aria…</p>
+<p><em>Hết Chương 27. Sân khấu đã dựng, khách đã kín chỗ, cả Neura lẫn báo giới đều đang dõi lên. Aria — đứa con mà Aster đổ mồ hôi suốt một năm — sắp trình diễn trước công chúng lần đầu, và người cầm trịch khoảnh khắc định mệnh ấy lại là Ben. Chỉ một câu lệnh nữa thôi là biết: hoặc cả căn phòng bừng sáng đúng kịch bản, hoặc mọi công sức đổ sông đổ bể ngay trước mặt đối thủ. Chương sau: màn demo ngã ngũ, phản ứng của khán giả và báo chí, những bài đánh giá đầu tiên — và số phận độc lập của Aster được định đoạt.</em></p>
+<hr>
+<p><a id="chuong-28"></a></p>
+<h2 id="chương-28--truyền-thông--đánh-giá-hồi-kết">Chương 28 — Truyền thông &amp; Đánh giá (Hồi kết)</h2>
+<p><em>Chủ đề TOEIC: ENTERTAINMENT</em></p>
+<p>Câu lệnh của Ben vừa dứt, cả căn phòng bừng sáng. Rèm tự kéo, nhạc nổi, đèn chuyển màu theo lời — Aria vận hành trơn tru, không một cú vấp. Khán phòng lặng đi một giây, rồi vỡ òa. Ngay đêm đó, Aster chính thức <strong>release</strong> (phát hành, tung ra) dòng Aria ra thị trường Halston.</p>
+<p>Phản ứng lan còn nhanh hơn Daniel dám mơ. Màn demo được <strong>broadcast</strong> (phát sóng) trực tiếp; sáng hôm sau, hàng loạt <strong>journalist</strong> (nhà báo) giật tít. Những bài <strong>review</strong> (đánh giá) đầu tiên toàn lời khen; một <strong>critic</strong> (nhà phê bình) công nghệ <strong>renowned</strong> (nổi tiếng, danh tiếng) — người xưa nay khó tính — dành cho Aria sự <strong>acclaim</strong> (tán dương) hiếm thấy, gọi thẳng nó là một <strong>masterpiece</strong> (kiệt tác) của thiết kế nhà thông minh. Các <strong>editorial</strong> (bài xã luận) trên những <strong>publication</strong> (ấn phẩm) lớn bàn về &quot;cú lội ngược dòng của Aster&quot;. Lượng <strong>subscription</strong> (đăng ký dài hạn) dịch vụ Aria tăng vọt chỉ sau một đêm.</p>
+<p>Và câu hỏi treo suốt một năm cuối cùng cũng có lời đáp. Trước thành công cùng làn sóng dư luận ấy, <strong>Neura</strong> lặng lẽ rút lại lời đề nghị thâu tóm — hay đúng hơn, chuyển sang ngỏ ý làm đối tác ngang hàng. Aster <strong>giữ được độc lập</strong>. Diane nhìn Harold; lần này không cần bỏ phiếu. Hậu trường có hai người lặng lẽ mà rạng rỡ: Ben — cậu trainee vụng về ngày nào giờ là người bấm nút cho khoảnh khắc lịch sử, được xướng tên nhận giải &quot;Aria Star&quot;; và John SB — anh kỹ sư suốt truyện dọa nghỉ — lặng lẽ mở điện thoại, đóng cái tab tuyển dụng vẫn để mở bấy lâu, rồi cười: &quot;Thôi, ở lại thêm một mùa nữa vậy.&quot;</p>
+<p>Một tháng sau, Aster mở một <strong>fundraiser</strong> (sự kiện gây quỹ) đúng dịp <strong>anniversary</strong> (lễ kỷ niệm) mười hai năm thành lập, vừa ăn mừng vừa trích tiền làm từ thiện. Rosie cho đúc một <strong>sculpture</strong> (tác phẩm điêu khắc) nhỏ hình chiếc Aria đầu tiên, đặt ở sảnh công ty. Vé vào có <strong>admission fee</strong> (phí vào cửa) tượng trưng, toàn bộ sung quỹ; riêng một suất <strong>matinee</strong> (suất ban ngày) mở cửa miễn phí cho khách tham quan và cánh sinh viên.</p>
+<p>Đêm gala, Diane nâng ly nhìn cả đội — những người đã cùng nhau đi qua khủng hoảng linh kiện, lỗi sản xuất, những đêm trắng trong lab và cả cú kiệt sức. Aria đã cất cánh, Aster vẫn là của chính mình. Cô mỉm cười, khẽ nói với Ben đứng cạnh: &quot;Xong Halston rồi. Nghe nói thị trường bên kia đại dương cũng đang cần một ngôi nhà biết nghĩ đấy…&quot;</p>
+<p><em>Hết Chương 28 — <strong>HẾT &quot;Project Aria&quot;.</strong> Từ một startup đứng trước ngã ba &quot;tự lớn hay bán mình&quot;, Aster đã chọn tin vào chính mình và trả giá bằng cả một năm tôi luyện — để rồi đêm ra mắt định đoạt tất cả: sản phẩm thành công, thương hiệu vang danh, công ty giữ trọn độc lập. Mỗi từ vựng bạn học suốt 28 chương đều đã sống một lần trong hành trình ấy. Còn &quot;ngôi nhà biết nghĩ&quot; tiếp theo sẽ mọc ở đâu — đó là câu chuyện của một mùa sau.</em></p>
+
+</body>
+</html>
