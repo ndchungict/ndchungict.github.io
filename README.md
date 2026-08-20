@@ -110,7 +110,7 @@ Hai trang tĩnh khác sửa trực tiếp bằng Markdown:
 - Trang **About**: `content/about/index.md`
 - Trang **Contact**: `content/contact/index.md` (form dùng Web3Forms — lấy access key tại [web3forms.com](https://web3forms.com/) rồi điền vào `params.web3formsKey`)
 
-Muốn bật bình luận Giscus, xem hướng dẫn chi tiết trong [CLAUDE.md](CLAUDE.md#comments-giscus).
+Muốn bật bình luận Giscus, xem hướng dẫn chi tiết trong [AGENTS.md](AGENTS.md#comments-giscus).
 
 ### 3. Viết bài mới
 
@@ -124,11 +124,11 @@ hugo new content posts/<category>/<ten-bai>.md
 mv ten-bai.md 20260629-0800-git-la-gi.md
 ```
 
-Điền front matter (`title`, `categories`, `tags`,...), đặt `draft = false` khi muốn publish. Toàn bộ quy ước đặt tên file, chọn category/subcategory, thumbnail, series... được ghi chi tiết trong [CLAUDE.md](CLAUDE.md) — nên đọc qua trước khi viết bài đầu tiên.
+Điền front matter (`title`, `categories`, `tags`,...), đặt `draft = false` khi muốn publish. Toàn bộ quy ước đặt tên file, chọn category/subcategory, thumbnail, series... được ghi chi tiết trong [AGENTS.md](AGENTS.md) — nên đọc qua trước khi viết bài đầu tiên.
 
-Front matter có trường `columns` để chọn layout trang bài viết: `2` (mặc định — nội dung bên trái, TOC + sidebar gộp bên phải) hoặc `3` (kiểu cũ — TOC trái, nội dung giữa, sidebar phải riêng). Chi tiết ở [CLAUDE.md](CLAUDE.md#layout-bài-viết-2-cột-hoặc-3-cột).
+Front matter có trường `columns` để chọn layout trang bài viết: `2` (mặc định — nội dung bên trái, TOC + sidebar gộp bên phải) hoặc `3` (kiểu cũ — TOC trái, nội dung giữa, sidebar phải riêng). Chi tiết ở [AGENTS.md](AGENTS.md#layout-bài-viết-2-cột-hoặc-3-cột).
 
-> 💡 Nếu bạn dùng [Claude Code](https://claude.com/claude-code), repo có sẵn skill tại `.claude/skills/new-post/` tự động hoá toàn bộ bước trên (đặt tên file, front matter, thumbnail, cập nhật `post-library.md`) — chỉ cần mô tả bài viết bạn muốn tạo.
+> 💡 Nếu bạn dùng Gemini / Antigravity, repo có sẵn skill tại `.agents/skills/new-post/` tự động hoá toàn bộ bước trên (đặt tên file, front matter, thumbnail, cập nhật `post-library.md`) — chỉ cần mô tả bài viết bạn muốn tạo.
 
 ## Deploy lên GitHub Pages của riêng bạn
 
@@ -197,11 +197,11 @@ Vào tab **Actions** trên GitHub xem tiến trình — vài phút sau site sẽ
 ├── static/                       # File tĩnh: images, css/giscus-*.css, files/ (tài liệu đính kèm)
 ├── .github/workflows/hugo.yml   # CI/CD build & deploy GitHub Pages
 ├── hugo.toml                     # Cấu hình chính của site
-├── CLAUDE.md                     # Quy ước chi tiết cho nội dung & theme
+├── AGENTS.md                     # Quy ước chi tiết cho nội dung & theme
 └── post-library.md               # Nhật ký toàn bộ bài viết (STT, ngày đăng, tiêu đề)
 ```
 
-> `CLAUDE.md` ban đầu viết cho [Claude Code](https://claude.com/claude-code) nhưng đọc được như tài liệu convention bình thường — nên xem qua dù bạn không dùng AI hỗ trợ viết bài.
+> `AGENTS.md` ban đầu viết cho Gemini / Antigravity nhưng đọc được như tài liệu convention bình thường — nên xem qua dù bạn không dùng AI hỗ trợ viết bài.
 
 ## License
 
