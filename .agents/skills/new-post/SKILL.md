@@ -5,7 +5,7 @@ description: Tạo bài viết blog Hugo mới đúng convention của repo này
 
 # Tạo bài viết Hugo mới
 
-Tạo một bài post mới trong `content/posts/` theo đúng quy ước repo, rồi ghi nó vào `post-library.md`. KHÔNG tạo file ảnh SVG.
+Tạo một bài post mới trong `content/posts/` theo đúng quy ước repo, rồi ghi nó vào `post-library.md`. KHÔNG tạo file ảnh SVG. LUÔN LUÔN tạo ảnh thumbnail bằng AI (dùng tool `generate_image`) cho bài viết mới và gợi ý phong cách ảnh cho user.
 
 ## Bước 1 — Thu thập thông tin
 
@@ -19,6 +19,7 @@ Hỏi user (gộp 1 lần, ưu tiên dùng AskUserQuestion) những gì còn thi
 - **Summary** (tùy chọn; để trống = Hugo tự lấy ~70 từ đầu).
 - **Có thuộc series không?** Nếu có: `series-slug` + `weight` (thứ tự bài trong series). Nếu user muốn tạo cả series mới → dùng skill [[new-series]] thay vì skill này.
 - **Sinh nội dung hay để trống?** Mặc định để body trống (chỉ heading mở đầu) trừ khi user yêu cầu viết nội dung.
+- **Phong cách ảnh thumbnail:** Đưa ra vài gợi ý phong cách (vd: 3D Illustration, Minimalist, Cyberpunk, Pixel Art, Watercolor, Flat Design...) để user chọn cho ảnh thumbnail AI, hoặc để user tự mô tả.
 
 ## Bước 2 — Đặt tên file
 
@@ -33,17 +34,11 @@ Format: `content/posts/<category-folder>/<yyyyMMdd>-<hhmm>-<slug>.md`
 
 > Tên file có prefix ngày giờ, nhưng trường `slug` trong front matter KHÔNG có prefix. Hugo dùng `slug` để tạo URL `/posts/<slug>/`.
 
-## Bước 3 — Chọn thumbnail theo category
+## Bước 3 — Tạo / Chọn thumbnail
 
-Map `category` (phần tử đầu của `categories`) → ảnh mặc định trong `static/images/default-thumb/`:
-
-| Category     | Thumbnail |
-|--------------|-----------|
-| `it`         | `/images/default-thumb/default-thumb-it-lap-trinh.webp` |
-| `english`    | `/images/default-thumb/default-thumb-tieng-anh.webp` |
-| `chinese`    | `/images/default-thumb/default-thumb-tieng-trung.webp` |
-
-Nếu user đã có ảnh `.webp` riêng (đặt trong `static/images/<chu-de>/`) thì dùng ảnh đó thay vì ảnh mặc định.
+- **LUÔN LUÔN tạo ảnh thumbnail bằng AI** cho bài viết mới bằng tool `generate_image` với prompt mô tả dựa trên tiêu đề và phong cách user đã chọn ở Bước 1. Sau khi sinh ảnh xong (lưu ở thư mục artifact), hãy copy/di chuyển ảnh đó vào thư mục `static/images/<chu-de>/` (đổi tên cho chuẩn SEO và convert sang `.webp` nếu cần) rồi lấy đường dẫn đó gán vào trường `thumbnail`.
+- *Ngoại lệ:* Nếu user cung cấp sẵn ảnh `.webp` riêng (đặt trong `static/images/<chu-de>/`) thì dùng ảnh đó thay vì tạo AI.
+- *Fallback:* Chỉ khi user kiên quyết từ chối tạo ảnh hoặc tool gặp lỗi mới dùng ảnh mặc định theo category trong `static/images/default-thumb/`: `it` (lap-trinh), `english` (tieng-anh), `chinese` (tieng-trung).
 
 ## Bước 4 — Ghi file bài viết
 
