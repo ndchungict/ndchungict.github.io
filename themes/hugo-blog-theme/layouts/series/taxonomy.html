@@ -52,7 +52,11 @@
       {{- $min := 0 }}{{ range .Pages }}{{ $min = add $min .ReadingTime }}{{ end }}
       <div class="series-card {{ $color }}" data-cat="{{ $catKey }}" data-series-id="{{ $slug }}" data-series-parts="{{ $parts }}">
         <a class="series-card__media" href="{{ .RelPermalink }}">
+          {{- if .Params.thumbnail }}
+          <img src="{{ .Params.thumbnail | relURL }}" alt="{{ .LinkTitle }}" />
+          {{- else }}
           <div class="series-card__media-fallback">{{ $emoji }}</div>
+          {{- end }}
           {{- with $catLabel }}<span class="series-card__cat">{{ . }}</span>{{ end }}
           <span class="series-card__count">{{ $parts }} <span data-vi="phần" data-en="parts">phần</span> · {{ $min }} min</span>
         </a>
