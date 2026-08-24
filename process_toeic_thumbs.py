@@ -10,18 +10,19 @@ posts_dir = os.path.join(site_dir, "content/posts/english")
 os.makedirs(dest_img_dir, exist_ok=True)
 
 mapping = {
-    "toeic_qc": "20261031-0953-toeic-story-kiem-soat-chat-luong.md",
-    "toeic_health_ins": "20261226-0953-toeic-story-bao-hiem-suc-khoe.md",
-    "toeic_shopping": "20261010-0953-toeic-story-mua-sam-dat-hang.md",
-    "toeic_banking": "20260926-0953-toeic-story-ngan-hang-ke-toan.md",
-    "toeic_dining": "20260919-0953-toeic-story-mon-an-thanh-toan.md",
-    "toeic_labor": "20260822-0953-toeic-story-hoi-nghi-quan-he-lao-dong.md",
-    "toeic_hotel": "20260905-0953-toeic-story-khach-san-thue-xe.md",
-    "toeic_rnd": "20261107-0953-toeic-story-rd-doi-moi.md",
-    "toeic_travel": "20260829-0953-toeic-story-ve-lich-trinh-du-lich.md",
-    "toeic_shipping": "20261017-0953-toeic-story-van-chuyen-hoa-don.md",
-    "toeic_board": "20260704-0953-toeic-story-hop-hoi-dong-quan-tri.md",
-    "toeic_it_systems": "20261121-0953-toeic-story-phan-mem-he-thong-it.md"
+    "toeic_mergers": "20260801-0953-toeic-story-hop-dong-sap-nhap.md",
+    "toeic_office_equip": "20260711-0953-toeic-story-thiet-bi-van-phong.md",
+    "toeic_finance": "20261003-0953-toeic-story-dau-tu-thue-ngan-sach.md",
+    "toeic_launch": "20270102-0953-toeic-story-su-kien-ra-mat.md",
+    "toeic_media": "20270109-0953-toeic-story-truyen-thong-danh-gia.md",
+    "toeic_realestate": "20261205-0953-toeic-story-thue-mua-mat-bang.md",
+    "toeic_patents": "20261114-0953-toeic-story-sang-che-thuong-mai-hoa.md",
+    "toeic_medical": "20261219-0953-toeic-story-kham-dieu-tri.md",
+    "toeic_reception": "20260912-0953-toeic-story-dat-ban-tiep-khach.md",
+    "toeic_construction": "20261212-0953-toeic-story-xay-dung-dien-gas-bao-tri.md",
+    "toeic_marketing": "20260808-0953-toeic-story-marketing-ban-hang.md",
+    "toeic_assembly": "20261024-0953-toeic-story-day-chuyen-nang-suat.md",
+    "toeic_salary": "20260725-0953-toeic-story-luong-phuc-loi-thang-chuc.md"
 }
 
 for prefix, md_file in mapping.items():
